@@ -1,13 +1,13 @@
 # webdriver-tests
-## Prerequisites:
-* Docker
-+ Git
-- Java
-* Webdriver
-+ ChromeDriver
-* IDE such as IntelliJ
+## Prerequisites
+  * Docker
+  + Git
+  - Java
+  * Webdriver
+  + ChromeDriver
+  * IDE such as IntelliJ
 
-## Steps:
+## Steps
 1. Pull Docker image for the-internet app:
   
     `docker pull gprestes/the-internet`
