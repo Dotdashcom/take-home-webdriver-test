@@ -1,4 +1,4 @@
-# webdriver-tests
+# Webdriver Tests
 ## Prerequisites
   * Docker
   + Git
