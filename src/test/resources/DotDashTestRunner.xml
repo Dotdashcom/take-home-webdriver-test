@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="DotDash Test Automation Script" parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <!--    <parameter name="os" value="windows"/>-->
+    <parameter name="os" value="OS X"/>
+    <!--    <parameter name="os_version" value="10"/>-->
+    <parameter name="os_version" value="Catalina"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="83"/>
+    <parameter name="url" value="http://localhost:7080"/>
+
+    <test name="DotDash Homepage">
+        <classes>
+            <class name="com.dotdash.tests.DotDashTest"/>
+        </classes>
+    </test>
+
+</suite>
