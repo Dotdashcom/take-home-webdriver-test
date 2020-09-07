@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-07T19:39:27Z" name="Default suite" finished-at="2020-09-07T19:39:32Z" duration-ms="5091">
+    <groups>
+    </groups>
+    <test started-at="2020-09-07T19:39:27Z" name="Default test" finished-at="2020-09-07T19:39:32Z" duration-ms="5091">
+      <class name="dockers.Windows">
+        <test-method signature="Windows()[pri:0, instance:dockers.Windows@2357d90a]" started-at="2020-09-07T15:39:27Z" name="Windows" finished-at="2020-09-07T15:39:32Z" duration-ms="5082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Windows -->
+      </class> <!-- dockers.Windows -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
