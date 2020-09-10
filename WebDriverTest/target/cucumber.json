@@ -1,0 +1,2240 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/login\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-10T15:45:30.182Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2618000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "login;login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 442000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters valid \"tomsmith\" and \"SuperSecretPassword!\" and clicks on login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"SuperSecretPassword!\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_enters_valid_and_and_clicks_on_login_button(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on \"Secure Area\" and see \"You logged into a secure area!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Secure Area\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"You logged into a secure area!\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_and_see(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 125000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/login\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-10T15:45:33.545Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2092000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Error message validation while invalid login",
+        "description": "",
+        "id": "login;error-message-validation-while-invalid-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 417000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters invalid \"invalid\" and \"SuperSecretPassword!\" and clicks on login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"SuperSecretPassword!\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_enters_invalid_and_and_clicks_on_login_button(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user sees \"Your username is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your username is invalid!\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_sees_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 111000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/login\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-10T15:45:36.303Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2013000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Error message validation while invalid login",
+        "description": "",
+        "id": "login;error-message-validation-while-invalid-login;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 458000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters invalid \"\" and \"SuperSecretPassword!\" and clicks on login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"SuperSecretPassword!\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_enters_invalid_and_and_clicks_on_login_button(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user sees \"Your username is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your username is invalid!\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_sees_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/login\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-10T15:45:39.004Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2047000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Error message validation while invalid login",
+        "description": "",
+        "id": "login;error-message-validation-while-invalid-login;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 354000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters invalid \"\" and \"\" and clicks on login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_enters_invalid_and_and_clicks_on_login_button(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user sees \"Your username is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your username is invalid!\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_sees_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 111000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/login\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-10T15:45:41.623Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1848000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Error message validation while invalid login",
+        "description": "",
+        "id": "login;error-message-validation-while-invalid-login;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 417000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters invalid \"tomsmith\" and \"invalid\" and clicks on login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"invalid\"",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_enters_invalid_and_and_clicks_on_login_button(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user sees \"Your password is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your password is invalid!\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_sees_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/login\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-10T15:45:44.114Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1977000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Error message validation while invalid login",
+        "description": "",
+        "id": "login;error-message-validation-while-invalid-login;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 399000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters invalid \"tomsmith\" and \"\" and clicks on login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_enters_invalid_and_and_clicks_on_login_button(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user sees \"Your password is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your password is invalid!\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_sees_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  Login Success: http://localhost:7080/login credentials: tomsmith/SuperSecretPassword!\n  Login Failure: http://localhost:7080/login Login fail invalid credentials",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/01_Login.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:45:46.711Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7940000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Check and uncheck boxes",
+        "description": "",
+        "id": "checkboxes;check-and-uncheck-boxes",
+        "after": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/checkboxes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/checkboxes\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on checkboxes",
+            "match": {
+              "location": "steps.CheckboxesPageSteps.user_clicks_on_checkboxes()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees \"checkbox 1\" and \"checkbox 2\" work correctly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"checkbox 1\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"checkbox 2\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.CheckboxesPageSteps.user_sees_and_work_correctly(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Checkboxes",
+    "description": "  CheckBoxes: http://localhost:7080/checkboxes Check and uncheck boxes",
+    "id": "checkboxes",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Checkboxes.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:45:55.001Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2020000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Context click functionality",
+        "description": "",
+        "id": "context-menu;context-click-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/context_menu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/context_menu\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user performs right click on the box",
+            "match": {
+              "location": "steps.ContextMenuPageSteps.user_performs_right_click_on_the_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 241000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Javascript alert is triggered and text \"You selected a context menu\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You selected a context menu\"",
+                  "offset": 39
+                }
+              ],
+              "location": "steps.ContextMenuPageSteps.javascript_alert_is_triggered_and_text_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Context Menu",
+    "description": "  CContextMenu: http://localhost:7080/context_menu Right-click in the box to see one called \u0027the-internet\u0027. Test JavaScript alert text on Right-Click.",
+    "id": "context-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ContexMenu.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:45:57.603Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2036000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Drag and drop functionality",
+        "description": "",
+        "id": "drag-and-drop;drag-and-drop-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/drag_and_drop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/drag_and_drop\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user drags one square and drops on another square",
+            "match": {
+              "location": "steps.DragAndDropPageSteps.user_drags_one_square_and_drops_on_another_square()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees boxes \"A\" and \"B\" are swapped",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"B\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.DragAndDropPageSteps.user_sees_boxes_and_are_swapped(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Drag and Drop",
+    "description": "  Drag and Drop: http://localhost:7080/drag_and_drop Perform Drag And Drop in a WebDriver test.",
+    "id": "drag-and-drop",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DragAndDrop.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:45:59.843Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2029000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Dropdown verification",
+        "description": "",
+        "id": "dropdown;dropdown-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/dropdown\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/dropdown\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 146000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user selects \"Option 2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Option 2\"",
+                  "offset": 13
+                }
+              ],
+              "location": "steps.DropdownPageSteps.user_selects(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "\"Option 2\" selected successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Option 2\"",
+                  "offset": 0
+                }
+              ],
+              "location": "steps.DropdownPageSteps.selected_successfully(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Dropdown",
+    "description": "  Dropdown: http://localhost:7080/dropdown Test dropdown using WebDriver.",
+    "id": "dropdown",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Dropdown.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:02.239Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1900000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Dynamic Content",
+        "description": "",
+        "id": "dynamic-content;dynamic-content",
+        "after": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the Page \"http://localhost:7080/dynamic_content\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/dynamic_content\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1222000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user refreshes the page",
+            "match": {
+              "location": "steps.DynamicContentPageSteps.user_refreshes_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user sees content is updated",
+            "match": {
+              "location": "steps.DynamicContentPageSteps.user_sees_content_is_updated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Dynamic Content",
+    "description": "",
+    "id": "dynamic-content",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DynamicContent.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:05.532Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2030000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Dynamic Controls",
+        "description": "",
+        "id": "dynamic-controls;dynamic-controls",
+        "after": [
+          {
+            "result": {
+              "duration": 84000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2282000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/dynamic_controls\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/dynamic_controls\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks Remove button",
+            "match": {
+              "location": "steps.DynamicControlsPageElements.user_clicks_Remove_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3137000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees \"It\u0027s gone!\" and checkbox is removed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"It\u0027s gone!\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.DynamicControlsPageElements.user_sees_and_checkbox_is_removed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3195000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks Add button and check the checkbox",
+            "match": {
+              "location": "steps.DynamicControlsPageElements.user_clicks_Add_button_and_check_the_checkbox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "users sees checkbox checked",
+            "match": {
+              "location": "steps.DynamicControlsPageElements.users_sees_checkbox_checked()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3407000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "users clicks on Enable button and send text \"Hello!\" to the text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello!\"",
+                  "offset": 44
+                }
+              ],
+              "location": "steps.DynamicControlsPageElements.users_clicks_on_Enable_button_and_send_text_to_the_text_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "users sees \"It\u0027s enabled!\" and text into the text \"Hello!\" box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"It\u0027s enabled!\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Hello!\"",
+                  "offset": 50
+                }
+              ],
+              "location": "steps.DynamicControlsPageElements.users_sees_and_text_into_the_text_box(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Dynamic Controls",
+    "description": "  Dynamic Controls: http://localhost:7080/dynamic_controls Test Dynamic Controls using Explicit Waits.",
+    "id": "dynamic-controls",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DynamicControls.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:19.789Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1986000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Dynamic Loading",
+        "description": "",
+        "id": "dynamic-loading;dynamic-loading",
+        "after": [
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/dynamic_loading/2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/dynamic_loading/2\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks Start button",
+            "match": {
+              "location": "steps.DynamicLoadingPageSteps.user_clicks_Start_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5169000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees \"Hello World!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello World!\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.DynamicLoadingPageSteps.user_sees(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Dynamic Loading",
+    "description": "  Dynamic Loading: http://localhost:7080/dynamic_loading/2 Test Dynamic Loading using Explict Waits.",
+    "id": "dynamic-loading",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DynamicLoading.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:27.191Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1989000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "File Download",
+        "description": "",
+        "id": "file-download;file-download",
+        "after": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/download\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/download\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks link to download file",
+            "match": {
+              "location": "steps.FileDownloadPageSteps.user_clicks_link_to_download_file()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees file \"some-file.txt\" downloaded to the folder \"/Users/robespierre/Downloads\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"some-file.txt\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"/Users/robespierre/Downloads\"",
+                  "offset": 56
+                }
+              ],
+              "location": "steps.FileDownloadPageSteps.user_sees_file_downloaded_to_the_folder(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "File Download",
+    "description": "  File Download: http://localhost:7080/download Test File Download.",
+    "id": "file-download",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FileDownload.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:29.432Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1985000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "File Upload",
+        "description": "",
+        "id": "file-upload;file-upload",
+        "after": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 84000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/upload\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/upload\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user chooses the file \"/Users/robespierre/Downloads/fileToUpload.txt\" to upload and clicks on Upload button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/Users/robespierre/Downloads/fileToUpload.txt\"",
+                  "offset": 22
+                }
+              ],
+              "location": "steps.FileUploadPageSteps.user_chooses_the_file_to_upload_and_clicks_on_Upload_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees \"fileToUpload.txt\" file successfully uploaded",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fileToUpload.txt\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.FileUploadPageSteps.user_sees_file_successfully_uploaded(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "File Upload",
+    "description": "  File Upload: http://localhost:7080/upload Test File Upload.",
+    "id": "file-upload",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FileUpload.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:31.767Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1963000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Floating Menu",
+        "description": "",
+        "id": "floating-menu;floating-menu",
+        "after": [
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/floating_menu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/floating_menu\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user scrolls down 1000 the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.FloatingMenuPageSteps.user_scrolls_down_the_page(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees the menu buttons are visible and accessible",
+            "match": {
+              "location": "steps.FloatingMenuPageSteps.user_sees_the_menu_buttons_are_visible_and_accessible()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Floating Menu",
+    "description": "  Floating Menu: http://localhost:7080/floating_menu Test Floating Menu.",
+    "id": "floating-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FloatingMenu.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:33.974Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1949000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "iFrame",
+        "description": "",
+        "id": "iframe;iframe",
+        "after": [
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1877000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/iframe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/iframe\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User able to enter \"Text\" into the textBox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Text\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.IframePageSteps.user_able_to_enter_into_the_textBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User sees \"Text\" entered",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Text\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.IframePageSteps.user_sees_entered(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "iFrame",
+    "description": "  iFrame: http://localhost:7080/iframe Test iFrame.",
+    "id": "iframe",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Iframe.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:38.095Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1985000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Javascript Alerts",
+        "description": "",
+        "id": "javascript-alerts;javascript-alerts",
+        "after": [
+          {
+            "result": {
+              "duration": 89000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 75000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/javascript_alerts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/javascript_alerts\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 782000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on buttons and interacts with \"Alert\" \"Confirm\" \"Prompt\" alerts, enters \"Hello\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Alert\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Confirm\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Prompt\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Hello\"",
+                  "offset": 84
+                }
+              ],
+              "location": "steps.JavaScriptAlertsPageSteps.user_clicks_on_buttons_and_interacts_with_alerts_enters(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees corresponding result messages",
+            "match": {
+              "location": "steps.JavaScriptAlertsPageSteps.user_sees_corresponding_result_messages(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "You successfuly clicked an alert"
+                ]
+              },
+              {
+                "cells": [
+                  "You clicked: Ok"
+                ]
+              },
+              {
+                "cells": [
+                  "You entered: Hello"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Javascript Alerts",
+    "description": "  JavaScript Alerts: http://localhost:7080/javascript_alerts Test confirm JS Alert.",
+    "id": "javascript-alerts",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/JavascriptAlerts.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:41.035Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1952000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Javascript Error Test",
+        "description": "",
+        "id": "javascript-error;javascript-error-test",
+        "after": [
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/javascript_error\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/javascript_error\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sees the error and verifies \"JavaScript error\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JavaScript error\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.JavaScriptErrorPageSteps.user_sees_the_error_and_verifies(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Javascript Error",
+    "description": "  JavaScript Error: http://localhost:7080/javascript_error Test JS error.",
+    "id": "javascript-error",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/JavascriptError.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:43.133Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2014000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Mouse Hover",
+        "description": "",
+        "id": "mouse-hover;mouse-hover",
+        "after": [
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/hovers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/hovers\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 485000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user hovers on every users avatar",
+            "match": {
+              "location": "steps.MouseHoverPageSteps.user_hovers_on_every_users_avatar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user sees additional information under Avatar",
+            "match": {
+              "location": "steps.MouseHoverPageSteps.user_sees_additional_information_under_Avatar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "user1"
+                ]
+              },
+              {
+                "cells": [
+                  "user2"
+                ]
+              },
+              {
+                "cells": [
+                  "user3"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 243000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on the profile link",
+            "match": {
+              "location": "steps.MouseHoverPageSteps.user_clicks_on_the_profile_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user sees message \"Sinatra doesn’t know this ditty.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sinatra doesn’t know this ditty.\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.MouseHoverPageSteps.user_sees_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Mouse Hover",
+    "description": "  Mouse Hover: http://localhost:7080/hovers Test Mouse Hover.",
+    "id": "mouse-hover",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/MouseHover.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:46.051Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1971000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Notification Message",
+        "description": "",
+        "id": "notification-message;notification-message",
+        "after": [
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/notification_message_rendered\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/notification_message_rendered\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks the link to load the new message",
+            "match": {
+              "location": "steps.NotificationMessagePageSteps.user_clicks_the_link_to_load_the_new_message()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1375000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees notification message",
+            "match": {
+              "location": "steps.NotificationMessagePageSteps.user_sees_notification_message(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Action unsuccesful, please try again"
+                ]
+              },
+              {
+                "cells": [
+                  "Action successful"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Notification Message",
+    "description": "  Notification Message: http://localhost:7080/notification_message_rendered Test notification Message.",
+    "id": "notification-message",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/NotificationMessage.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T15:46:49.730Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2027000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Open In Tab",
+        "description": "",
+        "id": "open-in-tab;open-in-tab",
+        "after": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the Page \"http://localhost:7080/windows\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:7080/windows\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 138000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks the link",
+            "match": {
+              "location": "steps.OpeninNewTabPageSteps.user_clicks_the_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees \"New Window\" sign in newly opened window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New Window\"",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.OpeninNewTabPageSteps.user_sees_sign_in_newly_opened_window(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Open In Tab",
+    "description": "  Open in New Tab: http://localhost:7080/windows Test Link Opens in new tab.",
+    "id": "open-in-tab",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/OpenInNewTab.feature",
+    "tags": []
+  }
+]

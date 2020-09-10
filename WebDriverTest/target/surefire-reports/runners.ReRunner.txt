@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: runners.ReRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.109 s <<< FAILURE! - in runners.ReRunner
+runners.ReRunner.initializationError  Time elapsed: 0.006 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: Failed to parse 'target/rerun.txt'
+Caused by: java.nio.file.NoSuchFileException: target/rerun.txt
+

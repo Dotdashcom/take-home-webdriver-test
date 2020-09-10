@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>WebDriverTest</td>
+        <td>1</td>
+      <td>10 Sep 2020, 11:46</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">steps.CheckboxesPageSteps.user_clicks_on_checkboxes()</td>
+              <td>1</td>
+              <td class="duration" data-value="82000000">0.082</td>
+              <td class="duration" data-value="82000000">0.082</td>
+              <td class="duration" data-value="82000000">0.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.CheckboxesPageSteps.user_sees_and_work_correctly(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="114000000">0.114</td>
+              <td class="duration" data-value="114000000">0.114</td>
+              <td class="duration" data-value="114000000">0.114</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.ContextMenuPageSteps.javascript_alert_is_triggered_and_text_is_displayed(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="241000000">0.241</td>
+              <td class="duration" data-value="241000000">0.241</td>
+              <td class="duration" data-value="241000000">0.241</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.ContextMenuPageSteps.user_performs_right_click_on_the_box()</td>
+              <td>1</td>
+              <td class="duration" data-value="189000000">0.189</td>
+              <td class="duration" data-value="189000000">0.189</td>
+              <td class="duration" data-value="189000000">0.189</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DragAndDropPageSteps.user_drags_one_square_and_drops_on_another_square()</td>
+              <td>1</td>
+              <td class="duration" data-value="29000000">0.029</td>
+              <td class="duration" data-value="29000000">0.029</td>
+              <td class="duration" data-value="29000000">0.029</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DragAndDropPageSteps.user_sees_boxes_and_are_swapped(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="22000000">0.022</td>
+              <td class="duration" data-value="22000000">0.022</td>
+              <td class="duration" data-value="22000000">0.022</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DropdownPageSteps.selected_successfully(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="53000000">0.053</td>
+              <td class="duration" data-value="53000000">0.053</td>
+              <td class="duration" data-value="53000000">0.053</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DropdownPageSteps.user_selects(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="146000000">0.146</td>
+              <td class="duration" data-value="146000000">0.146</td>
+              <td class="duration" data-value="146000000">0.146</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicContentPageSteps.user_refreshes_the_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1222000000">1.222</td>
+              <td class="duration" data-value="1222000000">1.222</td>
+              <td class="duration" data-value="1222000000">1.222</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicContentPageSteps.user_sees_content_is_updated()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicControlsPageElements.user_clicks_Add_button_and_check_the_checkbox()</td>
+              <td>1</td>
+              <td class="duration" data-value="3195000000">3.195</td>
+              <td class="duration" data-value="3195000000">3.195</td>
+              <td class="duration" data-value="3195000000">3.195</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicControlsPageElements.user_clicks_Remove_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicControlsPageElements.user_sees_and_checkbox_is_removed(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3137000000">3.137</td>
+              <td class="duration" data-value="3137000000">3.137</td>
+              <td class="duration" data-value="3137000000">3.137</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicControlsPageElements.users_clicks_on_Enable_button_and_send_text_to_the_text_box(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3407000000">3.407</td>
+              <td class="duration" data-value="3407000000">3.407</td>
+              <td class="duration" data-value="3407000000">3.407</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicControlsPageElements.users_sees_and_text_into_the_text_box(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="30000000">0.030</td>
+              <td class="duration" data-value="30000000">0.030</td>
+              <td class="duration" data-value="30000000">0.030</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicControlsPageElements.users_sees_checkbox_checked()</td>
+              <td>1</td>
+              <td class="duration" data-value="14000000">0.014</td>
+              <td class="duration" data-value="14000000">0.014</td>
+              <td class="duration" data-value="14000000">0.014</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicLoadingPageSteps.user_clicks_Start_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="74000000">0.074</td>
+              <td class="duration" data-value="74000000">0.074</td>
+              <td class="duration" data-value="74000000">0.074</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.DynamicLoadingPageSteps.user_sees(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5169000000">5.169</td>
+              <td class="duration" data-value="5169000000">5.169</td>
+              <td class="duration" data-value="5169000000">5.169</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.FileDownloadPageSteps.user_clicks_link_to_download_file()</td>
+              <td>1</td>
+              <td class="duration" data-value="88000000">0.088</td>
+              <td class="duration" data-value="88000000">0.088</td>
+              <td class="duration" data-value="88000000">0.088</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.FileDownloadPageSteps.user_sees_file_downloaded_to_the_folder(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="17000000">0.017</td>
+              <td class="duration" data-value="17000000">0.017</td>
+              <td class="duration" data-value="17000000">0.017</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.FileUploadPageSteps.user_chooses_the_file_to_upload_and_clicks_on_Upload_button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="156000000">0.156</td>
+              <td class="duration" data-value="156000000">0.156</td>
+              <td class="duration" data-value="156000000">0.156</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.FileUploadPageSteps.user_sees_file_successfully_uploaded(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="24000000">0.024</td>
+              <td class="duration" data-value="24000000">0.024</td>
+              <td class="duration" data-value="24000000">0.024</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.FloatingMenuPageSteps.user_scrolls_down_the_page(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="6000000">0.006</td>
+              <td class="duration" data-value="6000000">0.006</td>
+              <td class="duration" data-value="6000000">0.006</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.FloatingMenuPageSteps.user_sees_the_menu_buttons_are_visible_and_accessible()</td>
+              <td>1</td>
+              <td class="duration" data-value="71000000">0.071</td>
+              <td class="duration" data-value="71000000">0.071</td>
+              <td class="duration" data-value="71000000">0.071</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.Hooks.after()</td>
+              <td>22</td>
+              <td class="duration" data-value="80545454">0.080</td>
+              <td class="duration" data-value="80545454">0.089</td>
+              <td class="duration" data-value="1772000000">1.772</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.Hooks.before()</td>
+              <td>22</td>
+              <td class="duration" data-value="2289590909">2.289</td>
+              <td class="duration" data-value="2289590909">7.940</td>
+              <td class="duration" data-value="50371000000">50.371</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.IframePageSteps.user_able_to_enter_into_the_textBox(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="185000000">0.185</td>
+              <td class="duration" data-value="185000000">0.185</td>
+              <td class="duration" data-value="185000000">0.185</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.IframePageSteps.user_sees_entered(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="20000000">0.020</td>
+              <td class="duration" data-value="20000000">0.020</td>
+              <td class="duration" data-value="20000000">0.020</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.JavaScriptAlertsPageSteps.user_clicks_on_buttons_and_interacts_with_alerts_enters(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="782000000">0.782</td>
+              <td class="duration" data-value="782000000">0.782</td>
+              <td class="duration" data-value="782000000">0.782</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.JavaScriptAlertsPageSteps.user_sees_corresponding_result_messages(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.JavaScriptErrorPageSteps.user_sees_the_error_and_verifies(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="29000000">0.029</td>
+              <td class="duration" data-value="29000000">0.029</td>
+              <td class="duration" data-value="29000000">0.029</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginPageSteps.user_enters_invalid_and_and_clicks_on_login_button(java.lang.String,java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="409000000">0.409</td>
+              <td class="duration" data-value="409000000">0.458</td>
+              <td class="duration" data-value="2045000000">2.045</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginPageSteps.user_enters_valid_and_and_clicks_on_login_button(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="442000000">0.442</td>
+              <td class="duration" data-value="442000000">0.442</td>
+              <td class="duration" data-value="442000000">0.442</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginPageSteps.user_is_on_and_see(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="47000000">0.047</td>
+              <td class="duration" data-value="47000000">0.047</td>
+              <td class="duration" data-value="47000000">0.047</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginPageSteps.user_is_on_the_Page(java.lang.String)</td>
+              <td>22</td>
+              <td class="duration" data-value="263454545">0.263</td>
+              <td class="duration" data-value="263454545">2.282</td>
+              <td class="duration" data-value="5796000000">5.796</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginPageSteps.user_sees_is_displayed(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="27600000">0.027</td>
+              <td class="duration" data-value="27600000">0.033</td>
+              <td class="duration" data-value="138000000">0.138</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.MouseHoverPageSteps.user_clicks_on_the_profile_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="243000000">0.243</td>
+              <td class="duration" data-value="243000000">0.243</td>
+              <td class="duration" data-value="243000000">0.243</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.MouseHoverPageSteps.user_hovers_on_every_users_avatar()</td>
+              <td>1</td>
+              <td class="duration" data-value="485000000">0.485</td>
+              <td class="duration" data-value="485000000">0.485</td>
+              <td class="duration" data-value="485000000">0.485</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.MouseHoverPageSteps.user_sees_additional_information_under_Avatar(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.MouseHoverPageSteps.user_sees_message(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="21000000">0.021</td>
+              <td class="duration" data-value="21000000">0.021</td>
+              <td class="duration" data-value="21000000">0.021</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.NotificationMessagePageSteps.user_clicks_the_link_to_load_the_new_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="190000000">0.190</td>
+              <td class="duration" data-value="190000000">0.190</td>
+              <td class="duration" data-value="190000000">0.190</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.NotificationMessagePageSteps.user_sees_notification_message(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="1375000000">1.375</td>
+              <td class="duration" data-value="1375000000">1.375</td>
+              <td class="duration" data-value="1375000000">1.375</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.OpeninNewTabPageSteps.user_clicks_the_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="138000000">0.138</td>
+              <td class="duration" data-value="138000000">0.138</td>
+              <td class="duration" data-value="138000000">0.138</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.OpeninNewTabPageSteps.user_sees_sign_in_newly_opened_window(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="41000000">0.041</td>
+              <td class="duration" data-value="41000000">0.041</td>
+              <td class="duration" data-value="41000000">0.041</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>44</td>
+            <td>115</td>
+            <td class="duration">0.710</td>
+            <td class="duration">50.371</td>
+            <td class="duration">1:21.679</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
