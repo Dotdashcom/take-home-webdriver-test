@@ -1,0 +1,27 @@
+<suite name = "Suite">
+    <test name = "Test">
+        <classes>
+            <class name = "webdrivertest.CheckAndUncheck" />
+            <class name = "webdrivertest.ContextMenu" />
+            <class name = "webdrivertest.DragAndDrop" />
+            <class name = "webdrivertest.DropDownList" />
+            <class name = "webdrivertest.DynamicContent" />
+            <class name = "webdrivertest.DynamicControl" />
+            <class name = "webdrivertest.DynamicLoading" />
+            <class name = "webdrivertest.FileDownloader" />
+            <class name = "webdrivertest.FileUpload" />
+            <class name = "webdrivertest.FloatingMenu" />
+            <class name = "webdrivertest.iFrame" />
+            <class name = "webdrivertest.JavaScriptAlert" />
+            <class name = "webdrivertest.JavaScriptError" />
+            <class name = "webdrivertest.LoginFailure" />
+            <class name = "webdrivertest.LoginSuccess" />
+            <class name = "webdrivertest.MouseHover" />
+            <class name = "webdrivertest.NewsTab" />
+            <class name = "webdrivertest.NotificationMessage" />
+        </classes>
+    </test>
+
+
+
+</suite>
