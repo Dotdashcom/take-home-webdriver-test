@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
+  <test thread-count="5" name="chrometest(failed)" parallel="tests">
+    <parameter name="setup" value="chrome"/>
+    <classes>
+      <class name="com.Test.dotDashAssignment">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="checkBox"/>
+          <include name="LoginSuccess"/>
+        </methods>
+      </class> <!-- com.Test.dotDashAssignment -->
+    </classes>
+  </test> <!-- chrometest(failed) -->
+  <test thread-count="5" name="firefoxtest(failed)" parallel="tests">
+    <parameter name="setup" value="firefox"/>
+    <classes>
+      <class name="com.Test.dotDashAssignment">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="checkBox"/>
+          <include name="LoginSuccess"/>
+        </methods>
+      </class> <!-- com.Test.dotDashAssignment -->
+    </classes>
+  </test> <!-- firefoxtest(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
