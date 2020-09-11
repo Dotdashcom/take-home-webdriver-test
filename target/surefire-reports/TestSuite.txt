@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 126.962 s <<< FAILURE! - in TestSuite
+com.testcases.TestCases.JavaScriptAlertsValidation  Time elapsed: 1.601 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	You successfuly clicked an alert - result message mismatch expected [true] but found [false]
+	at com.testcases.TestCases.JavaScriptAlertsValidation(TestCases.java:375)
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="126.962" tests="19" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\ARAVINDHAN\IdeaProjects\DotDash_Aravindhan_Selenium\src\test\java\com\Windriver\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\ARAVINDHAN\IdeaProjects\DotDash_Aravindhan_Selenium\target\test-classes;C:\Users\ARAVINDHAN\IdeaProjects\DotDash_Aravindhan_Selenium\target\classes;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ARAVINDHAN\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ARAVINDHAN\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ARAVINDHAN\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\ARAVINDHAN\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\ARAVINDHAN\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\ARAVINDHAN\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\ARAVINDHAN\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ARAVINDHAN\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\ARAVINDHAN\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\ARAVINDHAN\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ARAVINDHAN\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\ARAVINDHAN\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ARAVINDHAN\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\ARAVINDHAN\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Regina"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\ARAVINDHAN\AppData\Local\Temp\surefire5021345753769710742\surefirebooter205440531127314705.jar C:\Users\ARAVINDHAN\AppData\Local\Temp\surefire5021345753769710742 2020-09-11T09-45-08_259-jvmRun1 surefire8590967600687476600tmp surefire_04065750885338684096tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\ARAVINDHAN\IdeaProjects\DotDash_Aravindhan_Selenium\target\test-classes;C:\Users\ARAVINDHAN\IdeaProjects\DotDash_Aravindhan_Selenium\target\classes;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\ARAVINDHAN\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ARAVINDHAN\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ARAVINDHAN\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ARAVINDHAN\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\ARAVINDHAN\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\ARAVINDHAN\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\ARAVINDHAN\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\ARAVINDHAN\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ARAVINDHAN\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\ARAVINDHAN\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\ARAVINDHAN\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ARAVINDHAN\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\ARAVINDHAN\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ARAVINDHAN\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\ARAVINDHAN\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ARAVINDHAN\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\ARAVINDHAN\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ARAVINDHAN"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
+    <property name="testng.dtd.http" value="true"/>
+    <property name="basedir" value="C:\Users\ARAVINDHAN\IdeaProjects\DotDash_Aravindhan_Selenium"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\ARAVINDHAN\AppData\Local\Temp\surefire5021345753769710742\surefirebooter205440531127314705.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="user.name" value="ARAVINDHAN"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\ARAVINDHAN\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ARAVINDHAN\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2020.2.1"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="user.dir" value="C:\Users\ARAVINDHAN\IdeaProjects\DotDash_Aravindhan_Selenium"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Android;C:\Opt\apache-maven-3.6.1\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\ARAVINDHAN\AppData\Roaming\npm;C:\Users\ARAVINDHAN\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="VerifySuccesfulLogin" classname="com.testcases.TestCases" time="11.029"/>
+  <testcase name="VerifyUsernameIsInvalid" classname="com.testcases.TestCases" time="3.765"/>
+  <testcase name="VerifyPasswordIsInvalid" classname="com.testcases.TestCases" time="3.705"/>
+  <testcase name="Checkboxverification" classname="com.testcases.TestCases" time="1.331"/>
+  <testcase name="ContextClickandPopUp" classname="com.testcases.TestCases" time="1.352"/>
+  <testcase name="DragAndDropValidation" classname="com.testcases.TestCases" time="5.931"/>
+  <testcase name="DropdownValidation" classname="com.testcases.TestCases" time="1.819"/>
+  <testcase name="DynamicContentValidation" classname="com.testcases.TestCases" time="14.779"/>
+  <testcase name="DynamicControlsValidation" classname="com.testcases.TestCases" time="14.184"/>
+  <testcase name="DynamicLoadingValidation" classname="com.testcases.TestCases" time="7.509"/>
+  <testcase name="FileDownloadValidation" classname="com.testcases.TestCases" time="8.025"/>
+  <testcase name="FileUploadValidation" classname="com.testcases.TestCases" time="9.109"/>
+  <testcase name="FloatingMenuValidation" classname="com.testcases.TestCases" time="3.335"/>
+  <testcase name="IFrameValidation" classname="com.testcases.TestCases" time="7.482"/>
+  <testcase name="MouseHoverValidation" classname="com.testcases.TestCases" time="8.505"/>
+  <testcase name="JavaScriptAlertsValidation" classname="com.testcases.TestCases" time="1.601">
+    <failure message="The following asserts failed:&#10;	You successfuly clicked an alert - result message mismatch expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	You successfuly clicked an alert - result message mismatch expected [true] but found [false]
+	at com.testcases.TestCases.JavaScriptAlertsValidation(TestCases.java:375)
+]]></failure>
+  </testcase>
+  <testcase name="JavaScriptErrorValidation" classname="com.testcases.TestCases" time="1.125"/>
+  <testcase name="NewTabValidation" classname="com.testcases.TestCases" time="3.442"/>
+  <testcase name="NotificationMessageValidation" classname="com.testcases.TestCases" time="3.472"/>
+</testsuite>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="19" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="111653" started-at="2020-09-11T09:45:29 CST" finished-at="2020-09-11T09:47:20 CST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="111653" started-at="2020-09-11T09:45:29 CST" finished-at="2020-09-11T09:47:20 CST">
+      <class name="com.testcases.TestCases">
+        <test-method status="PASS" signature="BrowserInitialisation()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="BrowserInitialisation" is-config="true" duration-ms="14342" started-at="2020-09-11T09:45:14 CST" finished-at="2020-09-11T09:45:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserInitialisation -->
+        <test-method status="PASS" signature="methodInitialize()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="methodInitialize" is-config="true" duration-ms="78" started-at="2020-09-11T09:45:29 CST" finished-at="2020-09-11T09:45:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodInitialize -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-09-11T09:45:29 CST" finished-at="2020-09-11T09:45:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="VerifySuccesfulLogin()[pri:1, instance:com.testcases.TestCases@a67c67e]" name="VerifySuccesfulLogin" duration-ms="11016" started-at="2020-09-11T09:45:29 CST" finished-at="2020-09-11T09:45:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySuccesfulLogin -->
+        <test-method status="PASS" signature="VerifyUsernameIsInvalid()[pri:2, instance:com.testcases.TestCases@a67c67e]" name="VerifyUsernameIsInvalid" duration-ms="3766" started-at="2020-09-11T09:45:40 CST" finished-at="2020-09-11T09:45:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUsernameIsInvalid -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:45:40 CST" finished-at="2020-09-11T09:45:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="VerifyPasswordIsInvalid()[pri:3, instance:com.testcases.TestCases@a67c67e]" name="VerifyPasswordIsInvalid" duration-ms="3706" started-at="2020-09-11T09:45:44 CST" finished-at="2020-09-11T09:45:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPasswordIsInvalid -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:45:44 CST" finished-at="2020-09-11T09:45:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-09-11T09:45:47 CST" finished-at="2020-09-11T09:45:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Checkboxverification()[pri:4, instance:com.testcases.TestCases@a67c67e]" name="Checkboxverification" duration-ms="1330" started-at="2020-09-11T09:45:47 CST" finished-at="2020-09-11T09:45:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkboxverification -->
+        <test-method status="PASS" signature="ContextClickandPopUp()[pri:5, instance:com.testcases.TestCases@a67c67e]" name="ContextClickandPopUp" duration-ms="1351" started-at="2020-09-11T09:45:49 CST" finished-at="2020-09-11T09:45:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContextClickandPopUp -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:45:49 CST" finished-at="2020-09-11T09:45:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-09-11T09:45:50 CST" finished-at="2020-09-11T09:45:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="DragAndDropValidation()[pri:6, instance:com.testcases.TestCases@a67c67e]" name="DragAndDropValidation" duration-ms="5930" started-at="2020-09-11T09:45:50 CST" finished-at="2020-09-11T09:45:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragAndDropValidation -->
+        <test-method status="PASS" signature="DropdownValidation()[pri:7, instance:com.testcases.TestCases@a67c67e]" name="DropdownValidation" duration-ms="1818" started-at="2020-09-11T09:45:56 CST" finished-at="2020-09-11T09:45:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropdownValidation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:45:56 CST" finished-at="2020-09-11T09:45:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:45:58 CST" finished-at="2020-09-11T09:45:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="DynamicContentValidation()[pri:8, instance:com.testcases.TestCases@a67c67e]" name="DynamicContentValidation" duration-ms="14779" started-at="2020-09-11T09:45:58 CST" finished-at="2020-09-11T09:46:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicContentValidation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-09-11T09:46:13 CST" finished-at="2020-09-11T09:46:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="DynamicControlsValidation()[pri:9, instance:com.testcases.TestCases@a67c67e]" name="DynamicControlsValidation" duration-ms="14184" started-at="2020-09-11T09:46:13 CST" finished-at="2020-09-11T09:46:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicControlsValidation -->
+        <test-method status="PASS" signature="DynamicLoadingValidation()[pri:10, instance:com.testcases.TestCases@a67c67e]" name="DynamicLoadingValidation" duration-ms="7509" started-at="2020-09-11T09:46:27 CST" finished-at="2020-09-11T09:46:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicLoadingValidation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:46:27 CST" finished-at="2020-09-11T09:46:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:46:34 CST" finished-at="2020-09-11T09:46:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="FileDownloadValidation()[pri:11, instance:com.testcases.TestCases@a67c67e]" name="FileDownloadValidation" duration-ms="8026" started-at="2020-09-11T09:46:34 CST" finished-at="2020-09-11T09:46:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileDownloadValidation -->
+        <test-method status="PASS" signature="FileUploadValidation()[pri:12, instance:com.testcases.TestCases@a67c67e]" name="FileUploadValidation" duration-ms="9108" started-at="2020-09-11T09:46:42 CST" finished-at="2020-09-11T09:46:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileUploadValidation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:46:42 CST" finished-at="2020-09-11T09:46:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="FloatingMenuValidation()[pri:13, instance:com.testcases.TestCases@a67c67e]" name="FloatingMenuValidation" duration-ms="3335" started-at="2020-09-11T09:46:51 CST" finished-at="2020-09-11T09:46:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FloatingMenuValidation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:46:51 CST" finished-at="2020-09-11T09:46:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-09-11T09:46:55 CST" finished-at="2020-09-11T09:46:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="IFrameValidation()[pri:14, instance:com.testcases.TestCases@a67c67e]" name="IFrameValidation" duration-ms="7481" started-at="2020-09-11T09:46:55 CST" finished-at="2020-09-11T09:47:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IFrameValidation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:47:02 CST" finished-at="2020-09-11T09:47:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="MouseHoverValidation()[pri:15, instance:com.testcases.TestCases@a67c67e]" name="MouseHoverValidation" duration-ms="8506" started-at="2020-09-11T09:47:02 CST" finished-at="2020-09-11T09:47:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseHoverValidation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:47:11 CST" finished-at="2020-09-11T09:47:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="JavaScriptAlertsValidation()[pri:16, instance:com.testcases.TestCases@a67c67e]" name="JavaScriptAlertsValidation" duration-ms="1582" started-at="2020-09-11T09:47:11 CST" finished-at="2020-09-11T09:47:12 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+You successfuly clicked an alert - result message mismatch expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+You successfuly clicked an alert - result message mismatch expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.testcases.TestCases.JavaScriptAlertsValidation(TestCases.java:375)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptAlertsValidation -->
+        <test-method status="PASS" signature="JavaScriptErrorValidation()[pri:17, instance:com.testcases.TestCases@a67c67e]" name="JavaScriptErrorValidation" duration-ms="1125" started-at="2020-09-11T09:47:12 CST" finished-at="2020-09-11T09:47:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptErrorValidation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:47:12 CST" finished-at="2020-09-11T09:47:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:47:14 CST" finished-at="2020-09-11T09:47:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="NewTabValidation()[pri:18, instance:com.testcases.TestCases@a67c67e]" name="NewTabValidation" duration-ms="3442" started-at="2020-09-11T09:47:14 CST" finished-at="2020-09-11T09:47:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewTabValidation -->
+        <test-method status="PASS" signature="NotificationMessageValidation()[pri:19, instance:com.testcases.TestCases@a67c67e]" name="NotificationMessageValidation" duration-ms="3472" started-at="2020-09-11T09:47:17 CST" finished-at="2020-09-11T09:47:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMessageValidation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcases.TestCases@a67c67e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-11T09:47:17 CST" finished-at="2020-09-11T09:47:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- com.testcases.TestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
