@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Documents/Selenium/libs/byte-buddy-1.8.15.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Selenium/libs/commons-exec-1.3.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Selenium/libs/guava-25.0-jre.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Selenium/libs/okhttp-3.11.0.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Selenium/libs/okio-1.14.0.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Selenium/client-combined-3.141.59.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Documents/Selenium/client-combined-3.141.59-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="junit:junit:4.13" level="project" />
+  </component>
+</module>
