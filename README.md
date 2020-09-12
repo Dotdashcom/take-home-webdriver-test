@@ -91,35 +91,35 @@
    * Test clicks the start button and uses explicit wait.
    + Test asserts that “Hello World!” text is displayed.
 10. File Download
-   * Test clicks on the file.
-   + Test asserts that the file is downloaded.
+    * Test clicks on the file.
+    + Test asserts that the file is downloaded.
 11. File Upload
-   * Test uses Upload Button or Drag and Drop to upload a file.
-   + Test asserts that the file is uploaded.
+    * Test uses Upload Button or Drag and Drop to upload a file.
+    + Test asserts that the file is uploaded.
 12. Floating Menu
-   * Test scrolls the page.
-   + Test asserts that the floating menu is still displayed.
+    * Test scrolls the page.
+    + Test asserts that the floating menu is still displayed.
 13. Iframe
-   * Test switches to Iframe and types some text.
-   + Test asserts that the typed text is as expected.
+    * Test switches to Iframe and types some text.
+    + Test asserts that the typed text is as expected.
 14. Mouse Hover
-   * Test does a mouse hover on each image.
-   + Test asserts that additional information is displayed for each image.
+    * Test does a mouse hover on each image.
+    + Test asserts that additional information is displayed for each image.
 15. JavaScript Alerts
-   * Test Clicks on JS Alert Button.
-   + Test asserts alert message.
-   - Test clicks on JS confirm Button and clicks ok on alert.
-   * Test asserts the alert message.
-   + Test clicks on JS Prompt Button and types a message on Prompt.
-   - Test asserts that the alert message contains the typed message.
+    * Test Clicks on JS Alert Button.
+    + Test asserts alert message.
+    - Test clicks on JS confirm Button and clicks ok on alert.
+    * Test asserts the alert message.
+    + Test clicks on JS Prompt Button and types a message on Prompt.
+    - Test asserts that the alert message contains the typed message.
 16. JavaScript Error
-   * Test finds the JavaScript error on the page.
-   + Test asserts that the page contains error: Cannot read property 'xyz' of undefined.
+    * Test finds the JavaScript error on the page.
+    + Test asserts that the page contains error: Cannot read property 'xyz' of undefined.
 17. Open in New Tab
-   * Test clicks on the Click Here link.
-   + Test asserts that a new tab is opened with text New Window.
+    * Test clicks on the Click Here link.
+    + Test asserts that a new tab is opened with text New Window.
 18. Notification Message
-   * Test clicks on the Click Here link a multiple times.
-   + Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
+    * Test clicks on the Click Here link a multiple times.
+    + Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
 
  
