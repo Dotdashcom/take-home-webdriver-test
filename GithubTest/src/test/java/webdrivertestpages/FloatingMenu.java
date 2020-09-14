@@ -1,17 +1,27 @@
-package webdrivertest;
+package webdrivertestpages;
 
 import common.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 public class FloatingMenu extends Base {
     WebDriver driver;
+    @FindBy(xpath = "//a[contains(text(), 'News')]")
+    WebElement menu;
+    String getCurrentURL;
 
-    @Test
+    public FloatingMenu (WebDriver driver){
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+
+    }
+
     public void floatingMenu(){
-        driver = getDriver();
 
         /*
         * Here I was basically checking the css floating meny which basically
@@ -20,10 +30,6 @@ public class FloatingMenu extends Base {
         * to scroll all the way down to the page.
         *
         * */
-
-        driver.get("http://localhost:7080/floating_menu");
-
-
 
         // Created object of javascript executor and I had to downcast driver to JavaScriptExecutor type
         JavascriptExecutor js = ( JavascriptExecutor)driver;
@@ -36,12 +42,15 @@ public class FloatingMenu extends Base {
 
         // checking if the floating menu works by clicking on "News" menu after scrolling down
 
-        driver.findElement(By.xpath("//a[contains(text(), 'News')]")).click();
-        System.out.println("After Scroll Down" + driver.getCurrentUrl());
-
-
-
-
-
+        menu.click();
     }
+
+    public String getCurrentURlAfterScrollDown(){
+        getCurrentURL = driver.getCurrentUrl();
+        return getCurrentURL;
+    }
+
+
+
+
 }

@@ -1,28 +1,32 @@
-package webdrivertest;
+package webdrivertestpages;
 
-import common.Base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
-import org.testng.annotations.Test;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 import java.util.logging.Level;
 
-@Test
-public class JavaScriptError extends Base {
+public class JavaScriptError {
     WebDriver driver;
-    public void javascriptError(){
-        driver = getDriver();
-        driver.get("http://localhost:7080/javascript_error");
+
+    public JavaScriptError(WebDriver driver){
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+    public String javascriptError() {
 
         LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
         List<LogEntry> logs = logEntries.filter(Level.ALL);
         // using for each loop
-        for(LogEntry logEntry : logs){
+        for (LogEntry logEntry : logs) {
             System.out.println(logEntry);
+            String message = logEntry.getMessage();
+            return message;
         }
-
+        return null;
     }
 }
