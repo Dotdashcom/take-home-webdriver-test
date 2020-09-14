@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-13T19:23:48 PDT" name="Default suite" finished-at="2020-09-13T19:26:33 PDT" duration-ms="164886">
+    <groups>
+    </groups>
+    <test started-at="2020-09-13T19:23:48 PDT" name="Default test" finished-at="2020-09-13T19:26:33 PDT" duration-ms="164886">
+      <class name="webdriver.SDemo101">
+        <test-method signature="getTitleTest()[pri:1, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:23:48 PDT" name="getTitleTest" finished-at="2020-09-13T19:23:55 PDT" duration-ms="6836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitleTest -->
+        <test-method signature="loginTest()[pri:2, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:23:55 PDT" name="loginTest" finished-at="2020-09-13T19:24:02 PDT" duration-ms="6649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginFailure()[pri:3, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:24:02 PDT" name="loginFailure" finished-at="2020-09-13T19:24:18 PDT" duration-ms="16594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailure -->
+        <test-method signature="checkBoxesTest()[pri:4, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:24:18 PDT" name="checkBoxesTest" finished-at="2020-09-13T19:24:24 PDT" duration-ms="6140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxesTest -->
+        <test-method signature="contextMenu()[pri:5, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:24:24 PDT" name="contextMenu" finished-at="2020-09-13T19:24:31 PDT" duration-ms="6195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextMenu -->
+        <test-method signature="dragDrop()[pri:6, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:24:31 PDT" name="dragDrop" finished-at="2020-09-13T19:24:39 PDT" duration-ms="7926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDrop -->
+        <test-method signature="dropDown()[pri:7, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:24:39 PDT" name="dropDown" finished-at="2020-09-13T19:24:45 PDT" duration-ms="6668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDown -->
+        <test-method signature="dynamicContent()[pri:8, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:24:45 PDT" name="dynamicContent" finished-at="2020-09-13T19:24:53 PDT" duration-ms="8070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicContent -->
+        <test-method signature="dynamicControls()[pri:9, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:24:53 PDT" name="dynamicControls" finished-at="2020-09-13T19:25:06 PDT" duration-ms="12618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicControls -->
+        <test-method signature="dynamicLoading()[pri:10, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:25:06 PDT" name="dynamicLoading" finished-at="2020-09-13T19:25:18 PDT" duration-ms="12228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicLoading -->
+        <test-method signature="fileDownload()[pri:11, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:25:18 PDT" name="fileDownload" finished-at="2020-09-13T19:25:27 PDT" duration-ms="9018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload -->
+        <test-method signature="fileUpload()[pri:12, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:25:27 PDT" name="fileUpload" finished-at="2020-09-13T19:25:36 PDT" duration-ms="9279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUpload -->
+        <test-method signature="floatMenu()[pri:13, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:25:37 PDT" name="floatMenu" finished-at="2020-09-13T19:25:43 PDT" duration-ms="6665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatMenu -->
+        <test-method signature="iFrameTest()[pri:14, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:25:43 PDT" name="iFrameTest" finished-at="2020-09-13T19:26:01 PDT" duration-ms="17548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iFrameTest -->
+        <test-method signature="mouseHoverTest()[pri:15, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:26:01 PDT" name="mouseHoverTest" finished-at="2020-09-13T19:26:07 PDT" duration-ms="6156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverTest -->
+        <test-method signature="javaScriptAlerts()[pri:16, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:26:07 PDT" name="javaScriptAlerts" finished-at="2020-09-13T19:26:14 PDT" duration-ms="6990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaScriptAlerts -->
+        <test-method signature="javaScriptError()[pri:17, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:26:14 PDT" name="javaScriptError" finished-at="2020-09-13T19:26:18 PDT" duration-ms="3803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaScriptError -->
+        <test-method signature="newTabTest()[pri:18, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:26:18 PDT" name="newTabTest" finished-at="2020-09-13T19:26:25 PDT" duration-ms="7722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTabTest -->
+        <test-method signature="notificationMessageTest()[pri:19, instance:webdriver.SDemo101@229d10bd]" started-at="2020-09-13T19:26:25 PDT" name="notificationMessageTest" finished-at="2020-09-13T19:26:33 PDT" duration-ms="7651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationMessageTest -->
+      </class> <!-- webdriver.SDemo101 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

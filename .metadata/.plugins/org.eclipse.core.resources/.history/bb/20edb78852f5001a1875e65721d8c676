@@ -1,0 +1,39 @@
+package webdriver;
+
+
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Modules {
+	
+	WebDriver driver = null;
+	String url = "http://localhost:7080";
+	//String username = "demo@unicodetechnologies.in";
+	//String password = "unicode";
+
+	@Test
+	public void openbrowser(){
+		
+		WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\MauPatel\\Downloads\\chromedriver_win32\\chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get(url);
+		
+	
+		
+	}
+
+	
+
+}

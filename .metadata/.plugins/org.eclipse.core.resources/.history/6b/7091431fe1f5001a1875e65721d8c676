@@ -1,0 +1,54 @@
+package webdriver;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
+import org.openqa.selenium.WebDriver.Window;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SDemo101 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+				System.setProperty("webdriver.chrome.driver", "C:\\Users\\MauPatel\\Downloads\\chromedriver_win32\\chromedriver.exe");
+				WebDriver driver = new ChromeDriver();
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				driver.get("http://localhost:7080");
+				
+				String pageTitle = driver.getTitle();
+				System.out.println("This is test");
+				System.out.println(pageTitle);
+				if (pageTitle == "The Internet")
+					{
+						System.out.println("The Title of the page is:-" + pageTitle);
+					}
+				/*
+				driver.findElement()
+				WebElement signINLink = driver.findElement(By.linkText("Sign In"));
+				signINLink.click();
+				
+				//driver.findElement(By.linkText("Sign In")).click();
+				
+				
+				driver.findElement(By.name("email_address")).sendKeys("demo@unicodetechnologies.in");
+				driver.findElement(By.name("password")).sendKeys("unicode");
+				
+				driver.findElement(By.id("tdb1")).click();
+				driver.findElement(By.linkText("Chetan Bhagat")).click();
+				
+				driver.findElement(By.xpath("//*[@id='tdb4']/span")).click();
+				
+				driver.findElement(By.xpath("//*[@id='tdb4']/span[2]")).click(); */
+				
+				Thread.sleep(4000);
+				driver.close();
+				
+			}
+
+		}

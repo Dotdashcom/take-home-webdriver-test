@@ -1,0 +1,43 @@
+package webdriver;
+
+
+
+import org.junit.Test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Modules {
+	
+	WebDriver driver = null;
+	String url = "http://localhost:7080";
+	//String username = "demo@unicodetechnologies.in";
+	//String password = "unicode";
+
+	@Test
+	public void openbrowser(){
+		
+		WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.get(url);
+		
+		/*System.setProperty("webdriver.chrome.driver", "D:\\Software\\Testing-Tools\\Selenium\\WebDriver\\Drivers\\IEChromeFirefox\\geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get(url);
+		
+		driver.findElement(By.linkText("Sign In")).click();
+		driver.findElement(By.name("email_address")).sendKeys(username);
+		driver.findElement(By.name("password")).sendKeys(password);
+		
+		driver.findElement(By.name("password")).sendKeys(Keys.ENTER);*/
+		
+			
+		
+	}
+
+	
+
+}

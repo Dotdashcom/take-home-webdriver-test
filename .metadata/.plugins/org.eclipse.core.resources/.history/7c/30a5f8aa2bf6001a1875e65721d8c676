@@ -1,0 +1,446 @@
+package webdriver;
+
+import static org.testng.AssertJUnit.assertEquals;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
+import org.openqa.selenium.WebDriver.Window;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By.ByXPath;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SDemo101 {
+
+	static WebDriver driver = null;
+
+	/*
+	 * public static void main(String[] args) throws InterruptedException {
+	 * 
+	 * SDemo101 ob = new SDemo101(); //ob.openBrowser("http://localhost:7080");
+	 * //WebDriver driver = new ChromeDriver();
+	 * 
+	 * System.setProperty("webdriver.chrome.driver",
+	 * "C:\\Users\\MauPatel\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	 * WebDriver driver = new ChromeDriver(); driver.manage().window().maximize();
+	 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	 * driver.get("http://localhost:7080");
+	 * 
+	 * 
+	 * //------------------------------------------------------ ob.getTitleTest();
+	 * ob.loginTest(); ob.loginFailure(); ob.checkBoxesTest(); ob.contextMenu();
+	 * ob.dragDrop(); ob.dropDown(); ob.dynamicContent(); ob.dynamicControls();
+	 * ob.dynamicLoading(); ob.fileDownload(); ob.fileUpload(); ob.floatMenu();
+	 * ob.iFrameTest(); ob.mouseHoverTest(); ob.javaScriptAlerts();
+	 * ob.javaScriptError(); ob.newTabTest(); ob.notificationMessageTest();
+	 * //------------------------------------------------------
+	 * 
+	 * }
+	 */
+	
+	public void openBrowser(String url) {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\MauPatel\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get(url);
+		// driver.get("http://localhost:7080");
+	}
+	@Test
+	public void getTitleTest() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080");
+		String pageTitle = driver.getTitle();
+		String expectedPTitle = "The Internet";
+		System.out.println(" -----------------------------------------------------");
+		System.out.println(" Test 101:- Page Title Verification ");
+		System.out.println(" -----------------------------------------------------");
+		if (pageTitle.contentEquals(expectedPTitle)) {
+			System.out.println("Title of the page is:-" + pageTitle + ": Test Passed!");
+		} else {
+			System.out.println("Title of the page is:-" + pageTitle + ": Test Failed");
+		}
+		Thread.sleep(2000);
+		driver.close();
+	}
+	@Test
+	public void loginTest() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/login");
+		driver.findElement(By.name("username")).sendKeys("tomsmith");
+		driver.findElement(By.name("password")).sendKeys("SuperSecretPassword!");
+		driver.findElement(By.xpath("//*[text()=' Login']")).click();
+		Thread.sleep(2000);
+		// WebElement loggedInTxt =
+		// driver.findElement(By.xpath("//*[contains(text(),'You logged into a secure
+		// area!')]"));
+		// String LoginSuccessTxt = loggedInTxt.getText();
+		String LoginSuccessTxt = driver.findElement(By.xpath("//*[contains(text(),'You logged into a secure area!')]"))
+				.getText();
+		System.out.println(" -----------------------------------------------------");
+		System.out.println(" Test 201:- Login Success Verification ");
+		System.out.println(" -----------------------------------------------------");
+		if (LoginSuccessTxt.contains("You logged into a secure area")) {
+			System.out.println(LoginSuccessTxt + "Test Passed");
+		} else {
+			System.out.println("Test Failed");
+		}
+		driver.close();
+	}
+
+	public void loginFailure() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/login");
+		driver.findElement(By.name("username")).sendKeys("tomsmith");
+		driver.findElement(By.name("password")).sendKeys("test!");
+		driver.findElement(By.xpath("//*[text()=' Login']")).click();
+		Thread.sleep(2000);
+		// WebElement loggedInTxt =
+		// driver.findElement(By.xpath("//*[contains(text(),'You logged into a secure
+		// area!')]"));
+		// String LoginSuccessTxt = loggedInTxt.getText();
+		try {
+			String LoginSuccessTxt = driver
+					.findElement(By.xpath("//*[contains(text(),'You logged into a secure area!')]")).getText();
+			/*
+			 * if (LoginSuccessTxt.contains("You logged into a secure area")) {
+			 * System.out.println(LoginSuccessTxt + "Test Passed"); }
+			 */
+		} catch (Exception e) {
+			String LoginFailureTxt = driver.findElement(By.xpath("//*[contains(text(),'is invalid!')]")).getText();
+			System.out.println(" -----------------------------------------------------");
+			System.out.println(" Test 301:- Login Failure Verification ");
+			System.out.println(" -----------------------------------------------------");
+			System.out.println(LoginFailureTxt);
+			System.out.println("Test Case Passed");
+		}
+		driver.close();
+	}
+
+	public void checkBoxesTest() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/checkboxes");
+		driver.findElement(By.xpath("//form[@id='checkboxes']/input[1]")).click();
+		driver.findElement(By.xpath("//form[@id='checkboxes']/input[2]")).click();
+		WebElement checkbox1 = driver.findElement(By.xpath("//form[@id='checkboxes']/input[1]"));
+		System.out.println(" -----------------------------------------------------");
+		System.out.println(" Test 401:- CheckBoxes Test - checkbox 1 checked checkbox 2 unchecked ");
+		System.out.println(" -----------------------------------------------------");
+		System.out.println("The checkbox is selection state is - " + checkbox1.isSelected());
+		System.out.println("Test Case Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void contextMenu() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser(" http://localhost:7080/context_menu");
+		Actions actions = new Actions(driver);
+		WebElement rightclick = driver.findElement(By.xpath("//div[@id='hot-spot']"));
+		actions.contextClick(rightclick).perform();
+		// Switch to the alert box - get the text and click Ok
+		Alert alert = driver.switchTo().alert();
+		System.out.println(" -----------------------------------------------------");
+		System.out.println(
+				" Test 501:- Context Menu Test - Right click - get the text from Alert - click Ok on alert box");
+		System.out.println(" -----------------------------------------------------");
+		System.out.println("Alert Text:-\n" + alert.getText());
+		System.out.println("Test Case Passed");
+		alert.accept();
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void dragDrop() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/drag_and_drop");
+		// WebElement dragdropfrom =
+		// driver.findElement(By.xpath("//div[@id='column-a']"));
+		// WebElement dragdropto =
+		// driver.findElement(By.xpath("//div[@id='column-a']"));
+		WebElement dragdropfrom = driver.findElement(By.id("column-a"));
+		WebElement dragdropto = driver.findElement(By.id("column-b"));
+		Actions action = new Actions(driver);
+		action.dragAndDrop(dragdropfrom, dragdropto).build().perform();
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 601:- Drag Box A on to Box B");
+		System.out.println("-----------------------------------------------------");
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void dropDown() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/dropdown");
+		Select dropdown = new Select(driver.findElement(By.id("dropdown")));
+		dropdown.selectByVisibleText("Option 2");
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 701:- Dropdown Test - Select option from dropdown");
+		System.out.println("-----------------------------------------------------");
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void dynamicContent() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/dynamic_content");
+		Thread.sleep(2000);
+		String str1 = driver.findElement(By.xpath("//div[contains(@class,'large-10 columns')]")).getText();
+		driver.navigate().refresh();
+		String str2 = driver.findElement(By.xpath("//div[contains(@class,'large-10 columns')]")).getText();
+		if (!str2.contains(str1)) {
+			System.out.println("Content of page changed with page reload");
+			System.out.println("Dynamic Content test passed");
+		}
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 801:- Dynamic content - content changes with Page Reload");
+		System.out.println("-----------------------------------------------------");
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void dynamicControls() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/dynamic_controls");
+		driver.findElement(By.xpath("//button[contains(text(),'Remove')]")).click();
+		WebDriverWait explicitwait = new WebDriverWait(driver, 30);
+		explicitwait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'s gone')]")));
+		String removemessage = driver.findElement(By.xpath("//p[contains(text(),'s gone')]")).getText();
+		System.out.println(removemessage + " a checkbox has been removed");
+		driver.findElement(By.xpath("//button[contains(text(),'Enable')]")).click();
+		WebElement var1 = explicitwait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='text']")));
+		var1.click();
+		String enabledmessage = driver.findElement(By.xpath("//p[contains(text(),'s enabled!')]")).getText();
+		System.out.println(enabledmessage + " Textbox is enabled/clickable");
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 901:- Dynamic controls Test - Dynamic Controls verification using Explicit Waits");
+		System.out.println("-----------------------------------------------------");
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void dynamicLoading() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/dynamic_loading/2");
+		driver.findElement(By.xpath("//button[contains(text(),'Start')]")).click();
+		WebDriverWait explicitwait = new WebDriverWait(driver, 30);
+		explicitwait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("//h4[contains(text(),'Hello World!')]")));
+		String helloworld = driver.findElement(By.xpath("//h4[contains(text(),'Hello World!')]")).getText();
+		if (helloworld.contains("Hello World")) {
+			System.out.println("-----------------------------------------------------");
+			System.out.println(" Test 1001:- Dynamic loading Test - using Explicit Waits");
+			System.out.println("-----------------------------------------------------");
+			System.out.println(" Element rendered after the fact :- " + helloworld);
+			System.out.println("Test Passed");
+		}
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void fileDownload() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/download");
+		driver.findElement(By.xpath("//a[contains(text(),'some-file')]")).click();
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 1101:- File Download Test");
+		System.out.println("-----------------------------------------------------");
+		System.out.println("Test Passed");
+		Thread.sleep(5000);
+		driver.close();
+	}
+
+	public void fileUpload() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/upload");
+		driver.findElement(By.xpath("//input[contains(@id,'file-upload')]"))
+				.sendKeys("C:/Users/MauPatel/Downloads/some-file.txt");
+		;
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[contains(@class,'button')]")).click();
+		WebDriverWait explicitwait = new WebDriverWait(driver, 30);
+		explicitwait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(text(),'File Uploaded!')]")));
+		String fileuploaded = driver.findElement(By.xpath("//h3[contains(text(),'File Uploaded!')]")).getText();
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 1201:- File Upload Test");
+		System.out.println("-----------------------------------------------------");
+		System.out.println(fileuploaded);
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void floatMenu() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/floating_menu");
+		driver.findElement(By.linkText("Home")).click();
+		String currenturl = driver.getCurrentUrl();
+		System.out.println(currenturl);
+		driver.findElement(By.linkText("News")).click();
+		String currenturl1 = driver.getCurrentUrl();
+		System.out.println(currenturl1);
+		driver.findElement(By.linkText("Contact")).click();
+		String currenturl2 = driver.getCurrentUrl();
+		System.out.println(currenturl2);
+		driver.findElement(By.linkText("About")).click();
+		String currenturl3 = driver.getCurrentUrl();
+		System.out.println(currenturl3);
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 1301:- Floating Menu Test");
+		System.out.println("-----------------------------------------------------");
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void iFrameTest() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/iframe");
+		driver.switchTo().frame("mce_0_ifr");
+		String yourcontent = driver.findElement(By.xpath("//p[contains(text(),'Your content goes here')]")).getText();
+		System.out.println("-----------------------------------------------------");
+		System.out.println(yourcontent);
+		driver.findElement(By.xpath("//p[contains(text(),'Your content goes here')]")).click();
+		driver.findElement(By.xpath("//p[contains(text(),'Your content goes here')]"))
+				.sendKeys(" --- This one is for test purpose");
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 1401:- iFrame Test");
+		System.out.println("-----------------------------------------------------");
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void mouseHoverTest() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/hovers");
+		WebElement mousehoverele = driver.findElement(By.xpath("//div[@class='figure'][1]"));
+		Actions mousehoveraction = new Actions(driver);
+		mousehoveraction.moveToElement(mousehoverele).perform();
+		mousehoveraction.moveToElement(driver.findElement(By.xpath("//h5[contains(text(),'user1')]/following::a[1]")));
+		mousehoveraction.click().build().perform();
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 1501:- mouse hover on element Test");
+		System.out.println("-----------------------------------------------------");
+		String mousehoverurl = driver.getCurrentUrl();
+		System.out.println(mousehoverurl);
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void javaScriptAlerts() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/javascript_alerts");
+		driver.findElement(By.xpath("//button[contains(text(),'Click for JS Alert')]")).click();
+		// Switch to the alert box - get the text and click Ok
+		Alert jsalert1 = driver.switchTo().alert();
+		String clickjsalert = jsalert1.getText();
+		if (clickjsalert.contains("I am a JS Alert")) {
+			System.out.println(clickjsalert);
+			System.out.println("Java Script alert message verified");
+		}
+		Assert.assertEquals(clickjsalert, "I am a JS Alert");
+		jsalert1.accept();
+		driver.findElement(By.xpath("//button[contains(text(),'Click for JS Confirm')]")).click();
+		Alert jsconfirm1 = driver.switchTo().alert();
+		String jsconfirm = jsconfirm1.getText();
+		Assert.assertEquals(jsconfirm, "I am a JS Confirm");
+		System.out.println(jsconfirm);
+		System.out.println("Java Script confirm message verified");
+		jsconfirm1.accept();
+		driver.findElement(By.xpath("//button[contains(text(),'Click for JS Prompt')]")).click();
+		Alert jsprompt1 = driver.switchTo().alert();
+		jsprompt1.sendKeys("This one is JSP Prompt entered value");
+		jsprompt1.accept();
+		String jspromptentered = driver.findElement(By.xpath("//p[contains(text(),'You entered:')]")).getText();
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 1601:- Java Script Alerts Test");
+		System.out.println("-----------------------------------------------------");
+		System.out.println(jspromptentered);
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.close();
+	}
+
+	public void javaScriptError() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/javascript_error");
+		LogEntries entries = driver.manage().logs().get(LogType.BROWSER);
+		for (LogEntry entry : entries) {
+			System.out.println(new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
+			String abc123 = new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage();
+			if (abc123.contains("Cannot read property 'xyz' of undefined")) {
+				System.out.println("Page contains error message of:- Cannot read property 'xyz' of undefined");
+				System.out.println("-----------------------------------------------------");
+				System.out.println(" Test 1701:- Java Script Error message verification");
+				System.out.println("-----------------------------------------------------");
+				System.out.println("Test Passed");
+			}
+		}
+		driver.close();
+	}
+
+	public void newTabTest() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/windows");
+		driver.findElement(By.xpath("//a[contains(text(),'Click Here')]")).click();
+		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1));
+		String newtabtxt = driver.findElement(By.xpath("//h3[contains(text(),'New Window')]")).getText();
+		if (newtabtxt.contains("New Window")) {
+			System.out.println("-----------------------------------------------------");
+			System.out.println(" Test 1801:- New Tab Test Verification");
+			System.out.println("-----------------------------------------------------");
+			System.out.println("New Tab/Window opened in the browser");
+			System.out.println("Test Passed");
+		}
+		Thread.sleep(2000);
+		driver.quit();
+	}
+
+	public void notificationMessageTest() throws InterruptedException {
+		SDemo101 ob = new SDemo101();
+		ob.openBrowser("http://localhost:7080/notification_message_rendered");
+
+		for (int i = 0; i < 5; i++) {
+			driver.findElement(By.xpath("//a[contains(text(),'Click here')]")).click();
+			String nmessage = driver.findElement(By.xpath("//div[@class='flash notice']")).getText();
+			if (nmessage.contains("Action successful") || nmessage.contains("Action unsuccesful, please try again")) {
+				System.out.println("Notification Message is:- " + nmessage);
+			} /*
+				 * else { System.out.println(nmessage); }
+				 */
+		}
+		System.out.println("-----------------------------------------------------");
+		System.out.println(" Test 1901:- Multiple Notification message Test Verification");
+		System.out.println("-----------------------------------------------------");
+		System.out.println("Test Passed");
+		Thread.sleep(2000);
+		driver.quit();
+	}
+}

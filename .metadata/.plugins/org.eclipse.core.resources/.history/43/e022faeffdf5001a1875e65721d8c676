@@ -1,0 +1,173 @@
+package webdriver;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
+import org.openqa.selenium.WebDriver.Window;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By.ByXPath;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SDemo101 {
+	
+	static WebDriver driver = null;
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+				SDemo101 ob = new SDemo101();
+				//ob.openBrowser("http://localhost:7080");
+				//WebDriver driver = new ChromeDriver();
+				/*
+				System.setProperty("webdriver.chrome.driver", "C:\\Users\\MauPatel\\Downloads\\chromedriver_win32\\chromedriver.exe");
+				WebDriver driver = new ChromeDriver();
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				driver.get("http://localhost:7080");
+				*/	
+				
+				//------------------------------------------------------
+				//ob.getTitleTest();
+				//ob.loginTest();
+				//ob.loginFailure();	
+				//ob.checkBoxesTest();
+				//ob.contextMenu();
+				ob.dragdrop();
+				
+				//------------------------------------------------------
+				/*
+				driver.findElement()
+				WebElement signINLink = driver.findElement(By.linkText("Sign In"));
+				signINLink.click();
+				
+				//driver.findElement(By.linkText("Sign In")).click();
+				
+				
+				driver.findElement(By.name("email_address")).sendKeys("demo@unicodetechnologies.in");
+				driver.findElement(By.name("password")).sendKeys("unicode");
+				
+				driver.findElement(By.id("tdb1")).click();
+				driver.findElement(By.linkText("Chetan Bhagat")).click();
+				
+				driver.findElement(By.xpath("//*[@id='tdb4']/span")).click();
+				
+				driver.findElement(By.xpath("//*[@id='tdb4']/span[2]")).click(); */
+				
+			}
+	public void openBrowser(String url) {
+				System.setProperty("webdriver.chrome.driver", "C:\\Users\\MauPatel\\Downloads\\chromedriver_win32\\chromedriver.exe");
+			    driver = new ChromeDriver();
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				driver.get(url);
+				//driver.get("http://localhost:7080");
+			}
+	public void getTitleTest() throws InterruptedException {
+				SDemo101 ob = new SDemo101();
+				ob.openBrowser("http://localhost:7080");
+				String pageTitle = driver.getTitle();
+				String expectedPTitle = "The Internet";
+				System.out.println(" -----------------------------------------------------");
+				System.out.println(" Test 101:- Page Title Verification ");
+				System.out.println(" -----------------------------------------------------");
+				if (pageTitle.contentEquals(expectedPTitle)){
+		            System.out.println("Title of the page is:-"+ pageTitle + ": Test Passed!");
+		        } else {
+		            System.out.println("Title of the page is:-"+ pageTitle + ": Test Failed");
+		        }
+				Thread.sleep(2000);
+				driver.close();	
+			}
+	public void loginTest() throws InterruptedException {
+				SDemo101 ob = new SDemo101();
+				ob.openBrowser("http://localhost:7080/login");
+				driver.findElement(By.name("username")).sendKeys("tomsmith");
+				driver.findElement(By.name("password")).sendKeys("SuperSecretPassword!");
+				driver.findElement(By.xpath("//*[text()=' Login']")).click();
+				Thread.sleep(2000);
+				//WebElement loggedInTxt = driver.findElement(By.xpath("//*[contains(text(),'You logged into a secure area!')]"));
+				//String LoginSuccessTxt = loggedInTxt.getText();
+				String LoginSuccessTxt = driver.findElement(By.xpath("//*[contains(text(),'You logged into a secure area!')]")).getText();	
+				System.out.println(" -----------------------------------------------------");
+				System.out.println(" Test 201:- Login Success Verification ");
+				System.out.println(" -----------------------------------------------------");
+				if (LoginSuccessTxt.contains("You logged into a secure area")) {
+					System.out.println(LoginSuccessTxt + "Test Passed");
+				}
+				else {
+					System.out.println("Test Failed");
+				}
+				driver.close();	
+			}
+
+	public void loginFailure() throws InterruptedException {
+				SDemo101 ob = new SDemo101();
+				ob.openBrowser("http://localhost:7080/login");
+				driver.findElement(By.name("username")).sendKeys("tomsmith");
+				driver.findElement(By.name("password")).sendKeys("test!");
+				driver.findElement(By.xpath("//*[text()=' Login']")).click();
+				Thread.sleep(2000);
+				//WebElement loggedInTxt = driver.findElement(By.xpath("//*[contains(text(),'You logged into a secure area!')]"));
+				//String LoginSuccessTxt = loggedInTxt.getText();
+				try {
+					String LoginSuccessTxt = driver.findElement(By.xpath("//*[contains(text(),'You logged into a secure area!')]")).getText();
+					/*if (LoginSuccessTxt.contains("You logged into a secure area")) {
+						System.out.println(LoginSuccessTxt + "Test Passed");
+					}*/
+				} catch (Exception e){
+					String LoginFailureTxt = driver.findElement(By.xpath("//*[contains(text(),'is invalid!')]")).getText();
+					System.out.println(" -----------------------------------------------------");
+					System.out.println(" Test 301:- Login Failure Verification ");
+					System.out.println(" -----------------------------------------------------");
+					System.out.println(LoginFailureTxt);
+					System.out.println("Test Case Passed");
+				}
+				driver.close();	
+			}
+	public void checkBoxesTest() throws InterruptedException {
+				SDemo101 ob = new SDemo101();
+				ob.openBrowser("http://localhost:7080/checkboxes");
+				driver.findElement(By.xpath("//form[@id='checkboxes']/input[1]")).click();
+				driver.findElement(By.xpath("//form[@id='checkboxes']/input[2]")).click();
+				WebElement checkbox1 = driver.findElement(By.xpath("//form[@id='checkboxes']/input[1]"));
+				System.out.println(" -----------------------------------------------------");
+				System.out.println(" Test 401:- CheckBoxes Test - checkbox 1 checked checkbox 2 unchecked ");
+				System.out.println(" -----------------------------------------------------");
+				System.out.println("The checkbox is selection state is - " + checkbox1.isSelected());
+				System.out.println("Test Case Passed");
+				Thread.sleep(2000);
+				driver.close();
+			}
+	public void contextMenu() throws InterruptedException {
+				SDemo101 ob = new SDemo101();
+				ob.openBrowser(" http://localhost:7080/context_menu");
+				Actions actions = new Actions(driver);
+				WebElement rightclick = driver.findElement(By.xpath("//div[@id='hot-spot']"));
+				actions.contextClick(rightclick).perform();
+				//Switch to the alert box - get the text and click Ok
+				Alert alert = driver.switchTo().alert();
+				System.out.println(" -----------------------------------------------------");
+				System.out.println(" Test 501:- Context Menu Test - Right click - get the text from Alert - click Ok on alert box");
+				System.out.println(" -----------------------------------------------------");
+				System.out.println("Alert Text:-\n" + alert.getText());
+				System.out.println("Test Case Passed");
+				alert.accept();
+				Thread.sleep(2000);
+				driver.close();
+		}
+	public void dragdrop() throws InterruptedException {
+				SDemo101 ob = new SDemo101();
+				ob.openBrowser("http://localhost:7080/drag_and_drop");
+				WebElement dragdropfrom = driver.findElement(By.xpath("//div[@id='column-a']"));
+				WebElement dragdropto = driver.findElement(By.xpath("//div[@id='column-a']"));
+				Actions action = new Actions(driver);
+				action.dragAndDrop(dragdropfrom, dragdropto).build().perform();
+				System.out.println(" -----------------------------------------------------");
+				System.out.println(" Test 601:- Drag Box A on to Box B");
+				System.out.println(" -----------------------------------------------------");
+				System.out.println("Test Passed");
+	}
+}
