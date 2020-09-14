@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6993" started-at="2020-09-14T17:50:47Z" finished-at="2020-09-14T17:50:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6993" started-at="2020-09-14T17:50:47Z" finished-at="2020-09-14T17:50:54Z">
+      <class name="Doctest.LoginTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Doctest.LoginTest@157632c9]" name="initialize" is-config="true" duration-ms="3605" started-at="2020-09-14T12:50:47Z" finished-at="2020-09-14T12:50:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="loginPassTest()[pri:0, instance:Doctest.LoginTest@157632c9]" name="loginPassTest" duration-ms="695" started-at="2020-09-14T12:50:51Z" finished-at="2020-09-14T12:50:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPassTest -->
+        <test-method status="PASS" signature="loginFailTest()[pri:0, instance:Doctest.LoginTest@157632c9]" name="loginFailTest" duration-ms="300" started-at="2020-09-14T12:50:51Z" finished-at="2020-09-14T12:50:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailTest -->
+        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:Doctest.LoginTest@157632c9]" name="checkboxTest" duration-ms="260" started-at="2020-09-14T12:50:52Z" finished-at="2020-09-14T12:50:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxTest -->
+        <test-method status="PASS" signature="dragAndDrop()[pri:0, instance:Doctest.LoginTest@157632c9]" name="dragAndDrop" duration-ms="1615" started-at="2020-09-14T12:50:52Z" finished-at="2020-09-14T12:50:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method status="PASS" signature="dropDown()[pri:0, instance:Doctest.LoginTest@157632c9]" name="dropDown" duration-ms="249" started-at="2020-09-14T12:50:53Z" finished-at="2020-09-14T12:50:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDown -->
+        <test-method status="PASS" signature="contextCheck()[pri:0, instance:Doctest.LoginTest@157632c9]" name="contextCheck" duration-ms="242" started-at="2020-09-14T12:50:54Z" finished-at="2020-09-14T12:50:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextCheck -->
+      </class> <!-- Doctest.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
