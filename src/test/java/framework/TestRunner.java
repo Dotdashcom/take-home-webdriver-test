@@ -38,6 +38,8 @@ public class TestRunner {
         getUrl("checkboxes");
         CheckboxesPage checkboxesPage = new CheckboxesPage(driver);
         checkboxesPage.selectCheckboxes(driver);
+        Assert.assertTrue(checkboxesPage.isChecked(driver));
+        Assert.assertTrue(checkboxesPage.isUnchecked(driver));
     }
 
     @Test
@@ -45,6 +47,7 @@ public class TestRunner {
         getUrl("context_menu");
         ContextMenuPage contextMenuPage = new ContextMenuPage(driver);
         contextMenuPage.contextMenuActions(driver);
+        Assert.assertEquals(contextMenuPage.contextMenuActions(driver), "You selected a context menu");
     }
 
     @Test
@@ -52,34 +55,42 @@ public class TestRunner {
         getUrl("drag_and_drop");
         DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
         dragAndDropPage.dragAndDropAction(driver);
+        Assert.assertEquals(dragAndDropPage.getTextFromColumnA(driver), "B");
+        Assert.assertEquals(dragAndDropPage.getTextFromColumnB(driver), "A");
     }
 
     @Test
     public void dropdown() {
         getUrl("dropdown");
         DropdownPage dropdown = new DropdownPage(driver);
-        dropdown.selectFromDropdown(driver);
+        dropdown.selectFromDropdown(driver, "1");
+        Assert.assertEquals(dropdown.getSelectedOption(driver), "Option 1");
+        dropdown.selectFromDropdown(driver, "2");
+        Assert.assertEquals(dropdown.getSelectedOption(driver), "Option 2");
     }
 
     @Test
     public void dynamicContent() {
         getUrl("dynamic_content");
         DynamicContentPage dynamicContentPage = new DynamicContentPage(driver);
-        Assert.assertFalse(dynamicContentPage.checkDynamicContent(driver));
+        Assert.assertFalse(dynamicContentPage.checkDynamicContent(driver, 3));
     }
 
     @Test
     public void dynamicControls() {
         getUrl("dynamic_controls");
         DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(driver);
-        dynamicControlsPage.checkDynamicElements(driver);
+        Assert.assertTrue(dynamicControlsPage.checkRemoveButton(driver));
+        Assert.assertTrue(dynamicControlsPage.checkAddButton(driver));
+        Assert.assertTrue(dynamicControlsPage.checkEnableButton(driver));
+        Assert.assertTrue(dynamicControlsPage.checkDisableButton(driver));
     }
 
     @Test
     public void dynamicLoading() {
         getUrl("dynamic_loading/2");
         DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage(driver);
-        dynamicLoadingPage.testDynamicLoading(driver);
+        Assert.assertTrue(dynamicLoadingPage.testDynamicLoading(driver));
     }
 
     @Test
@@ -87,13 +98,14 @@ public class TestRunner {
         getUrl("download");
         FileDownloaderPage fileDownloaderPage = new FileDownloaderPage(driver);
         fileDownloaderPage.testFileDownloader(driver);
+        Assert.assertTrue(fileDownloaderPage.isFileDownloaded("/Users/Technosoft/Downloads", "some-file.txt"));
     }
 
     @Test
     public void fileUpload() {
         getUrl("upload");
         FileUploaderPage fileUploaderPage = new FileUploaderPage(driver);
-        fileUploaderPage.testFileUploader(driver);
+        fileUploaderPage.testFileUploader(driver, "/Users/Technosoft/Downloads/some-file.txt");
         Assert.assertTrue(fileUploaderPage.isUploadSuccess(driver));
     }
 
@@ -108,22 +120,23 @@ public class TestRunner {
     public void iFrame() {
         getUrl("iframe");
         IFramePage iFramePage = new IFramePage(driver);
-        iFramePage.testIframe(driver);
+        Assert.assertTrue(iFramePage.testIframe(driver, "Some text here"));
     }
 
     @Test
     public void mouseHover() {
         getUrl("hovers");
         MouseHoverPage mouseHoverPage = new MouseHoverPage(driver);
-        mouseHoverPage.testMouseHover(driver);
-        Assert.assertTrue(mouseHoverPage.isSuccess(driver));
+        Assert.assertTrue(mouseHoverPage.testMouseHover(driver));
     }
 
     @Test
     public void javaScriptAlerts() {
         getUrl("javascript_alerts");
         JavaScriptAlertsPage javaScriptAlertsPage = new JavaScriptAlertsPage(driver);
-        Assert.assertTrue(javaScriptAlertsPage.testJavaScriptAlerts(driver));
+        Assert.assertTrue(javaScriptAlertsPage.testJsAlertButton(driver));
+        Assert.assertTrue(javaScriptAlertsPage.testJsConfirmButton(driver));
+        Assert.assertTrue(javaScriptAlertsPage.testJsPromptButton(driver, "Hello World!"));
     }
 
     @Test
@@ -148,14 +161,13 @@ public class TestRunner {
     }
 
 
-//    @After
-//    public void after() {
-//        if (driver != null) {
-//            driver.manage().deleteAllCookies();
-//            driver.quit();
-//        }
-//    }
-
+    @After
+    public void after() {
+        if (driver != null) {
+            driver.manage().deleteAllCookies();
+            driver.quit();
+        }
+    }
 
     public void getUrl (String ending) {
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");

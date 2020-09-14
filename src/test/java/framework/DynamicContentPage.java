@@ -18,26 +18,32 @@ public class DynamicContentPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public boolean checkDynamicContent (WebDriver driver) {
-        boolean isEqual = false;
+    public boolean checkDynamicContent (WebDriver driver, int numberOfRefreshes) {
+        ArrayList<String> results = new ArrayList<>();
         List<WebElement> list1 = driver.findElements(By.xpath("//div[@class='large-10 columns']"));
         ArrayList<String> text1 = new ArrayList<String>();
         for (WebElement element : list1) {
             text1.add(getTextFromElement(driver, element));
         }
         System.out.println(text1);
-        clickOnElement(driver, clickHere, "", "");
-        List<WebElement> list2 = driver.findElements(By.xpath("//div[@class='large-10 columns']"));
-        ArrayList<String> text2 = new ArrayList<String>();
-        for (WebElement element : list2) {
-            text2.add(getTextFromElement(driver, element));
+        for (int i = 0; i < numberOfRefreshes; i++) {
+            clickOnElement(driver, clickHere, "", "");
+            List<WebElement> list2 = driver.findElements(By.xpath("//div[@class='large-10 columns']"));
+            ArrayList<String> text2 = new ArrayList<String>();
+            for (WebElement element : list2) {
+                text2.add(getTextFromElement(driver, element));
+            }
+            System.out.println(text2);
+            if (text1.equals(text2)) {
+                results.add("true");
+            } else {
+                results.add("false");
+                System.out.println("Texts don't match");
+            }
         }
-        System.out.println(text2);
-        if (text1.equals(text2)) {
-            isEqual = true;
-        } else {
-            System.out.println("Texts don't match");
+        if (results.contains("true")) {
+            return true;
         }
-        return isEqual;
+        return false;
     }
 }

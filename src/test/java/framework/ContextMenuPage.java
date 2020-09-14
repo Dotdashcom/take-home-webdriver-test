@@ -15,9 +15,11 @@ public class ContextMenuPage extends BasePage{
         PageFactory.initElements(driver, this);
     }
 
-    public void contextMenuActions(WebDriver driver) {
+    public String contextMenuActions(WebDriver driver) {
         rightClick(driver, box);
         Alert alert = driver.switchTo().alert();
         alert.accept();
+        String alertText = alert.getText();
+        return alertText;
     }
 }

@@ -20,18 +20,16 @@ public class FileUploaderPage extends BasePage{
         PageFactory.initElements(driver, this);
     }
 
-    public void testFileUploader(WebDriver driver) {
-        String filePath = "/Users/Technosoft/Downloads/some-file.txt";
+    public void testFileUploader(WebDriver driver, String filePath) {
         setValue(driver, fileUploadLink, filePath);
         clickOnElement(driver, fileUploadButton, "Success: Clicked on Upload button",
                 "Failed: Unable to click on Upload button");
     }
 
     public boolean isUploadSuccess (WebDriver driver) {
-        boolean isPresent = false;
         if (isElementPresent(driver, uploadSuccessMessage)){
-            isPresent = true;
+            return true;
         }
-        return isPresent;
+        return false;
     }
 }

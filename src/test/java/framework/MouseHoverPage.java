@@ -6,36 +6,31 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MouseHoverPage extends BasePage{
-
-    @FindBy(xpath = "(//img[@alt='User Avatar'])[1]")
-    WebElement avatarImg;
-
-    @FindBy(xpath = "//*[contains(text(), 'user1')]//following-sibling::*[contains(text(), 'View profile')]")
-    WebElement viewProfileLink;
-
-    @FindBy(xpath = "//h2[contains(text(), 'Sinatra')]")
-    WebElement successText;
 
     public MouseHoverPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
-    public void testMouseHover(WebDriver driver) {
-        mouseHover(driver, avatarImg);
-        if (isElementPresent(driver, viewProfileLink)) {
-            clickOnElement(driver, viewProfileLink, "Success: Clicked on View Profile",
-                    "Failed: Unable to click on View Profile");
+    public boolean testMouseHover(WebDriver driver) {
+        ArrayList<String> results = new ArrayList<>();
+        List<WebElement> list = driver.findElements(By.xpath("//img[@alt='User Avatar']"));
+        int size = list.size();
+        for (int i = 1; i <= size; i++) {
+            String temp = "(//img[@alt='User Avatar'])["+ i +"]";
+            WebElement element = driver.findElement(By.xpath(temp));
+            mouseHover(driver, element);
+            String temp2 = "//*[contains(text(), 'user"+ i +"')]//following-sibling::*[contains(text(), 'View profile')]";
+            WebElement viewProf = driver.findElement(By.xpath(temp2));
+            if (isElementPresent(driver, viewProf)) {
+                results.add("true");
+            }
         }
-    }
-
-    public boolean isSuccess (WebDriver driver) {
-        boolean isPresent = false;
-        if (isElementPresent(driver, successText)){
-            isPresent = true;
-        }
-        return isPresent;
+        if (!results.contains("false"))
+            return true;
+        return false;
     }
 }

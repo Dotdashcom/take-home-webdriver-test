@@ -14,16 +14,18 @@ public class IFramePage extends BasePage{
     @FindBy(xpath = "//body[@id='tinymce']")
     WebElement iFrameText;
 
-    private String enterText = "Enter random text";
-
     public IFramePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
-    public void testIframe(WebDriver driver) {
+    public boolean testIframe(WebDriver driver, String text) {
         driver.switchTo().frame(iFrame);
-        iFrameText.sendKeys(enterText);
-        System.out.println("Entered text into iFrame textfield");
-
+        iFrameText.clear();
+        iFrameText.sendKeys(text);
+        String frameText = iFrameText.getText();
+        if (frameText.contains(text)) {
+            return true;
+        }
+        return false;
     }
 }

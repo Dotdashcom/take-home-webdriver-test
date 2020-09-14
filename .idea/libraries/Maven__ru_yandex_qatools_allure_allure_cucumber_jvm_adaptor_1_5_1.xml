@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.yandex.qatools.allure:allure-cucumber-jvm-adaptor:1.5.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/yandex/qatools/allure/allure-cucumber-jvm-adaptor/1.5.1/allure-cucumber-jvm-adaptor-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/yandex/qatools/allure/allure-cucumber-jvm-adaptor/1.5.1/allure-cucumber-jvm-adaptor-1.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/yandex/qatools/allure/allure-cucumber-jvm-adaptor/1.5.1/allure-cucumber-jvm-adaptor-1.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

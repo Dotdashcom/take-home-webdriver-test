@@ -15,10 +15,9 @@ public class JavaScriptErrorPage extends BasePage {
     }
 
     public boolean testJavaScriptError(WebDriver driver) {
-        boolean isErrorPresent = false;
         if (isElementPresent(driver, jsErrorMessage )) {
-            isErrorPresent = true;
+            return true;
         }
-        return isErrorPresent;
+        return false;
     }
 }

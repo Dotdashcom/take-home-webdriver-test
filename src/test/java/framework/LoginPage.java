@@ -42,19 +42,17 @@ public class LoginPage extends BasePage {
     }
 
     public boolean isLoginSuccess (WebDriver driver) {
-        boolean isPresent = false;
         if (isElementPresent(driver, logoutButton)){
-            isPresent = true;
+            return true;
         }
-        return isPresent;
+        return false;
     }
 
     public boolean isLoginFailed (WebDriver driver) {
-        boolean isPresent = false;
         if (isElementPresent(driver, loginInvalidError)){
-            isPresent = true;
+            return true;
         }
-        return isPresent;
+        return false;
     }
 
 

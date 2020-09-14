@@ -18,7 +18,6 @@ public class FloatingMenuPage extends BasePage{
     }
 
     public boolean testFloatingMenu(WebDriver driver) {
-        boolean isFloating = false;
         waitUntilElementIsPresent(driver, homeButton);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1000)");
@@ -26,8 +25,8 @@ public class FloatingMenuPage extends BasePage{
         if (isElementPresent(driver, homeButton)) {
             clickOnElement(driver, homeButton, "Success: Clicked on Home button",
                     "Failed: Unable to click on Home button");
-            isFloating = true;
+            return true;
         }
-        return isFloating;
+        return false;
     }
 }

@@ -21,4 +21,14 @@ public class DragAndDropPage extends BasePage {
     public void dragAndDropAction(WebDriver driver) {
         dragAndDrop(driver, columnA, columnB);
     }
+
+    public String getTextFromColumnA(WebDriver driver) {
+        String textA = columnA.getText();
+        return textA;
+    }
+
+    public String getTextFromColumnB(WebDriver driver) {
+        String textB = columnB.getText();
+        return textB;
+    }
 }

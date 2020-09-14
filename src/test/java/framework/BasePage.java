@@ -164,6 +164,13 @@ public class BasePage {
 		selectElement.selectByValue(value);
 	}
 
+	public String getSelectedOptionFromDropdown(WebDriver driver, WebElement element) {
+		Select selectElement = new Select(element);
+		//select element by value
+		String text = selectElement.getFirstSelectedOption().getText();
+		return text;
+	}
+
 	public void mouseHover(WebDriver driver, WebElement element) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).build().perform();

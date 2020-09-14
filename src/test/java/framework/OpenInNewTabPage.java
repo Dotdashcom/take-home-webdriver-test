@@ -18,13 +18,12 @@ public class OpenInNewTabPage extends BasePage{
     }
 
     public boolean testOpeningNewPage(WebDriver driver) {
-        boolean isSwitched = false;
         clickOnElement(driver, clickHereButton, "Success: Clicked on Click here button",
                 "Failed: Unable to click on Click here button");
         switchToChildWindow(driver);
         if (isElementPresent(driver, newWindowText)) {
-            isSwitched = true;
+            return true;
         }
-        return isSwitched;
+        return false;
     }
 }

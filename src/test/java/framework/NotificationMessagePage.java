@@ -18,13 +18,13 @@ public class NotificationMessagePage extends BasePage {
     }
 
     public boolean testNotificationMessage(WebDriver driver) {
-        boolean isNotifPresent = false;
         clickOnElement(driver, clickHereButton, "Success: Clicked on Click here button",
                 "Failed: Unable to click on Click here button");
-        if (isElementPresent(driver, notificationMessage)) {
-            isNotifPresent = true;
-            System.out.println("Notification is present: " + notificationMessage.getText());
+        String text = notificationMessage.getText();
+        System.out.println("Notification is present: " + text);
+        if (text.contains("Action")) {
+            return true;
         }
-        return isNotifPresent;
+        return false;
     }
 }

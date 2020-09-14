@@ -18,10 +18,14 @@ public class DynamicLoadingPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public void testDynamicLoading(WebDriver driver) {
+    public boolean testDynamicLoading(WebDriver driver) {
         waitUntilElementIsVisible(driver, startButton);
         clickOnElement(driver, startButton, "Success: Clicked on Start button",
                 "Failed: Unable to click on Start button");
         waitUntilElementIsVisible(driver, helloWorld);
+        if (isElementPresent(driver, helloWorld)) {
+            return true;
+        }
+        return false;
     }
 }

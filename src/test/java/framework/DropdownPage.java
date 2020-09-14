@@ -14,7 +14,12 @@ public class DropdownPage extends BasePage{
         PageFactory.initElements(driver, this);
     }
 
-    public void selectFromDropdown (WebDriver driver) {
-        selectFromDropdown(driver, dropdown, "1");
+    public void selectFromDropdown (WebDriver driver, String value) {
+        selectFromDropdown(driver, dropdown, value);
+    }
+
+    public String getSelectedOption (WebDriver driver) {
+        String selectedOption = getSelectedOptionFromDropdown(driver, dropdown);
+        return selectedOption;
     }
 }
