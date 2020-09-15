@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertTrue;
 
@@ -66,6 +68,10 @@ public class BrowserUtils {
         }
         return elemTexts;
     }
+    public static List<String> getElementsText2(List<WebElement> elements) {
+        wait.until(ExpectedConditions.visibilityOfAllElements(elements));
+        return elements.stream().map(element -> element.getText()).collect(Collectors.toList());
+    }
 
     public static List<String> getElementsText(By locator) {
 
@@ -83,6 +89,10 @@ public class BrowserUtils {
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    public static void refreshPage(){
+        driver.navigate().refresh();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }
     public static WebElement waitForVisibility(By locator, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -186,6 +196,12 @@ public class BrowserUtils {
         }
     }
 
+    public static void dragAndDrop(WebElement source, WebElement target) {
+        wait.until(ExpectedConditions.visibilityOf(source));
+        wait.until(ExpectedConditions.visibilityOf(target));
+        actions.dragAndDrop(source, target).build().perform();
+    }
+
     /**
      * Selects a random value from a dropdown list and returns the selected Web Element
      *
@@ -233,6 +249,10 @@ public class BrowserUtils {
         new Actions(Driver.getDriver()).doubleClick(element).build().perform();
     }
 
+    public static Point getElementLocation(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+        return element.getLocation();
+    }
     /**
      * Changes the HTML attribute of a Web Element to the given value using JavaScript
      *

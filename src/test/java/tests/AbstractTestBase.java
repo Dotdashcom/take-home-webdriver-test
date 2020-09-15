@@ -1,16 +1,11 @@
-package Tests;
+package tests;
 
-
-import com.aventstack.extentreports.gherkin.model.Scenario;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import utilities.BrowserUtils;
 import utilities.Driver;
 import java.util.concurrent.TimeUnit;

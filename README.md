@@ -1,4 +1,4 @@
-# Webdriver Tests
+# Webdriver tests
 ## Prerequisites
   * Docker
   + Git
@@ -20,7 +20,7 @@
 
    `http://localhost:7080`
    
-4. Use ChromeDriver to write Tests for the following scenarios in Java:
+4. Use ChromeDriver to write tests for the following scenarios in Java:
     * Login Success: http://localhost:7080/login credentials: tomsmith/SuperSecretPassword!
     + Login Failure: http://localhost:7080/login Login fail invalid creadentials
     - CheckBoxes: http://localhost:7080/checkboxes Check and uncheck boxes
