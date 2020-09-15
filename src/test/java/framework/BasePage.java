@@ -13,24 +13,24 @@ import java.util.concurrent.TimeUnit;
 
 public class BasePage {
 
-	public static WebElement webAction(WebDriver driver, final WebElement locator) {
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-				.withTimeout(15, TimeUnit.SECONDS)
-				.pollingEvery(1, TimeUnit.SECONDS)
-				.ignoring(NoSuchElementException.class)
-				.ignoring(StaleElementReferenceException.class)
-				.ignoring(ElementNotFoundException.class)
-				.withMessage(
-						"Webdriver waited for 15 seconds but still could not find the element therefore Timeout Exception has been thrown");
-
-		WebElement element = wait.until(new Function<WebDriver, WebElement>() {
-			public WebElement apply(WebDriver driver) {
-				return driver.findElement(toByVal(locator));
-			}
-		});
-
-		return element;
-	}
+//	public static WebElement webAction(WebDriver driver, final WebElement locator) {
+//		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+//				.withTimeout(15, TimeUnit.SECONDS)
+//				.pollingEvery(1, TimeUnit.SECONDS)
+//				.ignoring(NoSuchElementException.class)
+//				.ignoring(StaleElementReferenceException.class)
+//				.ignoring(ElementNotFoundException.class)
+//				.withMessage(
+//						"Webdriver waited for 15 seconds but still could not find the element therefore Timeout Exception has been thrown");
+//
+//		WebElement element = wait.until(new Function<WebDriver, WebElement>() {
+//			public WebElement apply(WebDriver driver) {
+//				return driver.findElement(toByVal(locator));
+//			}
+//		});
+//
+//		return element;
+//	}
 
 	public void clickOnElement(WebDriver driver, WebElement locator, String successMessage, String failureMessage) {
 		WebElement web = null;
