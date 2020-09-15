@@ -5,6 +5,7 @@ import org.junit.Test;
 import pages.*;
 import utilities.BrowserUtils;
 
+import java.io.IOException;
 import java.util.List;
 
 public class TestsPage extends AbstractTestBase {
@@ -15,6 +16,9 @@ public class TestsPage extends AbstractTestBase {
     DropdownPage dropdownPage = new DropdownPage();
     DynamicContentPage dynamicContentPage = new DynamicContentPage();
     DynamicControlsPages dynamicControlsPages = new DynamicControlsPages();
+    DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage();
+    FileDownloadPage fileDownloadPage = new FileDownloadPage();
+    FileUploadPage fileUploadPage = new FileUploadPage();
 
 
     @Test
@@ -66,6 +70,32 @@ public class TestsPage extends AbstractTestBase {
     @Test
     public void DynamicControls(){
         dynamicControlsPages.getConnection("DynamicControls");
+        dynamicControlsPages.checkBoxChecking();
+        dynamicControlsPages.checkEnabledButton();
+
+    }
+
+    @Test
+    public void DynamicLoading(){
+        dynamicLoadingPage.getConnection("DynamicLoading");
+        dynamicLoadingPage.checkLoadingFunctionality();
+
+    }
+
+    @Test
+    public void FileDownload() throws IOException {
+        fileDownloadPage.getConnection("FileDownload");
+        fileDownloadPage.downloadFile();
+        int fileName =BrowserUtils.getFileName("some-file.txt");
+        Assert.assertEquals(1, fileName);
+
+    }
+
+    @Test
+    public void FileUpload(){
+        fileUploadPage.getConnection("FileUpload");
+        fileUploadPage.uploadFile();
+
 
     }
 }

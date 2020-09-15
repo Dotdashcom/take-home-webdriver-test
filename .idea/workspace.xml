@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4873d5bb-8b8e-4c61-8766-4f911d97e590" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AbstractTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AbstractTestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DynamicControlsPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DynamicControlsPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BrowserUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,71 +46,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.TestsPage.DynamicContent">
-    <configuration name="TestsPage.Checkboxes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="take-home-webdriver-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
-      <option name="METHOD_NAME" value="Checkboxes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestsPage.ContextMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="take-home-webdriver-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
-      <option name="METHOD_NAME" value="ContextMenu" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestsPage.DragAndDrop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="take-home-webdriver-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
-      <option name="METHOD_NAME" value="DragAndDrop" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestsPage.Dropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="take-home-webdriver-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
-      <option name="METHOD_NAME" value="Dropdown" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestsPage.FileUpload">
     <configuration name="TestsPage.DynamicContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="take-home-webdriver-test" />
       <extension name="coverage">
@@ -129,13 +68,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestsPage.DynamicControls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
+      <option name="METHOD_NAME" value="DynamicControls" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsPage.DynamicLoading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
+      <option name="METHOD_NAME" value="DynamicLoading" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsPage.FileDownload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
+      <option name="METHOD_NAME" value="FileDownload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsPage.FileUpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
+      <option name="METHOD_NAME" value="FileUpload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestsPage.FileUpload" />
+        <item itemvalue="JUnit.TestsPage.FileDownload" />
+        <item itemvalue="JUnit.TestsPage.DynamicLoading" />
+        <item itemvalue="JUnit.TestsPage.DynamicControls" />
         <item itemvalue="JUnit.TestsPage.DynamicContent" />
-        <item itemvalue="JUnit.TestsPage.Dropdown" />
-        <item itemvalue="JUnit.TestsPage.DragAndDrop" />
-        <item itemvalue="JUnit.TestsPage.ContextMenu" />
-        <item itemvalue="JUnit.TestsPage.Checkboxes" />
       </list>
     </recent_temporary>
   </component>
@@ -159,21 +162,21 @@
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="895" y="413" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1920.1002@0.23.1920.1002" timestamp="1600122214354" />
-    <state width="1580" height="264" key="GridCell.Tab.0.bottom" timestamp="1600181930619">
+    <state width="1580" height="79" key="GridCell.Tab.0.bottom" timestamp="1600204996718">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state width="1580" height="264" key="GridCell.Tab.0.bottom/0.23.1920.1002@0.23.1920.1002" timestamp="1600181930619" />
-    <state width="1580" height="264" key="GridCell.Tab.0.center" timestamp="1600181930618">
+    <state width="1580" height="79" key="GridCell.Tab.0.bottom/0.23.1920.1002@0.23.1920.1002" timestamp="1600204996718" />
+    <state width="1580" height="79" key="GridCell.Tab.0.center" timestamp="1600204996717">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state width="1580" height="264" key="GridCell.Tab.0.center/0.23.1920.1002@0.23.1920.1002" timestamp="1600181930618" />
-    <state width="1580" height="264" key="GridCell.Tab.0.left" timestamp="1600181930618">
+    <state width="1580" height="79" key="GridCell.Tab.0.center/0.23.1920.1002@0.23.1920.1002" timestamp="1600204996717" />
+    <state width="1580" height="79" key="GridCell.Tab.0.left" timestamp="1600204996716">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state width="1580" height="264" key="GridCell.Tab.0.left/0.23.1920.1002@0.23.1920.1002" timestamp="1600181930618" />
-    <state width="1580" height="264" key="GridCell.Tab.0.right" timestamp="1600181930619">
+    <state width="1580" height="79" key="GridCell.Tab.0.left/0.23.1920.1002@0.23.1920.1002" timestamp="1600204996716" />
+    <state width="1580" height="79" key="GridCell.Tab.0.right" timestamp="1600204996717">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state width="1580" height="264" key="GridCell.Tab.0.right/0.23.1920.1002@0.23.1920.1002" timestamp="1600181930619" />
+    <state width="1580" height="79" key="GridCell.Tab.0.right/0.23.1920.1002@0.23.1920.1002" timestamp="1600204996717" />
   </component>
 </project>
