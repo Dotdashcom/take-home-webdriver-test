@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll" parallel="false">
+
+    <test name="order">
+        <classes>
+            <class name="CheckBoxTest"/>
+            <class name="ContextMenuTest"/>
+            <class name="DragAndDropTest"/>
+            <class name="DropDownTest"/>
+            <class name="DynamicContentTest"/>
+            <class name="DynamicControlsTest"/>
+            <class name="DynamicLoadingTest"/>
+            <class name="FileDownloadTest"/>
+            <class name="FileUploadTest"/>
+            <class name="FloatingMenuTest"/>
+            <class name="HoverTest"/>
+            <class name="IframeTest"/>
+            <class name="JavaScriptsAlertsTest"/>
+            <class name="JavaScriptErrorTest"/>
+            <class name="LoginTest"/>
+            <class name="NotificationMessageTest"/>
+            <class name="WindowsTest"/>
+        </classes>
+    </test>
+</suite>
