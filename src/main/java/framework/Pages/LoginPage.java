@@ -26,12 +26,6 @@ public class LoginPage {
     WebElement loginErrorAlert;
 
     public void login(String username, String password) {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         userNameField.sendKeys(username);
         passwordField.sendKeys(password);
         loginButton.click();

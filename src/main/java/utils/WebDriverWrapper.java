@@ -21,17 +21,6 @@ public class WebDriverWrapper {
     public static void launchApplication(){
 
         System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir") + "/src/main/java/utils/drivers/chromedriver"));
-
-        folder = new File((System.getProperty("user.dir") + "/src/main/java/utils"), "downloads");
-        Boolean bool = folder.mkdir();
-        String folderPath = (System.getProperty("user.dir") + "/src/main/java/utils/downloads");
-        if (bool) {
-            System.out.println("Directory created");
-
-        } else {
-            System.out.println("Directory not created");
-        }
-
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -46,10 +35,6 @@ public class WebDriverWrapper {
 			driver.manage().deleteAllCookies();
 			driver.quit();
 
-			for(File file : folder.listFiles()){
-			    file.delete();
-            }
-            folder.delete();
 		}
 	}
 
