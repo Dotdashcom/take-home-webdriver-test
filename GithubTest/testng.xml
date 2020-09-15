@@ -1,0 +1,114 @@
+<suite name = "Suite">
+
+    <test name = "Test1">
+        <classes>
+            <class name = "webdrivertestcases.CheckAndUncheckTest" />
+        </classes>
+    </test>
+
+    <test name = "Test2">
+        <classes>
+            <class name = "webdrivertestcases.ContextMenuTest" />
+        </classes>
+    </test>
+
+    <test name = "Test3">
+        <classes>
+            <class name = "webdrivertestcases.DragAndDropTest" />
+        </classes>
+    </test>
+
+    <test name = "Test4">
+        <classes>
+            <class name = "webdrivertestcases.DropDownListTest" />
+        </classes>
+    </test>
+
+    <test name = "Test5">
+        <classes>
+            <class name = "webdrivertestcases.DynamicContentTest" />
+        </classes>
+    </test>
+
+    <test name = "Test6">
+        <classes>
+            <class name = "webdrivertestcases.DynamicControlTest" />
+        </classes>
+    </test>
+
+    <test name = "Test7">
+        <classes>
+            <class name = "webdrivertestcases.DynamicLoadingTest" />
+        </classes>
+    </test>
+
+    <test name = "Test8">
+        <classes>
+            <class name = "webdrivertestcases.FileDownloaderTest" />
+        </classes>
+    </test>
+
+    <test name = "Test9">
+        <classes>
+            <class name = "webdrivertestcases.FileUploadTest" />
+        </classes>
+    </test>
+
+    <test name = "Test10">
+        <classes>
+            <class name = "webdrivertestcases.FloatingMenuTest" />
+        </classes>
+    </test>
+
+    <test name = "Test11">
+        <classes>
+            <class name = "webdrivertestcases.iFrameTest" />
+        </classes>
+    </test>
+
+    <test name = "Test12">
+        <classes>
+            <class name = "webdrivertestcases.JavaScriptAlertTest" />
+        </classes>
+    </test>
+
+    <test name = "Test13">
+        <classes>
+            <class name = "webdrivertestcases.JavaScriptErrorTest" />
+        </classes>
+    </test>
+
+    <test name = "Test14">
+        <classes>
+            <class name = "webdrivertestcases.LoginFailureTest" />
+        </classes>
+    </test>
+
+    <test name = "Test15">
+        <classes>
+            <class name = "webdrivertestcases.LoginSuccessTest" />
+        </classes>
+    </test>
+
+    <test name = "Test16">
+        <classes>
+            <class name = "webdrivertestcases.MouseHoverTest" />
+        </classes>
+    </test>
+
+    <test name = "Test17">
+        <classes>
+            <class name = "webdrivertestcases.NewTabTest" />
+        </classes>
+    </test>
+
+    <test name = "Test18">
+        <classes>
+            <class name = "webdrivertestcases.NotificationMessageTest" />
+        </classes>
+    </test>
+
+
+
+
+</suite>
