@@ -5,6 +5,8 @@ package webdriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -27,40 +29,31 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+@Test
 public class SDemo101 {
 
 	static WebDriver driver = null;
 
-	/*
-	 * public static void main(String[] args) throws InterruptedException {
-	 * 
-	 * SDemo101 ob = new SDemo101(); 
-	 * 
-	 * 
-	 * //------------------------------------------------------ 
-	 * ob.getTitleTest();
-	 * ob.loginTest(); 
-	 * ob.loginFailure();
-	 * ob.checkBoxesTest(); 
-	 * ob.contextMenu();
-	 * ob.dragDrop(); 
-	 * ob.dropDown(); 
-	 * ob.dynamicContent(); 
-	 * ob.dynamicControls();
-	 * ob.dynamicLoading(); 
-	 * ob.fileDownload(); 
-	 * ob.fileUpload();
-	 * ob.floatMenu();
-	 * ob.iFrameTest(); 
-	 * ob.mouseHoverTest();
-	 * ob.javaScriptAlerts();
-	 * ob.javaScriptError();
-	 * ob.newTabTest();
-	 * ob.notificationMessageTest();
-	 * //------------------------------------------------------
-	 * 
-	 * }
-	 */
+	
+	  public static void main(String[] args) throws InterruptedException {
+	  
+	  SDemo101 ob = new SDemo101(); 
+	  
+	  
+	  //------------------------------------------------------ 
+	  //ob.getTitleTest();
+		
+		/*
+		 * ob.loginTest(); ob.loginFailure(); ob.checkBoxesTest(); ob.contextMenu();
+		 * ob.dragDrop(); ob.dropDown(); ob.dynamicContent(); ob.dynamicControls();
+		 * ob.dynamicLoading(); ob.fileDownload(); ob.fileUpload(); ob.floatMenu();
+		 * ob.iFrameTest(); ob.mouseHoverTest(); ob.javaScriptAlerts();
+		 * ob.javaScriptError(); ob.newTabTest(); ob.notificationMessageTest();
+		 */		 
+	  //------------------------------------------------------
+	  
+	  }
+	 
 	
 	public void openBrowser(String url) {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\KomPatel\\Downloads\\chromedriver_win32\\chromedriver.exe");
@@ -76,6 +69,7 @@ public class SDemo101 {
 		ob.openBrowser("http://localhost:7080");
 		String pageTitle = driver.getTitle();
 		String expectedPTitle = "The Internet";
+	    assertEquals(pageTitle, expectedPTitle);
 		System.out.println(" -----------------------------------------------------");
 		System.out.println(" Test 101:- Page Title Verification ");
 		System.out.println(" -----------------------------------------------------");
@@ -370,7 +364,7 @@ public class SDemo101 {
 			System.out.println(clickjsalert);
 			System.out.println("Java Script alert message verified");
 		}
-		Assert.assertEquals(clickjsalert, "I am a JS Alert");
+		assertEquals(clickjsalert, "I am a JS Alert");
 		jsalert1.accept();
 		driver.findElement(By.xpath("//button[contains(text(),'Click for JS Confirm')]")).click();
 		Alert jsconfirm1 = driver.switchTo().alert();
