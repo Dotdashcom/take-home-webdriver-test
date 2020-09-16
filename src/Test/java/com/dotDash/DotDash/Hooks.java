@@ -25,6 +25,7 @@ public class Hooks {
 	OpenNewTabPage ontp;
 	NotificationPage np;
 	IFramePage ip;
+	MouseHoverPageFactory mhpf;
 	SoftAssert sf;
 	String actual;
 	String expected;
@@ -50,7 +51,8 @@ public class Hooks {
 	   ontp = new OpenNewTabPage(driver);
 	   	 np = new NotificationPage(driver);
 	   	 ip = new IFramePage(driver);
- 	}
+	   mhpf = new MouseHoverPageFactory(driver);
+	}
 	
 	@AfterMethod
 	public void tearDown() {

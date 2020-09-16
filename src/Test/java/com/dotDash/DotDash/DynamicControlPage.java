@@ -12,16 +12,23 @@ public class DynamicControlPage {
 
 	
 	@FindBy(xpath="//form[@id='checkbox-example']//button")
-	public static WebElement checkBoxBtn;
+	public static WebElement removeBtn;
 
 	@FindBy(xpath="//form[@id='input-example']//button")
 	public static WebElement inputBoxBtn;
-	
-	public WebElement checkBoxBtn() {
-		return checkBoxBtn;
+
+	public WebElement removeBtn() {
+		return removeBtn;
 	}
 	public WebElement inputBoxBtn() {
 		return inputBoxBtn;
+	}
+	
+	@FindBy(xpath = "//p[@id='message']")
+	public static WebElement text;
+	
+	public WebElement text() {
+		return text;
 	}
 }
 

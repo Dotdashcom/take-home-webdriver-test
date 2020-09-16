@@ -111,37 +111,46 @@ public class AllTest extends Hooks{
 		sf = new SoftAssert();
 		driver.get("http://localhost:7080/dropdown");
 		Select s = new Select(ddp.dropdown());
+		
 		s.selectByValue("1");
+		sf.assertEquals(s.getFirstSelectedOption().isSelected(), true);
 		s.selectByValue("2");
+		sf.assertEquals(ddp.dropdown().isSelected(), false);
+		sf.assertAll();
 	}
 
 	@Test
 	public void dynamicContent() {
+		sf = new SoftAssert();
 		driver.get("http://localhost:7080/dynamic_content");
 		expected = dcp.contentText().getText();
 		driver.navigate().refresh();
+		driver.navigate().refresh();
 		actual = dcp.contentText().getText();
-		if(actual.equals(expected)) {
-		}
-		else {
-			System.out.println("Content Cahnged.");
-		}
+		sf.assertNotEquals(actual, expected);
+		
+		sf.assertAll();
 	}
 
 	@Test
 	public void dynamicControls() {
+		sf =  new SoftAssert();
 		driver.get("http://localhost:7080/dynamic_controls ");
 		WebDriverWait wait = new WebDriverWait(driver, 1000);
+		dcop.removeBtn().click();
+		wait.until(ExpectedConditions.elementToBeClickable(dcop.removeBtn()));
+		sf.assertEquals(dcop.text().getText(), "It's gone!");
+		dcop.removeBtn().click();
+		wait.until(ExpectedConditions.elementToBeClickable(dcop.removeBtn()));
+		sf.assertEquals(dcop.text().getText(), "It's back!");
 		dcop.inputBoxBtn().click();
 		wait.until(ExpectedConditions.elementToBeClickable(dcop.inputBoxBtn()));
-		dcop.checkBoxBtn().click();
-		wait.until(ExpectedConditions.elementToBeClickable(dcop.checkBoxBtn()));
+		sf.assertEquals(dcop.text().getText(), "It's enabled!");
 		dcop.inputBoxBtn().click();
 		wait.until(ExpectedConditions.elementToBeClickable(dcop.inputBoxBtn()));
-
-	
-
-	}
+		sf.assertEquals(dcop.text().getText(), "It's disabled!");
+		sf.assertAll();
+}
 
 	@Test
 	public void dynamicLoading() {
@@ -183,10 +192,10 @@ public class AllTest extends Hooks{
 		driver.get("http://localhost:7080/floating_menu");
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0,7200)", "");
-		sf.assertEquals(fmp.homeBtn().getText(), "Home");
-		sf.assertEquals(fmp.newsBtn().getText(), "News");
-		sf.assertEquals(fmp.contactBtn().getText(), "Contact");
-		sf.assertEquals(fmp.aboutBtn().getText(), "About");
+		sf.assertEquals(fmp.homeBtn().isDisplayed(), true);
+		sf.assertEquals(fmp.newsBtn().isDisplayed(), true);
+		sf.assertEquals(fmp.contactBtn().isDisplayed(), true);
+		sf.assertEquals(fmp.aboutBtn().isDisplayed(), true);
 		sf.assertAll();			 
 	}
 
@@ -195,7 +204,26 @@ public class AllTest extends Hooks{
 		sf= new SoftAssert();
 		driver.get("http://localhost:7080/iframe");
 		driver.switchTo().frame("mce_0_ifr");
-		ip.textBox().sendKeys("test-pass");
+		ip.textBox().clear();
+		ip.textBox().sendKeys("test-passed!");
+		sf.assertEquals(ip.textBox().getText(), "test-passed!");
+		sf.assertAll();
+	}
+	
+	
+	@Test
+	public void mouseHover() {
+		sf = new SoftAssert();
+		driver.get("http://localhost:7080/hovers");
+		Actions action = new Actions(driver);
+		action.moveToElement(mhpf.firstPic()).build().perform();
+		sf.assertEquals(mhpf.firstPopUp().getText(), "name: user1");
+		action.moveToElement(mhpf.secondPic()).build().perform();
+		sf.assertEquals(mhpf.secondPopUp().getText(), "name: user2");
+		action.moveToElement(mhpf.thirdPic()).build().perform();
+		sf.assertEquals(mhpf.thirdPopUp().getText(), "name: user3");
+		sf.assertAll();
+		
 	}
 
 
@@ -227,6 +255,7 @@ public class AllTest extends Hooks{
 		sf = new SoftAssert();
 		driver.get(" http://localhost:7080/javascript_error");
 		LogEntries a = driver.manage().logs().get(LogType.BROWSER);
+		
 		sf.assertAll();
 		System.out.println("Error Note : " + a);
 	}
@@ -245,7 +274,8 @@ public class AllTest extends Hooks{
 		sf = new SoftAssert();
 		driver.get("http://localhost:7080/notification_message_rendered");
 		np.newMessageBtn().click();
-		sf.assertEquals(np.notificationMessage().getText(), "Action unsuccesful, please try again!");
+		sf.assertEquals(np.notificationMessage().getText(), "Action unsuccesful, please try again\r\n" + 
+				"×");
 		sf.assertAll();
 		
 	}
