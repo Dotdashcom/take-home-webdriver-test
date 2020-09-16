@@ -1,0 +1,1 @@
+Exercise to upload the file to the container either by Upload button or drag/drop

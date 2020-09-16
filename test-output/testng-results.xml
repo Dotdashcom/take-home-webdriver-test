@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="18" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="254085" started-at="2020-09-16T13:41:37Z" finished-at="2020-09-16T13:45:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="254085" started-at="2020-09-16T13:41:37Z" finished-at="2020-09-16T13:45:51Z">
+      <class name="main.java.Taketest">
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase1" duration-ms="15688" started-at="2020-09-16T09:41:37Z" finished-at="2020-09-16T09:41:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method status="PASS" signature="testcase10()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase10" duration-ms="14804" started-at="2020-09-16T09:41:52Z" finished-at="2020-09-16T09:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase10 -->
+        <test-method status="PASS" signature="testcase11()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase11" duration-ms="12840" started-at="2020-09-16T09:42:07Z" finished-at="2020-09-16T09:42:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase11 -->
+        <test-method status="PASS" signature="testcase12()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase12" duration-ms="12178" started-at="2020-09-16T09:42:20Z" finished-at="2020-09-16T09:42:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase12 -->
+        <test-method status="PASS" signature="testcase13()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase13" duration-ms="12483" started-at="2020-09-16T09:42:32Z" finished-at="2020-09-16T09:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase13 -->
+        <test-method status="PASS" signature="testcase14()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase14" duration-ms="12230" started-at="2020-09-16T09:42:45Z" finished-at="2020-09-16T09:42:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase14 -->
+        <test-method status="PASS" signature="testcase15()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase15" duration-ms="14265" started-at="2020-09-16T09:42:57Z" finished-at="2020-09-16T09:43:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase15 -->
+        <test-method status="FAIL" signature="testcase16()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase16" duration-ms="7825" started-at="2020-09-16T09:43:11Z" finished-at="2020-09-16T09:43:19Z">
+          <exception class="org.openqa.selenium.UnsupportedCommandException">
+            <message>
+              <![CDATA[unknown command: Cannot call non W3C standard command while in W3C mode
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIMA', ip: '192.168.86.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\nazim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a5cdb00b08f94fc3b7875432dafd8894]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnsupportedCommandException: unknown command: Cannot call non W3C standard command while in W3C mode
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIMA', ip: '192.168.86.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\nazim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a5cdb00b08f94fc3b7875432dafd8894
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:33)
+	at org.openqa.selenium.remote.RemoteLogs.getAvailableLogTypes(RemoteLogs.java:106)
+	at main.java.Taketest.testcase16(Taketest.java:284)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase16 -->
+        <test-method status="PASS" signature="testcase17()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase17" duration-ms="15978" started-at="2020-09-16T09:43:19Z" finished-at="2020-09-16T09:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase17 -->
+        <test-method status="FAIL" signature="testcase18()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase18" duration-ms="14128" started-at="2020-09-16T09:43:35Z" finished-at="2020-09-16T09:43:49Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIMA', ip: '192.168.86.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\nazim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 130a00f98f9d72bf297df2e49e286176]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIMA', ip: '192.168.86.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\nazim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 130a00f98f9d72bf297df2e49e286176
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at main.java.Taketest.testcase18(Taketest.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase18 -->
+        <test-method status="PASS" signature="testcase2()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase2" duration-ms="14601" started-at="2020-09-16T09:43:49Z" finished-at="2020-09-16T09:44:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="testcase3()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase3" duration-ms="11857" started-at="2020-09-16T09:44:04Z" finished-at="2020-09-16T09:44:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method status="PASS" signature="testcase4()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase4" duration-ms="13426" started-at="2020-09-16T09:44:16Z" finished-at="2020-09-16T09:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+        <test-method status="PASS" signature="testcase5()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase5" duration-ms="14777" started-at="2020-09-16T09:44:29Z" finished-at="2020-09-16T09:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5 -->
+        <test-method status="PASS" signature="testcase6()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase6" duration-ms="12106" started-at="2020-09-16T09:44:44Z" finished-at="2020-09-16T09:44:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase6 -->
+        <test-method status="PASS" signature="testcase7()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase7" duration-ms="16373" started-at="2020-09-16T09:44:56Z" finished-at="2020-09-16T09:45:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase7 -->
+        <test-method status="PASS" signature="testcase8()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase8" duration-ms="21599" started-at="2020-09-16T09:45:12Z" finished-at="2020-09-16T09:45:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase8 -->
+        <test-method status="PASS" signature="testcase9()[pri:0, instance:main.java.Taketest@735b5592]" name="testcase9" duration-ms="16869" started-at="2020-09-16T09:45:34Z" finished-at="2020-09-16T09:45:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase9 -->
+      </class> <!-- main.java.Taketest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
