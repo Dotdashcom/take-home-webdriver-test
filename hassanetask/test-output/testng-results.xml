@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15961" started-at="2020-09-14T11:38:46 CDT" finished-at="2020-09-14T11:39:02 CDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15961" started-at="2020-09-14T11:38:46 CDT" finished-at="2020-09-14T11:39:02 CDT">
+      <class name="TestSteps.ChechboxesTest">
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:TestSteps.ChechboxesTest@61f8bee4]" name="launchbrowser" is-config="true" duration-ms="9619" started-at="2020-09-14T11:38:46 CDT" finished-at="2020-09-14T11:38:56 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method status="PASS" signature="checkbox_and_incheckbox()[pri:0, instance:TestSteps.ChechboxesTest@61f8bee4]" name="checkbox_and_incheckbox" duration-ms="6165" started-at="2020-09-14T11:38:56 CDT" finished-at="2020-09-14T11:39:02 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox_and_incheckbox -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestSteps.ChechboxesTest@61f8bee4]" name="teardown" is-config="true" duration-ms="118" started-at="2020-09-14T11:39:02 CDT" finished-at="2020-09-14T11:39:02 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestSteps.ChechboxesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
