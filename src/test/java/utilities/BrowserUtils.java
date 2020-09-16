@@ -15,6 +15,7 @@ import java.nio.file.Path;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -55,6 +56,18 @@ public class BrowserUtils {
         Driver.getDriver().switchTo().window(origin);
     }
 
+    public static  void switchToWindow( String expected, String actual ){
+        Set<String> windowHandles = driver.getWindowHandles();
+        Iterator<String> iterator = windowHandles.iterator();
+        String currentWindowHandle = driver.getWindowHandle();
+        while (iterator.hasNext()){
+            String newHandle = iterator.next();
+            if(!newHandle.equalsIgnoreCase(currentWindowHandle)){
+                driver.switchTo().window(newHandle);
+                Assert.assertEquals(actual,expected);
+            }
+        }
+    }
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(element).perform();
@@ -73,6 +86,20 @@ public class BrowserUtils {
         }
         return elemTexts;
     }
+
+    public static String enterTextInFrameElement(WebElement frame, WebElement element, String text) {
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frame));
+        driver.switchTo().parentFrame();
+        wait.until(ExpectedConditions.visibilityOf(element));
+        for(int i=0; i<25; i++){
+            element.sendKeys(Keys.DELETE);
+        }
+        element.sendKeys(text);
+        String textNeeded = element.getText();
+        driver.switchTo().defaultContent();
+        return textNeeded;
+    }
+
     public static List<String> getElementsText2(List<WebElement> elements) {
         wait.until(ExpectedConditions.visibilityOfAllElements(elements));
         return elements.stream().map(element -> element.getText()).collect(Collectors.toList());
@@ -249,7 +276,7 @@ public class BrowserUtils {
      *
      * @param element
      */
-    public void scrollToElement(WebElement element) {
+    public static void scrollToElement(WebElement element) {
         ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 

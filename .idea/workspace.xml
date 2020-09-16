@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4873d5bb-8b8e-4c61-8766-4f911d97e590" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DynamicControlsPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DynamicControlsPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/FileUploadPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/FileUploadPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BrowserUtils.java" afterDir="false" />
     </list>
@@ -51,71 +52,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestsPage.FileUpload">
-    <configuration name="TestsPage.DynamicContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="take-home-webdriver-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
-      <option name="METHOD_NAME" value="DynamicContent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestsPage.DynamicControls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="take-home-webdriver-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
-      <option name="METHOD_NAME" value="DynamicControls" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestsPage.DynamicLoading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="take-home-webdriver-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
-      <option name="METHOD_NAME" value="DynamicLoading" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestsPage.FileDownload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="take-home-webdriver-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
-      <option name="METHOD_NAME" value="FileDownload" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestsPage.JavaScriptAlerts">
     <configuration name="TestsPage.FileUpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="take-home-webdriver-test" />
       <extension name="coverage">
@@ -132,13 +69,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestsPage.FloatingMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
+      <option name="METHOD_NAME" value="FloatingMenu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsPage.Iframe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
+      <option name="METHOD_NAME" value="Iframe" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsPage.JavaScriptAlerts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
+      <option name="METHOD_NAME" value="JavaScriptAlerts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsPage.MouseHover" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestsPage" />
+      <option name="METHOD_NAME" value="MouseHover" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestsPage.JavaScriptAlerts" />
+        <item itemvalue="JUnit.TestsPage.MouseHover" />
+        <item itemvalue="JUnit.TestsPage.Iframe" />
+        <item itemvalue="JUnit.TestsPage.FloatingMenu" />
         <item itemvalue="JUnit.TestsPage.FileUpload" />
-        <item itemvalue="JUnit.TestsPage.FileDownload" />
-        <item itemvalue="JUnit.TestsPage.DynamicLoading" />
-        <item itemvalue="JUnit.TestsPage.DynamicControls" />
-        <item itemvalue="JUnit.TestsPage.DynamicContent" />
       </list>
     </recent_temporary>
   </component>
@@ -162,21 +163,21 @@
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="895" y="413" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1920.1002@0.23.1920.1002" timestamp="1600122214354" />
-    <state width="1580" height="79" key="GridCell.Tab.0.bottom" timestamp="1600204996718">
+    <state width="1580" height="248" key="GridCell.Tab.0.bottom" timestamp="1600222342123">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state width="1580" height="79" key="GridCell.Tab.0.bottom/0.23.1920.1002@0.23.1920.1002" timestamp="1600204996718" />
-    <state width="1580" height="79" key="GridCell.Tab.0.center" timestamp="1600204996717">
+    <state width="1580" height="248" key="GridCell.Tab.0.bottom/0.23.1920.1002@0.23.1920.1002" timestamp="1600222342123" />
+    <state width="1580" height="248" key="GridCell.Tab.0.center" timestamp="1600222342122">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state width="1580" height="79" key="GridCell.Tab.0.center/0.23.1920.1002@0.23.1920.1002" timestamp="1600204996717" />
-    <state width="1580" height="79" key="GridCell.Tab.0.left" timestamp="1600204996716">
+    <state width="1580" height="248" key="GridCell.Tab.0.center/0.23.1920.1002@0.23.1920.1002" timestamp="1600222342122" />
+    <state width="1580" height="248" key="GridCell.Tab.0.left" timestamp="1600222342121">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state width="1580" height="79" key="GridCell.Tab.0.left/0.23.1920.1002@0.23.1920.1002" timestamp="1600204996716" />
-    <state width="1580" height="79" key="GridCell.Tab.0.right" timestamp="1600204996717">
+    <state width="1580" height="248" key="GridCell.Tab.0.left/0.23.1920.1002@0.23.1920.1002" timestamp="1600222342121" />
+    <state width="1580" height="248" key="GridCell.Tab.0.right" timestamp="1600222342122">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state width="1580" height="79" key="GridCell.Tab.0.right/0.23.1920.1002@0.23.1920.1002" timestamp="1600204996717" />
+    <state width="1580" height="248" key="GridCell.Tab.0.right/0.23.1920.1002@0.23.1920.1002" timestamp="1600222342122" />
   </component>
 </project>
