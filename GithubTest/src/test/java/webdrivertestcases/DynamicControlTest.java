@@ -9,7 +9,8 @@ public class DynamicControlTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/dynamic_controls");
+        // baseURI + path parameter
+        driver.get(baseURI + "/dynamic_controls");
     }
 
     @Test

@@ -12,7 +12,8 @@ public class DynamicLoadingTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/dynamic_loading/2");
+        driver.get(baseURI + "/dynamic_loading/2");
+        // driver.get("http://localhost:7080/dynamic_loading/2");
     }
 
     @Test

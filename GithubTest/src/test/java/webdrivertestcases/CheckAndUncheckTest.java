@@ -12,7 +12,7 @@ public class CheckAndUncheckTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/checkboxes");
+        driver.get(baseURI + "/checkboxes");
     }
 
     @Test

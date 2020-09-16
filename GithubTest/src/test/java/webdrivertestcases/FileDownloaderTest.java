@@ -18,6 +18,7 @@ public class FileDownloaderTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
+        driver.get(baseURI + "/download");
         driver.get("http://localhost:7080/download");
     }
 

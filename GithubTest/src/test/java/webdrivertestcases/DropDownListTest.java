@@ -18,7 +18,7 @@ public class DropDownListTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/dropdown");
+        driver.get(baseURI + "/dropdown");
     }
 
     @Test

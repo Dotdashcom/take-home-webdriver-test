@@ -13,7 +13,7 @@ public class FloatingMenuTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/floating_menu");
+        driver.get(baseURI + "/floating_menu");
     }
 
     @Test

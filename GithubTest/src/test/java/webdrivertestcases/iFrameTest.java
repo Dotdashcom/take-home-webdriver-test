@@ -13,7 +13,7 @@ public class iFrameTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/iframe");
+        driver.get(baseURI + "/iframe");
     }
 
     @Test

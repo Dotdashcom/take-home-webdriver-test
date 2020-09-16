@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Base {
     public static WebDriver driver;
+    public static String baseURI;
 
     @Test
     public static  WebDriver getDriver() {
@@ -24,6 +25,8 @@ public class Base {
         // Initializing the webdriver using the webdrivermanager dependency
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+
+        baseURI = "http://localhost:7080";
 
         // To maximize a window
         driver.manage().window().maximize();

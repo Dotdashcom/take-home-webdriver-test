@@ -26,7 +26,7 @@ public class ContextMenuTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/context_menu");
+        driver.get(baseURI + "/context_menu");
     }
 
     @Test

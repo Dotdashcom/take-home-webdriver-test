@@ -18,7 +18,7 @@ public class DynamicContentTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/dynamic_content");
+        driver.get(baseURI + "/dynamic_content");
     }
 
     @Test

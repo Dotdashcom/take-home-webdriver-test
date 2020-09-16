@@ -21,7 +21,7 @@ public class MouseHoverTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/hovers");
+        driver.get(baseURI + "/hovers");
     }
 
     @Test

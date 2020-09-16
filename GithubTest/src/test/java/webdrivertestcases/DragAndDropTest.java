@@ -18,7 +18,7 @@ public class DragAndDropTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/drag_and_drop");
+        driver.get(baseURI + "/drag_and_drop");
     }
 
     @Test

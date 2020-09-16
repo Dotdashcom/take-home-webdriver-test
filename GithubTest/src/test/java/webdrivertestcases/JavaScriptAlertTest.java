@@ -25,7 +25,7 @@ public class JavaScriptAlertTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/javascript_alerts");
+        driver.get(baseURI + "/javascript_alerts");
     }
 
     @Test

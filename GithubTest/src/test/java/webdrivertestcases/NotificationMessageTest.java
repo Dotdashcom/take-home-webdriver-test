@@ -13,7 +13,7 @@ public class NotificationMessageTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/notification_message_rendered");
+        driver.get(baseURI + "/notification_message_rendered");
     }
 
     @Test

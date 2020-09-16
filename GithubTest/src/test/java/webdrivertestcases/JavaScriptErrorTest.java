@@ -14,7 +14,7 @@ public class JavaScriptErrorTest extends Base {
     @BeforeTest
     public void setup(){
         driver = getDriver();
-        driver.get("http://localhost:7080/javascript_error");
+        driver.get(baseURI + "/javascript_error");
     }
 
     @Test
