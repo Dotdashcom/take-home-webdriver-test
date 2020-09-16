@@ -25,6 +25,7 @@ public class TestsPage extends AbstractTestBase {
     JavaScriptAlertsPage javaScriptAlertsPage = new JavaScriptAlertsPage();
     JavaScriptErrorPage javaScriptErrorPage = new JavaScriptErrorPage();
     OpenInNewTabPage openInNewTabPage = new OpenInNewTabPage();
+    NotificationMessagePage notificationMessagePage = new NotificationMessagePage();
 
 
     @Test
@@ -144,6 +145,12 @@ public class TestsPage extends AbstractTestBase {
     public void OpenInNewTab(){
         openInNewTabPage.getConnection("OpenInNewTab");
         openInNewTabPage.checkNewWindow();
+
+    }
+    @Test
+    public void NotificationMessage(){
+        notificationMessagePage.getConnection("NotificationMessage");
+        notificationMessagePage.click();
 
     }
 }

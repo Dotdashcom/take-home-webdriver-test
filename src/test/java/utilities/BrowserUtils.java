@@ -68,6 +68,16 @@ public class BrowserUtils {
             }
         }
     }
+
+    public static void notificationMessageAlert(WebElement element, String messageText) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+        if (!element.getText().equalsIgnoreCase(" Action successful")) {
+            element.click();
+        } else if (element.getText().equalsIgnoreCase(" Action successful")){
+
+            Assert.assertEquals(messageText, element.getText());
+
+        }}
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(element).perform();
