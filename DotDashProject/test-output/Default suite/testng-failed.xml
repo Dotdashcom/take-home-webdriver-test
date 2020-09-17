@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NotificationMessage">
+      <class name="com.Test.MouseHoverTest">
         <methods>
-          <include name="NotificationMessage"/>
+          <include name="MouseHover"/>
+          <include name="setupDriver"/>
+          <include name="Driver"/>
         </methods>
-      </class> <!-- NotificationMessage -->
+      </class> <!-- com.Test.MouseHoverTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
