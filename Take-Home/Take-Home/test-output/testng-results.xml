@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10425" started-at="2020-09-17T12:18:13 EDT" finished-at="2020-09-17T12:18:23 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10425" started-at="2020-09-17T12:18:13 EDT" finished-at="2020-09-17T12:18:23 EDT">
+      <class name="Scripts.dragandDrop">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Scripts.dragandDrop@711f39f9]" name="setup" is-config="true" duration-ms="1584" started-at="2020-09-17T12:18:13 EDT" finished-at="2020-09-17T12:18:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="logger()[pri:0, instance:Scripts.dragandDrop@711f39f9]" name="logger" duration-ms="5650" started-at="2020-09-17T12:18:14 EDT" finished-at="2020-09-17T12:18:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Scripts.dragandDrop@711f39f9]" name="teardown" is-config="true" duration-ms="3161" started-at="2020-09-17T12:18:20 EDT" finished-at="2020-09-17T12:18:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Scripts.dragandDrop -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
