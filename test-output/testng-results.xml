@@ -1,41 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6993" started-at="2020-09-14T17:50:47Z" finished-at="2020-09-14T17:50:54Z">
+  <suite name="Suite" duration-ms="34932" started-at="2020-09-17T04:32:39Z" finished-at="2020-09-17T04:33:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6993" started-at="2020-09-14T17:50:47Z" finished-at="2020-09-14T17:50:54Z">
+    <test name="Test" duration-ms="34932" started-at="2020-09-17T04:32:39Z" finished-at="2020-09-17T04:33:14Z">
       <class name="Doctest.LoginTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Doctest.LoginTest@157632c9]" name="initialize" is-config="true" duration-ms="3605" started-at="2020-09-14T12:50:47Z" finished-at="2020-09-14T12:50:51Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Doctest.LoginTest@64c87930]" name="initialize" is-config="true" duration-ms="4285" started-at="2020-09-16T23:32:39Z" finished-at="2020-09-16T23:32:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="loginPassTest()[pri:0, instance:Doctest.LoginTest@157632c9]" name="loginPassTest" duration-ms="695" started-at="2020-09-14T12:50:51Z" finished-at="2020-09-14T12:50:51Z">
+        <test-method status="PASS" signature="loginPassTest()[pri:0, instance:Doctest.LoginTest@64c87930]" name="loginPassTest" duration-ms="2100" started-at="2020-09-16T23:32:44Z" finished-at="2020-09-16T23:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPassTest -->
-        <test-method status="PASS" signature="loginFailTest()[pri:0, instance:Doctest.LoginTest@157632c9]" name="loginFailTest" duration-ms="300" started-at="2020-09-14T12:50:51Z" finished-at="2020-09-14T12:50:52Z">
+        <test-method status="PASS" signature="loginFailTest()[pri:0, instance:Doctest.LoginTest@64c87930]" name="loginFailTest" duration-ms="677" started-at="2020-09-16T23:32:46Z" finished-at="2020-09-16T23:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFailTest -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:Doctest.LoginTest@157632c9]" name="checkboxTest" duration-ms="260" started-at="2020-09-14T12:50:52Z" finished-at="2020-09-14T12:50:52Z">
+        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:Doctest.LoginTest@64c87930]" name="checkboxTest" duration-ms="629" started-at="2020-09-16T23:32:46Z" finished-at="2020-09-16T23:32:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="dragAndDrop()[pri:0, instance:Doctest.LoginTest@157632c9]" name="dragAndDrop" duration-ms="1615" started-at="2020-09-14T12:50:52Z" finished-at="2020-09-14T12:50:53Z">
+        <test-method status="PASS" signature="dragAndDrop()[pri:0, instance:Doctest.LoginTest@64c87930]" name="dragAndDrop" duration-ms="2726" started-at="2020-09-16T23:32:47Z" finished-at="2020-09-16T23:32:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dragAndDrop -->
-        <test-method status="PASS" signature="dropDown()[pri:0, instance:Doctest.LoginTest@157632c9]" name="dropDown" duration-ms="249" started-at="2020-09-14T12:50:53Z" finished-at="2020-09-14T12:50:54Z">
+        <test-method status="PASS" signature="dropDown()[pri:0, instance:Doctest.LoginTest@64c87930]" name="dropDown" duration-ms="498" started-at="2020-09-16T23:32:50Z" finished-at="2020-09-16T23:32:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropDown -->
-        <test-method status="PASS" signature="contextCheck()[pri:0, instance:Doctest.LoginTest@157632c9]" name="contextCheck" duration-ms="242" started-at="2020-09-14T12:50:54Z" finished-at="2020-09-14T12:50:54Z">
+        <test-method status="PASS" signature="refreshClick()[pri:0, instance:Doctest.LoginTest@64c87930]" name="refreshClick" duration-ms="589" started-at="2020-09-16T23:32:50Z" finished-at="2020-09-16T23:32:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshClick -->
+        <test-method status="PASS" signature="explicitWt()[pri:0, instance:Doctest.LoginTest@64c87930]" name="explicitWt" duration-ms="7611" started-at="2020-09-16T23:32:51Z" finished-at="2020-09-16T23:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- explicitWt -->
+        <test-method status="PASS" signature="explicitwts()[pri:0, instance:Doctest.LoginTest@64c87930]" name="explicitwts" duration-ms="5521" started-at="2020-09-16T23:32:59Z" finished-at="2020-09-16T23:33:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- explicitwts -->
+        <test-method status="PASS" signature="downloadFile()[pri:0, instance:Doctest.LoginTest@64c87930]" name="downloadFile" duration-ms="450" started-at="2020-09-16T23:33:04Z" finished-at="2020-09-16T23:33:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadFile -->
+        <test-method status="PASS" signature="uploadFile()[pri:0, instance:Doctest.LoginTest@64c87930]" name="uploadFile" duration-ms="655" started-at="2020-09-16T23:33:04Z" finished-at="2020-09-16T23:33:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFile -->
+        <test-method status="PASS" signature="iFrametest()[pri:0, instance:Doctest.LoginTest@64c87930]" name="iFrametest" duration-ms="686" started-at="2020-09-16T23:33:05Z" finished-at="2020-09-16T23:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iFrametest -->
+        <test-method status="PASS" signature="mouseHover()[pri:0, instance:Doctest.LoginTest@64c87930]" name="mouseHover" duration-ms="845" started-at="2020-09-16T23:33:06Z" finished-at="2020-09-16T23:33:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHover -->
+        <test-method status="PASS" signature="JsAlertClick()[pri:0, instance:Doctest.LoginTest@64c87930]" name="JsAlertClick" duration-ms="740" started-at="2020-09-16T23:33:07Z" finished-at="2020-09-16T23:33:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JsAlertClick -->
+        <test-method status="PASS" signature="newTabClick()[pri:0, instance:Doctest.LoginTest@64c87930]" name="newTabClick" duration-ms="487" started-at="2020-09-16T23:33:07Z" finished-at="2020-09-16T23:33:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTabClick -->
+        <test-method status="PASS" signature="contextCheck()[pri:0, instance:Doctest.LoginTest@64c87930]" name="contextCheck" duration-ms="5427" started-at="2020-09-16T23:33:08Z" finished-at="2020-09-16T23:33:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contextCheck -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Doctest.LoginTest@64c87930]" name="teardown" is-config="true" duration-ms="937" started-at="2020-09-16T23:33:13Z" finished-at="2020-09-16T23:33:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- Doctest.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
