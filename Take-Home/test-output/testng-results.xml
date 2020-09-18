@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9552" started-at="2020-09-17T18:35:08 EDT" finished-at="2020-09-17T18:35:17 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9552" started-at="2020-09-17T18:35:08 EDT" finished-at="2020-09-17T18:35:17 EDT">
+      <class name="take.homw.script.Script">
+        <test-method status="PASS" signature="startup()[pri:0, instance:take.homw.script.Script@3aeaafa6]" name="startup" is-config="true" duration-ms="67" started-at="2020-09-17T18:35:08 EDT" finished-at="2020-09-17T18:35:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.Script@3aeaafa6]" name="setup" is-config="true" duration-ms="1648" started-at="2020-09-17T18:35:08 EDT" finished-at="2020-09-17T18:35:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login_Success()[pri:0, instance:take.homw.script.Script@3aeaafa6]" name="login_Success" duration-ms="2500" started-at="2020-09-17T18:35:09 EDT" finished-at="2020-09-17T18:35:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_Success -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.Script@3aeaafa6]" name="tearDown" is-config="true" duration-ms="5129" started-at="2020-09-17T18:35:12 EDT" finished-at="2020-09-17T18:35:17 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_Success status=SUCCESS method=Script.login_Success()[pri:0, instance:take.homw.script.Script@3aeaafa6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:take.homw.script.Script@3aeaafa6]" name="afterAllTests" is-config="true" duration-ms="185" started-at="2020-09-17T18:35:17 EDT" finished-at="2020-09-17T18:35:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAllTests -->
+      </class> <!-- take.homw.script.Script -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
