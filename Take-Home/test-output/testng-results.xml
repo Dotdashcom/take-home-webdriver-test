@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10219" started-at="2020-09-18T19:02:38 EDT" finished-at="2020-09-18T19:02:49 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10219" started-at="2020-09-18T19:02:38 EDT" finished-at="2020-09-18T19:02:49 EDT">
+      <class name="gmail.pitias4work.com.Upload">
+        <test-method status="PASS" signature="startup()[pri:0, instance:gmail.pitias4work.com.Upload@3aeaafa6]" name="startup" is-config="true" duration-ms="67" started-at="2020-09-18T19:02:38 EDT" finished-at="2020-09-18T19:02:38 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:gmail.pitias4work.com.Upload@3aeaafa6]" name="setup" is-config="true" duration-ms="1540" started-at="2020-09-18T19:02:38 EDT" finished-at="2020-09-18T19:02:40 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="upload()[pri:0, instance:gmail.pitias4work.com.Upload@3aeaafa6]" name="upload" duration-ms="3282" started-at="2020-09-18T19:02:40 EDT" finished-at="2020-09-18T19:02:43 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:gmail.pitias4work.com.Upload@3aeaafa6]" name="tearDown" is-config="true" duration-ms="5134" started-at="2020-09-18T19:02:43 EDT" finished-at="2020-09-18T19:02:48 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=upload status=SUCCESS method=Upload.upload()[pri:0, instance:gmail.pitias4work.com.Upload@3aeaafa6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:gmail.pitias4work.com.Upload@3aeaafa6]" name="afterAllTests" is-config="true" duration-ms="172" started-at="2020-09-18T19:02:48 EDT" finished-at="2020-09-18T19:02:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAllTests -->
+      </class> <!-- gmail.pitias4work.com.Upload -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

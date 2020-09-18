@@ -1,0 +1,40 @@
+package gmail.pitias4work.com;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import com.library.pitias.Base;
+
+public class FloatingMenu extends Base {
+
+	Logger logger = Logger.getLogger(Base.class);
+
+	public void Floater() {
+
+		try {
+			driver.get("http://localhost:7080/floating_menu");
+			logger.info("Title is :"+driver.getTitle());
+			
+			assertEquals(driver.getTitle(), "The Internet");
+
+			// Test scrolls the page.
+
+			lib.scrollDown(2000);
+
+			// Test asserts that the floating menu is still displayed.
+			WebElement scroll = driver.findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]/a"));
+			assertTrue(scroll.isDisplayed());
+
+			lib.customWait(2);
+
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+			test.error(e.getMessage());
+		}
+
+	}
+}
