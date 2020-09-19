@@ -5,13 +5,14 @@ import static org.testng.Assert.assertEquals;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 import com.library.pitias.Base;
 
 public class DragandDrop extends Base {
 	Logger logger = Logger.getLogger(Base.class);
 
-	
+	@Test
 	public void dragandDrop() {
 
 		try {
