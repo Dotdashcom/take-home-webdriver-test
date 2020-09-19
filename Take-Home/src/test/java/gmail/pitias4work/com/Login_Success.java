@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class Login_Success extends Base {
@@ -34,6 +35,7 @@ public class Login_Success extends Base {
 			String URL = driver.getCurrentUrl();
 
 			assertEquals(URL, url);
+			test.log(Status.INFO, "User Link Assertion Success!!");
 
 		} catch (Exception e) {
 			logger.error(e.getMessage());

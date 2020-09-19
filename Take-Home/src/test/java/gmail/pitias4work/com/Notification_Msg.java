@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class Notification_Msg extends Base {
@@ -53,9 +54,11 @@ public class Notification_Msg extends Base {
 
 			if (msg.contains("Action unsuccesful, please try again")) {
 				assertTrue(true);
+				test.log(Status.INFO, "Assertion Success!!");
 			} else if (msg.contains("Action successful")) {
 				assertTrue(true);
-			}
+				test.log(Status.INFO, "Assertion Success!!");
+			}  else { test.log(Status.FAIL, "Assertion Success!!");}
 
 			lib.customWait(2);
 

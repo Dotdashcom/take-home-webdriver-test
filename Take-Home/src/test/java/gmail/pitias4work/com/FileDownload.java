@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 @Test
@@ -28,6 +29,7 @@ public class FileDownload extends Base {
 			check = lib.isFileDownloaded("/Users/pitiasfessahaie/Downloads", "some-file.txt");
 			lib.customWait(8);
 			assertTrue(check);
+			test.log(Status.INFO, "Download Compelete Assert Success!!");
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

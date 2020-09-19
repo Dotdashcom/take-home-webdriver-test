@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class DynamicContent extends Base {
@@ -33,6 +34,7 @@ public class DynamicContent extends Base {
 				for (WebElement image : images) {
 					if (image.getAttribute("src").contains(imageFileName)) {
 						assertTrue(false);
+						test.log(Status.FAIL, "Assertion Fail!!");
 					}
 				}
 				lib.customWait(3);

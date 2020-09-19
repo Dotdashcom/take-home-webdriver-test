@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class DynamicLoading extends Base {
@@ -29,6 +30,7 @@ public class DynamicLoading extends Base {
 			// Assertion
 			System.out.println(finish.getText());
 			assertEquals(finish.getText(), "Hello World!");
+			test.log(Status.INFO, "Hello World! Assert Success!!");
 
 			Thread.sleep(3000);
 

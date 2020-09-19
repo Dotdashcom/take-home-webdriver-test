@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class FloatingMenu extends Base {
@@ -27,6 +28,7 @@ public class FloatingMenu extends Base {
 			// Test asserts that the floating menu is still displayed.
 			WebElement scroll = driver.findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]/a"));
 			assertTrue(scroll.isDisplayed());
+			test.log(Status.INFO, "Scroll is Displayed Assert Success!!");
 
 			lib.customWait(2);
 

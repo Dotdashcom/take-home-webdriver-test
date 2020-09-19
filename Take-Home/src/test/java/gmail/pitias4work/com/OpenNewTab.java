@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class OpenNewTab extends Base {
@@ -16,6 +17,7 @@ public class OpenNewTab extends Base {
 			driver.get("http://localhost:7080/windows");
 			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
+			
 
 			// Test clicks on the Click Here link.
 
@@ -34,6 +36,7 @@ public class OpenNewTab extends Base {
 			WebElement text = driver.findElement(By.xpath("/html/body/div/h3"));
 			logger.info(text.getText());
 			assertEquals(text.getText(), "New Window");
+			test.log(Status.INFO, "New Window Assertion Success!!");
 
 			lib.customWait(3);
 

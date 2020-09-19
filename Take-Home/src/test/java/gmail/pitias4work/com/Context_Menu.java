@@ -8,6 +8,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class Context_Menu extends Base {
@@ -28,6 +29,7 @@ public class Context_Menu extends Base {
 
 			Alert alert = driver.switchTo().alert();
 			assertEquals(alert.getText(), text);
+			test.log(Status.INFO, "Assert Success!!");
 
 			alert.accept();
 

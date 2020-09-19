@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class Upload extends Base {
@@ -34,8 +35,10 @@ public class Upload extends Base {
 
 			if (driver.findElement(By.cssSelector("#uploaded-files")).isDisplayed()) {
 				assertTrue(true, "The File is uploaded sucessfully");
+				test.log(Status.INFO, "File uploaded Assertion Success!!");
 			} else {
 				assertTrue(false, "The File did not uploaded ");
+				test.log(Status.FAIL, "File not uploaded Assertion Fail!!");
 			}
 
 			lib.customWait(2);

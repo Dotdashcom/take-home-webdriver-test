@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class CheckBox extends Base {
@@ -22,10 +23,11 @@ public class CheckBox extends Base {
 			WebElement checkbox2 = driver.findElement(By.xpath("//body//input[2]"));
 
 			if (checkbox1.isSelected()) {
-				logger.info("The checkbox 1 is selected");
+				test.log(Status.INFO, "Checkbox 1 Selected");
 			} else {
 				lib.click(checkbox1);
 				logger.info("The checkbox 1 is clicked");
+				test.log(Status.INFO, "Checkbox 1 Selected");
 			}
 
 			if (checkbox2.isSelected()) {
@@ -33,6 +35,7 @@ public class CheckBox extends Base {
 			} else {
 				lib.click(checkbox2);
 				logger.info("The checkbox 2 is clicked");
+				test.log(Status.INFO, "Checkbox 2 Selected");
 			}
 
 		} catch (Exception e) {

@@ -6,6 +6,7 @@ import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class JavaScript_Error extends Base {
@@ -32,7 +33,7 @@ public class JavaScript_Error extends Base {
 
 			logger.info("Page Error :" + error.substring(64));
 			assertEquals(error.substring(64), "Cannot read property 'xyz' of undefined");
-
+			test.log(Status.INFO, "Console Error Assertion Success!!");
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 			test.error(e.getMessage());

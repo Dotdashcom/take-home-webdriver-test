@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 @Test
@@ -26,6 +27,7 @@ public class DropDown extends Base {
 			// Assertion Method
 			String selectedText = lib.readDropDown(dropdown);
 			assertEquals(selectedText, "Option 1");
+			test.log(Status.INFO, "Assert Success!!");
 
 			lib.customWait(2);
 

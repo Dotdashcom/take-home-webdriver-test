@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class DragandDrop extends Base {
@@ -35,10 +36,12 @@ public class DragandDrop extends Base {
 			if (textB.equals("A")) {
 				
 				logger.info("PASS: File dropped successfull");
+				test.log(Status.INFO, "Assert Success!!");
 				//assertTrue(false);
 			} else {
 				
 				logger.info("FAIL: File doesn't doped as expected");
+				test.log(Status.INFO, "Assert not Verified");
 				//assertTrue(false);
 			}
 

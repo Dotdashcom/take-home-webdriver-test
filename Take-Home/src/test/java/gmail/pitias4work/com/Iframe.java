@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class Iframe extends Base {
@@ -21,10 +22,12 @@ public class Iframe extends Base {
 			// Test switches to Iframe and types some text.
 			driver.switchTo().frame(0);
 			WebElement sentence = driver.findElement(By.cssSelector("#tinymce"));
-			sentence.sendKeys("I love RTR !!!");
+			sentence.sendKeys("I love USA !!!");
 
 			// Test asserts that the typed text is as expected.
-			assertEquals(sentence.getText(), "Your content goes here.I love RTR !!!");
+			assertEquals(sentence.getText(), "Your content goes here.I love USA !!!");
+			test.log(Status.INFO, "Text Assertion Success!!");
+			
 
 			lib.customWait(2);
 
