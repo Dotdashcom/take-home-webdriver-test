@@ -1,7 +1,6 @@
 package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,14 +9,14 @@ import com.library.pitias.Base;
 
 public class Login_Success extends Base {
 	Logger logger = Logger.getLogger(Base.class);
-	
+
 	String url;
-	
+
 	public void logger() {
 
 		try {
 			driver.get("http://localhost:7080/login");
-			logger.info("Title is :"+driver.getTitle());
+			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 			// put the user name
 			WebElement name = driver.findElement(By.cssSelector("#username"));

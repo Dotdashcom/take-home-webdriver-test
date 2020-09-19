@@ -9,9 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.library.pitias.Base;
+
 @Test
 public class FileDownload extends Base {
-Logger logger = Logger.getLogger(Base.class);
+	Logger logger = Logger.getLogger(Base.class);
 
 	boolean check = false;
 
@@ -27,8 +28,6 @@ Logger logger = Logger.getLogger(Base.class);
 			check = lib.isFileDownloaded("/Users/pitiasfessahaie/Downloads", "some-file.txt");
 			lib.customWait(5);
 			assertTrue(check);
-
-			
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

@@ -8,15 +8,16 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.library.pitias.Base;
+
 @Test
 public class DropDown extends Base {
 	Logger logger = Logger.getLogger(Base.class);
-	
+
 	public void dropDown() {
 
 		try {
 			driver.get("http://localhost:7080/dropdown");
-			logger.info("Verify Title :"+driver.getTitle());
+			logger.info("Verify Title :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
 			WebElement dropdown = driver.findElement(By.cssSelector("#dropdown"));

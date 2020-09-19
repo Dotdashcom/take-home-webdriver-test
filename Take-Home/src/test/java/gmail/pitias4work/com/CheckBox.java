@@ -10,11 +10,12 @@ import com.library.pitias.Base;
 
 public class CheckBox extends Base {
 	Logger logger = Logger.getLogger(Base.class);
+
 	public void box() {
 
 		try {
 			driver.get("http://localhost:7080/checkboxes");
-			logger.info("Title is :"+driver.getTitle());
+			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
 			WebElement checkbox1 = driver.findElement(By.xpath("//body//input[1]"));
@@ -38,6 +39,5 @@ public class CheckBox extends Base {
 			System.out.println(e.getMessage());
 			test.error(e.getMessage());
 		}
-
 	}
 }

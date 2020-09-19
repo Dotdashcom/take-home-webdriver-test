@@ -2,7 +2,6 @@ package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -17,8 +16,8 @@ public class FloatingMenu extends Base {
 
 		try {
 			driver.get("http://localhost:7080/floating_menu");
-			logger.info("Title is :"+driver.getTitle());
-			
+			logger.info("Title is :" + driver.getTitle());
+
 			assertEquals(driver.getTitle(), "The Internet");
 
 			// Test scrolls the page.

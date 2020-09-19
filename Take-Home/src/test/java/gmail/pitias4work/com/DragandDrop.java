@@ -8,8 +8,9 @@ import org.openqa.selenium.WebElement;
 
 import com.library.pitias.Base;
 
-public class DragandDrop extends Base {
+    public class DragandDrop extends Base {
 	Logger logger = Logger.getLogger(Base.class);
+	
 	public void dragandDrop() {
 
 		try {
@@ -37,6 +38,4 @@ public class DragandDrop extends Base {
 			logger.error(e.getMessage());
 			test.error(e.getMessage());
 		}
-
-	}
-}
+}}

@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="gmail.pitias4work.com.Login_failer">
         <methods>
           <include name="afterAllTests"/>
@@ -12,6 +13,17 @@
           <include name="login_fail"/>
         </methods>
       </class> <!-- gmail.pitias4work.com.Login_failer -->
+=======
+      <class name="take.homw.script.Script">
+        <methods>
+          <include name="login_fail"/>
+          <include name="afterAllTests"/>
+          <include name="startup"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- take.homw.script.Script -->
+>>>>>>> branch 'master' of https://github.com/PitiasFessahaie/take-home-webdriver-test.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

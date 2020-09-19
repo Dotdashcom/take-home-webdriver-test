@@ -5,7 +5,6 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -22,7 +21,7 @@ public class Notification_Msg extends Base {
 
 		try {
 			driver.get("http://localhost:7080/notification_message_rendered");
-			logger.info("Title is :"+driver.getTitle());
+			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
 			// Test clicks on the Click Here link a multiple times.

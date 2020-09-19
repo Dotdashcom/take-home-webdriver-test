@@ -1,7 +1,6 @@
 package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
@@ -9,9 +8,8 @@ import org.openqa.selenium.logging.LogType;
 
 import com.library.pitias.Base;
 
-
 public class JavaScript_Error extends Base {
-	
+
 	Logger logger = Logger.getLogger(Base.class);
 
 	public void jse() {

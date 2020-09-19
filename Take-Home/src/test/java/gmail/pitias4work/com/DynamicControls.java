@@ -2,13 +2,11 @@ package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.library.pitias.Base;
-
 
 public class DynamicControls extends Base {
 	Logger logger = Logger.getLogger(Base.class);
@@ -18,9 +16,9 @@ public class DynamicControls extends Base {
 	public void dynamic_Control() {
 
 		try {
-			
+
 			driver.get("http://localhost:7080/dynamic_controls");
-			logger.info("Title is :"+driver.getTitle());
+			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 			// Test clicks on the Remove Button and uses explicit wait.
 

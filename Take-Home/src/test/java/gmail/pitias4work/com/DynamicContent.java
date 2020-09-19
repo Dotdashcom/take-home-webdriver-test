@@ -13,12 +13,12 @@ import com.library.pitias.Base;
 
 public class DynamicContent extends Base {
 	Logger logger = Logger.getLogger(Base.class);
-	
+
 	public void dynamic_Content() {
 
 		try {
 			driver.get("http://localhost:7080/dynamic_content");
-			logger.info("Title is :"+driver.getTitle());
+			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
 			String locate = "//body//div[@id='content']//div[@id='content']//div[1]//div[1]//img[1]";

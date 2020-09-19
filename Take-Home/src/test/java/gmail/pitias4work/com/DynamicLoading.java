@@ -10,13 +10,13 @@ import com.library.pitias.Base;
 
 public class DynamicLoading extends Base {
 	Logger logger = Logger.getLogger(Base.class);
-	
+
 	public void dynamic_Loading() {
 
 		try {
-			
+
 			driver.get("http://localhost:7080/dynamic_loading/2");
-			logger.info("Title is :"+driver.getTitle());
+			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
 			WebElement start = driver.findElement(By.xpath("//*[@id=\"start\"]/button"));

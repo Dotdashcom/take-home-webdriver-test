@@ -1,7 +1,6 @@
 package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -9,15 +8,15 @@ import org.openqa.selenium.WebElement;
 
 import com.library.pitias.Base;
 
-
 public class JavaAlert extends Base {
-Logger logger = Logger.getLogger(Base.class);
+	Logger logger = Logger.getLogger(Base.class);
+
 	public void alert() {
 
 		try {
-			
+
 			driver.get("http://localhost:7080/javascript_alerts");
-			logger.info("Title is :"+driver.getTitle());
+			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
 			// Test Clicks on JS Alert Button.
@@ -52,7 +51,7 @@ Logger logger = Logger.getLogger(Base.class);
 //			Test asserts that the alert message contains the typed message.
 			WebElement result = driver.findElement(By.cssSelector("#result"));
 			String msg = result.getText().substring(13);
-			logger.info("Message is :"+result.getText().substring(13));
+			logger.info("Message is :" + result.getText().substring(13));
 			lib.customWait(1);
 
 //		Test asserts that the alert message contains the typed message.

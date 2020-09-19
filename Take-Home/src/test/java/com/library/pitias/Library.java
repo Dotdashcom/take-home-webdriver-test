@@ -144,37 +144,43 @@ public class Library {
 			e.printStackTrace();
 		}
 	}
-	public void dragandDrop(WebElement source,WebElement dest) {
+
+	public void dragandDrop(WebElement source, WebElement dest) {
 		Actions action = new Actions(driver);
 		action.moveToElement(source).clickAndHold(source).moveToElement(dest).release(source).build().perform();
 		customWait(2);
 	}
+
 	public void click(WebElement element) {
 		element.click();
 		customWait(1);
 	}
+
 	public void rightClick(WebElement element) {
 		Actions act = new Actions(driver);
 		act.contextClick(element).perform();
 		customWait(2);
 	}
-	public void dropDown(WebElement element,int index) {
+
+	public void dropDown(WebElement element, int index) {
 		Select sel = new Select(element);
 		sel.selectByIndex(index);
 		customWait(1);
-		
+
 	}
+
 	public String readDropDown(WebElement element) {
 		Select sel = new Select(element);
-		String text =sel.getFirstSelectedOption().getText();
+		String text = sel.getFirstSelectedOption().getText();
 		return text;
 	}
+
 	public void explicitWait(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		customWait(2);
 	}
-	
+
 	public boolean isFileDownloaded(String downloadPath, String fileName) {
 		File dir = new File(downloadPath);
 		if (dir != null) {
@@ -191,15 +197,18 @@ public class Library {
 		}
 		return false;
 	}
+
 	public void scrollDown(int y_axis) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("scroll(0,"+y_axis+")");
+		js.executeScript("scroll(0," + y_axis + ")");
 	}
+
 	public void moveToElement(WebElement element) {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).perform();
 		customWait(2);
 	}
+
 	public WebDriver switchWindows() {
 		for (String window : driver.getWindowHandles()) {
 			driver.switchTo().window(window);
