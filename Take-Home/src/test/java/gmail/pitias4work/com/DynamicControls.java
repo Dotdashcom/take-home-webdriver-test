@@ -1,75 +1,65 @@
 package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import com.library.pitias.Base;
 
+
+
 public class DynamicControls extends Base {
+
+//     @FindBy(xpath = "//*[@id='message']")
+//     protected WebElement checkBoxMessage;
+	
 	Logger logger = Logger.getLogger(Base.class);
-
-	WebElement checkbox;
-
+	
+    
 	public void dynamic_Control() {
+	    
+	   driver.get("http://localhost:7080/dynamic_controls");
+		logger.info("Title is :" + driver.getTitle());
+		assertEquals(driver.getTitle(), "The Internet");
+		
+		WebElement rmBtn = driver.findElement(By.xpath("//*[@onclick='swapCheckbox()']"));
+		rmBtn.click();
+		WebElement checkBox = driver.findElement(By.xpath("//*[@type='checkbox']"));
+		Assert.assertEquals(true, checkBox.isDisplayed());
+		WebElement chkBoxMsg = driver.findElement(By.xpath("//*[@id='message']"));
+		lib.explicitWait(chkBoxMsg);
 
-		try {
+		String expectedDisappearsMessage = "It's gone!";
+        WebElement checkBoxMessage1=driver.findElement(By.xpath("//*[@id='message']"));
+		Assert.assertEquals(expectedDisappearsMessage, checkBoxMessage1.getText());
+		rmBtn.click();
+		
+		WebElement checkBox2 = driver.findElement(By.xpath("//*[@type='checkbox']"));
+		lib.explicitWait(checkBox2);
 
-			driver.get("http://localhost:7080/dynamic_controls");
-			logger.info("Title is :" + driver.getTitle());
-			assertEquals(driver.getTitle(), "The Internet");
-			// Test clicks on the Remove Button and uses explicit wait.
+		Assert.assertEquals(true, checkBox2.isDisplayed());
+		String expectedAppearsMessage = "It's back!";
+		
+	    WebElement chkBx2=driver.findElement(By.xpath("//*[@id='message']"));
+		Assert.assertEquals(expectedAppearsMessage, chkBx2.getText());
 
-			WebElement remove = driver.findElement(By.xpath("//button[contains(text(),'Remove')]"));
-			lib.click(remove);
+		WebElement textWindow = driver.findElement(By.xpath("//*[@type='text']"));
+		Assert.assertTrue(!textWindow.isEnabled());
+		WebElement enableButton = driver.findElement(By.xpath("//*[@onclick='swapInput()']"));
+		enableButton.click();
 
-			WebElement elect = driver.findElement(By.xpath("//p[@id='message']"));
-			lib.explicitWait(elect);
+		WebElement enableMessage = driver.findElement(By.xpath("//p[@id='message']"));
+		lib.explicitWait(enableMessage);
+		String expMessageEnabl = "It's enabled!";
+		Assert.assertEquals(expMessageEnabl, enableMessage.getText());
+		enableButton.click();
 
-			// Test asserts that the Check box is gone.
-
-			checkbox = driver.findElement(By.xpath("//*[@id=\"checkbox-example\"]/div[2]"));
-			if (checkbox == null) {
-				assertTrue(true);
-			} else {
-				assertTrue(false);
-			}
-
-//			// Test clicks on Add Button and uses explicit wait
-
-			WebElement button = driver.findElement(By.xpath("//*[@id=\"checkbox-example\"]/button"));
-			lib.click(button);
-
-			WebElement msg = driver.findElement(By.cssSelector("#message"));
-			lib.explicitWait(msg);
-//
-//			// Test asserts that the Check box is present.
-			assertTrue(checkbox.isDisplayed());
-
-			// Test clicks on the Enable Button and uses explicit wait.
-			WebElement enable = driver.findElement(By.xpath("//*[@id=\"input-example\"]/button"));
-			lib.click(enable);
-			lib.explicitWait(driver.findElement(By.xpath("/*[@id=\"input-example\"]/input")));
-
-			// Test asserts that the text box is enabled.
-			WebElement text = driver.findElement(By.xpath("/*[@id=\"input-example\"]/input"));
-			assertTrue(text.isEnabled());
-
-			// Test asserts that the text box is disabled.
-			WebElement disable = driver.findElement(By.cssSelector("#input-example > button"));
-
-			// disable.click(); ??????
-			lib.hiddenClick(disable);
-
-			Thread.sleep(2000);
-			assertTrue(!text.isEnabled());
-
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			test.error(e.getMessage());
-		}
-
+		WebElement enableMessage2 = driver.findElement(By.xpath("//p[@id='message']"));
+		lib.explicitWait(enableMessage2);
+		String expMessageDisabled = "It's disabled!";
+		Assert.assertEquals(expMessageDisabled, enableMessage2.getText());
 	}
 }

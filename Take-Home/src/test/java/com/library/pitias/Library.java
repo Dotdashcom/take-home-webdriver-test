@@ -59,8 +59,8 @@ public class Library {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
 		} catch (Exception e) {
 			logger.error("Error: ", e);
@@ -77,8 +77,8 @@ public class Library {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
 		} catch (Exception e) {
 			logger.error("Error: ", e);
@@ -147,7 +147,7 @@ public class Library {
 
 	public void dragandDrop(WebElement source, WebElement dest) {
 		Actions action = new Actions(driver);
-		action.moveToElement(source).clickAndHold(source).moveToElement(dest).release(source).build().perform();
+		action.clickAndHold(source).moveToElement(dest).release(source).build().perform();
 		customWait(2);
 	}
 
@@ -176,7 +176,7 @@ public class Library {
 	}
 
 	public void explicitWait(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 6);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		customWait(2);
 	}

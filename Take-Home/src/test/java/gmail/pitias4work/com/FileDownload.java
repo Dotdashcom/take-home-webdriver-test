@@ -26,7 +26,7 @@ public class FileDownload extends Base {
 			download.click();
 
 			check = lib.isFileDownloaded("/Users/pitiasfessahaie/Downloads", "some-file.txt");
-			lib.customWait(5);
+			lib.customWait(8);
 			assertTrue(check);
 
 		} catch (Exception e) {
