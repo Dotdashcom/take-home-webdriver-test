@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22355" started-at="2020-09-19T02:41:06 EDT" finished-at="2020-09-19T02:41:28 EDT">
+  <suite name="Default suite" duration-ms="28492" started-at="2020-09-19T12:28:16 EDT" finished-at="2020-09-19T12:28:45 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22355" started-at="2020-09-19T02:41:06 EDT" finished-at="2020-09-19T02:41:28 EDT">
-      <class name="gmail.pitias4work.com.DragandDrop">
-        <test-method status="PASS" signature="startup()[pri:0, instance:gmail.pitias4work.com.DragandDrop@3aeaafa6]" name="startup" is-config="true" duration-ms="74" started-at="2020-09-19T02:41:06 EDT" finished-at="2020-09-19T02:41:06 EDT">
+    <test name="Default test" duration-ms="28492" started-at="2020-09-19T12:28:16 EDT" finished-at="2020-09-19T12:28:45 EDT">
+      <class name="gmail.pitias4work.com.DynamicContent">
+        <test-method status="PASS" signature="startup()[pri:0, instance:gmail.pitias4work.com.DynamicContent@3aeaafa6]" name="startup" is-config="true" duration-ms="68" started-at="2020-09-19T12:28:16 EDT" finished-at="2020-09-19T12:28:16 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:gmail.pitias4work.com.DragandDrop@3aeaafa6]" name="setup" is-config="true" duration-ms="1374" started-at="2020-09-19T02:41:06 EDT" finished-at="2020-09-19T02:41:07 EDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:gmail.pitias4work.com.DynamicContent@3aeaafa6]" name="setup" is-config="true" duration-ms="1438" started-at="2020-09-19T12:28:16 EDT" finished-at="2020-09-19T12:28:18 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="dragandDrop()[pri:0, instance:gmail.pitias4work.com.DragandDrop@3aeaafa6]" name="dragandDrop" duration-ms="15585" started-at="2020-09-19T02:41:07 EDT" finished-at="2020-09-19T02:41:23 EDT">
+        <test-method status="PASS" signature="dynamic_Content()[pri:0, instance:gmail.pitias4work.com.DynamicContent@3aeaafa6]" name="dynamic_Content" duration-ms="21665" started-at="2020-09-19T12:28:18 EDT" finished-at="2020-09-19T12:28:39 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragandDrop -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:gmail.pitias4work.com.DragandDrop@3aeaafa6]" name="tearDown" is-config="true" duration-ms="5125" started-at="2020-09-19T02:41:23 EDT" finished-at="2020-09-19T02:41:28 EDT">
+        </test-method> <!-- dynamic_Content -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:gmail.pitias4work.com.DynamicContent@3aeaafa6]" name="tearDown" is-config="true" duration-ms="5132" started-at="2020-09-19T12:28:39 EDT" finished-at="2020-09-19T12:28:44 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dragandDrop status=SUCCESS method=DragandDrop.dragandDrop()[pri:0, instance:gmail.pitias4work.com.DragandDrop@3aeaafa6] output={null}]]]>
+                <![CDATA[[TestResult name=dynamic_Content status=SUCCESS method=DynamicContent.dynamic_Content()[pri:0, instance:gmail.pitias4work.com.DynamicContent@3aeaafa6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:gmail.pitias4work.com.DragandDrop@3aeaafa6]" name="afterAllTests" is-config="true" duration-ms="177" started-at="2020-09-19T02:41:28 EDT" finished-at="2020-09-19T02:41:28 EDT">
+        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:gmail.pitias4work.com.DynamicContent@3aeaafa6]" name="afterAllTests" is-config="true" duration-ms="165" started-at="2020-09-19T12:28:44 EDT" finished-at="2020-09-19T12:28:45 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTests -->
-      </class> <!-- gmail.pitias4work.com.DragandDrop -->
+      </class> <!-- gmail.pitias4work.com.DynamicContent -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

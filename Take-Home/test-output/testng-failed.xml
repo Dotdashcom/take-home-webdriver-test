@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gmail.pitias4work.com.Sample_login">
+      <class name="take.homw.script.Script">
         <methods>
+          <include name="login_fail"/>
           <include name="afterAllTests"/>
-          <include name="login"/>
           <include name="startup"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="dynamic_Content"/>
         </methods>
-      </class> <!-- gmail.pitias4work.com.Sample_login -->
+      </class> <!-- take.homw.script.Script -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

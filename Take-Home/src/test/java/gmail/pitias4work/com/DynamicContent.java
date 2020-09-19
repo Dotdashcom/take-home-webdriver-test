@@ -15,6 +15,7 @@ import com.library.pitias.Base;
 public class DynamicContent extends Base {
 	Logger logger = Logger.getLogger(Base.class);
 
+	
 	public void dynamic_Content() {
 
 		try {
@@ -24,7 +25,7 @@ public class DynamicContent extends Base {
 
 			String locate = "//body//div[@id='content']//div[@id='content']//div[1]//div[1]//img[1]";
 
-			for (int i = 0; i <= 5; i++) {
+			for (int i = 0; i <= 3; i++) {
 				driver.navigate().refresh();
 				lib.customWait(2);
 
