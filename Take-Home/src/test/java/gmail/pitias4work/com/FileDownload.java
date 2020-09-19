@@ -6,12 +6,10 @@ import static org.testng.Assert.assertTrue;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
-@Test
 public class FileDownload extends Base {
 	Logger logger = Logger.getLogger(Base.class);
 

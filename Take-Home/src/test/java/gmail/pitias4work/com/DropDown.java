@@ -5,12 +5,10 @@ import static org.testng.Assert.assertEquals;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
-@Test
 public class DropDown extends Base {
 	Logger logger = Logger.getLogger(Base.class);
 
