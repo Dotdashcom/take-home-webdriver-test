@@ -9,17 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">16</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">259,435</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,812</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">take.homw.script.Script</td><td><a href="#m0">fileDownload</a></td><td rowspan="1">1600492094364</td><td rowspan="1">5278</td></tr><tr class="failedeven"><td><a href="#m1">login_fail</a></td><td rowspan="1">1600491950654</td><td rowspan="1">1486</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="16">take.homw.script.Script</td><td><a href="#m2">JavaScriptError</a></td><td rowspan="1">1600492164770</td><td rowspan="1">86</td></tr><tr class="passedeven"><td><a href="#m3">checkbox</a></td><td rowspan="1">1600491958775</td><td rowspan="1">1243</td></tr><tr class="passedeven"><td><a href="#m4">context_menu</a></td><td rowspan="1">1600491966049</td><td rowspan="1">4381</td></tr><tr class="passedeven"><td><a href="#m5">dragandDrop</a></td><td rowspan="1">1600491993449</td><td rowspan="1">5567</td></tr><tr class="passedeven"><td><a href="#m6">dropDown</a></td><td rowspan="1">1600492005025</td><td rowspan="1">3300</td></tr><tr class="passedeven"><td><a href="#m7">dynamic_Content</a></td><td rowspan="1">1600492014414</td><td rowspan="1">31000</td></tr><tr class="passedeven"><td><a href="#m8">dynamic_Control</a></td><td rowspan="1">1600492051642</td><td rowspan="1">20581</td></tr><tr class="passedeven"><td><a href="#m9">dynamic_Loading</a></td><td rowspan="1">1600492078166</td><td rowspan="1">10292</td></tr><tr class="passedeven"><td><a href="#m10">fileUpload</a></td><td rowspan="1">1600492106089</td><td rowspan="1">6415</td></tr><tr class="passedeven"><td><a href="#m11">floating_Menu</a></td><td rowspan="1">1600492118394</td><td rowspan="1">2236</td></tr><tr class="passedeven"><td><a href="#m12">iframe</a></td><td rowspan="1">1600492126523</td><td rowspan="1">2444</td></tr><tr class="passedeven"><td><a href="#m13">javaScriptAlerts</a></td><td rowspan="1">1600492150438</td><td rowspan="1">8358</td></tr><tr class="passedeven"><td><a href="#m14">login_Success</a></td><td rowspan="1">1600491942096</td><td rowspan="1">2515</td></tr><tr class="passedeven"><td><a href="#m15">mouse_Hover</a></td><td rowspan="1">1600492134859</td><td rowspan="1">9670</td></tr><tr class="passedeven"><td><a href="#m16">notification_Msg</a></td><td rowspan="1">1600492179890</td><td rowspan="1">14745</td></tr><tr class="passedeven"><td><a href="#m17">openNewTab</a></td><td rowspan="1">1600492170753</td><td rowspan="1">3311</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">gmail.pitias4work.com.DynamicControls</td><td><a href="#m0">dynamic_Control</a></td><td rowspan="1">1600492652549</td><td rowspan="1">368</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">take.homw.script.Script#fileDownload</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.failNotEquals(Assert.java:969)
-	at org.testng.Assert.assertTrue(Assert.java:43)
-	at org.testng.Assert.assertTrue(Assert.java:53)
-	at gmail.pitias4work.com.FileDownload.download(FileDownload.java:30)
-	at take.homw.script.Script.fileDownload(Script.java:86)
+<h2>Default test</h2><h3 id="m0">gmail.pitias4work.com.DynamicControls#dynamic_Control</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.library.pitias.Library.explicitWait(Library.java:180)
+	at gmail.pitias4work.com.DynamicControls.dynamic_Control(DynamicControls.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,58 +50,5 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">take.homw.script.Script#login_fail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [http://localhost:7080/secure] but found [http://localhost:7080/login]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at gmail.pitias4work.com.Login_failer.login_fail(Login_failer.java:36)
-	at take.homw.script.Script.login_fail(Script.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">take.homw.script.Script#JavaScriptError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">take.homw.script.Script#checkbox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">take.homw.script.Script#context_menu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">take.homw.script.Script#dragandDrop</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">take.homw.script.Script#dropDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">take.homw.script.Script#dynamic_Content</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">take.homw.script.Script#dynamic_Control</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">take.homw.script.Script#dynamic_Loading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">take.homw.script.Script#fileUpload</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">take.homw.script.Script#floating_Menu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">take.homw.script.Script#iframe</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">take.homw.script.Script#javaScriptAlerts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">take.homw.script.Script#login_Success</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">take.homw.script.Script#mouse_Hover</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">take.homw.script.Script#notification_Msg</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">take.homw.script.Script#openNewTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

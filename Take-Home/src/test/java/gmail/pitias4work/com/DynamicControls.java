@@ -9,22 +9,16 @@ import org.testng.Assert;
 
 import com.library.pitias.Base;
 
-
-
 public class DynamicControls extends Base {
 
-//     @FindBy(xpath = "//*[@id='message']")
-//     protected WebElement checkBoxMessage;
-	
 	Logger logger = Logger.getLogger(Base.class);
-	
-    
+
 	public void dynamic_Control() {
-	    
-	   driver.get("http://localhost:7080/dynamic_controls");
+
+		driver.get("http://localhost:7080/dynamic_controls");
 		logger.info("Title is :" + driver.getTitle());
 		assertEquals(driver.getTitle(), "The Internet");
-		
+
 		WebElement rmBtn = driver.findElement(By.xpath("//*[@onclick='swapCheckbox()']"));
 		rmBtn.click();
 		WebElement checkBox = driver.findElement(By.xpath("//*[@type='checkbox']"));
@@ -33,17 +27,17 @@ public class DynamicControls extends Base {
 		lib.explicitWait(chkBoxMsg);
 
 		String expectedDisappearsMessage = "It's gone!";
-        WebElement checkBoxMessage1=driver.findElement(By.xpath("//*[@id='message']"));
+		WebElement checkBoxMessage1 = driver.findElement(By.xpath("//*[@id='message']"));
 		Assert.assertEquals(expectedDisappearsMessage, checkBoxMessage1.getText());
 		rmBtn.click();
-		
+
 		WebElement checkBox2 = driver.findElement(By.xpath("//*[@type='checkbox']"));
 		lib.explicitWait(checkBox2);
 
 		Assert.assertEquals(true, checkBox2.isDisplayed());
 		String expectedAppearsMessage = "It's back!";
-		
-	    WebElement chkBx2=driver.findElement(By.xpath("//*[@id='message']"));
+
+		WebElement chkBx2 = driver.findElement(By.xpath("//*[@id='message']"));
 		Assert.assertEquals(expectedAppearsMessage, chkBx2.getText());
 
 		WebElement textWindow = driver.findElement(By.xpath("//*[@type='text']"));
