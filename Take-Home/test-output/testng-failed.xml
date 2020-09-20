@@ -5,11 +5,11 @@
     <classes>
       <class name="take.homw.script.Script">
         <methods>
-          <include name="login_fail"/>
           <include name="afterAllTests"/>
           <include name="startup"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="dynamic_Content"/>
         </methods>
       </class> <!-- take.homw.script.Script -->
     </classes>
