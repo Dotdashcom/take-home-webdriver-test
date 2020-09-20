@@ -1,3 +1,17 @@
+# Wha is this repo for?
+
+This repository is demonstration on how to interact with most basic web elements and technique in Selenium with Java.
+The original challenge was from: https://github.com/Dotdashcom/take-home-webdriver-test
+
+You can use Docker like the instruction or use this page directly for testing:
+https://the-internet.herokuapp.com/
+
+# Environment
+* Maven is installed
+
+# Run test
+```mvn test```
+
 # Webdriver Tests
 ## Prerequisites
   * Docker
@@ -93,9 +107,7 @@
 10. File Download
     * Test clicks on the file.
     + Test asserts that the file is downloaded.
-11. File Upload
-    * Test uses Upload Button or Drag and Drop to upload a file.
-    + Test asserts that the file is uploaded.
+    
 12. Floating Menu
     * Test scrolls the page.
     + Test asserts that the floating menu is still displayed.
@@ -118,8 +130,3 @@
 17. Open in New Tab
     * Test clicks on the Click Here link.
     + Test asserts that a new tab is opened with text New Window.
-18. Notification Message
-    * Test clicks on the Click Here link a multiple times.
-    + Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
-
- 
