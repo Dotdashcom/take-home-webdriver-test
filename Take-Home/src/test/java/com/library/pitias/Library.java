@@ -8,7 +8,9 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -159,7 +161,7 @@ public class Library {
 	public void rightClick(WebElement element) {
 		Actions act = new Actions(driver);
 		act.contextClick(element).perform();
-		customWait(2);
+		//customWait(2);
 	}
 
 	public void dropDown(WebElement element, int index) {
@@ -214,5 +216,9 @@ public class Library {
 			driver.switchTo().window(window);
 		}
 		return driver;
+	}
+	public void closeBrowser() {
+		WebElement browser = driver.findElement(By.tagName("body"));
+		browser.sendKeys(Keys.chord(Keys.COMMAND,"w"));
 	}
 }

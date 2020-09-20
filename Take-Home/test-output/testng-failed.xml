@@ -10,7 +10,6 @@
           <include name="startup"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="dynamic_Content"/>
         </methods>
       </class> <!-- take.homw.script.Script -->
     </classes>

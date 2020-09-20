@@ -51,7 +51,6 @@ public class DynamicControls extends Base {
 		
 		WebElement enableButton = driver.findElement(By.xpath("//*[@onclick='swapInput()']"));
 		enableButton.click();
-
 		WebElement enableMessage = driver.findElement(By.xpath("//p[@id='message']"));
 		lib.explicitWait(enableMessage);
 		String expMessageEnabl = "It's enabled!";

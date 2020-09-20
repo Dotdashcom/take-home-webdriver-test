@@ -1,6 +1,8 @@
 package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -30,12 +32,20 @@ public class Login_failer extends Base {
 			WebElement submit = driver.findElement(By.xpath("//button[@class=\"radius\"]"));
 			lib.click(submit);
 
-			// Assert the success page
+			// Assert the success page or not
 			url = "http://localhost:7080/secure";
 			String URL = driver.getCurrentUrl();
 
-			assertEquals(URL, url);
-			test.log(Status.INFO, "User Link Assertion Success!!");
+			if(!(URL == url)) {
+				assertTrue(true);
+				test.log(Status.INFO, "User Link Assertion Success!!");
+			} 
+			else {
+				assertTrue(false);
+				test.log(Status.FAIL, "Assertion Fail !!");
+			}
+
+			
 
 		} catch (Exception e) {
 			logger.error(e.getMessage());

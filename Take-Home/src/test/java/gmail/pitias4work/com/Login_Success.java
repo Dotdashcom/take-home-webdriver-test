@@ -1,6 +1,7 @@
 package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
