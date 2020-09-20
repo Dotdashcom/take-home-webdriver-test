@@ -18,13 +18,13 @@ public class MouseHoverTests extends TestBase {
     public void hover() throws InterruptedException {
         Driver.setUp(url);
         WebElement img;
-        Actions actions=new Actions(Driver.getDriver());
+        Actions actions=new Actions(driver);
 
         for(int i=1; i<=3; i++){
-            img=Driver.getDriver().findElement(By.xpath("//div[@class='figure']["+i+"]"));
-            WebElement info=Driver.getDriver().findElement(By.xpath("//div[@class='example']/div["+i+"]/div"));
+            img=driver.findElement(By.xpath("//div[@class='figure']["+i+"]"));
+            WebElement info=driver.findElement(By.xpath("//div[@class='example']/div["+i+"]/div"));
             actions.moveToElement(img).perform();
-            Driver.getDriver().manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
             Assert.assertTrue(info.getText().contains("user"));
         }
 

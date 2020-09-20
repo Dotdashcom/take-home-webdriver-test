@@ -14,8 +14,8 @@ public class FileUploadTests extends TestBase {
     public void fileUpload(){
         Driver.setUp(url);
         String path=System.getProperty("user.dir")+"/test.txt";
-        Driver.getDriver().findElement(By.cssSelector("#file-upload")).sendKeys(path);
-        Driver.getDriver().findElement(By.cssSelector("#file-submit")).click();
-        Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//*[.='File Uploaded!']")).isDisplayed());
+        driver.findElement(By.cssSelector("#file-upload")).sendKeys(path);
+        driver.findElement(By.cssSelector("#file-submit")).click();
+        Assert.assertTrue(driver.findElement(By.xpath("//*[.='File Uploaded!']")).isDisplayed());
     }
 }

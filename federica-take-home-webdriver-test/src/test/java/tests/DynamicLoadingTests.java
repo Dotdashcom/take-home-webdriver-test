@@ -23,14 +23,14 @@ public class DynamicLoadingTests extends TestBase {
         dynamicLoadingPage.example1.click();
         Driver.getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         dynamicLoadingPage.start.click();
-        wait=new WebDriverWait(Driver.getDriver(),30);
+        wait=new WebDriverWait(driver,30);
         wait.until(ExpectedConditions.visibilityOf(dynamicLoadingPage.helloWorld));
         Assert.assertEquals(dynamicLoadingPage.helloWorld.getText(),"Hello World!");
         Driver.setUp(url);
         dynamicLoadingPage.example2.click();
         Driver.getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         dynamicLoadingPage.start.click();
-        wait=new WebDriverWait(Driver.getDriver(),30);
+        wait=new WebDriverWait(driver,30);
         wait.until(ExpectedConditions.visibilityOf(dynamicLoadingPage.helloWorld));
         Assert.assertEquals(dynamicLoadingPage.helloWorld.getText(),"Hello World!");
 

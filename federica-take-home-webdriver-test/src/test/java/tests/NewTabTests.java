@@ -15,14 +15,14 @@ public class NewTabTests extends TestBase {
     @Test
     public void newTab() throws InterruptedException {
         Driver.setUp(url);
-        Driver.getDriver().findElement(By.linkText("Click Here")).click();
+        driver.findElement(By.linkText("Click Here")).click();
         Thread.sleep(5000);
-        String currentWindow=Driver.getDriver().getWindowHandle();
-        Set<String> allWindowHandles = Driver.getDriver().getWindowHandles();
+        String currentWindow=driver.getWindowHandle();
+        Set<String> allWindowHandles =driver.getWindowHandles();
         for(String i:allWindowHandles){
             if(!i.equals(currentWindow)){
-                Driver.getDriver().switchTo().window(i);
-                Assert.assertEquals(Driver.getDriver().getTitle(),"New Window");
+                driver.switchTo().window(i);
+                Assert.assertEquals(driver.getTitle(),"New Window");
             }
         }
 

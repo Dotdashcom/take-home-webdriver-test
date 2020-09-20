@@ -21,7 +21,7 @@ public class JSError extends TestBase {
     @Test
     public void jsError(){
         Driver.setUp(url);
-        LogEntries logEntries=Driver.getDriver().manage().logs().get(LogType.BROWSER);
+        LogEntries logEntries=driver.manage().logs().get(LogType.BROWSER);
         String error="";
         for(LogEntry entry:logEntries){
             error=entry.getMessage();

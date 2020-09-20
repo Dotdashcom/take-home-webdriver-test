@@ -16,13 +16,13 @@ public class NotificationMessageTests extends TestBase {
     @Test
     public void notifications() throws InterruptedException {
         Driver.setUp(url);
-        WebElement clickHere=Driver.getDriver().findElement(By.xpath("//p/a"));
+        WebElement clickHere=driver.findElement(By.xpath("//p/a"));
         try {
             for (int i=0; i<6; i++){
                 clickHere.click();
-                WebDriverWait wait=new WebDriverWait(Driver.getDriver(),30);
+                WebDriverWait wait=new WebDriverWait(driver,30);
                 wait.until(ExpectedConditions.visibilityOf(clickHere));
-                WebElement message=Driver.getDriver().findElement(By.id("flash"));
+                WebElement message=driver.findElement(By.id("flash"));
                 Assert.assertTrue(message.getText().contains("Action Successful")||
                         message.getText().contains("Action unsuccessful, please try again")||
                         message.getText().contains("Action Unsuccessful"));

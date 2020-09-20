@@ -16,11 +16,12 @@ public class DropDownListTests extends TestBase {
 
     String url="dropdown";
 
+
     @Test
     public void selectFirstOption(){
         Driver.setUp(url);
-        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("dropdown"));
-        Select select=new Select(Driver.getDriver().findElement(By.id("dropdown")));
+        Assert.assertTrue(driver.getCurrentUrl().contains("dropdown"));
+        Select select=new Select(driver.findElement(By.id("dropdown")));
 
         List<WebElement>lst=select.getOptions();
 

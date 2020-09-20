@@ -21,9 +21,9 @@ public class FloatingMenuTests extends TestBase {
         Driver.setUp(url);
         List<WebElement>lst=new ArrayList<>();
         for(int a=1; a<=4; a++){
-            lst.add(Driver.getDriver().findElement(By.xpath("//ul/li["+a+"]")));
+            lst.add(driver.findElement(By.xpath("//ul/li["+a+"]")));
         }
-        Actions actions=new Actions(Driver.getDriver());
+        Actions actions=new Actions(driver);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         for(WebElement i:lst){
             Assert.assertTrue(i.isDisplayed());

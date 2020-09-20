@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.CheckBoxesPage;
 import utils.ConfigurationReader;
@@ -12,10 +13,14 @@ import java.util.concurrent.TimeUnit;
 public class CheckBoxesTests extends TestBase {
     CheckBoxesPage checkBoxesPage=new CheckBoxesPage();
     String url="/checkboxes";
+    @BeforeTest
+    public void setUrl(){
+        Driver.setUp(url);
+    }
+
 
     @Test
     public void checkBoxesSelected(){
-        Driver.setUp(url);
         if(checkBoxesPage.boxOne.isSelected()){
             checkBoxesPage.boxOne.click();
         }
@@ -28,7 +33,6 @@ public class CheckBoxesTests extends TestBase {
 
     @Test
     public void checkBoxesNonSelected(){
-        Driver.setUp(url);
         if(!checkBoxesPage.boxOne.isSelected()){
             checkBoxesPage.boxOne.click();
         }

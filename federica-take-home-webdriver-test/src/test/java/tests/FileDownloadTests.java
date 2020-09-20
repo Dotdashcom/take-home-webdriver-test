@@ -15,7 +15,7 @@ public class FileDownloadTests extends TestBase {
     @Test
     public void fileDownload() throws InterruptedException {
         Driver.setUp(url);
-        WebElement txtFile=Driver.getDriver().findElement(By.cssSelector("#content>div>a"));
+        WebElement txtFile=driver.findElement(By.cssSelector("#content>div>a"));
         txtFile.click();
         Thread.sleep(5000);
         String userFolder=System.getProperty("user.home");

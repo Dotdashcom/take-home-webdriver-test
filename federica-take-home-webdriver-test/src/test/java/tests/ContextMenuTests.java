@@ -15,12 +15,13 @@ import java.util.concurrent.TimeUnit;
 public class ContextMenuTests extends TestBase {
     String url="/context_menu";
     Actions actions;
+
     @Test
     public void jsAlertTest() throws InterruptedException {
         Driver.setUp(url);
-        actions=new Actions(Driver.getDriver());
-        actions.contextClick(Driver.getDriver().findElement(By.id("hot-spot"))).perform();
-        Alert alert=Driver.getDriver().switchTo().alert();
+        actions=new Actions(driver);
+        actions.contextClick(driver.findElement(By.id("hot-spot"))).perform();
+        Alert alert=driver.switchTo().alert();
         Assert.assertTrue(alert.getText().contains("You selected a context menu"));
 
     }
