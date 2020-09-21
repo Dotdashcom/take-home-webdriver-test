@@ -4,18 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>ui-tests</artifactId>
+    <groupId>com.junitdotdash</groupId>
+    <artifactId>JunitDotDashProject</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
     </properties>
-
-
 
 
     <dependencies>
@@ -35,8 +31,6 @@
         </dependency>
 
 
-
-
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
@@ -44,78 +38,26 @@
         </dependency>
 
         <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>5.6.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>5.6.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-core</artifactId>
-            <version>5.6.0</version>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13</version>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
 
 
     </dependencies>
-
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <includes>
-                        <include>**/*CukeRunner.java</include>
-
-                    </includes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>net.masterthought</groupId>
-                <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.0.0</version>
-                <executions>
-                    <execution>
-                        <id>execution</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>Dot Dash Project</projectName>
-
-                            <!-- output directory for the generated report -->
-                            <outputDirectory>${project.build.directory}/pretty-html-report</outputDirectory>
-                            <!-- optional, defaults to outputDirectory if not specified -->
-                            <inputDirectory>${project.build.directory}</inputDirectory>
-                            <jsonFiles>
-                                <!-- supports wildcard or name pattern -->
-                                <param>**/*.json</param>
-                            </jsonFiles>
-
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
-
 
 
 </project>
