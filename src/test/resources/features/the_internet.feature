@@ -16,7 +16,7 @@ Feature: The internet tests
 
   @1_2_login_test
   Scenario Outline: Login Success
-    Given I go to login page
+    Given I select "Form Authentication" option
     And I put my username as "<username>" and password as "<password>"
     And I click login button
     Then verify that "<expectedMessage>" message is displayed

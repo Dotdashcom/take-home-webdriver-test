@@ -16,11 +16,6 @@ public class LoginSteps {
         Driver.get().get(ConfigurationReader.getProperty("base_url"));
     }
 
-    @Given("I go to login page")
-    public void i_go_to_login_page() {
-        Driver.get().get(ConfigurationReader.getProperty("base_url")+"/login");
-    }
-
     @Given("I put my username as {string} and password as {string}")
     public void i_put_my_username_as_and_password_as(String username, String password) {
         loginPage.username.sendKeys(username);
