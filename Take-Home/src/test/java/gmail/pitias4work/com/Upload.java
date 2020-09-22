@@ -35,7 +35,7 @@ public class Upload extends Base {
 
 			if (driver.findElement(By.cssSelector("#uploaded-files")).isDisplayed()) {
 				assertTrue(true, "The File is uploaded sucessfully");
-				test.log(Status.INFO, "File uploaded Assertion Success!!");
+				test.log(Status.INFO, "File upload Assertion Success!!");
 			} else {
 				assertTrue(false, "The File did not uploaded ");
 				test.log(Status.FAIL, "File not uploaded Assertion Fail!!");

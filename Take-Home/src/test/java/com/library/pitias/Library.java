@@ -4,8 +4,11 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import java.sql.Timestamp;
+import java.time.Duration;
 import java.util.Date;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -19,7 +22,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
@@ -161,7 +166,7 @@ public class Library {
 	public void rightClick(WebElement element) {
 		Actions act = new Actions(driver);
 		act.contextClick(element).perform();
-		//customWait(2);
+		// customWait(2);
 	}
 
 	public void dropDown(WebElement element, int index) {
@@ -183,6 +188,20 @@ public class Library {
 		customWait(2);
 	}
 
+	public WebElement fluentWait(WebElement element, By by) {
+
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(15))
+				.pollingEvery(Duration.ofSeconds(2)).ignoring(NoSuchElementException.class);
+
+		element = wait.until(new Function<WebDriver, WebElement>() {
+
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(by);
+			}
+		}); return element;
+
+	}
+
 	public boolean isFileDownloaded(String downloadPath, String fileName) {
 		File dir = new File(downloadPath);
 		if (dir != null) {
@@ -193,7 +212,7 @@ public class Library {
 					// File has been found, it can now be deleted:
 					dirContents[i].delete();
 					return true;
-				}
+				} 
 			}
 
 		}
@@ -212,13 +231,15 @@ public class Library {
 	}
 
 	public WebDriver switchWindows() {
-		for (String window : driver.getWindowHandles()) {
-			driver.switchTo().window(window);
+		for (String windows : driver.getWindowHandles()) {
+			driver.switchTo().window(windows);
 		}
 		return driver;
 	}
+
 	public void closeBrowser() {
 		WebElement browser = driver.findElement(By.tagName("body"));
-		browser.sendKeys(Keys.chord(Keys.COMMAND,"w"));
+		browser.sendKeys(Keys.chord(Keys.COMMAND, "w"));
 	}
+
 }

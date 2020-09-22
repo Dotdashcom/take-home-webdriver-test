@@ -1,15 +1,18 @@
 package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
 public class OpenNewTab extends Base {
 	Logger logger = Logger.getLogger(Base.class);
+
 
 	public void newTab() {
 
@@ -21,15 +24,8 @@ public class OpenNewTab extends Base {
 
 			// Test clicks on the Click Here link.
 
-			String parent = driver.getWindowHandle();
 			WebElement clickHere = driver.findElement(By.xpath("//*[@id=\"content\"]/div/a"));
 			clickHere.click();
-
-			// Test asserts that a new tab is opened with text New Window.
-
-//			for (String child : driver.getWindowHandles()) {
-//				driver.switchTo().window(child);
-//			}
 
 			driver = lib.switchWindows();
 
