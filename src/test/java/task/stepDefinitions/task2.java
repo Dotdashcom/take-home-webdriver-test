@@ -1,6 +1,7 @@
 package task.stepDefinitions;
 
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -21,9 +22,10 @@ import java.util.List;
 
 public class task2 {
 
-    CheckBoxesPage checkBoxesPage=new CheckBoxesPage();
   @Test
     public void checkBoxes (){
+      CheckBoxesPage checkBoxesPage=new CheckBoxesPage();
+
       //CheckBoxes: http://localhost:7080/checkboxes Check and uncheck boxes
       Driver.getDriver().get(ConfigurationReader.getProperty("url")+"/checkboxes");
       checkBoxesPage.checkBox1.click();
@@ -34,9 +36,12 @@ public class task2 {
 
   }
 
-ContextMenuPage contextMenu=new ContextMenuPage();
+
+
   @Test
     public void contextMenu () {
+      ContextMenuPage contextMenu=new ContextMenuPage();
+
       //ContextMenu: http://localhost:7080/context_menu Right-click in the box to see one called
       // 'the-internet'. Test JavaScript alert text on Right-Click.
 
@@ -50,10 +55,13 @@ ContextMenuPage contextMenu=new ContextMenuPage();
        }
 
 
-       DragandDropPage dragandDropPage=new DragandDropPage();
+
+
        @Test
     public void dragAndDrop (){
-      // Drag and Drop: http://localhost:7080/drag_and_drop Perofrm Drag And Drop in a Webdriver test.
+           DragandDropPage dragandDropPage=new DragandDropPage();
+
+           // Drag and Drop: http://localhost:7080/drag_and_drop Perofrm Drag And Drop in a Webdriver test.
 
          Driver.getDriver().get(ConfigurationReader.getProperty("url")+"/drag_and_drop");
 
@@ -80,12 +88,18 @@ ContextMenuPage contextMenu=new ContextMenuPage();
            System.out.println("psss");
 
 
+
+
        }
 
-       DropdownPage dropdownPage=new DropdownPage();
+
+
+
        @Test
     public void dropdown (){
-         //  Dropdown: http://localhost:7080/dropdown Test dropdown using Webdriver.
+           DropdownPage dropdownPage=new DropdownPage();
+
+           //  Dropdown: http://localhost:7080/dropdown Test dropdown using Webdriver.
            Driver.getDriver().get(ConfigurationReader.getProperty("url")+"/dropdown");
 
            Select select =new Select(dropdownPage.dropdown);
@@ -104,6 +118,8 @@ ContextMenuPage contextMenu=new ContextMenuPage();
            Assert.assertEquals(expected2, actual2);
 
        }
+
+
 
        @Test
     public void dynamicContent() throws InterruptedException {
@@ -126,5 +142,9 @@ ContextMenuPage contextMenu=new ContextMenuPage();
        }
 
 
+    @After
+    public void tearDown(){
+        Driver.closeDriver();
+    }
 
 }

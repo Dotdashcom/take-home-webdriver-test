@@ -1,6 +1,7 @@
 package task.stepDefinitions;
 
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
@@ -17,18 +18,20 @@ import task.utilities.Driver;
 
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 
-
 public class task3 {
+
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
 
-    DynamicControlsPage dynamicControlsPage = new DynamicControlsPage();
-
     @Test
     public void dynamicControls() {
+        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage();
+
         //Dynamic Controls: http://localhost:7080/dynamic_controls Test Dynamic Controls using Explicit Waits.
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/dynamic_controls");
 
@@ -64,10 +67,11 @@ public class task3 {
 
     }
 
-    DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage();
 
     @Test
     public void dynamicLoading() {
+        DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage();
+
         //Dynamic Loading: http://localhost:7080/dynamic_loading/2 Test Dynamic Loading using Explict Waits.
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/dynamic_loading/2");
 
@@ -79,12 +83,16 @@ public class task3 {
         Assert.assertTrue(dynamicLoadingPage.helloWorldText.isDisplayed());
     }
 
+
     @Test
     public void fileDownload() throws InterruptedException {
+        FileDownloadPage fileDownloadPage = new FileDownloadPage();
+
         //File Download: http://localhost:7080/download Test File Download.
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/download");
+
         //Test clicks on the file.
-        Driver.getDriver().findElement(By.xpath("//a[text()='some-file.txt']")).click();
+        fileDownloadPage.file.click();
 
         //Test asserts that the file is downloaded.
         Thread.sleep(3000);
@@ -92,6 +100,7 @@ public class task3 {
 
 
     }
+
     public boolean isFileDownloaded(String downloadPath, String fileName) {
         File dir = new File(downloadPath);
         File[] dirContents = dir.listFiles();
@@ -107,10 +116,11 @@ public class task3 {
         return false;
     }
 
-    FileUploadPage fileUploadPage = new FileUploadPage();
 
     @Test
     public void fileUpload() {
+        FileUploadPage fileUploadPage = new FileUploadPage();
+
         //File Upload: http://localhost:7080/upload Test File Upload.
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/upload");
 
@@ -120,14 +130,14 @@ public class task3 {
         fileUploadPage.uploadButton.click();
 
         //Test asserts that the file is uploaded.
-
         Assert.assertTrue(fileUploadPage.fileUploadedHeader.isDisplayed());
     }
 
-    FloatingMenuPage floatingMenuPage = new FloatingMenuPage();
 
     @Test
     public void floatingMenu() {
+        FloatingMenuPage floatingMenuPage = new FloatingMenuPage();
+
         //Floating Menu: http://localhost:7080/floating_menu Test Floating Menu.
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/floating_menu");
         Driver.getDriver().manage().window().maximize();
@@ -142,10 +152,11 @@ public class task3 {
 
     }
 
-    FramePage framePage = new FramePage();
 
     @Test
     public void iframe() {
+        FramePage framePage = new FramePage();
+
         //Iframe: http://localhost:7080/iframe Test iframe.
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/iframe");
 
@@ -162,10 +173,10 @@ public class task3 {
 
     }
 
-    MouseHoverPage mouseHoverPage = new MouseHoverPage();
 
     @Test
     public void mouseHover() {
+        MouseHoverPage mouseHoverPage = new MouseHoverPage();
 
         //Mouse Hover: http://localhost:7080/hovers Test Mouse Hover.
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/hovers");
@@ -185,10 +196,11 @@ public class task3 {
 
     }
 
-    JavaScriptAllertsPage jsAlertPage = new JavaScriptAllertsPage();
 
     @Test
     public void javaScriptAlerts() throws Exception {
+        JavaScriptAllertsPage jsAlertPage = new JavaScriptAllertsPage();
+
         //JavaScript Alerts: http://localhost:7080/javascript_alerts Test confirm JS Alert.
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/javascript_alerts");
 
@@ -213,18 +225,15 @@ public class task3 {
         //Test clicks on JS Prompt Button and types a message on Prompt.
         jsAlertPage.JSPrompt.click();
 
-        Alert al = Driver.getDriver().switchTo().alert();
-        al.sendKeys("text");
-        al.accept();
+        alert.sendKeys("text");
+        alert.accept();
         Thread.sleep(2000);
+        //Test asserts that the alert message contains the typed message
         Assert.assertTrue(jsAlertPage.result.getText().contains("text"));
 
 
-
-        //Test asserts that the alert message contains the typed message.
-        //todo
-
     }
+
 
     @Test
     public void javaScriptError() {
@@ -238,19 +247,30 @@ public class task3 {
         Assert.assertTrue(actual.contains("Cannot read property 'xyz' of undefined"));
     }
 
-    OpenNewTabPage openNewTabPage = new OpenNewTabPage();
 
     @Test
-    public void openNewTab() {
+    public void openNewTab() throws InterruptedException {
+        OpenNewTabPage openNewTabPage = new OpenNewTabPage();
+
         //Open in New Tab: http://localhost:7080/windows Test Link Opens in new tab.
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/windows");
 
         //Test clicks on the Click Here link.
         openNewTabPage.clickHereButton.click();
+        Thread.sleep(2000);
+        ArrayList<String> windows = new ArrayList<>(Driver.getDriver().getWindowHandles());
+        System.out.println(windows);
+        Driver.getDriver().switchTo().window(windows.get(0));
+        Thread.sleep(2000);
+        Driver.getDriver().switchTo().window(windows.get(1));
         //Test asserts that a new tab is opened with text New Window.
-
         Assert.assertTrue(openNewTabPage.headerNewWindown.isDisplayed());
+
+
+
+
     }
+
 
     @Test
     public void notificationMessage() throws InterruptedException {
@@ -281,11 +301,16 @@ public class task3 {
             Thread.sleep(2000);
         }
 
+        //Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
         Assert.assertTrue(counter < 10);
 
 
-        //Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
     }
 
+
+   @After
+   public void tearDown(){
+       Driver.closeDriver();
+   }
 
 }
