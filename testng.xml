@@ -1,9 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1" >
-        <test name="Regression1">
-        <classes>
+<suite name="Suite1" verbose="1">
+	<test name="Regression1">
+		<classes>
+			<class name="Login_Test"></class>
+			<class name="CheckBox_Test"></class>
+			<class name="ContextMenu_Test"></class>
+			<class name ="DragAndDrop_Test"></class>
+			<class name="DropDown_Test"></class>
 
-        </classes>
-    </test>
+
+		</classes>
+	</test>
 </suite>

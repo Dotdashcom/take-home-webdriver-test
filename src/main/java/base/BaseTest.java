@@ -13,7 +13,7 @@ public class BaseTest {
 	}
 	@AfterMethod
 	public void tearDown() {
-		//WebDriverInstance.Quit();// Comment it out as the requestor asked not to quit browser after completing all test
+		WebDriverInstance.Quit();
 	}
 
 }
