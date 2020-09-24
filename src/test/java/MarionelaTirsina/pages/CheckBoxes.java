@@ -7,6 +7,6 @@ public class CheckBoxes extends BasePage{
      @FindBy(xpath = "//input[1]")
     public WebElement checkBox1;
 
-     @FindBy(xpath = "//input[1]")
+     @FindBy(xpath = "//input[2]")
     public WebElement checkBox2;
 }

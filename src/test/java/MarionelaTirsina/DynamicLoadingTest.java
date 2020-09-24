@@ -17,14 +17,14 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class DynamicLoadingTest {
-    /*
-    Dynamic Loading: http://localhost:7080/dynamic_loading/2
-    Test Dynamic Loading using Explicit Waits.
+    /**
+     * Dynamic Loading: http://localhost:7080/dynamic_loading/2
+     *     Test Dynamic Loading using Explicit Waits.
      */
 
     DynamicLoading dynamicLoadingTest=new DynamicLoading();
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/dynamic_loading/2");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

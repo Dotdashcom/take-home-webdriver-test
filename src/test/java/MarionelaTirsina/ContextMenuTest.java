@@ -19,23 +19,17 @@ import java.util.concurrent.TimeUnit;
 
 public class ContextMenuTest {
 
-    /*
-   ContextMenu: http://localhost:7080/context_menu
-   Right-click in the box to see one called 'the-internet'.
-   Test JavaScript alert text on Right-Click.
-    */
-    MarionelaTirsina.pages.ContextMenu contextMenu= new MarionelaTirsina.pages.ContextMenu();
+    /**
+     *  ContextMenu: http://localhost:7080/context_menu
+     *    Right-click in the box to see one called 'the-internet'.
+     *    Test JavaScript alert text on Right-Click.
+     */
+    MarionelaTirsina.pages.ContextMenu contextMenu= new MarionelaTirsina.pages.ContextMenu();//using Page Object Model
 
     @Before
-    public void setUpMethod() {
+    public void setUp() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/context_menu");
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-    }
-
-    @After
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(2000);
+        Driver.getDriver().manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 
     }
 
@@ -55,6 +49,11 @@ public class ContextMenuTest {
         System.out.println("expectedAlertText = " + expectedAlertText);
 
         Assert.assertTrue("You selected a context menu",actualAlertTest.contains(expectedAlertText) );
+
+    }
+    @After
+    public void tearDown() throws Exception {
+        Thread.sleep(2000);
 
     }
 

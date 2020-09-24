@@ -16,10 +16,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class DropdownTest {
-    //Dropdown: http://localhost:7080/dropdown Test dropdown using Webdriver.
+    /**
+     * //Dropdown: http://localhost:7080/dropdown Test dropdown using Webdriver.
+     */
     DropDown dropDown=new DropDown();
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/dropdown");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

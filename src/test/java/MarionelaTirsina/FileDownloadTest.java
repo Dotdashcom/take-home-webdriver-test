@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class FileDownloadTest {
     FileDownload fileDownload=new FileDownload();
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/download");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -35,7 +35,7 @@ public class FileDownloadTest {
     }
     @After
     public void tearDown() throws Exception{
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
     }
 

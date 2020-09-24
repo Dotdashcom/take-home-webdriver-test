@@ -18,14 +18,14 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class DynamicControlsTest {
-     /*
-   Dynamic Controls: http://localhost:7080/dynamic_controls
-   Test Dynamic Controls using Explicit Waits.
+    /**
+     * Dynamic Controls: http://localhost:7080/dynamic_controls
+     *    Test Dynamic Controls using Explicit Waits.
      */
      DynamicControls dynamicControls=new DynamicControls();
 
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/dynamic_controls");
         Driver.getDriver().manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
@@ -47,7 +47,7 @@ public class DynamicControlsTest {
         String actualText = textBoxActual.getText();
 
 
-        Assert.assertTrue("Verfification Passed!",actualText.contains(expectedText));
+        Assert.assertTrue("Verification Passed!",actualText.contains(expectedText));
     }
 
 

@@ -19,11 +19,14 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class JavaScriptAlertsTest {
-    //    JavaScript Alerts: http://localhost:7080/javascript_alerts
-    //    Test confirm JS Alert.
+    /**
+     *  JavaScript Alerts: http://localhost:7080/javascript_alerts
+     *       Test confirm JS Alert.
+     */
+
     JavaScriptAlert JS= new JavaScriptAlert();
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/javascript_alerts");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

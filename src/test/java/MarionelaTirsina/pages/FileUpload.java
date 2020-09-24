@@ -1,6 +1,6 @@
 package MarionelaTirsina.pages;
 
-import io.restassured.path.xml.XmlPath;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;

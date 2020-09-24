@@ -16,11 +16,13 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class DragAndDropTest {
-    /*Drag and Drop: http://localhost:7080/drag_and_drop
-    Perform  Drag And Drop in a Webdriver test.*/
+    /**
+     * Drag and Drop: http://localhost:7080/drag_and_drop
+     *     Perform  Drag And Drop in a Webdriver test
+     */
     DragAndDrop dragAndDrop=new DragAndDrop();
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/drag_and_drop");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

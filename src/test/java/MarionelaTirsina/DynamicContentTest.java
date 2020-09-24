@@ -14,15 +14,16 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class DynamicContentTest {
-    /*Dynamic Content: http://localhost:7080/dynamic_content
-     Test content changes with page reload.*/
+    /**
+     * Dynamic Content: http://localhost:7080/dynamic_content
+     *      Test content changes with page reload.
+     */
     DynamicContent dynamicContent=new DynamicContent();
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/dynamic_content");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
     }
 
     @Test
@@ -74,9 +75,7 @@ public class DynamicContentTest {
 
         Assert.assertFalse(
                 image1Value.contains(image4Value) && (image2Value.contains(image4Value)
-                        && (image3Value.contains(image4Value) &&
-                        getText1.contains(getText4) && (getText2.contains(getText5) && getText3.contains(getText6)
-                        ))));
+                        && (image3Value.contains(image4Value) && getText1.contains(getText4) && (getText2.contains(getText5) && getText3.contains(getText6)))));
     }
     @After
     public void tearDown() throws Exception {

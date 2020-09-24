@@ -1,7 +1,7 @@
 package MarionelaTirsina;
 
 import MarionelaTirsina.pages.FloatingMenu;
-import groovy.transform.Undefined;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.junit.*;
@@ -15,10 +15,13 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class FloatingMenuTest {
-    //Floating Menu: http://localhost:7080/floating_menu Test Floating Menu.
+    /**
+     *  Floating Menu: http://localhost:7080/floating_menu Test Floating Menu.
+     */
+
     FloatingMenu floatingMenu=new FloatingMenu();
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/floating_menu");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -54,7 +57,7 @@ public class FloatingMenuTest {
     }
     @After
     public void tearDown() throws Exception {
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
     }
 }

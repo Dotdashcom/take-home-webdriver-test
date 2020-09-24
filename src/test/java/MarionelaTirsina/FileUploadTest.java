@@ -20,11 +20,14 @@ import java.util.StringTokenizer;
 import java.util.concurrent.TimeUnit;
 
 public class FileUploadTest {
-    //    File Upload: http://localhost:7080/upload
-    //    Test File Upload.
+    /**
+     *  File Upload: http://localhost:7080/upload
+     *        Test File Upload.
+      */
+
     FileUpload fileUpload=new FileUpload();
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/upload");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -35,7 +38,7 @@ public class FileUploadTest {
     @Test
     public void fileUploadTest()  {
 
-       String filePath= fileUpload.uploadFile("src/test/java/testData/competency-portfolio-learning.png");
+       String filePath= fileUpload.uploadFile("src/test/java/testData/competency-portfolio-learning.png");//the path from the image, the image is in testData package
 fileUpload.uploadFileButton.sendKeys(filePath);
 fileUpload.fileSubmitButton.click();
 
@@ -47,7 +50,7 @@ fileUpload.fileSubmitButton.click();
 
     @After
     public void tearDown() throws Exception {
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
     }
 }

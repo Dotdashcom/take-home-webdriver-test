@@ -14,18 +14,19 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class IframeTest {
-    //Iframe: http://localhost:7080/iframe Test iframe.
+    /**
+     * Iframe: http://localhost:7080/iframe Test iframe.
+     */
+
     Iframe iframe= new Iframe();
 
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/iframe");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
-
-
 
 
     @Test
