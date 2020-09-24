@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test name="take-home-webdriver-test(failed)">
+    <classes>
+      <class name="Tests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Verify_Hovers"/>
+          <include name="getDriver"/>
+        </methods>
+      </class> <!-- Tests -->
+    </classes>
+  </test> <!-- take-home-webdriver-test(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

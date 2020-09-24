@@ -1,22 +1,32 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class Tests {
+import java.util.List;
+
+class Tests {
 
     WebDriver driver;
 
-    public static LoginPage loginPages;
+    public static POMLoginPage loginPage;
 
     @BeforeMethod
     public void getDriver() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        loginPages = new LoginPage(driver);
+        loginPage = new POMLoginPage(driver);
     }
 
     @AfterMethod
@@ -28,9 +38,9 @@ public class Tests {
     @Test
     public void Verify_Login_With_Valid_Credentials() throws InterruptedException {
         driver.get("http://localhost:7080/login");
-        loginPages.usernameInput.sendKeys("tomsmith");
-        loginPages.passwordInput.sendKeys("TestFailureSuperSecretPassword!");
-        loginPages.loginInput.submit();
+        loginPage.usernameInput.sendKeys("tomsmith");
+        loginPage.passwordInput.sendKeys("SuperSecretPassword!");
+        loginPage.loginInput.submit();
         WebElement actualMessage = driver.findElement(By.className("subheader"));
         String actual = actualMessage.getText();
         String expectedMessage = "Welcome to the Secure Area. When you are done click logout below.";
@@ -41,11 +51,11 @@ public class Tests {
     @Test
     public void Verify_Login_With_Invalid_Credentials() throws InterruptedException {
         driver.get("http://localhost:7080/login");
-        loginPages.usernameInput.sendKeys("TestFailuretomsmith");
-        loginPages.passwordInput.sendKeys("TestFailureSuperSecretPassword!");
-        loginPages.loginInput.submit();
+        loginPage.usernameInput.sendKeys("TestFailuretomsmith");
+        loginPage.passwordInput.sendKeys("TestFailureSuperSecretPassword!");
+        loginPage.loginInput.submit();
         WebElement actualMessage = driver.findElement(By.id("flash"));
-        Assert.assertTrue(actualMessage.getText().contains("Your password is invalid!"));
+        Assert.assertTrue(actualMessage.getText().contains("Your username is invalid!"));
 
     }
 
@@ -99,6 +109,16 @@ public class Tests {
                 Assert.assertTrue(option.isSelected());
             }
         }
+        for (WebElement option : menu){
+            if(option.getText().equals("Option 2")){
+                option.click();
+            }
+        }
+        for (WebElement option : menu) {
+            if (option.getText().equals("Option 2")) {
+                Assert.assertTrue(option.isSelected());
+            }
+        }
     }
 
     @Test
@@ -107,6 +127,7 @@ public class Tests {
         driver.findElement(By.xpath("//div//p[2]//a")).click();
         WebElement text = driver.findElement(By.xpath("(//div[@class='large-10 columns'])[3]"));
         String textValue = text.getText();
+        driver.navigate().refresh();
         driver.navigate().refresh();
         driver.navigate().refresh();
         WebElement textRefreshed = driver.findElement(By.xpath("(//div[@class='large-10 columns'])[3]"));
@@ -195,13 +216,6 @@ public class Tests {
     public void Verify_Hovers() throws InterruptedException {
         driver.get("http://localhost:7080/hovers");
         List<WebElement> listOfText = driver.findElements(By.cssSelector(".figure h5"));
-        boolean result = false;
-        for (WebElement text : listOfText) {
-            if (text.isDisplayed()) {
-                result = result || true;
-            }
-            Assert.assertFalse(result);
-
             List<WebElement> listOfImages = driver.findElements(By.cssSelector(".figure img"));
             boolean resultAfterHower = true;
             Actions action = new Actions(driver);
@@ -210,11 +224,12 @@ public class Tests {
                 action.moveToElement(image).perform();
                 if (listOfText.get(i).isDisplayed()) {
                     resultAfterHower = resultAfterHower && true;
+                    i++;
                 }
             }
             Assert.assertTrue(resultAfterHower);
-        }
     }
+
 
     @Test
     public void Verify_JavaScript_Alerts() throws InterruptedException {
@@ -241,19 +256,21 @@ public class Tests {
         WebElement newMessagePrompt = driver.findElement(By.xpath("//p[@id='result']"));
         String storedMessage = newMessagePrompt.getText();
         Assert.assertEquals("You entered: New message", storedMessage);
-
-
-
     }
 
     @Test
     public void Verify_JavaScript_Error() throws InterruptedException {
         driver.get("http://localhost:7080/javascript_error");
-        WebElement actualText = driver.findElement(By.xpath("//body"));
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", actualText);
-        String expectedText = "This page has a JavaScript error in the onload event. This is often a problem to using normal Javascript injection techniques.";
-        Assert.assertEquals(expectedText, actualText.getText());
+        String expectedError = "Uncaught TypeError: Cannot read property 'xyz' of undefined";
+        boolean result = false;
+        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        for (LogEntry entry : logEntries) {
+        if (entry.getMessage().contains(expectedError)){
+        System.out.println(entry.getMessage());
+        result = true;
+      }
+}
+      Assert.assertTrue(result);
     }
 
     @Test

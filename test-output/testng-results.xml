@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-24T19:36:56Z" name="Default Suite" finished-at="2020-09-24T19:37:48Z" duration-ms="51902">
+    <groups>
+    </groups>
+    <test started-at="2020-09-24T19:36:56Z" name="take-home-webdriver-test" finished-at="2020-09-24T19:37:48Z" duration-ms="51902">
+      <class name="Tests">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:36:56Z" name="getDriver" finished-at="2020-09-24T15:36:58Z" duration-ms="1751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Check_Boxes()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:36:58Z" name="Verify_Check_Boxes" finished-at="2020-09-24T15:36:58Z" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Check_Boxes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:36:58Z" name="tearDown" finished-at="2020-09-24T15:36:58Z" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:36:58Z" name="getDriver" finished-at="2020-09-24T15:36:59Z" duration-ms="862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Context_Menu()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:36:59Z" name="Verify_Context_Menu" finished-at="2020-09-24T15:37:00Z" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Context_Menu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:00Z" name="tearDown" finished-at="2020-09-24T15:37:00Z" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:00Z" name="getDriver" finished-at="2020-09-24T15:37:01Z" duration-ms="930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Drag_And_Drop()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:01Z" name="Verify_Drag_And_Drop" finished-at="2020-09-24T15:37:01Z" duration-ms="525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Drag_And_Drop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:01Z" name="tearDown" finished-at="2020-09-24T15:37:01Z" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:01Z" name="getDriver" finished-at="2020-09-24T15:37:02Z" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Dropdown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:02Z" name="Verify_Dropdown" finished-at="2020-09-24T15:37:03Z" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Dropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:03Z" name="tearDown" finished-at="2020-09-24T15:37:03Z" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:03Z" name="getDriver" finished-at="2020-09-24T15:37:04Z" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Dynamic_Content()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:04Z" name="Verify_Dynamic_Content" finished-at="2020-09-24T15:37:04Z" duration-ms="598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Dynamic_Content -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:04Z" name="tearDown" finished-at="2020-09-24T15:37:05Z" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:05Z" name="getDriver" finished-at="2020-09-24T15:37:05Z" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Dynamic_Controls()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:05Z" name="Verify_Dynamic_Controls" finished-at="2020-09-24T15:37:19Z" duration-ms="13397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Dynamic_Controls -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:19Z" name="tearDown" finished-at="2020-09-24T15:37:19Z" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:19Z" name="getDriver" finished-at="2020-09-24T15:37:20Z" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Dynamic_Loading()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:20Z" name="Verify_Dynamic_Loading" finished-at="2020-09-24T15:37:26Z" duration-ms="5710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Dynamic_Loading -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:26Z" name="tearDown" finished-at="2020-09-24T15:37:26Z" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:26Z" name="getDriver" finished-at="2020-09-24T15:37:27Z" duration-ms="1001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_File_Upload()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:27Z" name="Verify_File_Upload" finished-at="2020-09-24T15:37:31Z" duration-ms="4569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_File_Upload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:31Z" name="tearDown" finished-at="2020-09-24T15:37:31Z" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:31Z" name="getDriver" finished-at="2020-09-24T15:37:32Z" duration-ms="937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Floating_Menu()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:32Z" name="Verify_Floating_Menu" finished-at="2020-09-24T15:37:33Z" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Floating_Menu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:33Z" name="tearDown" finished-at="2020-09-24T15:37:33Z" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:33Z" name="getDriver" finished-at="2020-09-24T15:37:34Z" duration-ms="855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Hovers()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:34Z" name="Verify_Hovers" finished-at="2020-09-24T15:37:34Z" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Hovers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:34Z" name="tearDown" finished-at="2020-09-24T15:37:34Z" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:34Z" name="getDriver" finished-at="2020-09-24T15:37:35Z" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_JavaScript_Alerts()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:35Z" name="Verify_JavaScript_Alerts" finished-at="2020-09-24T15:37:39Z" duration-ms="3838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_JavaScript_Alerts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:39Z" name="tearDown" finished-at="2020-09-24T15:37:39Z" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:39Z" name="getDriver" finished-at="2020-09-24T15:37:40Z" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_JavaScript_Error()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:40Z" name="Verify_JavaScript_Error" finished-at="2020-09-24T15:37:40Z" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_JavaScript_Error -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:40Z" name="tearDown" finished-at="2020-09-24T15:37:40Z" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:40Z" name="getDriver" finished-at="2020-09-24T15:37:41Z" duration-ms="912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Login_With_Invalid_Credentials()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:41Z" name="Verify_Login_With_Invalid_Credentials" finished-at="2020-09-24T15:37:42Z" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_With_Invalid_Credentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:42Z" name="tearDown" finished-at="2020-09-24T15:37:42Z" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:42Z" name="getDriver" finished-at="2020-09-24T15:37:43Z" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Login_With_Valid_Credentials()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:43Z" name="Verify_Login_With_Valid_Credentials" finished-at="2020-09-24T15:37:44Z" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_With_Valid_Credentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:44Z" name="tearDown" finished-at="2020-09-24T15:37:44Z" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:44Z" name="getDriver" finished-at="2020-09-24T15:37:45Z" duration-ms="956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_NewTab()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:45Z" name="Verify_NewTab" finished-at="2020-09-24T15:37:45Z" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_NewTab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:45Z" name="tearDown" finished-at="2020-09-24T15:37:45Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:45Z" name="getDriver" finished-at="2020-09-24T15:37:46Z" duration-ms="856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_Notification_Message()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:46Z" name="Verify_Notification_Message" finished-at="2020-09-24T15:37:46Z" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Notification_Message -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:46Z" name="tearDown" finished-at="2020-09-24T15:37:46Z" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:46Z" name="getDriver" finished-at="2020-09-24T15:37:47Z" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="Verify_iFrame()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:47Z" name="Verify_iFrame" finished-at="2020-09-24T15:37:48Z" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_iFrame -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests@13e39c73]" started-at="2020-09-24T15:37:48Z" name="tearDown" finished-at="2020-09-24T15:37:48Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests -->
+    </test> <!-- take-home-webdriver-test -->
+  </suite> <!-- Default Suite -->
+</testng-results>
