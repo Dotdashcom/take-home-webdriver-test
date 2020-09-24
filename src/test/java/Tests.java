@@ -1,16 +1,10 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
-import java.io.File;
-import java.sql.Driver;
-import java.util.*;
 
 public class Tests {
 
