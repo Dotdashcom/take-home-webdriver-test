@@ -26,15 +26,11 @@ public class Tests {
 
 
     @Test
-    public void Login_With_Valid_Credentials() throws InterruptedException {
+    public void Verify_Login_With_Valid_Credentials() throws InterruptedException {
         driver.get("http://localhost:7080/login");
-        Thread.sleep(5000);
         loginPages.usernameInput.sendKeys("tomsmith");
-        Thread.sleep(5000);
-        loginPages.passwordInput.sendKeys("SuperSecretPassword!");
-        Thread.sleep(5000);
+        loginPages.passwordInput.sendKeys("TestFailureSuperSecretPassword!");
         loginPages.loginInput.submit();
-        Thread.sleep(5000);
         WebElement actualMessage = driver.findElement(By.className("subheader"));
         String actual = actualMessage.getText();
         String expectedMessage = "Welcome to the Secure Area. When you are done click logout below.";
@@ -43,10 +39,10 @@ public class Tests {
     }
 
     @Test
-    public void Login_With_Invalid_Credentials() throws InterruptedException {
+    public void Verify_Login_With_Invalid_Credentials() throws InterruptedException {
         driver.get("http://localhost:7080/login");
-        loginPages.usernameInput.sendKeys("tomsmith");
-        loginPages.passwordInput.sendKeys("SuperSecretPassw");
+        loginPages.usernameInput.sendKeys("TestFailuretomsmith");
+        loginPages.passwordInput.sendKeys("TestFailureSuperSecretPassword!");
         loginPages.loginInput.submit();
         WebElement actualMessage = driver.findElement(By.id("flash"));
         Assert.assertTrue(actualMessage.getText().contains("Your password is invalid!"));
@@ -59,7 +55,6 @@ public class Tests {
         List<WebElement> checkBoxes = driver.findElements(By.xpath("//*[@id='checkboxes']/input"));
         for (WebElement checkbox : checkBoxes) {
             checkbox.click();
-            Thread.sleep(2000);
         }
         Assert.assertTrue(checkBoxes.get(0).getAttribute("checked").equals("true"));
         Assert.assertNull(checkBoxes.get(1).getAttribute("checked"));
@@ -91,8 +86,8 @@ public class Tests {
     @Test
     public void Verify_Dropdown() throws InterruptedException {
         driver.get("http://localhost:7080/dropdown");
-        WebElement drop = driver.findElement(By.id("dropdown"));
-        Select dropdown = new Select(drop);
+        WebElement dropDown = driver.findElement(By.id("dropdown"));
+        Select dropdown = new Select(dropDown);
         List<WebElement> menu = dropdown.getOptions();
         for (WebElement option : menu) {
             if (option.getText().equals("Option 1")) {
@@ -110,13 +105,13 @@ public class Tests {
     public void Verify_Dynamic_Content() throws InterruptedException {
         driver.get("http://localhost:7080/dynamic_content?with_content=static");
         driver.findElement(By.xpath("//div//p[2]//a")).click();
-        WebElement textInit = driver.findElement(By.xpath("(//div[@class='large-10 columns'])[3]"));
-        String textValueInit = textInit.getText();
+        WebElement text = driver.findElement(By.xpath("(//div[@class='large-10 columns'])[3]"));
+        String textValue = text.getText();
         driver.navigate().refresh();
         driver.navigate().refresh();
         WebElement textRefreshed = driver.findElement(By.xpath("(//div[@class='large-10 columns'])[3]"));
         String textValueRefreshed = textRefreshed.getText();
-        Assert.assertNotEquals(textValueRefreshed, textValueInit);
+        Assert.assertNotEquals(textValueRefreshed, textValue);
     }
 
     @Test
@@ -162,8 +157,8 @@ public class Tests {
     public void Verify_File_Upload() throws InterruptedException {
         driver.get("http://localhost:7080/upload");
         Actions act = new Actions(driver);
-        WebElement downloadBtn = driver.findElement(By.id("file-upload"));
-        downloadBtn.sendKeys(System.getProperty("user.dir") + "/src/testdata/downloads/picture.png");
+        WebElement downloadButton = driver.findElement(By.id("file-upload"));
+        downloadButton.sendKeys(System.getProperty("user.dir") + "/src/testdata/downloads/picture.png");
         Thread.sleep(2000);
         driver.findElement(By.id("file-submit")).click();
         Thread.sleep(2000);
@@ -183,13 +178,13 @@ public class Tests {
     }
 
     @Test
-    public void iFrame() throws InterruptedException {
+    public void Verify_iFrame() throws InterruptedException {
         driver.get("http://localhost:7080/iframe");
         WebElement frame = driver.findElement(By.id("mce_0_ifr"));
         driver.switchTo().frame(frame);
         WebElement textBox = driver.findElement(By.id("tinymce"));
         textBox.clear();
-        textBox.sendKeys("Hello");
+        textBox.sendKeys("Test");
         driver.switchTo().defaultContent();
         WebElement sentence = driver.findElement(By.xpath("//*[@id='content']//h3"));
         Assert.assertEquals(sentence.getText(), "An iFrame containing the TinyMCE WYSIWYG Editor");
@@ -197,7 +192,7 @@ public class Tests {
 
 
     @Test
-    public void hovers() throws InterruptedException {
+    public void Verify_Hovers() throws InterruptedException {
         driver.get("http://localhost:7080/hovers");
         List<WebElement> listOfText = driver.findElements(By.cssSelector(".figure h5"));
         boolean result = false;
@@ -222,7 +217,7 @@ public class Tests {
     }
 
     @Test
-    public void JavaScriptAlerts() throws InterruptedException {
+    public void Verify_JavaScript_Alerts() throws InterruptedException {
         driver.get("http://localhost:7080/javascript_alerts");
         WebElement jsAlert = driver.findElement(By.xpath("//button[@onclick='jsAlert()']"));
         jsAlert.click();
@@ -241,29 +236,31 @@ public class Tests {
         jsPrompt.click();
         Alert newPrompt =driver.switchTo().alert();
         newPrompt.sendKeys("New message");
-        Assert.assertEquals("New message",newPrompt.getText());
-        
+        newPrompt.accept();
+
+        WebElement newMessagePrompt = driver.findElement(By.xpath("//p[@id='result']"));
+        String storedMessage = newMessagePrompt.getText();
+        Assert.assertEquals("You entered: New message", storedMessage);
+
 
 
     }
 
     @Test
-    // it asserts even without JS executor.
-    // What s the purpose of it?
-    public void JavaScriptError() throws InterruptedException {
+    public void Verify_JavaScript_Error() throws InterruptedException {
         driver.get("http://localhost:7080/javascript_error");
-        WebElement button = driver.findElement(By.xpath("//body"));
+        WebElement actualText = driver.findElement(By.xpath("//body"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", button);
+        js.executeScript("arguments[0].scrollIntoView(true);", actualText);
         String expectedText = "This page has a JavaScript error in the onload event. This is often a problem to using normal Javascript injection techniques.";
-        Assert.assertEquals(expectedText, button.getText());
+        Assert.assertEquals(expectedText, actualText.getText());
     }
 
     @Test
-    public void newTab() throws InterruptedException {
+    public void Verify_NewTab() throws InterruptedException {
         driver.get("http://localhost:7080/windows");
-        System.out.print(driver.getTitle());
         driver.findElement(By.cssSelector(".example a")).click();
+        System.out.print(driver.getTitle());
         for (String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle);
         }
@@ -271,7 +268,7 @@ public class Tests {
     }
 
     @Test
-    public void NotificationMessage() throws InterruptedException {
+    public void Verify_Notification_Message() throws InterruptedException {
         driver.get("http://localhost:7080/notification_message_rendered");
         driver.findElement(By.cssSelector(".example a")).click();
         String text = driver.findElement(By.id("flash")).getText();
@@ -281,4 +278,3 @@ public class Tests {
 
     }
 }
-
