@@ -1,7 +1,11 @@
 package Doctest;
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,6 +20,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import junit.framework.Assert;
 import pageObjects.CheckBoxPage;
 import pageObjects.ContextPage;
 import pageObjects.DownloadPage;
@@ -24,10 +29,12 @@ import pageObjects.Dropdown;
 import pageObjects.ExplicitWts;
 import pageObjects.ExplictwtPage;
 import pageObjects.IFramePage;
+import pageObjects.JsErrorPage;
 import pageObjects.JsalertPage;
 import pageObjects.LoginPage;
 import pageObjects.MouseHoverPage;
 import pageObjects.NewTabPage;
+import pageObjects.NotificationPage;
 import pageObjects.RefreshPage;
 import pageObjects.UploadPage;
 import resources.BaseDr;
@@ -37,6 +44,8 @@ public class LoginTest extends BaseDr {
 	
 	
 public  WebDriver driver;
+public static Logger log =LogManager.getLogger(LoginTest.class);
+
 
 @BeforeTest
 
@@ -130,12 +139,12 @@ public  WebDriver driver;
 		
 		if(beforeRefresh.equals(afterRefresh))
 		{
-			System.out.println("Refresh Failed");
+			log.debug("Refresh Failed");
 			
 		}
 		else
 		{
-			System.out.println("Refresh succussful");
+			log.debug("Refresh succussful");
 		}
 		
 	}
@@ -176,7 +185,7 @@ public  WebDriver driver;
 		driver.get(prop.getProperty("downloadUrl"));
 		DownloadPage dp = new DownloadPage(driver);
 		String sourceLocation = dp.getDownloadLocator().getAttribute("href");
-		System.out.println("sourceLocation is" + sourceLocation);
+		log.debug("sourceLocation is" + sourceLocation);
 		String wget_command = "cmd /c C:\\Windows\\System32\\wget.exe -P C:\\Users\\ivc17239adm\\wgetdown " + sourceLocation;
 		try
 		{
@@ -185,7 +194,7 @@ public  WebDriver driver;
 		}
 		catch(InterruptedException  ex)
 		{
-			System.out.println(ex.toString());
+			log.debug(ex.toString());
 			
 		}
 	}
@@ -248,7 +257,7 @@ public  WebDriver driver;
 	}
 	
 	
-	@Test ( priority = 15 )
+	@Test ( priority = 17 )
 	
 	public void contextCheck()
 	{
@@ -259,11 +268,49 @@ public  WebDriver driver;
 		
 				
 	}
+	@SuppressWarnings("deprecation")
+	@Test (priority = 15)
+	
+	public void jsErrorCheck()
+	{
+		driver.get(prop.getProperty("jsErrorUrl"));
+	      JsErrorPage ep = new JsErrorPage(driver);
+	      String expectedStr = prop.getProperty("jserrorString");
+	      
+	      String actualStr =ep.getJsErrorLocator().getText();
+          Assert.assertEquals(expectedStr, actualStr);
+          
+	      
+	}
+	
+	
+	  @SuppressWarnings("deprecation")
+	@Test(priority = 16)
+	   public void notificationClick()
+	      {
+		  driver.get(prop.getProperty("notificationUrl"));
+		  NotificationPage np = new  NotificationPage(driver);
+		  String expectedText1 = "Action successful";
+		  String expectedText2 = "Action unsuccesful, please try again";
+		  np.getClickLinkLocator().click();
+	     String actualStr = np.getNotificationPage().getText();
+	            if (actualStr.equals(expectedText1))
+	            {
+          Assert.assertEquals(expectedText1, actualStr);
+	            }
+	            else if (actualStr.equals(expectedText2))
+	            {
+          Assert.assertEquals(expectedText2, actualStr);
+
+	            }
+	      
+	     
+	      }
 	
 	@AfterTest
 	public void teardown()
 	{
-		driver.quit();
+		driver.close();
 	}
 	
 	

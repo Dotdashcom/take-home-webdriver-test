@@ -6,7 +6,7 @@
       <class name="Doctest.LoginTest">
         <methods>
           <include name="initialize"/>
-          <include name="JsAlertClick"/>
+          <include name="notificationClick"/>
         </methods>
       </class> <!-- Doctest.LoginTest -->
     </classes>
