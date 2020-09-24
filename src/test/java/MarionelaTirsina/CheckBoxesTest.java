@@ -1,5 +1,6 @@
 package MarionelaTirsina;
 
+import MarionelaTirsina.pages.CheckBoxes;
 import org.junit.*;
 
 import org.openqa.selenium.By;
@@ -11,42 +12,39 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class CheckBoxesTest {
+    //CheckBoxes: http://localhost:7080/checkboxes Check and uncheck boxes
+    CheckBoxes checkBoxes=new CheckBoxes();
     @Before
     public void setUpMethod(){
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/checkboxes");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/checkboxes");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
-    @After
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(2000);
-//        Driver.closeDriver();
-    }
 
-    //CheckBoxes: http://localhost:7080/checkboxes Check and uncheck boxes
+
     @Test
     public void checkAndUncheckBoxesTest(){
 
-        WebElement checkBox1 = Driver.get().findElement(By.xpath("//input[1]"));
-        WebElement checkBox2 = Driver.get().findElement(By.xpath("//input[2]"));
+        WebElement box1 =checkBoxes.checkBox1;
+        WebElement box2 = checkBoxes.checkBox2;
 
-        //verify checkbox is selected or not?
-        System.out.println("checkBox1.isSelected() = " + checkBox1.isSelected());
-        System.out.println("checkBox2.isSelected() = " + checkBox2.isSelected());
 
-        //verify checkbox 1 is not selected 2 is selected
-        Assert.assertFalse("Verify checkbox 1 is NOT selected",checkBox1.isSelected());
-        Assert.assertTrue("Verify checkbox 2 is selected",checkBox2.isSelected());
+        System.out.println("checkBox1 is Selected  =" + box1.isSelected());
+        System.out.println("checkBox2 is selected  = " + box2.isSelected());
 
-        //click checkboxes to check if they work
-        checkBox1.click();  //checkBox1 is selected, active
-        checkBox2.click();  //checkBox2 is not selected
-        //verify checkboxes again
-        Assert.assertTrue("Verify checkbox 1 is selected",checkBox1.isSelected());
-        Assert.assertFalse("Verify checkbox 2 is selected",checkBox2.isSelected());
-        System.out.println("checkBox1.isSelected() = " + checkBox1.isSelected());
-        System.out.println("checkBox2.isSelected() = " + checkBox2.isSelected());
+
+        Assert.assertFalse("Verify checkbox 1 is NOT selected",box1.isSelected());
+        Assert.assertTrue("Verify checkbox 2 is selected",box2.isSelected());
+
+
+        box1.click();
+        box2.click();
+
+        Assert.assertTrue("Verify checkbox 1 is selected",box1.isSelected());
+        Assert.assertFalse("Verify checkbox 2 is  selected",box2.isSelected());
+        System.out.println("checkBox1.isSelected() = " + box1.isSelected());
+        System.out.println("checkBox2.isSelected() = " + box2.isSelected());
 
     }
 }

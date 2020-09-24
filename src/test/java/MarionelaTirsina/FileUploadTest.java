@@ -1,5 +1,6 @@
 package MarionelaTirsina;
 
+import MarionelaTirsina.pages.FileUpload;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -17,34 +18,31 @@ import javax.swing.*;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-public class FileUpload {
+public class FileUploadTest {
+    FileUpload fileUpload=new FileUpload();
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/upload");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/upload");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
-    @After
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(2000);
-//        Driver.closeDriver();
-    }
+
 
     //    File Upload: http://localhost:7080/upload Test File Upload.
     @Test
     public void fileUploadTest() throws InterruptedException {
-        String filePath = "/Users/metinkaya/Downloads/some-file.txt";
 
-        WebElement squareArea = Driver.get().findElement(By.id("drag-drop-upload"));
-        Actions actions = new Actions(Driver.get());
+       String filePath= fileUpload.uploadFile("src/test/java/testData/competency-portfolio-learning.png");
+
+        WebElement squareArea = fileUpload.squareForm;
+        Actions actions = new Actions(Driver.getDriver());
 
         Thread.sleep(5);
         DropFile(new File(filePath), squareArea, 0, 0);
 
-        WebElement textFileUploaded = Driver.get().
-                findElement(By.cssSelector("div[class=\"dz-preview dz-file-preview dz-processing dz-success dz-complete\"]"));
+        WebElement textFileUploaded = fileUpload.textFile;
         Assert.assertTrue(textFileUploaded.isDisplayed());
 
     }
@@ -89,5 +87,9 @@ public class FileUpload {
         input.sendKeys(filePath.getAbsoluteFile().toString());
         wait.until(ExpectedConditions.stalenessOf(input));
     }
+    @After
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(2000);
 
+    }
 }

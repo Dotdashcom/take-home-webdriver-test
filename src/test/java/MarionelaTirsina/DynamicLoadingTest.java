@@ -1,5 +1,6 @@
 package MarionelaTirsina;
 
+import MarionelaTirsina.pages.DynamicLoading;
 import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -16,37 +17,40 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class DynamicLoadingTest {
+    /*
+    Dynamic Loading: http://localhost:7080/dynamic_loading/2
+    Test Dynamic Loading using Explicit Waits.
+     */
+
+    DynamicLoading dynamicLoadingTest=new DynamicLoading();
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/dynamic_loading/2");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/dynamic_loading/2");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
-    @After
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(2000);
-//        Driver.closeDriver();
-    }
 
-    /*
-    Dynamic Loading: http://localhost:7080/dynamic_loading/2 Test Dynamic Loading using Explict Waits.
-     */
     @Test
     public void dynamicLoadingTest() {
-        WebElement startButton = Driver.get().findElement(By.xpath("//button[contains(text(), 'Start')]"));
-        startButton.click();
+        WebElement startB= dynamicLoadingTest.startButton;
+        startB.click();
 
-        WebElement textHelloWorld = Driver.get().findElement(By.xpath("//h4[contains(text(), 'Hello World!')]"));
+        WebElement textHelloWorld = dynamicLoadingTest.helloWorld;
 
-        WebDriverWait wait = new WebDriverWait(Driver.get(), 10);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
         wait.until(ExpectedConditions.visibilityOf(textHelloWorld));
 
         String expectedText = "Hello World!";
         String actualText = textHelloWorld.getText();
 
-        Assert.assertTrue(actualText.contains(expectedText));
+        Assert.assertEquals(actualText,(expectedText));
+    }
+    @After
+    public void tearDown() throws Exception {
+        Thread.sleep(2000);
+
     }
 }
 

@@ -17,8 +17,8 @@ public class MouseHoverTest {
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/hovers");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("baseUrl") + "/hovers");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
@@ -31,11 +31,11 @@ public class MouseHoverTest {
     @Test
     public void mouseHover(){
         // Actions class that enables advanced interactions
-        Actions actions = new Actions(Driver.get());
+        Actions actions = new Actions(Driver.getDriver());
 
-        WebElement elementFirst = Driver.get().findElement(By.xpath("(//img)[2]"));
-        WebElement elementSecond = Driver.get().findElement(By.xpath("(//img)[3]"));
-        WebElement elementThird = Driver.get().findElement(By.xpath("(//img)[4]"));
+        WebElement elementFirst = Driver.getDriver().findElement(By.xpath("(//img)[2]"));
+        WebElement elementSecond = Driver.getDriver().findElement(By.xpath("(//img)[3]"));
+        WebElement elementThird = Driver.getDriver().findElement(By.xpath("(//img)[4]"));
 
         actions.moveToElement(elementFirst).pause(1000).moveToElement(elementSecond).pause(1000).
                 moveToElement(elementThird).build().perform();

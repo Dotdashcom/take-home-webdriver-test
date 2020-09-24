@@ -19,8 +19,8 @@ public class JavaScriptAlerts {
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/javascript_alerts");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("baseUrl") + "/javascript_alerts");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
@@ -33,10 +33,10 @@ public class JavaScriptAlerts {
     //    JavaScript Alerts: http://localhost:7080/javascript_alerts Test confirm JS Alert.
     @Test
     public void alertTest() {
-        WebElement JSAlertButton = Driver.get().findElement(By.xpath("//button[contains(text(), 'Click for JS Alert')]"));
+        WebElement JSAlertButton = Driver.getDriver().findElement(By.xpath("//button[contains(text(), 'Click for JS Alert')]"));
         JSAlertButton.click();
 
-        Alert alert = Driver.get().switchTo().alert();
+        Alert alert = Driver.getDriver().switchTo().alert();
         String actAlertText = alert.getText();
         String expAlertText = "I am a JS Alert";
 
@@ -45,13 +45,13 @@ public class JavaScriptAlerts {
 
     @Test
     public void JSConfirmTest() {
-        WebElement JSConfirmButton = Driver.get().findElement(By.xpath("//button[contains(text(), 'Click for JS Confirm')]"));
+        WebElement JSConfirmButton = Driver.getDriver().findElement(By.xpath("//button[contains(text(), 'Click for JS Confirm')]"));
         JSConfirmButton.click();
 
-        Alert alert = Driver.get().switchTo().alert();
+        Alert alert = Driver.getDriver().switchTo().alert();
         alert.accept();
 
-        WebElement visibleText = Driver.get().
+        WebElement visibleText = Driver.getDriver().
                 findElement(By.xpath("//p[@id=\"result\"][contains(text(), 'You clicked: Ok')]"));
 
         Assert.assertTrue(visibleText.isDisplayed());
@@ -59,14 +59,14 @@ public class JavaScriptAlerts {
 
     @Test
     public void JSPromptTest() {
-        WebElement JSPromptButton = Driver.get().findElement(By.cssSelector("button[onclick=\"jsPrompt()\"]"));
+        WebElement JSPromptButton = Driver.getDriver().findElement(By.cssSelector("button[onclick=\"jsPrompt()\"]"));
         JSPromptButton.click();
-        Alert alert = Driver.get().switchTo().alert();
+        Alert alert = Driver.getDriver().switchTo().alert();
         alert.sendKeys("Hello! This is Metin Kaya....");
-        Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         alert.accept();
 
-        WebElement resultTest = Driver.get().findElement(By.id("result"));
+        WebElement resultTest = Driver.getDriver().findElement(By.id("result"));
         String actualText = resultTest.getText();
         String expectedTest = "Hello! This is Metin Kaya...";
         Assert.assertTrue(actualText.contains(expectedTest));

@@ -17,8 +17,8 @@ public class JavaScriptError {
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/javascript_error");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("baseUrl") + "/javascript_error");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
@@ -40,7 +40,7 @@ public class JavaScriptError {
                 };
         try {
             Thread.sleep(1000);
-            WebDriverWait wait = new WebDriverWait(Driver.get(), 30);
+            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 30);
             wait.until(expectation);
         } catch (Throwable error) {
             Assert.fail("Timeout waiting for Page Load Request to complete.");

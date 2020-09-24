@@ -1,5 +1,6 @@
 package MarionelaTirsina;
 
+import MarionelaTirsina.pages.DynamicContent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.junit.*;
@@ -13,76 +14,74 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class DynamicContentTest {
+    /*Dynamic Content: http://localhost:7080/dynamic_content
+     Test content changes with page reload.*/
+    DynamicContent dynamicContent=new DynamicContent();
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/dynamic_content");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/dynamic_content");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
-    @After
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(2000);
-//        Driver.closeDriver();
-    }
-
-    /*Dynamic Content: http://localhost:7080/dynamic_content
-     Test content changes with page reload.*/
     @Test
     public void dynamicContent() {
 
-        WebElement image1 = Driver.get().findElement(By.xpath("(//div[@class=\"large-2 columns\"])[1]/img[starts-with(@src, '/img/avatars/Original-Facebook-Geek')]"));
+        WebElement image1 = dynamicContent.image1;
         String image1Value = image1.getAttribute("src");
         System.out.println("image1Value = " + image1Value);
 
-        WebElement image2 = Driver.get().findElement(By.xpath("(//div[@class=\"large-2 columns\"])[2]/img[starts-with(@src, '/img/avatars/Original-Facebook-Geek')]"));
+        WebElement image2 =dynamicContent.image2;
         String image2Value = image2.getAttribute("src");
         System.out.println("image2Value = " + image2Value);
 
-        WebElement image3 = Driver.get().findElement(By.xpath("(//div[@class=\"large-2 columns\"])[3]/img[starts-with(@src, '/img/avatars/Original-Facebook-Geek')]"));
-        String image3Value = image2.getAttribute("src");
+        WebElement image3 = dynamicContent.image3;
+        String image3Value = image3.getAttribute("src");
         System.out.println("image3Value = " + image3Value);
 
-        String text1 = Driver.get().findElement(By.xpath("(//div[@class=\"large-10 columns\"])[1]")).getText();
-        System.out.println("text1 = " + text1);
-        String text2 = Driver.get().findElement(By.xpath("(//div[@class=\"large-10 columns\"])[2]")).getText();
-        System.out.println("text2 = " + text2);
-        String text3 = Driver.get().findElement(By.xpath("(//div[@class=\"large-10 columns\"])[3]")).getText();
-        System.out.println("text3 = " + text3);
+        String getText1 =dynamicContent.text1.getText();
+        System.out.println("getText1 = " + getText1);
+        String getText2 = dynamicContent.text2.getText();
+        System.out.println("getText2 = " + getText2);
+        String getText3 =dynamicContent.text3.getText();
+        System.out.println("getText3 = " + getText3);
 
-        WebElement clickHereLink = Driver.get().findElement(By.xpath("//a[contains(text(), 'click here')]"));
+        WebElement clickHereLink = dynamicContent.clickHERE;
         clickHereLink.click();
 
-        WebElement image11 = Driver.get().findElement(By.xpath("(//div[@class=\"large-2 columns\"])[1]/img[starts-with(@src, '/img/avatars/Original-Facebook-Geek')]"));
-        String image11Value = image11.getAttribute("src");
-        System.out.println("image11Value = " + image11Value);
+        WebElement image4 = dynamicContent.image4;
+        String image4Value = image4.getAttribute("src");
+        System.out.println("image4Value = " + image4Value);
 
-        WebElement image22 = Driver.get().findElement(By.xpath("(//div[@class=\"large-2 columns\"])[2]/img[starts-with(@src, '/img/avatars/Original-Facebook-Geek')]"));
-        String image22Value = image22.getAttribute("src");
-        System.out.println("image22Value = " + image22Value);
+        WebElement image5=dynamicContent.image5;
+        String imag5Value = image5.getAttribute("src");
+        System.out.println("imag5Value = " + imag5Value);
 
-        WebElement image33 = Driver.get().findElement(By.xpath("(//div[@class=\"large-2 columns\"])[3]/img[starts-with(@src, '/img/avatars/Original-Facebook-Geek')]"));
-        String image33Value = image33.getAttribute("src");
-        System.out.println("image33Value = " + image33Value);
+        WebElement image6 = dynamicContent.image6;
+        String image6Value = image6.getAttribute("src");
+        System.out.println("image6Value = " + image6Value);
 
-//        Assert.assertFalse(
-//                image1Value.contains(image11Value) && (image2Value.contains(image22Value)
-//        && (image3Value.contains(image33Value))));
 
-        String text11 = Driver.get().findElement(By.xpath("(//div[@class=\"large-10 columns\"])[1]")).getText();
-        System.out.println("text11 = " + text11);
-        String text22 = Driver.get().findElement(By.xpath("(//div[@class=\"large-10 columns\"])[2]")).getText();
-        System.out.println("text22 = " + text22);
-        String text33 = Driver.get().findElement(By.xpath("(//div[@class=\"large-10 columns\"])[3]")).getText();
-        System.out.println("text33 = " + text33);
 
-//        Assert.assertFalse(text1.contains(text11) && (text2.contains(text22) && text3.contains(text33)));
+        String getText4 =dynamicContent.text4.getText();
+        System.out.println("getText4 = " + getText4);
+        String getText5 = dynamicContent.text5.getText();
+        System.out.println("getText5 = " + getText5);
+        String getText6 = dynamicContent.text6.getText();
+        System.out.println("getText6 = " + getText6);
+
 
         Assert.assertFalse(
-                image1Value.contains(image11Value) && (image2Value.contains(image22Value)
-                        && (image3Value.contains(image33Value) &&
-                        text1.contains(text11) && (text2.contains(text22) && text3.contains(text33)
+                image1Value.contains(image4Value) && (image2Value.contains(image4Value)
+                        && (image3Value.contains(image4Value) &&
+                        getText1.contains(getText4) && (getText2.contains(getText5) && getText3.contains(getText6)
                         ))));
     }
+    @After
+    public void tearDown() throws Exception {
+        Thread.sleep(2000);
+
+    }
+
 }

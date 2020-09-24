@@ -18,8 +18,8 @@ public class OpenInNewTab {
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/windows");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("base") + "/windows");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
@@ -33,21 +33,21 @@ public class OpenInNewTab {
     @Test
     public void openInNewTab(){
 
-        String currentWindowHandle = Driver.get().getWindowHandle();
-        String currentWindowTitle = Driver.get().getTitle();
+        String currentWindowHandle = Driver.getDriver().getWindowHandle();
+        String currentWindowTitle = Driver.getDriver().getTitle();
 //        System.out.println("currentWindowHandle = " + currentWindowHandle);
         System.out.println("currentWindowTitle = " + currentWindowTitle);  //--> The Internet
 
-        WebElement link = Driver.get().findElement(By.cssSelector("a[href='/windows/new']"));
+        WebElement link = Driver.getDriver().findElement(By.cssSelector("a[href='/windows/new']"));
         link.click();
-        Set<String> windowsHandles = Driver.get().getWindowHandles();
+        Set<String> windowsHandles = Driver.getDriver().getWindowHandles();
 //        System.out.println("windowsHandles = " + windowsHandles);
         String tabTitle="";
         for (String h:windowsHandles){
 //            System.out.println("h = " + h);
             if (!h.equals(currentWindowHandle)){
-                Driver.get().switchTo().window(h);
-                 tabTitle = Driver.get().getTitle();
+                Driver.getDriver().switchTo().window(h);
+                 tabTitle = Driver.getDriver().getTitle();
                 System.out.println("tabTitle = " + tabTitle);  //--> New Window
             }
 

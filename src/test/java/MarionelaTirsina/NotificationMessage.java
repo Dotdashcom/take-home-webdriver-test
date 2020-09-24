@@ -15,8 +15,8 @@ public class NotificationMessage {
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/notification_message_rendered");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("baseUrl") + "/notification_message_rendered");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
@@ -29,10 +29,10 @@ public class NotificationMessage {
     @Test
     public void notificationMessageTest(){
 
-        WebElement clickHere = Driver.get().findElement(By.cssSelector("a[href='/notification_message']"));
+        WebElement clickHere = Driver.getDriver().findElement(By.cssSelector("a[href='/notification_message']"));
         clickHere.click();
 
-        String actualNotification = Driver.get().findElement(By.id("flash")).getText();
+        String actualNotification = Driver.getDriver().findElement(By.id("flash")).getText();
 //        System.out.println("actualNotification = " + actualNotification);
 
         Assert.assertTrue(actualNotification.contains("Action successful") || actualNotification.contains("Action unsuccesful, please try again"));

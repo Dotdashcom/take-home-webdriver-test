@@ -13,15 +13,11 @@ public class ConfigurationReader {
     static {
 
         try {
-            // what file to read
-            String path = "configuration.properties";
-            // read the file into java, finds the file using the string path
-            FileInputStream input = new FileInputStream(path);
-            // properties --> class that store properties in key / value format
-            properties = new Properties();
-            // the values from the file input is loaded / fed in to the properties object
-            properties.load(input);
 
+            String path = "configuration.properties";
+            FileInputStream input = new FileInputStream(path);
+            properties = new Properties();
+            properties.load(input);
             input.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -29,9 +25,9 @@ public class ConfigurationReader {
         }
     }
 
-    public static String get(String keyName) {
+    public static String getProperty(String name) {
 
-        return properties.getProperty(keyName);
+        return properties.getProperty(name);
     }
 
 

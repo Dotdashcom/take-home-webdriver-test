@@ -16,8 +16,8 @@ public class FloatingMenu {
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/floating_menu");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("baseUrl") + "/floating_menu");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
@@ -30,22 +30,22 @@ public class FloatingMenu {
     //Floating Menu: http://localhost:7080/floating_menu Test Floating Menu.
     @Test
     public void floatingMenuTest(){
-        WebElement homeButton = Driver.get().findElement(By.cssSelector("a[href=\"#home\"]"));
+        WebElement homeButton = Driver.getDriver().findElement(By.cssSelector("a[href=\"#home\"]"));
         homeButton.click();
         String expHomeButtonText = "Home";
         String actHomeButtonText = homeButton.getText();
 
-        WebElement newsButton = Driver.get().findElement(By.cssSelector("a[href=\"#news\"]"));
+        WebElement newsButton = Driver.getDriver().findElement(By.cssSelector("a[href=\"#news\"]"));
         newsButton.click();
         String expNewsButtonText = "News";
         String actNewsButtonText = newsButton.getText();
 
-        WebElement contactButton = Driver.get().findElement(By.cssSelector("a[href=\"#contact\"]"));
+        WebElement contactButton = Driver.getDriver().findElement(By.cssSelector("a[href=\"#contact\"]"));
         contactButton.click();
         String expContactButtonText = "Contact";
         String actContactButtonText = contactButton.getText();
 
-        WebElement aboutButton = Driver.get().findElement(By.cssSelector("a[href=\"#about\"]"));
+        WebElement aboutButton = Driver.getDriver().findElement(By.cssSelector("a[href=\"#about\"]"));
         aboutButton.click();
         String expAboutButtonText = "About";
         String actAboutButtonText = aboutButton.getText();

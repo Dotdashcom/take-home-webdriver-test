@@ -1,5 +1,7 @@
 package MarionelaTirsina;
 
+import MarionelaTirsina.pages.DynamicContent;
+import MarionelaTirsina.pages.DynamicControls;
 import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -16,61 +18,63 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class DynamicControlsTest {
+     /*
+   Dynamic Controls: http://localhost:7080/dynamic_controls
+   Test Dynamic Controls using Explicit Waits.
+     */
+     DynamicControls dynamicControls=new DynamicControls();
 
     @Before
     public void setUpMethod() {
 
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/dynamic_controls");
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/dynamic_controls");
+        Driver.getDriver().manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 
     }
 
+
+    @Test
+    public void dynamicControlsRemove() {
+        WebElement removeAddButton = dynamicControls.removeAddButton;
+        removeAddButton.click();
+
+        WebElement textBoxActual =dynamicControls.textBox;
+
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.visibilityOf(textBoxActual));
+
+        String expectedText = "It's gone!";
+        String actualText = textBoxActual.getText();
+
+
+        Assert.assertTrue("Verfification Passed!",actualText.contains(expectedText));
+    }
+
+
+    @Test
+    public void dynamicControlsEnableAndDisable() {
+
+        WebElement enableOrDisable =dynamicControls.enableDisable;
+        enableOrDisable.click();
+
+        WebElement inputBox = dynamicControls.inputBox;
+
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.elementToBeClickable(inputBox));
+
+        inputBox.sendKeys("Today it's a good day!");
+
+        String expectedText = "It's enabled!";
+        String actualTextBox = dynamicControls.getInputBox.getText();
+
+        Assert.assertTrue(actualTextBox.contains(expectedText));
+    }
     @After
     public void tearDown() throws InterruptedException {
         Thread.sleep(2000);
-//        Driver.closeDriver();
-    }
-    /*
-   Dynamic Controls: http://localhost:7080/dynamic_controls Test Dynamic Controls using Explicit Waits.
-     */
 
-    @Test
-    public void dynamicControlsRemoveAdd() {
-        WebElement removeAddButton = Driver.get().findElement(By.cssSelector("button[type='button'][onclick='swapCheckbox()']"));
-        removeAddButton.click();
-
-        WebElement actualTextBox =Driver.get().findElement(By.xpath("//p[@id='message']"));
-
-        WebDriverWait wait = new WebDriverWait(Driver.get(), 15);
-        wait.until(ExpectedConditions.visibilityOf(actualTextBox));
-
-        String expectedText = "It's gone!";
-        System.out.println("expectedText = " + expectedText);
-        String actualText = actualTextBox.getText();
-        System.out.println("actualText = " + actualText);
-
-        Assert.assertTrue(actualText.contains(expectedText));
     }
 
-
-    @Test
-    public void dynamicControlsEnableDisable() {
-
-        WebElement enableOrdisable = Driver.get().findElement(By.xpath("//form[@id='input-example']/button"));
-        enableOrdisable.click();
-
-        WebElement inputBox = Driver.get().findElement(By.xpath("//form[@id='input-example']/input[@type='text']"));
-
-        WebDriverWait wait = new WebDriverWait(Driver.get(), 15);
-        wait.until(ExpectedConditions.elementToBeClickable(inputBox));
-
-        inputBox.sendKeys("hello world");
-
-        String expectedText = "It's enabled!";
-        String actualText = Driver.get().findElement(By.xpath("//p[@id='message']")).getText();
-
-        Assert.assertTrue(actualText.contains(expectedText));
-    }
 
 }
 

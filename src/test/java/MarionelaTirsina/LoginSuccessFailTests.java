@@ -16,8 +16,8 @@ public class LoginSuccessFailTests {
     //    String baseUrl ="http://localhost:7080";
     @Before
     public void setUpMethod(){
-        Driver.get().get(ConfigurationReader.get("baseUrl") + "/login");
-        Driver.get().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("baseUrl") + "/login");
+        Driver.getDriver().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
     }
 
     @After
@@ -30,9 +30,9 @@ public class LoginSuccessFailTests {
     @Test
     public void loginSuccessTest(){
 //        driver.get(baseUrl + "/login");
-        WebElement usernameBox = Driver.get().findElement(By.id("username"));
-        WebElement passwordBox = Driver.get().findElement(By.id("password"));
-        WebElement loginButton = Driver.get().findElement(By.xpath("//i[@class=\"fa fa-2x fa-sign-in\"]"));
+        WebElement usernameBox = Driver.getDriver().findElement(By.id("username"));
+        WebElement passwordBox = Driver.getDriver().findElement(By.id("password"));
+        WebElement loginButton = Driver.getDriver().findElement(By.xpath("//i[@class=\"fa fa-2x fa-sign-in\"]"));
 
         usernameBox.sendKeys("tomsmith");
         passwordBox.sendKeys("SuperSecretPassword!");
@@ -43,7 +43,7 @@ public class LoginSuccessFailTests {
 
         String expectedMessage = "You logged into a secure area!";
         System.out.println("expectedMessage = " + expectedMessage);
-        WebElement message = Driver.get().findElement(By.id("flash"));
+        WebElement message = Driver.getDriver().findElement(By.id("flash"));
         String actualMessage = message.getText();
         System.out.println("actualMessage = " + actualMessage);
 
@@ -54,9 +54,9 @@ public class LoginSuccessFailTests {
     @Test
     public void loginFailureTest(){
 //        driver.get(baseUrl + "/login");
-        WebElement usernameBox = Driver.get().findElement(By.id("username"));
-        WebElement passwordBox = Driver.get().findElement(By.id("password"));
-        WebElement loginButton = Driver.get().findElement(By.xpath("//i[@class=\"fa fa-2x fa-sign-in\"]"));
+        WebElement usernameBox = Driver.getDriver().findElement(By.id("username"));
+        WebElement passwordBox = Driver.getDriver().findElement(By.id("password"));
+        WebElement loginButton = Driver.getDriver().findElement(By.xpath("//i[@class=\"fa fa-2x fa-sign-in\"]"));
 
 //        LoginPage loginPage = new LoginPage();
         usernameBox.sendKeys("fakeName");
@@ -65,7 +65,7 @@ public class LoginSuccessFailTests {
 
         String expectedMessage = "Your username is invalid!";
         System.out.println("expectedMessage = " + expectedMessage);
-        WebElement message = Driver.get().findElement(By.xpath("//div[contains(text(), 'Your username is invalid!')]"));
+        WebElement message = Driver.getDriver().findElement(By.xpath("//div[contains(text(), 'Your username is invalid!')]"));
         String actualMessage = message.getText();
         System.out.println("actualMessage = " + actualMessage);
 
