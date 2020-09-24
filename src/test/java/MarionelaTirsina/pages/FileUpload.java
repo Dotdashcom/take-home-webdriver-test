@@ -12,9 +12,14 @@ import java.io.File;
 public class FileUpload extends BasePage {
     @FindBy(id= "drag-drop-upload")
     public WebElement squareForm;
+    @FindBy(id="file-upload")
+public WebElement uploadFileButton;
+    @FindBy(id = "file-submit")
+    public WebElement fileSubmitButton;
+@FindBy(xpath = "//h3")
+public WebElement assertHeader;
 
-    @FindBy(xpath = "div[class='dz-preview dz-file-preview dz-processing dz-success dz-complete']")
-    public WebElement textFile;
+
     public String uploadFile(String filePath) {
         filePath = System.getProperty("user.dir") + "/" + filePath.replace("/", File.separator);
 return filePath;
