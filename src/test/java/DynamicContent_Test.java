@@ -4,17 +4,19 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import pages.CheckBoxPage;
 import pages.DropDownPage;
+import pages.DynamicContentPage;
 
 
 public class DynamicContent_Test extends BaseTest{
-	DropDownPage page=null;
+	DynamicContentPage page=null;
 	
 @Test
-public void validateOptionOne() {
-	page=new DropDownPage(driver);
+public void validateContentChange() {
+	page=new DynamicContentPage(driver);
 	try {
-	page.selectByVisibleText("Option 1");
-	Assert.assertEquals(page.verifyDropDownOption("Option 1"), true);	
+	Assert.assertEquals(page.verifyContentChange(), false);
+	//refresh it again
+	Assert.assertEquals(page.verifyContentChange(), false);
 	}
 	catch(Exception e) {
 		Assert.assertTrue(false);
@@ -22,16 +24,5 @@ public void validateOptionOne() {
 	}
 }
 
-@Test
-public void validateOptionTwo() {
-	page=new DropDownPage(driver);
-	try {
-	page.selectByVisibleText("Option 2");
-	Assert.assertEquals(page.verifyDropDownOption("Option 2"), true);	
-	}
-	catch(Exception e) {
-		Assert.assertTrue(false);
-		e.getLocalizedMessage();
-	}
-}
+
 }

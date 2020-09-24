@@ -6,10 +6,19 @@
 			<class name="Login_Test"></class>
 			<class name="CheckBox_Test"></class>
 			<class name="ContextMenu_Test"></class>
-			<class name ="DragAndDrop_Test"></class>
+			<class name="DragAndDrop_Test"></class>
 			<class name="DropDown_Test"></class>
-
-
+			<class name="DynamicContent_Test"></class>
+			<class name="DynamicContorl_Test"></class>
+			<class name="JavaScriptError_Test"></class>
+			<class name="FileDownload_Test"></class>
+			<class name="MouseHover_Test"></class>
+			<class name="NotificationMessage_Test"></class>
+			<class name="FileUpload_Test"></class>
+			<class name="FloatingMenu_Test"></class>
+			<class name="Iframe_Test"></class>
+			<class name="OpenNewTab_Test"></class>
+			<class name="JavaScriptAlert_Test"></class>
 		</classes>
 	</test>
 </suite>

@@ -6,7 +6,7 @@ import pages.CheckBoxPage;
 import pages.DropDownPage;
 
 
-public class MouseHoverr_Test extends BaseTest{
+public class MouseHover_Test extends BaseTest{
 	DropDownPage page=null;
 	
 @Test
