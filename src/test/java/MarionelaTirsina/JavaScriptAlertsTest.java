@@ -18,7 +18,7 @@ import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
 
-public class JavaScriptAlerts {
+public class JavaScriptAlertsTest {
     //    JavaScript Alerts: http://localhost:7080/javascript_alerts
     //    Test confirm JS Alert.
     JavaScriptAlert JS= new JavaScriptAlert();

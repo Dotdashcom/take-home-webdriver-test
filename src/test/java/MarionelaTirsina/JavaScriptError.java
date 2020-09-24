@@ -14,23 +14,18 @@ import utilities.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class JavaScriptError {
+    //    JavaScript Error: http://localhost:7080/javascript_error Test JS error.
+    JavaScriptError javaScriptError=new JavaScriptError();
     @Before
-    public void setUpMethod() {
+    public void setUp() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("baseUrl") + "/javascript_error");
+        Driver.getDriver().get(ConfigurationReader.getProperty("url") + "/javascript_error");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
-    @After
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(2000);
-//        Driver.closeDriver();
-    }
-
-    //    JavaScript Error: http://localhost:7080/javascript_error Test JS error.
     @Test
-    public void JSError() {
+    public void JavaSriptError() {
 
         ExpectedCondition<Boolean> expectation = new
                 ExpectedCondition<Boolean>() {
@@ -45,6 +40,11 @@ public class JavaScriptError {
         } catch (Throwable error) {
             Assert.fail("Timeout waiting for Page Load Request to complete.");
         }
+
+    }
+    @After
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(2000);
 
     }
 }

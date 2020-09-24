@@ -30,18 +30,18 @@ public class IframeTest {
 
     @Test
     public void iframe(){
-        Driver.getDriver().switchTo().defaultContent();
-        WebElement iframeElement = iframe.iframe;
-        Driver.getDriver().switchTo().frame(iframeElement);
 
-      WebElement textBox= iframe.textBox;
-       // textBox.getText(Sen)
+            Driver.getDriver().switchTo().defaultContent();
+            WebElement iframeElement =iframe.iframe;
+            Driver.getDriver().switchTo().frame(iframeElement);
 
-        textBox.sendKeys("Hello! Metin is in the iframe!");
+            WebElement textBox = Driver.getDriver().findElement(By.xpath("//p[text()='Your content goes here.']"));
+            textBox.clear();
+            textBox.sendKeys("Today it's a beautiful day!");
     }
     @After
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(2000);
+    public void tearDown() throws Exception {
+        Thread.sleep(3000);
 
     }
 
