@@ -18,4 +18,9 @@ public class WebDriverInstance {
 
 	}
 
+	public static void Quit() {
+		// TODO Auto-generated method stub
+		driver.quit();
+	}
+
 }
