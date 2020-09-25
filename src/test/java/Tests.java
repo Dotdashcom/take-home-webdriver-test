@@ -2,6 +2,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
@@ -108,10 +111,10 @@ public class Tests {
         @Test
         public void dragAndDrop() {
             driver.get("http://localhost:7080/drag_and_drop");
-            WebElement boxA = driver.findElement(By.id("column-a"));
-            WebElement boxB = driver.findElement(By.id("column-b"));
+            WebElement elementA = driver.findElement(By.id("column-a"));
+            WebElement elementB = driver.findElement(By.id("column-b"));
             Actions action = new Actions(driver);
-            action.dragAndDrop(boxA, boxB).perform();
+            action.dragAndDrop(elementA, elementB).perform();
             Assert.assertEquals(driver.findElement(By.xpath("//*[@id='column-a']/header")).getText(), "A");
         }
 
@@ -135,12 +138,23 @@ public class Tests {
             driver.findElement(By.xpath("//button[text()='Remove']")).click();
             Wait wait = new WebDriverWait(driver, 8);
             wait.until(ExpectedConditions.invisibilityOf(checkbox));
-            boolean isPresent = (driver.findElements(By.id("checkbox"))).size()>0;
+            boolean isPresent = (driver.findElements(By.id("checkbox"))).size() > 0;
             Assert.assertFalse(isPresent);
+
             driver.findElement(By.xpath("//*[@id='checkbox-example']//button")).click();
-            wait.until(ExpectedConditions.textToBe((By.xpath("//*[@id='message']")),"It's back!"));
+            wait.until(ExpectedConditions.textToBe((By.xpath("//*[@id='message']")), "It's back!"));
             String message = driver.findElement(By.xpath("//p[@id = 'message']")).getText();
             Assert.assertEquals(message, "It's back!");
+
+            driver.findElement(By.xpath("//*[@id='input-example']//button")).click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Disable']")));
+            String messageEnabled = driver.findElement(By.xpath("//p[@id = 'message']")).getText();
+            Assert.assertEquals(messageEnabled, "It's enabled!");
+
+            driver.findElement(By.xpath("//button[text()='Disable']")).click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Enable']")));
+            String messageDisabled = driver.findElement(By.xpath("//p[@id = 'message']")).getText();
+            Assert.assertEquals(messageDisabled, "It's disabled!");
         }
 
         @Test
@@ -148,7 +162,7 @@ public class Tests {
             driver.get("http://localhost:7080/upload");
             Actions act = new Actions(driver);
             WebElement downloadBtn = driver.findElement(By.id("file-upload"));
-            downloadBtn.sendKeys(System.getProperty("user.dir")+"/src/testdata/downloads/info.png");
+            downloadBtn.sendKeys(System.getProperty("user.dir")+"/src/test/Data/picture.png");
             driver.findElement(By.id("file-submit")).click();
             Assert.assertEquals("File Uploaded!", driver.findElement(By.xpath("//div[@class='example']/h3")).getText());
 
@@ -168,38 +182,64 @@ public class Tests {
         }
 
 
-        @Test
-        public void MouseHover(){
-            driver.get("http://localhost:7080/hovers");
-            Actions actions= new Actions(driver);
-            WebElement pic= driver.findElement(By.className("figure"));
-            System.out.print( pic.getText());
-            actions.moveToElement(pic).perform();
-            WebElement actual = driver.findElement(By.xpath("//*[@class='figcaption']/h5[contains(text(),'user1')]"));
-            Assert.assertEquals(actual.getText(),"name: user1");
+    @Test
+    public void hovers() {
+        driver.get("https://the-internet.herokuapp.com/hovers");
+        List<WebElement> listOfText = driver.findElements(By.cssSelector(".figure h5"));
+        boolean result = false;
+        for (WebElement text : listOfText) {
+            if (text.isDisplayed()) {
+                result = result || true;
+            }
         }
-
+        Assert.assertFalse(result);
+        List<WebElement> listOfImages = driver.findElements(By.cssSelector(".figure img"));
+        boolean resultAfterHower = true;
+        Actions action = new Actions(driver);
+        int i = 0;
+        for (WebElement image : listOfImages) {
+            action.moveToElement(image).perform();
+            if (listOfText.get(i).isDisplayed()) {
+                resultAfterHower = resultAfterHower && true;
+            }
+        }
+        Assert.assertTrue(resultAfterHower);
+    }
         @Test
         public void JavaScriptAlerts() {
-
             driver.get("http://localhost:7080/javascript_alerts");
-            WebElement jsAlert = driver.findElement(By.xpath("//button[@onclick='jsAlert()']"));
-            jsAlert.click();
+            WebElement alert = driver.findElement(By.xpath("//button[@onclick='jsAlert()']"));
+            alert.click();
             Alert newAlert = driver.switchTo().alert();
             Assert.assertEquals("I am a JS Alert", newAlert.getText());
             newAlert.accept();
+
+            WebElement jsConfirm = driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
+            jsConfirm.click();
+            Alert newConfirm =driver.switchTo().alert();
+            Assert.assertEquals("I am a JS Confirm",newConfirm.getText());
+            newConfirm.accept();
+
+            WebElement jsPrompt = driver.findElement(By.xpath("//button[@onclick='jsPrompt()']"));
+            jsPrompt.click();
+            Alert newPrompt =driver.switchTo().alert();
+            newPrompt.sendKeys("New message");
+            newPrompt.accept();
+
+            WebElement newMessagePrompt = driver.findElement(By.xpath("//p[@id='result']"));
+            String storedMessage = newMessagePrompt.getText();
+            Assert.assertEquals("You entered: New message", storedMessage);
         }
 
-        @Test
-        public void JavaScriptError(){
-            driver.get("http://localhost:7080/javascript_error");
-            WebElement button =driver.findElement(By.xpath("//body"));
-            JavascriptExecutor js = (JavascriptExecutor)driver;
-            js.executeScript("arguments[0].scrollIntoView(true);", button);
-            String expectedText = "This page has a JavaScript error in the onload event. This is often a problem to using normal Javascript injection techniques.";
-            Assert.assertEquals(expectedText,button.getText());
-        }
-
+    @Test
+    public void jsError() {
+        driver.get("http://localhost:7080/javascript_error");
+        WebElement actual = driver.findElement(By.xpath("//body"));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", actual);
+        String expectedText = "This page has a JavaScript error in the onload event. This is often a problem to using normal Javascript injection techniques.";
+        Assert.assertEquals(expectedText, actual.getText());
+    }
 
         @Test
         public void NotificationMessage() {
@@ -210,9 +250,17 @@ public class Tests {
             Assert.assertTrue(text.trim().contains("Action successful\n" +
                     "×"));
         }
-
         @Test
-        public void loading() {
+        public void FloatingMenu(){
+        driver.get("http://localhost:7080/floating_menu");
+        JavascriptExecutor jse=(JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,250)", "");
+        WebElement floatingMenu = driver.findElement(By.xpath("//*[@id='menu']"));
+        Assert.assertTrue(floatingMenu.isDisplayed());
+
+    }
+        @Test
+        public void DynamicLoading() {
             driver.get("http://localhost:7080/dynamic_loading/2");
             driver.findElement(By.xpath("//div[@id='start']/button")).click();
             WebDriverWait wait = new WebDriverWait(driver,10);
