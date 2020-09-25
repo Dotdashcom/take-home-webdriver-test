@@ -251,7 +251,7 @@ public class Tests {
                     "×"));
         }
         @Test
-        public void FloatingMenu(){
+        public void floatingMenu(){
         driver.get("http://localhost:7080/floating_menu");
         JavascriptExecutor jse=(JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,250)", "");
