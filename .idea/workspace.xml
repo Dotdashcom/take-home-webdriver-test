@@ -22,15 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abb60571-de6c-428c-a8f9-65720420d7ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testdata/downloads/Tests.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/take-home-webdriver-test.iml" afterDir="false" />
-    </list>
+    <list default="true" id="abb60571-de6c-428c-a8f9-65720420d7ce" name="Default Changelist" comment="Project completed!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,6 +113,14 @@
       <option name="presentableId" value="Default" />
       <updated>1601163384614</updated>
     </task>
+    <task id="LOCAL-00001" summary="Project completed!">
+      <created>1601167363740</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601167363740</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,26 +134,34 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project completed!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project completed!" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601167022857">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1601167022857" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1601166811293">
+    <state width="1493" height="137" key="GridCell.Tab.0.bottom" timestamp="1601167381618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601166811293" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1601166811293">
+    <state width="1493" height="137" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601167381618" />
+    <state width="1493" height="137" key="GridCell.Tab.0.center" timestamp="1601167381618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601166811293" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1601166811293">
+    <state width="1493" height="137" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601167381618" />
+    <state width="1493" height="137" key="GridCell.Tab.0.left" timestamp="1601167381618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601166811293" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1601166811293">
+    <state width="1493" height="137" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601167381618" />
+    <state width="1493" height="137" key="GridCell.Tab.0.right" timestamp="1601167381618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601166811293" />
+    <state width="1493" height="137" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601167381618" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601167370571">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601167370571" />
   </component>
 </project>
