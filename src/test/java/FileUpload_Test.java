@@ -2,36 +2,29 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import base.WebLink;
 import pages.CheckBoxPage;
 import pages.DropDownPage;
+import pages.FileUploadPage;
 
 
 public class FileUpload_Test extends BaseTest{
-	DropDownPage page=null;
+	FileUploadPage page=null;
 	
 @Test
 public void validateOptionOne() {
-	page=new DropDownPage(driver);
+	page=new FileUploadPage(driver);
+	driver.get(WebLink.file_UploadPageUrl);
 	try {
-	page.selectByVisibleText("Option 1");
-	Assert.assertEquals(page.verifyDropDownOption("Option 1"), true);	
+	page.uploadFile();
+	Assert.assertEquals(page.isFileUploaded(), true);	
 	}
 	catch(Exception e) {
+		e.printStackTrace();
 		Assert.assertTrue(false);
 		e.getLocalizedMessage();
 	}
 }
 
-@Test
-public void validateOptionTwo() {
-	page=new DropDownPage(driver);
-	try {
-	page.selectByVisibleText("Option 2");
-	Assert.assertEquals(page.verifyDropDownOption("Option 2"), true);	
-	}
-	catch(Exception e) {
-		Assert.assertTrue(false);
-		e.getLocalizedMessage();
-	}
-}
+
 }

@@ -8,7 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BasePage;
 import base.WebLink;
@@ -25,23 +27,26 @@ public class DynamicLoadingPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id ="dropdown")
-	WebElement dropDown;
+	@FindBy(id ="start")
+	WebElement btn_start;
 	
+	@FindBy(id="finish")
+	WebElement text;
 	
-	public void selectByVisibleText(String text) {
-		driver.get(WebLink.dropDownPageUrl);
-		Select sel=new Select(dropDown);
-		sel.selectByVisibleText(text);
-	}
+public void clickStartButton() {
+	btn_start.click();
 	
+}
 	
-	public boolean verifyDropDownOption(String text) {
-		Select sel=new Select(dropDown);
-		WebElement option = sel.getFirstSelectedOption();
-		String selectedText=option.getText();
-		return text.equalsIgnoreCase(selectedText);
+public void waitForTextElement(WebDriver driver) {
+	WebDriverWait wait=new WebDriverWait(driver, 10);
+	wait.until(ExpectedConditions.visibilityOf(text));
+}
+
+public boolean verifyTextElement() {
+	return text.getText().equalsIgnoreCase("Hello World!");
+}
 	
-	}
+
 
 }

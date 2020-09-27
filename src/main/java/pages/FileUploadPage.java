@@ -25,23 +25,26 @@ public class FileUploadPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id ="dropdown")
-	WebElement dropDown;
+	@FindBy(id ="file-upload")
+	WebElement clickChooseFile;
 	
+	@FindBy(id="file-submit")
+	WebElement submitUpload;
 	
-	public void selectByVisibleText(String text) {
-		driver.get(WebLink.dropDownPageUrl);
-		Select sel=new Select(dropDown);
-		sel.selectByVisibleText(text);
+	@FindBy(id="uploaded-files")
+	WebElement uploadedFiles;
+
+
+	public void uploadFile() {
+		// TODO Auto-generated method stub
+		String fileLink=System.getProperty("user.dir");
+		clickChooseFile.sendKeys(fileLink+"//uploadfiles//upload.txt");
+		submitUpload.submit();
+		
 	}
 	
-	
-	public boolean verifyDropDownOption(String text) {
-		Select sel=new Select(dropDown);
-		WebElement option = sel.getFirstSelectedOption();
-		String selectedText=option.getText();
-		return text.equalsIgnoreCase(selectedText);
-	
+	public boolean isFileUploaded() {
+		return uploadedFiles.getText().equalsIgnoreCase("upload.txt");
 	}
 
 }

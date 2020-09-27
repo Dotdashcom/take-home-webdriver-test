@@ -36,6 +36,7 @@ public class DynamicContentPage extends BasePage {
 	}
 	
 	public boolean verifyContentChange() {
+		driver.get(WebLink.dynamicContentPageUrl);
 		String firstText=contentOne.getText();
 		refreshPage();
 		return firstText.equalsIgnoreCase(contentOne.getText());

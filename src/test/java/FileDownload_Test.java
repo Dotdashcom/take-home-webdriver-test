@@ -4,34 +4,23 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import pages.CheckBoxPage;
 import pages.DropDownPage;
+import pages.FileDownloadPage;
 
 
 public class FileDownload_Test extends BaseTest{
-	DropDownPage page=null;
+	FileDownloadPage page=null;
 	
 @Test
 public void validateOptionOne() {
-	page=new DropDownPage(driver);
+	page=new FileDownloadPage(driver);
 	try {
-	page.selectByVisibleText("Option 1");
-	Assert.assertEquals(page.verifyDropDownOption("Option 1"), true);	
+		page.downloadFile();
+	Assert.assertEquals(page.ifFileDownloaded("some-file.txt"), true);	
 	}
 	catch(Exception e) {
 		Assert.assertTrue(false);
 		e.getLocalizedMessage();
 	}
+}
 }
 
-@Test
-public void validateOptionTwo() {
-	page=new DropDownPage(driver);
-	try {
-	page.selectByVisibleText("Option 2");
-	Assert.assertEquals(page.verifyDropDownOption("Option 2"), true);	
-	}
-	catch(Exception e) {
-		Assert.assertTrue(false);
-		e.getLocalizedMessage();
-	}
-}
-}

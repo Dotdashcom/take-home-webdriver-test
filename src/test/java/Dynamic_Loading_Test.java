@@ -4,17 +4,17 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import pages.CheckBoxPage;
 import pages.DropDownPage;
+import pages.DynamicLoadingPage;
 
 
 public class Dynamic_Loading_Test extends BaseTest{
-	DropDownPage page=null;
+	DynamicLoadingPage page=null;
 	
 @Test
 public void validateOptionOne() {
-	page=new DropDownPage(driver);
+	page=new DynamicLoadingPage(driver);
 	try {
-	page.selectByVisibleText("Option 1");
-	Assert.assertEquals(page.verifyDropDownOption("Option 1"), true);	
+	Assert.assertTrue(page.verifyTextElement());
 	}
 	catch(Exception e) {
 		Assert.assertTrue(false);
@@ -22,16 +22,5 @@ public void validateOptionOne() {
 	}
 }
 
-@Test
-public void validateOptionTwo() {
-	page=new DropDownPage(driver);
-	try {
-	page.selectByVisibleText("Option 2");
-	Assert.assertEquals(page.verifyDropDownOption("Option 2"), true);	
-	}
-	catch(Exception e) {
-		Assert.assertTrue(false);
-		e.getLocalizedMessage();
-	}
-}
+
 }

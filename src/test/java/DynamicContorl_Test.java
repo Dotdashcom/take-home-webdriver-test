@@ -1,37 +1,70 @@
+import java.util.NoSuchElementException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import base.WebLink;
 import pages.CheckBoxPage;
 import pages.DropDownPage;
+import pages.DynamicControlPage;
 
+public class DynamicContorl_Test extends BaseTest {
+	DynamicControlPage page = null;
 
-public class DynamicContorl_Test extends BaseTest{
-	DropDownPage page=null;
-	
-@Test
-public void validateOptionOne() {
-	page=new DropDownPage(driver);
-	try {
-	page.selectByVisibleText("Option 1");
-	Assert.assertEquals(page.verifyDropDownOption("Option 1"), true);	
-	}
-	catch(Exception e) {
-		Assert.assertTrue(false);
-		e.getLocalizedMessage();
-	}
-}
+	@Test
+	public void validateChcckBoxGoneAfterRemoving() {
+		page = new DynamicControlPage(driver);
+		try {
+			driver.get(WebLink.dynamicControlPageUrl);
+			Assert.assertTrue(page.verifyCheckBoxIsRemoved());
+		}
 
-@Test
-public void validateOptionTwo() {
-	page=new DropDownPage(driver);
-	try {
-	page.selectByVisibleText("Option 2");
-	Assert.assertEquals(page.verifyDropDownOption("Option 2"), true);	
+		catch (Exception e) {
+			Assert.assertTrue(false);
+			e.getLocalizedMessage();
+		}
 	}
-	catch(Exception e) {
-		Assert.assertTrue(false);
-		e.getLocalizedMessage();
+
+	@Test
+	public void validateCheckBoxIsAdded() {
+		page = new DynamicControlPage(driver);
+		try {
+			driver.get(WebLink.dynamicControlPageUrl);
+			page.verifyCheckBoxIsRemoved();
+			Assert.assertTrue(page.verifyChckBoxIsAdded());
+		} catch (Exception e) {
+			Assert.assertTrue(false);
+			e.getLocalizedMessage();
+		}
 	}
-}
+	/*
+	@Test
+	public void validateTextBoxIsDisabled() {
+		page = new DynamicControlPage(driver);
+		try {
+			driver.get(WebLink.dynamicControlPageUrl);
+			page.verifyCheckBoxIsRemoved();
+			Assert.assertTrue(page.verifyTextBoxIsDisabled());
+			// Assert.assertEquals(page.verifyDropDownOption("Option 1"), true);
+		} catch (Exception e) {
+			Assert.assertTrue(false);
+			e.getLocalizedMessage();
+		}
+	}
+
+	@Test
+	public void validateTextBoxEnabled() {
+		page = new DynamicControlPage(driver);
+		try {
+			driver.get(WebLink.dynamicControlPageUrl);
+			page.enableTextBox();
+			Assert.assertTrue(page.verifyTextBoxIsEnabled());
+			// Assert.assertEquals(page.verifyDropDownOption("Option 1"), true);
+		} catch (Exception e) {
+			Assert.assertTrue(false);
+			e.getLocalizedMessage();
+		}
+	}*/
+
 }

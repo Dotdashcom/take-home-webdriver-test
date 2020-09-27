@@ -3,6 +3,8 @@
  */
 package pages;
 
+import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,23 +27,30 @@ public class FileDownloadPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id ="dropdown")
-	WebElement dropDown;
+	@FindBy(xpath="//*[@id='content']/div/a")
+	WebElement download;
 	
+public void downloadFile() {
+	driver.get(WebLink.file_DownloadPageUrl);
+	download.click();
 	
-	public void selectByVisibleText(String text) {
-		driver.get(WebLink.dropDownPageUrl);
-		Select sel=new Select(dropDown);
-		sel.selectByVisibleText(text);
-	}
+}
+
+public boolean ifFileDownloaded(String filename) {
+	String downloadPath=System.getProperty("user.dir")+"\\downloadfiles\\";
+	boolean flag = false;
+    File dir = new File(downloadPath);
+    File[] dir_contents = dir.listFiles();
+  	    
+    for (int i = 0; i < dir_contents.length; i++) {
+        if (dir_contents[i].getName().equals(filename))
+            return flag=true;
+            }
+
+    return flag;
+}
+
+
 	
-	
-	public boolean verifyDropDownOption(String text) {
-		Select sel=new Select(dropDown);
-		WebElement option = sel.getFirstSelectedOption();
-		String selectedText=option.getText();
-		return text.equalsIgnoreCase(selectedText);
-	
-	}
 
 }
