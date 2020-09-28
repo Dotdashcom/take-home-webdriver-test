@@ -1,12 +1,27 @@
-
-  <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite1" verbose="1">
 	<test name="Nopackage">
 		<classes>
+			<class name="FloatingMenu_Test" />
+			<class name="Iframe_Test" />
+			<class name="JavaScriptAlert_Test" />
+			<class name="CheckBox_Test" />
+			<class name="ContextMenu_Test" />
+			<class name="DragAndDrop_Test" />
+			<class name="DropDown_Test" />
+			<class name="Dynamic_Loading_Test" />
+			<class name="DynamicContent_Test" />
+			<class name="DynamicContorl_Test" />
+			<class name="FileDownload_Test" />
+			<class name="FileUpload_Test" />
+			<class name="JavaScriptError_Test" />
+			<class name="Login_Test" />
+			<class name="Login_Test" />
+			<class name="MouseHover_Test" />
 			<class name="NotificationMessage_Test" />
 			<class name="OpenNewTab_Test" />
-			<class name="JavaScriptError_Test" />
-			<class name="JavaScriptError_Test" />
-		</classes>/>
+
+		</classes>
+		/>
 	</test>
 </suite>
