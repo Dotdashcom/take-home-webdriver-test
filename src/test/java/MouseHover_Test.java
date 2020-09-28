@@ -3,8 +3,6 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import base.WebLink;
-import pages.CheckBoxPage;
-import pages.DropDownPage;
 import pages.MouseHoverPage;
 
 
@@ -12,7 +10,7 @@ public class MouseHover_Test extends BaseTest{
 	MouseHoverPage page=null;
 	
 @Test
-public void validateOptionOne() {
+public void validateMouseHover() {
 	page=new MouseHoverPage(driver);
 	try {
 driver.get(WebLink.mouseHoverPageUrl);
@@ -23,6 +21,4 @@ driver.get(WebLink.mouseHoverPageUrl);
 		Assert.assertTrue(false);
 	}
 }
-
-
 }

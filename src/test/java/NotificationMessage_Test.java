@@ -14,8 +14,8 @@ public class NotificationMessage_Test extends BaseTest {
 			driver.get(WebLink.notificationPageUrl);
 			Assert.assertEquals(page.verifyNotificationMsg(), true);
 		} catch (Exception e) {
-			e.getLocalizedMessage();
 			Assert.assertTrue(false);
+			e.getLocalizedMessage();
 		}
 	}
 

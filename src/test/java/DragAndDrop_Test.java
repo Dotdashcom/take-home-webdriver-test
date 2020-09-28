@@ -16,8 +16,8 @@ public class DragAndDrop_Test extends BaseTest {
 
 			Assert.assertEquals(page.verifyTextSwitch(), true);
 		} catch (Exception e) {
-			Assert.assertTrue(false);
 			e.getLocalizedMessage();
+			Assert.assertTrue(false);
 		}
 	}
 

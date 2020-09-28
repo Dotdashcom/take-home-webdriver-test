@@ -1,12 +1,7 @@
-import java.util.NoSuchElementException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import base.BaseTest;
 import base.WebLink;
-import pages.CheckBoxPage;
-import pages.DropDownPage;
 import pages.DynamicControlPage;
 
 public class DynamicContorl_Test extends BaseTest {
@@ -38,7 +33,7 @@ public class DynamicContorl_Test extends BaseTest {
 			e.getLocalizedMessage();
 		}
 	}
-	/*
+	
 	@Test
 	public void validateTextBoxIsDisabled() {
 		page = new DynamicControlPage(driver);
@@ -65,6 +60,6 @@ public class DynamicContorl_Test extends BaseTest {
 			Assert.assertTrue(false);
 			e.getLocalizedMessage();
 		}
-	}*/
+	}
 
 }

@@ -8,15 +8,15 @@ public class OpenNewTab_Test extends BaseTest {
 	OpenNewTabPage page = null;
 
 	@Test
-	public void validateNewTab() {
+	public void openNewTabvalidation() {
 		try {
 			page = new OpenNewTabPage(driver);
 			driver.get(WebLink.openNewTabPageUrl);
 			page.clickOpenNewTab();
 			Assert.assertEquals(page.hasNewWindowOpened(), true);
 		} catch (Exception e) {
-			e.getLocalizedMessage();
 			Assert.assertTrue(false);
+			e.getLocalizedMessage();
 		}
 	}
 

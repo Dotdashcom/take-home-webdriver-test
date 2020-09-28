@@ -16,8 +16,8 @@ public class JavaScriptAlert_Test extends BaseTest {
 			Assert.assertEquals(page.verifyAlertMsg("I am a JS Alert"), true);
 			//driver.close();
 		} catch (Exception e) {
-			Assert.assertTrue(false);
 			e.getLocalizedMessage();
+			Assert.assertTrue(false);
 		}
 	}
 	@Test
