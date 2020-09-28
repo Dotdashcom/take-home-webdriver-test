@@ -2,19 +2,23 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import base.WebLink;
 import pages.CheckBoxPage;
 import pages.DropDownPage;
+import pages.FloatingMenuPage;
 
 
 public class FloatingMenu_Test extends BaseTest{
-	DropDownPage page=null;
+	FloatingMenuPage page=null;
 	
 @Test
 public void validateOptionOne() {
-	page=new DropDownPage(driver);
+	page=new FloatingMenuPage(driver);
 	try {
-	page.selectByVisibleText("Option 1");
-	Assert.assertEquals(page.verifyDropDownOption("Option 1"), true);	
+		driver.get(WebLink.floatingMenuPageUrl);
+	page.scrollByPixel();
+	
+	Assert.assertEquals(page.isMenuDisplayed(), true);	
 	}
 	catch(Exception e) {
 		Assert.assertTrue(false);
@@ -22,16 +26,5 @@ public void validateOptionOne() {
 	}
 }
 
-@Test
-public void validateOptionTwo() {
-	page=new DropDownPage(driver);
-	try {
-	page.selectByVisibleText("Option 2");
-	Assert.assertEquals(page.verifyDropDownOption("Option 2"), true);	
-	}
-	catch(Exception e) {
-		Assert.assertTrue(false);
-		e.getLocalizedMessage();
-	}
-}
+
 }

@@ -3,6 +3,7 @@
  */
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,23 +26,27 @@ public class FloatingMenuPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id ="dropdown")
-	WebElement dropDown;
+	@FindBy(id ="menu")
+	WebElement floatinMenu;
 	
-	
-	public void selectByVisibleText(String text) {
-		driver.get(WebLink.dropDownPageUrl);
-		Select sel=new Select(dropDown);
-		sel.selectByVisibleText(text);
+	public void scrollByPixel() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Launch the application		
+      //  driver.get("http://demo.guru99.com/test/guru99home/");
+
+        //To maximize the window. This code may not work with Selenium 3 jars. If script fails you can remove the line below		
+      //  driver.manage().window().maximize();
+
+        // This  will scroll down the page by  1000 pixel vertical		
+        js.executeScript("window.scrollBy(0,1000)");
+		
+	}
+	public boolean isMenuDisplayed() {
+	//	retrun false;
+		return floatinMenu.isDisplayed();
 	}
 	
 	
-	public boolean verifyDropDownOption(String text) {
-		Select sel=new Select(dropDown);
-		WebElement option = sel.getFirstSelectedOption();
-		String selectedText=option.getText();
-		return text.equalsIgnoreCase(selectedText);
-	
-	}
 
 }

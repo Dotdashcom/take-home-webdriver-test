@@ -2,36 +2,27 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import base.WebLink;
 import pages.CheckBoxPage;
 import pages.DropDownPage;
+import pages.MouseHoverPage;
 
 
 public class MouseHover_Test extends BaseTest{
-	DropDownPage page=null;
+	MouseHoverPage page=null;
 	
 @Test
 public void validateOptionOne() {
-	page=new DropDownPage(driver);
+	page=new MouseHoverPage(driver);
 	try {
-	page.selectByVisibleText("Option 1");
-	Assert.assertEquals(page.verifyDropDownOption("Option 1"), true);	
+driver.get(WebLink.mouseHoverPageUrl);
+	Assert.assertEquals(page.verifyHoverOver(), true);	
 	}
 	catch(Exception e) {
-		Assert.assertTrue(false);
 		e.getLocalizedMessage();
+		Assert.assertTrue(false);
 	}
 }
 
-@Test
-public void validateOptionTwo() {
-	page=new DropDownPage(driver);
-	try {
-	page.selectByVisibleText("Option 2");
-	Assert.assertEquals(page.verifyDropDownOption("Option 2"), true);	
-	}
-	catch(Exception e) {
-		Assert.assertTrue(false);
-		e.getLocalizedMessage();
-	}
-}
+
 }

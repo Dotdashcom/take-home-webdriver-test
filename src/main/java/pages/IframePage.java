@@ -25,23 +25,37 @@ public class IframePage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id ="dropdown")
-	WebElement dropDown;
+	@FindBy(id ="mce_0_ifr")
+	WebElement textFrame;
+	
+	@FindBy(id="tinymce")
+	WebElement textBox;
 	
 	
-	public void selectByVisibleText(String text) {
-		driver.get(WebLink.dropDownPageUrl);
-		Select sel=new Select(dropDown);
-		sel.selectByVisibleText(text);
+	
+
+	public boolean verifyIframe() {
+		// TODO Auto-generated method stub
+		return textBox.getText().equalsIgnoreCase("some Text");
 	}
-	
-	
-	public boolean verifyDropDownOption(String text) {
-		Select sel=new Select(dropDown);
-		WebElement option = sel.getFirstSelectedOption();
-		String selectedText=option.getText();
-		return text.equalsIgnoreCase(selectedText);
-	
+
+
+
+
+	public void ChangeFrame() {
+		// TODO Auto-generated method stub
+		driver.switchTo().frame(textFrame);
+		
+	}
+
+
+
+
+	public void EnterText() {
+		// TODO Auto-generated method stub
+		
+		textBox.clear();
+		textBox.sendKeys("some Text");
 	}
 
 }

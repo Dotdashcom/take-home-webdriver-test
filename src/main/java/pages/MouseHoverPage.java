@@ -25,23 +25,36 @@ public class MouseHoverPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id ="dropdown")
-	WebElement dropDown;
+	@FindBy(xpath="(//*[@class='figure'])[2]")
+	WebElement profileTwo;
+	@FindBy(xpath="(//*[@class='figure'])[1]")
+	WebElement profileOne;
+	@FindBy(xpath="(//*[@class='figure'])[3]")
+	WebElement profileThree;
+	
+	@FindBy(xpath="//*[contains(text(),'View profile')]")
+	WebElement popUpCaptionOne;
+	
+	@FindBy(xpath="(//*[contains(text(),'View profile')])[2]")
+	WebElement popUpCaptionTwo;
+	
+	@FindBy(xpath="(//*[contains(text(),'View profile')])[3]")
+	WebElement popUpCaptionThree;
 	
 	
-	public void selectByVisibleText(String text) {
-		driver.get(WebLink.dropDownPageUrl);
-		Select sel=new Select(dropDown);
-		sel.selectByVisibleText(text);
-	}
+	
+public boolean hoverOverElement(WebElement element,WebElement popedUpElement) {
+	Actions actions=new Actions(driver);
+	actions.moveToElement(element).perform();
+	
+return 	popedUpElement.getText().equalsIgnoreCase("View profile");
 	
 	
-	public boolean verifyDropDownOption(String text) {
-		Select sel=new Select(dropDown);
-		WebElement option = sel.getFirstSelectedOption();
-		String selectedText=option.getText();
-		return text.equalsIgnoreCase(selectedText);
-	
+}
+
+
+	public boolean verifyHoverOver() {
+		return hoverOverElement(profileOne,popUpCaptionOne)&& hoverOverElement(profileTwo,popUpCaptionTwo)&& hoverOverElement(profileThree,popUpCaptionThree);
 	}
 
 }
