@@ -4,6 +4,7 @@
 	<test name="Nopackage">
 		<classes>
 			<class name="NotificationMessage_Test" />
-		</classes>
+			<class name="OpenNewTab_Test" />
+		</classes>/>
 	</test>
 </suite>
