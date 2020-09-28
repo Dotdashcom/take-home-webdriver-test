@@ -8,7 +8,7 @@ public class NotificationMessage_Test extends BaseTest {
 	NotificationMessagePage page = null;
 
 	@Test
-	public void validateOptionOne() {
+	public void validateNotificationMsg() {
 		page = new NotificationMessagePage(driver);
 		try {
 			driver.get(WebLink.notificationPageUrl);

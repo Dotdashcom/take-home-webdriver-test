@@ -8,7 +8,7 @@ public class OpenNewTab_Test extends BaseTest {
 	OpenNewTabPage page = null;
 
 	@Test
-	public void validateOptionOne() {
+	public void validateNewTab() {
 		try {
 			page = new OpenNewTabPage(driver);
 			driver.get(WebLink.openNewTabPageUrl);
