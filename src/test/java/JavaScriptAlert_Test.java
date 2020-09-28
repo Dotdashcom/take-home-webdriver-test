@@ -41,6 +41,7 @@ public class JavaScriptAlert_Test extends BaseTest {
 		try {
 			driver.get(WebLink.javaScriptAlertpageUrl);
 			page.clickJsConfirm();
+			page.acceptAlert();
 		//	driver.close();
 			Assert.assertEquals(page.isResultMatched("You clicked: Ok"), true);
 		} catch (Exception e) {

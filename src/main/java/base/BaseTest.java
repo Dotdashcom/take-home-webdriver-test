@@ -11,9 +11,11 @@ public class BaseTest {
 	public void setUp() {
 		driver=WebDriverInstance.getInstanceOfWebDriver();
 	}
+	
+	
 	@AfterMethod
 	public void tearDown() {
-		WebDriverInstance.Quit();
+		driver.quit();
 	}
 
 }

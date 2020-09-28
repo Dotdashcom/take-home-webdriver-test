@@ -5,6 +5,7 @@ package pages;
 
 import javax.naming.spi.DirStateFactory.Result;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -68,7 +69,10 @@ public boolean isResultMatched(String text) {
 
 public void enterAlertText(String msg) {
 	// TODO Auto-generated method stub
-	driver.switchTo().alert().sendKeys(msg);
+	Alert alert=driver.switchTo().alert();
+	alert.sendKeys(msg);
+	alert.accept();
+	
 	
 }
 }
