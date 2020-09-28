@@ -1,10 +1,7 @@
 package base;
 
-import java.io.File;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -34,10 +31,4 @@ public class WebDriverInstance {
 		return driver;
 
 	}
-
-	public static void Quit() {
-		// TODO Auto-generated method stub
-		driver.quit();
-	}
-
 }
