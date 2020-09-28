@@ -5,7 +5,8 @@
 		<classes>
 			<class name="NotificationMessage_Test" />
 			<class name="OpenNewTab_Test" />
-			<class name="OpenNewTab_Test" />
+			<class name="JavaScriptError_Test" />
+			<class name="JavaScriptError_Test" />
 		</classes>/>
 	</test>
 </suite>
