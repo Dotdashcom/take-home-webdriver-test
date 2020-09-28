@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1">
 	<test name="Nopackage">
 		<classes>
-			<class name="JavaScriptAlert_Test" />
+			<class name="NotificationMessage_Test" />
 		</classes>
 	</test>
 </suite>

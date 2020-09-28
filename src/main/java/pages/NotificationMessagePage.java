@@ -5,13 +5,10 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import base.BasePage;
-import base.WebLink;
 
 /**
  * @author choudhuryIqbal
@@ -25,23 +22,28 @@ public class NotificationMessagePage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id ="dropdown")
-	WebElement dropDown;
-	
-	
-	public void selectByVisibleText(String text) {
-		driver.get(WebLink.dropDownPageUrl);
-		Select sel=new Select(dropDown);
-		sel.selectByVisibleText(text);
+	@FindBy(xpath = "//*[contains(text(),'Click here')]")
+	WebElement clickHere;
+
+	@FindBy(id = "flash-messages")
+	WebElement msg;
+
+	public void clickLink() throws Exception {
+		clickHere.click();
 	}
-	
-	
-	public boolean verifyDropDownOption(String text) {
-		Select sel=new Select(dropDown);
-		WebElement option = sel.getFirstSelectedOption();
-		String selectedText=option.getText();
-		return text.equalsIgnoreCase(selectedText);
-	
+
+	public boolean verifyNotificationMsg()  throws Exception{
+		boolean flag = false;
+		for (int i = 0; i < 3; i++) {
+			clickLink();
+			String text = msg.getText();
+			if ((text.contains("Action unsuccesful, please try again") || text.contains("Action successful"))) {
+				flag = true;
+			} else {
+				return false;
+			}
+		}
+		return flag;
 	}
 
 }
