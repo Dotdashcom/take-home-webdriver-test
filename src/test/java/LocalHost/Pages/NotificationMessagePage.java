@@ -19,7 +19,7 @@ public class NotificationMessagePage {
 
     public void testMessage1() {
         button.click();
-        // There is a "×" in the messages shown which mess up the assertions this could be a solution however it would change the Actual message
+        // There is a "×" in the messages shown which could be a bug. The solution below could fix but changes the actual outcome
        // String fakemessage=message.getText().replaceAll("×","").trim();
         try {
            // Assert.assertEquals(fakemessage, "Action successful");
@@ -28,7 +28,7 @@ public class NotificationMessagePage {
         }catch (AssertionError e){
             try {
               //  Assert.assertEquals(fakemessage, "Action unsuccesful, please try again");
-                //  Assert.assertEquals(message.getText(), "Action unsuccesful, please try again");
+                 Assert.assertEquals(message.getText(), "Action unsuccesful, please try again");
                 return;
             }catch (Exception a){
              //   Assert.assertEquals(fakemessage, "Action Unsuccessful");

@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.util.HashMap;
+
 public class Driver {
     private static InheritableThreadLocal<WebDriver> driver = new InheritableThreadLocal<>();
 

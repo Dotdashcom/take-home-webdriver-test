@@ -26,23 +26,14 @@ public class DownloadPage {
     private WebElement picFileLogo;
 
 
+
     public void DownloadText(){
         textFile.click();
         BrowserUtils.waitFor(3);
+        //the path here will be different depending on Computer so you Download path is needed on each individual computer
         File file= new File("C:/Users/erago/Downloads/some-file.txt");
         Assert.assertTrue(file.exists());
     }
 
-    public void DownloadPic(){
-        picFile.click();
-        BrowserUtils.waitFor(3);
-        File file=new File("C:/Users/erago/Downloads/webdriverIO.png");
-        Assert.assertTrue(file.exists());
-    }
-    public void DownloadLogo(){
-        picFileLogo.click();
-        BrowserUtils.waitFor(3);
-        File file = new File("C:/Users/erago/Downloads/Logo.png");
-        Assert.assertTrue(file.exists());
-    }
+
 }

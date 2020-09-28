@@ -39,8 +39,9 @@ public class JSAlertPage {
         acceptJS.click();
         Alert alert=Driver.getDriver().switchTo().alert();
         BrowserUtils.waitFor(4);
-        alert.accept();
         Assert.assertTrue(AlertConfirmation());
+        alert.accept();
+
     }
 
     public void SendMessage(){

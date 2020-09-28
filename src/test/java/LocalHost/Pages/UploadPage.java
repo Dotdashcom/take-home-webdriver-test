@@ -22,6 +22,7 @@ public class UploadPage {
     private WebElement finish;
 
     public void UploadFile(){
+        // This will fail unless changed to local pc's file path. This is my location of the file
         uploadButton.sendKeys("C:/Users/erago/Downloads/some-file.txt");
         submit.click();
         BrowserUtils.waitFor(3);
