@@ -3,6 +3,8 @@
  */
 package pages;
 
+import javax.naming.spi.DirStateFactory.Result;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,23 +27,48 @@ public class JavaScriptAlertPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id ="dropdown")
-	WebElement dropDown;
+	@FindBy(xpath ="//*[@id=\"content\"]/div/ul/li[1]//button")
+	WebElement jsAlert;
+	
+	@FindBy(xpath="//*[@id=\"content\"]/div/ul/li[2]/button")
+	WebElement jsConfirm;
+	
+	@FindBy(xpath="//*[@id=\"content\"]/div/ul/li[3]/button")
+	WebElement jsPrompt;
+	
+	@FindBy(id="result")
+	WebElement jsMessage;
 	
 	
-	public void selectByVisibleText(String text) {
-		driver.get(WebLink.dropDownPageUrl);
-		Select sel=new Select(dropDown);
-		sel.selectByVisibleText(text);
-	}
-	
-	
-	public boolean verifyDropDownOption(String text) {
-		Select sel=new Select(dropDown);
-		WebElement option = sel.getFirstSelectedOption();
-		String selectedText=option.getText();
-		return text.equalsIgnoreCase(selectedText);
-	
-	}
+public void clickJSAlert() {
+	jsAlert.click();
+}
 
+public void clickJsConfirm() {
+	jsConfirm.click();
+}
+public void jsPrompt() {
+	jsPrompt.click();
+}
+
+public boolean verifyAlertMsg(String msg) {
+	// TODO Auto-generated method stub
+	return driver.switchTo().alert().getText().equalsIgnoreCase(msg);
+}
+
+
+public void acceptAlert() {
+	driver.switchTo().alert().accept();
+	
+}
+
+public boolean isResultMatched(String text) {
+	return jsMessage.getText().equalsIgnoreCase(text);
+}
+
+public void enterAlertText(String msg) {
+	// TODO Auto-generated method stub
+	driver.switchTo().alert().sendKeys(msg);
+	
+}
 }
