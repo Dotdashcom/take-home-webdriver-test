@@ -48,11 +48,11 @@ public class DynamicControlPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"message\"]")
 	WebElement enabled_msg;
 
-	public void clickRemove() {
+	public void clickRemove() throws Exception{
 		btn_remove.click();
 	}
 
-	public void clickAdd() {
+	public void clickAdd() throws Exception {
 		btn_add.click();
 	}
 
@@ -61,7 +61,7 @@ public class DynamicControlPage extends BasePage {
 		wait.until(ExpectedConditions.visibilityOf(chkBox_checkBox));
 	}
 
-	public boolean verifyChckBoxIsAdded() {
+	public boolean verifyChckBoxIsAdded() throws Exception{
 		clickAdd();
 		waitForElementToBevisible(driver, chkBox_checkBox);
 		if (chkBox_checkBox == null) {
@@ -70,7 +70,7 @@ public class DynamicControlPage extends BasePage {
 			return true;
 	}
 
-	public void enableTextBox() {
+	public void enableTextBox() throws Exception{
 		btn_enable.click();
 	}
 
@@ -78,7 +78,7 @@ public class DynamicControlPage extends BasePage {
 		btn_disable.click();
 	}
 
-	public boolean verifyCheckBoxIsRemoved() {
+	public boolean verifyCheckBoxIsRemoved() throws Exception{
 		try {
 			clickRemove();
 			waitForElementToBeInvisible(driver, chkBox_checkBox);
@@ -91,7 +91,7 @@ public class DynamicControlPage extends BasePage {
 		}
 	}
 
-	public void waitForElementToBeInvisible(WebDriver driver, WebElement element) {
+	public void waitForElementToBeInvisible(WebDriver driver, WebElement element) throws Exception{
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.invisibilityOf(element));
 	}

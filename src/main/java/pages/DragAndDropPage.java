@@ -30,14 +30,14 @@ public class DragAndDropPage extends BasePage {
 	
 	@FindBy(xpath ="(//*[@id=\"columns\"]//div)[2]")
 	WebElement elementB;
-	public void moveElement() {
+	public void moveElement() throws Exception{
 		Actions act=new Actions(driver);
 		act.dragAndDrop(elementA, elementB).build().perform();
 	
 		
 	}
 	
-	public boolean verifyTextSwitch() {
+	public boolean verifyTextSwitch() throws Exception{
 		driver.get(WebLink.dragAndDropPageUrl);
 		String textBoxOne=elementA.getText();
 		String textBoxTwo=elementB.getText();

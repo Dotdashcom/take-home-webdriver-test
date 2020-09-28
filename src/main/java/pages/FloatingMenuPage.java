@@ -29,7 +29,7 @@ public class FloatingMenuPage extends BasePage {
 	@FindBy(id ="menu")
 	WebElement floatinMenu;
 	
-	public void scrollByPixel() {
+	public void scrollByPixel() throws Exception{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
         // Launch the application		
@@ -42,7 +42,7 @@ public class FloatingMenuPage extends BasePage {
         js.executeScript("window.scrollBy(0,1000)");
 		
 	}
-	public boolean isMenuDisplayed() {
+	public boolean isMenuDisplayed() throws Exception{
 	//	retrun false;
 		return floatinMenu.isDisplayed();
 	}

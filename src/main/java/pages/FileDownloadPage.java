@@ -36,7 +36,7 @@ public void downloadFile() {
 	
 }
 
-public boolean ifFileDownloaded(String filename) {
+public boolean ifFileDownloaded(String filename) throws Exception{
 	String downloadPath=System.getProperty("user.dir")+"\\downloadfiles\\";
 	boolean flag = false;
     File dir = new File(downloadPath);

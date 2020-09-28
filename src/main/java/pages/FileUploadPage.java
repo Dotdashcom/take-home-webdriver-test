@@ -35,7 +35,7 @@ public class FileUploadPage extends BasePage {
 	WebElement uploadedFiles;
 
 
-	public void uploadFile() {
+	public void uploadFile() throws Exception{
 		// TODO Auto-generated method stub
 		String fileLink=System.getProperty("user.dir");
 		clickChooseFile.sendKeys(fileLink+"//uploadfiles//upload.txt");
@@ -43,7 +43,7 @@ public class FileUploadPage extends BasePage {
 		
 	}
 	
-	public boolean isFileUploaded() {
+	public boolean isFileUploaded() throws Exception{
 		return uploadedFiles.getText().equalsIgnoreCase("upload.txt");
 	}
 

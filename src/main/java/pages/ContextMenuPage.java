@@ -29,7 +29,7 @@ public class ContextMenuPage extends BasePage {
 	WebElement contextOption;
 
 
-	public void invokeAlert() {
+	public void invokeAlert() throws Exception {
 		driver.get(WebLink.contextPageUrl);
 		// TODO Auto-generated method stub
 		Actions action = new Actions(driver).contextClick(contextOption);
@@ -38,7 +38,7 @@ public class ContextMenuPage extends BasePage {
 	}
 
 
-	public boolean verifyAlertText() {
+	public boolean verifyAlertText() throws Exception {
 		// TODO Auto-generated method stub
 		String expected="You selected a context menu";
 		Alert alert=driver.switchTo().alert();

@@ -29,14 +29,14 @@ public class DropDownPage extends BasePage {
 	WebElement dropDown;
 	
 	
-	public void selectByVisibleText(String text) {
+	public void selectByVisibleText(String text) throws Exception{
 		driver.get(WebLink.dropDownPageUrl);
 		Select sel=new Select(dropDown);
 		sel.selectByVisibleText(text);
 	}
 	
 	
-	public boolean verifyDropDownOption(String text) {
+	public boolean verifyDropDownOption(String text) throws Exception{
 		Select sel=new Select(dropDown);
 		WebElement option = sel.getFirstSelectedOption();
 		String selectedText=option.getText();

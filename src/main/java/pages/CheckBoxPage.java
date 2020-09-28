@@ -29,23 +29,23 @@ public class CheckBoxPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"checkboxes\"]/input[2]")
 	WebElement checkBoxTwo;
 
-	public void clickCheckBoxOne() {
+	public void clickCheckBoxOne() throws Exception{
 		checkBoxOne.click();
 	}
 
-	public void clickCheckBoxTwo() {
+	public void clickCheckBoxTwo() throws Exception{
 		checkBoxTwo.click();
 	}
 
-	public boolean isFirstBoxChecked() {
+	public boolean isFirstBoxChecked() throws Exception{
 		return checkBoxOne.isSelected();
 	}
 
-	public boolean isSecondBoxChecked() {
+	public boolean isSecondBoxChecked() throws Exception {
 		return checkBoxTwo.isSelected();
 	}
 
-	public void getCheckBoxURL() {
+	public void getCheckBoxURL() throws Exception{
 		driver.get(WebLink.checkBoxUrl);
 	}
 }

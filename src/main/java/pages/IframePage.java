@@ -34,7 +34,7 @@ public class IframePage extends BasePage {
 	
 	
 
-	public boolean verifyIframe() {
+	public boolean verifyIframe() throws Exception{
 		// TODO Auto-generated method stub
 		return textBox.getText().equalsIgnoreCase("some Text");
 	}
@@ -42,7 +42,7 @@ public class IframePage extends BasePage {
 
 
 
-	public void ChangeFrame() {
+	public void ChangeFrame() throws Exception{
 		// TODO Auto-generated method stub
 		driver.switchTo().frame(textFrame);
 		
@@ -51,7 +51,7 @@ public class IframePage extends BasePage {
 
 
 
-	public void EnterText() {
+	public void EnterText() throws Exception{
 		// TODO Auto-generated method stub
 		
 		textBox.clear();

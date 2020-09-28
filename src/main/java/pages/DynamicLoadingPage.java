@@ -33,17 +33,17 @@ public class DynamicLoadingPage extends BasePage {
 	@FindBy(id="finish")
 	WebElement text;
 	
-public void clickStartButton() {
+public void clickStartButton() throws Exception{
 	btn_start.click();
 	
 }
 	
-public void waitForTextElement(WebDriver driver) {
+public void waitForTextElement(WebDriver driver) throws Exception{
 	WebDriverWait wait=new WebDriverWait(driver, 10);
 	wait.until(ExpectedConditions.visibilityOf(text));
 }
 
-public boolean verifyTextElement() {
+public boolean verifyTextElement() throws Exception{
 	return text.getText().equalsIgnoreCase("Hello World!");
 }
 	

@@ -43,7 +43,7 @@ public class MouseHoverPage extends BasePage {
 	
 	
 	
-public boolean hoverOverElement(WebElement element,WebElement popedUpElement) {
+public boolean hoverOverElement(WebElement element,WebElement popedUpElement) throws Exception{
 	Actions actions=new Actions(driver);
 	actions.moveToElement(element).perform();
 	
@@ -53,7 +53,7 @@ return 	popedUpElement.getText().equalsIgnoreCase("View profile");
 }
 
 
-	public boolean verifyHoverOver() {
+	public boolean verifyHoverOver() throws Exception{
 		return hoverOverElement(profileOne,popUpCaptionOne)&& hoverOverElement(profileTwo,popUpCaptionTwo)&& hoverOverElement(profileThree,popUpCaptionThree);
 	}
 

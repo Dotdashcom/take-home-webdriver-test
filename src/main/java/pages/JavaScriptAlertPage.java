@@ -28,51 +28,49 @@ public class JavaScriptAlertPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath ="//*[@id=\"content\"]/div/ul/li[1]//button")
+	@FindBy(xpath = "//*[@id=\"content\"]/div/ul/li[1]//button")
 	WebElement jsAlert;
-	
-	@FindBy(xpath="//*[@id=\"content\"]/div/ul/li[2]/button")
+
+	@FindBy(xpath = "//*[@id=\"content\"]/div/ul/li[2]/button")
 	WebElement jsConfirm;
-	
-	@FindBy(xpath="//*[@id=\"content\"]/div/ul/li[3]/button")
+
+	@FindBy(xpath = "//*[@id=\"content\"]/div/ul/li[3]/button")
 	WebElement jsPrompt;
-	
-	@FindBy(id="result")
+
+	@FindBy(id = "result")
 	WebElement jsMessage;
-	
-	
-public void clickJSAlert() {
-	jsAlert.click();
-}
 
-public void clickJsConfirm() {
-	jsConfirm.click();
-}
-public void jsPrompt() {
-	jsPrompt.click();
-}
+	public void clickJSAlert() throws Exception {
+		jsAlert.click();
+	}
 
-public boolean verifyAlertMsg(String msg) {
-	// TODO Auto-generated method stub
-	return driver.switchTo().alert().getText().equalsIgnoreCase(msg);
-}
+	public void clickJsConfirm() throws Exception {
+		jsConfirm.click();
+	}
 
+	public void jsPrompt() throws Exception {
+		jsPrompt.click();
+	}
 
-public void acceptAlert() {
-	driver.switchTo().alert().accept();
-	
-}
+	public boolean verifyAlertMsg(String msg) throws Exception {
+		// TODO Auto-generated method stub
+		return driver.switchTo().alert().getText().equalsIgnoreCase(msg);
+	}
 
-public boolean isResultMatched(String text) {
-	return jsMessage.getText().equalsIgnoreCase(text);
-}
+	public void acceptAlert() throws Exception {
+		driver.switchTo().alert().accept();
 
-public void enterAlertText(String msg) {
-	// TODO Auto-generated method stub
-	Alert alert=driver.switchTo().alert();
-	alert.sendKeys(msg);
-	alert.accept();
-	
-	
-}
+	}
+
+	public boolean isResultMatched(String text) throws Exception {
+		return jsMessage.getText().equalsIgnoreCase(text);
+	}
+
+	public void enterAlertText(String msg) throws Exception {
+		// TODO Auto-generated method stub
+		Alert alert = driver.switchTo().alert();
+		alert.sendKeys(msg);
+		alert.accept();
+
+	}
 }

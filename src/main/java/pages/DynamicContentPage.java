@@ -35,7 +35,7 @@ public class DynamicContentPage extends BasePage {
 		
 	}
 	
-	public boolean verifyContentChange() {
+	public boolean verifyContentChange() throws Exception{
 		driver.get(WebLink.dynamicContentPageUrl);
 		String firstText=contentOne.getText();
 		refreshPage();
