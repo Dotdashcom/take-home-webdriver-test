@@ -123,3 +123,5 @@
     + Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
 
  
+[huy.nguyen.v7@gmail.com] 
+I finished the 18 scenarios and uploaded the codes. Thanks
