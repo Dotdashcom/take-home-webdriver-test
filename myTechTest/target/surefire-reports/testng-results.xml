@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="18567" started-at="2020-10-01T03:32:23Z" finished-at="2020-10-01T03:32:42Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="18567" started-at="2020-10-01T03:32:23Z" finished-at="2020-10-01T03:32:42Z">
+      <class name="com.testing.TestFile">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@66d2e7d9]" name="beforeMethod" is-config="true" duration-ms="6979" started-at="2020-09-30T23:32:23Z" finished-at="2020-09-30T23:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="fileUploadTest()[pri:11, instance:com.testing.TestFile@66d2e7d9]" name="fileUploadTest" duration-ms="10822" started-at="2020-09-30T23:32:30Z" finished-at="2020-09-30T23:32:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@66d2e7d9]" name="afterMethod" is-config="true" duration-ms="748" started-at="2020-09-30T23:32:41Z" finished-at="2020-09-30T23:32:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fileUploadTest status=SUCCESS method=TestFile.fileUploadTest()[pri:11, instance:com.testing.TestFile@66d2e7d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testing.TestFile -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
