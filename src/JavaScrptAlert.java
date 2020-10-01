@@ -35,7 +35,7 @@ public class JavaScrptAlertPage {
 	
 
 	@FindBy(xpath ="//p[@id='result']")
-	public static WebElement text;
+	public static  WebElement text;
 	
 	
 	
