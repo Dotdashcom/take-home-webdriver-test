@@ -19,17 +19,17 @@ public class Login_failer extends Base {
 
 		try {
 
-			driver.get("http://localhost:7080/login");
+			driver.get(prop.readProperties("login_url"));
 			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 			// put the user name
-			WebElement name = driver.findElement(By.cssSelector("#username"));
+			WebElement name = driver.findElement(By.cssSelector(prop.readProperties("user_name")));
 			name.sendKeys("tomsmith");
 			// put the password
-			WebElement password = driver.findElement(By.cssSelector("#password"));
+			WebElement password = driver.findElement(By.cssSelector(prop.readProperties("pass")));
 			password.sendKeys("Password");
 			// Submit click
-			WebElement submit = driver.findElement(By.xpath("//button[@class=\"radius\"]"));
+			WebElement submit = driver.findElement(By.xpath(prop.readProperties("submit")));
 			lib.click(submit);
 
 			// Assert the success page or not
@@ -38,11 +38,11 @@ public class Login_failer extends Base {
 
 			if(!(URL == url)) {
 				assertTrue(true);
-				test.log(Status.INFO, "User Link Assertion Success!!");
+				test.log(Status.INFO, "User Logging Fail  Assertion Success!!");
 			} 
 			else {
 				assertTrue(false);
-				test.log(Status.FAIL, "Assertion Fail !!");
+				test.log(Status.FAIL, "User Logging Sucess Assertion Fail !!");
 			}
 
 			

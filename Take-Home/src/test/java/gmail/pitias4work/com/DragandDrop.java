@@ -16,12 +16,12 @@ public class DragandDrop extends Base {
 	public void dragandDrop() {
 
 		try {
-			driver.get("http://localhost:7080/drag_and_drop");
+			driver.get(prop.readProperties("dragandDrop_url"));
 			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
-			WebElement ABox = driver.findElement(By.id("column-a"));
-			WebElement BBox = driver.findElement(By.id("column-b"));
+			WebElement ABox = driver.findElement(By.id(prop.readProperties("ABox")));
+			WebElement BBox = driver.findElement(By.id(prop.readProperties("BBox")));
 
 			// Actions class method to drag and drop
 			// Perform drag and drop
@@ -35,12 +35,12 @@ public class DragandDrop extends Base {
 			if (textB.equals("A")) {
 				
 				logger.info("PASS: File dropped successfull");
-				test.log(Status.INFO, "Assert Success!!");
+				test.log(Status.INFO, "File dropped successfull : Assert Success!!");
 				//assertTrue(false);
 			} else {
 				
-				logger.info("FAIL: File doesn't doped as expected");
-				test.log(Status.INFO, "Assert not Verified");
+				logger.info("FAIL: File doesn't droped as expected");
+				test.log(Status.INFO, " FAIL: File doesn't doped as expected :Assert not Verified");
 				//assertTrue(false);
 			}
 

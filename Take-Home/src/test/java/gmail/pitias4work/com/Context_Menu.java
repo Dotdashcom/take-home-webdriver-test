@@ -18,17 +18,17 @@ public class Context_Menu extends Base {
 	public void context() {
 
 		try {
-			driver.get("http://localhost:7080/context_menu");
+			driver.get(prop.readProperties("context_url"));
 
 			assertEquals(driver.getTitle(), "The Internet");
 			logger.info("Title Verified :" + driver.getTitle());
 
-			WebElement rightclick = driver.findElement(By.cssSelector("#hot-spot"));
+			WebElement rightclick = driver.findElement(By.cssSelector(prop.readProperties("rightclick")));
 			lib.rightClick(rightclick);
 
 			Alert alert = driver.switchTo().alert();
 			assertEquals(alert.getText(), text);
-			test.log(Status.INFO, "Assert Success!!");
+			test.log(Status.INFO, "Assert Success!! "+text);
 
 			alert.accept();
 			lib.customWait(2);

@@ -17,12 +17,12 @@ public class JavaAlert extends Base {
 
 		try {
 
-			driver.get("http://localhost:7080/javascript_alerts");
+			driver.get(prop.readProperties("javaScript_url"));
 			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
 			// Test Clicks on JS Alert Button.
-			WebElement alertbtn = driver.findElement(By.xpath("//*[@id=\"content\"]/div/ul/li[1]/button"));
+			WebElement alertbtn = driver.findElement(By.xpath(prop.readProperties("alertbtn")));
 			alertbtn.click();
 			// Test asserts alert message.
 			Alert alert = driver.switchTo().alert();
@@ -33,7 +33,7 @@ public class JavaAlert extends Base {
 
 			// Test clicks on JS confirm Button and clicks ok on alert.
 
-			WebElement jsconfirmbtn = driver.findElement(By.xpath("//*[@id=\"content\"]/div/ul/li[2]/button"));
+			WebElement jsconfirmbtn = driver.findElement(By.xpath(prop.readProperties("jsconfirmbtn")));
 			lib.hiddenClick(jsconfirmbtn);
 			String confirm = alert.getText();
 			alert.accept();
@@ -45,7 +45,7 @@ public class JavaAlert extends Base {
 			test.log(Status.INFO, "Confirm Assertion Success!!");
 
 //			Test clicks on JS Prompt Button and types a message on Prompt.
-			WebElement prompt = driver.findElement(By.xpath("//*[@id=\"content\"]/div/ul/li[3]/button"));
+			WebElement prompt = driver.findElement(By.xpath(prop.readProperties("prompt")));
 			prompt.click();
 			alert.sendKeys("I Love USA !!!");
 
@@ -53,7 +53,7 @@ public class JavaAlert extends Base {
 			alert.accept();
 
 //			Test asserts that the alert message contains the typed message.
-			WebElement result = driver.findElement(By.cssSelector("#result"));
+			WebElement result = driver.findElement(By.cssSelector(prop.readProperties("result")));
 			String msg = result.getText().substring(13);
 			logger.info("Message is :" + result.getText().substring(13));
 			lib.customWait(1);

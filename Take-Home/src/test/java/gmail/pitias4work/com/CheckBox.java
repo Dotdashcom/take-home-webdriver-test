@@ -15,12 +15,12 @@ public class CheckBox extends Base {
 	public void box() {
 
 		try {
-			driver.get("http://localhost:7080/checkboxes");
+			driver.get(prop.readProperties("checkbox_url"));
 			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
-			WebElement checkbox1 = driver.findElement(By.xpath("//body//input[1]"));
-			WebElement checkbox2 = driver.findElement(By.xpath("//body//input[2]"));
+			WebElement checkbox1 = driver.findElement(By.xpath(prop.readProperties("checkbox1")));
+			WebElement checkbox2 = driver.findElement(By.xpath(prop.readProperties("checkbox2")));
 
 			if (checkbox1.isSelected()) {
 				test.log(Status.INFO, "Checkbox 1 Selected");

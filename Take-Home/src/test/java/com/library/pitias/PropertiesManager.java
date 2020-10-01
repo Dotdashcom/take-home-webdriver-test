@@ -8,8 +8,8 @@ import java.util.Properties;
 
 import org.testng.log4testng.Logger;
 
-public class JavaPropertiesManager {
-final static Logger logger = Logger.getLogger(JavaPropertiesManager.class);
+public class PropertiesManager {
+final static Logger logger = Logger.getLogger(PropertiesManager.class);
 	
 	private Properties prop;
 	private String filePath;
@@ -19,7 +19,7 @@ final static Logger logger = Logger.getLogger(JavaPropertiesManager.class);
 	
 	
 	
-	public JavaPropertiesManager(String filePAth) {
+	public PropertiesManager(String filePAth) {
 		this.filePath=filePAth;
 		prop = new Properties();
 	}

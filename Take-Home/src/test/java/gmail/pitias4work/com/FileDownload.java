@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import com.aventstack.extentreports.Status;
 import com.library.pitias.Base;
 
+
 public class FileDownload extends Base {
 	Logger logger = Logger.getLogger(Base.class);
 
@@ -18,13 +19,13 @@ public class FileDownload extends Base {
 	public void download() {
 
 		try {
-			driver.get("http://localhost:7080/download");
+			driver.get(prop.readProperties("download_url"));
 			logger.info(driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
-			WebElement download = driver.findElement(By.xpath("//*[@id=\"content\"]/div/a"));
+			WebElement download = driver.findElement(By.xpath(prop.readProperties("downloadbtn")));
 			download.click();
 
-			check = lib.isFileDownloaded("/Users/pitiasfessahaie/Downloads", "some-file.txt");
+			check = lib.isFileDownloaded(prop.readProperties("filePath"), prop.readProperties("fileName"));
 			lib.customWait(8);
 			assertTrue(check);
 			test.log(Status.INFO, "Download Compelete Assert Success!!");

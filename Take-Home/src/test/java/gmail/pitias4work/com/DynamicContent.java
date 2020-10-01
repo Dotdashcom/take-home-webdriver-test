@@ -19,11 +19,11 @@ public class DynamicContent extends Base {
 	public void dynamic_Content() {
 
 		try {
-			driver.get("http://localhost:7080/dynamic_content");
+			driver.get(prop.readProperties("dynamic_url"));
 			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
-			String locate = "//body//div[@id='content']//div[@id='content']//div[1]//div[1]//img[1]";
+			String locate = prop.readProperties("locate");
 
 			for (int i = 0; i <= 3; i++) {
 				driver.navigate().refresh();
@@ -31,7 +31,7 @@ public class DynamicContent extends Base {
 
 				List<WebElement> images = driver.findElements(By.xpath(locate));
 
-				String imageFileName = "/img/avatars/Original-Facebook-Geek-Profile-Avatar-5.jpg";
+				String imageFileName = prop.readProperties("avatar6");
 				for (WebElement image : images) {
 					if (image.getAttribute("src").contains(imageFileName)) {
 						assertTrue(false);

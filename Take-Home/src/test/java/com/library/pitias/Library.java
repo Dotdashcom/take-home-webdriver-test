@@ -15,12 +15,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
@@ -156,6 +159,45 @@ public class Library {
 		Actions action = new Actions(driver);
 		action.clickAndHold(source).moveToElement(dest).release(source).build().perform();
 		customWait(2);
+	}
+	
+	public void waitForPageToLoad(long timeOutInSeconds) {
+		ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver driver) {
+				return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+			}
+		};
+		try {
+			System.out.println("Waiting for page to load...");
+			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
+			wait.until(expectation);
+		} catch (Throwable error) {
+			System.out.println(
+					"Timeout waiting for Page Load Request to complete after " + timeOutInSeconds + " seconds");
+		}
+	}
+	public void waitForStaleElement(WebElement element) {
+		int y = 0;
+		while (y <= 15) {
+			try {
+				element.isDisplayed();
+				break;
+			} catch (StaleElementReferenceException st) {
+				y++;
+				try {
+					Thread.sleep(300);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			} catch (WebDriverException e) {
+				y++;
+				try {
+					Thread.sleep(300);
+				} catch (InterruptedException ew) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 
 	public void click(WebElement element) {

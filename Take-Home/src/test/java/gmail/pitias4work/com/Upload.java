@@ -2,6 +2,7 @@ package gmail.pitias4work.com;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -15,25 +16,25 @@ public class Upload extends Base {
 	public void upload() {
 
 		try {
-			driver.get("http://localhost:7080/upload");
+			driver.get(prop.readProperties("upload_url"));
 			logger.info("Title is :" + driver.getTitle());
 
 			assertEquals(driver.getTitle(), "The Internet");
 
 			// Test uses Upload Button or Drag and Drop to upload a file.
-			WebElement upload = driver.findElement(By.xpath("//*[@id=\"file-upload\"]"));
+			WebElement upload = driver.findElement(By.xpath(prop.readProperties("uploadbtn")));
 
 			lib.hiddenClick(upload);
 
 			lib.customWait(3);
-			upload.sendKeys("/Users/pitiasfessahaie/Downloads/some-file.txt");
+			upload.sendKeys(prop.readProperties("uploadfilePath"));
 
-			WebElement submit = driver.findElement(By.cssSelector("#file-submit"));
+			WebElement submit = driver.findElement(By.cssSelector(prop.readProperties("uploadsubmit")));
 			lib.click(submit);
 
 			// Assertion upload
 
-			if (driver.findElement(By.cssSelector("#uploaded-files")).isDisplayed()) {
+			if (driver.findElement(By.cssSelector(prop.readProperties("uploadtxt"))).isDisplayed()) {
 				assertTrue(true, "The File is uploaded sucessfully");
 				test.log(Status.INFO, "File upload Assertion Success!!");
 			} else {

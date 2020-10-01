@@ -16,7 +16,7 @@ public class FloatingMenu extends Base {
 	public void Floater() {
 
 		try {
-			driver.get("http://localhost:7080/floating_menu");
+			driver.get(prop.readProperties("floating_url"));
 			logger.info("Title is :" + driver.getTitle());
 
 			assertEquals(driver.getTitle(), "The Internet");
@@ -26,7 +26,7 @@ public class FloatingMenu extends Base {
 			lib.scrollDown(2000);
 
 			// Test asserts that the floating menu is still displayed.
-			WebElement scroll = driver.findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]/a"));
+			WebElement scroll = driver.findElement(By.xpath(prop.readProperties("scroll")));
 			assertTrue(scroll.isDisplayed());
 			test.log(Status.INFO, "Scroll is Displayed Assert Success!!");
 

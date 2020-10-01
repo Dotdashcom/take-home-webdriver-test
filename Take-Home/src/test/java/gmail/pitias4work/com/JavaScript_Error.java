@@ -17,7 +17,7 @@ public class JavaScript_Error extends Base {
 		String error = null;
 
 		try {
-			driver.get("http://localhost:7080/javascript_error");
+			driver.get(prop.readProperties("javaScriptError_url"));
 
 			LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
 			// Test finds the JavaScript error on the page.

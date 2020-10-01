@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -21,7 +22,7 @@ public class Notification_Msg extends Base {
 	public void notification_message() {
 
 		try {
-			driver.get("http://localhost:7080/notification_message_rendered");
+			driver.get(prop.readProperties("notification_url"));
 			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
@@ -30,10 +31,10 @@ public class Notification_Msg extends Base {
 
 			try {
 				for (int i = 0; i < 4; i++) {
-					WebElement here = driver.findElement(By.xpath("//*[@id=\"content\"]/div/p/a"));
+					WebElement here = driver.findElement(By.xpath(prop.readProperties("herelink")));
 					lib.click(here);
 
-					List<WebElement> data = driver.findElements(By.id("flash"));
+					List<WebElement> data = driver.findElements(By.id(prop.readProperties("dataText")));
 					for (WebElement text : data) {
 						System.out.println(text.getText());
 
@@ -43,7 +44,7 @@ public class Notification_Msg extends Base {
 					lib.customWait(2);
 				}
 			} catch (Exception e) {
-				WebElement here = driver.findElement(By.xpath("//*[@id=\"content\"]/div/p/a"));
+				WebElement here = driver.findElement(By.xpath(prop.readProperties("herelink")));
 				lib.click(here);
 
 			}
@@ -58,7 +59,9 @@ public class Notification_Msg extends Base {
 			} else if (msg.contains("Action successful")) {
 				assertTrue(true);
 				test.log(Status.INFO, "Assertion Success!!");
-			}  else { test.log(Status.FAIL, "Assertion Success!!");}
+			} else {
+				test.log(Status.FAIL, "Assertion Success!!");
+			}
 
 			lib.customWait(2);
 

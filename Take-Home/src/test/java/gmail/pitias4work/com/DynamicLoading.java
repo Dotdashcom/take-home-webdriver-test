@@ -16,15 +16,15 @@ public class DynamicLoading extends Base {
 
 		try {
 
-			driver.get("http://localhost:7080/dynamic_loading/2");
+			driver.get(prop.readProperties("dynamicloading_url"));
 			logger.info("Title is :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
-			WebElement start = driver.findElement(By.xpath("//*[@id=\"start\"]/button"));
+			WebElement start = driver.findElement(By.xpath(prop.readProperties("start")));
 			lib.click(start);
 
 			Thread.sleep(2000);
-			WebElement finish = driver.findElement(By.cssSelector("#finish"));
+			WebElement finish = driver.findElement(By.cssSelector(prop.readProperties("finishTxt")));
 			lib.explicitWait(finish);
 
 			// Assertion

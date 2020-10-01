@@ -15,17 +15,17 @@ public class DropDown extends Base {
 	public void dropDown() {
 
 		try {
-			driver.get("http://localhost:7080/dropdown");
+			driver.get(prop.readProperties("dropDown_url"));
 			logger.info("Verify Title :" + driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
-			WebElement dropdown = driver.findElement(By.cssSelector("#dropdown"));
+			WebElement dropdown = driver.findElement(By.cssSelector(prop.readProperties("dropDown")));
 			lib.dropDown(dropdown, 1);
 
 			// Assertion Method
 			String selectedText = lib.readDropDown(dropdown);
 			assertEquals(selectedText, "Option 1");
-			test.log(Status.INFO, "Assert Success!!");
+			test.log(Status.INFO, "Assert Success!! "+selectedText);
 
 			lib.customWait(2);
 

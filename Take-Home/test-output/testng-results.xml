@@ -1,40 +1,363 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="18" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10271" started-at="2020-09-22T11:23:03 EDT" finished-at="2020-09-22T11:23:14 EDT">
+  <suite name="Default suite" duration-ms="287575" started-at="2020-10-01T15:17:21 EDT" finished-at="2020-10-01T15:22:09 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10271" started-at="2020-09-22T11:23:03 EDT" finished-at="2020-09-22T11:23:14 EDT">
-      <class name="gmail.pitias4work.com.OpenNewTab">
-        <test-method status="PASS" signature="startup()[pri:0, instance:gmail.pitias4work.com.OpenNewTab@3aeaafa6]" name="startup" is-config="true" duration-ms="72" started-at="2020-09-22T11:23:03 EDT" finished-at="2020-09-22T11:23:03 EDT">
+    <test name="Default test" duration-ms="287575" started-at="2020-10-01T15:17:21 EDT" finished-at="2020-10-01T15:22:09 EDT">
+      <class name="take.homw.script.SmokeTest">
+        <test-method status="PASS" signature="startup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="startup" is-config="true" duration-ms="98" started-at="2020-10-01T15:17:21 EDT" finished-at="2020-10-01T15:17:21 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:gmail.pitias4work.com.OpenNewTab@3aeaafa6]" name="setup" is-config="true" duration-ms="1389" started-at="2020-09-22T11:23:03 EDT" finished-at="2020-09-22T11:23:05 EDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="1644" started-at="2020-10-01T15:17:21 EDT" finished-at="2020-10-01T15:17:23 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="newTab()[pri:0, instance:gmail.pitias4work.com.OpenNewTab@3aeaafa6]" name="newTab" duration-ms="3435" started-at="2020-09-22T11:23:05 EDT" finished-at="2020-09-22T11:23:08 EDT">
+        <test-method status="PASS" signature="login_Success()[pri:1, instance:take.homw.script.SmokeTest@5ceecfee]" name="login_Success" duration-ms="2520" started-at="2020-10-01T15:17:23 EDT" finished-at="2020-10-01T15:17:25 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newTab -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:gmail.pitias4work.com.OpenNewTab@3aeaafa6]" name="tearDown" is-config="true" duration-ms="5073" started-at="2020-09-22T11:23:08 EDT" finished-at="2020-09-22T11:23:13 EDT">
+        </test-method> <!-- login_Success -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5135" started-at="2020-10-01T15:17:25 EDT" finished-at="2020-10-01T15:17:30 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=newTab status=SUCCESS method=OpenNewTab.newTab()[pri:0, instance:gmail.pitias4work.com.OpenNewTab@3aeaafa6] output={null}]]]>
+                <![CDATA[[TestResult name=login_Success status=SUCCESS method=SmokeTest.login_Success()[pri:1, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:gmail.pitias4work.com.OpenNewTab@3aeaafa6]" name="afterAllTests" is-config="true" duration-ms="275" started-at="2020-09-22T11:23:13 EDT" finished-at="2020-09-22T11:23:14 EDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="889" started-at="2020-10-01T15:17:30 EDT" finished-at="2020-10-01T15:17:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login_fail()[pri:2, instance:take.homw.script.SmokeTest@5ceecfee]" name="login_fail" duration-ms="1503" started-at="2020-10-01T15:17:31 EDT" finished-at="2020-10-01T15:17:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_fail -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5118" started-at="2020-10-01T15:17:33 EDT" finished-at="2020-10-01T15:17:38 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_fail status=SUCCESS method=SmokeTest.login_fail()[pri:2, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="855" started-at="2020-10-01T15:17:38 EDT" finished-at="2020-10-01T15:17:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkbox()[pri:3, instance:take.homw.script.SmokeTest@5ceecfee]" name="checkbox" duration-ms="1277" started-at="2020-10-01T15:17:39 EDT" finished-at="2020-10-01T15:17:40 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5125" started-at="2020-10-01T15:17:40 EDT" finished-at="2020-10-01T15:17:45 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkbox status=SUCCESS method=SmokeTest.checkbox()[pri:3, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="889" started-at="2020-10-01T15:17:45 EDT" finished-at="2020-10-01T15:17:46 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="context_menu()[pri:4, instance:take.homw.script.SmokeTest@5ceecfee]" name="context_menu" duration-ms="2502" started-at="2020-10-01T15:17:46 EDT" finished-at="2020-10-01T15:17:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- context_menu -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="20044" started-at="2020-10-01T15:17:49 EDT" finished-at="2020-10-01T15:18:09 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=context_menu status=SUCCESS method=SmokeTest.context_menu()[pri:4, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="876" started-at="2020-10-01T15:18:09 EDT" finished-at="2020-10-01T15:18:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dragandDrop()[pri:5, instance:take.homw.script.SmokeTest@5ceecfee]" name="dragandDrop" duration-ms="5628" started-at="2020-10-01T15:18:09 EDT" finished-at="2020-10-01T15:18:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragandDrop -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5131" started-at="2020-10-01T15:18:15 EDT" finished-at="2020-10-01T15:18:20 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dragandDrop status=SUCCESS method=SmokeTest.dragandDrop()[pri:5, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="873" started-at="2020-10-01T15:18:20 EDT" finished-at="2020-10-01T15:18:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dropDown()[pri:6, instance:take.homw.script.SmokeTest@5ceecfee]" name="dropDown" duration-ms="3339" started-at="2020-10-01T15:18:21 EDT" finished-at="2020-10-01T15:18:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDown -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5127" started-at="2020-10-01T15:18:24 EDT" finished-at="2020-10-01T15:18:30 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dropDown status=SUCCESS method=SmokeTest.dropDown()[pri:6, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="869" started-at="2020-10-01T15:18:30 EDT" finished-at="2020-10-01T15:18:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dynamic_Content()[pri:7, instance:take.homw.script.SmokeTest@5ceecfee]" name="dynamic_Content" duration-ms="20577" started-at="2020-10-01T15:18:30 EDT" finished-at="2020-10-01T15:18:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_Content -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5087" started-at="2020-10-01T15:18:51 EDT" finished-at="2020-10-01T15:18:56 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dynamic_Content status=SUCCESS method=SmokeTest.dynamic_Content()[pri:7, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="824" started-at="2020-10-01T15:18:56 EDT" finished-at="2020-10-01T15:18:57 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dynamic_Control()[pri:8, instance:take.homw.script.SmokeTest@5ceecfee]" name="dynamic_Control" duration-ms="20656" started-at="2020-10-01T15:18:57 EDT" finished-at="2020-10-01T15:19:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_Control -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5091" started-at="2020-10-01T15:19:18 EDT" finished-at="2020-10-01T15:19:23 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dynamic_Control status=SUCCESS method=SmokeTest.dynamic_Control()[pri:8, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="831" started-at="2020-10-01T15:19:23 EDT" finished-at="2020-10-01T15:19:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dynamic_Loading()[pri:9, instance:take.homw.script.SmokeTest@5ceecfee]" name="dynamic_Loading" duration-ms="10307" started-at="2020-10-01T15:19:24 EDT" finished-at="2020-10-01T15:19:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_Loading -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5079" started-at="2020-10-01T15:19:34 EDT" finished-at="2020-10-01T15:19:39 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dynamic_Loading status=SUCCESS method=SmokeTest.dynamic_Loading()[pri:9, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="805" started-at="2020-10-01T15:19:39 EDT" finished-at="2020-10-01T15:19:40 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="fileDownload()[pri:10, instance:take.homw.script.SmokeTest@5ceecfee]" name="fileDownload" duration-ms="8276" started-at="2020-10-01T15:19:40 EDT" finished-at="2020-10-01T15:19:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5115" started-at="2020-10-01T15:19:48 EDT" finished-at="2020-10-01T15:19:53 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fileDownload status=SUCCESS method=SmokeTest.fileDownload()[pri:10, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="812" started-at="2020-10-01T15:19:53 EDT" finished-at="2020-10-01T15:19:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="fileUpload()[pri:11, instance:take.homw.script.SmokeTest@5ceecfee]" name="fileUpload" duration-ms="6360" started-at="2020-10-01T15:19:54 EDT" finished-at="2020-10-01T15:20:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUpload -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5076" started-at="2020-10-01T15:20:00 EDT" finished-at="2020-10-01T15:20:05 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fileUpload status=SUCCESS method=SmokeTest.fileUpload()[pri:11, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="797" started-at="2020-10-01T15:20:05 EDT" finished-at="2020-10-01T15:20:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="floating_Menu()[pri:12, instance:take.homw.script.SmokeTest@5ceecfee]" name="floating_Menu" duration-ms="2240" started-at="2020-10-01T15:20:06 EDT" finished-at="2020-10-01T15:20:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floating_Menu -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5078" started-at="2020-10-01T15:20:08 EDT" finished-at="2020-10-01T15:20:13 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=floating_Menu status=SUCCESS method=SmokeTest.floating_Menu()[pri:12, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="875" started-at="2020-10-01T15:20:13 EDT" finished-at="2020-10-01T15:20:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="iframe()[pri:13, instance:take.homw.script.SmokeTest@5ceecfee]" name="iframe" duration-ms="2576" started-at="2020-10-01T15:20:14 EDT" finished-at="2020-10-01T15:20:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframe -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5120" started-at="2020-10-01T15:20:17 EDT" finished-at="2020-10-01T15:20:22 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=iframe status=SUCCESS method=SmokeTest.iframe()[pri:13, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="886" started-at="2020-10-01T15:20:22 EDT" finished-at="2020-10-01T15:20:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="mouse_Hover()[pri:14, instance:take.homw.script.SmokeTest@5ceecfee]" name="mouse_Hover" duration-ms="9649" started-at="2020-10-01T15:20:23 EDT" finished-at="2020-10-01T15:20:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouse_Hover -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5119" started-at="2020-10-01T15:20:33 EDT" finished-at="2020-10-01T15:20:38 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mouse_Hover status=SUCCESS method=SmokeTest.mouse_Hover()[pri:14, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="880" started-at="2020-10-01T15:20:38 EDT" finished-at="2020-10-01T15:20:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="javaScriptAlerts()[pri:15, instance:take.homw.script.SmokeTest@5ceecfee]" name="javaScriptAlerts" duration-ms="8447" started-at="2020-10-01T15:20:39 EDT" finished-at="2020-10-01T15:20:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaScriptAlerts -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5127" started-at="2020-10-01T15:20:47 EDT" finished-at="2020-10-01T15:20:52 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=javaScriptAlerts status=SUCCESS method=SmokeTest.javaScriptAlerts()[pri:15, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="882" started-at="2020-10-01T15:20:52 EDT" finished-at="2020-10-01T15:20:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="JavaScriptError()[pri:16, instance:take.homw.script.SmokeTest@5ceecfee]" name="JavaScriptError" duration-ms="75" started-at="2020-10-01T15:20:53 EDT" finished-at="2020-10-01T15:20:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptError -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5125" started-at="2020-10-01T15:20:53 EDT" finished-at="2020-10-01T15:20:58 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JavaScriptError status=SUCCESS method=SmokeTest.JavaScriptError()[pri:16, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="868" started-at="2020-10-01T15:20:58 EDT" finished-at="2020-10-01T15:20:59 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openNewTab()[pri:17, instance:take.homw.script.SmokeTest@5ceecfee]" name="openNewTab" duration-ms="3397" started-at="2020-10-01T15:20:59 EDT" finished-at="2020-10-01T15:21:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openNewTab -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5070" started-at="2020-10-01T15:21:02 EDT" finished-at="2020-10-01T15:21:08 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openNewTab status=SUCCESS method=SmokeTest.openNewTab()[pri:17, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="setup" is-config="true" duration-ms="849" started-at="2020-10-01T15:21:08 EDT" finished-at="2020-10-01T15:21:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="notification_Msg()[pri:18, instance:take.homw.script.SmokeTest@5ceecfee]" name="notification_Msg" duration-ms="54761" started-at="2020-10-01T15:21:08 EDT" finished-at="2020-10-01T15:22:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notification_Msg -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="tearDown" is-config="true" duration-ms="5089" started-at="2020-10-01T15:22:03 EDT" finished-at="2020-10-01T15:22:08 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=notification_Msg status=SUCCESS method=SmokeTest.notification_Msg()[pri:18, instance:take.homw.script.SmokeTest@5ceecfee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:take.homw.script.SmokeTest@5ceecfee]" name="afterAllTests" is-config="true" duration-ms="246" started-at="2020-10-01T15:22:08 EDT" finished-at="2020-10-01T15:22:09 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTests -->
-      </class> <!-- gmail.pitias4work.com.OpenNewTab -->
+      </class> <!-- take.homw.script.SmokeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

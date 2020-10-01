@@ -15,17 +15,18 @@ public class Iframe extends Base {
 	public void frame() {
 
 		try {
-			driver.get("http://localhost:7080/iframe");
+			driver.get(prop.readProperties("iframe-url"));
 			logger.info(driver.getTitle());
 			assertEquals(driver.getTitle(), "The Internet");
 
 			// Test switches to Iframe and types some text.
 			driver.switchTo().frame(0);
-			WebElement sentence = driver.findElement(By.cssSelector("#tinymce"));
+			WebElement sentence = driver.findElement(By.cssSelector(prop.readProperties("sentence")));
+			sentence.clear();
 			sentence.sendKeys("I love USA !!!");
 
 			// Test asserts that the typed text is as expected.
-			assertEquals(sentence.getText(), "Your content goes here.I love USA !!!");
+			assertEquals(sentence.getText(), "I love USA !!!");
 			test.log(Status.INFO, "Text Assertion Success!!");
 			
 

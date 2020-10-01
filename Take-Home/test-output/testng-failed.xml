@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="take.homw.script.Script">
+      <class name="take.homw.script.SmokeTest">
         <methods>
           <include name="afterAllTests"/>
+          <include name="dynamic_Content"/>
           <include name="startup"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="dynamic_Content"/>
         </methods>
-      </class> <!-- take.homw.script.Script -->
+      </class> <!-- take.homw.script.SmokeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

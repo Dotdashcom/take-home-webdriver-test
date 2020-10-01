@@ -22,7 +22,8 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
  * 
  * @author Pitias Fessahaie
  * @Phone# 240-423-7954
- * @email: selmptsegu@gmail.com
+ * @email: selmptsegu@gmail.com,pitias4work@gmail.com
+ * @jobTitle: Automation Tester
  * @Date : Sep/17/2020
  * DotDashcom: Challenge Accepted
  *
@@ -38,8 +39,8 @@ public class Base {
 	public String sendEmail;
 	public String startTime;
 	Logger logger = Logger.getLogger(Base.class);
-	JavaPropertiesManager prop;
-	JavaPropertiesManager eprop;
+	public static PropertiesManager prop;
+	public static PropertiesManager eprop;
 
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
@@ -70,7 +71,7 @@ public class Base {
 			test = extent.createTest("Starting Class", "Class Inintiated successful!!");
 
 			lib = new Library(driver);
-			prop = new JavaPropertiesManager("src/test/resources/config.properties");
+			prop = new PropertiesManager("src/test/resources/config.properties");
 			
 			logger.info("Starting the Class ...");
 			test.log(Status.INFO, "Starting the Class ...");

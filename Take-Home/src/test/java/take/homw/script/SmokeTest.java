@@ -23,7 +23,7 @@ import gmail.pitias4work.com.Notification_Msg;
 import gmail.pitias4work.com.OpenNewTab;
 import gmail.pitias4work.com.Upload;
 
-public class Script extends Base {
+public class SmokeTest extends Base {
 
 	@Test(priority = 1)
 	public void login_Success() {
