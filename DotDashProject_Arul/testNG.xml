@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Suite -->
+<suite name="DotDashSuite">
+    <!-- Listener Binding -->
+    <listeners>
+        <listener class-name="com.Listener.TestListener"/>
+    </listeners>
+    <!-- Test -->
+    <test thread-count="5" name="DotDashSeleniumTest">
+        <!-- Link the classes with test annotations -->
+        <classes>
+            <class name="com.TestCases.DotDashSeleniumTest"/>
+        </classes>
+    </test>
+</suite>
