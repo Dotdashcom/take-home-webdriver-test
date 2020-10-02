@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-passed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.CheckBoxesTest" hash-for-method="CheckBoxesTest">CheckBoxesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.ContextMenuTest" hash-for-method="ContextMenuTest">ContextMenuTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.DragDropTest" hash-for-method="DragDropTest">DragDropTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.DropdownTest" hash-for-method="DropdownTest">DropdownTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.DynamicLoadingTest" hash-for-method="DynamicLoadingTest">DynamicLoadingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.FileDownloadTest" hash-for-method="FileDownloadTest">FileDownloadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.FileUploadTest" hash-for-method="FileUploadTest">FileUploadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.FloatingMenuTest" hash-for-method="FloatingMenuTest">FloatingMenuTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.DynamicControlsTest" hash-for-method="HomePageTest">HomePageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.DynamicContentTest" hash-for-method="HomePageTest">HomePageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.JSAlertTest" hash-for-method="JSAlertTest">JSAlertTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.LoginFailureTest" hash-for-method="LoginFailureTest">LoginFailureTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.LoginSuccessTest" hash-for-method="LoginSuccessTest">LoginSuccessTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.MouseHoverTest" hash-for-method="MouseHoverTest">MouseHoverTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.NotificationMsgTest" hash-for-method="NotificationMsgTest">NotificationMsgTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.OpenNewTabTest" hash-for-method="OpenNewTabTest">OpenNewTabTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.iframeTest" hash-for-method="iframeTest">iframeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="WebTesting.SeleniumWebTesting.jsErrorTest" hash-for-method="jsErrorTest">jsErrorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.DynamicLoadingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DynamicLoadingTest">
+                  </a> <!-- DynamicLoadingTest -->
+                  <span class="method-name">DynamicLoadingTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.DragDropTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DragDropTest">
+                  </a> <!-- DragDropTest -->
+                  <span class="method-name">DragDropTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.FloatingMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FloatingMenuTest">
+                  </a> <!-- FloatingMenuTest -->
+                  <span class="method-name">FloatingMenuTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.FileDownloadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FileDownloadTest">
+                  </a> <!-- FileDownloadTest -->
+                  <span class="method-name">FileDownloadTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.LoginFailureTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginFailureTest">
+                  </a> <!-- LoginFailureTest -->
+                  <span class="method-name">LoginFailureTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.DynamicControlsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomePageTest">
+                  </a> <!-- HomePageTest -->
+                  <span class="method-name">HomePageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.iframeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="iframeTest">
+                  </a> <!-- iframeTest -->
+                  <span class="method-name">iframeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.CheckBoxesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckBoxesTest">
+                  </a> <!-- CheckBoxesTest -->
+                  <span class="method-name">CheckBoxesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.OpenNewTabTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OpenNewTabTest">
+                  </a> <!-- OpenNewTabTest -->
+                  <span class="method-name">OpenNewTabTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.JSAlertTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="JSAlertTest">
+                  </a> <!-- JSAlertTest -->
+                  <span class="method-name">JSAlertTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.DropdownTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropdownTest">
+                  </a> <!-- DropdownTest -->
+                  <span class="method-name">DropdownTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.jsErrorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="jsErrorTest">
+                  </a> <!-- jsErrorTest -->
+                  <span class="method-name">jsErrorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.ContextMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ContextMenuTest">
+                  </a> <!-- ContextMenuTest -->
+                  <span class="method-name">ContextMenuTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.LoginSuccessTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginSuccessTest">
+                  </a> <!-- LoginSuccessTest -->
+                  <span class="method-name">LoginSuccessTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.NotificationMsgTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NotificationMsgTest">
+                  </a> <!-- NotificationMsgTest -->
+                  <span class="method-name">NotificationMsgTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.FileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FileUploadTest">
+                  </a> <!-- FileUploadTest -->
+                  <span class="method-name">FileUploadTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.MouseHoverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MouseHoverTest">
+                  </a> <!-- MouseHoverTest -->
+                  <span class="method-name">MouseHoverTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTesting.SeleniumWebTesting.DynamicContentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomePageTest">
+                  </a> <!-- HomePageTest -->
+                  <span class="method-name">HomePageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
+  &lt;test name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.LoginSuccessTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.NotificationMsgTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.DropdownTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.LoginFailureTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.DynamicControlsTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.FileDownloadTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.FloatingMenuTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.DynamicLoadingTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.DynamicContentTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.iframeTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.CheckBoxesTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.JSAlertTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.OpenNewTabTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.FileUploadTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.DragDropTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.ContextMenuTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.jsErrorTest&quot;/&gt;
+      &lt;class name=&quot;WebTesting.SeleniumWebTesting.MouseHoverTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (18 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'HomePageTest')
+data.setCell(0, 2, 'WebTesting.SeleniumWebTesting.DynamicControlsTest')
+data.setCell(0, 3, 23091);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ContextMenuTest')
+data.setCell(1, 2, 'WebTesting.SeleniumWebTesting.ContextMenuTest')
+data.setCell(1, 3, 5448);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'DynamicLoadingTest')
+data.setCell(2, 2, 'WebTesting.SeleniumWebTesting.DynamicLoadingTest')
+data.setCell(2, 3, 5280);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'DragDropTest')
+data.setCell(3, 2, 'WebTesting.SeleniumWebTesting.DragDropTest')
+data.setCell(3, 3, 4086);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'FileDownloadTest')
+data.setCell(4, 2, 'WebTesting.SeleniumWebTesting.FileDownloadTest')
+data.setCell(4, 3, 2244);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'JSAlertTest')
+data.setCell(5, 2, 'WebTesting.SeleniumWebTesting.JSAlertTest')
+data.setCell(5, 3, 950);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'MouseHoverTest')
+data.setCell(6, 2, 'WebTesting.SeleniumWebTesting.MouseHoverTest')
+data.setCell(6, 3, 768);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'iframeTest')
+data.setCell(7, 2, 'WebTesting.SeleniumWebTesting.iframeTest')
+data.setCell(7, 3, 743);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'NotificationMsgTest')
+data.setCell(8, 2, 'WebTesting.SeleniumWebTesting.NotificationMsgTest')
+data.setCell(8, 3, 684);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'HomePageTest')
+data.setCell(9, 2, 'WebTesting.SeleniumWebTesting.DynamicContentTest')
+data.setCell(9, 3, 589);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'LoginSuccessTest')
+data.setCell(10, 2, 'WebTesting.SeleniumWebTesting.LoginSuccessTest')
+data.setCell(10, 3, 462);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'OpenNewTabTest')
+data.setCell(11, 2, 'WebTesting.SeleniumWebTesting.OpenNewTabTest')
+data.setCell(11, 3, 457);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'FileUploadTest')
+data.setCell(12, 2, 'WebTesting.SeleniumWebTesting.FileUploadTest')
+data.setCell(12, 3, 363);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'DropdownTest')
+data.setCell(13, 2, 'WebTesting.SeleniumWebTesting.DropdownTest')
+data.setCell(13, 3, 348);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'CheckBoxesTest')
+data.setCell(14, 2, 'WebTesting.SeleniumWebTesting.CheckBoxesTest')
+data.setCell(14, 3, 323);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'LoginFailureTest')
+data.setCell(15, 2, 'WebTesting.SeleniumWebTesting.LoginFailureTest')
+data.setCell(15, 3, 274);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'FloatingMenuTest')
+data.setCell(16, 2, 'WebTesting.SeleniumWebTesting.FloatingMenuTest')
+data.setCell(16, 3, 255);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'jsErrorTest')
+data.setCell(17, 2, 'WebTesting.SeleniumWebTesting.jsErrorTest')
+data.setCell(17, 3, 116);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.CheckBoxesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.ContextMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">1269 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DragDropTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">2104 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DropdownTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">2836 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DynamicContentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">3670 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DynamicControlsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">4473 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DynamicLoadingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">5287 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.FileDownloadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">6104 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">6920 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.FloatingMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">7740 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.JSAlertTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">8639 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.LoginFailureTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">9458 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.LoginSuccessTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">10554 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.MouseHoverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">11632 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.NotificationMsgTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">12436 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.OpenNewTabTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">13291 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.iframeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">14172 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.jsErrorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">15024 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.LoginSuccessTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginSuccessTest</span>
+                <span class="method-start">15872 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.NotificationMsgTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">NotificationMsgTest</span>
+                <span class="method-start">16335 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DropdownTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DropdownTest</span>
+                <span class="method-start">17019 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.LoginFailureTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginFailureTest</span>
+                <span class="method-start">17367 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DynamicControlsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">HomePageTest</span>
+                <span class="method-start">17642 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.FileDownloadTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">FileDownloadTest</span>
+                <span class="method-start">40733 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.FloatingMenuTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">FloatingMenuTest</span>
+                <span class="method-start">42977 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DynamicLoadingTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DynamicLoadingTest</span>
+                <span class="method-start">43232 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DynamicContentTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">HomePageTest</span>
+                <span class="method-start">48512 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.iframeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">iframeTest</span>
+                <span class="method-start">49101 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.CheckBoxesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CheckBoxesTest</span>
+                <span class="method-start">49844 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.JSAlertTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">JSAlertTest</span>
+                <span class="method-start">50168 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.OpenNewTabTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">OpenNewTabTest</span>
+                <span class="method-start">51118 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">FileUploadTest</span>
+                <span class="method-start">51575 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DragDropTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DragDropTest</span>
+                <span class="method-start">51938 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.ContextMenuTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ContextMenuTest</span>
+                <span class="method-start">56024 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.jsErrorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">jsErrorTest</span>
+                <span class="method-start">61473 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.MouseHoverTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">MouseHoverTest</span>
+                <span class="method-start">61589 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.CheckBoxesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">62358 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.ContextMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">62358 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DragDropTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">62488 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DropdownTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">62621 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DynamicContentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">62763 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DynamicControlsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">62926 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.DynamicLoadingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63069 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.FileDownloadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63209 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63344 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.FloatingMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63495 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.JSAlertTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63651 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.LoginFailureTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63787 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.LoginSuccessTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63929 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.MouseHoverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">64070 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.NotificationMsgTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">64208 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.OpenNewTabTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">64351 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.iframeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">64514 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTesting.SeleniumWebTesting.jsErrorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">64657 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

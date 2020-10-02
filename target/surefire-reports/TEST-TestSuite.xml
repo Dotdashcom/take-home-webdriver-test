@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="65.163" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/satinderpalsingh/git/SeleniumWebTesting/SeleniumWebTesting"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/satinderpalsingh/git/SeleniumWebTesting/SeleniumWebTesting"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/48/vw4h_8892ql851cm250f2bxh0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/satinderpalsingh/Downloads/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/satinderpalsingh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/satinderpalsingh/Downloads/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.6"/>
+    <property name="library.jansi.path" value="/Users/satinderpalsingh/Downloads/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/satinderpalsingh"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="satinderpalsingh"/>
+    <property name="java.class.path" value="/Users/satinderpalsingh/Downloads/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="/Users/satinderpalsingh/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/satinderpalsingh/Downloads/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="LoginSuccessTest" classname="WebTesting.SeleniumWebTesting.LoginSuccessTest" time="0.462"/>
+  <testcase name="NotificationMsgTest" classname="WebTesting.SeleniumWebTesting.NotificationMsgTest" time="0.683"/>
+  <testcase name="DropdownTest" classname="WebTesting.SeleniumWebTesting.DropdownTest" time="0.348"/>
+  <testcase name="LoginFailureTest" classname="WebTesting.SeleniumWebTesting.LoginFailureTest" time="0.275"/>
+  <testcase name="HomePageTest" classname="WebTesting.SeleniumWebTesting.DynamicControlsTest" time="23.091"/>
+  <testcase name="FileDownloadTest" classname="WebTesting.SeleniumWebTesting.FileDownloadTest" time="2.244"/>
+  <testcase name="FloatingMenuTest" classname="WebTesting.SeleniumWebTesting.FloatingMenuTest" time="0.254"/>
+  <testcase name="DynamicLoadingTest" classname="WebTesting.SeleniumWebTesting.DynamicLoadingTest" time="5.28"/>
+  <testcase name="HomePageTest" classname="WebTesting.SeleniumWebTesting.DynamicContentTest" time="0.588"/>
+  <testcase name="iframeTest" classname="WebTesting.SeleniumWebTesting.iframeTest" time="0.742"/>
+  <testcase name="CheckBoxesTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0.324"/>
+  <testcase name="JSAlertTest" classname="WebTesting.SeleniumWebTesting.JSAlertTest" time="0.95"/>
+  <testcase name="OpenNewTabTest" classname="WebTesting.SeleniumWebTesting.OpenNewTabTest" time="0.457"/>
+  <testcase name="FileUploadTest" classname="WebTesting.SeleniumWebTesting.FileUploadTest" time="0.363"/>
+  <testcase name="DragDropTest" classname="WebTesting.SeleniumWebTesting.DragDropTest" time="4.086"/>
+  <testcase name="ContextMenuTest" classname="WebTesting.SeleniumWebTesting.ContextMenuTest" time="5.448"/>
+  <testcase name="jsErrorTest" classname="WebTesting.SeleniumWebTesting.jsErrorTest" time="0.116"/>
+  <testcase name="MouseHoverTest" classname="WebTesting.SeleniumWebTesting.MouseHoverTest" time="0.769"/>
+</testsuite>

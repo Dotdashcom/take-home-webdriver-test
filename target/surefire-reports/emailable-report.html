@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">18</td><td class="numi">18</td><td class="numi">0</td><td class="numi">0</td><td class="numi">64.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Surefire test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">WebTesting.SeleniumWebTesting.LoginSuccessTest</td><td><a href="#m1"><b>LoginSuccessTest</b>  </a></td><td class="numi">1</td><td>1601659378186</td><td class="numi">462</td></tr>
+<tr class="passedeven"><td rowspan="1">WebTesting.SeleniumWebTesting.NotificationMsgTest</td><td><a href="#m2"><b>NotificationMsgTest</b>  </a></td><td class="numi">1</td><td>1601659378649</td><td class="numi">684</td></tr>
+<tr class="passedodd"><td rowspan="1">WebTesting.SeleniumWebTesting.DropdownTest</td><td><a href="#m3"><b>DropdownTest</b>  </a></td><td class="numi">1</td><td>1601659379333</td><td class="numi">348</td></tr>
+<tr class="passedeven"><td rowspan="1">WebTesting.SeleniumWebTesting.LoginFailureTest</td><td><a href="#m4"><b>LoginFailureTest</b>  </a></td><td class="numi">1</td><td>1601659379681</td><td class="numi">274</td></tr>
+<tr class="passedodd"><td rowspan="1">WebTesting.SeleniumWebTesting.DynamicControlsTest</td><td><a href="#m5"><b>HomePageTest</b>  </a></td><td class="numi">1</td><td>1601659379956</td><td class="numi">23091</td></tr>
+<tr class="passedeven"><td rowspan="1">WebTesting.SeleniumWebTesting.FileDownloadTest</td><td><a href="#m6"><b>FileDownloadTest</b>  </a></td><td class="numi">1</td><td>1601659403047</td><td class="numi">2244</td></tr>
+<tr class="passedodd"><td rowspan="1">WebTesting.SeleniumWebTesting.FloatingMenuTest</td><td><a href="#m7"><b>FloatingMenuTest</b>  </a></td><td class="numi">1</td><td>1601659405291</td><td class="numi">255</td></tr>
+<tr class="passedeven"><td rowspan="1">WebTesting.SeleniumWebTesting.DynamicLoadingTest</td><td><a href="#m8"><b>DynamicLoadingTest</b>  </a></td><td class="numi">1</td><td>1601659405546</td><td class="numi">5280</td></tr>
+<tr class="passedodd"><td rowspan="1">WebTesting.SeleniumWebTesting.DynamicContentTest</td><td><a href="#m9"><b>HomePageTest</b>  </a></td><td class="numi">1</td><td>1601659410826</td><td class="numi">589</td></tr>
+<tr class="passedeven"><td rowspan="1">WebTesting.SeleniumWebTesting.iframeTest</td><td><a href="#m10"><b>iframeTest</b>  </a></td><td class="numi">1</td><td>1601659411415</td><td class="numi">743</td></tr>
+<tr class="passedodd"><td rowspan="1">WebTesting.SeleniumWebTesting.CheckBoxesTest</td><td><a href="#m11"><b>CheckBoxesTest</b>  </a></td><td class="numi">1</td><td>1601659412158</td><td class="numi">323</td></tr>
+<tr class="passedeven"><td rowspan="1">WebTesting.SeleniumWebTesting.JSAlertTest</td><td><a href="#m12"><b>JSAlertTest</b>  </a></td><td class="numi">1</td><td>1601659412482</td><td class="numi">950</td></tr>
+<tr class="passedodd"><td rowspan="1">WebTesting.SeleniumWebTesting.OpenNewTabTest</td><td><a href="#m13"><b>OpenNewTabTest</b>  </a></td><td class="numi">1</td><td>1601659413432</td><td class="numi">457</td></tr>
+<tr class="passedeven"><td rowspan="1">WebTesting.SeleniumWebTesting.FileUploadTest</td><td><a href="#m14"><b>FileUploadTest</b>  </a></td><td class="numi">1</td><td>1601659413889</td><td class="numi">363</td></tr>
+<tr class="passedodd"><td rowspan="1">WebTesting.SeleniumWebTesting.DragDropTest</td><td><a href="#m15"><b>DragDropTest</b>  </a></td><td class="numi">1</td><td>1601659414252</td><td class="numi">4086</td></tr>
+<tr class="passedeven"><td rowspan="1">WebTesting.SeleniumWebTesting.ContextMenuTest</td><td><a href="#m16"><b>ContextMenuTest</b>  </a></td><td class="numi">1</td><td>1601659418338</td><td class="numi">5448</td></tr>
+<tr class="passedodd"><td rowspan="1">WebTesting.SeleniumWebTesting.jsErrorTest</td><td><a href="#m17"><b>jsErrorTest</b>  </a></td><td class="numi">1</td><td>1601659423787</td><td class="numi">116</td></tr>
+<tr class="passedeven"><td rowspan="1">WebTesting.SeleniumWebTesting.MouseHoverTest</td><td><a href="#m18"><b>MouseHoverTest</b>  </a></td><td class="numi">1</td><td>1601659423903</td><td class="numi">768</td></tr>
+</table>
+<h1>Surefire test</h1>
+<h2 id="m1">WebTesting.SeleniumWebTesting.jsErrorTest:jsErrorTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">WebTesting.SeleniumWebTesting.MouseHoverTest:MouseHoverTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">WebTesting.SeleniumWebTesting.CheckBoxesTest:CheckBoxesTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">WebTesting.SeleniumWebTesting.OpenNewTabTest:OpenNewTabTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">WebTesting.SeleniumWebTesting.DragDropTest:DragDropTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">WebTesting.SeleniumWebTesting.FileDownloadTest:FileDownloadTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">WebTesting.SeleniumWebTesting.LoginSuccessTest:LoginSuccessTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">WebTesting.SeleniumWebTesting.DynamicControlsTest:HomePageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">WebTesting.SeleniumWebTesting.LoginFailureTest:LoginFailureTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">WebTesting.SeleniumWebTesting.NotificationMsgTest:NotificationMsgTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">WebTesting.SeleniumWebTesting.JSAlertTest:JSAlertTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">WebTesting.SeleniumWebTesting.ContextMenuTest:ContextMenuTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">WebTesting.SeleniumWebTesting.FloatingMenuTest:FloatingMenuTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">WebTesting.SeleniumWebTesting.FileUploadTest:FileUploadTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">WebTesting.SeleniumWebTesting.DynamicLoadingTest:DynamicLoadingTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">WebTesting.SeleniumWebTesting.DynamicContentTest:HomePageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">WebTesting.SeleniumWebTesting.DropdownTest:DropdownTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">WebTesting.SeleniumWebTesting.iframeTest:iframeTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

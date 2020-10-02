@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 02 13:22:42 EDT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>64 seconds (64804 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.CheckBoxesTest.CheckBoxesTest()'><b>CheckBoxesTest</b><br>Test class: WebTesting.SeleniumWebTesting.CheckBoxesTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.CheckBoxesTest@64616ca2</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.ContextMenuTest.ContextMenuTest()'><b>ContextMenuTest</b><br>Test class: WebTesting.SeleniumWebTesting.ContextMenuTest</td>
+<td></td>
+<td>5</td>
+<td>WebTesting.SeleniumWebTesting.ContextMenuTest@735f7ae5</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.DragDropTest.DragDropTest()'><b>DragDropTest</b><br>Test class: WebTesting.SeleniumWebTesting.DragDropTest</td>
+<td></td>
+<td>4</td>
+<td>WebTesting.SeleniumWebTesting.DragDropTest@38082d64</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.DropdownTest.DropdownTest()'><b>DropdownTest</b><br>Test class: WebTesting.SeleniumWebTesting.DropdownTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.DropdownTest@783e6358</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.DynamicLoadingTest.DynamicLoadingTest()'><b>DynamicLoadingTest</b><br>Test class: WebTesting.SeleniumWebTesting.DynamicLoadingTest</td>
+<td></td>
+<td>5</td>
+<td>WebTesting.SeleniumWebTesting.DynamicLoadingTest@1554909b</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.FileDownloadTest.FileDownloadTest()'><b>FileDownloadTest</b><br>Test class: WebTesting.SeleniumWebTesting.FileDownloadTest</td>
+<td></td>
+<td>2</td>
+<td>WebTesting.SeleniumWebTesting.FileDownloadTest@42d3bd8b</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.FileUploadTest.FileUploadTest()'><b>FileUploadTest</b><br>Test class: WebTesting.SeleniumWebTesting.FileUploadTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.FileUploadTest@2c6a3f77</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.FloatingMenuTest.FloatingMenuTest()'><b>FloatingMenuTest</b><br>Test class: WebTesting.SeleniumWebTesting.FloatingMenuTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.FloatingMenuTest@dfd3711</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.DynamicControlsTest.HomePageTest()'><b>HomePageTest</b><br>Test class: WebTesting.SeleniumWebTesting.DynamicControlsTest</td>
+<td></td>
+<td>23</td>
+<td>WebTesting.SeleniumWebTesting.DynamicControlsTest@5f2050f6</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.DynamicContentTest.HomePageTest()'><b>HomePageTest</b><br>Test class: WebTesting.SeleniumWebTesting.DynamicContentTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.DynamicContentTest@62043840</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.JSAlertTest.JSAlertTest()'><b>JSAlertTest</b><br>Test class: WebTesting.SeleniumWebTesting.JSAlertTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.JSAlertTest@13fee20c</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.LoginFailureTest.LoginFailureTest()'><b>LoginFailureTest</b><br>Test class: WebTesting.SeleniumWebTesting.LoginFailureTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.LoginFailureTest@26ba2a48</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.LoginSuccessTest.LoginSuccessTest()'><b>LoginSuccessTest</b><br>Test class: WebTesting.SeleniumWebTesting.LoginSuccessTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.LoginSuccessTest@180bc464</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.MouseHoverTest.MouseHoverTest()'><b>MouseHoverTest</b><br>Test class: WebTesting.SeleniumWebTesting.MouseHoverTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.MouseHoverTest@246ae04d</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.NotificationMsgTest.NotificationMsgTest()'><b>NotificationMsgTest</b><br>Test class: WebTesting.SeleniumWebTesting.NotificationMsgTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.NotificationMsgTest@1324409e</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.OpenNewTabTest.OpenNewTabTest()'><b>OpenNewTabTest</b><br>Test class: WebTesting.SeleniumWebTesting.OpenNewTabTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.OpenNewTabTest@4e04a765</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.iframeTest.iframeTest()'><b>iframeTest</b><br>Test class: WebTesting.SeleniumWebTesting.iframeTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.iframeTest@3b81a1bc</td></tr>
+<tr>
+<td title='WebTesting.SeleniumWebTesting.jsErrorTest.jsErrorTest()'><b>jsErrorTest</b><br>Test class: WebTesting.SeleniumWebTesting.jsErrorTest</td>
+<td></td>
+<td>0</td>
+<td>WebTesting.SeleniumWebTesting.jsErrorTest@17550481</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="18" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="64804" started-at="2020-10-02T17:22:42Z" finished-at="2020-10-02T17:23:47Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="64804" started-at="2020-10-02T17:22:42Z" finished-at="2020-10-02T17:23:47Z">
+      <class name="WebTesting.SeleniumWebTesting.DragDropTest">
+        <test-method status="PASS" signature="DragDropTest()[pri:0, instance:WebTesting.SeleniumWebTesting.DragDropTest@38082d64]" name="DragDropTest" duration-ms="4086" started-at="2020-10-02T13:23:34Z" finished-at="2020-10-02T13:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragDropTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.DragDropTest -->
+      <class name="WebTesting.SeleniumWebTesting.DynamicControlsTest">
+        <test-method status="PASS" signature="HomePageTest()[pri:0, instance:WebTesting.SeleniumWebTesting.DynamicControlsTest@5f2050f6]" name="HomePageTest" duration-ms="23091" started-at="2020-10-02T13:22:59Z" finished-at="2020-10-02T13:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.DynamicControlsTest -->
+      <class name="WebTesting.SeleniumWebTesting.DynamicContentTest">
+        <test-method status="PASS" signature="HomePageTest()[pri:0, instance:WebTesting.SeleniumWebTesting.DynamicContentTest@62043840]" name="HomePageTest" duration-ms="589" started-at="2020-10-02T13:23:30Z" finished-at="2020-10-02T13:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.DynamicContentTest -->
+      <class name="WebTesting.SeleniumWebTesting.ContextMenuTest">
+        <test-method status="PASS" signature="ContextMenuTest()[pri:0, instance:WebTesting.SeleniumWebTesting.ContextMenuTest@735f7ae5]" name="ContextMenuTest" duration-ms="5448" started-at="2020-10-02T13:23:38Z" finished-at="2020-10-02T13:23:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContextMenuTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.ContextMenuTest -->
+      <class name="WebTesting.SeleniumWebTesting.CheckBoxesTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.CheckBoxesTest@64616ca2]" name="initialize" is-config="true" duration-ms="1269" started-at="2020-10-02T13:22:42Z" finished-at="2020-10-02T13:22:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.ContextMenuTest@735f7ae5]" name="initialize" is-config="true" duration-ms="835" started-at="2020-10-02T13:22:43Z" finished-at="2020-10-02T13:22:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.DragDropTest@38082d64]" name="initialize" is-config="true" duration-ms="732" started-at="2020-10-02T13:22:44Z" finished-at="2020-10-02T13:22:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.DropdownTest@783e6358]" name="initialize" is-config="true" duration-ms="834" started-at="2020-10-02T13:22:45Z" finished-at="2020-10-02T13:22:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.DynamicContentTest@62043840]" name="initialize" is-config="true" duration-ms="803" started-at="2020-10-02T13:22:45Z" finished-at="2020-10-02T13:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.DynamicControlsTest@5f2050f6]" name="initialize" is-config="true" duration-ms="814" started-at="2020-10-02T13:22:46Z" finished-at="2020-10-02T13:22:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.DynamicLoadingTest@1554909b]" name="initialize" is-config="true" duration-ms="817" started-at="2020-10-02T13:22:47Z" finished-at="2020-10-02T13:22:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.FileDownloadTest@42d3bd8b]" name="initialize" is-config="true" duration-ms="816" started-at="2020-10-02T13:22:48Z" finished-at="2020-10-02T13:22:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.FileUploadTest@2c6a3f77]" name="initialize" is-config="true" duration-ms="820" started-at="2020-10-02T13:22:49Z" finished-at="2020-10-02T13:22:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.FloatingMenuTest@dfd3711]" name="initialize" is-config="true" duration-ms="899" started-at="2020-10-02T13:22:50Z" finished-at="2020-10-02T13:22:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.JSAlertTest@13fee20c]" name="initialize" is-config="true" duration-ms="819" started-at="2020-10-02T13:22:50Z" finished-at="2020-10-02T13:22:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.LoginFailureTest@26ba2a48]" name="initialize" is-config="true" duration-ms="1096" started-at="2020-10-02T13:22:51Z" finished-at="2020-10-02T13:22:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.LoginSuccessTest@180bc464]" name="initialize" is-config="true" duration-ms="1078" started-at="2020-10-02T13:22:52Z" finished-at="2020-10-02T13:22:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.MouseHoverTest@246ae04d]" name="initialize" is-config="true" duration-ms="804" started-at="2020-10-02T13:22:53Z" finished-at="2020-10-02T13:22:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.NotificationMsgTest@1324409e]" name="initialize" is-config="true" duration-ms="855" started-at="2020-10-02T13:22:54Z" finished-at="2020-10-02T13:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.OpenNewTabTest@4e04a765]" name="initialize" is-config="true" duration-ms="881" started-at="2020-10-02T13:22:55Z" finished-at="2020-10-02T13:22:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.iframeTest@3b81a1bc]" name="initialize" is-config="true" duration-ms="852" started-at="2020-10-02T13:22:56Z" finished-at="2020-10-02T13:22:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTesting.SeleniumWebTesting.jsErrorTest@17550481]" name="initialize" is-config="true" duration-ms="844" started-at="2020-10-02T13:22:57Z" finished-at="2020-10-02T13:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="CheckBoxesTest()[pri:0, instance:WebTesting.SeleniumWebTesting.CheckBoxesTest@64616ca2]" name="CheckBoxesTest" duration-ms="323" started-at="2020-10-02T13:23:32Z" finished-at="2020-10-02T13:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBoxesTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.ContextMenuTest@735f7ae5]" name="teardown" is-config="true" duration-ms="130" started-at="2020-10-02T13:23:44Z" finished-at="2020-10-02T13:23:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.CheckBoxesTest@64616ca2]" name="teardown" is-config="true" duration-ms="0" started-at="2020-10-02T13:23:44Z" finished-at="2020-10-02T13:23:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.DragDropTest@38082d64]" name="teardown" is-config="true" duration-ms="133" started-at="2020-10-02T13:23:44Z" finished-at="2020-10-02T13:23:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.DropdownTest@783e6358]" name="teardown" is-config="true" duration-ms="142" started-at="2020-10-02T13:23:44Z" finished-at="2020-10-02T13:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.DynamicContentTest@62043840]" name="teardown" is-config="true" duration-ms="163" started-at="2020-10-02T13:23:45Z" finished-at="2020-10-02T13:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.DynamicControlsTest@5f2050f6]" name="teardown" is-config="true" duration-ms="143" started-at="2020-10-02T13:23:45Z" finished-at="2020-10-02T13:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.DynamicLoadingTest@1554909b]" name="teardown" is-config="true" duration-ms="140" started-at="2020-10-02T13:23:45Z" finished-at="2020-10-02T13:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.FileDownloadTest@42d3bd8b]" name="teardown" is-config="true" duration-ms="135" started-at="2020-10-02T13:23:45Z" finished-at="2020-10-02T13:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.FileUploadTest@2c6a3f77]" name="teardown" is-config="true" duration-ms="151" started-at="2020-10-02T13:23:45Z" finished-at="2020-10-02T13:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.FloatingMenuTest@dfd3711]" name="teardown" is-config="true" duration-ms="156" started-at="2020-10-02T13:23:45Z" finished-at="2020-10-02T13:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.JSAlertTest@13fee20c]" name="teardown" is-config="true" duration-ms="136" started-at="2020-10-02T13:23:45Z" finished-at="2020-10-02T13:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.LoginFailureTest@26ba2a48]" name="teardown" is-config="true" duration-ms="142" started-at="2020-10-02T13:23:46Z" finished-at="2020-10-02T13:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.LoginSuccessTest@180bc464]" name="teardown" is-config="true" duration-ms="141" started-at="2020-10-02T13:23:46Z" finished-at="2020-10-02T13:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.MouseHoverTest@246ae04d]" name="teardown" is-config="true" duration-ms="138" started-at="2020-10-02T13:23:46Z" finished-at="2020-10-02T13:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.NotificationMsgTest@1324409e]" name="teardown" is-config="true" duration-ms="143" started-at="2020-10-02T13:23:46Z" finished-at="2020-10-02T13:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.OpenNewTabTest@4e04a765]" name="teardown" is-config="true" duration-ms="163" started-at="2020-10-02T13:23:46Z" finished-at="2020-10-02T13:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.iframeTest@3b81a1bc]" name="teardown" is-config="true" duration-ms="143" started-at="2020-10-02T13:23:46Z" finished-at="2020-10-02T13:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTesting.SeleniumWebTesting.jsErrorTest@17550481]" name="teardown" is-config="true" duration-ms="146" started-at="2020-10-02T13:23:46Z" finished-at="2020-10-02T13:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- WebTesting.SeleniumWebTesting.CheckBoxesTest -->
+      <class name="WebTesting.SeleniumWebTesting.DropdownTest">
+        <test-method status="PASS" signature="DropdownTest()[pri:0, instance:WebTesting.SeleniumWebTesting.DropdownTest@783e6358]" name="DropdownTest" duration-ms="348" started-at="2020-10-02T13:22:59Z" finished-at="2020-10-02T13:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropdownTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.DropdownTest -->
+      <class name="WebTesting.SeleniumWebTesting.MouseHoverTest">
+        <test-method status="PASS" signature="MouseHoverTest()[pri:0, instance:WebTesting.SeleniumWebTesting.MouseHoverTest@246ae04d]" name="MouseHoverTest" duration-ms="768" started-at="2020-10-02T13:23:43Z" finished-at="2020-10-02T13:23:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseHoverTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.MouseHoverTest -->
+      <class name="WebTesting.SeleniumWebTesting.jsErrorTest">
+        <test-method status="PASS" signature="jsErrorTest()[pri:0, instance:WebTesting.SeleniumWebTesting.jsErrorTest@17550481]" name="jsErrorTest" duration-ms="116" started-at="2020-10-02T13:23:43Z" finished-at="2020-10-02T13:23:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsErrorTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.jsErrorTest -->
+      <class name="WebTesting.SeleniumWebTesting.FileUploadTest">
+        <test-method status="PASS" signature="FileUploadTest()[pri:0, instance:WebTesting.SeleniumWebTesting.FileUploadTest@2c6a3f77]" name="FileUploadTest" duration-ms="363" started-at="2020-10-02T13:23:33Z" finished-at="2020-10-02T13:23:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileUploadTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.FileUploadTest -->
+      <class name="WebTesting.SeleniumWebTesting.JSAlertTest">
+        <test-method status="PASS" signature="JSAlertTest()[pri:0, instance:WebTesting.SeleniumWebTesting.JSAlertTest@13fee20c]" name="JSAlertTest" duration-ms="950" started-at="2020-10-02T13:23:32Z" finished-at="2020-10-02T13:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JSAlertTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.JSAlertTest -->
+      <class name="WebTesting.SeleniumWebTesting.FloatingMenuTest">
+        <test-method status="PASS" signature="FloatingMenuTest()[pri:0, instance:WebTesting.SeleniumWebTesting.FloatingMenuTest@dfd3711]" name="FloatingMenuTest" duration-ms="255" started-at="2020-10-02T13:23:25Z" finished-at="2020-10-02T13:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FloatingMenuTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.FloatingMenuTest -->
+      <class name="WebTesting.SeleniumWebTesting.OpenNewTabTest">
+        <test-method status="PASS" signature="OpenNewTabTest()[pri:0, instance:WebTesting.SeleniumWebTesting.OpenNewTabTest@4e04a765]" name="OpenNewTabTest" duration-ms="457" started-at="2020-10-02T13:23:33Z" finished-at="2020-10-02T13:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenNewTabTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.OpenNewTabTest -->
+      <class name="WebTesting.SeleniumWebTesting.FileDownloadTest">
+        <test-method status="PASS" signature="FileDownloadTest()[pri:0, instance:WebTesting.SeleniumWebTesting.FileDownloadTest@42d3bd8b]" name="FileDownloadTest" duration-ms="2244" started-at="2020-10-02T13:23:23Z" finished-at="2020-10-02T13:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileDownloadTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.FileDownloadTest -->
+      <class name="WebTesting.SeleniumWebTesting.iframeTest">
+        <test-method status="PASS" signature="iframeTest()[pri:0, instance:WebTesting.SeleniumWebTesting.iframeTest@3b81a1bc]" name="iframeTest" duration-ms="743" started-at="2020-10-02T13:23:31Z" finished-at="2020-10-02T13:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframeTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.iframeTest -->
+      <class name="WebTesting.SeleniumWebTesting.LoginSuccessTest">
+        <test-method status="PASS" signature="LoginSuccessTest()[pri:0, instance:WebTesting.SeleniumWebTesting.LoginSuccessTest@180bc464]" name="LoginSuccessTest" duration-ms="462" started-at="2020-10-02T13:22:58Z" finished-at="2020-10-02T13:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccessTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.LoginSuccessTest -->
+      <class name="WebTesting.SeleniumWebTesting.LoginFailureTest">
+        <test-method status="PASS" signature="LoginFailureTest()[pri:0, instance:WebTesting.SeleniumWebTesting.LoginFailureTest@26ba2a48]" name="LoginFailureTest" duration-ms="274" started-at="2020-10-02T13:22:59Z" finished-at="2020-10-02T13:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFailureTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.LoginFailureTest -->
+      <class name="WebTesting.SeleniumWebTesting.NotificationMsgTest">
+        <test-method status="PASS" signature="NotificationMsgTest()[pri:0, instance:WebTesting.SeleniumWebTesting.NotificationMsgTest@1324409e]" name="NotificationMsgTest" duration-ms="684" started-at="2020-10-02T13:22:58Z" finished-at="2020-10-02T13:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMsgTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.NotificationMsgTest -->
+      <class name="WebTesting.SeleniumWebTesting.DynamicLoadingTest">
+        <test-method status="PASS" signature="DynamicLoadingTest()[pri:0, instance:WebTesting.SeleniumWebTesting.DynamicLoadingTest@1554909b]" name="DynamicLoadingTest" duration-ms="5280" started-at="2020-10-02T13:23:25Z" finished-at="2020-10-02T13:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicLoadingTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.DynamicLoadingTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

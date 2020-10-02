@@ -1,0 +1,12 @@
+to run the tests please follow the folowing step:
+prerequisites:
+1) Navigate to src/main/java/resources/base.java and change the path of chrome driver
+2)Navigate to src/test/java/WebTesting.SeleniumWebTesting/FileDownloadTest.java and change the download path according to your system
+3)Navigate to src/test/java/WebTesting.SeleniumWebTesting/FileUploadTest.java and change the upload path to same as download path according to your system
+
+Steps to run test through Commands:
+1) open terminal, cmd prompt
+2)navigate to the project using cd "path"
+3)open bash and write mvn clean
+4) mvn clean
+5) mvn test
