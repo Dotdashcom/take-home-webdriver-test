@@ -1,7 +1,4 @@
 package takehome.tests;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
@@ -14,7 +11,6 @@ import takehome.pages.LoginPage;
 import takehome.utilities.BrowserUtilities;
 import takehome.utilities.ConfigurationReader;
 import takehome.utilities.Driver;
-
 import java.io.File;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -190,20 +186,20 @@ public class AllTest extends AbstractTestBase {
 
         Assert.assertTrue(logs.contains("Cannot read property 'xyz' of undefined"));
     }
-    @Test
-    public void verifyDragAndDrop(){
-        dragAndDrop.clickDDLink();
-        WebElement firstObject = Driver.getDriver(). findElement(By.id("column-a"));
-        WebElement secondObject = Driver.getDriver(). findElement(By.id("column-b"));;
-        String textABeforeDrag = firstObject.getText();
-
-//        actions.clickAndHold(firstObject).moveToElement(secondObject).
-//                release(secondObject).release().build().perform();
-        BrowserUtilities.wait(5);
-        actions.clickAndHold(firstObject).release(secondObject).build().perform();
-        BrowserUtilities.wait(5);
-//        Assert.assertNotEquals(textABeforeDrag,firstObject.getText());
-    }
+//    @Test
+//    public void verifyDragAndDrop(){
+//        dragAndDrop.clickDDLink();
+//        WebElement firstObject = Driver.getDriver(). findElement(By.id("column-a"));
+//        WebElement secondObject = Driver.getDriver(). findElement(By.id("column-b"));;
+//        String textABeforeDrag = firstObject.getText();
+//
+////        actions.clickAndHold(firstObject).moveToElement(secondObject).
+////                release(secondObject).release().build().perform();
+//        BrowserUtilities.wait(5);
+//        actions.clickAndHold(firstObject).release(secondObject).build().perform();
+//        BrowserUtilities.wait(5);
+////        Assert.assertNotEquals(textABeforeDrag,firstObject.getText());
+//    }
     @Test
     public void verifyWindowHandle(){
         ;
