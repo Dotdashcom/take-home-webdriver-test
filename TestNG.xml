@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DotDashCom Suite">
+
+    <test name="DotDashTest" thread-count="5">
+
+        <classes>
+            <!-- packagename.classname -->
+            <class name="DotDashTestScripts.TC01_LoginSuccess"/>
+            <class name="DotDashTestScripts.TC02_LoginFailure"/>
+            <class name="DotDashTestScripts.TC03_CheckBoxes"/>
+            <class name="DotDashTestScripts.TC04_ContextMenu"/>
+           <class name="DotDashTestScripts.TC05_DragAndDrop"/>
+            <class name="DotDashTestScripts.TC06_Dropdown"/>
+            <class name="DotDashTestScripts.TC07_DynamicContent"/>
+            <class name="DotDashTestScripts.TC08_DynamicControls"/>
+            <class name="DotDashTestScripts.TC09_DynamicLoading"/>
+            <class name="DotDashTestScripts.TC10_Download"/>
+            <class name="DotDashTestScripts.TC11_UploadFileTest"/>
+            <class name="DotDashTestScripts.TC12_FloatingMenu"/>
+            <class name="DotDashTestScripts.TC13_iframe"/>
+            <class name="DotDashTestScripts.TC14_Mousehover"/>
+            <class name="DotDashTestScripts.TC15_JSAlerts"/>
+            <class name="DotDashTestScripts.TC16_JavascriptError"/>
+            <class name="DotDashTestScripts.TC17_OpenWindow"/>
+            <class name="DotDashTestScripts.TC18_Notification"/>
+
+
+        </classes>
+    </test>
+</suite> <!-- Suite -->
