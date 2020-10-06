@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="98278" started-at="2020-10-06T05:10:33Z" finished-at="2020-10-06T05:12:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="98278" started-at="2020-10-06T05:10:33Z" finished-at="2020-10-06T05:12:12Z">
+      <class name="TheInternet.DotDash.LogIn">
+        <test-method status="PASS" signature="Startup()[pri:0, instance:TheInternet.DotDash.LogIn@475e586c]" name="Startup" is-config="true" duration-ms="56524" started-at="2020-10-06T05:10:33Z" finished-at="2020-10-06T05:11:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Startup -->
+        <test-method status="PASS" signature="LogInTest()[pri:0, instance:TheInternet.DotDash.LogIn@475e586c]" name="LogInTest" duration-ms="41119" started-at="2020-10-06T05:11:30Z" finished-at="2020-10-06T05:12:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogInTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TheInternet.DotDash.LogIn@475e586c]" name="tearDown" is-config="true" duration-ms="584" started-at="2020-10-06T05:12:11Z" finished-at="2020-10-06T05:12:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TheInternet.DotDash.LogIn -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
