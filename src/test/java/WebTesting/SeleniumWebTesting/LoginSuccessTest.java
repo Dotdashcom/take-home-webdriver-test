@@ -21,6 +21,7 @@ public class LoginSuccessTest extends base {
 	public void LoginSuccessTest() throws IOException, InterruptedException
 	{
 		//Driver navigating to the URL
+		driver.get("http://localhost:7080/login");
 		LoginPage lp = new LoginPage(driver);
 		lp.getEmail().sendKeys("tomsmith");
 		lp.getpassword().sendKeys("SuperSecretPassword!");
