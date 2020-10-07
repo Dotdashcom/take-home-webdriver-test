@@ -4,34 +4,16 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class dynamicControls {
-	public WebDriver driver;
-
-	@BeforeClass
-	public void Startup() {
-
-		System.setProperty("webdriver.chrome.driver", "\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://localhost:7080/dynamic_controls");
-	}
-
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
+public class dynamicControls extends base {
 
 	@Test
 	public void dynamicControlTest() {
-
+		driver.get(URL + "dynamic_controls ");
 		driver.findElement(By.xpath("//body/div[2]/div[1]/div[1]/form[1]/button[1]")).click();
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='message']")));

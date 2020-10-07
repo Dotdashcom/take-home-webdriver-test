@@ -5,30 +5,13 @@ import static org.testng.Assert.assertTrue;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class WindowSwitch {
-	public WebDriver driver;
-
-	@BeforeClass
-	public void Startup() {
-
-		System.setProperty("webdriver.chrome.driver", "\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://localhost:7080/windows");
-	}
-
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
-
+public class WindowSwitch extends base {
+	
 	@Test
 	public void WindowSwitchTest() {
+		driver.get(URL + "windows ");
 		driver.findElement(By.xpath("//a[contains(text(),'Click Here')]")).click();
 		ArrayList<String> tabIndexes = new ArrayList<String>(driver.getWindowHandles());
 		int Size = tabIndexes.size();

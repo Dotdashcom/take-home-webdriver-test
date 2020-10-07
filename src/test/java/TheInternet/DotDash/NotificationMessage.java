@@ -3,32 +3,13 @@ package TheInternet.DotDash;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class NotificationMessage {
-
-	public WebDriver driver;
-
-	@BeforeClass
-	public void Startup() {
-
-		System.setProperty("webdriver.chrome.driver", "\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://localhost:7080/notification_message_rendered");
-	}
-
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
+public class NotificationMessage extends base {
 
 	@Test
 	public void NotificationMessageTest() throws InterruptedException {
-
+		driver.get(URL + "notification_message_rendered");
 		for (int i = 0; i <= 6; i++) {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//a[contains(text(),'Click here')]")).click();

@@ -4,30 +4,13 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Download {
-	public WebDriver driver;
-
-	@BeforeClass
-	public void Startup() {
-
-		System.setProperty("webdriver.chrome.driver", "\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://localhost:7080/download");
-	}
-
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
-
+public class Download extends base{
+	
 	@Test
 	public void DownloadTest() throws InterruptedException {
+		driver.get(URL + "download ");
 
 		String downloadPath = "C:\\Users\\Jagseer\\Downloads";
 		driver.findElement(By.xpath("//a[contains(text(),'some-file.txt')]")).click();

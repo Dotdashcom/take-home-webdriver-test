@@ -2,31 +2,13 @@ package TheInternet.DotDash;
 
 import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class iFrame {
-	public WebDriver driver;
-
-	@BeforeClass
-	public void Startup() {
-
-		System.setProperty("webdriver.chrome.driver", "\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://localhost:7080/iframe");
-	}
-
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
+public class iFrame extends base {
 
 	@Test
 	public void iFrameTest() throws InterruptedException {
-
+		driver.get(URL + "iframe ");
 		driver.switchTo().frame("mce_0_ifr");
 		String TextEntered = "Hi I am Testing Iframe";
 		driver.findElement(By.id("tinymce")).clear();
