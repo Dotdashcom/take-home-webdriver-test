@@ -2,26 +2,13 @@ package testcases;
 
 import java.io.IOException;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import base.TestBase;
-import pages.BrowseData;
-import testdata.BaseUrl;
 
 public class DynamicContentTest extends TestBase {
-	
-	BrowseData data;
-	BaseUrl urlvalues;
+		
 	public DynamicContentTest() throws IOException {
 		super();	
-	}
-	
-	@BeforeMethod
-	public void setup() throws IOException, InterruptedException {		 
-		initialization();		
-		data =new BrowseData();
-		urlvalues = new BaseUrl();
 	}
 	
 	@Test(priority=6)
@@ -49,12 +36,4 @@ public class DynamicContentTest extends TestBase {
 			System.out.println("Test content changes with page reload");
 		}
 	}
-	
-	@AfterMethod
-	public void tearDown() throws InterruptedException {
-		Thread.sleep(3000);
-		driver.quit();
-	}
-
-
 }

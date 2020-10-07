@@ -37,10 +37,10 @@ public class BrowseData extends TestBase{
 	@FindBy(id="hot-spot")
 	public WebElement contextMenu;
 	
-	@FindBy(xpath ="//div[@id='column-a']")
+	@FindBy(id="column-a")
 	public WebElement column_a;
 	
-	@FindBy(xpath ="//div[@id='column-b']")
+	@FindBy(id="column-b")
 	public WebElement column_b;
 	
 	@FindBy(xpath ="//div[@id='column-a']/header")

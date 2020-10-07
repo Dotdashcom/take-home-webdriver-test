@@ -8,7 +8,6 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,7 +15,10 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import pages.BrowseData;
+import testdata.BaseUrl;
 import util.Testutil;
 
 public class TestBase {
@@ -26,13 +28,20 @@ public class TestBase {
 	public static ChromeOptions options;
 	public static DesiredCapabilities cap;
 	public static File folder;
+	public static BrowseData data;
+	public static BaseUrl urlvalues;
 	
-	public TestBase() throws IOException {
-		try {
-			FileInputStream fis = new FileInputStream(
-					//fetching the config properties file stored in the project location
-					
-					"C:\\Selenium_MyPractise\\KevalDotDash\\src\\main\\java\\config\\config.properties");
+	@BeforeMethod
+	public void setup() throws IOException, InterruptedException {		 
+		initialization();		
+		data =new BrowseData();
+		urlvalues = new BaseUrl();
+	}
+	
+	public TestBase() throws IOException {	
+		try {	
+			//fetching the config properties file stored in the project location
+			FileInputStream fis = new FileInputStream("C:\\Selenium_MyPractise\\KevalDotDash\\src\\main\\java\\config\\config.properties");
 			prop = new Properties();
 			prop.load(fis);
 		} catch (Exception e) {
@@ -98,5 +107,9 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Testutil.implicitlywait, TimeUnit.SECONDS);
 	}
 	
-	
+	@AfterMethod
+	public void tearDown() throws InterruptedException {
+		Thread.sleep(3000);
+		driver.quit();
+	}
 }

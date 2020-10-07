@@ -4,26 +4,13 @@ import java.io.IOException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import base.TestBase;
-import pages.BrowseData;
-import testdata.BaseUrl;
 
 public class MouseHoverTest extends TestBase{
 	
-	BrowseData data;
-	BaseUrl urlvalues;
 	public MouseHoverTest() throws IOException {
 		super();	
-	}
-	
-	@BeforeMethod
-	public void setup() throws IOException, InterruptedException {		 
-		initialization();		
-		data =new BrowseData();
-		urlvalues = new BaseUrl();
 	}
 	
 	@Test  
@@ -43,11 +30,4 @@ public class MouseHoverTest extends TestBase{
 		}
 		System.out.println("text is displayed as per image selected");
 	}
-	
-	@AfterMethod
-	public void tearDown() throws InterruptedException {
-		Thread.sleep(3000);
-		driver.quit();
-	}
-
 }

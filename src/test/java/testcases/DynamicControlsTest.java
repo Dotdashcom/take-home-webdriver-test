@@ -4,26 +4,13 @@ import java.io.IOException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import base.TestBase;
-import pages.BrowseData;
-import testdata.BaseUrl;
 
 public class DynamicControlsTest extends TestBase {
 	
-	BrowseData data;
-	BaseUrl urlvalues;
 	public DynamicControlsTest() throws IOException {
 		super();	
-	}
-	
-	@BeforeMethod
-	public void setup() throws IOException, InterruptedException {		 
-		initialization();		
-		data =new BrowseData();
-		urlvalues = new BaseUrl();
 	}
 	
 	@Test
@@ -57,11 +44,4 @@ public class DynamicControlsTest extends TestBase {
 		Assert.assertEquals(text1,text2);
 		System.out.println("Textbox is displayed");		
 	}
-	
-	@AfterMethod
-	public void tearDown() throws InterruptedException {
-		Thread.sleep(3000);
-		driver.quit();
-	}
-
 }
