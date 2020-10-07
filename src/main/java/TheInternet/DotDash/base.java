@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 
 public class base {
 	public WebDriver driver;
-	public String URL="http://192.168.99.100:7080/";
+	public String URL=" http://localhost:7080/";
 	@BeforeClass
 	public void Startup() {
 
