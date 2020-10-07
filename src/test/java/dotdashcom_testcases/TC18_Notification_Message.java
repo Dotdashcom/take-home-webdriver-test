@@ -1,30 +1,19 @@
 package dotdashcom_testcases;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TC18_Notification_Message {
-	
-public static WebDriver driver;
+public class TC18_Notification_Message extends BaseTest{
 	
 	//browser starting
 	@BeforeMethod
 	public void BrowserInvoking()
 	{
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
 		
 		//receiving url to the browser
 		driver.get("http://localhost:7080/notification_message_rendered");
-		
-		//maximizing window
-		driver.manage().window().maximize();
 	}
 	
 	@Test

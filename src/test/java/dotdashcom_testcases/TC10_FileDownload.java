@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 
 
-public class TC10_FileDownload {
+public class TC10_FileDownload extends BaseTest{
 	
 	WebDriver driver;
 	File folder;
@@ -29,7 +29,6 @@ public class TC10_FileDownload {
 		//UUID file created
 		folder = new File(UUID.randomUUID().toString());
 		folder.mkdir();
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		
 		//key values are provided by chrome options by default

@@ -3,30 +3,20 @@ package dotdashcom_testcases;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TC06_Dropdown {
-
-	public static WebDriver driver;
+public class TC06_Dropdown extends BaseTest {
 
 	// browser starting method
 	@BeforeMethod
 	public void BrowserInvoking() {
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
 
 		// received url to the browser
 		driver.get("http://localhost:7080/dropdown");
-
-		// maximized the window
-		driver.manage().window().maximize();
 	}
 
 	@Test
@@ -61,11 +51,6 @@ public class TC06_Dropdown {
 		// test assert is option 1 is selected
 		Assert.assertEquals(option2_selected, "Option 2");
 
-	}
-
-	@AfterMethod
-	public void teardown() {
-		driver.close();
 	}
 
 }

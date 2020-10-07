@@ -4,29 +4,20 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TC12_FloatingMenu {
-
-	public static WebDriver driver;
+public class TC12_FloatingMenu extends BaseTest {
 
 	// browser for starting browser
 	@BeforeMethod
 	public void BrowserInvoking() {
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
 
 		// receiving url to the browser
 		driver.get("http://localhost:7080/floating_menu");
 
-		// maximizing window
-		driver.manage().window().maximize();
 	}
 
 	@Test
@@ -57,10 +48,5 @@ public class TC12_FloatingMenu {
 		Assert.assertEquals(about_menu_ele.isDisplayed(), true);
 	}
 
-	@AfterMethod
-	public void teardown() {
-		// browser closure
-		driver.close();
-	}
 
 }

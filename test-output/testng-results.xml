@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14352" started-at="2020-10-02T18:11:38 EDT" finished-at="2020-10-02T18:11:52 EDT">
+  <suite name="Default suite" duration-ms="17553" started-at="2020-10-06T23:24:00 EDT" finished-at="2020-10-06T23:24:17 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14352" started-at="2020-10-02T18:11:38 EDT" finished-at="2020-10-02T18:11:52 EDT">
+    <test name="Default test" duration-ms="17553" started-at="2020-10-06T23:24:00 EDT" finished-at="2020-10-06T23:24:17 EDT">
       <class name="dotdashcom_testcases.TC10_FileDownload">
-        <test-method status="PASS" signature="setup()[pri:0, instance:dotdashcom_testcases.TC10_FileDownload@5e853265]" name="setup" is-config="true" duration-ms="5830" started-at="2020-10-02T18:11:38 EDT" finished-at="2020-10-02T18:11:44 EDT">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:dotdashcom_testcases.TC10_FileDownload@5d76b067]" name="Setup" is-config="true" duration-ms="7703" started-at="2020-10-06T23:24:00 EDT" finished-at="2020-10-06T23:24:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:dotdashcom_testcases.TC10_FileDownload@5d76b067]" name="setup" is-config="true" duration-ms="3660" started-at="2020-10-06T23:24:07 EDT" finished-at="2020-10-06T23:24:11 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="download()[pri:0, instance:dotdashcom_testcases.TC10_FileDownload@5e853265]" name="download" duration-ms="7516" started-at="2020-10-02T18:11:44 EDT" finished-at="2020-10-02T18:11:51 EDT">
+        <test-method status="PASS" signature="download()[pri:0, instance:dotdashcom_testcases.TC10_FileDownload@5d76b067]" name="download" duration-ms="5193" started-at="2020-10-06T23:24:11 EDT" finished-at="2020-10-06T23:24:16 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- download -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:dotdashcom_testcases.TC10_FileDownload@5e853265]" name="teardown" is-config="true" duration-ms="906" started-at="2020-10-02T18:11:51 EDT" finished-at="2020-10-02T18:11:52 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:dotdashcom_testcases.TC10_FileDownload@5d76b067]" name="teardown" is-config="true" duration-ms="916" started-at="2020-10-06T23:24:16 EDT" finished-at="2020-10-06T23:24:17 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

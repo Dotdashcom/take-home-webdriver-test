@@ -1,31 +1,21 @@
 package dotdashcom_testcases;
 
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 
-public class TC16_JavaScript_Error {
-	public static WebDriver driver;
+public class TC16_JavaScript_Error extends BaseTest {
 
 	// browser starting method
 	@BeforeMethod
 	public void BrowserInvoking() {
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
 
 		// receiving url to the browser
 		driver.get("http://localhost:7080/javascript_error");
-
-		// maximizing window
-		driver.manage().window().maximize();
 	}
 
 	@Test
@@ -57,12 +47,6 @@ public class TC16_JavaScript_Error {
 
 		}
 
-	}
-
-	@AfterMethod
-	public void teardown() {
-		// driver closed
-		driver.close();
 	}
 
 }

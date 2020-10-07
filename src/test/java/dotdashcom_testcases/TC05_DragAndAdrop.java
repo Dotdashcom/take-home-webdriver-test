@@ -1,26 +1,19 @@
 package dotdashcom_testcases;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TC05_DragAndAdrop {
-	public static WebDriver driver;
+public class TC05_DragAndAdrop extends BaseTest {
 	
 	@BeforeMethod
 	public void BrowserInvoking()
 	{
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
+
 		driver.get("http://localhost:7080/drag_and_drop");
-		driver.manage().window().maximize();
+	
 	}
 	
 	@Test

@@ -6,6 +6,8 @@
       <class name="dotdashcom_testcases.TC10_FileDownload">
         <methods>
           <include name="download"/>
+          <include name="setup"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- dotdashcom_testcases.TC10_FileDownload -->
     </classes>

@@ -1,29 +1,22 @@
 package dotdashcom_testcases;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TC04_ContextMenu {
-	public static WebDriver driver;
+public class TC04_ContextMenu extends BaseTest{
+
 
 	// method to start browser which has browser config
 	@BeforeMethod
 	public void BrowserInvoking() {
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
-
 		// getting url to the browser
 		driver.get("http://localhost:7080/context_menu");
 
-		// maximixing window
-		driver.manage().window().maximize();
+		
 	}
 
 	@Test
@@ -52,9 +45,4 @@ public class TC04_ContextMenu {
 
 	}
 
-	@AfterMethod
-	public void teardown() {
-		// borwser is closed
-		driver.close();
-	}
 }

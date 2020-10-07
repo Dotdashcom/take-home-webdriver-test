@@ -1,29 +1,21 @@
 package dotdashcom_testcases;
 
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import dotdashcom_pages.LoginPage;
 
-public class TC02_Login_failure {
-	public static WebDriver driver;
+public class TC02_Login_failure extends BaseTest {
+	
 
-	// browser start method to start browser
 	@BeforeMethod
-	public void BrowserInvoking() {
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://localhost:7080/login");
-
-		// maximixed browser
-		driver.manage().window().maximize();
-	}
+public void browserinvoking()
+{
+	driver.get("http://localhost:7080/login");
+}
 
 	@Test(dataProvider = "getdata")
 	public void login_failed(String login_username, String login_password) {
@@ -63,10 +55,5 @@ public class TC02_Login_failure {
 
 	}
 
-	@AfterMethod
-	public void teardown() {
-		// browser closer
-		driver.close();
-	}
 
 }

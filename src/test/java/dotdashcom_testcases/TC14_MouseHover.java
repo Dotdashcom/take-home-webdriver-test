@@ -3,31 +3,21 @@ package dotdashcom_testcases;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 
-public class TC14_MouseHover {
-
-	public static WebDriver driver;
+public class TC14_MouseHover extends BaseTest {
 
 	// browser starting method
 	@BeforeMethod
 	public void BrowserInvoking() {
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
 
 		// receiving url to the browser
 		driver.get("http://localhost:7080/hovers");
-
-		// maximizing window
-		driver.manage().window().maximize();
 	}
 
 	@Test
@@ -75,12 +65,6 @@ public class TC14_MouseHover {
 		Assert.assertEquals(true, img3_text_ele.isDisplayed());
 		Assert.assertEquals(true, img3_profile_ele.isDisplayed());
 
-	}
-
-	@AfterMethod
-	public void teardown() {
-		// browser closed
-		driver.close();
 	}
 
 }

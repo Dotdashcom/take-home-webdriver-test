@@ -1,30 +1,19 @@
 package dotdashcom_testcases;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 
-public class TC11_FileUpload {
+public class TC11_FileUpload extends BaseTest {
 
-	public static WebDriver driver;
-
-	// browser starting method with browser config
 	@BeforeMethod
 	public void BrowserInvoking() {
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
 
 		// receiving url to the browser
 		driver.get("http://localhost:7080/upload");
-
-		// maximizing window
-		driver.manage().window().maximize();
 	}
 
 	@Test
@@ -53,10 +42,5 @@ public class TC11_FileUpload {
 
 	}
 
-	@AfterMethod
-	public void teardown() {
-		// browser closer
-		driver.close();
-	}
 
 }

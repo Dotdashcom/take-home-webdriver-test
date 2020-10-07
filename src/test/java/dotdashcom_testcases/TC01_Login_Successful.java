@@ -1,31 +1,21 @@
 package dotdashcom_testcases;
 
-
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import dotdashcom_pages.LoginPage;
 
-public class TC01_Login_Successful {
+public class TC01_Login_Successful extends BaseTest{
 
-	public static WebDriver driver;
-
-	//browser starting method
 	@BeforeMethod
-	public void BrowserInvoking() {
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32_v85//chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://localhost:7080/login");
-		driver.manage().window().maximize();
-	}
-
+public void browserinvoking()
+{
+	driver.get("http://localhost:7080/login");
+}
 	@Test(dataProvider = "getdata")
 	public void login_success(String login_username, String login_password) {
+		
 		//object is created to call LoginPage class(POM class)
 		LoginPage login = new LoginPage(driver);
 		
@@ -60,10 +50,9 @@ public class TC01_Login_Successful {
 
 	}
 
-	@AfterMethod
-	public void teardown() {
-		//closed the browser as only 1 browser is open
-		driver.close();
-	}
+	
+	
+	
+	
 
 }
