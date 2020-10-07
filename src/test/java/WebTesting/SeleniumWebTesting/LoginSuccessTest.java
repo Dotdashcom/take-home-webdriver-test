@@ -16,17 +16,7 @@ import PageObjects.LoginPage;
 import resources.base;
 
 public class LoginSuccessTest extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-		driver.get("http://localhost:7080/login");
-		String expectedHomePageURL = "The Internet";;
-		Assert.assertEquals(driver.getTitle(), expectedHomePageURL);
-	}
-	
+
 	@Test()
 	public void LoginSuccessTest() throws IOException, InterruptedException
 	{
@@ -44,12 +34,5 @@ public class LoginSuccessTest extends base {
 		
 	}
 	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

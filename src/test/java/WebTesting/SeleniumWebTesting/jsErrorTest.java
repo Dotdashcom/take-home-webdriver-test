@@ -18,14 +18,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class jsErrorTest  extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void jsErrorTest() throws IOException, InterruptedException
 	{
@@ -47,13 +40,5 @@ public class jsErrorTest  extends base {
 	    }
 		
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

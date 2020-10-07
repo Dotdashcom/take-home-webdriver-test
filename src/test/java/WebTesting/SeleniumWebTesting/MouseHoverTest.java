@@ -14,14 +14,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class MouseHoverTest  extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void MouseHoverTest() throws IOException, InterruptedException
 	{
@@ -54,13 +47,5 @@ public class MouseHoverTest  extends base {
 		//checking if the text is displayed
 		Assert.assertTrue(ExpectedHoverElement3.isDisplayed());
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

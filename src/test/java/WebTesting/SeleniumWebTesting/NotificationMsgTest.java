@@ -13,14 +13,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class NotificationMsgTest  extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void NotificationMsgTest() throws IOException, InterruptedException
 	{
@@ -48,13 +41,5 @@ public class NotificationMsgTest  extends base {
 		}
 		
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

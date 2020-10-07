@@ -13,6 +13,8 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 public class base {
 	
@@ -34,6 +36,21 @@ public class base {
 		//implicit wait time
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
+	}
+	
+	@BeforeTest
+	public void initialize() throws IOException
+	{
+		//initializing the driver
+		driver =initializeDriver();
+	}
+	
+
+	@AfterTest
+	public void teardown()
+	{
+		//closing and the quiting the driver
+		driver.quit();
 	}
 	
 }

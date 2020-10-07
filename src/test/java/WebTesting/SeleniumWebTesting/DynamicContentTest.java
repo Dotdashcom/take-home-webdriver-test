@@ -15,16 +15,9 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class DynamicContentTest  extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
-	public void HomePageTest() throws IOException, InterruptedException
+	public void DynamicContentTest() throws IOException, InterruptedException
 	{
 		//Driver navigating to the URL
 		driver.get("http://localhost:7080/dynamic_content");
@@ -53,14 +46,6 @@ public class DynamicContentTest  extends base {
 		//asserting if the old content is different then new content
 		Assert.assertNotEquals(old1Content, new1Content);
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }
 

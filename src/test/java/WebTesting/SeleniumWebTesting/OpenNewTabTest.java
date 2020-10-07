@@ -14,14 +14,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class OpenNewTabTest extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void OpenNewTabTest() throws IOException, InterruptedException
 	{
@@ -46,13 +39,5 @@ public class OpenNewTabTest extends base {
 	    //switching to back to first tab
 	    driver.switchTo().window(tabs2.get(0));
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

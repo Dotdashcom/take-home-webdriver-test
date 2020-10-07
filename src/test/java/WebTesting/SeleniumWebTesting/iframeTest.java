@@ -13,14 +13,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class iframeTest  extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void iframeTest() throws IOException, InterruptedException
 	{
@@ -44,13 +37,5 @@ public class iframeTest  extends base {
 		Assert.assertEquals(editor_body.getText(), expectedText);
 		
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

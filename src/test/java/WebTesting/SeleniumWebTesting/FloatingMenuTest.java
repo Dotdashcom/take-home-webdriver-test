@@ -14,13 +14,6 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class FloatingMenuTest  extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
 	
 	@Test()
 	public void FloatingMenuTest() throws IOException, InterruptedException
@@ -40,13 +33,5 @@ public class FloatingMenuTest  extends base {
         //checking if the menu is still displayed or not after scrolling
         Assert.assertTrue(menu.isDisplayed());
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

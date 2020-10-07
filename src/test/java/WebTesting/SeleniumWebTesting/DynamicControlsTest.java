@@ -18,16 +18,9 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class DynamicControlsTest extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
-	public void HomePageTest() throws IOException, InterruptedException
+	public void DynamicControlsTest() throws IOException, InterruptedException
 	{
 		Boolean notPresent;
 		Boolean present;
@@ -94,12 +87,4 @@ public class DynamicControlsTest extends base {
 			
 	}
 	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
 }

@@ -13,14 +13,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class CheckBoxesTest extends base {
-	public WebDriver driver;
 	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		//initializing the driver
-		driver =initializeDriver();
-	}
 	
 	@Test()
 	public void CheckBoxesTest() throws IOException, InterruptedException
@@ -56,11 +49,4 @@ public class CheckBoxesTest extends base {
 	}
 	
 	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
 }

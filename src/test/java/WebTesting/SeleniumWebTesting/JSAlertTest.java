@@ -15,14 +15,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class JSAlertTest  extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void JSAlertTest() throws IOException, InterruptedException
 	{
@@ -70,13 +63,5 @@ public class JSAlertTest  extends base {
 		Assert.assertEquals(result.getText(), "You entered: " + textToSend);
 		
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

@@ -14,13 +14,6 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class FileUploadTest  extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
 	
 	@Test()
 	public void FileUploadTest() throws IOException, InterruptedException
@@ -48,13 +41,5 @@ public class FileUploadTest  extends base {
 	     Assert.assertTrue(confirmationText.isDisplayed());
 		
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

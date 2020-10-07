@@ -15,14 +15,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class DynamicLoadingTest  extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void DynamicLoadingTest() throws IOException, InterruptedException
 	{
@@ -43,12 +36,5 @@ public class DynamicLoadingTest  extends base {
 		Assert.assertEquals(actual, "Hello World!");
 		
 	}
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();
-		//driver.quit();
-	}
+
 }

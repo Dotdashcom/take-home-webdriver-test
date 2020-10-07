@@ -14,14 +14,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class DropdownTest extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void DropdownTest() throws IOException, InterruptedException
 	{
@@ -45,13 +38,5 @@ public class DropdownTest extends base {
 		Assert.assertEquals(selected, "Option 2");
 		
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

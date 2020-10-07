@@ -15,15 +15,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class ContextMenuTest extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		//initializing the driver
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void ContextMenuTest() throws IOException, InterruptedException
 	{
@@ -45,13 +37,5 @@ public class ContextMenuTest extends base {
 		//clicking ok to change driver focus to window
 		alert.accept();
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }

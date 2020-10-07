@@ -17,15 +17,7 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class DragDropTest extends base {
-	public WebDriver driver;
-	
-	@BeforeTest
-	public void initialize() throws IOException
-	{
-		//initializing the driver
-		driver =initializeDriver();
-	}
-	
+
 	@Test()
 	public void DragDropTest() throws IOException, InterruptedException
 	{
@@ -37,30 +29,14 @@ public class DragDropTest extends base {
 		Assert.assertEquals(driver.getTitle(), expectedHomePageURL);
 		//grabbing web Elements and saving to move
 		WebElement source = driver.findElement(By.id("column-a"));
-		WebElement destination = driver.findElement(By.xpath("//div[@id='column-b']"));
+		WebElement destination = driver.findElement(By.id("column-b"));
 		//performing action drag and drop 
-		action.moveToElement(source).click().build().perform();
-		new Actions(driver)
-        .moveToElement(source)
-        .pause(Duration.ofSeconds(1))
-        .clickAndHold(source)
-        .pause(Duration.ofSeconds(1))
-        .moveByOffset(2, 0)
-        .moveToElement(destination)
-        .moveByOffset(2,0)
-        .pause(Duration.ofSeconds(1))
-        .release().build().perform();
+		action.dragAndDrop(source, destination).perform();
 		
 		//Asserting if drag and drop is successful or not
-		Assert.assertEquals(driver.findElement(By.cssSelector("header")).getText(),"A");
+		Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/header[1]")).getText(),"B");
+		Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/header[1]")).getText(),"A");
+
 	}
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		//closing and the quiting the driver
-		//driver.close();	
-		//driver.quit();
-	}
+
 }
