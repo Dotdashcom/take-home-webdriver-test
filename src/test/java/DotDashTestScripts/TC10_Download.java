@@ -31,15 +31,8 @@ public class TC10_Download extends baseClass {
         Thread.sleep(2000);
         //Check whether the file is downloaded in the given path
         SoftAssert assertion = new SoftAssert();
-        if(downloadPage.isFileExists("C:\\Users\\kruti\\Downloads\\some-file.txt") == true)
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! File downloaded successfully!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! File NOT downloaded!!");
-        }
+        assertion.assertTrue(downloadPage.isFileExists("C:\\Users\\kruti\\Downloads\\some-file.txt"));
+
+        assertion.assertAll();
     }
 }

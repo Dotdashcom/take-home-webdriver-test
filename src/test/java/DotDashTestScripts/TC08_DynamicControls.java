@@ -20,33 +20,16 @@ public class TC08_DynamicControls extends baseClass {
 
         SoftAssert assertion = new SoftAssert();
         //Validate the message after clicking on remove button
-        if(dynamicControlsPage.gettxtmsg().equals("It's gone!"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Remove button is Gone!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Remove button is Not Gone!!");
-        }
+        assertion.assertEquals(dynamicControlsPage.gettxtmsg(),"It's gone!", "Test Passed!");
 
         //Click on Add button
         dynamicControlsPage.clkbtnAdd();
 
         //Validate if the checkbox is present
-        if(dynamicControlsPage.chkboxisDisplayed())
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Checkbox is back!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Checkbox is missing!!");
-        }
-        //Check whether textbox is enabled before clicking on Enable button
-       if(dynamicControlsPage.txtboxisEnabled())
+        assertion.assertTrue(dynamicControlsPage.chkboxisDisplayed(), "Test Passed!");
+
+        //Check whether textbox is enabled before clicking on Enable button.This is not an assertion!
+        if(dynamicControlsPage.txtboxisEnabled())
         {
             System.out.println("Textbox is already enabled !!");
         }
@@ -59,16 +42,7 @@ public class TC08_DynamicControls extends baseClass {
         dynamicControlsPage.clkbtnEnable();
 
         //Validate whether textbox is enabled after clicking on Enable button
-        if(dynamicControlsPage.txtboxisNowEnabled())
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Textbox is Now enabled !!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Textbox is NOT enabled !!");
-        }
+        assertion.assertTrue(dynamicControlsPage.txtboxisNowEnabled(), "Test Passed!");
 
         //Click on Disable button
         dynamicControlsPage.clkbtnDisable();
@@ -77,18 +51,7 @@ public class TC08_DynamicControls extends baseClass {
         Thread.sleep(4000);
 
         //Validate whether the textbox is disabled
-        if(!dynamicControlsPage.txtboxisEnabled())      //Textbox is not enabled
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Textbox is finally Disabled !!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Textbox is still Enabled !!");
-        }
-
-
+        assertion.assertFalse(dynamicControlsPage.txtboxisEnabled());
 
         assertion.assertAll();
     }

@@ -17,14 +17,14 @@ public class TC12_FloatingMenu extends baseClass {
 
         //Create an object for FloatingMenuPage
         FloatingMenuPage floatingMenuPage = new FloatingMenuPage(driver);
-        //Validate whether floating menu is displayed before scrolling
+        //Validate whether floating menu is displayed before scrolling. This is not an assertion!
         if(floatingMenuPage.chkfloatingmenu())
         {
-            System.out.println("Test Passed!! Floating menu is displayed before Scrolling to the end of the page!!");
+            System.out.println("Floating menu is displayed before Scrolling to the end of the page!!");
         }
         else
         {
-            System.out.println("Test Failed!!Floating menu NOT displayed!!");
+            System.out.println("Floating menu NOT displayed!!");
         }
 
         //Scroll down to the bottom of the page
@@ -33,16 +33,7 @@ public class TC12_FloatingMenu extends baseClass {
 
         //Validate whether floating menu is still displayed after scrolling to the end of the page
         SoftAssert assertion = new SoftAssert();
-        if(floatingMenuPage.chkfloatingmenu())
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Floating menu is displayed after Scrolling to the end of the page!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!!Floating menu NOT displayed!!");
-        }
+        assertion.assertTrue(floatingMenuPage.chkfloatingmenu());
 
         assertion.assertAll();
     }

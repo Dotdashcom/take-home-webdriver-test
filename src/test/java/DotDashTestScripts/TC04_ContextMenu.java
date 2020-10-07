@@ -30,18 +30,10 @@ public class TC04_ContextMenu extends baseClass {
         //Capture the alert message
         Alert alert = driver.switchTo().alert();
 
+        //Assertion
         SoftAssert assertion = new SoftAssert();
-        if(alert.getText().contains("You selected a context menu"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed");
+        assertion.assertEquals(alert.getText().contains("You selected a context menu"),true,"Test Passed!!");
 
-        }
         assertion.assertAll();
 
         //Click Ok to close the alert

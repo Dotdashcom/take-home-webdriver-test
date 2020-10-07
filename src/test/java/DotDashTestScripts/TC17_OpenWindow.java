@@ -33,17 +33,7 @@ public class TC17_OpenWindow extends baseClass {
             if(title.equals("New Window"))
             {
                 //Validating whether a new tab is opened with New Window text
-                if(openWindowPage.gettxtNewWindow()==true)
-                {
-                   assertion.assertTrue(true);
-                   System.out.println("Test Passed!! New tab is opened with text New Window");
-                }
-                else
-                {
-                    assertion.assertTrue(false);
-                    System.out.println("Test Failed!!No such text present!!");
-                }
-
+                assertion.assertEquals(openWindowPage.gettxtNewWindow(),true);
             }
             assertion.assertAll();
 

@@ -2,6 +2,7 @@ package DotDashTestScripts;
 
 import DotDashBase.baseClass;
 import DotDashPages.DropdownPage;
+import org.apache.poi.ss.formula.functions.T;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -9,8 +10,7 @@ import org.testng.asserts.SoftAssert;
 public class TC06_Dropdown extends baseClass {
 
     @Test
-    public void dropdown()
-    {
+    public void dropdown() throws InterruptedException {
         //Launch url
         driver.get(baseURL+"/dropdown");
 
@@ -21,33 +21,16 @@ public class TC06_Dropdown extends baseClass {
         SoftAssert assertion = new SoftAssert();
         //Select option1 and validate
         dropdownPage.selOption1();
-
-        if(dropdownPage.getOptionselected().contains("Option 1"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Option 1 is selected");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test failed!! Option 1 is NOT selected");
-        }
+        assertion.assertTrue(dropdownPage.getOptionselected().contains("Option 1"));
         //Refresh the page
         driver.navigate().refresh();
 
+        Thread.sleep(2000);
+
         //Select option2 and validate
         dropdownPage.selOption2();
+        assertion.assertTrue(dropdownPage.getOptionselected().contains("Option 2"));
 
-        if(dropdownPage.getOptionselected().contains("Option 1"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Option 2 is selected");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Option 2 is NOT selected");
-        }
         assertion.assertAll();
 
 

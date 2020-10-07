@@ -27,16 +27,7 @@ public class TC15_JSAlerts extends baseClass {
 
         SoftAssert assertion = new SoftAssert();
         //Validate whether the alert message is displayed
-        if(jsAlertsPage.gettxtresult().contains("You successfuly clicked an alert"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!!Alert message is displayed on clicking JS Alert!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!!No Alert message displayed on clicking JS Alert!!");
-        }
+        assertion.assertTrue(jsAlertsPage.gettxtresult().contains("You successfuly clicked an alert"));
 
         //============================================================================================
 
@@ -47,16 +38,7 @@ public class TC15_JSAlerts extends baseClass {
         alert.accept();
 
         //Validate whether the alert message is displayed
-        if(jsAlertsPage.gettxtresult().contains("Ok"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!!Alert message is displayed on clicking Ok button!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!!No Alert message displayed on clicking Ok button!!");
-        }
+        assertion.assertTrue(jsAlertsPage.gettxtresult().contains("Ok"));
 
         //==========================================================================================
 
@@ -67,16 +49,7 @@ public class TC15_JSAlerts extends baseClass {
         alert.dismiss();
 
         //Validate whether the alert message for Cancel is displayed
-        if(jsAlertsPage.gettxtresult().contains("Cancel"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!!Alert message for Cancel is displayed on clicking Cancel button!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!!No Alert message displayed on clicking Cancel button!!");
-        }
+        assertion.assertTrue(jsAlertsPage.gettxtresult().contains("Cancel"));
 
         //============================================================================================
 
@@ -84,18 +57,11 @@ public class TC15_JSAlerts extends baseClass {
         jsAlertsPage.clkbtnJSPrompt();
         String typedmsg = "Javascript is a scripting language!!";
         alert.sendKeys(typedmsg);
+
         //Close the alert window
         alert.accept();
-        if(jsAlertsPage.gettxtresult().contains(typedmsg))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Alert contains typed message!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Alert DONOT contain typed message!!");
-        }
+        assertion.assertTrue(jsAlertsPage.gettxtresult().contains(typedmsg));
+
         assertion.assertAll();
     }
 }

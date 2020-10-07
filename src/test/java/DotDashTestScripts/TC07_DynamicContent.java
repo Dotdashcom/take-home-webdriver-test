@@ -25,34 +25,16 @@ public class TC07_DynamicContent extends baseClass {
 
         SoftAssert assertion = new SoftAssert();
         //Validate whether the content has changed after refreshing the page
-        if(s1.equals(s2))
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Content Didnot change!! It is not Dynamic!!!");
-        }
-        else
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Dynamic content change successful!!!!");
-        }
+
+        assertion.assertNotEquals(s1,s2,"Test Passed!!");
         //Refreshing the page
         driver.navigate().refresh();
         //Getting the content and storing it in String variable s2
         String s3 = dynamicContentPage.gettxtcontent();
         System.out.println(s3);
 
-                //Validate whether the content has changed after refreshing the page
-        if(s2.equals(s3))
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Content Didnot change!! It is not Dynamic!!!");
-        }
-        else
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Dynamic content change successful!!!!");
-        }
-
+        //Validate whether the content has changed after refreshing the page
+        assertion.assertNotEquals(s2,s3,"Test Passed!!");
         assertion.assertAll();
 
     }

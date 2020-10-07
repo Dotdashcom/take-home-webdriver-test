@@ -20,18 +20,8 @@ public class TC09_DynamicLoading extends baseClass {
 
         //Assert whether Hello World is displayed
         SoftAssert assertion = new SoftAssert();
-        if(dynamicLoadingPage.gettxtMessage().equals("Hello World!"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Hello World! is displayed");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Hello World! NOT displayed");
-        }
+        assertion.assertEquals(dynamicLoadingPage.gettxtMessage(),"Hello World!");
+
         assertion.assertAll();
-
-
     }
 }

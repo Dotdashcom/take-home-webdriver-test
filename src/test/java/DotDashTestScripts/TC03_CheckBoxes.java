@@ -18,6 +18,7 @@ public class TC03_CheckBoxes extends baseClass {
 
         //Check whether the first checkbox is checked
         CheckboxPage checkboxPage = new CheckboxPage(driver);
+
         if(checkboxPage.chkbox1.isSelected())
         {
 
@@ -31,17 +32,8 @@ public class TC03_CheckBoxes extends baseClass {
             checkboxPage.clkchkbox1();
         }
 
-        //Check whether the unchecked Checkbox1 is now selected
-        if(checkboxPage.chkbox1.isSelected())
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Checkbox 1 is now Selected!!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Checkbox 1 is not checked!!!");
-        }
+        //Assertion 1: Check whether the unchecked Checkbox1 is now selected
+        assertion.assertTrue(checkboxPage.chkbox1.isSelected(),"Test Passed!! Checkbox 1 is now Selected!!!");
 
         //Check whether the second checkbox is checked
         if(checkboxPage.chkbox2.isSelected())
@@ -57,17 +49,8 @@ public class TC03_CheckBoxes extends baseClass {
             checkboxPage.clkchkbox2();
         }
 
-        //Check whether the checked Checkbox2 is now Not selected
-        if(!checkboxPage.chkbox2.isSelected())
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Checkbox 2 is not Selected!!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! Checkbox 2 is checked!!!");
-        }
+        //Assertion 2: Check whether the checked Checkbox2 is now Not selected
+        assertion.assertFalse(checkboxPage.chkbox2.isSelected(),"Test Passed!! Checkbox 2 is not Selected!!!");
 
         assertion.assertAll();
 

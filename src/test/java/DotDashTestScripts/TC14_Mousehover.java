@@ -40,41 +40,14 @@ public class TC14_Mousehover extends baseClass {
         }*/
 
 
-       act.moveToElement(mouseHoverPage.img1).build().perform();
-        if(mouseHoverPage.caption1.isDisplayed())
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Additional info displayed!!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! NO Additional info displayed!!!");
-        }
+        act.moveToElement(mouseHoverPage.img1).build().perform();
+        assertion.assertTrue(mouseHoverPage.caption1.isDisplayed());
 
         act.moveToElement(mouseHoverPage.img2).build().perform();
-        if(mouseHoverPage.caption2.isDisplayed())
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Additional info displayed!!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! NO Additional info displayed!!!");
-        }
+        assertion.assertTrue(mouseHoverPage.caption2.isDisplayed());
 
         act.moveToElement(mouseHoverPage.img3).build().perform();
-        if(mouseHoverPage.caption3.isDisplayed())
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Additional info displayed!!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! NO Additional info displayed!!!");
-        }
+        assertion.assertTrue(mouseHoverPage.caption3.isDisplayed());
 
         assertion.assertAll();
 

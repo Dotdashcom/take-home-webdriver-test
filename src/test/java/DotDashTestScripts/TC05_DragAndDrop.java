@@ -40,16 +40,7 @@ public class TC05_DragAndDrop extends baseClass {
         System.out.println("Header Value of Second box: "+dragandDropPage.getheaderB());
 
         //Validate whether the switch has happened
-        if(dragandDropPage.getheaderA().equals("B") && dragandDropPage.getheaderB().equals("A"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! Element A & B are switched!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!!");
-        }
+        assertion.assertTrue(dragandDropPage.getheaderA().equals("B") && dragandDropPage.getheaderB().equals("A"));
 
         assertion.assertAll();
     }

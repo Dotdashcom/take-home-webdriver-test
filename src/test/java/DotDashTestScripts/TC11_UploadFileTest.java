@@ -34,16 +34,8 @@ public class TC11_UploadFileTest extends baseClass {
 
         //Validate whether the file is uploaded successfully
         SoftAssert assertion = new SoftAssert();
-        if(uploadPage.gettxtFileUpload().equals("File Uploaded!"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Test Passed!! File is successfully uploaded!!");
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("Test Failed!! File is NOT uploaded!!");
-        }
-    assertion.assertAll();
+        assertion.assertEquals(uploadPage.gettxtFileUpload(),"File Uploaded!");
+
+        assertion.assertAll();
     }
 }

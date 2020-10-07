@@ -19,23 +19,14 @@ public class TC18_Notification extends baseClass {
         //Click on the Click here link
         notificationPage.clklnkClickhere();
 
-
-
         SoftAssert assertion = new SoftAssert();
         //Validate whether one of the “Action Successful”, “Action unsuccessful, please try again”
         // and “Action Unsuccessful” messages show on click
-        if(notificationPage.gettxtnotification().contains("Action unsuccesful, please try again")
-         || notificationPage.gettxtnotification().contains("Action successful")
-         || notificationPage.gettxtnotification().contains("Action Unsuccessful"))
-        {
-            assertion.assertTrue(true);
-            System.out.println("Notification message shown: "+notificationPage.gettxtnotification());
-        }
-        else
-        {
-            assertion.assertTrue(false);
-            System.out.println("No Notification message shown");
-        }
+
+        assertion.assertTrue(notificationPage.gettxtnotification().contains("Action unsuccesful, please try again")
+                ||(notificationPage.gettxtnotification().contains("Action successful"))
+                ||(notificationPage.gettxtnotification().contains("Action Unsuccessful")));
+
         assertion.assertAll();
     }
 }
