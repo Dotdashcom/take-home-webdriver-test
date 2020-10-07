@@ -1,4 +1,144 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 65.163 s - in TestSuite
+Tests run: 36, Failures: 35, Errors: 0, Skipped: 0, Time elapsed: 7.057 s <<< FAILURE! - in TestSuite
+LoginSuccessTest(WebTesting.SeleniumWebTesting.LoginSuccessTest)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.LoginSuccessTest.LoginSuccessTest(LoginSuccessTest.java:24)
+
+NotificationMsgTest(WebTesting.SeleniumWebTesting.NotificationMsgTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.NotificationMsgTest.NotificationMsgTest(NotificationMsgTest.java:21)
+
+DropdownTest(WebTesting.SeleniumWebTesting.DropdownTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.DropdownTest.DropdownTest(DropdownTest.java:22)
+
+LoginFailureTest(WebTesting.SeleniumWebTesting.LoginFailureTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.LoginFailureTest.LoginFailureTest(LoginFailureTest.java:24)
+
+DynamicControlsTest(WebTesting.SeleniumWebTesting.DynamicControlsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.DynamicControlsTest.DynamicControlsTest(DynamicControlsTest.java:28)
+
+FileDownloadTest(WebTesting.SeleniumWebTesting.FileDownloadTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.FileDownloadTest.FileDownloadTest(FileDownloadTest.java:25)
+
+FloatingMenuTest(WebTesting.SeleniumWebTesting.FloatingMenuTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.FloatingMenuTest.FloatingMenuTest(FloatingMenuTest.java:22)
+
+DynamicContentTest(WebTesting.SeleniumWebTesting.DynamicContentTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.DynamicContentTest.DynamicContentTest(DynamicContentTest.java:23)
+
+iframeTest(WebTesting.SeleniumWebTesting.iframeTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.iframeTest.iframeTest(iframeTest.java:21)
+
+CheckBoxesTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.CheckBoxesTest(CheckBoxesTest.java:37)
+
+ContextMenuTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.ContextMenuTest(CheckBoxesTest.java:68)
+
+DragDropTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DragDropTest(CheckBoxesTest.java:90)
+
+DropdownTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DropdownTest(CheckBoxesTest.java:112)
+
+DynamicContentTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DynamicContentTest(CheckBoxesTest.java:136)
+
+DynamicControlsTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DynamicControlsTest(CheckBoxesTest.java:172)
+
+DynamicLoadingTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DynamicLoadingTest(CheckBoxesTest.java:239)
+
+FileDownloadTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.FileDownloadTest(CheckBoxesTest.java:260)
+
+FileUploadTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.FileUploadTest(CheckBoxesTest.java:292)
+
+FloatingMenuTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.FloatingMenuTest(CheckBoxesTest.java:321)
+
+JSAlertTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.JSAlertTest(CheckBoxesTest.java:366)
+
+LoginFailureTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.LoginFailureTest(CheckBoxesTest.java:469)
+
+LoginSuccessTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.LoginSuccessTest(CheckBoxesTest.java:485)
+
+MouseHoverTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.MouseHoverTest(CheckBoxesTest.java:503)
+
+NotificationMsgTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.NotificationMsgTest(CheckBoxesTest.java:536)
+
+OpenNewTabTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.OpenNewTabTest(CheckBoxesTest.java:565)
+
+ajsErrorTest1(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.ajsErrorTest1(CheckBoxesTest.java:414)
+
+iframeTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.iframeTest(CheckBoxesTest.java:341)
+
+jsErrorTest(WebTesting.SeleniumWebTesting.CheckBoxesTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.jsErrorTest(CheckBoxesTest.java:438)
+
+JSAlertTest(WebTesting.SeleniumWebTesting.JSAlertTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.JSAlertTest.JSAlertTest(JSAlertTest.java:23)
+
+OpenNewTabTest(WebTesting.SeleniumWebTesting.OpenNewTabTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.OpenNewTabTest.OpenNewTabTest(OpenNewTabTest.java:22)
+
+FileUploadTest(WebTesting.SeleniumWebTesting.FileUploadTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.FileUploadTest.FileUploadTest(FileUploadTest.java:22)
+
+DragDropTest(WebTesting.SeleniumWebTesting.DragDropTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.DragDropTest.DragDropTest(DragDropTest.java:24)
+
+ContextMenuTest(WebTesting.SeleniumWebTesting.ContextMenuTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.ContextMenuTest.ContextMenuTest(ContextMenuTest.java:22)
+
+jsErrorTest(WebTesting.SeleniumWebTesting.jsErrorTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.jsErrorTest.jsErrorTest(jsErrorTest.java:26)
+
+MouseHoverTest(WebTesting.SeleniumWebTesting.MouseHoverTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.MouseHoverTest.MouseHoverTest(MouseHoverTest.java:22)
+

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="WebTesting.SeleniumWebTesting.DragDropTest">
+      <class name="WebTesting.SeleniumWebTesting.AllTest">
         <methods>
-          <include name="DragDropTest"/>
           <include name="initialize"/>
+          <include name="DragDropTest"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- WebTesting.SeleniumWebTesting.DragDropTest -->
+      </class> <!-- WebTesting.SeleniumWebTesting.AllTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

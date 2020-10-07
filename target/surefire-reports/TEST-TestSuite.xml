@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="65.163" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="7.057" tests="36" errors="0" skipped="0" failures="35">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.202-b08"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/satinderpalsingh/git/SeleniumWebTesting/SeleniumWebTesting"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/satinderpalsingh/Documents/GitHub/take-home-webdriver-test"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/satinderpalsingh/git/SeleniumWebTesting/SeleniumWebTesting"/>
+    <property name="user.dir" value="/Users/satinderpalsingh/Documents/GitHub/take-home-webdriver-test"/>
     <property name="java.runtime.version" value="1.8.0_202-b08"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -63,22 +63,191 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="LoginSuccessTest" classname="WebTesting.SeleniumWebTesting.LoginSuccessTest" time="0.462"/>
-  <testcase name="NotificationMsgTest" classname="WebTesting.SeleniumWebTesting.NotificationMsgTest" time="0.683"/>
-  <testcase name="DropdownTest" classname="WebTesting.SeleniumWebTesting.DropdownTest" time="0.348"/>
-  <testcase name="LoginFailureTest" classname="WebTesting.SeleniumWebTesting.LoginFailureTest" time="0.275"/>
-  <testcase name="HomePageTest" classname="WebTesting.SeleniumWebTesting.DynamicControlsTest" time="23.091"/>
-  <testcase name="FileDownloadTest" classname="WebTesting.SeleniumWebTesting.FileDownloadTest" time="2.244"/>
-  <testcase name="FloatingMenuTest" classname="WebTesting.SeleniumWebTesting.FloatingMenuTest" time="0.254"/>
-  <testcase name="DynamicLoadingTest" classname="WebTesting.SeleniumWebTesting.DynamicLoadingTest" time="5.28"/>
-  <testcase name="HomePageTest" classname="WebTesting.SeleniumWebTesting.DynamicContentTest" time="0.588"/>
-  <testcase name="iframeTest" classname="WebTesting.SeleniumWebTesting.iframeTest" time="0.742"/>
-  <testcase name="CheckBoxesTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0.324"/>
-  <testcase name="JSAlertTest" classname="WebTesting.SeleniumWebTesting.JSAlertTest" time="0.95"/>
-  <testcase name="OpenNewTabTest" classname="WebTesting.SeleniumWebTesting.OpenNewTabTest" time="0.457"/>
-  <testcase name="FileUploadTest" classname="WebTesting.SeleniumWebTesting.FileUploadTest" time="0.363"/>
-  <testcase name="DragDropTest" classname="WebTesting.SeleniumWebTesting.DragDropTest" time="4.086"/>
-  <testcase name="ContextMenuTest" classname="WebTesting.SeleniumWebTesting.ContextMenuTest" time="5.448"/>
-  <testcase name="jsErrorTest" classname="WebTesting.SeleniumWebTesting.jsErrorTest" time="0.116"/>
-  <testcase name="MouseHoverTest" classname="WebTesting.SeleniumWebTesting.MouseHoverTest" time="0.769"/>
+  <testcase name="LoginSuccessTest" classname="WebTesting.SeleniumWebTesting.LoginSuccessTest" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.LoginSuccessTest.LoginSuccessTest(LoginSuccessTest.java:24)
+</failure>
+    <system-out><![CDATA[setup
+]]></system-out>
+    <system-err><![CDATA[Oct 07, 2020 4:08:10 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 48356
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 07, 2020 4:08:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="NotificationMsgTest" classname="WebTesting.SeleniumWebTesting.NotificationMsgTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.NotificationMsgTest.NotificationMsgTest(NotificationMsgTest.java:21)
+</failure>
+  </testcase>
+  <testcase name="DropdownTest" classname="WebTesting.SeleniumWebTesting.DropdownTest" time="0.001">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.DropdownTest.DropdownTest(DropdownTest.java:22)
+</failure>
+  </testcase>
+  <testcase name="LoginFailureTest" classname="WebTesting.SeleniumWebTesting.LoginFailureTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.LoginFailureTest.LoginFailureTest(LoginFailureTest.java:24)
+</failure>
+  </testcase>
+  <testcase name="DynamicControlsTest" classname="WebTesting.SeleniumWebTesting.DynamicControlsTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.DynamicControlsTest.DynamicControlsTest(DynamicControlsTest.java:28)
+</failure>
+  </testcase>
+  <testcase name="FileDownloadTest" classname="WebTesting.SeleniumWebTesting.FileDownloadTest" time="0.001">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.FileDownloadTest.FileDownloadTest(FileDownloadTest.java:25)
+</failure>
+  </testcase>
+  <testcase name="FloatingMenuTest" classname="WebTesting.SeleniumWebTesting.FloatingMenuTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.FloatingMenuTest.FloatingMenuTest(FloatingMenuTest.java:22)
+</failure>
+  </testcase>
+  <testcase name="DynamicLoadingTest" classname="WebTesting.SeleniumWebTesting.DynamicLoadingTest" time="5.373"/>
+  <testcase name="DynamicContentTest" classname="WebTesting.SeleniumWebTesting.DynamicContentTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.DynamicContentTest.DynamicContentTest(DynamicContentTest.java:23)
+</failure>
+  </testcase>
+  <testcase name="iframeTest" classname="WebTesting.SeleniumWebTesting.iframeTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.iframeTest.iframeTest(iframeTest.java:21)
+</failure>
+  </testcase>
+  <testcase name="CheckBoxesTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0.001">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.CheckBoxesTest(CheckBoxesTest.java:37)
+</failure>
+  </testcase>
+  <testcase name="ContextMenuTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0.002">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.ContextMenuTest(CheckBoxesTest.java:68)
+</failure>
+  </testcase>
+  <testcase name="DragDropTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DragDropTest(CheckBoxesTest.java:90)
+</failure>
+  </testcase>
+  <testcase name="DropdownTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DropdownTest(CheckBoxesTest.java:112)
+</failure>
+  </testcase>
+  <testcase name="DynamicContentTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DynamicContentTest(CheckBoxesTest.java:136)
+</failure>
+  </testcase>
+  <testcase name="DynamicControlsTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0.001">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DynamicControlsTest(CheckBoxesTest.java:172)
+</failure>
+  </testcase>
+  <testcase name="DynamicLoadingTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.DynamicLoadingTest(CheckBoxesTest.java:239)
+</failure>
+  </testcase>
+  <testcase name="FileDownloadTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.FileDownloadTest(CheckBoxesTest.java:260)
+</failure>
+  </testcase>
+  <testcase name="FileUploadTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.FileUploadTest(CheckBoxesTest.java:292)
+</failure>
+  </testcase>
+  <testcase name="FloatingMenuTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.FloatingMenuTest(CheckBoxesTest.java:321)
+</failure>
+  </testcase>
+  <testcase name="JSAlertTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0.001">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.JSAlertTest(CheckBoxesTest.java:366)
+</failure>
+  </testcase>
+  <testcase name="LoginFailureTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.LoginFailureTest(CheckBoxesTest.java:469)
+</failure>
+  </testcase>
+  <testcase name="LoginSuccessTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.LoginSuccessTest(CheckBoxesTest.java:485)
+</failure>
+  </testcase>
+  <testcase name="MouseHoverTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.MouseHoverTest(CheckBoxesTest.java:503)
+</failure>
+  </testcase>
+  <testcase name="NotificationMsgTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.NotificationMsgTest(CheckBoxesTest.java:536)
+</failure>
+  </testcase>
+  <testcase name="OpenNewTabTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.OpenNewTabTest(CheckBoxesTest.java:565)
+</failure>
+  </testcase>
+  <testcase name="ajsErrorTest1" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.ajsErrorTest1(CheckBoxesTest.java:414)
+</failure>
+  </testcase>
+  <testcase name="iframeTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.iframeTest(CheckBoxesTest.java:341)
+</failure>
+  </testcase>
+  <testcase name="jsErrorTest" classname="WebTesting.SeleniumWebTesting.CheckBoxesTest" time="0.001">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.CheckBoxesTest.jsErrorTest(CheckBoxesTest.java:438)
+</failure>
+  </testcase>
+  <testcase name="JSAlertTest" classname="WebTesting.SeleniumWebTesting.JSAlertTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.JSAlertTest.JSAlertTest(JSAlertTest.java:23)
+</failure>
+  </testcase>
+  <testcase name="OpenNewTabTest" classname="WebTesting.SeleniumWebTesting.OpenNewTabTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.OpenNewTabTest.OpenNewTabTest(OpenNewTabTest.java:22)
+</failure>
+  </testcase>
+  <testcase name="FileUploadTest" classname="WebTesting.SeleniumWebTesting.FileUploadTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.FileUploadTest.FileUploadTest(FileUploadTest.java:22)
+</failure>
+  </testcase>
+  <testcase name="DragDropTest" classname="WebTesting.SeleniumWebTesting.DragDropTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.DragDropTest.DragDropTest(DragDropTest.java:24)
+</failure>
+  </testcase>
+  <testcase name="ContextMenuTest" classname="WebTesting.SeleniumWebTesting.ContextMenuTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.ContextMenuTest.ContextMenuTest(ContextMenuTest.java:22)
+</failure>
+  </testcase>
+  <testcase name="jsErrorTest" classname="WebTesting.SeleniumWebTesting.jsErrorTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.jsErrorTest.jsErrorTest(jsErrorTest.java:26)
+</failure>
+  </testcase>
+  <testcase name="MouseHoverTest" classname="WebTesting.SeleniumWebTesting.MouseHoverTest" time="0.001">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at WebTesting.SeleniumWebTesting.MouseHoverTest.MouseHoverTest(MouseHoverTest.java:22)
+</failure>
+  </testcase>
 </testsuite>

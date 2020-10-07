@@ -43,6 +43,7 @@ public class base {
 	{
 		//initializing the driver
 		driver =initializeDriver();
+		System.out.println("setup");
 	}
 	
 
