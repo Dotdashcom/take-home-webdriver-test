@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="The Internet Test Suite" verbose="1" >
+    <test name="Functional Tests" >
+        <classes>
+            <class name="Tests.LoginSuccessTest"></class>
+            <class name="Tests.LoginFailureTest"></class>
+            <class name="Tests.CheckBoxesTest"></class>
+            <class name="Tests.ContextMenuTest"></class>
+            <class name="Tests.DragAndDropTest"></class>
+            <class name="Tests.DropdownListTest"></class>
+            <class name="Tests.DynamicContentTest"></class>
+            <class name="Tests.DynamicControlsTest"></class>
+            <class name="Tests.DynamicLoadingTest"></class>
+            <class name="Tests.FileDownloaderTest"></class>
+            <class name="Tests.FileUploaderTest"></class>
+            <class name="Tests.FloatingMenuTest"></class>
+            <class name="Tests.IframeTest"></class>
+            <class name="Tests.MouseHoverTest"></class>
+            <class name="Tests.JavaScriptAlertsTest"></class>
+            <class name="Tests.JavaScriptErrorTest"></class>
+            <class name="Tests.NewTabTest"></class>
+            <class name="Tests.NotificationMessageTest"></class>
+        </classes>
+    </test>
+</suite>
