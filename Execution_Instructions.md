@@ -10,7 +10,7 @@
 2. Include `ashot` jar in the project (if Maven fails to download the dependency jar ). `ashot` is available in `ExternalLibs` folder.
 3. Install `allure` commandline. Please follow the instructions given in [Allure 2.1](https://docs.qameta.io/allure/)
 4. Verify `allure` is installed properly (Hint Windows OS: `where allure` to show path. `<path> --version` displays the `allure version`)
-5. Add the path to the `chromedriver` in the `config.properties` file under `Configs` folder based on the Chrome Version.
+5. Add `chromedriver` under the `Driver` folder based on the Chrome Version.
 
 ### Test Execution
 1. Execute `mvn test` to run the tests.
