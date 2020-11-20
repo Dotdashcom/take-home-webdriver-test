@@ -1,0 +1,22 @@
+{
+  "login": [
+    {
+      "do_assertions": true,
+      "test_name": "CheckLogin #1, positive",
+      "test_type": "positive",
+      "username": "tomsmith",
+      "password": "SuperSecretPassword!",
+      "expText": "You logged into a secure area!",
+      "expUrl": "http://localhost:7080/secure"
+    },
+    {
+      "do_assertions": true,
+      "test_name": "CheckLogin #2, negative",
+      "test_type": "negative",
+      "username": "tomsmith",
+      "password": "WrongPassword",
+      "expText": "Your password is invalid!",
+      "expUrl": "http://localhost:7080/login"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Take-Home-Webdriver-Test" parallel="tests" thread-count="3">
+
+    <!-- #1 and #2 Login page -->
+    <test name="CheckLogin">
+        <classes>
+            <class name="specs.Login.CheckLogin" />
+        </classes>
+    </test>
+
+    <!-- #3 CheckBoxes page -->
+    <test name="CheckChBoxes">
+        <classes>
+            <class name="specs.CheckBoxes.CheckChBoxes" />
+        </classes>
+    </test>
+
+    <!-- #4 ContextMenu page -->
+    <test name="CheckContextMenu">
+        <classes>
+            <class name="specs.CheckContextMenu.CheckContextMenu" />
+        </classes>
+    </test>
+
+    <!-- #5 Dropdown page -->
+    <test name="CheckDropdown">
+        <classes>
+            <class name="specs.Dropdown.CheckDropdown" />
+        </classes>
+    </test>
+
+    <!-- #6 DragAndDrop page -->
+    <test name="CheckDragAndDrop">
+        <classes>
+            <class name="specs.DragAndDrop.CheckDragAndDrop" />
+        </classes>
+    </test>
+
+    <!-- #7 DynamicContent page -->
+    <test name="CheckDynamicContent">
+        <classes>
+            <class name="specs.DynamicContent.CheckDynamicContent" />
+        </classes>
+    </test>
+
+    <!-- #8 DynamicControls page -->
+    <test name="CheckDynamicControls">
+        <classes>
+            <class name="specs.DynamicControls.CheckDynamicControls" />
+        </classes>
+    </test>
+
+    <!-- #9 DynamicLoading page -->
+    <test name="CheckDynamicLoading">
+        <classes>
+            <class name="specs.DynamicLoading.CheckDynamicLoading" />
+        </classes>
+    </test>
+
+    <!-- #10 FileDownload page -->
+    <test name="CheckFileDownload">
+        <classes>
+            <class name="specs.FileDownload.CheckFileDownload" />
+        </classes>
+    </test>
+
+    <!-- #11 FileUpload page -->
+    <test name="CheckFileUpload">
+        <classes>
+            <class name="specs.FileUpload.CheckFileUpload" />
+        </classes>
+    </test>
+
+    <!-- #12 FloatingMenu page -->
+    <test name="CheckFloatingMenu">
+        <classes>
+            <class name="specs.FloatingMenu.CheckFloatingMenu" />
+        </classes>
+    </test>
+
+    <!-- #13 IFrame page -->
+    <test name="CheckIFrame">
+        <classes>
+            <class name="specs.IFrame.CheckIFrame" />
+        </classes>
+    </test>
+
+    <!-- #14 MouseHover page -->
+    <test name="CheckMouseHover">
+        <classes>
+            <class name="specs.MouseHover.CheckMouseHover" />
+        </classes>
+    </test>
+
+    <!-- #15 JavaScriptAlerts page -->
+    <test name="CheckJavaScriptAlerts">
+        <classes>
+            <class name="specs.JavaScriptAlerts.CheckJavaScriptAlerts" />
+        </classes>
+    </test>
+
+    <!-- #16 JavaScriptError page -->
+    <test name="CheckJavaScriptError">
+        <classes>
+            <class name="specs.JavaScriptError.CheckJavaScriptError" />
+        </classes>
+    </test>
+
+    <!-- #17 OpenNewTab page -->
+    <test name="CheckOpenNewTab">
+        <classes>
+            <class name="specs.OpenNewTab.CheckOpenNewTab" />
+        </classes>
+    </test>
+
+    <!-- #18 NotificationMessage page -->
+    <test name="CheckNotificationMessage">
+        <classes>
+            <class name="specs.NotificationMessage.CheckNotificationMessage" />
+        </classes>
+    </test>
+
+</suite>
