@@ -15,7 +15,7 @@ import java.util.HashMap;
 public class TC12_FloatingMenu extends BaseClass {
 
     @Test
-    public void floatingmenu() {
+    public void floatingMenu() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "FloatingMenu");

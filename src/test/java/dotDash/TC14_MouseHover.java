@@ -14,7 +14,7 @@ import java.util.List;
 public class TC14_MouseHover extends BaseClass {
 
     @Test
-    public void mousehover() {
+    public void mouseHover() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "MouseHover");

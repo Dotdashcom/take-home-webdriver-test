@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class TC09_DynamicLoading extends BaseClass {
 
     @Test
-    public void dynamicloading() {
+    public void dynamicLoading() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "DynamicLoading");

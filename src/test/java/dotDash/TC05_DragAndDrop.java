@@ -15,7 +15,7 @@ import java.util.HashMap;
 public class TC05_DragAndDrop extends BaseClass {
 
     @Test
-    public void draganddrop() {
+    public void dragAndDrop() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "DragAndDrop");

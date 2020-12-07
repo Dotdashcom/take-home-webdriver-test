@@ -14,7 +14,7 @@ import java.util.Set;
 public class TC17_NewTabWindow extends BaseClass {
 
     @Test
-    public void newtabwindow() {
+    public void newTabWindow() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "OpenInNewTab");

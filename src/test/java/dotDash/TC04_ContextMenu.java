@@ -12,7 +12,7 @@ import java.util.HashMap;
 public class TC04_ContextMenu extends BaseClass {
 
     @Test
-    public void contextmenu() {
+    public void contextMenu() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "ContextMenu");

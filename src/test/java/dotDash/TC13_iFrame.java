@@ -12,7 +12,7 @@ import java.util.HashMap;
 public class TC13_iFrame extends BaseClass {
 
     @Test
-    public void iframe() {
+    public void iFrame() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "iFrame");

@@ -11,7 +11,7 @@ import java.util.HashMap;
 public class TC01_LoginSuccess extends BaseClass {
 
     @Test
-    public void loginsuccess(){
+    public void loginSuccess(){
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx","LoginSuccess");

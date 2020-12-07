@@ -14,7 +14,7 @@ import java.util.Set;
 public class TC18_NotificationMessage extends BaseClass {
 
     @Test
-    public void notificationmessage() {
+    public void notificationMessage() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "NotificationMsg");

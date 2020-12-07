@@ -11,7 +11,7 @@ import java.util.HashMap;
 public class TC15_JavascriptAlerts extends BaseClass {
 
     @Test
-    public void javascriptalerts() {
+    public void javascriptAlerts() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "JavascriptAlert");

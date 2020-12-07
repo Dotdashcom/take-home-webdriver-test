@@ -12,7 +12,7 @@ import java.util.HashMap;
 public class TC07_DynamicContent extends BaseClass {
 
     @Test
-    public void dynamiccontent() {
+    public void dynamicContent() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "DynamicContent");

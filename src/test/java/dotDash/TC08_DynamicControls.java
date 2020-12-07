@@ -12,7 +12,7 @@ import java.util.HashMap;
 public class TC08_DynamicControls extends BaseClass {
 
     @Test
-    public void dynamiccontrols() {
+    public void dynamicControls() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "DynamicControls");

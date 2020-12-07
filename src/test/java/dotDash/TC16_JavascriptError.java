@@ -12,7 +12,7 @@ import java.util.HashMap;
 public class TC16_JavascriptError extends BaseClass {
 
     @Test
-    public void javascripterror() {
+    public void javascriptError() {
 
         //Fetch data from Excel
         HashMap<String, String> testData = fnReadTestDataFromExcel("dotdashDatasheet.xlsx", "JavascriptError");

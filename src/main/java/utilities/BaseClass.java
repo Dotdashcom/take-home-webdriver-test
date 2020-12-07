@@ -28,7 +28,12 @@ public class BaseClass {
     //Setup browser
     @BeforeClass
     public void setup(){
-        System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
+        String chromedriverPath = readconfig.getChromePath();
+        //Select chromeDriver version as per OS
+        if(System.getProperty("os.name").toLowerCase().contains("win")){
+            chromedriverPath+=".exe";
+        }
+        System.setProperty("webdriver.chrome.driver", chromedriverPath);
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
