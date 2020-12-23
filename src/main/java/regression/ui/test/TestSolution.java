@@ -40,7 +40,6 @@ public class TestSolution extends UiTests {
         loginPage.enterPassword(password);
         loginPage.clickLogin();
         assertTrue(loginPage.doesErrorMessageExist(), "Check Error message exist");
-        loginPage.doesErrorMessageExist();
         assertTrue(loginPage.getErrorMessage().contains(expectedMessage), "Check Error message is correct");
         // Assert that page is the same
         assertEquals(expectedPageTitle, loginPage.getPageTitle(), "Check webpage remains on login page");
@@ -96,7 +95,7 @@ public class TestSolution extends UiTests {
         // Get box default letters
         assertEquals(letterA, dragAndDropPage.getBoxALetter(), "Check Default box A letter is correct");
         assertEquals(letterB, dragAndDropPage.getBoxBLetter(), "Check Default box B letter is correct");
-        // Drag A to be and get box letters
+        // Drag A to B and get box letters
         dragAndDropPage.dragAndDropBoxAtoBoxB();
         // Confirm drag and drop by checking new box letters
         assertEquals(letterB, dragAndDropPage.getBoxALetter(), "Check Default box A letter is correct");
