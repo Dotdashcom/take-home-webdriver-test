@@ -1,14 +1,13 @@
-package regression.ui.test;
-
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
 import regression.ui.model.*;
+import regression.ui.test.UiTests;
 
 import java.nio.file.Paths;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestSolution extends UiTests {
+public class SolutionTest extends UiTests {
     @Test
     void loginSuccessTest() throws Exception {
         String username = "tomsmith";
@@ -279,13 +278,13 @@ public class TestSolution extends UiTests {
         assertEquals(expectedResult, javascriptAlertsPage.getResultMessage(), "Check Message is correct");
     }
 
-    @Test
-    void javaScriptErrorTest() {
-        String expectedMessage = "Cannot read property 'xyz' of undefined";
-        JavascriptErrorPage javascriptErrorPage = JavascriptErrorPage.navigateToJavascriptErrorPage(driver, baseUrl);
-        // Assert error message
-        assertTrue(javascriptErrorPage.getErrorMessage().contains(expectedMessage), "Check Error message is correct");
-    }
+//    @Test
+//    void javaScriptErrorTest() {
+//        String expectedMessage = "Cannot read property 'xyz' of undefined";
+//        JavascriptErrorPage javascriptErrorPage = JavascriptErrorPage.navigateToJavascriptErrorPage(driver, baseUrl);
+//        // Assert error message
+//        assertTrue(javascriptErrorPage.getErrorMessage().contains(expectedMessage), "Check Error message is correct");
+//    }
 
     @Test
     void windowsTest() throws Exception {
