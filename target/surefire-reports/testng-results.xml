@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="2495" started-at="2021-03-30T02:01:09Z" finished-at="2021-03-30T02:01:11Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="2495" started-at="2021-03-30T02:01:09Z" finished-at="2021-03-30T02:01:11Z">
+      <class name="com.webdrivertest.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@76c7beb3]" name="setUp" is-config="true" duration-ms="2241" started-at="2021-03-30T02:01:09Z" finished-at="2021-03-30T02:01:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testPageTitleTest()[pri:1, instance:com.webdrivertest.tests.LoginPageTest@76c7beb3]" name="testPageTitleTest" duration-ms="53" started-at="2021-03-30T02:01:11Z" description="get page title method" finished-at="2021-03-30T02:01:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@76c7beb3]" name="tearDown" is-config="true" duration-ms="75" started-at="2021-03-30T02:01:11Z" finished-at="2021-03-30T02:01:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.LoginPageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

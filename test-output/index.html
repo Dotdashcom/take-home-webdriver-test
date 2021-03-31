@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng_runner.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">26 methods,   26 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.DropDownPageTest" hash-for-method="secondFirstOption">secondFirstOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.CheckBoxTest" hash-for-method="testCheckedBox">testCheckedBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.ContextMenuPageTest" hash-for-method="testContextPage">testContextPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.JavaScriptErrorPageTest" hash-for-method="testDetectJSError">testDetectJSError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.FileDownloadPageTest" hash-for-method="testDownloadFile">testDownloadFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.DragDropTest" hash-for-method="testDragDropPage">testDragDropPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.DynamicContentPageTest" hash-for-method="testDynamicContent">testDynamicContent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.DynamicControlPageTest" hash-for-method="testEnabledTextField">testEnabledTextField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.DropDownPageTest" hash-for-method="testFirstOption">testFirstOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.MouseHoverPageTest" hash-for-method="testHoverToSeeUserInfo">testHoverToSeeUserInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.IFramePageTest" hash-for-method="testInputTextToIframe">testInputTextToIframe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.JavaScriptAlertPageTest" hash-for-method="testJSConfirm">testJSConfirm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.JavaScriptAlertPageTest" hash-for-method="testJSPrompt">testJSPrompt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.JavaScriptAlertPageTest" hash-for-method="testJSalert">testJSalert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.DynamicLoadingPageTest" hash-for-method="testLoadNewText">testLoadNewText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.LoginPageTest" hash-for-method="testLoginInvalidCreds(yummy, yummy)">testLoginInvalidCreds(yummy, yummy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.LoginPageTest" hash-for-method="testLoginInvalidCreds(bill@gmail.com, test12345)">testLoginInvalidCreds(bill@gmail.com, test12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.LoginPageTest" hash-for-method="testLoginInvalidCreds(jimy@gmail.com, panda)">testLoginInvalidCreds(jimy@gmail.com, panda)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.LoginPageTest" hash-for-method="testLoginValidCreds">testLoginValidCreds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.NotificationMessageRenderedPageTest" hash-for-method="testNotification">testNotification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.OpenNewTabPageTest" hash-for-method="testOpenNewTab">testOpenNewTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.LoginPageTest" hash-for-method="testPageTitleTest">testPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.DynamicControlPageTest" hash-for-method="testRemoveCheckBox">testRemoveCheckBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.FloatingMenuPageTest" hash-for-method="testScrollAndCheckMenuFloating">testScrollAndCheckMenuFloating</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.CheckBoxTest" hash-for-method="testUnCheckedBox">testUnCheckedBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.webdrivertest.tests.FileUploadPageTest" hash-for-method="testUploadFile">testUploadFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.OpenNewTabPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenNewTab">
+                  </a> <!-- testOpenNewTab -->
+                  <span class="method-name">testOpenNewTab</span>
+                  <em>
+(new window handling)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginInvalidCreds(yummy, yummy)">
+                  </a> <!-- testLoginInvalidCreds(yummy, yummy) -->
+                  <span class="method-name">testLoginInvalidCreds</span>
+                  <span class="parameters">(yummy, yummy)</span>
+                  <em>
+(invalid username and password login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginInvalidCreds(bill@gmail.com, test12345)">
+                  </a> <!-- testLoginInvalidCreds(bill@gmail.com, test12345) -->
+                  <span class="method-name">testLoginInvalidCreds</span>
+                  <span class="parameters">(bill@gmail.com, test12345)</span>
+                  <em>
+(invalid username and password login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginInvalidCreds(jimy@gmail.com, panda)">
+                  </a> <!-- testLoginInvalidCreds(jimy@gmail.com, panda) -->
+                  <span class="method-name">testLoginInvalidCreds</span>
+                  <span class="parameters">(jimy@gmail.com, panda)</span>
+                  <em>
+(invalid username and password login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginValidCreds">
+                  </a> <!-- testLoginValidCreds -->
+                  <span class="method-name">testLoginValidCreds</span>
+                  <em>
+(valid username and password login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPageTitleTest">
+                  </a> <!-- testPageTitleTest -->
+                  <span class="method-name">testPageTitleTest</span>
+                  <em>
+(get page title method)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.JavaScriptErrorPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDetectJSError">
+                  </a> <!-- testDetectJSError -->
+                  <span class="method-name">testDetectJSError</span>
+                  <em>
+(expected JS error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.DynamicContentPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDynamicContent">
+                  </a> <!-- testDynamicContent -->
+                  <span class="method-name">testDynamicContent</span>
+                  <em>
+(Test content changes with page reload.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.DynamicControlPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEnabledTextField">
+                  </a> <!-- testEnabledTextField -->
+                  <span class="method-name">testEnabledTextField</span>
+                  <em>
+(testEnabledTextField)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveCheckBox">
+                  </a> <!-- testRemoveCheckBox -->
+                  <span class="method-name">testRemoveCheckBox</span>
+                  <em>
+(testRemoveCheckBox)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.DropDownPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="secondFirstOption">
+                  </a> <!-- secondFirstOption -->
+                  <span class="method-name">secondFirstOption</span>
+                  <em>
+(drap down Option 2 test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstOption">
+                  </a> <!-- testFirstOption -->
+                  <span class="method-name">testFirstOption</span>
+                  <em>
+(drap down Option 1 test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.CheckBoxTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckedBox">
+                  </a> <!-- testCheckedBox -->
+                  <span class="method-name">testCheckedBox</span>
+                  <em>
+(checked box test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUnCheckedBox">
+                  </a> <!-- testUnCheckedBox -->
+                  <span class="method-name">testUnCheckedBox</span>
+                  <em>
+(un-checked box test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.DynamicLoadingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoadNewText">
+                  </a> <!-- testLoadNewText -->
+                  <span class="method-name">testLoadNewText</span>
+                  <em>
+(testLoadNewText)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.NotificationMessageRenderedPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNotification">
+                  </a> <!-- testNotification -->
+                  <span class="method-name">testNotification</span>
+                  <em>
+(Test notification Message.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.ContextMenuPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContextPage">
+                  </a> <!-- testContextPage -->
+                  <span class="method-name">testContextPage</span>
+                  <em>
+(alert handle test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.DragDropTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDragDropPage">
+                  </a> <!-- testDragDropPage -->
+                  <span class="method-name">testDragDropPage</span>
+                  <em>
+(drag and drop page test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.MouseHoverPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHoverToSeeUserInfo">
+                  </a> <!-- testHoverToSeeUserInfo -->
+                  <span class="method-name">testHoverToSeeUserInfo</span>
+                  <em>
+(mouse hover)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.JavaScriptAlertPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testJSConfirm">
+                  </a> <!-- testJSConfirm -->
+                  <span class="method-name">testJSConfirm</span>
+                  <em>
+(JS Alert Comfirm)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testJSPrompt">
+                  </a> <!-- testJSPrompt -->
+                  <span class="method-name">testJSPrompt</span>
+                  <em>
+(JS Alert Prompt)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testJSalert">
+                  </a> <!-- testJSalert -->
+                  <span class="method-name">testJSalert</span>
+                  <em>
+(JS Alert Accept)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.IFramePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInputTextToIframe">
+                  </a> <!-- testInputTextToIframe -->
+                  <span class="method-name">testInputTextToIframe</span>
+                  <em>
+(iFrame test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.FloatingMenuPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScrollAndCheckMenuFloating">
+                  </a> <!-- testScrollAndCheckMenuFloating -->
+                  <span class="method-name">testScrollAndCheckMenuFloating</span>
+                  <em>
+(testScrollAndCheckMenuFloating)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.FileDownloadPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDownloadFile">
+                  </a> <!-- testDownloadFile -->
+                  <span class="method-name">testDownloadFile</span>
+                  <em>
+(testDownloadFile)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdrivertest.tests.FileUploadPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUploadFile">
+                  </a> <!-- testUploadFile -->
+                  <span class="method-name">testUploadFile</span>
+                  <em>
+(testUploadFile)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/bobit/Documents/workspace/WebdriverTestCases/src/test/resources/testrunner/testng_runner.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.webdrivertest.listeners.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.webdrivertest.listeners.TestAllureListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.webdrivertest.listeners.ScreenshotListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.JavaScriptErrorPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.FileDownloadPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.DragDropTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.DynamicLoadingPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.MouseHoverPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.FileUploadPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.DynamicContentPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.DynamicControlPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.CheckBoxTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.JavaScriptAlertPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.DropDownPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.ContextMenuPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.OpenNewTabPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.FloatingMenuPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.NotificationMessageRenderedPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.webdrivertest.tests.IFramePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (17 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(26);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLoadNewText')
+data.setCell(0, 2, 'com.webdrivertest.tests.DynamicLoadingPageTest')
+data.setCell(0, 3, 5173);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testDownloadFile')
+data.setCell(1, 2, 'com.webdrivertest.tests.FileDownloadPageTest')
+data.setCell(1, 3, 5070);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testEnabledTextField')
+data.setCell(2, 2, 'com.webdrivertest.tests.DynamicControlPageTest')
+data.setCell(2, 3, 3235);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testNotification')
+data.setCell(3, 2, 'com.webdrivertest.tests.NotificationMessageRenderedPageTest')
+data.setCell(3, 3, 407);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testHoverToSeeUserInfo')
+data.setCell(4, 2, 'com.webdrivertest.tests.MouseHoverPageTest')
+data.setCell(4, 3, 375);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDynamicContent')
+data.setCell(5, 2, 'com.webdrivertest.tests.DynamicContentPageTest')
+data.setCell(5, 3, 359);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testDragDropPage')
+data.setCell(6, 2, 'com.webdrivertest.tests.DragDropTest')
+data.setCell(6, 3, 307);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLoginInvalidCreds')
+data.setCell(7, 2, 'com.webdrivertest.tests.LoginPageTest')
+data.setCell(7, 3, 251);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testLoginValidCreds')
+data.setCell(8, 2, 'com.webdrivertest.tests.LoginPageTest')
+data.setCell(8, 3, 248);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testLoginInvalidCreds')
+data.setCell(9, 2, 'com.webdrivertest.tests.LoginPageTest')
+data.setCell(9, 3, 247);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testLoginInvalidCreds')
+data.setCell(10, 2, 'com.webdrivertest.tests.LoginPageTest')
+data.setCell(10, 3, 236);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testInputTextToIframe')
+data.setCell(11, 2, 'com.webdrivertest.tests.IFramePageTest')
+data.setCell(11, 3, 185);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testContextPage')
+data.setCell(12, 2, 'com.webdrivertest.tests.ContextMenuPageTest')
+data.setCell(12, 3, 158);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testOpenNewTab')
+data.setCell(13, 2, 'com.webdrivertest.tests.OpenNewTabPageTest')
+data.setCell(13, 3, 131);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testRemoveCheckBox')
+data.setCell(14, 2, 'com.webdrivertest.tests.DynamicControlPageTest')
+data.setCell(14, 3, 99);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testUploadFile')
+data.setCell(15, 2, 'com.webdrivertest.tests.FileUploadPageTest')
+data.setCell(15, 3, 80);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'secondFirstOption')
+data.setCell(16, 2, 'com.webdrivertest.tests.DropDownPageTest')
+data.setCell(16, 3, 64);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testDetectJSError')
+data.setCell(17, 2, 'com.webdrivertest.tests.JavaScriptErrorPageTest')
+data.setCell(17, 3, 62);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testFirstOption')
+data.setCell(18, 2, 'com.webdrivertest.tests.DropDownPageTest')
+data.setCell(18, 3, 58);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testJSPrompt')
+data.setCell(19, 2, 'com.webdrivertest.tests.JavaScriptAlertPageTest')
+data.setCell(19, 3, 57);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testJSalert')
+data.setCell(20, 2, 'com.webdrivertest.tests.JavaScriptAlertPageTest')
+data.setCell(20, 3, 50);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testJSConfirm')
+data.setCell(21, 2, 'com.webdrivertest.tests.JavaScriptAlertPageTest')
+data.setCell(21, 3, 48);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testScrollAndCheckMenuFloating')
+data.setCell(22, 2, 'com.webdrivertest.tests.FloatingMenuPageTest')
+data.setCell(22, 3, 24);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testCheckedBox')
+data.setCell(23, 2, 'com.webdrivertest.tests.CheckBoxTest')
+data.setCell(23, 3, 16);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testUnCheckedBox')
+data.setCell(24, 2, 'com.webdrivertest.tests.CheckBoxTest')
+data.setCell(24, 3, 16);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testPageTitleTest')
+data.setCell(25, 2, 'com.webdrivertest.tests.LoginPageTest')
+data.setCell(25, 3, 6);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.JavaScriptErrorPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDetectJSError</span>
+                <span class="method-start">1711 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1786 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.FileDownloadPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDownloadFile</span>
+                <span class="method-start">2780 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7853 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.DragDropTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7931 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDragDropPage</span>
+                <span class="method-start">8884 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9192 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.DynamicLoadingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9269 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoadNewText</span>
+                <span class="method-start">10239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15413 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.MouseHoverPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15495 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testHoverToSeeUserInfo</span>
+                <span class="method-start">16421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16797 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.FileUploadPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16871 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUploadFile</span>
+                <span class="method-start">17795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17877 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.DynamicContentPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">17952 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDynamicContent</span>
+                <span class="method-start">18868 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19228 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.DynamicControlPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19301 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEnabledTextField</span>
+                <span class="method-start">20429 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23666 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23743 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRemoveCheckBox</span>
+                <span class="method-start">24824 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24924 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.CheckBoxTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25005 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUnCheckedBox</span>
+                <span class="method-start">25918 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25935 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">26013 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCheckedBox</span>
+                <span class="method-start">26930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26947 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.JavaScriptAlertPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">27020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testJSalert</span>
+                <span class="method-start">27946 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27998 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">28071 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testJSConfirm</span>
+                <span class="method-start">28966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29015 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">29088 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testJSPrompt</span>
+                <span class="method-start">29981 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30040 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.DropDownPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">30115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">secondFirstOption</span>
+                <span class="method-start">30999 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31064 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">31137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFirstOption</span>
+                <span class="method-start">32100 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32161 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.ContextMenuPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testContextPage</span>
+                <span class="method-start">33147 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33306 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.OpenNewTabPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">33382 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOpenNewTab</span>
+                <span class="method-start">34268 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34401 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.FloatingMenuPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">34476 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testScrollAndCheckMenuFloating</span>
+                <span class="method-start">35370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35395 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.NotificationMessageRenderedPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">35468 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNotification</span>
+                <span class="method-start">36353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36761 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">36836 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPageTitleTest</span>
+                <span class="method-start">37885 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37892 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">37971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginValidCreds</span>
+                <span class="method-start">38975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39224 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">39803 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginInvalidCreds(bill@gmail.com, test12345)</span>
+                <span class="method-start">40874 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41123 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41199 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginInvalidCreds(jimy@gmail.com, panda)</span>
+                <span class="method-start">42182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">42434 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42509 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginInvalidCreds(yummy, yummy)</span>
+                <span class="method-start">43660 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">43898 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webdrivertest.tests.IFramePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">43975 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInputTextToIframe</span>
+                <span class="method-start">45253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">45439 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

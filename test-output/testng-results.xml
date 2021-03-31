@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="26" passed="26">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="45549" started-at="2021-03-29T21:45:45 EDT" finished-at="2021-03-29T21:46:31 EDT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="45549" started-at="2021-03-29T21:45:45 EDT" finished-at="2021-03-29T21:46:31 EDT">
+      <class name="com.webdrivertest.tests.ContextMenuPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.ContextMenuPageTest@46c00568]" name="setUp" is-config="true" duration-ms="910" started-at="2021-03-29T21:46:17 EDT" finished-at="2021-03-29T21:46:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testContextPage()[pri:1, instance:com.webdrivertest.tests.ContextMenuPageTest@46c00568]" name="testContextPage" duration-ms="158" started-at="2021-03-29T21:46:18 EDT" description="alert handle test" finished-at="2021-03-29T21:46:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContextPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.ContextMenuPageTest@46c00568]" name="tearDown" is-config="true" duration-ms="76" started-at="2021-03-29T21:46:18 EDT" finished-at="2021-03-29T21:46:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.ContextMenuPageTest -->
+      <class name="com.webdrivertest.tests.CheckBoxTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.CheckBoxTest@7fedfe27]" name="setUp" is-config="true" duration-ms="912" started-at="2021-03-29T21:46:10 EDT" finished-at="2021-03-29T21:46:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUnCheckedBox()[pri:1, instance:com.webdrivertest.tests.CheckBoxTest@7fedfe27]" name="testUnCheckedBox" duration-ms="16" started-at="2021-03-29T21:46:11 EDT" description="un-checked box test" finished-at="2021-03-29T21:46:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnCheckedBox -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.CheckBoxTest@7fedfe27]" name="tearDown" is-config="true" duration-ms="77" started-at="2021-03-29T21:46:11 EDT" finished-at="2021-03-29T21:46:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.CheckBoxTest@7fedfe27]" name="setUp" is-config="true" duration-ms="917" started-at="2021-03-29T21:46:11 EDT" finished-at="2021-03-29T21:46:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCheckedBox()[pri:2, instance:com.webdrivertest.tests.CheckBoxTest@7fedfe27]" name="testCheckedBox" duration-ms="16" started-at="2021-03-29T21:46:12 EDT" description="checked box test" finished-at="2021-03-29T21:46:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckedBox -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.CheckBoxTest@7fedfe27]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-03-29T21:46:12 EDT" finished-at="2021-03-29T21:46:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.CheckBoxTest -->
+      <class name="com.webdrivertest.tests.DropDownPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.DropDownPageTest@1d4664d7]" name="setUp" is-config="true" duration-ms="884" started-at="2021-03-29T21:46:15 EDT" finished-at="2021-03-29T21:46:16 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="secondFirstOption()[pri:1, instance:com.webdrivertest.tests.DropDownPageTest@1d4664d7]" name="secondFirstOption" duration-ms="64" started-at="2021-03-29T21:46:16 EDT" description="drap down Option 2 test" finished-at="2021-03-29T21:46:16 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondFirstOption -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.DropDownPageTest@1d4664d7]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-03-29T21:46:16 EDT" finished-at="2021-03-29T21:46:16 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.DropDownPageTest@1d4664d7]" name="setUp" is-config="true" duration-ms="962" started-at="2021-03-29T21:46:16 EDT" finished-at="2021-03-29T21:46:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testFirstOption()[pri:1, instance:com.webdrivertest.tests.DropDownPageTest@1d4664d7]" name="testFirstOption" duration-ms="58" started-at="2021-03-29T21:46:17 EDT" description="drap down Option 1 test" finished-at="2021-03-29T21:46:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstOption -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.DropDownPageTest@1d4664d7]" name="tearDown" is-config="true" duration-ms="74" started-at="2021-03-29T21:46:17 EDT" finished-at="2021-03-29T21:46:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.DropDownPageTest -->
+      <class name="com.webdrivertest.tests.DynamicLoadingPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.DynamicLoadingPageTest@247667dd]" name="setUp" is-config="true" duration-ms="969" started-at="2021-03-29T21:45:54 EDT" finished-at="2021-03-29T21:45:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLoadNewText()[pri:1, instance:com.webdrivertest.tests.DynamicLoadingPageTest@247667dd]" name="testLoadNewText" duration-ms="5173" started-at="2021-03-29T21:45:55 EDT" description="testLoadNewText" finished-at="2021-03-29T21:46:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoadNewText -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.DynamicLoadingPageTest@247667dd]" name="tearDown" is-config="true" duration-ms="81" started-at="2021-03-29T21:46:00 EDT" finished-at="2021-03-29T21:46:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.DynamicLoadingPageTest -->
+      <class name="com.webdrivertest.tests.DragDropTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.DragDropTest@1dab9dd6]" name="setUp" is-config="true" duration-ms="952" started-at="2021-03-29T21:45:53 EDT" finished-at="2021-03-29T21:45:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDragDropPage()[pri:1, instance:com.webdrivertest.tests.DragDropTest@1dab9dd6]" name="testDragDropPage" duration-ms="307" started-at="2021-03-29T21:45:54 EDT" description="drag and drop page test" finished-at="2021-03-29T21:45:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDragDropPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.DragDropTest@1dab9dd6]" name="tearDown" is-config="true" duration-ms="76" started-at="2021-03-29T21:45:54 EDT" finished-at="2021-03-29T21:45:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.DragDropTest -->
+      <class name="com.webdrivertest.tests.FileDownloadPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.FileDownloadPageTest@67a056f1]" name="setUp" is-config="true" duration-ms="911" started-at="2021-03-29T21:45:47 EDT" finished-at="2021-03-29T21:45:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDownloadFile()[pri:1, instance:com.webdrivertest.tests.FileDownloadPageTest@67a056f1]" name="testDownloadFile" duration-ms="5070" started-at="2021-03-29T21:45:48 EDT" description="testDownloadFile" finished-at="2021-03-29T21:45:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDownloadFile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.FileDownloadPageTest@67a056f1]" name="tearDown" is-config="true" duration-ms="77" started-at="2021-03-29T21:45:53 EDT" finished-at="2021-03-29T21:45:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.FileDownloadPageTest -->
+      <class name="com.webdrivertest.tests.FloatingMenuPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.FloatingMenuPageTest@458544e0]" name="setUp" is-config="true" duration-ms="893" started-at="2021-03-29T21:46:20 EDT" finished-at="2021-03-29T21:46:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testScrollAndCheckMenuFloating()[pri:1, instance:com.webdrivertest.tests.FloatingMenuPageTest@458544e0]" name="testScrollAndCheckMenuFloating" duration-ms="24" started-at="2021-03-29T21:46:20 EDT" description="testScrollAndCheckMenuFloating" finished-at="2021-03-29T21:46:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollAndCheckMenuFloating -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.FloatingMenuPageTest@458544e0]" name="tearDown" is-config="true" duration-ms="72" started-at="2021-03-29T21:46:20 EDT" finished-at="2021-03-29T21:46:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.FloatingMenuPageTest -->
+      <class name="com.webdrivertest.tests.NotificationMessageRenderedPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.NotificationMessageRenderedPageTest@6bcbf05b]" name="setUp" is-config="true" duration-ms="885" started-at="2021-03-29T21:46:21 EDT" finished-at="2021-03-29T21:46:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testNotification()[pri:1, instance:com.webdrivertest.tests.NotificationMessageRenderedPageTest@6bcbf05b]" name="testNotification" duration-ms="407" started-at="2021-03-29T21:46:21 EDT" description="Test notification Message." finished-at="2021-03-29T21:46:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNotification -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.NotificationMessageRenderedPageTest@6bcbf05b]" name="tearDown" is-config="true" duration-ms="74" started-at="2021-03-29T21:46:22 EDT" finished-at="2021-03-29T21:46:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.NotificationMessageRenderedPageTest -->
+      <class name="com.webdrivertest.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="setUp" is-config="true" duration-ms="1048" started-at="2021-03-29T21:46:22 EDT" finished-at="2021-03-29T21:46:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testPageTitleTest()[pri:1, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="testPageTitleTest" duration-ms="6" started-at="2021-03-29T21:46:23 EDT" description="get page title method" finished-at="2021-03-29T21:46:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="tearDown" is-config="true" duration-ms="78" started-at="2021-03-29T21:46:23 EDT" finished-at="2021-03-29T21:46:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="setUp" is-config="true" duration-ms="1004" started-at="2021-03-29T21:46:23 EDT" finished-at="2021-03-29T21:46:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLoginValidCreds()[pri:2, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="testLoginValidCreds" duration-ms="248" started-at="2021-03-29T21:46:24 EDT" description="valid username and password login" finished-at="2021-03-29T21:46:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginValidCreds -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="tearDown" is-config="true" duration-ms="72" started-at="2021-03-29T21:46:24 EDT" finished-at="2021-03-29T21:46:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="setUp" is-config="true" duration-ms="1071" started-at="2021-03-29T21:46:25 EDT" finished-at="2021-03-29T21:46:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLoginInvalidCreds(java.lang.String, java.lang.String)[pri:3, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="testLoginInvalidCreds" duration-ms="247" started-at="2021-03-29T21:46:26 EDT" description="invalid username and password login" data-provider="getLoginInvalidData" finished-at="2021-03-29T21:46:26 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bill@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginInvalidCreds -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="tearDown" is-config="true" duration-ms="75" started-at="2021-03-29T21:46:26 EDT" finished-at="2021-03-29T21:46:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="setUp" is-config="true" duration-ms="983" started-at="2021-03-29T21:46:26 EDT" finished-at="2021-03-29T21:46:27 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLoginInvalidCreds(java.lang.String, java.lang.String)[pri:3, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="testLoginInvalidCreds" duration-ms="251" started-at="2021-03-29T21:46:27 EDT" description="invalid username and password login" data-provider="getLoginInvalidData" finished-at="2021-03-29T21:46:28 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jimy@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[panda]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginInvalidCreds -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="tearDown" is-config="true" duration-ms="75" started-at="2021-03-29T21:46:28 EDT" finished-at="2021-03-29T21:46:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="setUp" is-config="true" duration-ms="1151" started-at="2021-03-29T21:46:28 EDT" finished-at="2021-03-29T21:46:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLoginInvalidCreds(java.lang.String, java.lang.String)[pri:3, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="testLoginInvalidCreds" duration-ms="236" started-at="2021-03-29T21:46:29 EDT" description="invalid username and password login" data-provider="getLoginInvalidData" finished-at="2021-03-29T21:46:29 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yummy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yummy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginInvalidCreds -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.LoginPageTest@2d66530f]" name="tearDown" is-config="true" duration-ms="76" started-at="2021-03-29T21:46:29 EDT" finished-at="2021-03-29T21:46:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.LoginPageTest -->
+      <class name="com.webdrivertest.tests.OpenNewTabPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.OpenNewTabPageTest@56ccd751]" name="setUp" is-config="true" duration-ms="886" started-at="2021-03-29T21:46:18 EDT" finished-at="2021-03-29T21:46:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testOpenNewTab()[pri:1, instance:com.webdrivertest.tests.OpenNewTabPageTest@56ccd751]" name="testOpenNewTab" duration-ms="131" started-at="2021-03-29T21:46:19 EDT" description="new window handling" finished-at="2021-03-29T21:46:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenNewTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.OpenNewTabPageTest@56ccd751]" name="tearDown" is-config="true" duration-ms="75" started-at="2021-03-29T21:46:19 EDT" finished-at="2021-03-29T21:46:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.OpenNewTabPageTest -->
+      <class name="com.webdrivertest.tests.IFramePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.IFramePageTest@1d207fad]" name="setUp" is-config="true" duration-ms="1277" started-at="2021-03-29T21:46:29 EDT" finished-at="2021-03-29T21:46:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testInputTextToIframe()[pri:1, instance:com.webdrivertest.tests.IFramePageTest@1d207fad]" name="testInputTextToIframe" duration-ms="185" started-at="2021-03-29T21:46:30 EDT" description="iFrame test" finished-at="2021-03-29T21:46:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputTextToIframe -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.IFramePageTest@1d207fad]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-03-29T21:46:31 EDT" finished-at="2021-03-29T21:46:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.IFramePageTest -->
+      <class name="com.webdrivertest.tests.JavaScriptErrorPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.JavaScriptErrorPageTest@30af7377]" name="setUp" is-config="true" duration-ms="1626" started-at="2021-03-29T21:45:45 EDT" finished-at="2021-03-29T21:45:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDetectJSError()[pri:1, instance:com.webdrivertest.tests.JavaScriptErrorPageTest@30af7377]" name="testDetectJSError" duration-ms="62" started-at="2021-03-29T21:45:47 EDT" description="expected JS error" finished-at="2021-03-29T21:45:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetectJSError -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.JavaScriptErrorPageTest@30af7377]" name="tearDown" is-config="true" duration-ms="79" started-at="2021-03-29T21:45:47 EDT" finished-at="2021-03-29T21:45:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.JavaScriptErrorPageTest -->
+      <class name="com.webdrivertest.tests.MouseHoverPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.MouseHoverPageTest@6f099cef]" name="setUp" is-config="true" duration-ms="925" started-at="2021-03-29T21:46:01 EDT" finished-at="2021-03-29T21:46:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testHoverToSeeUserInfo()[pri:1, instance:com.webdrivertest.tests.MouseHoverPageTest@6f099cef]" name="testHoverToSeeUserInfo" duration-ms="375" started-at="2021-03-29T21:46:01 EDT" description="mouse hover" finished-at="2021-03-29T21:46:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHoverToSeeUserInfo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.MouseHoverPageTest@6f099cef]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-03-29T21:46:02 EDT" finished-at="2021-03-29T21:46:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.MouseHoverPageTest -->
+      <class name="com.webdrivertest.tests.DynamicContentPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.DynamicContentPageTest@4bff2185]" name="setUp" is-config="true" duration-ms="916" started-at="2021-03-29T21:46:03 EDT" finished-at="2021-03-29T21:46:04 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDynamicContent()[pri:1, instance:com.webdrivertest.tests.DynamicContentPageTest@4bff2185]" name="testDynamicContent" duration-ms="359" started-at="2021-03-29T21:46:04 EDT" description="Test content changes with page reload." finished-at="2021-03-29T21:46:04 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicContent -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.DynamicContentPageTest@4bff2185]" name="tearDown" is-config="true" duration-ms="72" started-at="2021-03-29T21:46:04 EDT" finished-at="2021-03-29T21:46:04 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.DynamicContentPageTest -->
+      <class name="com.webdrivertest.tests.FileUploadPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.FileUploadPageTest@afb5821]" name="setUp" is-config="true" duration-ms="922" started-at="2021-03-29T21:46:02 EDT" finished-at="2021-03-29T21:46:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUploadFile()[pri:1, instance:com.webdrivertest.tests.FileUploadPageTest@afb5821]" name="testUploadFile" duration-ms="80" started-at="2021-03-29T21:46:03 EDT" description="testUploadFile" finished-at="2021-03-29T21:46:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadFile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.FileUploadPageTest@afb5821]" name="tearDown" is-config="true" duration-ms="75" started-at="2021-03-29T21:46:03 EDT" finished-at="2021-03-29T21:46:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.FileUploadPageTest -->
+      <class name="com.webdrivertest.tests.DynamicControlPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.DynamicControlPageTest@5c20ffa8]" name="setUp" is-config="true" duration-ms="1127" started-at="2021-03-29T21:46:04 EDT" finished-at="2021-03-29T21:46:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testEnabledTextField()[pri:1, instance:com.webdrivertest.tests.DynamicControlPageTest@5c20ffa8]" name="testEnabledTextField" duration-ms="3235" started-at="2021-03-29T21:46:06 EDT" description="testEnabledTextField" finished-at="2021-03-29T21:46:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnabledTextField -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.DynamicControlPageTest@5c20ffa8]" name="tearDown" is-config="true" duration-ms="75" started-at="2021-03-29T21:46:09 EDT" finished-at="2021-03-29T21:46:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.DynamicControlPageTest@5c20ffa8]" name="setUp" is-config="true" duration-ms="1080" started-at="2021-03-29T21:46:09 EDT" finished-at="2021-03-29T21:46:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRemoveCheckBox()[pri:2, instance:com.webdrivertest.tests.DynamicControlPageTest@5c20ffa8]" name="testRemoveCheckBox" duration-ms="99" started-at="2021-03-29T21:46:10 EDT" description="testRemoveCheckBox" finished-at="2021-03-29T21:46:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveCheckBox -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.DynamicControlPageTest@5c20ffa8]" name="tearDown" is-config="true" duration-ms="80" started-at="2021-03-29T21:46:10 EDT" finished-at="2021-03-29T21:46:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.DynamicControlPageTest -->
+      <class name="com.webdrivertest.tests.JavaScriptAlertPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.JavaScriptAlertPageTest@2f879bab]" name="setUp" is-config="true" duration-ms="925" started-at="2021-03-29T21:46:12 EDT" finished-at="2021-03-29T21:46:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testJSalert()[pri:1, instance:com.webdrivertest.tests.JavaScriptAlertPageTest@2f879bab]" name="testJSalert" duration-ms="50" started-at="2021-03-29T21:46:13 EDT" description="JS Alert Accept" finished-at="2021-03-29T21:46:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJSalert -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.JavaScriptAlertPageTest@2f879bab]" name="tearDown" is-config="true" duration-ms="72" started-at="2021-03-29T21:46:13 EDT" finished-at="2021-03-29T21:46:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.JavaScriptAlertPageTest@2f879bab]" name="setUp" is-config="true" duration-ms="894" started-at="2021-03-29T21:46:13 EDT" finished-at="2021-03-29T21:46:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testJSConfirm()[pri:2, instance:com.webdrivertest.tests.JavaScriptAlertPageTest@2f879bab]" name="testJSConfirm" duration-ms="48" started-at="2021-03-29T21:46:14 EDT" description="JS Alert Comfirm" finished-at="2021-03-29T21:46:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJSConfirm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.JavaScriptAlertPageTest@2f879bab]" name="tearDown" is-config="true" duration-ms="72" started-at="2021-03-29T21:46:14 EDT" finished-at="2021-03-29T21:46:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webdrivertest.tests.JavaScriptAlertPageTest@2f879bab]" name="setUp" is-config="true" duration-ms="893" started-at="2021-03-29T21:46:14 EDT" finished-at="2021-03-29T21:46:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testJSPrompt()[pri:3, instance:com.webdrivertest.tests.JavaScriptAlertPageTest@2f879bab]" name="testJSPrompt" duration-ms="57" started-at="2021-03-29T21:46:15 EDT" description="JS Alert Prompt" finished-at="2021-03-29T21:46:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJSPrompt -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webdrivertest.tests.JavaScriptAlertPageTest@2f879bab]" name="tearDown" is-config="true" duration-ms="74" started-at="2021-03-29T21:46:15 EDT" finished-at="2021-03-29T21:46:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webdrivertest.tests.JavaScriptAlertPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

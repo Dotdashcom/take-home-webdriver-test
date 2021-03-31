@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.webdrivertest.listeners.ExtentReportListener"/>
+    <listener class-name="com.webdrivertest.listeners.TestAllureListener"/>
+    <listener class-name="com.webdrivertest.listeners.ScreenshotListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.webdrivertest.tests.FloatingMenuPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testScrollAndCheckMenuFloating"/>
+        </methods>
+      </class> <!-- com.webdrivertest.tests.FloatingMenuPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
