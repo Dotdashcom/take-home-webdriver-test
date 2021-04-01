@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.app.AllTests
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 3, Errors: 0, Skipped: 1, Time elapsed: 151.982 s <<< FAILURE! - in com.app.AllTests
+loginTest_positive  Time elapsed: 4.443 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <You logged into a secure area!> but was: <You logged into a secure area!
+×>
+	at com.app.AllTests.loginTest_positive(AllTests.java:38)
+
+loginTest_negative  Time elapsed: 5.134 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <Your username is invalid!> but was: <Your username is invalid!
+×>
+	at com.app.AllTests.loginTest_negative(AllTests.java:51)
+
+notificationMsgVerifyTest  Time elapsed: 12.137 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Success message never came ==> expected: <true> but was: <false>
+	at com.app.AllTests.notificationMsgVerifyTest(AllTests.java:252)
+
