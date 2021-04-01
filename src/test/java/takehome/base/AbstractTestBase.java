@@ -34,6 +34,7 @@ public abstract class AbstractTestBase {
     protected NewTabPage newTabPage;
     protected NotifiMsgPage notifiMsgPage;
     protected JSAlertPage jsAlertPage ;
+    protected NextVoteLogin nextVoteLogin;
 
 
 
@@ -49,7 +50,7 @@ public abstract class AbstractTestBase {
 
 
         if (url == null) {
-            driver.get(ConfigurationReader.getProperty("baseUrl"));
+            driver.get(ConfigurationReader.getProperty("nextUrl"));
         } else {
             driver.get(url);
         }
@@ -70,6 +71,7 @@ public abstract class AbstractTestBase {
         notifiMsgPage = new NotifiMsgPage();
         jsAlertPage = new JSAlertPage();
         actions = new Actions(Driver.getDriver());
+        nextVoteLogin = new NextVoteLogin();
 
 
     }
