@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="dotdashSuite">
+    <test name="dotdashTest">
+        <classes>
+            <class name="dotDash.TC01_LoginSuccess"/>
+            <class name="dotDash.TC02_LoginFailure"/>
+            <class name="dotDash.TC03_Checkboxes"/>
+            <class name="dotDash.TC04_ContextMenu"/>
+            <class name="dotDash.TC05_DragAndDrop"/>
+            <class name="dotDash.TC06_Dropdown"/>
+            <class name="dotDash.TC07_DynamicContent"/>
+            <class name="dotDash.TC08_DynamicControls"/>
+            <class name="dotDash.TC09_DynamicLoading"/>
+            <class name="dotDash.TC10_FileDownload"/>
+            <class name="dotDash.TC11_FileUpload"/>
+            <class name="dotDash.TC12_FloatingMenu"/>
+            <class name="dotDash.TC13_iFrame"/>
+            <class name="dotDash.TC14_MouseHover"/>
+            <class name="dotDash.TC15_JavascriptAlerts"/>
+            <class name="dotDash.TC16_JavascriptError"/>
+            <class name="dotDash.TC17_NewTabWindow"/>
+            <class name="dotDash.TC18_NotificationMessage"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
