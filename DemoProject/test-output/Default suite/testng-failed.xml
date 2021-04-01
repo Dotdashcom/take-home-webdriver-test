@@ -5,7 +5,10 @@
     <classes>
       <class name="testSet.TestCases">
         <methods>
-          <include name="login_secuence"/>
+          <include name="dynamicContent"/>
+          <include name="mouse_over"/>
+          <include name="jsAlerts"/>
+          <include name="dragAnddrop"/>
         </methods>
       </class> <!-- testSet.TestCases -->
     </classes>
