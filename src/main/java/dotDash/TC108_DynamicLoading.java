@@ -1,16 +1,15 @@
 package dotDash;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 
-public class 9_DynamicLoading extends BaseClass {
+public class TC108_DynamicLoading extends BaseClass {
 
     @Test
     public void dynamicLoading() {

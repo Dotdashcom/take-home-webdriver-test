@@ -1,17 +1,14 @@
 package dotDash;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
-import java.util.List;
 
-public class 14_MouseHover extends BaseClass {
+public class TC113_MouseHover extends BaseClass {
 
     @Test
     public void mouseHover() {

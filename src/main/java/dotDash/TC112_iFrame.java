@@ -1,15 +1,14 @@
 package dotDash;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 
-public class 13_iFrame extends BaseClass {
+public class TC112_iFrame extends BaseClass {
 
     @Test
     public void iFrame() {

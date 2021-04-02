@@ -2,15 +2,14 @@ package dotDash;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 
-public class 6_Dropdown extends BaseClass {
+public class TC105_Dropdown extends BaseClass {
 
     @Test
     public void dropdown() {

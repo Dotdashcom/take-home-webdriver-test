@@ -3,16 +3,13 @@ package dotDash;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 
-public class 12_FloatingMenu extends BaseClass {
+public class TC111_FloatingMenu extends BaseClass {
 
     @Test
     public void floatingMenu() {

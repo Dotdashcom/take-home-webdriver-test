@@ -3,16 +3,14 @@ package dotDash;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
-import java.time.Duration;
+
 import java.util.HashMap;
 
-public class 5_DragAndDrop extends BaseClass {
+public class TC104_DragAndDrop extends BaseClass {
 
     @Test
     public void dragAndDrop() {
@@ -22,7 +20,6 @@ public class 5_DragAndDrop extends BaseClass {
         //Launch browser
         driver.get(baseURL + testData.get("URL"));
         //Drag element A to element B
-        Actions action = new Actions(driver);
         WebElement elemA = driver.findElement(By.xpath("//div[@id='column-a']/header"));
         WebElement elemB = driver.findElement(By.xpath("//div[@id='column-b']/header"));
 

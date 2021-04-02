@@ -5,11 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 
-public class 4_ContextMenu extends BaseClass {
+public class TC103_ContextMenu extends BaseClass {
 
     @Test
     public void contextMenu() {

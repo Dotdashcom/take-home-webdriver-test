@@ -4,11 +4,11 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 
-public class 15_JavascriptAlerts extends BaseClass {
+public class TC114_JavascriptAlerts extends BaseClass {
 
     @Test
     public void javascriptAlerts() {

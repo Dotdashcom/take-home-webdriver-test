@@ -3,14 +3,14 @@ package dotDash;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utilities.BaseClass;
+
+import pageObjects.utilities.BaseClass;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
 
-public class 10_FileDownload extends BaseClass {
+public class TC109_FileDownload extends BaseClass {
 
     @Test
     public void fileDownload() throws InterruptedException {

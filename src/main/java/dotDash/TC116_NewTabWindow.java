@@ -1,17 +1,15 @@
 package dotDash;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
-public class TC17_NewTabWindow extends BaseClass {
+public class TC116_NewTabWindow extends BaseClass {
 
     @Test
     public void newTabWindow() {
@@ -25,7 +23,6 @@ public class TC17_NewTabWindow extends BaseClass {
         //Capture window handles
         Set<String> handles = driver.getWindowHandles();
         Iterator<String> iterator = handles.iterator();
-        String parentTab = iterator.next();
         String childTab = iterator.next();
         //Child Tab
         driver.switchTo().window(childTab);

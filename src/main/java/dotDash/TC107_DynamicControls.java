@@ -5,11 +5,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 
-public class 8_DynamicControls extends BaseClass {
+public class TC107_DynamicControls extends BaseClass {
 
     @Test
     public void dynamicControls() {

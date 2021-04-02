@@ -1,17 +1,13 @@
 package dotDash;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Set;
 
-public class 18_NotificationMessage extends BaseClass {
+public class TC117_NotificationMessage extends BaseClass {
 
     @Test
     public void notificationMessage() {

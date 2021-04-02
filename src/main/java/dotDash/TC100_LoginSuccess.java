@@ -4,11 +4,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pageObjects.LoginPage;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 
-public class 1_LoginSuccess extends BaseClass {
+public class TC100_LoginSuccess extends BaseClass {
 
     @Test
     public void loginSuccess(){

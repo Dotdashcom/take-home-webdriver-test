@@ -3,13 +3,11 @@ package dotDash;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.HashMap;
 
-public class 11_FileUpload extends BaseClass {
+public class TC110_FileUpload extends BaseClass {
 
     @Test
     public void fileUpload() throws InterruptedException {

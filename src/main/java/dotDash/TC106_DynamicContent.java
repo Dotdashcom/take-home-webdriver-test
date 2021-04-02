@@ -1,15 +1,13 @@
 package dotDash;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BaseClass;
+import pageObjects.utilities.BaseClass;
 
 import java.util.HashMap;
 
-public class 7_DynamicContent extends BaseClass {
+public class TC106_DynamicContent extends BaseClass {
 
     @Test
     public void dynamicContent() {
