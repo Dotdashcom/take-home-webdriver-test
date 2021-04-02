@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.piccolo2d:piccolo2d-core:1.3.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/piccolo2d/piccolo2d-core/1.3.1/piccolo2d-core-1.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/piccolo2d/piccolo2d-core/1.3.1/piccolo2d-core-1.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/piccolo2d/piccolo2d-core/1.3.1/piccolo2d-core-1.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
