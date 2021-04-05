@@ -26,11 +26,12 @@ import utilities.ReadConfig;
         {
             System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
             driver=new ChromeDriver();
+            driver.manage().window().maximize();
         }
         @AfterTest
         public void teardown()
         {
-            driver.close();
+            driver.quit();
         }
 
     }
