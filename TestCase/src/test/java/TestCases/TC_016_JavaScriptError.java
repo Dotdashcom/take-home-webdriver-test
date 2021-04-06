@@ -14,17 +14,11 @@ public class TC_016_JavaScriptError extends BaseClass
         driver.get(BaseUrl + "javascript_error");
         //Inspecting Java Script Error Message
         WebElement page_text = driver.findElement(By.xpath("/html/body/p"));
-        //Printing Error Message
-        System.out.println(page_text.getText());
-        //Checking Assertion for Error Message
-        if(driver.getPageSource().contains("propertyThatDoesNotExist.xyz"))
-        {
-            Assert.assertTrue(true);
-            System.out.println("Page Contains Error: Cannot read property 'xyz' of undefined");
-        }
-        else
-        {
-            Assert.assertTrue(false);
-        }
+
+        //Approach1: Asserts if page contains error
+        Assert.assertTrue(driver.findElement(By.tagName("body")).getText().contains("JavaScript error"));
+
+        //Approach2: Using PageSource to check for "propertyThatDoesNotExist.xyz"
+        Assert.assertTrue(driver.getPageSource().contains("propertyThatDoesNotExist.xyz"));
     }
 }

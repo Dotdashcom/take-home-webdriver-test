@@ -13,14 +13,21 @@ public class TC_018_NotificationMsg extends BaseClass {
         //Launching Notification Url
         driver.get(BaseUrl + "notification_message_rendered");
         //Inspecting WebElement to Click on 'ClicK Here' link
-        WebElement ClickLink = driver.findElement(By.xpath("//*[@id=\"content\"]/div/p/a"));
-        //Clicking on Click Here link to get Action Successful Message
-        ClickLink.click();
-        Thread.sleep(3000);
-        //inspecting Message Of Action
-        WebElement ActionMsg = driver.findElement(By.id("flash"));
-        System.out.println(ActionMsg.getText());
-        //Assertion for Message Success
-        Assert.assertTrue(driver.getPageSource().contains("Action successful"));
+        WebElement ClickLink;
+        //Check until "Action successful"  Notification observed
+        do  {
+            ClickLink = driver.findElement(By.linkText("Click here"));
+            ClickLink.click();
+            Thread.sleep(1000);
+            System.out.println(driver.findElement(By.xpath("//div[@id='flash']")).getText());
+        } while(!driver.findElement(By.xpath("//div[@id='flash']")).getText().contains("Action successful"));
+
+        //Check until "Action unsuccesful, please try again"  Notification observed
+        do {
+            ClickLink = driver.findElement(By.linkText("Click here"));
+            ClickLink.click();
+            Thread.sleep(1000);
+            System.out.println(driver.findElement(By.xpath("//div[@id='flash']")).getText());
+        } while(!driver.findElement(By.xpath("//div[@id='flash']")).getText().contains("Action unsuccesful, please try again"));
     }
 }
