@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="145" failures="1" name="TestSuite" time="1.886" errors="0" skipped="144">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="13.0.2+8"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mysah\IdeaProjects\take-home-webdriver-test"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\mysah\IdeaProjects\take-home-webdriver-test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="13.0.2+8"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\mysah\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-13.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk-13.0.2\bin;C:\Users\mysah\AppData\Local\Android\Sdk\tools;C:\Users\mysah\AppData\Local\Android\Sdk\platform_tools;C:\Users\mysah\AppData\Local\Microsoft\WindowsApps;C:\Users\mysah\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\mysah\AppData\Local\Microsoft\WindowsApps;C:\apache-maven-3.6.3\bin;C:\Users\mysah\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\bin;;C:\Users\mysah\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.6.3\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="57.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\mysah"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="13"/>
+    <property name="user.name" value="mysah"/>
+    <property name="java.class.path" value="C:\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -U"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-13.0.2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="13.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-01-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.cybertek.tests.d16_pom_2.PageSubtitlesTest" name="setUpTest" time="0.634">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+	at org.testng.TestRunner.run(TestRunner.java:584)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7c30a502
+</system-out>
+    <system-err>java.io.FileNotFoundException: configuration.properties (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:110)
+	at com.cybertek.utilities.ConfigurationReader.&lt;clinit&gt;(ConfigurationReader.java:21)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+	at org.testng.TestRunner.run(TestRunner.java:584)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</system-err>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.FirstTestNGTest" name="test1" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d10_synchronization.ImplicitWaitTest" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d10_synchronization.ImplicitWaitTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d10_synchronization.ImplicitWaitTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d10_synchronization.ImplicitWaitTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d10_synchronization.ImplicitWaitTest" name="test2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d10_synchronization.ImplicitWaitTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" name="setupMethod" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" name="dragdropbychainingtest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" name="dragdroptest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" name="hoverTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="test1" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="teardownMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="test2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="test3" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="test4" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="test5" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d6_testng.TestNGAssertionsTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d7_types_of_elements.AnotherRadioButtonsTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest" name="test2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest" name="teardownMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d7_types_of_elements.AttributesTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" name="click" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" name="scroll" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" name="type" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" name="teardownMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d7_types_of_elements.CheckboxTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d12_review.HoverTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d12_review.HoverTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d12_review.HoverTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d7_types_of_elements.DisabledElementTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d12_review.NullTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d12_review.NullTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d7_types_of_elements.DisplayedTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d12_review.TestCase6FromThatHomework" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d12_review.TestCase6FromThatHomework" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d12_review.TestCase6FromThatHomework" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d7_types_of_elements.RadioButtonsTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="getAllCellsInRow" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="getAllHeaders" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="getCellInRelationToAnotherCellInSameRow" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="getRow" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="getSingeCellByIndex" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="getSpecificCellByIndex" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="printAllCellByIndex" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="printTable" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="printTableSize" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d13_tables.WebTablesExamplesTest" name="teardown" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d8_select_list.DropdownListNoSelectTagTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d14_properties_driver_class_test_base_class.PropertiesTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d8_select_list.ListOfElementsTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d8_select_list.ListOfElementsTest" name="test2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest" name="test2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest" name="test3" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.PageSubtitlesTest" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.PageSubtitlesTest" name="verifySubTitleTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.PageSubtitlesTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d8_select_list.SelectClassTest" name="printAllOptions" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d8_select_list.SelectClassTest" name="selectAndVerifySelected" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.RepeatOptionsTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.RepeatOptionsTest" name="radioRepeatEveryReadioButtonsTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.RepeatOptionsTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.RepeatOptionsTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.RepeatOptionsTest" name="repeatOptionsTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.RepeatOptionsTest" name="teardown" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d17_extent_reports.ExtentDemoTest" name="setUp" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d17_extent_reports.ExtentDemoTest" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d17_extent_reports.ExtentDemoTest" name="close" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="1.225">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="setupMethod" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d18_data_driven_testing.DDTTest" name="teardown" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.cybertek.tests.d16_pom_2.PageSubtitlesTest" name="tearDownTest" time="0.001">
+    <skipped/>
+  </testcase>
+</testsuite>

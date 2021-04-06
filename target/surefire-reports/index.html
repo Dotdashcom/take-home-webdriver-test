@@ -1,0 +1,2441 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-skipped">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">63 methods,  63 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Command_line_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" class="method navigator-link" hash-for-method="click">click</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" class="method navigator-link" hash-for-method="dragdropbychainingtest">dragdropbychainingtest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" class="method navigator-link" hash-for-method="dragdroptest">dragdroptest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d13_tables.WebTablesExamplesTest" class="method navigator-link" hash-for-method="getAllCellsInRow">getAllCellsInRow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d13_tables.WebTablesExamplesTest" class="method navigator-link" hash-for-method="getAllHeaders">getAllHeaders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d13_tables.WebTablesExamplesTest" class="method navigator-link" hash-for-method="getCellInRelationToAnotherCellInSameRow">getCellInRelationToAnotherCellInSameRow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d13_tables.WebTablesExamplesTest" class="method navigator-link" hash-for-method="getRow">getRow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d13_tables.WebTablesExamplesTest" class="method navigator-link" hash-for-method="getSingeCellByIndex">getSingeCellByIndex</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d13_tables.WebTablesExamplesTest" class="method navigator-link" hash-for-method="getSpecificCellByIndex">getSpecificCellByIndex</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest" class="method navigator-link" hash-for-method="hoverTest">hoverTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d13_tables.WebTablesExamplesTest" class="method navigator-link" hash-for-method="printAllCellByIndex">printAllCellByIndex</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d8_select_list.SelectClassTest" class="method navigator-link" hash-for-method="printAllOptions">printAllOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d13_tables.WebTablesExamplesTest" class="method navigator-link" hash-for-method="printTable">printTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d13_tables.WebTablesExamplesTest" class="method navigator-link" hash-for-method="printTableSize">printTableSize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d16_pom_2.RepeatOptionsTest" class="method navigator-link" hash-for-method="radioRepeatEveryReadioButtonsTest">radioRepeatEveryReadioButtonsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d16_pom_2.RepeatOptionsTest" class="method navigator-link" hash-for-method="repeatOptionsTest">repeatOptionsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" class="method navigator-link" hash-for-method="scroll">scroll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d8_select_list.SelectClassTest" class="method navigator-link" hash-for-method="selectAndVerifySelected">selectAndVerifySelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d8_select_list.DropdownListNoSelectTagTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d12_review.NullTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d12_review.TestCase6FromThatHomework" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d7_types_of_elements.CheckboxTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d12_review.HoverTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d18_data_driven_testing.DDTTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d14_properties_driver_class_test_base_class.PropertiesTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d17_extent_reports.ExtentDemoTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d6_testng.FirstTestNGTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d7_types_of_elements.AnotherRadioButtonsTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d6_testng.TestNGAssertionsTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d7_types_of_elements.DisabledElementTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d7_types_of_elements.DisplayedTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d8_select_list.ListOfElementsTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d10_synchronization.ImplicitWaitTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d7_types_of_elements.AttributesTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d7_types_of_elements.RadioButtonsTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d10_synchronization.ImplicitWaitTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d8_select_list.ListOfElementsTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d6_testng.TestNGAssertionsTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d6_testng.TestNGAssertionsTest" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d6_testng.TestNGAssertionsTest" class="method navigator-link" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d6_testng.TestNGAssertionsTest" class="method navigator-link" hash-for-method="test5">test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest" class="method navigator-link" hash-for-method="type">type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.cybertek.tests.d16_pom_2.PageSubtitlesTest" class="method navigator-link" hash-for-method="verifySubTitleTest">verifySubTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d17_extent_reports.ExtentDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d12_review.NullTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d8_select_list.SelectClassTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="printAllOptions">
+                  </a> <!-- printAllOptions -->
+                  <span class="method-name">printAllOptions</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectAndVerifySelected">
+                  </a> <!-- selectAndVerifySelected -->
+                  <span class="method-name">selectAndVerifySelected</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragdropbychainingtest">
+                  </a> <!-- dragdropbychainingtest -->
+                  <span class="method-name">dragdropbychainingtest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragdroptest">
+                  </a> <!-- dragdroptest -->
+                  <span class="method-name">dragdroptest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hoverTest">
+                  </a> <!-- hoverTest -->
+                  <span class="method-name">hoverTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d14_properties_driver_class_test_base_class.PropertiesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d16_pom_2.RepeatOptionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="radioRepeatEveryReadioButtonsTest">
+                  </a> <!-- radioRepeatEveryReadioButtonsTest -->
+                  <span class="method-name">radioRepeatEveryReadioButtonsTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="repeatOptionsTest">
+                  </a> <!-- repeatOptionsTest -->
+                  <span class="method-name">repeatOptionsTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="click">
+                  </a> <!-- click -->
+                  <span class="method-name">click</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scroll">
+                  </a> <!-- scroll -->
+                  <span class="method-name">scroll</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="type">
+                  </a> <!-- type -->
+                  <span class="method-name">type</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d7_types_of_elements.DisabledElementTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d18_data_driven_testing.DDTTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d12_review.TestCase6FromThatHomework</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d6_testng.TestNGAssertionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d16_pom_2.PageSubtitlesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySubTitleTest">
+                  </a> <!-- verifySubTitleTest -->
+                  <span class="method-name">verifySubTitleTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d7_types_of_elements.DisplayedTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d7_types_of_elements.AnotherRadioButtonsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d8_select_list.DropdownListNoSelectTagTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d7_types_of_elements.RadioButtonsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d7_types_of_elements.AttributesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d6_testng.FirstTestNGTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d7_types_of_elements.CheckboxTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d12_review.HoverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d10_synchronization.ImplicitWaitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d13_tables.WebTablesExamplesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllCellsInRow">
+                  </a> <!-- getAllCellsInRow -->
+                  <span class="method-name">getAllCellsInRow</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllHeaders">
+                  </a> <!-- getAllHeaders -->
+                  <span class="method-name">getAllHeaders</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCellInRelationToAnotherCellInSameRow">
+                  </a> <!-- getCellInRelationToAnotherCellInSameRow -->
+                  <span class="method-name">getCellInRelationToAnotherCellInSameRow</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRow">
+                  </a> <!-- getRow -->
+                  <span class="method-name">getRow</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSingeCellByIndex">
+                  </a> <!-- getSingeCellByIndex -->
+                  <span class="method-name">getSingeCellByIndex</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSpecificCellByIndex">
+                  </a> <!-- getSpecificCellByIndex -->
+                  <span class="method-name">getSpecificCellByIndex</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="printAllCellByIndex">
+                  </a> <!-- printAllCellByIndex -->
+                  <span class="method-name">printAllCellByIndex</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="printTable">
+                  </a> <!-- printTable -->
+                  <span class="method-name">printTable</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="printTableSize">
+                  </a> <!-- printTableSize -->
+                  <span class="method-name">printTableSize</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cybertek.tests.d8_select_list.ListOfElementsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cybertek.utilities.ConfigurationReader.get(ConfigurationReader.java:35)
+	at com.cybertek.tests.TestBase.setUpTest(TestBase.java:38)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cybertek.tests.d10_synchronization.ImplicitWaitTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d12_review.HoverTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d12_review.NullTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d12_review.TestCase6FromThatHomework&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d13_tables.WebTablesExamplesTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d14_properties_driver_class_test_base_class.PropertiesTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d16_pom_2.PageSubtitlesTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d16_pom_2.RepeatOptionsTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d17_extent_reports.ExtentDemoTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d18_data_driven_testing.DDTTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d4_basic_locators.ClassLocatorTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d4_basic_locators.IdLocatorTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d4_basic_locators.LinkTextAndPartialLinkTextTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d4_basic_locators.NameLocatorTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d6_css.CssLocatorDemoTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d6_testng.FirstTestNGTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d6_testng.TestNGAssertionsTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d7_types_of_elements.AnotherRadioButtonsTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d7_types_of_elements.AttributesTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d7_types_of_elements.CheckboxTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d7_types_of_elements.DisabledElementTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d7_types_of_elements.DisplayedTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d7_types_of_elements.RadioButtonsTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d8_select_list.DropdownListNoSelectTagTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d8_select_list.ListOfElementsTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.d8_select_list.SelectClassTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.TestBase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (31 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(63);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test')
+data.setCell(0, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(0, 3, 0);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test')
+data.setCell(1, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test')
+data.setCell(2, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test2')
+data.setCell(3, 2, 'com.cybertek.tests.d10_synchronization.ImplicitWaitTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'scroll')
+data.setCell(4, 2, 'com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'printTableSize')
+data.setCell(5, 2, 'com.cybertek.tests.d13_tables.WebTablesExamplesTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test')
+data.setCell(6, 2, 'com.cybertek.tests.d8_select_list.DropdownListNoSelectTagTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test')
+data.setCell(7, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test1')
+data.setCell(8, 2, 'com.cybertek.tests.d14_properties_driver_class_test_base_class.PropertiesTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test1')
+data.setCell(9, 2, 'com.cybertek.tests.d17_extent_reports.ExtentDemoTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test')
+data.setCell(10, 2, 'com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test')
+data.setCell(11, 2, 'com.cybertek.tests.d12_review.NullTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'dragdropbychainingtest')
+data.setCell(12, 2, 'com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test')
+data.setCell(13, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test')
+data.setCell(14, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test1')
+data.setCell(15, 2, 'com.cybertek.tests.d6_testng.FirstTestNGTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test')
+data.setCell(16, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test2')
+data.setCell(17, 2, 'com.cybertek.tests.d8_select_list.ListOfElementsTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'getAllCellsInRow')
+data.setCell(18, 2, 'com.cybertek.tests.d13_tables.WebTablesExamplesTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'test2')
+data.setCell(19, 2, 'com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'test')
+data.setCell(20, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'getSpecificCellByIndex')
+data.setCell(21, 2, 'com.cybertek.tests.d13_tables.WebTablesExamplesTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'test1')
+data.setCell(22, 2, 'com.cybertek.tests.d7_types_of_elements.AnotherRadioButtonsTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'hoverTest')
+data.setCell(23, 2, 'com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'test')
+data.setCell(24, 2, 'com.cybertek.tests.d12_review.TestCase6FromThatHomework')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'test1')
+data.setCell(25, 2, 'com.cybertek.tests.d6_testng.TestNGAssertionsTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'test2')
+data.setCell(26, 2, 'com.cybertek.tests.d6_testng.TestNGAssertionsTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'test')
+data.setCell(27, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'test')
+data.setCell(28, 2, 'com.cybertek.tests.d7_types_of_elements.CheckboxTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifySubTitleTest')
+data.setCell(29, 2, 'com.cybertek.tests.d16_pom_2.PageSubtitlesTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'getCellInRelationToAnotherCellInSameRow')
+data.setCell(30, 2, 'com.cybertek.tests.d13_tables.WebTablesExamplesTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'printAllOptions')
+data.setCell(31, 2, 'com.cybertek.tests.d8_select_list.SelectClassTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'click')
+data.setCell(32, 2, 'com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'test1')
+data.setCell(33, 2, 'com.cybertek.tests.d7_types_of_elements.DisabledElementTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'repeatOptionsTest')
+data.setCell(34, 2, 'com.cybertek.tests.d16_pom_2.RepeatOptionsTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'test1')
+data.setCell(35, 2, 'com.cybertek.tests.d7_types_of_elements.DisplayedTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'test1')
+data.setCell(36, 2, 'com.cybertek.tests.d8_select_list.ListOfElementsTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'test')
+data.setCell(37, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'test5')
+data.setCell(38, 2, 'com.cybertek.tests.d6_testng.TestNGAssertionsTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'test1')
+data.setCell(39, 2, 'com.cybertek.tests.d10_synchronization.ImplicitWaitTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'test')
+data.setCell(40, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'test1')
+data.setCell(41, 2, 'com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'getAllHeaders')
+data.setCell(42, 2, 'com.cybertek.tests.d13_tables.WebTablesExamplesTest')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'getSingeCellByIndex')
+data.setCell(43, 2, 'com.cybertek.tests.d13_tables.WebTablesExamplesTest')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'test4')
+data.setCell(44, 2, 'com.cybertek.tests.d6_testng.TestNGAssertionsTest')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'printAllCellByIndex')
+data.setCell(45, 2, 'com.cybertek.tests.d13_tables.WebTablesExamplesTest')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'test')
+data.setCell(46, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'dragdroptest')
+data.setCell(47, 2, 'com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'test1')
+data.setCell(48, 2, 'com.cybertek.tests.d7_types_of_elements.AttributesTest')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'type')
+data.setCell(49, 2, 'com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'getRow')
+data.setCell(50, 2, 'com.cybertek.tests.d13_tables.WebTablesExamplesTest')
+data.setCell(50, 3, 0);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'test')
+data.setCell(51, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(51, 3, 0);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'test3')
+data.setCell(52, 2, 'com.cybertek.tests.d6_testng.TestNGAssertionsTest')
+data.setCell(52, 3, 0);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'radioRepeatEveryReadioButtonsTest')
+data.setCell(53, 2, 'com.cybertek.tests.d16_pom_2.RepeatOptionsTest')
+data.setCell(53, 3, 0);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'test3')
+data.setCell(54, 2, 'com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest')
+data.setCell(54, 3, 0);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'test')
+data.setCell(55, 2, 'com.cybertek.tests.d12_review.HoverTest')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'test')
+data.setCell(56, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(56, 3, 0);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'test')
+data.setCell(57, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(57, 3, 0);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'selectAndVerifySelected')
+data.setCell(58, 2, 'com.cybertek.tests.d8_select_list.SelectClassTest')
+data.setCell(58, 3, 0);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'printTable')
+data.setCell(59, 2, 'com.cybertek.tests.d13_tables.WebTablesExamplesTest')
+data.setCell(59, 3, 0);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'test')
+data.setCell(60, 2, 'com.cybertek.tests.d18_data_driven_testing.DDTTest')
+data.setCell(60, 3, 0);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'test1')
+data.setCell(61, 2, 'com.cybertek.tests.d7_types_of_elements.RadioButtonsTest')
+data.setCell(61, 3, 0);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'test2')
+data.setCell(62, 2, 'com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest')
+data.setCell(62, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">5 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.cybertek.tests.d6_testng.FirstTestNGTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.cybertek.tests.d18_data_driven_testing.DDTTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownTest</span>
+                <br/>
+                <span class="ignored-method-name">setUpTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.cybertek.tests.d16_pom_2.RepeatOptionsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownTest</span>
+                <br/>
+                <span class="ignored-method-name">setUpTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d16_pom_2.PageSubtitlesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d6_testng.FirstTestNGTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d10_synchronization.ImplicitWaitTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">226 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">226 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">227 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">227 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">227 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">227 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">228 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dragdropbychainingtest</span>
+                <span class="method-start">229 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">229 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">229 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dragdroptest</span>
+                <span class="method-start">229 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">229 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">230 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hoverTest</span>
+                <span class="method-start">230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">230 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d6_testng.TestNGAssertionsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">230 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">231 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">231 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">231 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">231 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test5</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d7_types_of_elements.AnotherRadioButtonsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d7_types_of_elements.AttributesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">234 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">234 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">click</span>
+                <span class="method-start">234 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">234 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">234 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">scroll</span>
+                <span class="method-start">235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">235 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">type</span>
+                <span class="method-start">235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownMethod</span>
+                <span class="method-start">235 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d7_types_of_elements.CheckboxTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">236 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d12_review.HoverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">236 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">236 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">236 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d7_types_of_elements.DisabledElementTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">236 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d12_review.NullTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">237 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d7_types_of_elements.DisplayedTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">237 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d12_review.TestCase6FromThatHomework</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">238 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d7_types_of_elements.RadioButtonsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">238 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d13_tables.WebTablesExamplesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">238 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getAllCellsInRow</span>
+                <span class="method-start">238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getAllHeaders</span>
+                <span class="method-start">239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getCellInRelationToAnotherCellInSameRow</span>
+                <span class="method-start">239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getRow</span>
+                <span class="method-start">239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getSingeCellByIndex</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getSpecificCellByIndex</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">printAllCellByIndex</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">printTable</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">printTableSize</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d8_select_list.DropdownListNoSelectTagTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">242 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d14_properties_driver_class_test_base_class.PropertiesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">242 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d8_select_list.ListOfElementsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">242 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">243 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d16_pom_2.PageSubtitlesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">244 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySubTitleTest</span>
+                <span class="method-start">244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">244 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d8_select_list.SelectClassTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">printAllOptions</span>
+                <span class="method-start">244 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectAndVerifySelected</span>
+                <span class="method-start">245 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d16_pom_2.RepeatOptionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">radioRepeatEveryReadioButtonsTest</span>
+                <span class="method-start">245 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">245 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">repeatOptionsTest</span>
+                <span class="method-start">245 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">245 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d17_extent_reports.ExtentDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">246 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">246 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d18_data_driven_testing.DDTTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1470 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1470 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1471 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1471 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1471 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1471 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1471 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1472 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1472 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1472 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1472 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1474 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1474 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1474 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1478 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1479 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1479 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1479 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1479 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1479 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1480 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1480 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1480 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1480 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1480 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1481 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1481 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1481 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1481 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1481 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1481 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1482 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1482 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1482 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1482 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMethod</span>
+                <span class="method-start">1482 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">1482 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1482 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.d16_pom_2.PageSubtitlesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDownTest</span>
+                <span class="method-start">1483 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

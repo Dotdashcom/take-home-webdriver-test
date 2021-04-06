@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="com.cybertek.tests.d17_extent_reports.ExtentDemoTest">
+        <methods>
+          <include name="test1"/>
+          <include name="close"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d17_extent_reports.ExtentDemoTest -->
+      <class name="com.cybertek.tests.d12_review.NullTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d12_review.NullTest -->
+      <class name="com.cybertek.tests.d8_select_list.SelectClassTest">
+        <methods>
+          <include name="selectAndVerifySelected"/>
+          <include name="printAllOptions"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d8_select_list.SelectClassTest -->
+      <class name="com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest">
+        <methods>
+          <include name="hoverTest"/>
+          <include name="setupMethod"/>
+          <include name="teardownMethod"/>
+          <include name="dragdroptest"/>
+          <include name="dragdropbychainingtest"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d11_file_upload_actions_class.ActionsExamplesTest -->
+      <class name="com.cybertek.tests.d14_properties_driver_class_test_base_class.PropertiesTest">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d14_properties_driver_class_test_base_class.PropertiesTest -->
+      <class name="com.cybertek.tests.d16_pom_2.RepeatOptionsTest">
+        <methods>
+          <include name="repeatOptionsTest"/>
+          <include name="setupMethod"/>
+          <include name="radioRepeatEveryReadioButtonsTest"/>
+          <include name="teardown"/>
+          <include name="tearDownTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d16_pom_2.RepeatOptionsTest -->
+      <class name="com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest">
+        <methods>
+          <include name="test2"/>
+          <include name="test1"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d14_properties_driver_class_test_base_class.SingletonTest -->
+      <class name="com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="click"/>
+          <include name="teardownMethod"/>
+          <include name="scroll"/>
+          <include name="type"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d11_file_upload_actions_class.JavaScriptExecutorTest -->
+      <class name="com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest">
+        <methods>
+          <include name="test2"/>
+          <include name="teardownMethod"/>
+          <include name="test"/>
+          <include name="setupMethod"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d11_file_upload_actions_class.FileUploadTest -->
+      <class name="com.cybertek.tests.d7_types_of_elements.DisabledElementTest">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d7_types_of_elements.DisabledElementTest -->
+      <class name="com.cybertek.tests.d18_data_driven_testing.DDTTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="teardown"/>
+          <include name="test"/>
+          <include name="tearDownTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d18_data_driven_testing.DDTTest -->
+      <class name="com.cybertek.tests.d12_review.TestCase6FromThatHomework">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setupMethod"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d12_review.TestCase6FromThatHomework -->
+      <class name="com.cybertek.tests.d6_testng.TestNGAssertionsTest">
+        <methods>
+          <include name="test1"/>
+          <include name="teardownMethod"/>
+          <include name="test4"/>
+          <include name="test3"/>
+          <include name="test2"/>
+          <include name="test5"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d6_testng.TestNGAssertionsTest -->
+      <class name="com.cybertek.tests.d7_types_of_elements.DisplayedTest">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d7_types_of_elements.DisplayedTest -->
+      <class name="com.cybertek.tests.d16_pom_2.PageSubtitlesTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="teardown"/>
+          <include name="verifySubTitleTest"/>
+          <include name="tearDownTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d16_pom_2.PageSubtitlesTest -->
+      <class name="com.cybertek.tests.d7_types_of_elements.AnotherRadioButtonsTest">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d7_types_of_elements.AnotherRadioButtonsTest -->
+      <class name="com.cybertek.tests.d8_select_list.DropdownListNoSelectTagTest">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d8_select_list.DropdownListNoSelectTagTest -->
+      <class name="com.cybertek.tests.d7_types_of_elements.RadioButtonsTest">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d7_types_of_elements.RadioButtonsTest -->
+      <class name="com.cybertek.tests.d7_types_of_elements.AttributesTest">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d7_types_of_elements.AttributesTest -->
+      <class name="com.cybertek.tests.d7_types_of_elements.CheckboxTest">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d7_types_of_elements.CheckboxTest -->
+      <class name="com.cybertek.tests.d6_testng.FirstTestNGTest">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d6_testng.FirstTestNGTest -->
+      <class name="com.cybertek.tests.d12_review.HoverTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="tearDown"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d12_review.HoverTest -->
+      <class name="com.cybertek.tests.d10_synchronization.ImplicitWaitTest">
+        <methods>
+          <include name="test2"/>
+          <include name="setupMethod"/>
+          <include name="test1"/>
+          <include name="teardownMethod"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d10_synchronization.ImplicitWaitTest -->
+      <class name="com.cybertek.tests.d13_tables.WebTablesExamplesTest">
+        <methods>
+          <include name="printAllCellByIndex"/>
+          <include name="getAllHeaders"/>
+          <include name="teardown"/>
+          <include name="getRow"/>
+          <include name="getCellInRelationToAnotherCellInSameRow"/>
+          <include name="printTable"/>
+          <include name="getSingeCellByIndex"/>
+          <include name="printTableSize"/>
+          <include name="getAllCellsInRow"/>
+          <include name="getSpecificCellByIndex"/>
+          <include name="setupMethod"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d13_tables.WebTablesExamplesTest -->
+      <class name="com.cybertek.tests.d8_select_list.ListOfElementsTest">
+        <methods>
+          <include name="test2"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.cybertek.tests.d8_select_list.ListOfElementsTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
