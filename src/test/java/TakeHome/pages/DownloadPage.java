@@ -28,9 +28,6 @@ public class DownloadPage extends BasePage {
     public void downloadText(){
         textFile.click();
         BrowserUtils.waitFor(3);
-        //the path here will be different depending on Computer so you Download path is needed on each individual computer
-        File file= new File("C:/Users/erago/Downloads/some-file.txt");
-       // Assert.assertTrue(file.exists());
     }
 
 
