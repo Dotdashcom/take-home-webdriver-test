@@ -11,7 +11,7 @@ import utils.Driver;
 
 
 
-public class FileUploadCase {
+public class TestFileUpload {
     FileUploadPage fileUploadPage = new FileUploadPage();
 
     @Before

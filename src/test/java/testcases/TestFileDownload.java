@@ -10,7 +10,7 @@ import utils.Driver;
 
 import java.io.File;
 
-public class FileDownloadCase {
+public class TestFileDownload {
     FileDownloadPage fileDownloadPage = new FileDownloadPage();
 
     @Before

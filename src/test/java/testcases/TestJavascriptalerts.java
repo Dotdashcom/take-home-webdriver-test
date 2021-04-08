@@ -11,7 +11,7 @@ import utils.ConfigReader;
 import utils.Driver;
 
 
-public class JavascriptalertsCase {
+public class TestJavascriptalerts {
     JavascriptAlertsPage javascriptAlertsPage = new JavascriptAlertsPage();
 
     @Before

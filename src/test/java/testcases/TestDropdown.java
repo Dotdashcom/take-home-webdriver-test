@@ -12,7 +12,7 @@ import utils.Driver;
 
 import java.util.List;
 
-public class DropdownCase {
+public class TestDropdown {
     DropdownPage dropdownPage = new DropdownPage();
 
     @Before

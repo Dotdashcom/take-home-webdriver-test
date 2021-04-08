@@ -10,7 +10,7 @@ import pages.FloatingMenuPage;
 import utils.ConfigReader;
 import utils.Driver;
 
-public class FloatingMenuCase {
+public class TestFloatingMenu {
     FloatingMenuPage floatingMenuPage = new FloatingMenuPage();
 
     @Before

@@ -10,7 +10,7 @@ import pages.iFramePage;
 import utils.ConfigReader;
 import utils.Driver;
 
-public class iFrameCase {
+public class TestiFrame {
     iFramePage iFramePage = new iFramePage();
 
     @Before

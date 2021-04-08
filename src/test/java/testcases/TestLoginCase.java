@@ -10,7 +10,7 @@ import utils.ConfigReader;
 import utils.Driver;
 
 
-public class LoginCase {
+public class TestLoginCase {
     LoginPage loginPage = new LoginPage();
 
     @Before

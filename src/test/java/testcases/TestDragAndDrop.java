@@ -12,7 +12,7 @@ import utils.Driver;
 import java.awt.*;
 import java.awt.event.InputEvent;
 
-public class DragAndDropCase {
+public class TestDragAndDrop {
     DragAndDropPage dragAndDropPage = new DragAndDropPage();
 
     @Before

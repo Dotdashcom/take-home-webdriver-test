@@ -11,7 +11,7 @@ import utils.Driver;
 
 
 
-public class NotificationMessageCase {
+public class TestNotificationMessage {
     NotificationMessagePage notificationMessagePage = new NotificationMessagePage();
 
     @Before

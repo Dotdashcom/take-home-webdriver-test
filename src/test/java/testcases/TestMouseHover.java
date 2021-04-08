@@ -10,7 +10,7 @@ import utils.ConfigReader;
 import utils.Driver;
 
 
-public class MouseHoverCase {
+public class TestMouseHover {
     MouseHoverPage mouseHoverPage = new MouseHoverPage();
 
     @Before

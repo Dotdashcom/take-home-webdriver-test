@@ -9,7 +9,7 @@ import utils.BrowserUtils;
 import utils.ConfigReader;
 import utils.Driver;
 
-public class JavascriptErrorCase {
+public class TestJavascriptError {
     JavascriptErrorPage javascriptErrorPage = new JavascriptErrorPage();
 
     @Before

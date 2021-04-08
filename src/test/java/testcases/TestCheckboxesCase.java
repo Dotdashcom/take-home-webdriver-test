@@ -8,7 +8,7 @@ import pages.CheckboxesPage;
 import utils.ConfigReader;
 import utils.Driver;
 
-public class CheckboxesCase {
+public class TestCheckboxesCase {
     CheckboxesPage checkboxesPage = new CheckboxesPage();
 
     @Before

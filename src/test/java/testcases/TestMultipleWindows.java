@@ -10,7 +10,7 @@ import utils.Driver;
 
 import java.util.Set;
 
-public class MultipleWindowsCase {
+public class TestMultipleWindows {
     MultipleWindowsPage multipleWindowsPage = new MultipleWindowsPage();
 
     @Before

@@ -9,7 +9,7 @@ import utils.ConfigReader;
 import utils.Driver;
 
 
-public class DynamicContentCase {
+public class TestDynamicContent {
     DynamicContentPage dynamicContentPage = new DynamicContentPage();
 
     @Before

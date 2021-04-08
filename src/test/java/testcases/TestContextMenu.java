@@ -9,7 +9,7 @@ import pages.ContextMenuPage;
 import utils.ConfigReader;
 import utils.Driver;
 
-public class ContextMenuCase {
+public class TestContextMenu {
 
     ContextMenuPage contextMenuPage = new ContextMenuPage();
 

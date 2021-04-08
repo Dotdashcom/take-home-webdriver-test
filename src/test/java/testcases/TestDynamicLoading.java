@@ -9,7 +9,7 @@ import utils.BrowserUtils;
 import utils.ConfigReader;
 import utils.Driver;
 
-public class DynamicLoadingCase {
+public class TestDynamicLoading {
     DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage();
 
     @Before
