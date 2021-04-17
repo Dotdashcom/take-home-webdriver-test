@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HomeWork" parallel="tests" thread-count="6">
+    <test name="AllTests">
+        <classes>
+            <class name="HomeWork.Loginpage"/>
+            <class name="HomeWork.DragAndDrop"/>
+            <class name="HomeWork.CheckBoxes"/>
+            <class name="HomeWork.ContextMenu"/>
+            <class name="HomeWork.DropDown"/>
+            <class name="HomeWork.DynamicContent"/>
+            <class name="HomeWork.DynamicControls"/>
+            <class name="HomeWork.DynamicLoading"/>
+            <class name="HomeWork.FileDownload"/>
+            <class name="HomeWork.FileUpload"/>
+            <class name="HomeWork.FloatingMenu"/>
+            <class name="HomeWork.Iframe"/>
+            <class name="HomeWork.JavaScriptAlerts"/>
+            <class name="HomeWork.JavaScriptError"/>
+            <class name="HomeWork.MouseHover"/>
+            <class name="HomeWork.NotificationMessage"/>
+            <class name="HomeWork.OpenInNewTab"/>
+
+        </classes>
+
+
+    </test>
+</suite>
