@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite1]">
+  <test thread-count="5" verbose="0" name="TestNgSmoke(failed)">
+    <parameter name="passWord" value="password"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="userName" value="niraj"/>
+    <classes>
+      <class name="com.manmohan.TestNgSelenium.HomeTest">
+        <methods>
+          <include name="initialSetup"/>
+          <include name="beforemethod"/>
+          <include name="close"/>
+          <include name="aftermethod"/>
+          <include name="logout"/>
+          <include name="test2"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.manmohan.TestNgSelenium.HomeTest -->
+    </classes>
+  </test> <!-- TestNgSmoke(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

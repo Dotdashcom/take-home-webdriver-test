@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 68.989 sec <<< FAILURE! - in TestSuite
+test2(com.manmohan.TestNgSelenium.HomeTest)  Time elapsed: 5.168 sec  <<< FAILURE!
+java.lang.AssertionError: the tile of the page is not matching expected [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!] but found [Yahoo India]
+	at com.manmohan.TestNgSelenium.HomeTest.test2(HomeTest.java:40)
+

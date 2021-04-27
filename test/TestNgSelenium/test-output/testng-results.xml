@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-27T15:35:24Z" name="Suite1" finished-at="2021-04-27T15:35:35Z" duration-ms="10654">
+    <groups>
+    </groups>
+    <test started-at="2021-04-27T15:35:24Z" name="TestNgSmoke" finished-at="2021-04-27T15:35:35Z" duration-ms="10654">
+      <class name="com.automation.test.LoginTest">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.automation.test.LoginTest@20d525]" started-at="2021-04-27T15:35:24Z" name="beforemethod" finished-at="2021-04-27T15:35:28Z" duration-ms="3977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="LoginFailure()[pri:0, instance:com.automation.test.LoginTest@20d525]" started-at="2021-04-27T15:35:28Z" name="LoginFailure" finished-at="2021-04-27T15:35:29Z" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFailure -->
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.automation.test.LoginTest@20d525]" started-at="2021-04-27T15:35:29Z" name="logout" finished-at="2021-04-27T15:35:31Z" duration-ms="1229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginFailure status=SUCCESS method=LoginTest.LoginFailure()[pri:0, instance:com.automation.test.LoginTest@20d525] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.automation.test.LoginTest@20d525]" started-at="2021-04-27T15:35:31Z" name="beforemethod" finished-at="2021-04-27T15:35:33Z" duration-ms="2389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="loginSuccess()[pri:0, instance:com.automation.test.LoginTest@20d525]" started-at="2021-04-27T15:35:33Z" name="loginSuccess" finished-at="2021-04-27T15:35:34Z" duration-ms="848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccess -->
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.automation.test.LoginTest@20d525]" started-at="2021-04-27T15:35:34Z" name="logout" finished-at="2021-04-27T15:35:35Z" duration-ms="1171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSuccess status=SUCCESS method=LoginTest.loginSuccess()[pri:0, instance:com.automation.test.LoginTest@20d525] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.automation.test.LoginTest -->
+    </test> <!-- TestNgSmoke -->
+  </suite> <!-- Suite1 -->
+</testng-results>
