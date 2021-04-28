@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-28T15:59:22Z" name="Default suite" finished-at="2021-04-28T15:59:40Z" duration-ms="17809">
+    <groups>
+    </groups>
+    <test started-at="2021-04-28T15:59:22Z" name="Default test" finished-at="2021-04-28T15:59:40Z" duration-ms="17809">
+      <class name="com.automation.test.DynamicContent">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.automation.test.DynamicContent@19e7a160]" started-at="2021-04-28T15:59:22Z" name="beforeSuite" finished-at="2021-04-28T15:59:22Z" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.automation.test.DynamicContent@19e7a160]" started-at="2021-04-28T15:59:22Z" name="beforemethod" finished-at="2021-04-28T15:59:24Z" duration-ms="1435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="DropDownTest()[pri:0, instance:com.automation.test.DynamicContent@19e7a160]" started-at="2021-04-28T15:59:24Z" name="DropDownTest" finished-at="2021-04-28T15:59:40Z" duration-ms="15680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDownTest -->
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:com.automation.test.DynamicContent@19e7a160]" started-at="2021-04-28T15:59:40Z" name="logout" finished-at="2021-04-28T15:59:40Z" duration-ms="682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DropDownTest status=SUCCESS method=DynamicContent.DropDownTest()[pri:0, instance:com.automation.test.DynamicContent@19e7a160] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.automation.test.DynamicContent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
