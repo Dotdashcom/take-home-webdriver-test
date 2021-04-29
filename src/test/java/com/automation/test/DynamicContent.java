@@ -10,7 +10,7 @@ import com.automation.pageobject.DynamicContentPage;
 public class DynamicContent extends BaseTest {
 	
 	@Test
-	public void DropDownTest() throws InterruptedException  {
+	public void DynamicContentTest() throws InterruptedException  {
 		//driver.get("http://localhost:7080/login");
 		driver.get(configProperties.getProperty("BaseUrl")+"/dynamic_content");
 		driver.manage().window().maximize();
