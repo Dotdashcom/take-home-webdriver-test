@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.arthina.selenium</groupId>
+  <artifactId>automation</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+
+  <name>interview</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <!--  specify which version of java to build against -->
+    <maven.complier.source>1.8</maven.complier.source>
+    <maven.complier.target>1.8</maven.complier.target>
+    <java.version>1.8</java.version>
+  </properties>
+
+  <dependencies>
+  	<dependency>
+	  <groupId>com.arthina.selenium</groupId>
+	  <artifactId>pageobjects</artifactId>
+	  <version>1.0</version>  	
+  	</dependency>
+  </dependencies>	
+  
+  
+  <build>
+	<plugins>
+      <!-- Compiler plugin configures the java version to be usedfor compiling the code -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M4</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>src/test/resources/testng-suite.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+	</plugins>
+  </build>
+  
+</project>

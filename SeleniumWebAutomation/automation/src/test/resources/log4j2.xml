@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error"
+               xmlns="http://logging.apache.org/log4j/2.0/config"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://logging.apache.org/log4j/2.0/config
+                https://raw.githubusercontent.com/apache/logging-log4j2/master/log4j-core/src/main/resources/Log4j-config.xsd">
+    
+    <Appenders>
+		<RollingFile name="rollingFile" fileName="logs/application.log"
+		    filePattern="logs/application.%i.log.gz"
+		    ignoreExceptions="false">
+		    <PatternLayout>
+		        <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
+		    </PatternLayout>
+		    <Policies>
+		        <SizeBasedTriggeringPolicy size="10MB" />
+		    </Policies>
+		    <DefaultRolloverStrategy max="5" />
+		</RollingFile>
+		    
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{dd-MM-YYYY HH:mm:ss.SSS} [%t] %-5level - %msg%n"/>
+        </Console>
+    </Appenders>
+        
+    <Loggers>
+        <Logger name="com.arthi.automation" level="debug" additivity="false">
+            <AppenderRef ref="rollingFile"/>
+        </Logger>
+        <Logger name="com.arthi.interview" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

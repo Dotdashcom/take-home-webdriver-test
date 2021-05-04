@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="DotDash Automation TestSuite" parallel="none" verbose="2" annotations="JDK" thread-count="2">
+  <listeners>
+  	<listener class-name="com.arthi.automation.listeners.CustomLogListener" />
+  </listeners>
+  
+  <parameter name="OS" value="Mac"/>
+  <parameter name="isWebAutomation" value="true"/>
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="downloadDir" value="/Users/Arthi/AutoDownload"/>
+  
+  <test name="DotDash Automation Tests" preserve-order="true">
+    <classes>
+    	<class name="com.arthi.interview.LoginSuccessTest"/>
+    	<class name="com.arthi.interview.CheckBoxTest"/>
+    	<class name="com.arthi.interview.ContextMenuTest"/>
+    	<class name="com.arthi.interview.DragAndDropTest"/>
+    	<class name="com.arthi.interview.DropdownTest"/>
+    	<class name="com.arthi.interview.FileDownloadTest"/>
+    	<class name="com.arthi.interview.FileUploadTest"/>
+    	<class name="com.arthi.interview.MouseHoverTest"/>
+    	<class name="com.arthi.interview.NewWindowOpensTest"/>
+    	<class name="com.arthi.interview.DynamicControlTest"/>
+    	<class name="com.arthi.interview.DynamicLoadingTest"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
