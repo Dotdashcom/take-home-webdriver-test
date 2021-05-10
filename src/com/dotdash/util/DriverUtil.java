@@ -1,0 +1,53 @@
+package com.dotdash.util;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class DriverUtil {
+
+	/**
+	 * Close browser window at end of a test method
+	 */
+	public static void closeBrowserWindow(WebDriver driver) {
+		try {
+			driver.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			driver.quit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Get the current Y position of the HTML page
+	 */
+	public static long getPageYOffset(WebDriver driver) {
+		final String js = "return window.pageYOffset;";
+		return (long) ((JavascriptExecutor) driver).executeScript(js);
+	}
+
+	/**
+	 * Get the Y position of an elment within the visible viewport. 
+	 */
+	public static long getElementYPositionOnViewport(WebDriver driver, WebElement element) {
+		final String js = "var elem = arguments[0]; return elem.getBoundingClientRect().top;";
+		Object yPosition = ((JavascriptExecutor) driver).executeScript(js, element);
+		if (yPosition instanceof Double) {
+			return ((Double) yPosition).longValue();
+		} else {
+			return ((Long) yPosition).longValue();
+		}
+	}
+	
+	/**
+	 * Get the visible area height of a browser window. 
+	 */
+	public static long getViewportHeight(WebDriver driver) {
+		final String js = "return Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);";
+		return (long) ((JavascriptExecutor) driver).executeScript(js);
+	}
+}
