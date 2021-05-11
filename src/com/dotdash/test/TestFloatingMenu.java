@@ -18,7 +18,7 @@ public class TestFloatingMenu extends AbstractWebDriverTest {
 	}
 	
 	@Test(description = "Test menu continues to be visible when scrolling down the page")
-	private void testContextMenu() {
+	private void testFloatingMenu() {
 		FloatingMenuPage floatingMenuPage = navigateTo(driver, FloatingMenuPage.class);
 		floatingMenuPage.verifyPage();
 		
