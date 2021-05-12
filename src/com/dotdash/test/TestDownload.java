@@ -47,8 +47,10 @@ public class TestDownload extends AbstractWebDriverTest {
 	}
 	
 	private void verifyFileOnDisk(String fileName) {
-		String fullPath = createSavingFolderPath() + File.separator + fileName;
-		assertTrue(new File(fullPath).exists());
+		StringBuilder fullPath = new StringBuilder(createSavingFolderPath());
+		fullPath.append(File.separator);
+		fullPath.append(fileName);
+		assertTrue(new File(fullPath.toString()).exists());
 	}
 	
 	@AfterMethod
