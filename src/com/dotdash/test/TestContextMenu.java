@@ -21,6 +21,9 @@ public class TestContextMenu extends AbstractWebDriverTest {
 	private void testContextMenu() {
 		ContextMenuPage contextMenuPage = navigateTo(driver, ContextMenuPage.class);
 		contextMenuPage.verifyPage();
+		
+		contextMenuPage.openContextMenu();
+		contextMenuPage.verifyAlertWindow();
 	}
 	
 	@AfterMethod
