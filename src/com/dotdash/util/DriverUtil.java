@@ -27,20 +27,16 @@ public class DriverUtil {
 	 */
 	public static long getPageYOffset(WebDriver driver) {
 		final String js = "return window.pageYOffset;";
-		return (long) ((JavascriptExecutor) driver).executeScript(js);
+		return getReturnValueAsLong(((JavascriptExecutor) driver).executeScript(js));
 	}
 
 	/**
-	 * Get the Y position of an elment within the visible viewport. 
+	 * Get the Y position of an element within the visible viewport. 
 	 */
 	public static long getElementYPositionOnViewport(WebDriver driver, WebElement element) {
 		final String js = "var elem = arguments[0]; return elem.getBoundingClientRect().top;";
 		Object yPosition = ((JavascriptExecutor) driver).executeScript(js, element);
-		if (yPosition instanceof Double) {
-			return ((Double) yPosition).longValue();
-		} else {
-			return ((Long) yPosition).longValue();
-		}
+		return getReturnValueAsLong(yPosition);
 	}
 	
 	/**
@@ -48,6 +44,14 @@ public class DriverUtil {
 	 */
 	public static long getViewportHeight(WebDriver driver) {
 		final String js = "return Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);";
-		return (long) ((JavascriptExecutor) driver).executeScript(js);
+		return getReturnValueAsLong(((JavascriptExecutor) driver).executeScript(js));
 	}
+
+	private static Long getReturnValueAsLong(Object jsReturnVal) {
+		if (jsReturnVal instanceof Double) {
+			return ((Double) jsReturnVal).longValue();
+		} else {
+			return ((Long) jsReturnVal).longValue();
+		}
+	}	
 }

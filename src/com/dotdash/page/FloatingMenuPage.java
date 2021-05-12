@@ -3,10 +3,9 @@ package com.dotdash.page;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
 import com.dotdash.util.DriverUtil;
 
@@ -30,9 +29,14 @@ public class FloatingMenuPage extends AbstractPage {
 		assertTrue(yPos < viewportHeight - menuItemHome.getSize().getHeight());
 	}
 	
-	public void scrollDownOnePage() {
+	public void scrollDown(int pixels) {
 		long offsetBefore = DriverUtil.getPageYOffset(driver);
-		new Actions(driver).sendKeys(Keys.PAGE_DOWN).build().perform();
+		// Passed on my side, failed on dotdash's side
+		// new Actions(driver).sendKeys(Keys.PAGE_DOWN).build().perform();
+		
+		final String js = String.format("window.scrollBy(0,%d)", pixels);
+		((JavascriptExecutor) driver).executeScript(js);
+
 		long offsetAfter = DriverUtil.getPageYOffset(driver);
 		assertTrue(offsetAfter > offsetBefore);
 	}

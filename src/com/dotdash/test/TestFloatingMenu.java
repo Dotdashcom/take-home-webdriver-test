@@ -22,10 +22,10 @@ public class TestFloatingMenu extends AbstractWebDriverTest {
 		FloatingMenuPage floatingMenuPage = navigateTo(driver, FloatingMenuPage.class);
 		floatingMenuPage.verifyPage();
 		
-		floatingMenuPage.scrollDownOnePage();
+		floatingMenuPage.scrollDown(250);
 		floatingMenuPage.verifyPage();
 
-		floatingMenuPage.scrollDownOnePage();
+		floatingMenuPage.scrollDown(250);
 		floatingMenuPage.verifyPage();
 	}
 	
