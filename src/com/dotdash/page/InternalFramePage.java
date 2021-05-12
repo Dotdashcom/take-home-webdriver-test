@@ -5,9 +5,12 @@ import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class InternalFramePage extends AbstractPage {
 	public static final String RELATIVE_PATH = "/iframe";
+	private static final By IFRAME_LOCATOR = By.id("mce_0_ifr");
 	private WebElement iframe;
 
 	public InternalFramePage(WebDriver driver) {
@@ -16,7 +19,8 @@ public class InternalFramePage extends AbstractPage {
 
 	@Override
 	public void verifyPage() {
-		iframe = driver.findElement(By.id("mce_0_ifr"));
+		new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(IFRAME_LOCATOR));
+		iframe = driver.findElement(IFRAME_LOCATOR);
 		assertTrue(iframe.isDisplayed());
 	}
 	
