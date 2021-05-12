@@ -20,7 +20,9 @@ public class DownloadPage extends AbstractPage {
 		assertTrue(downloadLink.isDisplayed());
 	}
 
-	public void downloadFile() {
+	public String downloadFile() {
 		downloadLink.click();
+		String[] href = downloadLink.getAttribute("href").split("/");
+		return href[href.length-1];
 	}
 }
