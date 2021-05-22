@@ -125,8 +125,9 @@
 ## Test Assumptions
 1. Tests are configured to run on Chrome (v 90.0.4430.212). For other browsers, relevant driver needs to be configured in config.properties
 2. Tests are written to test only the test specific rubrics. However many other things can also be added for enhanced coverage. For example, testing the page title has been added to some tests.
-3. Tests use the Page Object Model, as such the locators and the functions which use these locators can be found under `src/test/java/pages` whereas the tests themselves are under `src/test/java/specs`. The common utility function is under `src/test/java/utils` and resources like config properties are under `src/test/resources`
+3. Tests use the Page Object Model, as such the locators and the functions which use these locators (each page has its corresponding file) can be found under `src/test/java/pages` whereas the tests themselves are under `src/test/java/specs`. The common utility function is under `src/test/java/utils` and resources like config properties are under `src/test/resources`
 4. Asserts are handled by junit4.
+5. Invalid and Valid login tests have been clubbed into `DotDashLoginTest` whereas download and upload tests have been clubbed in `DotDashFileTest`
 
 ## Installation and Running instructions
 1. Tests use Java 1.8. Make sure you have Maven installed and configured.
