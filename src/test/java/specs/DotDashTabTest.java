@@ -20,6 +20,7 @@ public class DotDashTabTest {
         System.setProperty("webdriver.chrome.driver", CommonUtils.getChromeDriverPath());
         driver = new ChromeDriver();
         tabPage = new WindowsPage(driver);
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 

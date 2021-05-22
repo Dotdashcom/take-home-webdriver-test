@@ -19,6 +19,7 @@ public class DotDashCheckboxTest {
         System.setProperty("webdriver.chrome.driver", CommonUtils.getChromeDriverPath());
         driver = new ChromeDriver();
         checkboxPage = new CheckboxPage(driver);
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 

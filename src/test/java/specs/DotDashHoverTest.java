@@ -19,6 +19,7 @@ public class DotDashHoverTest {
         System.setProperty("webdriver.chrome.driver", CommonUtils.getChromeDriverPath());
         driver = new ChromeDriver();
         hoverPage = new HoverPage(driver);
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 

@@ -20,6 +20,7 @@ public class DotDashDropDownTest {
         System.setProperty("webdriver.chrome.driver", CommonUtils.getChromeDriverPath());
         driver = new ChromeDriver();
         dropPage = new DropDownPage(driver);
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 

@@ -23,6 +23,7 @@ public class DotDashDynamicControlsTest {
         System.setProperty("webdriver.chrome.driver", CommonUtils.getChromeDriverPath());
         driver = new ChromeDriver();
         controlsPage = new DynamicControlsPage(driver);
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 

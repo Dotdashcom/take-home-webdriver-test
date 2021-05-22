@@ -29,6 +29,7 @@ public class DotDashFileTest {
         options.setExperimentalOption("prefs", driverPrefs);
         driver = new ChromeDriver(options);
         filePage = new FilePage(driver);
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
