@@ -131,6 +131,7 @@
 ## Installation and Running instructions
 1. Tests use Java 1.8. Make sure you have Maven installed and configured.
 2. To run the tests through terminal (Mac) or command prompt (Win), just do a mvn test.
+3. Alternatively you can also clone the project and just right click on specs and select Run tests.
 
 ## Enhancements
 1. The drag and drop test does not work in spite of using the correct selenium command. I did priliminary analysis and tried a few approaches but it doesnt seem to budge. Needs to be investigated more.
