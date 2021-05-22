@@ -4,7 +4,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 import pages.ContextMenuPage;
 import pages.DragDropPage;
 import utils.CommonUtils;
@@ -20,6 +23,7 @@ public class DotDashDragDropTest {
         System.setProperty("webdriver.chrome.driver", CommonUtils.getChromeDriverPath());
         driver = new ChromeDriver();
         dragPage = new DragDropPage(driver);
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 

@@ -18,6 +18,7 @@ public class DragDropPage {
     private WebDriver driver;
     //Page URL
     private static String PAGE_URL = CommonUtils.getBaseUrl() + "drag_and_drop";
+
     //Box A
     @FindBy(id="column-a")
     private WebElement boxA;
@@ -56,11 +57,7 @@ public class DragDropPage {
     //Drag the box in left arg onto right
     public void dragBoxes() {
         Actions actions = new Actions(driver);
-        Action dragAndDrop = actions.clickAndHold(boxA)
-                .moveToElement(boxB)
-                .release(boxB)
-                .build();
-        dragAndDrop.perform();
+        actions.dragAndDrop(boxA, boxB).perform();
     }
 
     //Validate boxes swapped

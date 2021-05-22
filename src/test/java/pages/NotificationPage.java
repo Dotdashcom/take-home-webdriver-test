@@ -20,15 +20,18 @@ public class NotificationPage {
     @FindBy(linkText="Click here")
     private WebElement notificationLink;
     //Notification message
-    @FindBy(xpath = "//div[@class='flash notice']")
+    @FindBy(css = ".notice")
     private WebElement notification;
+    //Notification message close icon
+    @FindBy(css = ".notice a.close")
+    private WebElement notificationClose;
     //Page Heading
     @FindBy(tagName = "h3")
     private WebElement headerText;
 
     private static int CLICK_ATTEMPTS = 5;
-    private String[] expNotification = {"Action unsuccesful, please try again", "Action unsuccesful", "Action succesful"};
-    List<String> expNotificationList = Arrays.asList(expNotification);
+
+    private String[] expNotification = {"Action unsuccesful, please try again", "Action unsuccesful", "Action successful"};
 
     //Constructor
     public NotificationPage(WebDriver driver){
@@ -47,9 +50,8 @@ public class NotificationPage {
     public void verifyNotification() {
         while(CLICK_ATTEMPTS > 0) {
             notificationLink.click();
-            System.out.println(notification.getText());
-            System.out.println(expNotificationList.contains(notification.getText()));
-            assertTrue(expNotificationList.contains(notification.getText()));
+            String notificationText = notification.getText().replace(notificationClose.getText(),"").trim();
+            assertTrue(Arrays.asList(expNotification).contains(notificationText));
             CLICK_ATTEMPTS--;
         }
     }
