@@ -30,7 +30,7 @@ public class DotDashTabTest {
     }
 
     @After
-    public void close(){
-        driver.quit();
+    public void close() {
+        CommonUtils.tearDownAfterTest(driver);
     }
 }

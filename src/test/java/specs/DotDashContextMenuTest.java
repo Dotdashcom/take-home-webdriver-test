@@ -36,7 +36,7 @@ public class DotDashContextMenuTest {
     }
 
     @After
-    public void close(){
-        driver.close();
+    public void close() {
+        CommonUtils.tearDownAfterTest(driver);
     }
 }

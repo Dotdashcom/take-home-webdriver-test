@@ -1,5 +1,7 @@
 package utils;
 
+import org.openqa.selenium.WebDriver;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -33,6 +35,10 @@ public class CommonUtils {
 
     public static String getChromeDriverPath() {
         return getProperties().getProperty("driverPath");
+    }
+
+    public static void tearDownAfterTest(WebDriver driver) {
+        driver.quit();
     }
 
     public static String[] getValidCreds() {

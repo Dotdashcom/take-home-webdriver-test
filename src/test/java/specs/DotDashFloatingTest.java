@@ -33,7 +33,7 @@ public class DotDashFloatingTest {
     }
 
     @After
-    public void close(){
-        driver.close();
+    public void close() {
+        CommonUtils.tearDownAfterTest(driver);
     }
 }

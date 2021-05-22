@@ -32,7 +32,7 @@ public class DotDashJsAlertTest {
     }
 
     @After
-    public void close(){
-        driver.close();
+    public void close() {
+        CommonUtils.tearDownAfterTest(driver);
     }
 }
