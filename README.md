@@ -122,4 +122,19 @@
     * Test clicks on the Click Here link a multiple times.
     + Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
 
- 
+## Test Assumptions
+1. Tests are configured to run on Chrome (v 90.0.4430.212). For other browsers, relevant driver needs to be configured in config.properties
+2. Tests are written to test only the test specific rubrics. However many other things can also be added for enhanced coverage. For example, testing the page title has been added to some tests.
+3. Tests use the Page Object Model, as such the locators and the functions which use these locators (each page has its corresponding file) can be found under `src/test/java/pages` whereas the tests themselves are under `src/test/java/specs`. The common utility function is under `src/test/java/utils` and resources like config properties are under `src/test/resources`
+4. Asserts are handled by junit4.
+5. Invalid and Valid login tests have been clubbed into `DotDashLoginTest` whereas download and upload tests have been clubbed in `DotDashFileTest`
+
+## Installation and Running instructions
+1. Tests use Java 1.8. Make sure you have Maven installed and configured.
+2. To run the tests through terminal (Mac) or command prompt (Win), just do a mvn test.
+3. Alternatively you can also clone the project and just right click on specs and select Run tests.
+
+## Enhancements
+1. The drag and drop test does not work in spite of using the correct selenium command. I did priliminary analysis and tried a few approaches but it doesnt seem to budge. Needs to be investigated more.
+2. The common set up instructions can be moved to CommonUtils and can be called into the @Before tag of the tests. This can be the next revision of test maintenance.
+3. More enhancements can be added (like reporting etc.)
