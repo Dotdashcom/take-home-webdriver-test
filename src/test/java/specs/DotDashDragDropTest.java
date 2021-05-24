@@ -30,7 +30,7 @@ public class DotDashDragDropTest {
     }
 
     @Test
-    @IgnoreI
+    @Ignore
     public void testDragAndDrop() {
         dragPage.validateDefaultBoxes();
         dragPage.dragBoxes();
