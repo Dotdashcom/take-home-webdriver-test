@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.CommonUtils;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 public class JsErrorPage {
     private WebDriver driver;
