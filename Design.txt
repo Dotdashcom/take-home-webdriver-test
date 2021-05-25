@@ -1,0 +1,18 @@
+
+General thoughts on designing the project:
+1]Maven POM file for project configuration.
+2a]Used standard Page Object Model.
+2b]Did not use Page Factory; this is inspired by Selenide creator Anfrei Solntsev and also use it currently.
+Reducing the clutter of page objects at the top seems cleaner. If a locator is needed frequently (Rule of three), then abstract the locator just above the usage into 
+a private variable.
+2c]Prod-like structure/layout not created due to paucity of time.
+3]Most individual pages are stored as classes under Pages package.
+4]Used the concept of a Common file wherein individual pages are composed & then all methods are accessed through this file.
+Reason for this is to avoid composition of page classes within other page classes which can lead to criss-cross/spaghetti code.
+5]XPath:	used html tags rather than wildcard; for performance using a html tag is better, while for flexibility wildcard is helpful.
+6]Code is NOT optimized in any which way...which can take some more time; hence don't judge on that front...definitely there's room to improve.
+7]TestNG annotations:	used bare minimum to get the work done.
+8]Tests can be run from command line or batch file (been a while since using a batch file):
+java -jar selenium-server.jar -htmlSuite "*chrome" "http://localhost" "C:\pathToSuite\suite.html" "C:\pathToSuite\results.html"
+9]File transfer:	ideally setting path to download would be perfect; for now used the easy path.
+10]Drag & drop test did not pass:	drag just wasn't working despite couple of ways tried to achieve it.
