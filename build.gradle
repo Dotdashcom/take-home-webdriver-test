@@ -12,6 +12,7 @@ repositories {
 
 test {
     useJUnitPlatform()
+   // useTestNG()
 }
 dependencies {
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'

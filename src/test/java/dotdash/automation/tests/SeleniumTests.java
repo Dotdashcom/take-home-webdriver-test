@@ -3,9 +3,7 @@ package dotdash.automation.tests;
 import dotdash.automation.helpers.ConfigReader;
 //import dotdash.automation.data.ContextObject;
 import dotdash.automation.pageobjects.*;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -38,6 +36,8 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(1)
+    @Tag("smoke")
     public void loginSuccess() {
         String url = "/login";
         String username = "tomsmith";
@@ -51,6 +51,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(2)
     public void loginFailure() {
         String url = "/login";
         String username = "user";
@@ -64,6 +65,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(3)
     public void checkBox() {
         String url = "/checkboxes ";
         navigateTo(url);
@@ -75,6 +77,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(4)
     public void contextCheck() {
         String url = "/context_menu";
         navigateTo(url);
@@ -85,6 +88,7 @@ public class SeleniumTests {
      * Drag A to B
      */
     @Test
+    @Order(5)
     public void dragNDropAtoB() throws InterruptedException {
         String url = "/drag_and_drop";
         navigateTo(url);
@@ -102,6 +106,7 @@ public class SeleniumTests {
      * Drag B to A
      */
     @Test
+    @Order(6)
     void dragNDropBtoA() {
         String url = "/drag_and_drop";
         navigateTo(url);
@@ -116,6 +121,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(7)
     void dropDown() {
         String url = "/dropdown";
         navigateTo(url);
@@ -127,6 +133,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(8)
     void dynamicContent() {
         String url = "/dynamic_content";
         navigateTo(url);
@@ -141,6 +148,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(9)
     void dynamicConrols() {
         String url = "/dynamic_controls";
         navigateTo(url);
@@ -168,6 +176,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(10)
     public void dynamicLoading() {
         String url = "/dynamic_loading/2";
         navigateTo(url);
@@ -177,6 +186,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(11)
     public void downloadFile() throws IOException, InterruptedException, TimeoutException {
         String url = "/download";
         navigateTo(url);
@@ -189,6 +199,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(12)
     public void uploadFile() {
         String url = "/upload";
         navigateTo(url);
@@ -198,6 +209,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(13)
     public void floatingMenu() {
         String url = "/floating_menu";
         navigateTo(url);
@@ -209,6 +221,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(14)
     public void iframe() {
         String url = "/iframe";
         navigateTo(url);
@@ -219,6 +232,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(15)
     public void mouseHover() {
         String url = "/hovers";
         navigateTo(url);
@@ -231,6 +245,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(16)
     public void javaScriptAlerts() {
         String url = "/javascript_alerts";
         navigateTo(url);
@@ -259,6 +274,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(17)
     public void jsError() {
         String url = "/javascript_error";
         navigateTo(url);
@@ -267,6 +283,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(18)
     public void newWindow() {
         String url = "/windows";
         navigateTo(url);
@@ -276,6 +293,7 @@ public class SeleniumTests {
     }
 
     @Test
+    @Order(19)
     public void notification() {
         String url = "/notification_message_rendered";
         navigateTo(url);
