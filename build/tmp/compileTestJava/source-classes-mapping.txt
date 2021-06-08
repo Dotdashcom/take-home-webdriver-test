@@ -1,2 +1,2 @@
-dotdash/automation/steps/SeleniumTests.java
- dotdash.automation.steps.SeleniumTests
+dotdash/automation/tests/SeleniumTests.java
+ dotdash.automation.tests.SeleniumTests

@@ -18,7 +18,19 @@ public class JSAlertsPageObject extends BasePageObject {
 
     public JSAlertsPageObject(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
+    }
+    public JSAlertsPageObject clickAlert(){
+        jsAlert.click();
+        return this;
+    }
+    public JSAlertsPageObject clickConfirm(){
+        jsConfirm.click();
+        return this;
+    }
+    public JSAlertsPageObject clickPrompt(){
+        jsPrompt.click();
+        return this;
     }
     public String getAlertText(){
        return getDriver().switchTo().alert().getText();
@@ -32,21 +44,6 @@ public class JSAlertsPageObject extends BasePageObject {
         return this;
     }
     public String getResultText(){
-        return getResult().getText();
-    }
-    public WebElement getJsPrompt() {
-        return jsPrompt;
-    }
-
-    public WebElement getJsConfirm() {
-        return jsConfirm;
-    }
-
-    public WebElement getJsAlert() {
-        return jsAlert;
-    }
-
-    public WebElement getResult() {
-        return result;
+        return result.getText();
     }
 }

@@ -14,7 +14,7 @@ public class DropDownPageObject extends BasePageObject {
     private WebElement option1;
     @FindBy(css = "select option[value='2']")
     private WebElement option2;
-    Select select;
+    private Select select;
 
     public DropDownPageObject(WebDriver driver) {
         super(driver);

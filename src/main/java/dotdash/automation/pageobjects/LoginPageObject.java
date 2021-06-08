@@ -1,16 +1,15 @@
 package dotdash.automation.pageobjects;
 
-//import dotdash.automation.data.ContextObject;
-import org.openqa.selenium.By;
+import dotdash.automation.ui.BasePageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 /**
  * This class addresses all the elements and methods of Login Page and uses Builder Design Pattern
  */
-public class LoginPageObject {
-  //  ContextObject contextObject;
-    WebDriver driver = null;
+public class LoginPageObject extends BasePageObject {
 
     /**
      * Id is the most stable way to find element
@@ -18,18 +17,18 @@ public class LoginPageObject {
      * Source: https://medium.com/@kshitishirke/which-locator-is-faster-in-identifying-elements-in-selenium-5aeb3f943f5d
      * making elements private to make sure other classes use methods of the elements. Like getters and setters.
      */
-//    private WebElement username;
-//    private WebElement password ;
-//    private WebElement login;
-
-    By username = By.id("username");
-    By password =By.id("password");
-    By login = By.className("radius");
-    By flash = By.id("flash");
+    @FindBy(id = "username")
+    WebElement username;
+    @FindBy(id = "password")
+    WebElement password;
+    @FindBy(className = "radius")
+    WebElement login;
+    @FindBy(id = "flash")
+    WebElement flash;
 
     public LoginPageObject(WebDriver driver) {
-        this.driver = driver;
-
+        super(driver);
+        PageFactory.initElements(getDriver(), this);
     }
 
 
@@ -41,7 +40,7 @@ public class LoginPageObject {
         /**
          * this keyword refers to the instance of the current class. Hence this.username is class variable and username is method variable
          */
-        this.driver.findElement(this.username).sendKeys(username);
+        this.username.sendKeys(username);
         return this;
     }
 
@@ -53,19 +52,20 @@ public class LoginPageObject {
         /**
          * this keyword refers to the instance of the current class. Hence this.password is class variable and password is method variable
          */
-        this.driver.findElement(this.password).sendKeys(password);
+        this.password.sendKeys(password);
         return this;
     }
 
     /**
      * @return on click on Login user navigates to Secure Page Object. Hence we are returning Secure Page Object
+     * We are passing the same driver which is already instantiated
      */
-    public SecurePageObject clickLogin()  {
-        this.driver.findElement(login).click();
-        return new SecurePageObject(driver);
+    public SecurePageObject clickLogin() {
+        this.login.click();
+        return new SecurePageObject(getDriver());
     }
 
-    public String getFlashMessage(){
-        return driver.findElement(flash).getText();
+    public String getFlashMessage() {
+        return flash.getText();
     }
 }

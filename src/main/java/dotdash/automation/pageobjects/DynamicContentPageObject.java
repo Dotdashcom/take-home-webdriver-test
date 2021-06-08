@@ -1,30 +1,33 @@
 package dotdash.automation.pageobjects;
 
-import org.openqa.selenium.By;
+import dotdash.automation.ui.BasePageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DynamicContentPageObject {
-    WebDriver driver;
-    By text = By.cssSelector("div[class='large-10 columns']");
+public class DynamicContentPageObject extends BasePageObject {
+    @FindBy(css = "div[class='large-10 columns']")
+    private List<WebElement> textElements;
 
     public DynamicContentPageObject(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public List<String> getDynamicText() {
         List<String> textList = new ArrayList<>();
-        for (WebElement element : driver.findElements(text)) {
+        for (WebElement element : textElements) {
             textList.add(element.getText());
         }
         return textList;
     }
 
     public int listSize() {
-        return driver.findElements(text).size();
+        return textElements.size();
     }
 
     public DynamicContentPageObject refreshPage() {

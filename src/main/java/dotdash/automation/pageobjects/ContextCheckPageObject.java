@@ -1,26 +1,27 @@
 package dotdash.automation.pageobjects;
 
-import org.openqa.selenium.By;
+import dotdash.automation.ui.BasePageObject;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class ContextCheckPageObject {
-    private WebDriver driver;
-    private By context = By.id("hot-spot");
-    private Actions action;
+public class ContextCheckPageObject extends BasePageObject {
+    @FindBy(id = "hot-spot")
+    private WebElement context;
 
     public ContextCheckPageObject(WebDriver driver) {
-        this.driver = driver;
-        this.action = new Actions(driver);
+        super(driver);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public ContextCheckPageObject rightClickContext() {
-        action.contextClick(driver.findElement(this.context)).perform();
+        new Actions(getDriver()).contextClick(context).perform();
         return this;
     }
 
     public String getAlertText() {
-        return driver.switchTo().alert().getText();
+        return getDriver().switchTo().alert().getText();
     }
-
 }

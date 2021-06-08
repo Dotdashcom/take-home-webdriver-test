@@ -14,13 +14,8 @@ public class JSErrorPageObject extends BasePageObject {
         super(driver);
     }
 
-    public JSErrorPageObject switchToAlert() {
-        getDriver().switchTo().alert();
-        return this;
-    }
-
     public List<String> getErrList() {
-        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        LogEntries logEntries = getDriver().manage().logs().get(LogType.BROWSER);
         List<String> errList = new ArrayList<>();
         for (LogEntry entry : logEntries) {
             errList.add(entry.getMessage());

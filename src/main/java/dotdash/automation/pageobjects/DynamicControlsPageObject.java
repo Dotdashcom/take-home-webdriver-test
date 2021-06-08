@@ -10,17 +10,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class DynamicControlsPageObject extends BasePageObject {
     @FindBy(id = "checkbox")
-    WebElement checkBox;
+    private WebElement checkBox;
     @FindBy(css = "form[id='checkbox-example'] button")
-    WebElement addOrRem;
+    private WebElement addOrRem;
     @FindBy(css = "form[id='input-example'] input")
-    WebElement input;
+    private WebElement input;
     @FindBy(css = "form[id='input-example'] button")
-    WebElement enableOrDis;
+    private WebElement enableOrDis;
 
     public DynamicControlsPageObject(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public DynamicControlsPageObject clickRem() {

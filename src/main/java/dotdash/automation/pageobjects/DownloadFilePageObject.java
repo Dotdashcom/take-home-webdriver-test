@@ -21,7 +21,7 @@ public class DownloadFilePageObject extends BasePageObject {
 
     public DownloadFilePageObject(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public DownloadFilePageObject downloadFile() {
@@ -33,19 +33,11 @@ public class DownloadFilePageObject extends BasePageObject {
         return file.getText();
     }
 
-    public boolean isFileDownloaded() {
-        String downloadPath = System.getProperty("user.home") + "/Downloads";
-        String fileName = fileName();
-        File dir = new File(downloadPath);
-        File[] dirContents = dir.listFiles();
-        for (File dirContent : dirContents) {
-            if (dirContent.getName().equals(fileName)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
+    /**
+     *
+     * @param validation Tries until the validation method returns ture or timed out
+     * @throws TimeoutException
+     */
     public void until(Callable<Boolean> validation) throws TimeoutException {
         try {
             Awaitility.with()
@@ -57,15 +49,29 @@ public class DownloadFilePageObject extends BasePageObject {
             throw new TimeoutException();
         }
     }
+    public boolean isFileDownloaded() {
+        String downloadPath = System.getProperty("user.home") + "/Downloads";
+        File dir = new File(downloadPath);
+        File[] dirContents = dir.listFiles();
+        if (dirContents != null) {
+            for (File dirContent : dirContents) {
+                if (dirContent.getName().equals(fileName()))
+                    return true;
+            }
+        }
+        return false;
+    }
 
     public void deleteTheFile() {
         String downloadPath = System.getProperty("user.home") + "/Downloads";
         String fileName = fileName();
         File dir = new File(downloadPath);
         File[] dirContents = dir.listFiles();
-        for (File dirContent : dirContents) {
-            if (dirContent.getName().equals(fileName)) {
-                dirContent.delete();
+        if (dirContents != null) {
+            for (File dirContent : dirContents) {
+                if (dirContent.getName().equals(fileName)) {
+                    dirContent.delete();
+                }
             }
         }
     }

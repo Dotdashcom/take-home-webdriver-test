@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class FloatingPageObjects extends BasePageObject {
     @FindBy(id="menu")
-    WebElement floatingMenu;
+    private WebElement floatingMenu;
 
     public FloatingPageObjects(WebDriver driver) {
         super(driver);
@@ -20,12 +20,12 @@ public class FloatingPageObjects extends BasePageObject {
         return floatingMenu.isDisplayed();
     }
     public FloatingPageObjects scrollDown(){
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        JavascriptExecutor jse = (JavascriptExecutor)getDriver();
         jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         return this;
     }
     public FloatingPageObjects scrollUp(){
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        JavascriptExecutor jse = (JavascriptExecutor)getDriver();
         jse.executeScript("window.scrollTo(0, 0)");
         return this;
     }

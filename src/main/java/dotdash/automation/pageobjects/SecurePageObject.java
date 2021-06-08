@@ -1,24 +1,29 @@
 package dotdash.automation.pageobjects;
 
 import dotdash.automation.ui.BasePageObject;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 
 public class SecurePageObject extends BasePageObject {
-    By flashMessage = By.id("flash");
-    By subheader = By.className("subheader");
+    @FindBy(id = "flash")
+    private WebElement flashMessage;
+    @FindBy(className = "subheader")
+    private WebElement subheader;
 
-    public SecurePageObject(WebDriver driver)  {
-       super(driver);
+    public SecurePageObject(WebDriver driver) {
+        super(driver);
+        PageFactory.initElements(getDriver(),this);
     }
 
     public String getFlashMessage() {
-        return getDriver().findElement(flashMessage).getText();
+        return flashMessage.getText();
     }
 
-    public String getSubHeader(){
-        return getDriver().findElement(subheader).getText();
+    public String getSubHeader() {
+        return subheader.getText();
     }
 
 }

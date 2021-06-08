@@ -14,32 +14,24 @@ public class CheckBoxPageObject extends BasePageObject {
 
     public CheckBoxPageObject(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
-    }
-
-    public WebElement getBox1() {
-        return box1;
-    }
-
-    public WebElement getBox2() {
-        return box2;
+        PageFactory.initElements(getDriver(), this);
     }
 
     public CheckBoxPageObject clickBox1() {
-        this.getBox1().click();
+        this.box1.click();
         return this;
     }
 
     public CheckBoxPageObject clickBox2() {
-        this.getBox2().click();
+        this.box2.click();
         return this;
     }
 
     public boolean isBox1Selected() {
-        return this.getBox1().isSelected();
+        return this.box1.isSelected();
     }
 
     public boolean isBox2Selected() {
-        return this.getBox2().isSelected();
+        return this.box2.isSelected();
     }
 }

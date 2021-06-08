@@ -10,13 +10,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class DynamicLoadingPageObject extends BasePageObject {
     @FindBy(css = "div[id='start'] button")
-    WebElement start;
+    private WebElement start;
     @FindBy(id = "finish")
-    WebElement hello;
+   private WebElement hello;
 
     public DynamicLoadingPageObject(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public DynamicLoadingPageObject clickStart() {

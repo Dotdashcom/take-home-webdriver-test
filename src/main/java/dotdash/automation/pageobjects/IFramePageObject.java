@@ -8,15 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class IFramePageObject extends BasePageObject {
     @FindBy(id="mce_0_ifr")
-    WebElement iframe;
+    private WebElement iframe;
     @FindBy(css="div[aria-label='Close']")
-    WebElement close;
+    private WebElement close;
     @FindBy(id="tinymce")
-    WebElement body;
+    private WebElement body;
 
     public IFramePageObject(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(getDriver(),this);
     }
 
     public IFramePageObject enterText(String text){

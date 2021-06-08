@@ -20,7 +20,7 @@ public class MouseHoverPageObject extends BasePageObject {
 
     public MouseHoverPageObject(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public int noOfAvatars() {

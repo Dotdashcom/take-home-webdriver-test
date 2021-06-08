@@ -7,29 +7,32 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class UplaodFilePageObject extends BasePageObject {
-    @FindBy(id="file-upload")
-    WebElement choose;
+    @FindBy(id = "file-upload")
+    private WebElement choose;
 
-    @FindBy(id="file-submit")
-    WebElement submit;
+    @FindBy(id = "file-submit")
+    private WebElement submit;
 
-    @FindBy(id="uploaded-files")
-    WebElement uploadedFile;
+    @FindBy(id = "uploaded-files")
+    private WebElement uploadedFile;
 
     public UplaodFilePageObject(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
-    public UplaodFilePageObject chooseFile(){
+
+    public UplaodFilePageObject chooseFile() {
         choose.click();
-        choose.sendKeys(System.getProperty("user.dir")+"/src/test/resources/sample-upload.txt");
+        choose.sendKeys(System.getProperty("user.dir") + "/src/test/resources/sample-upload.txt");
         return this;
     }
-    public UplaodFilePageObject upload(){
+
+    public UplaodFilePageObject upload() {
         submit.click();
         return this;
     }
-    public String getSuccessMessage(){
+
+    public String getSuccessMessage() {
         return uploadedFile.getText();
     }
 }

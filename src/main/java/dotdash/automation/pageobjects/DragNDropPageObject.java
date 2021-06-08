@@ -1,22 +1,21 @@
 package dotdash.automation.pageobjects;
 
-import org.openqa.selenium.By;
+import dotdash.automation.ui.BasePageObject;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class DragNDropPageObject {
-    private WebDriver driver;
+public class DragNDropPageObject extends BasePageObject {
+    @FindBy(id = "column-a")
     private WebElement colA;
+    @FindBy(id = "column-b")
     private WebElement colB;
-    private Actions builder;
 
     public DragNDropPageObject(WebDriver driver) {
-        this.driver = driver;
-        this.builder = new Actions(driver);
-        this.colA = driver.findElement(By.id("column-a"));
-        this.colB = driver.findElement(By.id("column-b"));
+        super(driver);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public String getColAText() {
@@ -29,7 +28,6 @@ public class DragNDropPageObject {
 
     public DragNDropPageObject dragAtoB() {
         return dragNDrop(colA, colB);
-
     }
 
     public DragNDropPageObject dragBtoA() {
@@ -37,6 +35,11 @@ public class DragNDropPageObject {
 
     }
 
+    /**
+     * @param eleA May be there is a best way to work around for this but it did not work any other way
+     * @param eleB
+     * @return
+     */
     public DragNDropPageObject dragNDrop(WebElement eleA, WebElement eleB) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("function createEvent(typeOfEvent) {\n" + "var event =document.createEvent(\"CustomEvent\");\n"
