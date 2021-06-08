@@ -1,0 +1,37 @@
+Required:
+1. MacOS
+2. Java 8
+3. IntelliJ
+4. Gradle 6
+5. Git
+
+How to run
+1. Clone the Project
+2. Import to intelliJ as Gradle Project
+3. Download Dependencies(use Gradle refresh)
+4. run cmd in terminal './gradlew test' or './gradlew build' or 'gradle build' or 'gradle test'
+5. Run specific test on @Test method level in SeleniumTest class by right click
+6. Reports can be seen in 'build/reports/tests/test/index.html' after running './gradlew test'
+7. Not sure runs in Windows but provided the code
+8. All tests are passing
+
+Design Concepts
+1. Followed the POM. Declared elements as private and element actions as public. Methods return the same page object to follow the
+Builder Design Pattern. If click on some element navigates to new Page then it returns new Page Object with the same driver.
+Explanation is given in Login Page Object
+2. Gave element identifying priority as ID, Name, CSS , XPath etc for better performance and stability of the code
+3. Used Gradle build tool as it is much faster than Maven and easy to manage multi projects. Easy to integrate with jenkins pipeline. Easy to handle Android Projects etc.
+4. Used JUnit5 Tests. Can be used Cucumber or TestNG depends on the project requirement.
+5. Used Junit5 Tags and Order
+6. Injected Driver from Test Case Level.
+7. Used @BeforeEach and @AfterEach annotations to instantiate and teardown the browser
+8. gradle-wrapper.jar is provided to run gradle projects with out depending on the local gradle set up
+9. We can write different gradle tasks to run smoke, regression suits
+10. Used Java 8 Functionalities for better code maintenance
+11. Used Awaitility functionality to wait until the file is downloaded before driver closes the browser
+12. Followed the Ideal Gradle Project structure for the project
+13. Config files are provided to better maintain common properties which change for different environments
+14. Created Makefile to integrate with Jenkins
+
+
+

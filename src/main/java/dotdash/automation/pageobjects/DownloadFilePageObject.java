@@ -49,6 +49,11 @@ public class DownloadFilePageObject extends BasePageObject {
             throw new TimeoutException();
         }
     }
+
+    /**
+     * Not sure the file path is same for windows or other machines. My other mac does not fetch the dir files. It returns null
+     * @return
+     */
     public boolean isFileDownloaded() {
         String downloadPath = System.getProperty("user.home") + "/Downloads";
         File dir = new File(downloadPath);

@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 /**
  * This class addresses all the elements and methods of Login Page and uses Builder Design Pattern
+ * No Assertions in the Page Objects. They are in the TC level.
+ * Page Elements are private. Necessary element actions are created as public methods.
  */
 public class LoginPageObject extends BasePageObject {
 
@@ -18,13 +20,13 @@ public class LoginPageObject extends BasePageObject {
      * making elements private to make sure other classes use methods of the elements. Like getters and setters.
      */
     @FindBy(id = "username")
-    WebElement username;
+    private WebElement username;
     @FindBy(id = "password")
-    WebElement password;
+    private WebElement password;
     @FindBy(className = "radius")
-    WebElement login;
+    private WebElement login;
     @FindBy(id = "flash")
-    WebElement flash;
+    private WebElement flash;
 
     public LoginPageObject(WebDriver driver) {
         super(driver);

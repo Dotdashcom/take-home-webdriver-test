@@ -185,9 +185,13 @@ public class SeleniumTests {
         assertTrue(pageObject.isHelloDisplayed());
     }
 
+    /**
+     * Not sure the download path is same for all the machines.
+     * @throws TimeoutException
+     */
     @Test
     @Order(11)
-    public void downloadFile() throws IOException, InterruptedException, TimeoutException {
+    public void downloadFile() throws  TimeoutException {
         String url = "/download";
         navigateTo(url);
         DownloadFilePageObject pageObject = new DownloadFilePageObject(driver);
@@ -292,6 +296,10 @@ public class SeleniumTests {
         assertEquals("New Window", newWindowPageObject.getText());
     }
 
+    /**
+     * This TC is different than mentioned in ReadMe. The options are only loaded 2 not 3. i.e
+     * Action successful, Action unsuccesful, please try again
+     */
     @Test
     @Order(19)
     public void notification() {

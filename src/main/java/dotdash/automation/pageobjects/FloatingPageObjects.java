@@ -13,7 +13,7 @@ public class FloatingPageObjects extends BasePageObject {
 
     public FloatingPageObjects(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(getDriver(),this);
     }
 
     public boolean isMenuVisible(){
