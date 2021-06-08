@@ -1,4 +1,4 @@
-package dotdash.automation.data;
+package dotdash.automation.helpers;
 
 import java.io.File;
 import java.io.FileInputStream;

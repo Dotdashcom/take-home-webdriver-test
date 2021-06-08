@@ -1,6 +1,6 @@
 package dotdash.automation.tests;
 
-import dotdash.automation.data.ConfigReader;
+import dotdash.automation.helpers.ConfigReader;
 //import dotdash.automation.data.ContextObject;
 import dotdash.automation.pageobjects.*;
 import org.junit.jupiter.api.AfterEach;

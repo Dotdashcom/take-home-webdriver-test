@@ -1,6 +1,5 @@
 apply plugin: 'java'
 apply plugin: 'groovy'
-apply plugin: 'jacoco'
 apply plugin: 'idea'
 
 // In this section you declare where to find the dependencies of your project
@@ -11,37 +10,10 @@ repositories {
     mavenCentral()
 }
 
-
-sourceSets {
-
-    functionalTest {
-        java.srcDir file('dotdash/automation/steps')
-        groovy.srcDir file('src/main/groovy')
-        resources.srcDir file('src/test/resources')
-        compileClasspath = sourceSets.main.output + configurations.testCompileClasspath + sourceSets.test.output
-        runtimeClasspath = output + compileClasspath + configurations.testRuntimeClasspath
-    }
-}
-
-
-task functionaltest(type: Test) {
-    description = 'Runs automated functional tests.'
-    group = 'verification'
-
-    testClassesDirs = sourceSets.functionalTest.output.classesDirs
-    classpath = sourceSets.functionalTest.runtimeClasspath
-    reports.junitXml.destination = file("${reports.junitXml.destination}/functional")
-
-    jacoco {
-        enabled = false
-    }
-}
 test {
     useJUnitPlatform()
 }
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.5.2'
-    compile 'com.google.inject:guice:4.1.0'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     compile group: 'org.awaitility', name: 'awaitility', version: '3.1.2'
     compile group: 'org.seleniumhq.selenium', name: 'htmlunit-driver', version: '2.27'

@@ -1,4 +1,4 @@
-package dotdash.automation.data;
+package dotdash.automation.helpers;
 
 public class ConfigReaderPropertyNotFoundException extends RuntimeException {
     public ConfigReaderPropertyNotFoundException() {
