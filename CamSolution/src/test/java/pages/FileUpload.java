@@ -29,9 +29,7 @@ public class FileUpload {
 	
 	public boolean isUploaded() {
 		WebElement message = driver.findElement(By.tagName("h3"));
-		if (message.getText() == "File Uploader")
-			return false;
-		if (message.getText() == "File Uploaded!")
+		if (message.getText().equals("File Uploaded!"))
 			return true;
 		return false;
 	}

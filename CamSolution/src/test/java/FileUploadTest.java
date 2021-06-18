@@ -30,7 +30,8 @@ public class FileUploadTest {
 		FileUpload fileUploadPage = new FileUpload(driver);
 		String file = System.getProperty("user.dir") + "/resources/blah";
 		System.out.println("Will try to upload file: " + file);
-		fileUploadPage.uploadFile(file);
+		fileUploadPage.uploadFile(file);		
+		assertTrue(fileUploadPage.isUploaded());
 	}
 	
 	@After
