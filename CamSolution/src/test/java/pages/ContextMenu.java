@@ -36,6 +36,11 @@ public class ContextMenu {
 		}		
 	}
 	
+	public String getAlertText() {
+		Alert alert = driver.switchTo().alert();
+		return alert.getText();
+	}
+	
 	public void acceptAlert() {		
 		Alert alert = driver.switchTo().alert();
 		alert.accept();	

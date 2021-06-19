@@ -36,9 +36,9 @@ public class ContextMenuTest {
 	public void alertLoadsOnContextMenuClick() {
 		ContextMenu contextMenuPage = new ContextMenu(driver);
 		contextMenuPage.rightClickHotspot();
-		boolean alertShown = contextMenuPage.isAlertPresent();
+		String alertMessage = contextMenuPage.getAlertText();
 		contextMenuPage.acceptAlert();
-		assertTrue(alertShown);		
+		assertTrue(alertMessage.contains("You selected a context menu"));		
 	}	
 	
 	@After
