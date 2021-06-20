@@ -29,12 +29,7 @@ public class MouseHover {
 	public void hoverOverImage(int index) {
 		 Actions action = new Actions(driver);
 		 action.moveToElement(images.get(index)).build().perform();
-		 try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	}
 	
 	public String getVisibleCaptionFor(int index) {
