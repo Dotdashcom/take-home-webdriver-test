@@ -34,7 +34,7 @@ public class ContextMenuTest {
 	@Test
 	public void alertIsNotPresentWhenPageLoads() {
 		ContextMenu contextMenuPage = new ContextMenu(driver);
-		assertFalse(contextMenuPage.isAlertPresent());
+		assertFalse("No menu should show when page loads", contextMenuPage.isAlertPresent());
 	}
 	
 	/**
@@ -46,7 +46,7 @@ public class ContextMenuTest {
 		contextMenuPage.rightClickHotspot();
 		String alertMessage = contextMenuPage.getAlertText();
 		contextMenuPage.acceptAlert();
-		assertTrue(alertMessage.contains("You selected a context menu"));		
+		assertTrue("Did not see correct context menu message", alertMessage.contains("You selected a context menu"));		
 	}	
 	
 	@After
