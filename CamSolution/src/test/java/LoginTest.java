@@ -1,5 +1,7 @@
 import static org.junit.Assert.assertTrue;
 
+import java.io.IOException;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -24,9 +26,14 @@ public class LoginTest {
 	 * Initialize the driver
 	 */
 	@Before
-	public void init() {		
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-		driver = new ChromeDriver();
+	public void init() throws IOException {
+		Browser browser = Browser.valueOf(
+				PropertyReader.getPropertiesFromFile(
+						"src/test/resources/config.properties",
+						"browser"));
+		
+		driver = DriverFactory.getDriver(browser);
+		driver.manage().window().maximize();		
 	}
 	
 	/**

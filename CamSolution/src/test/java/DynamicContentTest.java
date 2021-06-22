@@ -1,4 +1,7 @@
 import static org.junit.Assert.assertFalse;
+
+import java.io.IOException;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,11 +15,14 @@ public class DynamicContentTest {
 	private WebDriver driver = null;
 	
 	@Before
-	public void init() {
-		// TODO:  Move to common place
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+	public void init() throws IOException {
+		Browser browser = Browser.valueOf(
+				PropertyReader.getPropertiesFromFile(
+						"src/test/resources/config.properties",
+						"browser"));
+		
+		driver = DriverFactory.getDriver(browser);
+		driver.manage().window().maximize();		
 	}
 	
 	/*

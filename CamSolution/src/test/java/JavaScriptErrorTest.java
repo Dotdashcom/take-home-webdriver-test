@@ -1,5 +1,6 @@
 import static org.junit.Assert.assertTrue;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.junit.After;
@@ -15,10 +16,14 @@ public class JavaScriptErrorTest {
 	private WebDriver driver = null;
 	
 	@Before
-	public void init() {
-		// TODO:  Move to common place
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-		driver = new ChromeDriver();
+	public void init() throws IOException {
+		Browser browser = Browser.valueOf(
+				PropertyReader.getPropertiesFromFile(
+						"src/test/resources/config.properties",
+						"browser"));
+		
+		driver = DriverFactory.getDriver(browser);
+		driver.manage().window().maximize();		
 	}
 	
 	/**

@@ -1,5 +1,6 @@
 import static org.junit.Assert.assertTrue;
 
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,11 +18,14 @@ public class NotificationMessageTest {
 	private WebDriver driver = null;
 	
 	@Before
-	public void init() {
-		// TODO:  Move to common place
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+	public void init() throws IOException {
+		Browser browser = Browser.valueOf(
+				PropertyReader.getPropertiesFromFile(
+						"src/test/resources/config.properties",
+						"browser"));
+		
+		driver = DriverFactory.getDriver(browser);
+		driver.manage().window().maximize();		
 	}
 	
 	/*
