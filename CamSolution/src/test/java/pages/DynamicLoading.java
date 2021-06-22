@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import configuration.PageLoader;
+
 public class DynamicLoading {
 	
 	private WebDriver driver = null;
@@ -34,8 +36,7 @@ public class DynamicLoading {
 	}
 	
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/dynamic_loading/2");
+		PageLoader.loadPage(driver, "/dynamic_loading/2");		
 	}
 	
 	

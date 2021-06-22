@@ -12,6 +12,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import configuration.PageLoader;
+
 public class MouseHover {
 	
 	private WebDriver driver = null;
@@ -36,10 +38,9 @@ public class MouseHover {
 		List<WebElement> captions = driver.findElements(By.className("figcaption"));
 		return captions.get(index).getText();
 	}
-
+	
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/hovers");
+		PageLoader.loadPage(driver, "/hovers");		
 	}
 	
 	

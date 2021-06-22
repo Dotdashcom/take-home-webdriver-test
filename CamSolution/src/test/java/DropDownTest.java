@@ -6,8 +6,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
+import configuration.Browser;
+import configuration.DriverFactory;
+import configuration.PropertyReader;
 import pages.Dropdown;
 
 public class DropDownTest {

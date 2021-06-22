@@ -1,13 +1,12 @@
 package pages;
 
-import java.util.List;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+
+import configuration.PageLoader;
 
 public class DynamicContent {
 	
@@ -25,11 +24,9 @@ public class DynamicContent {
 	public String getDynamicContent() {
 		return content.getText();
 	}
-	
+		
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/dynamic_content");
+		PageLoader.loadPage(driver, "/dynamic_content");		
 	}
-	
 	
 }

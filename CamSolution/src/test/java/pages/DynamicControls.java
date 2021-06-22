@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import configuration.PageLoader;
+
 public class DynamicControls {
 	
 	private WebDriver driver = null;
@@ -107,8 +109,7 @@ public class DynamicControls {
 	}
 	
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/dynamic_controls");
+		PageLoader.loadPage(driver, "/dynamic_controls");		
 	}
 	
 	

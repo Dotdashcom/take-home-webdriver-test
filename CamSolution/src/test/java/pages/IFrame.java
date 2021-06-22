@@ -5,6 +5,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import configuration.PageLoader;
+
 public class IFrame {
 	
 	private WebDriver driver = null;
@@ -45,9 +47,8 @@ public class IFrame {
 	} 
 
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/iframe");
-	}
+		PageLoader.loadPage(driver, "/iframe");		
+	}	
 	
 	
 }

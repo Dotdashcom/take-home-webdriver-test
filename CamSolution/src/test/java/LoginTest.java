@@ -3,13 +3,13 @@ import static org.junit.Assert.assertTrue;
 import java.io.IOException;
 
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
+import configuration.Browser;
+import configuration.DriverFactory;
+import configuration.PropertyReader;
 import pages.LoggedInPage;
 import pages.LoginPage;
 

@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import configuration.PageLoader;
+
 public class Checkboxes {
 	
 	private WebDriver driver = null;
@@ -15,7 +17,6 @@ public class Checkboxes {
 		this.driver = driver;
 		this.loadPage();
 		this.checkboxes = driver.findElements(By.cssSelector("input[type=checkbox]"));
-		System.out.println("here");
 	}
 	
 	public void toggleCheckbox(int index) {
@@ -33,8 +34,7 @@ public class Checkboxes {
 	}
 	
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/checkboxes");
+		PageLoader.loadPage(driver, "/checkboxes");		
 	}
 	
 	

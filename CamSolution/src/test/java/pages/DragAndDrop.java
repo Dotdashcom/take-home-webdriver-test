@@ -13,6 +13,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import configuration.PageLoader;
+
 public class DragAndDrop {
 	
 	private WebDriver driver = null;
@@ -46,11 +48,11 @@ public class DragAndDrop {
 		// Had to use JS method
 		dragSourceToDestinationUsingJavaScript(rightBox, leftBox);
 	}
-	
+		
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/drag_and_drop");
+		PageLoader.loadPage(driver, "/drag_and_drop");		
 	}
+	
 	
 	
 	/**

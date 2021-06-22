@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import configuration.PageLoader;
+
 public class ContextMenu {
 	
 	private WebDriver driver = null;
@@ -47,8 +49,6 @@ public class ContextMenu {
 	}
 	
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/context_menu");
+		PageLoader.loadPage(driver, "/context_menu");		
 	}
-	
 }

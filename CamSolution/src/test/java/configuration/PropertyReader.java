@@ -1,3 +1,5 @@
+package configuration;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -5,7 +7,7 @@ import java.util.Properties;
 
 public class PropertyReader {
 	
-	static String getPropertiesFromFile(String file, String property) throws IOException {
+	public static String getPropertiesFromFile(String file, String property) throws IOException {
 		InputStream input = null;
 		Properties props = null;
 		

@@ -16,6 +16,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import configuration.PageLoader;
+
 public class FloatingMenu {
 	
 	private WebDriver driver = null;
@@ -86,9 +88,8 @@ public class FloatingMenu {
 	}
 
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/floating_menu");
-	}
+		PageLoader.loadPage(driver, "/floating_menu");		
+	}	
 	
 	
 }

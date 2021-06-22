@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import configuration.PageLoader;
+
 public class OpenInNewTab {
 	
 	private WebDriver driver = null;
@@ -39,8 +41,7 @@ public class OpenInNewTab {
 	}
 	
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/windows");
+		PageLoader.loadPage(driver, "/windows");		
 	}
 	
 }

@@ -13,6 +13,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import configuration.PageLoader;
+
 public class JavaScriptError {
 	private WebDriver driver = null;
 	
@@ -32,9 +34,8 @@ public class JavaScriptError {
 		
 		return messages;
 	}	
-	
+
 	public void loadPage() {
-		//TODO:  use base url variable
-		driver.get("http://localhost:7080/javascript_error");
-	}
+		PageLoader.loadPage(driver, "/javascript_error");		
+	}	
 }
