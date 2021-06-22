@@ -34,8 +34,8 @@ public class CheckboxTest {
 	@Test
 	public void checkboxesLoadWithDefaultValues() {
 		Checkboxes checkboxPage = new Checkboxes(driver);
-		assertTrue(checkboxPage.isChecked(0) == false);
-		assertTrue(checkboxPage.isChecked(1) == true);
+		assertTrue("Expected to be unchecked", checkboxPage.isChecked(0) == false);
+		assertTrue("Expected to be checked", checkboxPage.isChecked(1) == true);
 	}
 	
 	/**
@@ -46,8 +46,8 @@ public class CheckboxTest {
 		Checkboxes checkboxPage = new Checkboxes(driver);
 		checkboxPage.setCheckbox(0, true);
 		checkboxPage.setCheckbox(1, true);
-		assertTrue(checkboxPage.isChecked(0) == true);
-		assertTrue(checkboxPage.isChecked(1) == true);		
+		assertTrue("Expected to be checked", checkboxPage.isChecked(0) == true);
+		assertTrue("Expected to be checked", checkboxPage.isChecked(1) == true);		
 	}
 	
 	/**
@@ -58,8 +58,8 @@ public class CheckboxTest {
 		Checkboxes checkboxPage = new Checkboxes(driver);
 		checkboxPage.setCheckbox(0, false);
 		checkboxPage.setCheckbox(1, false);
-		assertTrue(checkboxPage.isChecked(0) == false);
-		assertTrue(checkboxPage.isChecked(1) == false);		
+		assertTrue("Expected to be unchecked", checkboxPage.isChecked(0) == false);
+		assertTrue("Expected to be unchecked", checkboxPage.isChecked(1) == false);		
 	}
 	
 	@After
