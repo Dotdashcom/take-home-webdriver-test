@@ -47,9 +47,9 @@ public class DynamicContentTest {
 		String third = dynamicContentPage.getDynamicContent();
 		
 		// Check that no two of the page loads were the same
-		assertFalse(first.equals(second));
-		assertFalse(first.equals(third));
-		assertFalse(second.equals(third));		
+		assertFalse("Content should be different", first.equals(second));
+		assertFalse("Content should be different", first.equals(third));
+		assertFalse("Content should be different", second.equals(third));		
 	}
 		
 	@After

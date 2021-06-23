@@ -31,14 +31,14 @@ public class DropDownTest {
 	public void selectOption1() {
 		Dropdown dropdownPage = new Dropdown(driver);
 		dropdownPage.selectOption("Option 1");
-		assertTrue(dropdownPage.getSelectedValue().equals("Option 1"));		
+		assertTrue("Unexpected option was selected", dropdownPage.getSelectedValue().equals("Option 1"));		
 	}
 	
 	@Test
 	public void selectOption2() {
 		Dropdown dropdownPage = new Dropdown(driver);
 		dropdownPage.selectOption("Option 2");
-		assertTrue(dropdownPage.getSelectedValue().equals("Option 2"));		
+		assertTrue("Unexpected option was selected", dropdownPage.getSelectedValue().equals("Option 2"));		
 	}
 	
 	@After

@@ -40,7 +40,7 @@ public class DynamicControlsTest {
 		String message = dynamicControlsPage.getMessage();
 		
 		assertTrue(message.equals("It's gone!"));
-		assertTrue(dynamicControlsPage.isCheckboxPresent(false));
+		assertTrue("Checkbox was still present", dynamicControlsPage.isCheckboxPresent(false));
 			
 	}
 	
@@ -59,7 +59,7 @@ public class DynamicControlsTest {
 		String message = dynamicControlsPage.getMessage();
 		
 		assertTrue(message.equals("It's back!"));
-		assertTrue(dynamicControlsPage.isCheckboxPresent(true));
+		assertTrue("Checkbox did not appear", dynamicControlsPage.isCheckboxPresent(true));
 		
 	}
 	
@@ -76,7 +76,7 @@ public class DynamicControlsTest {
 		String message = dynamicControlsPage.getMessage();
 		
 		assertTrue(message.equals("It's enabled!"));
-		assertTrue(dynamicControlsPage.isTextFieldEnabled(true));
+		assertTrue("Field was still disabled", dynamicControlsPage.isTextFieldEnabled(true));
 	}
 	
 	/*
@@ -93,7 +93,7 @@ public class DynamicControlsTest {
 		String message = dynamicControlsPage.getMessage();
 		
 		assertTrue(message.equals("It's disabled!"));
-		assertTrue(dynamicControlsPage.isTextFieldEnabled(false));
+		assertTrue("Field was still enabled", dynamicControlsPage.isTextFieldEnabled(false));
 	}		
 	
 	@After

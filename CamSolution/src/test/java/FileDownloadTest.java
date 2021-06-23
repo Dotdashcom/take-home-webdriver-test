@@ -54,7 +54,7 @@ public class FileDownloadTest {
 		
 		// The file count should have increased by 1
 		int numFilesAfter = downloadsDirectory.listFiles().length;
-		assertTrue( numFilesAfter == numFiles + 1);
+		assertTrue("Incorrect file count detected",  numFilesAfter == numFiles + 1);
 		
 	}
 		

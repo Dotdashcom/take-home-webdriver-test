@@ -30,24 +30,24 @@ public class DragAndDropTest {
 	@Test
 	public void boxesLoadWithCorrectValues() {
 		DragAndDrop dragAndDropPage = new DragAndDrop(driver);
-		assertTrue(dragAndDropPage.getLeftBoxText().equals("A"));
-		assertTrue(dragAndDropPage.getRightBoxText().equals("B"));
+		assertTrue("Wrong value detected", dragAndDropPage.getLeftBoxText().equals("A"));
+		assertTrue("Wrong value detected", dragAndDropPage.getRightBoxText().equals("B"));
 	}
 	
 	@Test
 	public void dragLeftBoxOntoRightBox() {
 		DragAndDrop dragAndDropPage = new DragAndDrop(driver);
 		dragAndDropPage.dragLeftBoxOntoRight();
-		assertTrue(dragAndDropPage.getLeftBoxText().equals("B"));
-		assertTrue(dragAndDropPage.getRightBoxText().equals("A"));
+		assertTrue("Wrong value detected", dragAndDropPage.getLeftBoxText().equals("B"));
+		assertTrue("Wrong value detected", dragAndDropPage.getRightBoxText().equals("A"));
 	}
 	
 	@Test
 	public void dragRightBoxOntoLeftBox() {
 		DragAndDrop dragAndDropPage = new DragAndDrop(driver);
 		dragAndDropPage.dragRightBoxOntoLeft();
-		assertTrue(dragAndDropPage.getLeftBoxText().equals("B"));
-		assertTrue(dragAndDropPage.getRightBoxText().equals("A"));
+		assertTrue("Wrong value detected", dragAndDropPage.getLeftBoxText().equals("B"));
+		assertTrue("Wrong value detected", dragAndDropPage.getRightBoxText().equals("A"));
 	}
 
 	

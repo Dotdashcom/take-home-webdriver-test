@@ -39,7 +39,7 @@ public class JavaScriptAlertTest {
 		alertPage.clickOkOnAlertDialog();
 		
 		String result = alertPage.getResultText();
-		assertTrue(result.equals("You successfuly clicked an alert"));
+		assertTrue("Error with alert", result.equals("You successfuly clicked an alert"));
 	}
 	
 	@Test
@@ -51,7 +51,7 @@ public class JavaScriptAlertTest {
 		alertPage.clickOkOnConfirmDialog();
 		
 		String result = alertPage.getResultText();
-		assertTrue(result.equals("You clicked: Ok"));
+		assertTrue("Error with confirm", result.equals("You clicked: Ok"));
 		
 	} 
 	
@@ -64,7 +64,7 @@ public class JavaScriptAlertTest {
 		alertPage.clickCancelOnConfirmDialog();
 		
 		String result = alertPage.getResultText();
-		assertTrue(result.equals("You clicked: Cancel"));
+		assertTrue("Error with confirm", result.equals("You clicked: Cancel"));
 
 	}
 	
@@ -77,7 +77,7 @@ public class JavaScriptAlertTest {
 		alertPage.clickOkOnPromptDialog("Hello World");
 		
 		String result = alertPage.getResultText();
-		assertTrue(result.equals("You entered: Hello World"));
+		assertTrue("Error with prompt", result.equals("You entered: Hello World"));
 		
 	}
 	
@@ -90,7 +90,7 @@ public class JavaScriptAlertTest {
 		alertPage.clickCancelOnPromptDialog();
 		
 		String result = alertPage.getResultText();
-		assertTrue(result.equals("You entered: null"));
+		assertTrue("Error with prompt", result.equals("You entered: null"));
 		
 	}	
 		

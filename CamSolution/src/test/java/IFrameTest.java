@@ -39,7 +39,7 @@ public class IFrameTest {
 		editor.typeIntoEditor(message);
 		
 		String contents = editor.getEditorText();		
-		assertTrue(contents.equals(message));
+		assertTrue("Unexpected content in editor", contents.equals(message));
 
 	}
 		

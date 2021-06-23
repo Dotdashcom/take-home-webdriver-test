@@ -36,7 +36,7 @@ public class OpenInNewTabTest {
 		OpenInNewTab newTabPage = new OpenInNewTab(driver);
 		newTabPage.clickLinkToLaunchNewTab();
 		String result = newTabPage.getTextFromTab();
-		assertTrue(result.equals("New Window"));
+		assertTrue("Error with new tab", result.equals("New Window"));
 	}
 		
 	@After

@@ -48,7 +48,7 @@ public class NotificationMessageTest {
 		for (int i=0; i < ATTEMPTS ; i++) {
 			messagePage.loadNewMessage();
 			String message = messagePage.getMessage();
-			assertTrue(allowedMessages.contains(message));
+			assertTrue("Disallowed message detected", allowedMessages.contains(message));
 		}
 	}
 		

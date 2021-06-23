@@ -35,7 +35,7 @@ public class FloatingMenuTest {
 		FloatingMenu menuPage = new FloatingMenu(driver);
 		menuPage.scrollToBottom();
 		boolean menuShows = menuPage.isMenuVisible();
-		assertTrue(menuShows);
+		assertTrue("Floating menu did not show", menuShows);
 	}
 		
 	@After

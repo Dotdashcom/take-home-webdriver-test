@@ -40,7 +40,7 @@ public class DynamicLoadingTest {
 		System.out.println("Got message: " + message);
 		
 		// Check that message was as expected 
-		assertTrue(message.equals("Hello World!"));
+		assertTrue("Did not get expected message", message.equals("Hello World!"));
 			
 	}
 		

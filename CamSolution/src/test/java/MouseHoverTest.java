@@ -47,9 +47,9 @@ public class MouseHoverTest {
 		String user3Caption = mouseHoverPage.getVisibleCaptionFor(2);
 		System.out.println("Can see caption: " + user3Caption);
 	 
-		assertTrue(user1Caption.contains("name: user1") && user1Caption.contains("View profile"));
-		assertTrue(user2Caption.contains("name: user2") && user2Caption.contains("View profile"));
-		assertTrue(user3Caption.contains("name: user3") && user3Caption.contains("View profile"));
+		assertTrue("Issue with caption", user1Caption.contains("name: user1") && user1Caption.contains("View profile"));
+		assertTrue("Issue with caption", user2Caption.contains("name: user2") && user2Caption.contains("View profile"));
+		assertTrue("Issue with caption", user3Caption.contains("name: user3") && user3Caption.contains("View profile"));
 			
 	}
 		

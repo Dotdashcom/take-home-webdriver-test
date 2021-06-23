@@ -39,7 +39,7 @@ public class FileUploadTest {
 		String file = System.getProperty("user.dir") + "/resources/blah";
 		System.out.println("Will try to upload file: " + file);
 		fileUploadPage.uploadFile(file);		
-		assertTrue(fileUploadPage.isUploaded());
+		assertTrue("File did not upload", fileUploadPage.isUploaded());
 	}
 	
 	@After

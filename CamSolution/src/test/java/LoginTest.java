@@ -48,7 +48,7 @@ public class LoginTest {
 				.typePassword("SuperSecretPassword!")
 				.clickLogin();
 		
-		assertTrue(loggedIn.getFlashMessage().contains("You logged into a secure area!"));
+		assertTrue("Issue logging in", loggedIn.getFlashMessage().contains("You logged into a secure area!"));
 		loggedIn.clickLogout();
 	}
 	
@@ -62,7 +62,7 @@ public class LoginTest {
 			.typePassword("SuperSecretPassword!")
 			.clickLoginWithInvalidCredentials();		
 		
-		assertTrue(loginPage.getFlashMessage().contains("Your username is invalid!"));
+		assertTrue("Issue with invalid username", loginPage.getFlashMessage().contains("Your username is invalid!"));
 	}
 	
 	/**
@@ -75,7 +75,7 @@ public class LoginTest {
 			.typePassword("wrongpassword!")
 			.clickLoginWithInvalidCredentials();		
 		
-		assertTrue(loginPage.getFlashMessage().contains("Your password is invalid!"));
+		assertTrue("Issue with invalid password", loginPage.getFlashMessage().contains("Your password is invalid!"));
 	}
 	
 	/**
