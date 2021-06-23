@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="18" total="19" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33454" started-at="2021-06-23T12:35:36 EDT" finished-at="2021-06-23T12:36:10 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33454" started-at="2021-06-23T12:35:36 EDT" finished-at="2021-06-23T12:36:10 EDT">
+      <class name="tests.AllTests">
+        <test-method status="PASS" signature="beforeAllTests()[pri:0, instance:tests.AllTests@42d8062c]" name="beforeAllTests" is-config="true" duration-ms="2334" started-at="2021-06-23T12:35:36 EDT" finished-at="2021-06-23T12:35:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeAllTests -->
+        <test-method status="PASS" signature="iframeTest()[pri:14, instance:tests.AllTests@42d8062c]" name="iframeTest" duration-ms="31025" started-at="2021-06-23T12:35:39 EDT" finished-at="2021-06-23T12:36:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframeTest -->
+        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:tests.AllTests@42d8062c]" name="afterAllTests" is-config="true" duration-ms="53" started-at="2021-06-23T12:36:10 EDT" finished-at="2021-06-23T12:36:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAllTests -->
+      </class> <!-- tests.AllTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
