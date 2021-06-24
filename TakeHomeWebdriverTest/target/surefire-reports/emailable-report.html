@@ -8,92 +8,44 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">71,927</td><td></td><td></td></tr>
+<tr><th colspan="8">THWDTSuite</th></tr>
+<tr><td><a href="#t0">THWDTTest</a></td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">63,539</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.CheckBoxes</td><td><a href="#m0">checkBox1Test</a></td><td rowspan="1">1624408552548</td><td rowspan="1">30067</td></tr><tr class="failedeven"><td><a href="#m1">checkBox2Test</a></td><td rowspan="1">1624408582618</td><td rowspan="1">9310</td></tr><tr class="failedodd"><td rowspan="1">tests.ContextMenu</td><td><a href="#m2">ContextMenuTest</a></td><td rowspan="1">1624408591929</td><td rowspan="1">12161</td></tr><tr class="failedeven"><td rowspan="1">tests.DragAndDrop</td><td><a href="#m3">DragAndDropTest</a></td><td rowspan="1">1624408604091</td><td rowspan="1">12168</td></tr><tr class="failedodd"><td rowspan="1">tests.LoginTests</td><td><a href="#m4">loginFailureTest</a></td><td rowspan="1">1624408551919</td><td rowspan="1">624</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.LoginTests</td><td><a href="#m5">loginSuccessTest</a></td><td rowspan="1">1624408551308</td><td rowspan="1">607</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">THWDTSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">THWDTTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.AllTests</td><td><a href="#m0">DragAndDropTest</a></td><td rowspan="1">1624561716538</td><td rowspan="1">17</td></tr><tr><th colspan="4">THWDTTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="18">test.AllTests</td><td><a href="#m1">DynamicControlsTest</a></td><td rowspan="1">1624561717307</td><td rowspan="1">12689</td></tr><tr class="passedeven"><td><a href="#m2">checkBox1Test</a></td><td rowspan="1">1624561716081</td><td rowspan="1">159</td></tr><tr class="passedeven"><td><a href="#m3">checkBox2Test</a></td><td rowspan="1">1624561716240</td><td rowspan="1">92</td></tr><tr class="passedeven"><td><a href="#m4">contextMenuTest</a></td><td rowspan="1">1624561716332</td><td rowspan="1">206</td></tr><tr class="passedeven"><td><a href="#m5">dynamicContentTest</a></td><td rowspan="1">1624561716911</td><td rowspan="1">396</td></tr><tr class="passedeven"><td><a href="#m6">dynamicLoading</a></td><td rowspan="1">1624561729997</td><td rowspan="1">11064</td></tr><tr class="passedeven"><td><a href="#m7">fileUploadTest</a></td><td rowspan="1">1624561741061</td><td rowspan="1">307</td></tr><tr class="passedeven"><td><a href="#m8">floatingMenuTest</a></td><td rowspan="1">1624561741369</td><td rowspan="1">163</td></tr><tr class="passedeven"><td><a href="#m9">iframeTest</a></td><td rowspan="1">1624561741533</td><td rowspan="1">31088</td></tr><tr class="passedeven"><td><a href="#m10">javaScriptAlertsTest</a></td><td rowspan="1">1624561772621</td><td rowspan="1">308</td></tr><tr class="passedeven"><td><a href="#m11">javaScriptErrorTest</a></td><td rowspan="1">1624561772929</td><td rowspan="1">62</td></tr><tr class="passedeven"><td><a href="#m12">loginFailureTest</a></td><td rowspan="1">1624561715718</td><td rowspan="1">363</td></tr><tr class="passedeven"><td><a href="#m13">loginSuccessTest</a></td><td rowspan="1">1624561715304</td><td rowspan="1">411</td></tr><tr class="passedeven"><td><a href="#m14">mouseOverTest</a></td><td rowspan="1">1624561772991</td><td rowspan="1">616</td></tr><tr class="passedeven"><td><a href="#m15">newTabTest</a></td><td rowspan="1">1624561773607</td><td rowspan="1">206</td></tr><tr class="passedeven"><td><a href="#m16">notificationMsgTest</a></td><td rowspan="1">1624561773813</td><td rowspan="1">2759</td></tr><tr class="passedeven"><td><a href="#m17">option1Test</a></td><td rowspan="1">1624561716781</td><td rowspan="1">130</td></tr><tr class="passedeven"><td><a href="#m18">option2Test</a></td><td rowspan="1">1624561716565</td><td rowspan="1">215</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">tests.CheckBoxes#checkBox1Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Checkboxes&apos;)]&quot;}
-  (Session info: chrome=91.0.4472.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<h2>THWDTTest</h2><h3 id="m0">test.AllTests#DragAndDropTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You selected a context menu}
+  (Session info: chrome=91.0.4472.114): You selected a context menu
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-MLGRIG&apos;, ip: &apos;192.168.50.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir26600_5489...}, goog:chromeOptions: {debuggerAddress: localhost:65185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 267c54c86b700e1998bfc7fd92f734aa
-*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Checkboxes&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir41832_3392...}, goog:chromeOptions: {debuggerAddress: localhost:53200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 332757de2ad4555644dbb07186ac63d0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at tests.CheckBoxes.checkBox1Test(CheckBoxes.java:26)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.CheckBoxes#checkBox2Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//body/div[2]/div[1]/div[1]/form[1]/input[2]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-MLGRIG&apos;, ip: &apos;192.168.50.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at tests.CheckBoxes.checkBox2Test(CheckBoxes.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at test.AllTests.DragAndDropTest(AllTests.java:98)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.ContextMenu#ContextMenuTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=91.0.4472.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-MLGRIG&apos;, ip: &apos;192.168.50.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir26600_5489...}, goog:chromeOptions: {debuggerAddress: localhost:65185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 267c54c86b700e1998bfc7fd92f734aa
-*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Context Menu&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at tests.ContextMenu.ContextMenuTest(ContextMenu.java:28)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.DragAndDrop#DragAndDropTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=91.0.4472.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-MLGRIG&apos;, ip: &apos;192.168.50.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir26600_5489...}, goog:chromeOptions: {debuggerAddress: localhost:65185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 267c54c86b700e1998bfc7fd92f734aa
-*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Drag and Drop&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at tests.DragAndDrop.DragAndDropTest(DragAndDrop.java:27)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.LoginTests#loginFailureTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Your username is invalid!×] but found [Your username is invalid!
-×]
-	at tests.LoginTests.loginFailureTest(LoginTests.java:38)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.LoginTests#loginSuccessTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.AllTests#DynamicControlsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.AllTests#checkBox1Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.AllTests#checkBox2Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test.AllTests#contextMenuTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test.AllTests#dynamicContentTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test.AllTests#dynamicLoading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test.AllTests#fileUploadTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">test.AllTests#floatingMenuTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">test.AllTests#iframeTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">test.AllTests#javaScriptAlertsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">test.AllTests#javaScriptErrorTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">test.AllTests#loginFailureTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">test.AllTests#loginSuccessTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">test.AllTests#mouseOverTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">test.AllTests#newTabTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">test.AllTests#notificationMsgTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">test.AllTests#option1Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">test.AllTests#option2Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

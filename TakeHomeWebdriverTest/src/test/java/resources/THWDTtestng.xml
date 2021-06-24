@@ -3,22 +3,7 @@
 <suite name="THWDTSuite">
   <test thread-count="2" name="THWDTTest">
     <classes>
-      <class name="tests.Iframe"/>
-      <class name="tests.DropDown"/>
-      <class name="tests.LoginTests"/>
-      <class name="tests.JavaScriptAlerts"/>
-      <class name="tests.FloatingMenu"/>
-      <class name="tests.DynamicContent"/>
-      <class name="tests.NewTab"/>
-      <class name="tests.JavaScriptError"/>
-      <class name="tests.ContextMenu"/>
-      <class name="tests.FileUpload"/>
-      <class name="tests.CheckBoxes"/>
-      <class name="tests.NotificationMessage"/>
-      <class name="tests.DynamicControls"/>
-      <class name="tests.DynamicLoading"/>
-      <class name="tests.DragAndDrop"/>
-      <class name="tests.MouseHover"/>
+      <class name="test.AllTests"/>
     </classes>
   </test> <!-- THWDTTest -->
 </suite> <!-- THWDTSuite -->

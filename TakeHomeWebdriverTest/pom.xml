@@ -72,7 +72,7 @@
 <configuration>
 <suiteXmlFiles>
 <!-- testng.xml file location has to be adjusted depending on it path on the computer it if being run on -->
-<suiteXmlFile>C:\Users\abdul\eclipse-workspace\TakeHomeWebdriverTest\src\test\java\resources\THWDTtestng.xml</suiteXmlFile>
+<suiteXmlFile>src\test\java\resources\THWDTtestng.xml</suiteXmlFile>
 </suiteXmlFiles>
 </configuration>
 </plugin>

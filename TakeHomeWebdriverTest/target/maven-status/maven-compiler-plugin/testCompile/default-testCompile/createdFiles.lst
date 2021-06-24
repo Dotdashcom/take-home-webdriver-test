@@ -1,0 +1,17 @@
+test\ContextMenu.class
+test\DropDown.class
+test\FileUpload.class
+test\FloatingMenu.class
+test\MouseHover.class
+test\JavaScriptAlerts.class
+test\JavaScriptError.class
+test\DynamicContent.class
+test\DynamicControls.class
+test\DynamicLoading.class
+test\NotificationMessage.class
+test\DragAndDrop.class
+test\Iframe.class
+test\LoginTests.class
+test\CheckBoxes.class
+test\AllTests.class
+test\NewTab.class
