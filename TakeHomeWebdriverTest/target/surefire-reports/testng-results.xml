@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="1" ignored="0" total="19" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="THWDTSuite" duration-ms="63539" started-at="2021-06-24T15:08:33 EDT" finished-at="2021-06-24T15:09:36 EDT">
+  <suite name="THWDTSuite" duration-ms="63831" started-at="2021-06-24T16:14:28 EDT" finished-at="2021-06-24T16:15:32 EDT">
     <groups>
     </groups>
-    <test name="THWDTTest" duration-ms="63539" started-at="2021-06-24T15:08:33 EDT" finished-at="2021-06-24T15:09:36 EDT">
+    <test name="THWDTTest" duration-ms="63831" started-at="2021-06-24T16:14:28 EDT" finished-at="2021-06-24T16:15:32 EDT">
       <class name="test.AllTests">
-        <test-method status="PASS" signature="beforeAllTests()[pri:0, instance:test.AllTests@55d56113]" name="beforeAllTests" is-config="true" duration-ms="2223" started-at="2021-06-24T15:08:33 EDT" finished-at="2021-06-24T15:08:35 EDT">
+        <test-method status="PASS" signature="beforeAllTests()[pri:0, instance:test.AllTests@55d56113]" name="beforeAllTests" is-config="true" duration-ms="2305" started-at="2021-06-24T16:14:28 EDT" finished-at="2021-06-24T16:14:30 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeAllTests -->
-        <test-method status="PASS" signature="loginSuccessTest()[pri:1, instance:test.AllTests@55d56113]" name="loginSuccessTest" duration-ms="411" started-at="2021-06-24T15:08:35 EDT" finished-at="2021-06-24T15:08:35 EDT">
+        <test-method status="PASS" signature="loginSuccessTest()[pri:1, instance:test.AllTests@55d56113]" name="loginSuccessTest" duration-ms="422" started-at="2021-06-24T16:14:30 EDT" finished-at="2021-06-24T16:14:31 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccessTest -->
-        <test-method status="PASS" signature="loginFailureTest()[pri:2, instance:test.AllTests@55d56113]" name="loginFailureTest" duration-ms="363" started-at="2021-06-24T15:08:35 EDT" finished-at="2021-06-24T15:08:36 EDT">
+        <test-method status="PASS" signature="loginFailureTest()[pri:2, instance:test.AllTests@55d56113]" name="loginFailureTest" duration-ms="347" started-at="2021-06-24T16:14:31 EDT" finished-at="2021-06-24T16:14:31 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFailureTest -->
-        <test-method status="PASS" signature="checkBox1Test()[pri:3, instance:test.AllTests@55d56113]" name="checkBox1Test" duration-ms="159" started-at="2021-06-24T15:08:36 EDT" finished-at="2021-06-24T15:08:36 EDT">
+        <test-method status="PASS" signature="checkBox1Test()[pri:3, instance:test.AllTests@55d56113]" name="checkBox1Test" duration-ms="158" started-at="2021-06-24T16:14:31 EDT" finished-at="2021-06-24T16:14:31 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox1Test -->
-        <test-method status="PASS" signature="checkBox2Test()[pri:4, instance:test.AllTests@55d56113]" name="checkBox2Test" duration-ms="92" started-at="2021-06-24T15:08:36 EDT" finished-at="2021-06-24T15:08:36 EDT">
+        <test-method status="PASS" signature="checkBox2Test()[pri:4, instance:test.AllTests@55d56113]" name="checkBox2Test" duration-ms="92" started-at="2021-06-24T16:14:31 EDT" finished-at="2021-06-24T16:14:31 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox2Test -->
-        <test-method status="PASS" signature="contextMenuTest()[pri:5, instance:test.AllTests@55d56113]" name="contextMenuTest" duration-ms="206" started-at="2021-06-24T15:08:36 EDT" finished-at="2021-06-24T15:08:36 EDT">
+        <test-method status="PASS" signature="contextMenuTest()[pri:5, instance:test.AllTests@55d56113]" name="contextMenuTest" duration-ms="203" started-at="2021-06-24T16:14:31 EDT" finished-at="2021-06-24T16:14:32 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contextMenuTest -->
-        <test-method status="FAIL" signature="DragAndDropTest()[pri:6, instance:test.AllTests@55d56113]" name="DragAndDropTest" duration-ms="17" started-at="2021-06-24T15:08:36 EDT" finished-at="2021-06-24T15:08:36 EDT">
+        <test-method status="FAIL" signature="DragAndDropTest()[pri:6, instance:test.AllTests@55d56113]" name="DragAndDropTest" duration-ms="17" started-at="2021-06-24T16:14:32 EDT" finished-at="2021-06-24T16:14:32 EDT">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
               <![CDATA[unexpected alert open: {Alert text : You selected a context menu}
@@ -39,8 +39,8 @@
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-MLGRIG', ip: '192.168.50.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir41832_3392...}, goog:chromeOptions: {debuggerAddress: localhost:53200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 332757de2ad4555644dbb07186ac63d0]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir41564_9714...}, goog:chromeOptions: {debuggerAddress: localhost:63949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04aa6465d970e9901862252cf7254a7d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You selected a context menu}
@@ -48,8 +48,8 @@ Session ID: 332757de2ad4555644dbb07186ac63d0]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-MLGRIG', ip: '192.168.50.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir41832_3392...}, goog:chromeOptions: {debuggerAddress: localhost:53200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 332757de2ad4555644dbb07186ac63d0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir41564_9714...}, goog:chromeOptions: {debuggerAddress: localhost:63949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04aa6465d970e9901862252cf7254a7d
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
@@ -94,59 +94,59 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DragAndDropTest -->
-        <test-method status="PASS" signature="option2Test()[pri:7, instance:test.AllTests@55d56113]" name="option2Test" duration-ms="215" started-at="2021-06-24T15:08:36 EDT" finished-at="2021-06-24T15:08:36 EDT">
+        <test-method status="PASS" signature="option2Test()[pri:7, instance:test.AllTests@55d56113]" name="option2Test" duration-ms="223" started-at="2021-06-24T16:14:32 EDT" finished-at="2021-06-24T16:14:32 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- option2Test -->
-        <test-method status="PASS" signature="option1Test()[pri:8, instance:test.AllTests@55d56113]" name="option1Test" duration-ms="130" started-at="2021-06-24T15:08:36 EDT" finished-at="2021-06-24T15:08:36 EDT">
+        <test-method status="PASS" signature="option1Test()[pri:8, instance:test.AllTests@55d56113]" name="option1Test" duration-ms="109" started-at="2021-06-24T16:14:32 EDT" finished-at="2021-06-24T16:14:32 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- option1Test -->
-        <test-method status="PASS" signature="dynamicContentTest()[pri:9, instance:test.AllTests@55d56113]" name="dynamicContentTest" duration-ms="396" started-at="2021-06-24T15:08:36 EDT" finished-at="2021-06-24T15:08:37 EDT">
+        <test-method status="PASS" signature="dynamicContentTest()[pri:9, instance:test.AllTests@55d56113]" name="dynamicContentTest" duration-ms="410" started-at="2021-06-24T16:14:32 EDT" finished-at="2021-06-24T16:14:32 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dynamicContentTest -->
-        <test-method status="PASS" signature="DynamicControlsTest()[pri:10, instance:test.AllTests@55d56113]" name="DynamicControlsTest" duration-ms="12689" started-at="2021-06-24T15:08:37 EDT" finished-at="2021-06-24T15:08:49 EDT">
+        <test-method status="PASS" signature="DynamicControlsTest()[pri:10, instance:test.AllTests@55d56113]" name="DynamicControlsTest" duration-ms="12686" started-at="2021-06-24T16:14:32 EDT" finished-at="2021-06-24T16:14:45 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DynamicControlsTest -->
-        <test-method status="PASS" signature="dynamicLoading()[pri:11, instance:test.AllTests@55d56113]" name="dynamicLoading" duration-ms="11064" started-at="2021-06-24T15:08:49 EDT" finished-at="2021-06-24T15:09:01 EDT">
+        <test-method status="PASS" signature="dynamicLoading()[pri:11, instance:test.AllTests@55d56113]" name="dynamicLoading" duration-ms="11084" started-at="2021-06-24T16:14:45 EDT" finished-at="2021-06-24T16:14:56 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dynamicLoading -->
-        <test-method status="PASS" signature="fileUploadTest()[pri:12, instance:test.AllTests@55d56113]" name="fileUploadTest" duration-ms="307" started-at="2021-06-24T15:09:01 EDT" finished-at="2021-06-24T15:09:01 EDT">
+        <test-method status="PASS" signature="fileUploadTest()[pri:12, instance:test.AllTests@55d56113]" name="fileUploadTest" duration-ms="328" started-at="2021-06-24T16:14:56 EDT" finished-at="2021-06-24T16:14:56 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileUploadTest -->
-        <test-method status="PASS" signature="floatingMenuTest()[pri:13, instance:test.AllTests@55d56113]" name="floatingMenuTest" duration-ms="163" started-at="2021-06-24T15:09:01 EDT" finished-at="2021-06-24T15:09:01 EDT">
+        <test-method status="PASS" signature="floatingMenuTest()[pri:13, instance:test.AllTests@55d56113]" name="floatingMenuTest" duration-ms="147" started-at="2021-06-24T16:14:56 EDT" finished-at="2021-06-24T16:14:57 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- floatingMenuTest -->
-        <test-method status="PASS" signature="iframeTest()[pri:14, instance:test.AllTests@55d56113]" name="iframeTest" duration-ms="31088" started-at="2021-06-24T15:09:01 EDT" finished-at="2021-06-24T15:09:32 EDT">
+        <test-method status="PASS" signature="iframeTest()[pri:14, instance:test.AllTests@55d56113]" name="iframeTest" duration-ms="31084" started-at="2021-06-24T16:14:57 EDT" finished-at="2021-06-24T16:15:28 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iframeTest -->
-        <test-method status="PASS" signature="javaScriptAlertsTest()[pri:15, instance:test.AllTests@55d56113]" name="javaScriptAlertsTest" duration-ms="308" started-at="2021-06-24T15:09:32 EDT" finished-at="2021-06-24T15:09:32 EDT">
+        <test-method status="PASS" signature="javaScriptAlertsTest()[pri:15, instance:test.AllTests@55d56113]" name="javaScriptAlertsTest" duration-ms="323" started-at="2021-06-24T16:15:28 EDT" finished-at="2021-06-24T16:15:28 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- javaScriptAlertsTest -->
-        <test-method status="PASS" signature="javaScriptErrorTest()[pri:16, instance:test.AllTests@55d56113]" name="javaScriptErrorTest" duration-ms="62" started-at="2021-06-24T15:09:32 EDT" finished-at="2021-06-24T15:09:32 EDT">
+        <test-method status="PASS" signature="javaScriptErrorTest()[pri:16, instance:test.AllTests@55d56113]" name="javaScriptErrorTest" duration-ms="61" started-at="2021-06-24T16:15:28 EDT" finished-at="2021-06-24T16:15:28 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- javaScriptErrorTest -->
-        <test-method status="PASS" signature="mouseOverTest()[pri:17, instance:test.AllTests@55d56113]" name="mouseOverTest" duration-ms="616" started-at="2021-06-24T15:09:32 EDT" finished-at="2021-06-24T15:09:33 EDT">
+        <test-method status="PASS" signature="mouseOverTest()[pri:17, instance:test.AllTests@55d56113]" name="mouseOverTest" duration-ms="650" started-at="2021-06-24T16:15:28 EDT" finished-at="2021-06-24T16:15:29 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseOverTest -->
-        <test-method status="PASS" signature="newTabTest()[pri:18, instance:test.AllTests@55d56113]" name="newTabTest" duration-ms="206" started-at="2021-06-24T15:09:33 EDT" finished-at="2021-06-24T15:09:33 EDT">
+        <test-method status="PASS" signature="newTabTest()[pri:18, instance:test.AllTests@55d56113]" name="newTabTest" duration-ms="234" started-at="2021-06-24T16:15:29 EDT" finished-at="2021-06-24T16:15:29 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newTabTest -->
-        <test-method status="PASS" signature="notificationMsgTest()[pri:19, instance:test.AllTests@55d56113]" name="notificationMsgTest" duration-ms="2759" started-at="2021-06-24T15:09:33 EDT" finished-at="2021-06-24T15:09:36 EDT">
+        <test-method status="PASS" signature="notificationMsgTest()[pri:19, instance:test.AllTests@55d56113]" name="notificationMsgTest" duration-ms="2885" started-at="2021-06-24T16:15:29 EDT" finished-at="2021-06-24T16:15:32 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- notificationMsgTest -->
-        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:test.AllTests@55d56113]" name="afterAllTests" is-config="true" duration-ms="18" started-at="2021-06-24T15:09:36 EDT" finished-at="2021-06-24T15:09:36 EDT">
+        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:test.AllTests@55d56113]" name="afterAllTests" is-config="true" duration-ms="16" started-at="2021-06-24T16:15:32 EDT" finished-at="2021-06-24T16:15:32 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTests -->

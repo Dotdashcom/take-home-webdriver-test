@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="18" total="19" passed="1">
+<testng-results skipped="0" failed="0" ignored="17" total="18" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2734" started-at="2021-06-24T15:07:02 EDT" finished-at="2021-06-24T15:07:04 EDT">
+  <suite name="Default suite" duration-ms="2606" started-at="2021-06-24T16:09:31 EDT" finished-at="2021-06-24T16:09:33 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2734" started-at="2021-06-24T15:07:02 EDT" finished-at="2021-06-24T15:07:04 EDT">
+    <test name="Default test" duration-ms="2606" started-at="2021-06-24T16:09:31 EDT" finished-at="2021-06-24T16:09:33 EDT">
       <class name="test.AllTests">
-        <test-method status="PASS" signature="beforeAllTests()[pri:0, instance:test.AllTests@1a3869f4]" name="beforeAllTests" is-config="true" duration-ms="2242" started-at="2021-06-24T15:07:02 EDT" finished-at="2021-06-24T15:07:04 EDT">
+        <test-method status="PASS" signature="beforeAllTests()[pri:0, instance:test.AllTests@1a3869f4]" name="beforeAllTests" is-config="true" duration-ms="2278" started-at="2021-06-24T16:09:31 EDT" finished-at="2021-06-24T16:09:33 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeAllTests -->
-        <test-method status="PASS" signature="loginFailureTest()[pri:2, instance:test.AllTests@1a3869f4]" name="loginFailureTest" duration-ms="382" started-at="2021-06-24T15:07:04 EDT" finished-at="2021-06-24T15:07:04 EDT">
+        <test-method status="PASS" signature="option2Test()[pri:7, instance:test.AllTests@1a3869f4]" name="option2Test" duration-ms="244" started-at="2021-06-24T16:09:33 EDT" finished-at="2021-06-24T16:09:33 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFailureTest -->
-        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:test.AllTests@1a3869f4]" name="afterAllTests" is-config="true" duration-ms="75" started-at="2021-06-24T15:07:04 EDT" finished-at="2021-06-24T15:07:04 EDT">
+        </test-method> <!-- option2Test -->
+        <test-method status="PASS" signature="afterAllTests()[pri:0, instance:test.AllTests@1a3869f4]" name="afterAllTests" is-config="true" duration-ms="49" started-at="2021-06-24T16:09:33 EDT" finished-at="2021-06-24T16:09:33 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTests -->

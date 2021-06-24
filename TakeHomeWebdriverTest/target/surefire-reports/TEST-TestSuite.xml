@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="61.261" tests="19" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="61.474" tests="19" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\abdul\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7030542045344088379.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\abdul\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6125593832553783081.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_261\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/abdul/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;C:/Users/abdul/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\abdul\AppData\Local\Microsoft\WindowsApps;C:\Users\abdul\AppData\Local\GitHubDesktop\bin;D:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,19 +60,19 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="loginSuccessTest" classname="test.AllTests" time="0.412"/>
-  <testcase name="loginFailureTest" classname="test.AllTests" time="0.363"/>
+  <testcase name="loginSuccessTest" classname="test.AllTests" time="0.423"/>
+  <testcase name="loginFailureTest" classname="test.AllTests" time="0.347"/>
   <testcase name="checkBox1Test" classname="test.AllTests" time="0.159"/>
   <testcase name="checkBox2Test" classname="test.AllTests" time="0.092"/>
-  <testcase name="contextMenuTest" classname="test.AllTests" time="0.205"/>
-  <testcase name="DragAndDropTest" classname="test.AllTests" time="0.027">
-    <failure message="unexpected alert open: {Alert text : You selected a context menu}&#10;  (Session info: chrome=91.0.4472.114): You selected a context menu&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-MLGRIG&apos;, ip: &apos;192.168.50.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir41832_3392...}, goog:chromeOptions: {debuggerAddress: localhost:53200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 332757de2ad4555644dbb07186ac63d0" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You selected a context menu}
+  <testcase name="contextMenuTest" classname="test.AllTests" time="0.204"/>
+  <testcase name="DragAndDropTest" classname="test.AllTests" time="0.024">
+    <failure message="unexpected alert open: {Alert text : You selected a context menu}&#10;  (Session info: chrome=91.0.4472.114): You selected a context menu&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-MLGRIG&apos;, ip: &apos;192.168.50.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir41564_9714...}, goog:chromeOptions: {debuggerAddress: localhost:63949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 04aa6465d970e9901862252cf7254a7d" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You selected a context menu}
   (Session info: chrome=91.0.4472.114): You selected a context menu
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-MLGRIG', ip: '192.168.50.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir41832_3392...}, goog:chromeOptions: {debuggerAddress: localhost:53200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 332757de2ad4555644dbb07186ac63d0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: D:\TMP\scoped_dir41564_9714...}, goog:chromeOptions: {debuggerAddress: localhost:63949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04aa6465d970e9901862252cf7254a7d
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
@@ -82,17 +82,17 @@ Session ID: 332757de2ad4555644dbb07186ac63d0
 	at test.AllTests.DragAndDropTest(AllTests.java:98)
 </failure>
   </testcase>
-  <testcase name="option2Test" classname="test.AllTests" time="0.214"/>
-  <testcase name="option1Test" classname="test.AllTests" time="0.13"/>
-  <testcase name="dynamicContentTest" classname="test.AllTests" time="0.396"/>
-  <testcase name="DynamicControlsTest" classname="test.AllTests" time="12.689"/>
-  <testcase name="dynamicLoading" classname="test.AllTests" time="11.064"/>
-  <testcase name="fileUploadTest" classname="test.AllTests" time="0.308"/>
-  <testcase name="floatingMenuTest" classname="test.AllTests" time="0.164"/>
-  <testcase name="iframeTest" classname="test.AllTests" time="31.088"/>
-  <testcase name="javaScriptAlertsTest" classname="test.AllTests" time="0.307"/>
-  <testcase name="javaScriptErrorTest" classname="test.AllTests" time="0.062"/>
-  <testcase name="mouseOverTest" classname="test.AllTests" time="0.616"/>
-  <testcase name="newTabTest" classname="test.AllTests" time="0.206"/>
-  <testcase name="notificationMsgTest" classname="test.AllTests" time="2.759"/>
+  <testcase name="option2Test" classname="test.AllTests" time="0.223"/>
+  <testcase name="option1Test" classname="test.AllTests" time="0.11"/>
+  <testcase name="dynamicContentTest" classname="test.AllTests" time="0.41"/>
+  <testcase name="DynamicControlsTest" classname="test.AllTests" time="12.686"/>
+  <testcase name="dynamicLoading" classname="test.AllTests" time="11.084"/>
+  <testcase name="fileUploadTest" classname="test.AllTests" time="0.329"/>
+  <testcase name="floatingMenuTest" classname="test.AllTests" time="0.147"/>
+  <testcase name="iframeTest" classname="test.AllTests" time="31.084"/>
+  <testcase name="javaScriptAlertsTest" classname="test.AllTests" time="0.323"/>
+  <testcase name="javaScriptErrorTest" classname="test.AllTests" time="0.061"/>
+  <testcase name="mouseOverTest" classname="test.AllTests" time="0.65"/>
+  <testcase name="newTabTest" classname="test.AllTests" time="0.233"/>
+  <testcase name="notificationMsgTest" classname="test.AllTests" time="2.885"/>
 </testsuite>

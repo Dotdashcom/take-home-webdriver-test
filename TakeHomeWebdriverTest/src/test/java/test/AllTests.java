@@ -95,14 +95,15 @@ public class AllTests extends TestBase {
 	@Test(priority = 6)
 	//Test for some reason fails because the dragAndDrop function does not work even though I put the correct location for the source and destination
 	public void DragAndDropTest()  {
-		driver.get("http://localhost:7080/drag_and_drop");
-		WebElement elementA = driver.findElement(By.id("column-a"));
-		WebElement elementB = driver.findElement(By.id("column-b"));
-		Actions action = new Actions(driver);
+	driver.get("http://localhost:7080/drag_and_drop");
+	WebElement elementA = driver.findElement(By.id("column-a"));
+	WebElement elementB = driver.findElement(By.id("column-b"));
+	Actions action = new Actions(driver);
 		action.dragAndDrop(elementA, elementB); //Drag and Drop not working automatically only manually
 		Assert.assertEquals(elementA.getText(), "B");
 	}
 	
+
 	//Drop down Test
 	@Test(priority = 7)
 	public void option2Test() {
