@@ -8,6 +8,8 @@ Please change the chrome driver file path to yours in testBase/TestBase.java in 
 
 I was not able to get the Drag and Drop test to work using automation. Even though I put the correct source and destination the elements would not get switched.
 
+In AllTests.java for the fileUploadTest please change the file path for test.txt which is in the resources pack to its file path on your computer then the test will pass.
+
 FIX: I think the reason the build was failing was because the file path in the pom.xml for the suiteXmlFile was specified to my computer so I changed it to src\test\java\resources\THWDTtestng.xml. I tested it on my other computer and maven install worked. I think it should work now if you do maven install. 
 
 FIX: I only had enough time to make one Page Object for the Login Page which is used in the Login Success and Login Failure Tests. 
