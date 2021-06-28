@@ -27,7 +27,7 @@ public class openInNewTabTest {
     @AfterMethod
     public void tearDown() throws InterruptedException {
         Thread.sleep(1000);
-        Driver.getDriver().close();
+        Driver.getDriver().quit();
     }
 
     @Test

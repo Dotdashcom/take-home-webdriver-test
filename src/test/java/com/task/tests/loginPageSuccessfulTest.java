@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class loginPageTest {
+public class loginPageSuccessfulTest {
 
     loginPage loginPage = new loginPage();
 
@@ -34,17 +34,6 @@ public class loginPageTest {
         loginPage.loginButton.click();
 
         String actual = "You logged into a secure area!\n" + "×";
-
-        Assert.assertEquals( actual , loginPage.expectedMessage.getText() );
-    }
-
-    @Test
-    public void loginPageTestUnSuccesful (){
-        loginPage.userName.sendKeys(ConfigurationReader.getPropery("wrongusername"));
-        loginPage.password.sendKeys(ConfigurationReader.getPropery("wrongpassword"));
-        loginPage.loginButton.click();
-
-        String actual = "Your username is invalid!\n" + "×";
 
         Assert.assertEquals( actual , loginPage.expectedMessage.getText() );
     }
