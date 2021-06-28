@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebDriverTests">
+
+    <test name="WebDriver Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+           <class name="com.welcomeToTheInternet.TestCases.LoginTest_1"/>
+            <class name="com.welcomeToTheInternet.TestCases.LoginTest_2"/>
+            <class name="com.welcomeToTheInternet.TestCases.CheckboxTest_3"/>
+            <class name="com.welcomeToTheInternet.TestCases.ContextMenuTest_4"/>
+            <class name="com.welcomeToTheInternet.TestCases.DragAndDropTest_5"/>
+            <class name="com.welcomeToTheInternet.TestCases.DropdownTest_6"/>
+            <class name="com.welcomeToTheInternet.TestCases.DynamicContentTest_7"/>
+            <class name="com.welcomeToTheInternet.TestCases.DynamicControlTest_8"/>
+            <class name="com.welcomeToTheInternet.TestCases.DynamicLoadingTest_9"/>
+            <class name="com.welcomeToTheInternet.TestCases.FileDownloadTest_10"/>
+            <class name="com.welcomeToTheInternet.TestCases.FileUploadTest_11"/>
+            <class name="com.welcomeToTheInternet.TestCases.FloatingMenuTest_12"/>
+            <class name="com.welcomeToTheInternet.TestCases.IFrameTest_13"/>
+            <class name="com.welcomeToTheInternet.TestCases.MouseHoverTest_14"/>
+            <class name="com.welcomeToTheInternet.TestCases.JsAlertTest_15"/>
+            <class name="com.welcomeToTheInternet.TestCases.JsErrorTest_16"/>
+            <class name="com.welcomeToTheInternet.TestCases.MultipleWindowsTest_17"/>
+            <class name="com.welcomeToTheInternet.TestCases.NotificationMessageTest_18"/>
+
+        </classes>
+    </test>
+</suite>
