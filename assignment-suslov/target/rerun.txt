@@ -1,0 +1,16 @@
+file:src/test/resources/features/NotificationMessage.feature:4
+file:src/test/resources/features/OpenNewTab.feature:4
+file:src/test/resources/features/FloatingMenu.feature:3
+file:src/test/resources/features/DynamicContent.feature:4
+file:src/test/resources/features/FileUpload.feature:4
+file:src/test/resources/features/FileDownload.feature:4
+file:src/test/resources/features/JavaScriptAlerts.feature:3
+file:src/test/resources/features/JavaScriptError.feature:3
+file:src/test/resources/features/ContextMenu.feature:8
+file:src/test/resources/features/IFrame.feature:3
+file:src/test/resources/features/MouseHover.feature:3
+file:src/test/resources/features/DragAndDrop.feature:4
+file:src/test/resources/features/Login.feature:9:15
+file:src/test/resources/features/DynamicLoading.feature:4
+file:src/test/resources/features/DynamicControls.feature:7:14
+file:src/test/resources/features/Dropdown.feature:4

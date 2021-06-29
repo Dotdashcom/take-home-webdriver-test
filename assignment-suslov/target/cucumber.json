@@ -1,0 +1,3531 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User is already in checkbox page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 220553000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 254000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the checkbox page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.CheckboxStepDefs.user_is_on_the_checkbox_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 263000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T03:53:12.211Z",
+        "before": [
+          {
+            "result": {
+              "duration": 971321000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "click the checkbox1",
+        "description": "",
+        "id": "checkbox-feature;click-the-checkbox1",
+        "after": [
+          {
+            "result": {
+              "duration": 78302000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 78609000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 179000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "user click the checkbox1",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.CheckboxStepDefs.user_click_the_checkbox1()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 135000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12983000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 379000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "checkbox1 is selected",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.CheckboxStepDefs.checkbox1_is_selected()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 129000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User is already in checkbox page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 265020000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 144000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the checkbox page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.CheckboxStepDefs.user_is_on_the_checkbox_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 787000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T03:53:13.657Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9716727000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "click the checkbox2",
+        "description": "",
+        "id": "checkbox-feature;click-the-checkbox2",
+        "after": [
+          {
+            "result": {
+              "duration": 59827000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 52314000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 777000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "user click the checkbox2",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.CheckboxStepDefs.user_click_the_checkbox2()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 99000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7476000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 84000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "checkbox2 is selected",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.CheckboxStepDefs.checkbox2_is_selected()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 112000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "checkBox feature",
+    "description": "  Test checks and unchecks checkboxes.\n  Test uses assertions to make sure boxes were properly checked and unchecked.",
+    "id": "checkbox-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Checkboxes.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User is already in Context Menu page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 178752000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 105000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user is on the Context Menu page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.ContextBoxStepDefs.user_is_on_the_context_menu_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 223000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T03:53:23.774Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9766175000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Test right clicks on the context menu.",
+        "description": "Test asserts the alert menu text.",
+        "id": "context-menu;test-right-clicks-on-the-context-menu.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 8298000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\n\tat com.new_york_remote.step_definitions.ContextBoxStepDefs.user_do_the_right_clicks(ContextBoxStepDefs.java:28)\n\tat ✽.user do the right clicks(file:///Users/andreisuslov/Downloads/assignment-suslov/src/test/resources/features/ContextMenu.feature:11)\n",
+              "duration": 55428484000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 180000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "user do the right clicks",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.ContextBoxStepDefs.user_do_the_right_clicks()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 192000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 113000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Alert popped up",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.ContextBoxStepDefs.alert_popped_up()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 159000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Context Menu",
+    "description": "",
+    "id": "context-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ContextMenu.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.189Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 6187000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Test drags element A to element B.",
+        "description": "  Test asserts that the text on element A and B are switched.",
+        "id": "drag-and-drop;test-drags-element-a-to-element-b.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 5787000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 88000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 155000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user is on the drag and drop page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DragAndDropStepDefs.user_is_on_the_drag_and_drop_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 369000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 130000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 149000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user drag A to drop B",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DragAndDropStepDefs.user_drag_a_to_drop_b()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 73000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 80000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "A and B is switched",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DragAndDropStepDefs.a_and_b_is_switched()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 76000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Drag and Drop",
+    "description": "",
+    "id": "drag-and-drop",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DragAndDrop.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.235Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 6359000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "",
+        "description": "  Test selects Option 1 and Option 2 from the drop down menu.\n  Test asserts Option 1 and Option 2 are selected.",
+        "id": "dropdown-feature;",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 5598000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 80000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 87000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the DropDown page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DropdownStepDefs.user_is_on_the_drop_down_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 64000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 61000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user select Option1 and Option2",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DropdownStepDefs.user_select_option1_and_option2()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 62000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 182000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "Option1 and Option2 is selected",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DropdownStepDefs.option1_and_option2_is_selected()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 131000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Dropdown feature",
+    "description": "",
+    "id": "dropdown-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Dropdown.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.273Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 4861000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Test refreshes the page a couple of times.",
+        "description": "  Test asserts that the content changes on each refresh.",
+        "id": "dynamic-content;test-refreshes-the-page-a-couple-of-times.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 3769000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 75000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 71000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user is on the Dynamic content page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicContentStepDefs.user_is_on_the_dynamic_content_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 104000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 64000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user clicks on the click here for  Dynamic content  changes",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicContentStepDefs.user_clicks_on_the_click_here_for_dynamic_content_changes()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 57000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 61000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "content changes on each refresh",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicContentStepDefs.content_changes_on_each_refresh()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 34000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Dynamic Content",
+    "description": "",
+    "id": "dynamic-content",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DynamicContent.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 50000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 83000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user is on the Dynamic Controls page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.user_is_on_the_dynamic_controls_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 31000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T03:54:29.305Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 4980000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "As user click on the Remove/add button either of one is presented",
+        "description": "",
+        "id": "dynamic-controls;as-user-click-on-the-remove/add-button-either-of-one-is-presented",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 4758000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 76000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 51000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "Test clicks on the Remove Button and uses explicit wait.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.test_clicks_on_the_remove_button_and_uses_explicit_wait()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 67000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 49000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "Test asserts that the checkbox is gone.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.test_asserts_that_the_checkbox_is_gone()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 51000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 107000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 46000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "Test clicks on Add Button and uses explicit wait.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.test_clicks_on_add_button_and_uses_explicit_wait()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 33000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 29000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Test asserts that the checkbox is present.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.test_asserts_that_the_checkbox_is_present()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 27000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 39000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 59000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user is on the Dynamic Controls page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.user_is_on_the_dynamic_controls_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 39000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T03:54:29.329Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 4449000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "As user click on the Enable button user will see the text either it\u0027s enabled or disabled",
+        "description": "",
+        "id": "dynamic-controls;as-user-click-on-the-enable-button-user-will-see-the-text-either-it-s-enabled-or-disabled",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 3794000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 130000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 31000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Test clicks on the Enable Button and uses explicit wait.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.test_clicks_on_the_enable_button_and_uses_explicit_wait()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 55000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 39000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "Test asserts that the text box is enabled.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.test_asserts_that_the_text_box_is_enabled()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 114000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 47000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "Test clicks on the Disable Button and uses explicit wait.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.test_clicks_on_the_disable_button_and_uses_explicit_wait()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 32000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 27000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "Test asserts that the text box is disabled.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicControlStepDefs.test_asserts_that_the_text_box_is_disabled()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 89000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Dynamic Controls",
+    "description": "",
+    "id": "dynamic-controls",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DynamicControls.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.347Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 3744000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "",
+        "description": "",
+        "id": "dynamic-loading;",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 3276000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 37000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user is on the dynamic loading page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicLoadingStepDefs.user_is_on_the_dynamic_loading_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 30000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 24000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user clicks the start button and uses explicit wait.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicLoadingStepDefs.user_clicks_the_start_button_and_uses_explicit_wait()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 24000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 23000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "asserts that “Hello World!” text is displayed.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.DynamicLoadingStepDefs.asserts_that_hello_world_text_is_displayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 28000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Dynamic Loading",
+    "description": "",
+    "id": "dynamic-loading",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DynamicLoading.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.361Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 3633000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Test clicks on the file.",
+        "description": "  Test asserts that the file is downloaded.",
+        "id": "file-download;test-clicks-on-the-file.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 5493000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 45000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user is on the file download page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FileDownloadStepDefs.user_is_on_the_file_download_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 25000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 22000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user click the some-file.txt",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FileDownloadStepDefs.user_click_the_some_file_txt()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 23000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 23000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "it is downloaded",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FileDownloadStepDefs.it_is_downloaded()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 25000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "File Download",
+    "description": "",
+    "id": "file-download",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FileDownload.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.381Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 6136000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Test uses Upload Button or Drag and Drop to upload a file.",
+        "description": "  Test asserts that the file is uploaded.",
+        "id": "file-upload;test-uses-upload-button-or-drag-and-drop-to-upload-a-file.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 5542000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 63000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the file upload page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FileUploadStepDefs.user_is_on_the_file_upload_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 65000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 38000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user click chooseFIle button and select file",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FileUploadStepDefs.user_click_choose_f_ile_button_and_select_file()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 39000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 73000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "click the upload button",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FileUploadStepDefs.click_the_upload_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 42000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 209000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 53000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user will see File is Uploaded!",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FileUploadStepDefs.user_will_see_file_is_uploaded()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 49000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "File Upload",
+    "description": "",
+    "id": "file-upload",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FileUpload.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.406Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 4979000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Test scrolls the page.",
+        "description": "  Test asserts that the floating menu is still displayed.",
+        "id": "floating-menu;test-scrolls-the-page.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 5912000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 72000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user is on the Floating Menu page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FloatingMenuStepDefs.user_is_on_the_floating_menu_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 48000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 45000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user scrolls the page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FloatingMenuStepDefs.user_scrolls_the_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 42000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 43000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "the floating menu is still displayed",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.FloatingMenuStepDefs.the_floating_menu_is_still_displayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 42000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Floating Menu",
+    "description": "",
+    "id": "floating-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FloatingMenu.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.428Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 4808000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Test switches to Iframe and types some text.",
+        "description": "  Test asserts that the typed text is as expected.",
+        "id": "iframe;test-switches-to-iframe-and-types-some-text.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 3722000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 108000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 61000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user is on the iframe page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.IFrameStepDefs.user_is_on_the_iframe_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 83000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 117000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user type in the iframe text box",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.IFrameStepDefs.user_type_in_the_iframe_text_box()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 35000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 31000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "the typed text is as expected",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.IFrameStepDefs.the_typed_text_is_as_expected()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 32000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Iframe",
+    "description": "",
+    "id": "iframe",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/IFrame.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.448Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 5061000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Test Clicks on JS Alert Button.",
+        "description": "  Test asserts alert message.\n  Test clicks on JS confirm Button and clicks ok on alert.\n  Test asserts the alert message.\n  Test clicks on JS Prompt Button and types a message on Prompt.\n  Test asserts that the alert message contains the typed message.",
+        "id": "javascript-alerts;test-clicks-on-js-alert-button.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 5807000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 43000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "user is on the alert page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.JSAlertStepDefs.user_is_on_the_alert_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 36000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 26000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user clicks on JS Alert Button alert message displayed",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.JSAlertStepDefs.user_clicks_on_js_alert_button_alert_message_displayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 27000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 25000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "user clicks on JS confirm Button and clicks ok on alert",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.JSAlertStepDefs.user_clicks_on_js_confirm_button_and_clicks_ok_on_alert()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 26000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 83000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "new alert message is displayed",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.JSAlertStepDefs.new_alert_message_is_displayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 31000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 27000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "user clicks on JS Prompt Button and types a message on Prompt",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.JSAlertStepDefs.user_clicks_on_js_prompt_button_and_types_a_message_on_prompt()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 27000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 26000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "the alert message contains the typed message",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.JSAlertStepDefs.the_alert_message_contains_the_typed_message()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 27000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "JavaScript Alerts",
+    "description": "",
+    "id": "javascript-alerts",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/JavaScriptAlerts.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.470Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 4141000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Test finds the JavaScript error on the page.",
+        "description": "  Test asserts that the page contains error: Cannot read property \u0027xyz\u0027 of undefined.",
+        "id": "javascript-error;test-finds-the-javascript-error-on-the-page.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 5059000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 93000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 58000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user is on the JavaScript Error page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.JavaScriptError_stepDefinition.user_is_on_the_java_script_error_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 54000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 69000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "asserts that the page contains error",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.JavaScriptError_stepDefinition.asserts_that_the_page_contains_error()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 34000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "JavaScript Error",
+    "description": "",
+    "id": "javascript-error",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/JavaScriptError.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User is already in login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 36000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 37000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 25000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T03:54:29.516Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 4292000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Login with correct credential",
+        "description": "",
+        "id": "login--feature;login-with-correct-credential",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 3926000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 31000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user enters correct username",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 60000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 26000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "user enter correct password",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 26000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 107000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "logged in successfully",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 24000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User is already in login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 166000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 218000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 90000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T03:54:29.536Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 11499000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login with wrong credential",
+        "description": "",
+        "id": "login--feature;login-with-wrong-credential",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 4892000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 37000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "user enters wrong username",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 42000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 79000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "user enter wrong password",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 42000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 47000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "failed login",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 127000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login  feature",
+    "description": "  As a user, I should be able to login with correct credential\n  As a user, I should fail to log in with wrong credential",
+    "id": "login--feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.568Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 5046000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Test does a mouse hover on each image.",
+        "description": "  Test asserts that additional information is displayed for each image.",
+        "id": "mouse-hover;test-does-a-mouse-hover-on-each-image.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 4985000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 43000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 53000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user is on the Mouse Hover page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.MouseHoverOverStepDefs.user_is_on_the_mouse_hover_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 72000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 44000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 80000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "mouse hover on each image",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.MouseHoverOverStepDefs.mouse_hover_on_each_image()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 36000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 64000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "additional information is displayed for each image.",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.MouseHoverOverStepDefs.additional_information_is_displayed_for_each_image()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 53000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Mouse Hover",
+    "description": "",
+    "id": "mouse-hover",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/MouseHover.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.589Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 4531000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Test clicks on the Click Here link a multiple times.",
+        "description": "  Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again”\n  and “Action Unsuccessful” messages show on click.",
+        "id": "notification-message;test-clicks-on-the-click-here-link-a-multiple-times.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 4317000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 47000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 57000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the Notification Message Page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.NotificationMessageStepDefs.user_is_on_the_notification_message_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 32000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 73000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 32000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user clicks on the Click Here link a multiple times",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.NotificationMessageStepDefs.user_clicks_on_the_click_here_link_a_multiple_times()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 45000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 86000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "asserts that one of the “Action Successful”, “Action unsuccessful, please try again”and “Action Unsuccessful” messages show on click",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.NotificationMessageStepDefs.asserts_that_one_of_the_action_successful_action_unsuccessful_please_try_again_and_action_unsuccessful_messages_show_on_click()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 53000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Notification Message",
+    "description": "",
+    "id": "notification-message",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/NotificationMessage.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T03:54:29.608Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.setUpScenario(Hooks.java:15)\n",
+              "duration": 4881000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Test clicks on the Click Here link.",
+        "description": "  Test asserts that a new tab is opened with text New Window.",
+        "id": "open-in-new-tab;test-clicks-on-the-click-here-link.",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SKYNET.local\u0027, ip: \u0027192.168.0.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.2\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: AFA5A796-613D-4872-833D-B4A9A62EC826\n\tat jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat com.new_york_remote.utilities.Driver.getDriver(Driver.java:57)\n\tat com.new_york_remote.step_definitions.Hooks.tearDownScenario(Hooks.java:24)\n",
+              "duration": 3813000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.new_york_remote.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 50000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 62000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user is on the Open in new Tap page",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.NewTabStepDefs.user_is_on_the_open_in_new_tap_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 53000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 46000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 41000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user clicks on the Click Here link",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.NewTabStepDefs.user_clicks_on_the_click_here_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 53000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 58000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runBeforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "asserts that a new tab is opened with text New Window",
+            "match": {
+              "location": "com.new_york_remote.step_definitions.NewTabStepDefs.asserts_that_a_new_tab_is_opened_with_text_new_window()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 34000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.new_york_remote.step_definitions.Hooks.runAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Open in New Tab",
+    "description": "",
+    "id": "open-in-new-tab",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/OpenNewTab.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
