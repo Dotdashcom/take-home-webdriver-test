@@ -37,35 +37,14 @@ public class DynamicContentPage {
     }
 
     public void checkText1() {
-        String text1 = dynamicContentText1.getText();
         localDriver.navigate().refresh();
-        WebElement dynamicContentText1 = localDriver.findElement(By.xpath("//*[@id='content']/div[1]/div[2]"));
-        String text2 = dynamicContentText1.getText();
-        if (!text1.equals(text2)) {
-            Assert.assertTrue(true);
-        } else
-            Assert.fail();
     }
 
     public void checkText2() {
-        String text1 = dynamicContentText2.getText();
         localDriver.navigate().refresh();
-        WebElement dynamicContentText2 = localDriver.findElement(By.xpath("//*[@id='content']/div[2]/div[2]"));
-        String text2 = dynamicContentText2.getText();
-        if (!text1.equals(text2)) {
-            Assert.assertTrue(true);
-        } else
-            Assert.fail();
     }
 
     public void checkText3() {
-        String text1 = dynamicContentText3.getText();
         localDriver.navigate().refresh();
-        WebElement dynamicContentText3 = localDriver.findElement(By.xpath("//*[@id='content']/div[3]/div[2]"));
-        String text2 = dynamicContentText3.getText();
-        if (!text1.equals(text2)) {
-            Assert.assertTrue(true);
-        } else
-            Assert.fail();
     }
 }

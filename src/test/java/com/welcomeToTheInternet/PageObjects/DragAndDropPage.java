@@ -31,8 +31,21 @@ public class DragAndDropPage {
         linkDragAndDrop.click();
     }
 
-    public void makeDragAndDrop() {
+    public void dragColumnAToColumnB() {
         Actions actions = new Actions(localDriver);
         actions.dragAndDrop(columnA, columnB).build().perform();
+    }
+
+    public void dragColumnBToColumnA() {
+        Actions actions = new Actions(localDriver);
+        actions.dragAndDrop(columnB, columnA).build().perform();
+    }
+
+    public String getTextA() {
+        return columnA.getText();
+    }
+
+    public String getTextB() {
+        return columnB.getText();
     }
 }

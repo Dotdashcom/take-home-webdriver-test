@@ -1,6 +1,8 @@
 package com.welcomeToTheInternet.TestCases;
 
 import com.welcomeToTheInternet.PageObjects.JsAlertPage;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class JsAlertTest_15 extends BaseClass {
@@ -11,11 +13,14 @@ public class JsAlertTest_15 extends BaseClass {
         JsAlertPage jsAlertPage = new JsAlertPage(driver);
 
         jsAlertPage.clickJSAlertPageLink();
-        jsAlertPage.clickJsAlertButton();
+        Assert.assertEquals(driver.findElement(By.tagName("h3")).getText(), "JavaScript Alerts");
+        jsAlertPage.clickJsAlertButton(); // assertion in the JSAlertPage.class
         jsAlertPage.waitForAlert(driver);
-        jsAlertPage.clickJsConfirmButton();
+
+        jsAlertPage.clickJsConfirmButton(); // assertion in the JSAlertPage.class
         jsAlertPage.waitForAlert(driver);
-        jsAlertPage.clickJSPromptButton();
+
+        jsAlertPage.clickJSPromptButton(); // assertion in the JSAlertPage.class
         jsAlertPage.waitForAlert(driver);
     }
 

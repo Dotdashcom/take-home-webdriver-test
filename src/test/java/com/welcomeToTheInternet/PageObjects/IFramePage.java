@@ -14,7 +14,6 @@ public class IFramePage {
         PageFactory.initElements(remoteDriver, this);
     }
 
-
     @FindBy(css = "a[href='/frames']")
     @CacheLookup
     WebElement linkFramesPage;

@@ -52,50 +52,22 @@ public class DynamicControlsPage {
 
     public void clickDynamicControlRemove() {
         dynamicControlsRemoveButton.click();
-        WebDriverWait wait = new WebDriverWait(localDriver, 5);
 
-        boolean isVisible = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkbox")));
-        if (isVisible) {
-            Assert.assertTrue(true);
-        } else {
-            Assert.fail();
-        }
     }
 
     public void clickDynamicControlAdd() {
         dynamicControlsAddButton.click();
-        WebDriverWait wait = new WebDriverWait(localDriver, 5);
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkbox")));
-        boolean isVisible = element.isDisplayed();
-        if (isVisible) {
-            Assert.assertTrue(true);
-        } else {
-            Assert.fail();
-        }
+
     }
 
     public void clickDynamicControlEnable() {
         dynamicControlEnable.click();
-            WebDriverWait wait = new WebDriverWait(localDriver, 5);
-            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'enabled!')]")));
-            boolean isVisible = element.isDisplayed();
-            if (isVisible) {
-                Assert.assertTrue(true);
-            } else {
-                Assert.fail();
-            }
+
     }
 
     public void clickDynamicControlDisable() {
         dynamicControlDisable.click();
-        WebDriverWait wait = new WebDriverWait(localDriver, 5);
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'disabled!')]")));
-        boolean isVisible = element.isDisplayed();
-        if (isVisible) {
-            Assert.assertTrue(true);
-        } else {
-            Assert.fail();
-        }
+
     }
 
 }

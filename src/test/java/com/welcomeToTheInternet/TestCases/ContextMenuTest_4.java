@@ -15,8 +15,9 @@ public class ContextMenuTest_4 extends BaseClass {
         ContextMenuPage contextMenu = new ContextMenuPage(driver);
 
         contextMenu.clickContextMenuLink();
+        logger.info("Navigated to Context Menu page");
         contextMenu.clickOnBox();
-
+        logger.info("Clicked to the element");
         Alert alert = driver.switchTo().alert();
         String message = alert.getText();
 

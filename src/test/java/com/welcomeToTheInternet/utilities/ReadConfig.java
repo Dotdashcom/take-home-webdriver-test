@@ -1,4 +1,4 @@
-package com.welcomeToTheInternet.utilties;
+package com.welcomeToTheInternet.utilities;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -44,22 +44,10 @@ public class DropdownPage {
 
     public void selectElement1() {
         element1.click();
-        boolean isSelected = localDriver.findElement(By.cssSelector("option[value='1'][selected='selected']")).isSelected();
-        if (isSelected) {
-            Assert.assertTrue(true);
-        } else {
-            Assert.assertFalse(false);
-        }
     }
 
     public void selectElement2() {
         element2.click();
-        boolean isSelected = localDriver.findElement(By.cssSelector("option[value='2'][selected='selected']")).isSelected();
-        if (isSelected) {
-            Assert.assertTrue(true);
-        } else {
-            Assert.assertFalse(false);
-        }
     }
 
     public void waitForList(WebDriver driver) {

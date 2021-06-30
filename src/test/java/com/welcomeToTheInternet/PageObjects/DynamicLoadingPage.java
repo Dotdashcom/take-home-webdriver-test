@@ -10,10 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class DynamicLoadedElementsPage {
+public class DynamicLoadingPage {
 
     WebDriver localDriver;
-    public DynamicLoadedElementsPage(WebDriver remoteDriver) {
+    public DynamicLoadingPage(WebDriver remoteDriver) {
         localDriver = remoteDriver;
         PageFactory.initElements(remoteDriver, this);
     }
@@ -56,17 +56,6 @@ public class DynamicLoadedElementsPage {
 
     public void clickHiddenButton() {
         elementHiddenButton.click();
-    }
-
-    public void waitForText() {
-        WebDriverWait wait = new WebDriverWait(localDriver, 10);
-        WebElement element1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h4[contains(text(),'Hello World!')]")));
-        boolean isVisible = element1.isDisplayed();
-        if (isVisible) {
-            Assert.assertTrue(true);
-        } else {
-            Assert.fail();
-        }
     }
 
     public void clickLinkElementRendered() {

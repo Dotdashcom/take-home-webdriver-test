@@ -20,10 +20,6 @@ public class FloatingMenuPage {
     @CacheLookup
     WebElement linkFloatingMenuPage;
 
-    @FindBy(css = "a[href='#home']")
-    @CacheLookup
-    WebElement floatingMenu;
-
     public void clickFloatingPageLink() {
         linkFloatingMenuPage.click();
     }
@@ -31,14 +27,5 @@ public class FloatingMenuPage {
     public void scrollDownPage() {
         JavascriptExecutor js = (JavascriptExecutor) localDriver;
         js.executeScript("window.scrollBy(0, 4000)");
-    }
-
-    public void checkFloatingMenu() {
-        boolean isMenuVisible = localDriver.getPageSource().contains("Home");
-        if (isMenuVisible) {
-            Assert.assertTrue(true);
-        } else {
-            Assert.fail();
-        }
     }
 }

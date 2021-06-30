@@ -1,6 +1,8 @@
 package com.welcomeToTheInternet.TestCases;
 
 import com.welcomeToTheInternet.PageObjects.FileUploadPage;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FileUploadTest_11 extends BaseClass {
@@ -11,8 +13,9 @@ public class FileUploadTest_11 extends BaseClass {
         FileUploadPage fileUpload = new FileUploadPage(driver);
 
         fileUpload.clickUploadPageLink();
+        Assert.assertEquals(driver.findElement(By.tagName("h3")).getText(),"File Uploader");
         fileUpload.setUploadPath();
         fileUpload.clickUploadButton();
-        fileUpload.waitForMessage();
+        fileUpload.waitForMessage(); // assertion in the FileUploadPage.java
     }
 }
