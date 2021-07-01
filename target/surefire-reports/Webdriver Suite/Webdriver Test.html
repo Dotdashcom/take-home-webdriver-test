@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>TestNG:  Webdriver Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Webdriver Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 01 11:14:25 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>79 seconds (79535 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webdriver.test.TestCases.JsErrorTest.CheckJsError()'><b>CheckJsError</b><br>Test class: webdriver.test.TestCases.JsErrorTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.JsErrorTest@482f8f11</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.CheckBoxesTest.Checkboxes()'><b>Checkboxes</b><br>Test class: webdriver.test.TestCases.CheckBoxesTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.CheckBoxesTest@7dc7cbad</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.DynamicControlTest.ClickDynamicControlButton()'><b>ClickDynamicControlButton</b><br>Test class: webdriver.test.TestCases.DynamicControlTest</td>
+<td></td>
+<td>26</td>
+<td>webdriver.test.TestCases.DynamicControlTest@7c16905e</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.ContextMenuTest.ContextMenuAlert()'><b>ContextMenuAlert</b><br>Test class: webdriver.test.TestCases.ContextMenuTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.ContextMenuTest@d2cc05a</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.FloatingMenuTest.FloatingMenuValidation()'><b>FloatingMenuValidation</b><br>Test class: webdriver.test.TestCases.FloatingMenuTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.FloatingMenuTest@68be2bc2</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.IframeTextTest.IframeTextValidation()'><b>IframeTextValidation</b><br>Test class: webdriver.test.TestCases.IframeTextTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.IframeTextTest@28feb3fa</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.InvalidLogInTest.LoginFailurePassword()'><b>LoginFailurePassword</b><br>Test class: webdriver.test.TestCases.InvalidLogInTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.InvalidLogInTest@5419f379</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.InvalidLogInTest.LoginFailureUserName()'><b>LoginFailureUserName</b><br>Test class: webdriver.test.TestCases.InvalidLogInTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.InvalidLogInTest@5419f379</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.LogInTest.LoginSuccess()'><b>LoginSuccess</b><br>Test class: webdriver.test.TestCases.LogInTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.LogInTest@4520ebad</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.MouseHoverTest.MouseHoverTextValidation()'><b>MouseHoverTextValidation</b><br>Test class: webdriver.test.TestCases.MouseHoverTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.MouseHoverTest@675d3402</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.NotificationMessageTest.MultipleNotificationMessageTest()'><b>MultipleNotificationMessageTest</b><br>Test class: webdriver.test.TestCases.NotificationMessageTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.NotificationMessageTest@1b604f19</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.JsAlretTest.addTextInPromptDialog()'><b>addTextInPromptDialog</b><br>Test class: webdriver.test.TestCases.JsAlretTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.JsAlretTest@51565ec2</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.JsAlretTest.cancelDialogTest()'><b>cancelDialogTest</b><br>Test class: webdriver.test.TestCases.JsAlretTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.JsAlretTest@51565ec2</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.JsAlretTest.cancelPromptDialog()'><b>cancelPromptDialog</b><br>Test class: webdriver.test.TestCases.JsAlretTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.JsAlretTest@51565ec2</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.FileDownloadTest.checkFileDownload()'><b>checkFileDownload</b><br>Test class: webdriver.test.TestCases.FileDownloadTest</td>
+<td></td>
+<td>5</td>
+<td>webdriver.test.TestCases.FileDownloadTest@2a5ca609</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.FileUploadTest.checkFileUploaded()'><b>checkFileUploaded</b><br>Test class: webdriver.test.TestCases.FileUploadTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.FileUploadTest@20e2cbe0</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.NotificationMessageTest.checkNotificationMessageSuccessful()'><b>checkNotificationMessageSuccessful</b><br>Test class: webdriver.test.TestCases.NotificationMessageTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.NotificationMessageTest@1b604f19</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.NotificationMessageTest.checkNotificationMessageUnsuccessful()'><b>checkNotificationMessageUnsuccessful</b><br>Test class: webdriver.test.TestCases.NotificationMessageTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.NotificationMessageTest@1b604f19</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.NotificationMessageTest.checkNotificationMessageUnsuccessfulTryAgain()'><b>checkNotificationMessageUnsuccessfulTryAgain</b><br>Test class: webdriver.test.TestCases.NotificationMessageTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.NotificationMessageTest@1b604f19</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.JsAlretTest.clickJsAlertButton()'><b>clickJsAlertButton</b><br>Test class: webdriver.test.TestCases.JsAlretTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.JsAlretTest@51565ec2</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.JsAlretTest.clickJsConfirmButton()'><b>clickJsConfirmButton</b><br>Test class: webdriver.test.TestCases.JsAlretTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.JsAlretTest@51565ec2</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.DragAndDropTest.dragAndDropColumn()'><b>dragAndDropColumn</b><br>Test class: webdriver.test.TestCases.DragAndDropTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.DragAndDropTest@4f933fd1</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.DynamicLoadingTest.dynamicLoadingMessage()'><b>dynamicLoadingMessage</b><br>Test class: webdriver.test.TestCases.DynamicLoadingTest</td>
+<td></td>
+<td>5</td>
+<td>webdriver.test.TestCases.DynamicLoadingTest@2a2d45ba</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.OpenNewWindowTest.openInNewTab()'><b>openInNewTab</b><br>Test class: webdriver.test.TestCases.OpenNewWindowTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.OpenNewWindowTest@1593948d</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.DropDownTest.selectDropDownOptionTest()'><b>selectDropDownOptionTest</b><br>Test class: webdriver.test.TestCases.DropDownTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.DropDownTest@548a9f61</td></tr>
+<tr>
+<td title='webdriver.test.TestCases.DynamicContentTest.testDynamicContent()'><b>testDynamicContent</b><br>Test class: webdriver.test.TestCases.DynamicContentTest</td>
+<td></td>
+<td>0</td>
+<td>webdriver.test.TestCases.DynamicContentTest@1753acfe</td></tr>
+</table><p>
+</body>
+</html>
