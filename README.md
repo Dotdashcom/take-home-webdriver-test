@@ -17,7 +17,7 @@
 
 
 
-##How to run tests
+##How to run tests for project
 
 In terminal:
 
