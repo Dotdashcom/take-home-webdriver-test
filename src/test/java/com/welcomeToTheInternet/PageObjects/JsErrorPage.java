@@ -25,13 +25,4 @@ public class JsErrorPage {
     public void clickJsErrorPageLink() {
         linkJsErrorPage.click();
     }
-
-    public void checkJsError() {
-        LogEntries logEntries = localDriver.manage().logs().get(LogType.BROWSER);
-        for (LogEntry entry : logEntries) {
-            if (entry.getMessage().contains("Cannot read property 'xyz' of undefined")) {
-                Assert.assertTrue(true);
-            }
-        }
-    }
 }
