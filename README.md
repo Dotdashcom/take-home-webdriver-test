@@ -1,4 +1,61 @@
 # Webdriver Tests
+
+### Assessment Highlights
+
+- This framework supports Chrome browser
+- This test currently supports MAC, Windows and Linux OS, both with Java 8 and above. Maven and Chrome browser are also required.
+
+##Project components
+
+
+- `Page objects are in the directory src/test/java/webdriver.test/Pages`
+- `Test classes are in the the directory src/test/java/webdriver.test/TestCases`
+- `Listener class is in the directory src/main/java/webdriver.test/Util`
+- `Test Suits : Collection of test cases XML file in the directory suits/testng.xml`
+- `Web Driver : Collection of driver file in the directory src/test/resource/WebDrivers`
+- `Configuration File : Project configuration in the directory src/test/configuration/config.properties, Ex: baseUrl and driver information`
+
+
+
+##How to run tests
+
+In terminal:
+
+1. Open a terminal window/command prompt
+2. Clone this project.
+3. `cd take-home-webdriver-test` (Or whatever folder you cloned it into)
+4. `mvn clean`
+
+All dependencies should now be downloaded 
+
+##To run the test
+
+
+```
+mvn test
+```
+OR
+```
+mvn clean install
+```
+
+#### To Run All test case
+- To run any tests, simply put their names in the testng.xml file inside the suites folder, and they will be executed as part of the build. 
+
+#### To Run Specific test case
+- To execute a Specific Test Class, make sure only test file names are in the testng.xml file in the suites folder, and it will be run as part of the build. 
+
+### To Run driver
+
+- The default driver is chrome. To use a different driver, modify the driver name in the src/test/configuration/config.properties directory.
+ 
+- All WebDrivers driver files in src/test/resource/WebDrivers Make that the driver you wish to use is installed and configured in the src/main/java/webdriver.test/Util directory; if it isn't, install it and configure the DriverFactory Class. 
+
+
+
+
+#Assessment 
+
 ## Prerequisites
   * Docker
   + Git

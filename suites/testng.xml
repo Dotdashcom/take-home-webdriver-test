@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Webdriver Suite">
+    <test name="Webdriver Test" >
+        <classes>
+<!--            Login Success Test Case -->
+            <class name="webdriver.test.TestCases.LogInTest"/>
+            <!--            Login Invalid Test Case -->
+            <class name="webdriver.test.TestCases.InvalidLogInTest"/>
+            <!--           Checkboxes Test Case -->
+            <class name="webdriver.test.TestCases.CheckBoxesTest"/>
+            <!--          Context Menu Test Case -->
+            <class name="webdriver.test.TestCases.ContextMenuTest"/>
+            <!--          Drag and Drop Test Case -->
+            <class name="webdriver.test.TestCases.DragAndDropTest"/>
+            <!--         Drop Down Test Case -->
+            <class name="webdriver.test.TestCases.DropDownTest"/>
+            <!--         Dynamic Content Case -->
+            <class name="webdriver.test.TestCases.DynamicContentTest"/>
+            <!--        Dynamic Controls Test Case -->
+            <class name="webdriver.test.TestCases.DynamicControlTest"/>
+            <!--        Dynamic Loading Test Case -->
+            <class name="webdriver.test.TestCases.DynamicLoadingTest"/>
+            <!--       File Download Test Case -->
+            <class name="webdriver.test.TestCases.FileDownloadTest"/>
+            <!--     File Upload Test Case -->
+            <class name="webdriver.test.TestCases.FileUploadTest"/>
+            <!--     Floating Menu Test Case -->
+            <class name="webdriver.test.TestCases.FloatingMenuTest"/>
+            <!--    Iframe Test Case -->
+            <class name="webdriver.test.TestCases.IframeTextTest"/>
+            <!--      Mouse Hover Tst Case -->
+            <class name="webdriver.test.TestCases.MouseHoverTest"/>
+            <!--    JavaScript Alerts Tst Case -->
+            <class name="webdriver.test.TestCases.JsAlretTest"/>
+            <!--    JavaScript Error Tst Case -->
+            <class name="webdriver.test.TestCases.JsErrorTest"/>
+            <!--  Open in New Tab Tst Case -->
+            <class name="webdriver.test.TestCases.OpenNewWindowTest"/>
+            <!--   Notification Message Tst Case -->
+            <class name="webdriver.test.TestCases.NotificationMessageTest"/>
+        </classes>
+    </test>
+</suite>
