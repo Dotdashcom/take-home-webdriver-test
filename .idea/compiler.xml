@@ -9,8 +9,5 @@
         <module name="take-home-webdriver-test" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="take-home-webdriver-test" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -11,7 +11,7 @@ public class NotificationMessagePage {
     }
     @FindBy(xpath = "//a[.='Click here']")
     public WebElement clickHereButton;
-    @FindBy(xpath = "//div[@class='large-12 columns']/div")
+    @FindBy(xpath = "(//div[@class='large-12 columns'])[1]")
     public WebElement messages;
 
 }
