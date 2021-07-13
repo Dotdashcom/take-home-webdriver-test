@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17469" started-at="2020-10-01T03:30:49Z" finished-at="2020-10-01T03:31:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17469" started-at="2020-10-01T03:30:49Z" finished-at="2020-10-01T03:31:07Z">
+      <class name="com.testing.TestFile">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@2f686d1f]" name="beforeMethod" is-config="true" duration-ms="6277" started-at="2020-09-30T23:30:49Z" finished-at="2020-09-30T23:30:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="fileUploadTest()[pri:11, instance:com.testing.TestFile@2f686d1f]" name="fileUploadTest" duration-ms="10460" started-at="2020-09-30T23:30:56Z" finished-at="2020-09-30T23:31:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@2f686d1f]" name="afterMethod" is-config="true" duration-ms="713" started-at="2020-09-30T23:31:06Z" finished-at="2020-09-30T23:31:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fileUploadTest status=SUCCESS method=TestFile.fileUploadTest()[pri:11, instance:com.testing.TestFile@2f686d1f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testing.TestFile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
