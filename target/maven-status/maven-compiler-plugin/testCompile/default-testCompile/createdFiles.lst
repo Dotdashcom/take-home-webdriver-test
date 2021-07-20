@@ -1,0 +1,17 @@
+com\dotDash\qa\tests\FileUploadPageTest.class
+com\dotDash\qa\tests\DynamicControlPageTest.class
+com\dotDash\qa\tests\FloatingMenuPageTest.class
+com\dotDash\qa\tests\DropdownPageTest.class
+com\dotDash\qa\tests\DragAndDropPageTest.class
+com\dotDash\qa\tests\DynamicContentPageTest.class
+com\dotDash\qa\tests\DynamicLoadingPageTest.class
+com\dotDash\qa\tests\IframePageTest.class
+com\dotDash\qa\tests\NewTabPageTest.class
+com\dotDash\qa\tests\ContextMenuPageTest.class
+com\dotDash\qa\tests\NotificationMessagesPageTest.class
+com\dotDash\qa\tests\CheckboxPageTest.class
+com\dotDash\qa\tests\JavaScriptAlertPageTest.class
+com\dotDash\qa\tests\MouseHoverPageTest.class
+com\dotDash\qa\tests\LoginPageTest.class
+com\dotDash\qa\tests\JavaScriptErrorPageTest.class
+com\dotDash\qa\tests\FileDownloadTest.class
