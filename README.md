@@ -1,3 +1,9 @@
+## To run the test
+- clone the repo 
+- navigate to the repo from terminal
+
+`mvn clean test`
+
 # Webdriver Tests
 ## Prerequisites
   * Docker
