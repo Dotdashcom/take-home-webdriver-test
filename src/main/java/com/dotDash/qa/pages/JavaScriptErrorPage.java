@@ -29,16 +29,17 @@ public class JavaScriptErrorPage extends TestBase {
 		return driver.getTitle();
 	}
 
+	// JavaScript Error test function
 	public boolean containsJsError(String errorText) {
 		jsError.click();
-		
+
 		LogEntries entries = driver.manage().logs().get(LogType.BROWSER);
 		for (LogEntry entry : entries) {
-            String message = entry.getMessage().trim();
-            if (message.contains(errorText)) {
-                return true;
-            }
-        }
+			String message = entry.getMessage().trim();
+			if (message.contains(errorText)) {
+				return true;
+			}
+		}
 		return false;
 	}
 }

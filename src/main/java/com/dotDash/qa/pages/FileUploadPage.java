@@ -10,12 +10,15 @@ import com.dotDash.qa.base.TestBase;
 
 public class FileUploadPage extends TestBase {
 
+	// Finding the link to the file upload page
 	@FindBy(xpath = "//a[@href='/upload']")
 	WebElement fileInput;
 
+	// Finding the submit button on the page
 	@FindBy(id = "file-submit")
 	public WebElement submitBtn;
 
+	// Finding the upload button on the page
 	@FindBy(id = "file-upload")
 	public WebElement uploadBtn;
 
@@ -24,10 +27,12 @@ public class FileUploadPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
+	// Actions:
 	public String validateLoginPageTitle() {
 		return driver.getTitle();
 	}
 
+	// Uploading file test function
 	public String uploadFile(String filePath) {
 		fileInput.click();
 		uploadBtn.sendKeys(filePath);

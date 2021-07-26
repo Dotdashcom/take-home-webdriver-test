@@ -21,11 +21,14 @@ public class CheckboxPageTest extends TestBase{
 		checkboxPage = new CheckboxPage();	
 	}
 	
+	//check box 1 test
 	@Test(priority=1)
 	public void checkbox1(){
 		String check = checkboxPage.checkbox();
 		Assert.assertEquals("Checkbox 1 is selected", check);
 	}	
+	
+	//Check box 2 test
 	@Test(priority=2)
 	public void checkbox2(){
 		String check = checkboxPage.checkbox2();

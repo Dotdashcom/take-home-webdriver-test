@@ -8,48 +8,51 @@ import org.openqa.selenium.support.PageFactory;
 import com.beust.jcommander.internal.Console;
 import com.dotDash.qa.base.TestBase;
 
-public class JavaScriptAlertPage extends TestBase{
-	
-	//Instantiating  action class
+public class JavaScriptAlertPage extends TestBase {
+
+	// Instantiating action class
 	Actions actions = new Actions(driver);
-	
-	//Finding the link to the JavaScript Alert page
-	@FindBy(xpath= "//a[@href='/javascript_alerts']")  
+
+	// Finding the link to the JavaScript Alert page
+	@FindBy(xpath = "//a[@href='/javascript_alerts']")
 	WebElement javaScriptAlert;
-		
-	//Finding JavaScript Alert Button
-	@FindBy(xpath ="//button[@onclick=\"jsAlert()\"]") 
+
+	// Finding JavaScript Alert Button
+	@FindBy(xpath = "//button[@onclick=\"jsAlert()\"]")
 	WebElement javaAlert;
-		
-	//Finding JavaScript conform Button
-	@FindBy(xpath ="//button[@onclick=\"jsConfirm()\"]") 
+
+	// Finding JavaScript conform Button
+	@FindBy(xpath = "//button[@onclick=\"jsConfirm()\"]")
 	WebElement javaConfirm;
-				
-	//Finding JavaScript prompt Button
-	@FindBy(xpath ="//button[@onclick=\"jsPrompt()\"]") 
+
+	// Finding JavaScript prompt Button
+	@FindBy(xpath = "//button[@onclick=\"jsPrompt()\"]")
 	WebElement javaPrompt;
-	
-	//Finding the result tag
-	@FindBy(id ="result") 
+
+	// Finding the result tag
+	@FindBy(id = "result")
 	WebElement resultDisp;
-		
-	//Initializing the Page Objects:
-	public JavaScriptAlertPage(){
+
+	// Initializing the Page Objects:
+	public JavaScriptAlertPage() {
 		PageFactory.initElements(driver, this);
 	}
-		
-	//Actions:
-	public String validateLoginPageTitle(){
+
+	// Actions:
+	public String validateLoginPageTitle() {
 		return driver.getTitle();
 	}
-	public String alertJava(){
+
+	// Alert pop-up test function
+	public String alertJava() {
 		javaScriptAlert.click();
 		javaAlert.click();
 		String alert = driver.switchTo().alert().getText();
 		driver.switchTo().alert().accept();
 		return alert;
 	}
-	
+
+	// Confirm pop-up test function
 	public String confirmJava() {
 		javaScriptAlert.click();
 		javaConfirm.click();
@@ -57,7 +60,8 @@ public class JavaScriptAlertPage extends TestBase{
 		driver.switchTo().alert().dismiss();
 		return confirm;
 	}
-	
+
+	// Prompt pop-up test function
 	public String promptJava() {
 		javaScriptAlert.click();
 		javaPrompt.click();

@@ -29,7 +29,7 @@ public class ContextMenuPage extends TestBase {
 		return driver.getTitle();
 	}
 	
-	
+	//Context menu test function
 	public String contextMenu(){
 		contextMenu.click();
 		actions.contextClick(hotSpot).perform();

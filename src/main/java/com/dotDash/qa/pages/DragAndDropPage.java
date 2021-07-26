@@ -9,71 +9,44 @@ import org.openqa.selenium.support.PageFactory;
 import com.dotDash.qa.base.TestBase;
 
 public class DragAndDropPage extends TestBase {
-	//Instantiating  action class
+	// Instantiating action class
 	Actions actions = new Actions(driver);
-	
-	//Finding the link to the Drag and Drop page
-	@FindBy(xpath= "//a[@href='/drag_and_drop']")  
+
+	// Finding the link to the Drag and Drop page
+	@FindBy(xpath = "//a[@href='/drag_and_drop']")
 	WebElement dragAndDrop;
-	
-	//Finding Column A
-	@FindBy(xpath ="/html/body/div[2]/div/div/div/div[1]") 
+
+	// Finding Column A
+	@FindBy(xpath = "/html/body/div[2]/div/div/div/div[1]")
 	WebElement columnA;
-	
-	@FindBy(id ="columns") 
-	WebElement column;
-	
-	//Finding Column B
+
+	// Finding Column B
 	@FindBy(xpath = "/html/body/div[2]/div/div/div/div[2]")
 	WebElement columnB;
-	
-	//Initializing the Page Objects:
-	public DragAndDropPage(){
+
+	// Initializing the Page Objects:
+	public DragAndDropPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
-	//Actions:
-	public String validateLoginPageTitle(){
+
+	// Actions:
+	public String validateLoginPageTitle() {
 		return driver.getTitle();
 	}
 	
-	public boolean dragAndDrop(){	
+	//Drag and Drop test function 
+	public boolean dragAndDrop() {
 		dragAndDrop.click();
-		String textBoxOne=columnA.getText();
-		String textBoxTwo=columnB.getText();
-		
+		String textBoxOne = columnA.getText();
+		String textBoxTwo = columnB.getText();
+
 		actions.dragAndDrop(columnA, columnB).build().perform();
-		
-		if(columnA.getText().equalsIgnoreCase(textBoxTwo)&& columnB.getText().equalsIgnoreCase(textBoxOne)) {
+
+		if (columnA.getText().equalsIgnoreCase(textBoxTwo) && columnB.getText().equalsIgnoreCase(textBoxOne)) {
 			return true;
-		}
-		else {
+		} else {
 			return false;
 		}
-		
-/*		Action dragAndDrop = actions.clickAndHold(columnB)
-				.moveToElement(columnA)
-				.release(column)
-				
-				.build();
 
-				dragAndDrop.perform();*/
-		/*
-		 * dragAndDrop.click(); Actions action = new Actions(driver);
-		 * action.clickAndHold(columnA).build().perform();
-		 * actions.moveToElement(columnB).release();
-		 */
-		//Actions builder = new Actions(driver);
-		//new Actions(Driver).DragAndDrop(column, columnB).Build().Perform();
-		//new Actions(driver).ClickAndHold(column).MoveToElement(columnA).Release(columnB).Build().Perform();
-
-		
-		
-		// Action dragAndDropTest = actions.clickAndHold(columnA)
-			//	.moveToElement(columnB)
-			//	.release(column)
-			//	.build();
-		
-		//dragAndDropTest.perform();
-		}
+	}
 }
