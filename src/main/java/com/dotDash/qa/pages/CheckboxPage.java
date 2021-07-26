@@ -34,12 +34,17 @@ public class CheckboxPage extends TestBase {
 	public String checkbox() {
 		checkboxes.click();
 		checkbox1.click();
-		if (checkbox1.isSelected()) {
-			String checked = "Checkbox 1 is selected";
-			return checked;
+		if (checkbox1.isDisplayed()) {
+			if (checkbox1.isSelected()) {
+				String checked = "Checkbox 1 is selected";
+				return checked;
+			} else {
+				String unchecked = "Checkbox 2 is not selected";
+				return unchecked;
+			}
 		} else {
-			String unchecked = "Checkbox 2 is not selected";
-			return unchecked;
+			String display = "Check box is not displayed";
+			return display;
 		}
 	}
 
@@ -47,12 +52,17 @@ public class CheckboxPage extends TestBase {
 	public String checkbox2() {
 		checkboxes.click();
 		checkbox2.click();
-		if (!checkbox2.isSelected()) {
-			String checked = "Checkbox 2 is not selected";
-			return checked;
+		if (checkbox2.isDisplayed()) {
+			if (!checkbox2.isSelected()) {
+				String checked = "Checkbox 2 is not selected";
+				return checked;
+			} else {
+				String unchecked = "Checkbox 2 is selected";
+				return unchecked;
+			}
 		} else {
-			String unchecked = "Checkbox 2 is selected";
-			return unchecked;
+			String display = "Check box is not displayed";
+			return display;
 		}
 	}
 }

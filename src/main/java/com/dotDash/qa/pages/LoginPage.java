@@ -25,13 +25,17 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath = "//a[@href='/login']")
 	WebElement login;
 
+	//Finding the sub title element of the page
+	@FindBy(xpath = "//a[@class='/subheader']")
+	WebElement subHeading;
+	
 	// FInding logout button
 	@FindBy(xpath = "/html/body/div[2]/div/div/a")
 	WebElement logoutBtn;
 
 	// Finding the notification element on login page
-	@FindBy(css = "#flash")
-	WebElement notification;
+    @FindBy(xpath = "//div[@id='flash']")
+    private WebElement flashText;
 
 	// Initializing the Page Objects:
 	public LoginPage() {
@@ -54,7 +58,7 @@ public class LoginPage extends TestBase {
 
 	// login success test function
 	public String sucess() {
-		String success = notification.getText();
+		String success = flashText.getText();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		logoutBtn.click();
 		return success;
@@ -63,7 +67,7 @@ public class LoginPage extends TestBase {
 	// Login fail test function
 	public String fail() {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		String fail = notification.getText();
+		String fail = flashText.getText();
 		return fail;
 	}
 

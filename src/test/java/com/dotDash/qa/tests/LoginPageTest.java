@@ -1,5 +1,6 @@
 package com.dotDash.qa.tests;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -32,10 +33,8 @@ public class LoginPageTest extends TestBase {
 	@Test(priority = 2)
 	public void loginTest() {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-
-		String success = loginPage.sucess();
-		// String expected = "You logged into a secure area!";
-		// Assert.assertEquals(expected , success );
+		String success = driver.findElement(By.className("subheader")).getText(); 
+		Assert.assertEquals(success, "Welcome to the Secure Area. When you are done click logout below.");
 	}
 
 	// Testing and asserting the value
@@ -43,7 +42,25 @@ public class LoginPageTest extends TestBase {
 	public void loginFailTest() {
 		loginPage.login("Test", "Test");
 		String fail = loginPage.fail();
-		// Assert.assertEquals("Your username is invalid!", fail );
+		String flash = fail.substring(0, fail.length() - 1).trim();
+		Assert.assertEquals(flash, "Your username is invalid!");
+	}
+
+	// Testing and asserting the value
+	@Test(priority = 4)
+	public void loginFailTestWithWrongUserName() {
+		loginPage.login("Test", prop.getProperty("password"));
+		String fail = loginPage.fail();
+		String flash = fail.substring(0, fail.length() - 1).trim();
+		Assert.assertEquals(flash, "Your username is invalid!");
+	}
+
+	@Test(priority = 5)
+	public void loginFailTestWithWrongPassword() {
+		loginPage.login(prop.getProperty("username"), "Test");
+		String fail = loginPage.fail();
+		String flash = fail.substring(0, fail.length() - 1).trim();
+		Assert.assertEquals(flash, "Your password is invalid!");
 	}
 
 	@AfterMethod
