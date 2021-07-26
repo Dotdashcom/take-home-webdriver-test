@@ -10,26 +10,27 @@ import com.dotDash.qa.pages.ContextMenuPage;
 
 public class ContextMenuPageTest extends TestBase {
 	ContextMenuPage contextMenuPage;
-	
-	public ContextMenuPageTest(){
+
+	public ContextMenuPageTest() {
 		super();
 	}
-	
-	@BeforeMethod
-	public void setUp(){
-		initialization();
-		contextMenuPage = new ContextMenuPage();	
-	}
-	
-	@Test(priority=1)
-	public void checked(){
-		String alert= contextMenuPage.contextMenu();
-		 Assert.assertEquals("You selected a context menu", alert);	
 
-	}	
-	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		contextMenuPage = new ContextMenuPage();
+	}
+
+	// Testing and asserting the value
+	@Test(priority = 1)
+	public void checked() {
+		String alert = contextMenuPage.contextMenu();
+		Assert.assertEquals("You selected a context menu", alert);
+
+	}
+
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
 }

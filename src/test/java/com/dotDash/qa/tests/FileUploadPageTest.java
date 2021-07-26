@@ -8,29 +8,30 @@ import org.testng.annotations.Test;
 import com.dotDash.qa.base.TestBase;
 import com.dotDash.qa.pages.FileUploadPage;
 
-public class FileUploadPageTest extends TestBase{
-	
+public class FileUploadPageTest extends TestBase {
+
 	FileUploadPage fileUploadPage;
-	
-	public FileUploadPageTest(){
+
+	public FileUploadPageTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() {
 		initialization();
-		fileUploadPage = new FileUploadPage();	
+		fileUploadPage = new FileUploadPage();
 	}
-	
+
+	// Testing and asserting the value
 	@Test()
-	public void fileUpload() throws InterruptedException{
+	public void fileUpload() throws InterruptedException {
 		String fileName = "some-file.txt";
-		String fileDir = System.getProperty("user.home")+"\\Downloads\\";
-		Assert.assertEquals(fileUploadPage.uploadFile(fileDir+fileName).trim(), fileName);
-	}	
-	
+		String fileDir = System.getProperty("user.home") + "\\Downloads\\";
+		Assert.assertEquals(fileUploadPage.uploadFile(fileDir + fileName).trim(), fileName);
+	}
+
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
 }

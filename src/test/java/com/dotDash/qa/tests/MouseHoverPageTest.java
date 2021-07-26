@@ -8,27 +8,28 @@ import org.testng.annotations.Test;
 import com.dotDash.qa.base.TestBase;
 import com.dotDash.qa.pages.MouseHoverPage;
 
-public class MouseHoverPageTest extends TestBase{
+public class MouseHoverPageTest extends TestBase {
 	MouseHoverPage mouseHoverPage;
-	
-	public MouseHoverPageTest(){
+
+	public MouseHoverPageTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() {
 		initialization();
-		mouseHoverPage = new MouseHoverPage();	
+		mouseHoverPage = new MouseHoverPage();
 	}
-	
-	@Test(priority=1)
-	public void checked(){
+
+	// Testing and asserting the value
+	@Test(priority = 1)
+	public void checked() {
 		boolean hover = mouseHoverPage.mouseHover();
 		Assert.assertEquals(true, hover);
-	}	
-	
+	}
+
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
 }

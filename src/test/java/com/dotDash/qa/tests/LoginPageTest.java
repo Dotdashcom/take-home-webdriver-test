@@ -21,12 +21,14 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
+	// Testing and asserting the value
 	@Test(priority = 1)
 	public void loginPageTitleTest() {
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "The Internet");
 	}
 
+	// Testing and asserting the value
 	@Test(priority = 2)
 	public void loginTest() {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -36,6 +38,7 @@ public class LoginPageTest extends TestBase {
 		// Assert.assertEquals(expected , success );
 	}
 
+	// Testing and asserting the value
 	@Test(priority = 3)
 	public void loginFailTest() {
 		loginPage.login("Test", "Test");

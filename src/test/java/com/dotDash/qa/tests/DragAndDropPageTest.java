@@ -8,26 +8,26 @@ import org.testng.annotations.Test;
 import com.dotDash.qa.base.TestBase;
 import com.dotDash.qa.pages.DragAndDropPage;
 
-
-public class DragAndDropPageTest extends TestBase{
+public class DragAndDropPageTest extends TestBase {
 	DragAndDropPage dragAndDropPage;
-	
-	public DragAndDropPageTest(){
+
+	public DragAndDropPageTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() {
 		initialization();
-		dragAndDropPage = new DragAndDropPage();	
+		dragAndDropPage = new DragAndDropPage();
 	}
-	
-	@Test(priority=1)
-	public void dragAndDrop(){	
-		
+
+	// Testing and asserting the value
+	@Test(priority = 1)
+	public void dragAndDrop() {
+
 		boolean actual = dragAndDropPage.dragAndDrop();
 		try {
-			Assert.assertEquals(actual , false);
+			Assert.assertEquals(actual, false);
 		} catch (Exception e) {
 			e.getLocalizedMessage();
 			Assert.assertTrue(true);
@@ -35,7 +35,7 @@ public class DragAndDropPageTest extends TestBase{
 	}
 
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
 }

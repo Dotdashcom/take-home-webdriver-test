@@ -23,6 +23,7 @@ public class DynamicControlPageTest extends TestBase {
 		dynamicControlPage = new DynamicControlPage();
 	}
 
+	// Testing and asserting the value
 	@Test(priority = 1)
 	public void checked() {
 		boolean invisible = dynamicControlPage.dynamicCheckbox();
@@ -31,8 +32,8 @@ public class DynamicControlPageTest extends TestBase {
 		Assert.assertEquals(false, visible);
 	}
 
+	// Testing and asserting the value
 	@Test(priority = 2)
-
 	public void enable() {
 		boolean enable = dynamicControlPage.dynamicTextbox();
 		Assert.assertEquals(false, enable);

@@ -10,25 +10,26 @@ import com.dotDash.qa.pages.FloatingMenuPage;
 
 public class FloatingMenuPageTest extends TestBase {
 	FloatingMenuPage floatingMenuPage;
-	
-	public FloatingMenuPageTest(){
+
+	public FloatingMenuPageTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() {
 		initialization();
-		floatingMenuPage = new FloatingMenuPage();	
+		floatingMenuPage = new FloatingMenuPage();
 	}
-	
-	@Test(priority=1)
-	public void checked(){
+
+	// Testing and asserting the value
+	@Test(priority = 1)
+	public void checked() {
 		boolean menuVisible = floatingMenuPage.floatingMenu();
 		Assert.assertEquals(true, menuVisible);
-	}	
-	
+	}
+
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
 }

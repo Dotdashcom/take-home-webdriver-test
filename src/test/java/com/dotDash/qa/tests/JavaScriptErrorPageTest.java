@@ -10,27 +10,29 @@ import com.dotDash.qa.pages.JavaScriptErrorPage;
 
 public class JavaScriptErrorPageTest extends TestBase {
 	JavaScriptErrorPage javaScriptErrorPage;
-	
-	public JavaScriptErrorPageTest(){
+
+	public JavaScriptErrorPageTest() {
 		super();
 	}
-	
-	@BeforeMethod
-	public void setUp(){
-		initialization();
-		javaScriptErrorPage = new JavaScriptErrorPage();	
-	}
-	
-	@Test(priority=1)
-	public void consoleErrors(){
-		
-		JavaScriptErrorPage javaScriptErrorPage = new JavaScriptErrorPage();
-		Assert.assertTrue(javaScriptErrorPage.containsJsError("Cannot read property 'xyz' of undefined"), "The page doesn't contain the expected error");
 
-	}	
-	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		javaScriptErrorPage = new JavaScriptErrorPage();
+	}
+
+	// Testing and asserting the value
+	@Test(priority = 1)
+	public void consoleErrors() {
+
+		JavaScriptErrorPage javaScriptErrorPage = new JavaScriptErrorPage();
+		Assert.assertTrue(javaScriptErrorPage.containsJsError("Cannot read property 'xyz' of undefined"),
+				"The page doesn't contain the expected error");
+
+	}
+
 	@AfterMethod
-	public void tearDown(){
-		//driver.quit();
+	public void tearDown() {
+		// driver.quit();
 	}
 }

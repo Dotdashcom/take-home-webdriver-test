@@ -9,24 +9,25 @@ import com.dotDash.qa.pages.IframePage;
 
 public class IframePageTest extends TestBase {
 	IframePage iframePage;
-	
-	public IframePageTest(){
+
+	public IframePageTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() {
 		initialization();
-		iframePage = new IframePage();	
+		iframePage = new IframePage();
 	}
-	
-	@Test(priority=1)
-	public void checked(){
+
+	// Testing and asserting the value
+	@Test(priority = 1)
+	public void checked() {
 		iframePage.iframe();
-	}	
-	
+	}
+
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
 }

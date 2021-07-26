@@ -1,4 +1,5 @@
 package com.dotDash.qa.tests;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -8,30 +9,31 @@ import com.dotDash.qa.base.TestBase;
 import com.dotDash.qa.pages.FileDownloadPage;
 
 public class FileDownloadTest extends TestBase {
-	
+
 	FileDownloadPage fileDownloadPage;
-	
-	public FileDownloadTest(){
+
+	public FileDownloadTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() {
 		initialization();
-		fileDownloadPage = new FileDownloadPage();	
+		fileDownloadPage = new FileDownloadPage();
 	}
-	
+
+	// Testing and asserting the value
 	@Test()
-	public void checked() throws InterruptedException{
-		
-		String filePath = System.getProperty("user.home")+"\\Downloads\\";
-		//fileDownloadPage.fileCheck(filePath);
+	public void checked() throws InterruptedException {
+
+		String filePath = System.getProperty("user.home") + "\\Downloads\\";
+		// fileDownloadPage.fileCheck(filePath);
 		Assert.assertTrue(fileDownloadPage.fileCheck(filePath), "File is downloaded as expected");
-	}	
-	
+	}
+
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
-	
+
 }

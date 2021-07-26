@@ -22,12 +22,14 @@ public class DynamicLoadingPageTest extends TestBase {
 		dynamicLoadingPage = new DynamicLoadingPage();
 	}
 
+	// Testing and asserting the value
 	@Test(priority = 1)
 	public void visibleElement() {
 		boolean visible = dynamicLoadingPage.hiddenElement();
 		Assert.assertEquals(false, visible);
 	}
 
+	// Testing and asserting the value
 	@Test(priority = 2)
 	public void addingElement() {
 		boolean visible = dynamicLoadingPage.addingElemnt();

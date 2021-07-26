@@ -11,29 +11,30 @@ import org.testng.annotations.Test;
 import com.dotDash.qa.base.TestBase;
 import com.dotDash.qa.pages.DynamicContentPage;
 
-public class DynamicContentPageTest extends TestBase{
+public class DynamicContentPageTest extends TestBase {
 	DynamicContentPage dynamicContentPage;
-	
-	public DynamicContentPageTest(){
+
+	public DynamicContentPageTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() {
 		initialization();
-		dynamicContentPage = new DynamicContentPage();	
+		dynamicContentPage = new DynamicContentPage();
 	}
-	
-	@Test(priority=1)
-	public void checked(){
+
+	// Testing and asserting the value
+	@Test(priority = 1)
+	public void checked() {
 		String testStr = dynamicContentPage.dynamicContent();
 		WebElement element = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div[2]"));
 		String actualStr = element.getText();
 		Assert.assertNotEquals(testStr, actualStr);
-	}	
-	
+	}
+
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
 }
