@@ -2,14 +2,14 @@ import constants.CheckBoxStatus;
 import io.github.bonigarcia.wdm.config.DriverManagerType;
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pages.CheckboxPage;
-import pages.ContextMenuPage;
-import pages.LoginPage;
+import pages.*;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Setup {
@@ -17,6 +17,10 @@ public class Setup {
     LoginPage objLoginPage;
     CheckboxPage objCheckboxPage;
     ContextMenuPage objContextMenuPage;
+    DragDropPage objDragDropPage;
+    DropdownPage objDropdownPage;
+    DynamicContentPage objDynamicContentPage;
+    DynamicControlsPage objDynamicControlsPage;
 
     @BeforeTest
     public void setup() {
@@ -72,6 +76,42 @@ public class Setup {
         this.objContextMenuPage.wait(1);
         this.objContextMenuPage.rightClickContextMenu();
         this.objContextMenuPage.assertAlertText("You selected a context menu");
+    }
+
+    @Test
+    public void test_drag_drop() {
+        this.objDragDropPage = new DragDropPage(this.driver);
+        this.objDragDropPage.dragDropElement();
+        this.objDragDropPage.wait(1);
+        this.objDragDropPage.assertSwitchText();
+    }
+
+    @Test
+    public void test_dropdown() {
+        this.objDropdownPage = new DropdownPage(this.driver);
+        List<WebElement> options = this.objDropdownPage.getOptions();
+        for (WebElement option : options) {
+            this.objDropdownPage.clickDropdownElement(option.getText());
+            this.objDropdownPage.assertSelectStatus(option);
+        }
+    }
+
+    @Test
+    public void test_dynamic_content() {
+        this.objDynamicContentPage = new DynamicContentPage(this.driver);
+        int times = 5;
+        for (int i=0; i < times; i++) {
+            this.objDynamicContentPage.assertContents();
+        }
+    }
+
+    @Test
+    public void test_dynamic_controls() {
+        this.objDynamicControlsPage = new DynamicControlsPage(this.driver);
+        this.objDynamicControlsPage.clickRemove();
+        this.objDynamicControlsPage.assertCheckBox(true);
+        this.objDynamicControlsPage.clickAdd();
+        this.objDynamicControlsPage.assertCheckBox(false);
     }
 
     @AfterTest
