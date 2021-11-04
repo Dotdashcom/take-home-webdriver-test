@@ -21,6 +21,7 @@ public class Setup {
     DropdownPage objDropdownPage;
     DynamicContentPage objDynamicContentPage;
     DynamicControlsPage objDynamicControlsPage;
+    DynamicLoadingPage obgDynamicLoadingPage;
 
     @BeforeTest
     public void setup() {
@@ -112,6 +113,17 @@ public class Setup {
         this.objDynamicControlsPage.assertCheckBox(true);
         this.objDynamicControlsPage.clickAdd();
         this.objDynamicControlsPage.assertCheckBox(false);
+        this.objDynamicControlsPage.clickEnable();
+        this.objDynamicControlsPage.assertInputBox(true);
+        this.objDynamicControlsPage.clickDisable();
+        this.objDynamicControlsPage.assertInputBox(false);
+    }
+
+    @Test
+    public void test_dynamic_loading() {
+        this.obgDynamicLoadingPage = new DynamicLoadingPage(this.driver);
+        this.obgDynamicLoadingPage.testHiddenElement("/1");
+        this.obgDynamicLoadingPage.testNewElement("/2");
     }
 
     @AfterTest

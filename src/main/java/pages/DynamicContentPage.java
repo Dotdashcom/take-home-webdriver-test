@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class DynamicContentPage extends BasicPage {
     WebDriver driver;
@@ -58,15 +57,4 @@ public class DynamicContentPage extends BasicPage {
         }
         Assert.fail();
     }
-
-
-//    public void assertSelectStatus(WebElement option) {
-//        List<WebElement> selectedOptions = this.dropDownOpt.getAllSelectedOptions();
-//        for (WebElement selectedOption: selectedOptions) {
-//            if (option.equals(selectedOption)) {
-//                return;
-//            }
-//        }
-//        Assert.fail();
-//    }
 }
