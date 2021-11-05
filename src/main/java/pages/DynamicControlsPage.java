@@ -27,34 +27,19 @@ public class DynamicControlsPage extends BasicPage {
         PageFactory.initElements(driver, this);
     }
 
-    public WebElement findCheckBox() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@id=\"checkbox\"]")));
-        try {
-            return this.driver.findElement(By.xpath(""));
-        } catch (Exception e) {
-            return null;
-        }
-    }
-
     public void clickRemove() {
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        //WebElement removeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"checkbox-example\"]/button")));
         if(switchCheckBoxButton.getText().equals("Remove")) {
             switchCheckBoxButton.click();
         }
     }
 
     public void clickAdd() {
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        //WebElement removeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"checkbox-example\"]/button")));
         if(switchCheckBoxButton.getText().equals("Add")) {
             switchCheckBoxButton.click();
         }
     }
 
     public void assertCheckBox(boolean shouldBeRemoved) {
-        //WebElement checkBox = this.findCheckBox();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         if (shouldBeRemoved) {
             wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@id=\"checkbox\"]")));
@@ -64,16 +49,12 @@ public class DynamicControlsPage extends BasicPage {
     }
 
     public void clickEnable() {
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        //WebElement removeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"checkbox-example\"]/button")));
         if(switchInputButton.getText().equals("Enable")) {
             switchInputButton.click();
         }
     }
 
     public void clickDisable() {
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        //WebElement removeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"checkbox-example\"]/button")));
         if (switchInputButton.getText().equals("Disable")) {
             switchInputButton.click();
         }

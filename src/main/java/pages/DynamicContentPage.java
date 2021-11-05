@@ -48,10 +48,10 @@ public class DynamicContentPage extends BasicPage {
     public void assertContents() {
         ArrayList<ArrayList<String>> before = this.getCurrentContents();
         this.refreshPage();
-        ArrayList<ArrayList<String>> old = this.getCurrentContents();
+        ArrayList<ArrayList<String>> after = this.getCurrentContents();
 
         for (int i=0; i < before.size(); i ++) {
-            if (!before.get(i).get(0).equals(old.get(i).get(0)) && !before.get(i).get(1).equals(old.get(i).get(1))) {
+            if (!before.get(i).get(0).equals(after.get(i).get(0)) && !before.get(i).get(1).equals(after.get(i).get(1))) {
                 return;
             }
         }

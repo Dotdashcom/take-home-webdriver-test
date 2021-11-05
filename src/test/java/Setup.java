@@ -22,6 +22,16 @@ public class Setup {
     DynamicContentPage objDynamicContentPage;
     DynamicControlsPage objDynamicControlsPage;
     DynamicLoadingPage obgDynamicLoadingPage;
+    FileDownloadPage objFileDownloadPage;
+    FileUploadPage objFileUploadPage;
+    FloatingMenuPage objFloatingMenuPage;
+    IframePage objIframePage;
+    MouseHoverPage objMouseHoverPage;
+    JavaScriptAlertsPage objJavaScriptAlertsPage;
+    JavaScriptErrorPage objJavaScriptErrorPage;
+    OpenNewTabPage objOpenNewTabPage;
+    NotificationMessagePage objNotificationMessagePage;
+    public static final String downloadPath = "/Users/baixiaofei528/Downloads";
 
     @BeforeTest
     public void setup() {
@@ -124,6 +134,76 @@ public class Setup {
         this.obgDynamicLoadingPage = new DynamicLoadingPage(this.driver);
         this.obgDynamicLoadingPage.testHiddenElement("/1");
         this.obgDynamicLoadingPage.testNewElement("/2");
+    }
+
+    @Test
+    public void test_file_download() {
+        this.objFileDownloadPage = new FileDownloadPage(this.driver, downloadPath);
+        this.objFileDownloadPage.clickFileDownloadLink();
+        this.objFileDownloadPage.assertFileDownloadStatus("some-file.txt");
+    }
+
+    @Test
+    public void test_file_upload() {
+        this.objFileUploadPage = new FileUploadPage(this.driver);
+        this.objFileUploadPage.uploadByButton();
+        this.objFileUploadPage.assertFileUploadStatus();
+    }
+
+    @Test
+    public void test_floating_menu() {
+        this.objFloatingMenuPage = new FloatingMenuPage(this.driver);
+        this.objFloatingMenuPage.scrollDown();
+        this.objFloatingMenuPage.assertFloatingMenu();
+    }
+
+    @Test
+    public void test_iframe() {
+        this.objIframePage = new IframePage(this.driver);
+        this.objIframePage.switchIframe();
+        this.objIframePage.assertTextContent();
+    }
+
+    @Test
+    public void test_mouse_hover() {
+        for(int i=1; i<4; i++) {
+            this.objMouseHoverPage = new MouseHoverPage(this.driver);
+            this.objMouseHoverPage.hoverImage(i);
+            this.objMouseHoverPage.assertDisplayContent(i);
+        }
+    }
+
+    @Test
+    public void test_js_alerts() {
+        this.objJavaScriptAlertsPage = new JavaScriptAlertsPage(this.driver);
+        this.objJavaScriptAlertsPage.testJSAlert();
+        this.objJavaScriptAlertsPage.assertAlertContent("I am a JS Alert");
+        this.objJavaScriptAlertsPage.testJSConfirm();
+        this.objJavaScriptAlertsPage.assertAlertResultContent("You clicked: Ok");
+        this.objJavaScriptAlertsPage.testJSPrompt("Hello World!");
+        this.objJavaScriptAlertsPage.assertResultContainContent("Hello World!");
+    }
+
+    @Test
+    public void test_js_error() {
+        this.objJavaScriptErrorPage = new JavaScriptErrorPage(this.driver);
+        this.objJavaScriptErrorPage.assertJSError("Cannot read properties of undefined (reading 'xyz')");
+    }
+
+    @Test
+    public void test_open_new_tab() {
+        this.objOpenNewTabPage = new OpenNewTabPage(this.driver);
+        this.objOpenNewTabPage.clickNewTabLink();
+        this.objOpenNewTabPage.assertNewTabOpenedContent();
+    }
+
+    @Test
+    public void test_notification_test() {
+        this.objNotificationMessagePage = new NotificationMessagePage(this.driver);
+        for(int i=0; i<5; i++) {
+            this.objNotificationMessagePage.clickNotificationLink();
+            this.objNotificationMessagePage.assertNotificationContent();
+        }
     }
 
     @AfterTest
