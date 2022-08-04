@@ -18,6 +18,6 @@ public class GenericTest {
 
     @AfterMethod
     public void  tearDown() {
-        driver.close();
+        driver.quit();
     }
 }

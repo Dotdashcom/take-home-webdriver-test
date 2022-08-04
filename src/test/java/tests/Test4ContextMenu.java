@@ -5,6 +5,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 
+import java.util.ArrayList;
+
 public class Test4ContextMenu extends GenericTest {
 
     @Test
@@ -16,7 +18,7 @@ public class Test4ContextMenu extends GenericTest {
         //build action that performs a context click
         Actions contextClickAction = new Actions(driver);
         WebElement contextMenu = driver.findElement(By.xpath("//div[contains(@id,'hot-spot')]"));
-        contextClickAction.contextClick(contextMenu).sendKeys(Keys.ENTER).build().perform();
+        contextClickAction.contextClick(contextMenu).perform();
 
         //switch context to js alert and grab text
         Alert alert = driver.switchTo().alert();
@@ -26,7 +28,7 @@ public class Test4ContextMenu extends GenericTest {
 
         //get rid of alert and then get rid of the context menu
         alert.accept();
-        contextMenu.click();
+
     }
 
 }
