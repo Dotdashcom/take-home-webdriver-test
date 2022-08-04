@@ -1,30 +1,13 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-
-import pages.LoginPage;
-import pages.SecureAreaPage;
-
 import java.util.List;
 
-public class Test16JavaScriptError {
-    WebDriver driver;
-
-    @BeforeSuite
-    public void initialize() {
-        System.setProperty("webdriver.chrome.driver", "src/test/java/drivers/chromedriver");
-        driver = new ChromeDriver();
-    }
+public class Test16JavaScriptError extends GenericTest {
 
     @Test
     public void Test16JavaScriptError() {
@@ -44,11 +27,6 @@ public class Test16JavaScriptError {
         }
         //assert that boolean is true
         Assert.assertTrue(errorFlag);
-
     }
 
-    @AfterMethod
-    public void  tearDown() {
-        driver.close();
-    }
 }

@@ -1,29 +1,12 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-
-import pages.LoginPage;
-import pages.SecureAreaPage;
-
 import java.io.File;
 
-public class Test10FileDownload {
-    WebDriver driver;
-
-    @BeforeSuite
-    public void initialize() {
-        System.setProperty("webdriver.chrome.driver", "src/test/java/drivers/chromedriver");
-        driver = new ChromeDriver();
-    }
+public class Test10FileDownload extends GenericTest {
 
     @Test
     public void Test10FileDownload() throws InterruptedException {
@@ -41,11 +24,6 @@ public class Test10FileDownload {
         //but figured that's overkill for this
         Thread.sleep(2000);
         Assert.assertTrue(downloadedFile.exists());
-
     }
 
-    @AfterMethod
-    public void  tearDown() {
-        driver.close();
-    }
 }

@@ -1,28 +1,12 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-
-import pages.LoginPage;
-import pages.SecureAreaPage;
-
 import java.util.ArrayList;
-import java.util.List;
 
-public class Test7DynamicContent {
-    WebDriver driver;
-
-    @BeforeSuite
-    public void initialize() {
-        System.setProperty("webdriver.chrome.driver", "src/test/java/drivers/chromedriver");
-        driver = new ChromeDriver();
-    }
+public class Test7DynamicContent extends GenericTest {
 
     @Test
     public void Test7DynamicContent() {
@@ -64,8 +48,4 @@ public class Test7DynamicContent {
         }
     }
 
-    @AfterMethod
-    public void  tearDown() {
-        driver.close();
-    }
 }

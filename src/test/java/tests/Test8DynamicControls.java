@@ -1,25 +1,14 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 
-public class Test8DynamicControls {
-    WebDriver driver;
-
-    @BeforeSuite
-    public void initialize() {
-        System.setProperty("webdriver.chrome.driver", "src/test/java/drivers/chromedriver");
-        driver = new ChromeDriver();
-    }
+public class Test8DynamicControls extends GenericTest {
 
     @Test
     public void Test8DynamicControls() {
@@ -63,8 +52,4 @@ public class Test8DynamicControls {
 
     }
 
-    @AfterMethod
-    public void  tearDown() {
-        driver.close();
-    }
 }

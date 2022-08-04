@@ -2,20 +2,10 @@ package tests;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class Test4ContextMenu {
-    WebDriver driver;
-
-    @BeforeSuite
-    public void initialize() {
-        System.setProperty("webdriver.chrome.driver", "src/test/java/drivers/chromedriver");
-        driver = new ChromeDriver();
-    }
+public class Test4ContextMenu extends GenericTest {
 
     @Test
     public void Test4ContextMenu() {
@@ -39,8 +29,4 @@ public class Test4ContextMenu {
         contextMenu.click();
     }
 
-    @AfterMethod
-    public void  tearDown() {
-        driver.quit();
-    }
 }
