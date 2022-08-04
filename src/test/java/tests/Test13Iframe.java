@@ -22,9 +22,19 @@ public class Test13Iframe {
     }
 
     @Test
-    public void Test13Iframe() {
-        String url = "";
+    public void Test13Iframe() throws InterruptedException {
+        String url = "http://localhost:7080/iframe";
         driver.get(url);
+
+        //switch to the iframe and set the text of the textarea
+        driver.switchTo().frame("mce_0_ifr");
+        WebElement textArea = driver.findElement(By.xpath("//body"));
+        textArea.clear();
+        textArea.sendKeys("Hello World!");
+
+        //assert that the text is what was typed in previously
+        Assert.assertEquals(driver.findElement(By.xpath("//body/p")).getText(),"Hello World!");
+
     }
 
     @AfterMethod
