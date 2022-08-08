@@ -1,5 +1,5 @@
 # dot-dash-com
-DotDashCom WebDriver Assignment
+## DotDashCom WebDriver Assignment
 Requirements: Atleast JDK 15, IntelliJ IDE
 Steps to run:
 1. Update the maven project to downlaod dependencies
