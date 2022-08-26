@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite for my tests">
+    <test name="The the jungle Tests">
+        <classes>
+            <class name="com.unitTest.repository.ChatTest"/>
+            <class name="com.unitTest.repository.UserTest"/>
+            <class name="com.unitTest.service.ChatServiceTest"/>
+            <class name="com.unitTest.service.UserServiceTest"/>
+        </classes>
+    </test>
+
+</suite>

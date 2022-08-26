@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.E2E.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 47.039 s <<< FAILURE! - in com.E2E.runner.TestRunner
+User clicks button downloads file(User wants to be able to download a file)  Time elapsed: 0.977 s  <<< FAILURE!
+java.lang.AssertionError
+
+User wants hover over picture to see additional information(User wants hover over picture to see additional information)  Time elapsed: 0.323 s  <<< FAILURE!
+java.lang.AssertionError
+
