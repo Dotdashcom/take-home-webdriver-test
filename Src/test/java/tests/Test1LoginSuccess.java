@@ -24,8 +24,10 @@ public class test1Loginsuccess extends chromedriver {
         WebElement loginButton = driver.findElement(LoginPage.loginButton);
         loginButton.click();
         WebElement successLabel = driver.findElement(SecurePage.successLabel);
+
         boolean successTextFlag = successLabel.getText().contains(successTextKey);
         Assert.assertTrue(successTextFlag);
+
     }
 
 }
