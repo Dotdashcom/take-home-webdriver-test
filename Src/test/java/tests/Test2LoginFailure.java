@@ -22,7 +22,7 @@ public class Test2LoginFailure extends chromedriver {
         WebElement loginButton = driver.findElement(LoginPage.loginButton);
         loginButton.click();
         WebElement loginErrorLabel = driver.findElement(LoginPage.loginErrorLabel);
-        Boolean isErrorLabelDisplayed = loginErrorLabel.isDisplayed();
+        boolean isErrorLabelDisplayed = loginErrorLabel.isDisplayed();
 
         Assert.assertTrue(isErrorLabelDisplayed);
     }

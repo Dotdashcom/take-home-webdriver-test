@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import pages.LoginPage;
-import pages.SecureAreaPage;
+import pages.SecurePage;
 
-public class Test1LoginSuccess extends chromedriver {
+public class test1Loginsuccess extends chromedriver {
 
     @Test()
     public void test1LoginSuccess() {
@@ -23,8 +23,8 @@ public class Test1LoginSuccess extends chromedriver {
         passwordTextBox.sendKeys(password);
         WebElement loginButton = driver.findElement(LoginPage.loginButton);
         loginButton.click();
-        WebElement successLabel = driver.findElement(SecureAreaPage.successLabel);
-        Boolean successTextFlag = successLabel.getText().contains(successTextKey);
+        WebElement successLabel = driver.findElement(SecurePage.successLabel);
+        boolean successTextFlag = successLabel.getText().contains(successTextKey);
         Assert.assertTrue(successTextFlag);
     }
 
