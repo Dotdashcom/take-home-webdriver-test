@@ -21,7 +21,7 @@ public class NewTabLinkTest {
 	WebDriver driver;
 
 	@Test
-	public void newTabLinkCheck() {
+	public void newTabLinkCheck() throws InterruptedException {
 
 		driver = BrowserFactory.init();
 

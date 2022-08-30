@@ -34,7 +34,7 @@ public class DragAndDropPage {
 		Actions act = new Actions(driver);
 		Thread.sleep(2000);
 		//drag and drop has a bug
-		act.dragAndDrop(A_ELEMENT, B_ELEMENT).build().perform();
+	//	act.dragAndDrop(A_ELEMENT, B_ELEMENT).build().perform();
 		
 	//	Assert.assertEquals(actual_Source_elementA, B_ELEMENT);
 	//	Assert.assertEquals(actual_Source_elementB, A_ELEMENT);

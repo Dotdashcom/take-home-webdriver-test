@@ -20,14 +20,15 @@ public class CheckAndUncheckBoxesPage {
 	@FindBy(how = How.XPATH, using = "//input[@type='checkbox']")
 	List<WebElement> CHECKBOXES_ELEMENT_SELECT;
 
-	public void clickCheckBox() throws InterruptedException {
-		Thread.sleep(2000);
+	public void clickCheckBox()  {
+		//Thread.sleep(2000);
 		CHECKBOXES_ELEMENT.click();
-		Thread.sleep(2000);
+		//Thread.sleep(5000);
 	}
 
 	public void checkBoxSelect() throws InterruptedException {
 
+		//Thread.sleep(2000);
 		// checking if the all checkboxes are not selected
 		for (int i = 0; i < CHECKBOXES_ELEMENT_SELECT.size(); i++) {
 
@@ -37,7 +38,7 @@ public class CheckAndUncheckBoxesPage {
 		}
 
 		// selecting all checked boxes
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		for (int i = 0; i < CHECKBOXES_ELEMENT_SELECT.size(); i++) {
 			CHECKBOXES_ELEMENT_SELECT.get(i).click();
 		}
@@ -54,7 +55,7 @@ public class CheckAndUncheckBoxesPage {
 		}
 
 		// unselecting all checked boxes
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		for (int i = 0; i < CHECKBOXES_ELEMENT_SELECT.size(); i++) {
 			CHECKBOXES_ELEMENT_SELECT.get(i).click();
 
@@ -62,11 +63,11 @@ public class CheckAndUncheckBoxesPage {
 
 		// validating if checkbox is selected
 		for (int i = 0; i < CHECKBOXES_ELEMENT_SELECT.size(); i++) {
-			boolean status = CHECKBOXES_ELEMENT_SELECT.get(i).isEnabled();
+			boolean status = CHECKBOXES_ELEMENT_SELECT.get(i).isSelected();
 			if (status) {
-				System.out.println("check box is unselected");
-			} else {
 				System.out.println("check box is selected");
+			} else {
+				System.out.println("check box is Unselected");
 			}
 		}
 	}

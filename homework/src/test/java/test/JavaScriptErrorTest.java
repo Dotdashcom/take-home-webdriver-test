@@ -12,7 +12,7 @@ public class JavaScriptErrorTest {
 	WebDriver driver;
 
 	@Test
-	public void javaScriptErrorCheck() {
+	public void javaScriptErrorCheck() throws InterruptedException {
 
 		driver = BrowserFactory.init();
 

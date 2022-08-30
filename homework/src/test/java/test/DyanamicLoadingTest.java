@@ -21,7 +21,7 @@ public class DyanamicLoadingTest {
 	WebDriver driver;
 
 	@Test
-	public void dynamicLoadingCheck() {
+	public void dynamicLoadingCheck() throws InterruptedException {
 
 		driver = BrowserFactory.init();
 		DynamicLoadingPage dynamicLoadingPage = PageFactory.initElements(driver, DynamicLoadingPage.class);

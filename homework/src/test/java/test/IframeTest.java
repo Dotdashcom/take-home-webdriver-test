@@ -12,7 +12,7 @@ public class IframeTest {
 	WebDriver driver;
 
 	@Test
-	public void iframeCheck() {
+	public void iframeCheck() throws InterruptedException {
 
 		driver = BrowserFactory.init();
 

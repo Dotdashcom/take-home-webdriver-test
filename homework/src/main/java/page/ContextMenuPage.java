@@ -30,7 +30,7 @@ public class ContextMenuPage {
 		Actions act = new Actions(driver);
 		act.contextClick(RIGHTCLICK_ELEMENT).perform();
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		// switch to alert box and click on the OK button
 		Alert alert = driver.switchTo().alert();
 

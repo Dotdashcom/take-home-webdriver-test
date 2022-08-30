@@ -12,7 +12,7 @@ public class LoginTestFailure {
 	WebDriver driver;
 
 	@Test
-	public void validUserShouldNotBeAbleToLogin() {
+	public void validUserShouldNotBeAbleToLogin() throws InterruptedException {
 
 		driver = BrowserFactory.init();
 
