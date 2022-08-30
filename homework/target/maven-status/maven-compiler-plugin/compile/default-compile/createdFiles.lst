@@ -1,0 +1,9 @@
+page\DropDownPage.class
+page\HoverOverPage.class
+page\UploadFilePage.class
+page\ContextMenuPage.class
+page\DownloadNewFilePage.class
+util\BrowserFactory.class
+page\CheckAndUncheckBoxesPage.class
+page\DragAndDropPage.class
+page\LoginPage.class

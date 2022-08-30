@@ -1,0 +1,9 @@
+test\CheckAndUncheckBoxesTest.class
+test\DownloadNewFileTest.class
+test\UploadFileTest.class
+test\LoginTestSuccess.class
+test\ContextMenuTest.class
+test\HoverOverTest.class
+test\LoginTestFailure.class
+test\DropDownTest.class
+test\DragAndDropTest.class

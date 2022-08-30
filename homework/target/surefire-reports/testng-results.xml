@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="28272" started-at="2022-08-24T17:26:16Z" finished-at="2022-08-24T17:26:44Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="28272" started-at="2022-08-24T17:26:16Z" finished-at="2022-08-24T17:26:44Z">
+      <class name="test.UploadFileTest">
+        <test-method status="PASS" signature="uploadFileCheck()[pri:0, instance:test.UploadFileTest@6fadae5d]" name="uploadFileCheck" duration-ms="2919" started-at="2022-08-24T17:26:41Z" finished-at="2022-08-24T17:26:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFileCheck -->
+      </class> <!-- test.UploadFileTest -->
+      <class name="test.DropDownTest">
+        <test-method status="PASS" signature="dropDown()[pri:0, instance:test.DropDownTest@7a0ac6e3]" name="dropDown" duration-ms="3622" started-at="2022-08-24T17:26:34Z" finished-at="2022-08-24T17:26:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDown -->
+      </class> <!-- test.DropDownTest -->
+      <class name="test.DragAndDropTest">
+        <test-method status="PASS" signature="dragAndDrop()[pri:0, instance:test.DragAndDropTest@59a6e353]" name="dragAndDrop" duration-ms="3659" started-at="2022-08-24T17:26:31Z" finished-at="2022-08-24T17:26:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+      </class> <!-- test.DragAndDropTest -->
+      <class name="test.CheckAndUncheckBoxesTest">
+        <test-method status="PASS" signature="checkAndUncheckBoxes()[pri:0, instance:test.CheckAndUncheckBoxesTest@17c68925]" name="checkAndUncheckBoxes" duration-ms="9283" started-at="2022-08-24T17:26:16Z" finished-at="2022-08-24T17:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAndUncheckBoxes -->
+      </class> <!-- test.CheckAndUncheckBoxesTest -->
+      <class name="test.DownloadNewFileTest">
+        <test-method status="PASS" signature="downloadFilecheck()[pri:0, instance:test.DownloadNewFileTest@3d24753a]" name="downloadFilecheck" duration-ms="1907" started-at="2022-08-24T17:26:29Z" finished-at="2022-08-24T17:26:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadFilecheck -->
+      </class> <!-- test.DownloadNewFileTest -->
+      <class name="test.ContextMenuTest">
+        <test-method status="PASS" signature="rightClickContextMenu()[pri:0, instance:test.ContextMenuTest@7e0ea639]" name="rightClickContextMenu" duration-ms="3984" started-at="2022-08-24T17:26:25Z" finished-at="2022-08-24T17:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rightClickContextMenu -->
+      </class> <!-- test.ContextMenuTest -->
+      <class name="test.HoverOverTest">
+        <test-method status="PASS" signature="hoverOver()[pri:0, instance:test.HoverOverTest@71be98f5]" name="hoverOver" duration-ms="2868" started-at="2022-08-24T17:26:38Z" finished-at="2022-08-24T17:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOver -->
+      </class> <!-- test.HoverOverTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
