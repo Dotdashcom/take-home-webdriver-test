@@ -113,6 +113,7 @@
     + Test clicks on JS Prompt Button and types a message on Prompt.
     - Test asserts that the alert message contains the typed message.
 16. JavaScript Error
+
     * Test finds the JavaScript error on the page.
     + Test asserts that the page contains error: Cannot read property 'xyz' of undefined.
 17. Open in New Tab
