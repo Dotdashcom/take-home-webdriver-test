@@ -2,15 +2,10 @@ package Tests;
 
 import Pages.*;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import io.github.bonigarcia.wdm.online.Downloader;
-import org.junit.jupiter.api.AfterAll;
+import com.aventstack.extentreports.ExtentTest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -19,8 +14,11 @@ import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.bouncycastle.asn1.x500.style.RFC4519Style.dc;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class Tests {
+
+public class Tests extends TestBase {
     String baseURL="http://localhost:7080";
 
     @AfterEach
@@ -93,18 +91,22 @@ public class Tests {
     }
     @Test
     public void DynamicContent(){
-        Driver.getDriver().get(baseURL+"/dynamic_content");
-////////////////////////////////////////////////////////////////
+        ExtentTest extentTest;
+
+        DynamicContentPage dynamicContentPage=new DynamicContentPage();
+
+
+
 
         Driver.getDriver().navigate().refresh();
     }
     @Test
     public void DynamicControl(){
-        DynamicControl dynamicControl=new DynamicControl();
+        DynamicControlPage dynamicControl=new DynamicControlPage();
         Driver.getDriver().get(baseURL+"/dynamic_controls");
 ///////////////////////////////////////////////////////////////
         dynamicControl.enableDisableButton.click();
-        assertTrue(dynamicControl.enabledMessage.isDisplayed());
+        //assertTrue(dynamicControl.enabledMessage.isDisplayed());
 
     }
     @Test
@@ -121,7 +123,7 @@ public class Tests {
         ////////////////////////////////////////////////////////////
         FileDownloadPage fileDownloadPage=new FileDownloadPage();
         Driver.getDriver().get(baseURL+"/download");
-        fileDownloadPage.textDownload.click();
+       // fileDownloadPage.textDownload.click();
         }
 
      @Test
@@ -129,7 +131,7 @@ public class Tests {
         ///////////////////////////////////////////////////
         FileUploadPage fileUploadPage=new FileUploadPage();
         Driver.getDriver().get(baseURL+"/upload");
-        fileUploadPage.fileUploadButton.sendKeys("");
+        //fileUploadPage.fileUploadButton.sendKeys("");
      }
      @Test
     public void floatingMenu(){
