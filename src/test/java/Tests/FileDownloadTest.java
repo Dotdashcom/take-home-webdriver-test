@@ -4,7 +4,7 @@ import Pages.FileDownloadPage;
 import com.aventstack.extentreports.ExtentTest;
 import org.junit.jupiter.api.Test;
 import utilities.BrowserUtils;
-import utilities.EndPoints;
+import utilities.TestLogics;
 
 import static Tests.TestBase.extentReports;
 
@@ -15,7 +15,7 @@ public class FileDownloadTest {
         FileDownloadPage fdp = new FileDownloadPage();
         ExtentTest extentTest;
         extentTest = extentReports.createTest("File Download Test");
-        fdp.navigateTo(EndPoints.FILEDOWNLOAD);
+        fdp.navigateTo(TestLogics.FILEDOWNLOAD);
         extentTest.info("Navigate to File Download Page");
 
         extentTest.info("Clicked to some-file.txt link");

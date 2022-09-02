@@ -1,14 +1,12 @@
 package Tests;
 
-import Pages.BasePage;
 import Pages.DynamicContentPage;
 import com.aventstack.extentreports.ExtentTest;
 import org.junit.jupiter.api.Test;
 import utilities.Driver;
-import utilities.EndPoints;
+import utilities.TestLogics;
 
 import static Tests.TestBase.extentReports;
-import static org.bouncycastle.asn1.x500.style.RFC4519Style.dc;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class DynamicContentTest {
@@ -24,7 +22,7 @@ public class DynamicContentTest {
         Driver.getDriver().get(baseURL+"/dynamic_content");
         extentTest = extentReports.createTest("Dynamic Content");
         extentTest.info("Navigate Dynamic Content Page");
-        dc.navigateTo(EndPoints.DYNAMICCONTENT);
+        dc.navigateTo(TestLogics.DYNAMICCONTENT);
 
 
 

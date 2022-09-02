@@ -4,7 +4,7 @@ import Pages.FileUploadPage;
 import com.aventstack.extentreports.ExtentTest;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
-import utilities.EndPoints;
+import utilities.TestLogics;
 
 import static Tests.TestBase.extentReports;
 
@@ -15,7 +15,7 @@ public class FileUploadTest {
         FileUploadPage fup = new FileUploadPage();
         ExtentTest extentTest;
         extentTest = extentReports.createTest("File Upload Test");
-        fup.navigateTo(EndPoints.FILEUPLOAD);
+        fup.navigateTo(TestLogics.FILEUPLOAD);
         extentTest.info("Navigate to File Upload Page");
         fup.chooseFileLink.sendKeys("C:\\Users\\computer\\Desktop\\1.doc");
         extentTest.info("Uploading path is chosen and sent");
