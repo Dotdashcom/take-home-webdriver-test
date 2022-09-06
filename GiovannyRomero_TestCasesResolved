@@ -1,0 +1,135 @@
+package mypkg;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import java.util.concurrent.TimeUnit;
+
+import javax.swing.*;
+import java.nio.channels.SelectableChannel;
+import java.time.Duration;
+import java.util.List;
+
+public class MyClass {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "/Users/giovannyromero/Downloads/www/chromedriver");
+        WebDriver driver=new ChromeDriver();
+        System.out.println("Test Cases Automation Starting!");
+
+        //TEST CASE 01: Login Success
+
+        driver.get("http://localhost:7080/login");
+        driver.findElement(By.id("username")).sendKeys("tomsmith");
+        driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
+        driver.findElement(By.className("radius")).click();
+        String message = driver.findElement(By.id("flash")).getText();
+
+        if (message.contains("You logged into a secure area!")) {
+            System.out.println("TEST CASE 01: Login Success >> PASS");
+        } else {
+            System.out.println("TEST CASE 01: Login Success >> FAIL");
+        }
+
+        //TEST CASE 02: Login Failure
+
+        driver.get("http://localhost:7080/login");
+        driver.findElement(By.id("username")).sendKeys("tomsmith");
+        driver.findElement(By.id("password")).sendKeys("WrongPassword");
+        driver.findElement(By.className("radius")).click();
+        message = driver.findElement(By.id("flash")).getText();
+
+        if (message.contains("is invalid!")) {
+            System.out.println("TEST CASE 02: Login Failure >> PASS");
+        } else {
+            System.out.println("TEST CASE 02: Login Failure >> FAIL");
+        }
+
+        //TEST CASE 03: CheckBoxes
+
+        driver.get("http://localhost:7080/checkboxes");
+        WebElement checkbox1 = driver.findElement(By.xpath("//*[@id=\"checkboxes\"]/input[1]"));
+        checkbox1.click();
+        WebElement checkbox2 = driver.findElement(By.xpath("//*[@id=\"checkboxes\"]/input[2]"));
+        checkbox2.click();
+
+        if (checkbox1.isSelected() && !checkbox2.isSelected()) {
+            System.out.println("TEST CASE 03: CheckBoxes >> PASS");
+        } else {
+            System.out.println("TEST CASE 03: CheckBoxes >> FAIL");
+        }
+
+        //TEST CASE 04: ContextMenu
+
+        driver.get("http://localhost:7080/context_menu");
+        Actions actions = new Actions(driver);
+        actions.contextClick(driver.findElement(By.id("hot-spot"))).perform();
+        message = driver.switchTo().alert().getText();
+
+        if (message.contains("You selected a context menu")) {
+            System.out.println("TEST CASE 04: ContextMenu >> PASS");
+        } else {
+            System.out.println("TEST CASE 04: ContextMenu >> FAIL");
+        }
+        driver.switchTo().alert().accept();
+
+        //TEST CASE 05: Drag and Drop
+
+        driver.get("http://localhost:7080/drag_and_drop");
+        WebElement sourceElement = driver.findElement(By.xpath("//*[@id=\"column-a\"]"));
+        WebElement targetElement = driver.findElement(By.cssSelector("#column-b"));
+        Actions builder = new Actions(driver);
+        builder.dragAndDrop(sourceElement, targetElement).perform();
+
+        if (targetElement == driver.findElement(By.xpath("//*[@id=\"column-a\"]"))) {
+            System.out.println("TEST CASE 05: Drag and Drop >> PASS");
+        } else {
+            System.out.println("TEST CASE 05: Drag and Drop >> FAIL");
+        }
+
+        //TEST CASE 06: Dropdown
+
+        driver.get("http://localhost:7080/dropdown");
+        WebElement dropdown = driver.findElement(By.id("dropdown"));
+        List<WebElement> options = dropdown.findElements(By.tagName("option"));
+        dropdown.sendKeys("Option 1");
+        WebElement option = driver.findElement(By.xpath("/html/body/div[2]/div/div/select/option[2]"));
+
+        if (option.getText().equals("Option 1")) {
+            System.out.println("TEST CASE 06: Dropdown >> PASS");
+        } else {
+            System.out.println("TEST CASE 06: Dropdown >> FAIL");
+        }
+
+        //TEST CASE 07: Dynamic Content
+
+        driver.get("http://localhost:7080/dynamic_content");
+        WebElement click = driver.findElement(By.xpath("//*[@id=\"content\"]/div/p[2]/a"));
+        WebElement imageOriginal = driver.findElement(By.xpath("//*[@id=\"content\"]/div[3]/div[1]/img"));
+        String srcOriginal = imageOriginal.getAttribute("src");
+        click.click();
+        WebElement imageSecondary = driver.findElement(By.xpath("//*[@id=\"content\"]/div[3]/div[1]/img"));
+        String srcSecondary = imageSecondary.getAttribute("src");
+
+        if (srcOriginal.equals(srcSecondary)) {
+            System.out.println("TEST CASE 07: Dynamic Content >> FAIL");
+        } else {
+            System.out.println("TEST CASE 07: Dynamic Content >> PASS");
+        }
+
+        //TEST CASE 08: Dynamic Controls
+
+        driver.get("http://localhost:7080/dynamic_controls");
+        WebElement removeButton = driver.findElement(By.xpath("//*[@id=\"checkbox-example\"]/button"));
+        removeButton.click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement goneMessage = driver.findElement(By.xpath("//*[@id=\"message\"]"));
+
+        if (goneMessage.getText().contains("It's gone!")) {
+            System.out.println("TEST CASE 08: Dynamic Controls >> PASS");
+        } else {
+            System.out.println("TEST CASE 08: Dynamic Controls >> FAIL");
+        }
+    driver.quit();
+
+    }
+}
