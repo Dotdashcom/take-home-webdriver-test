@@ -1,7 +1,6 @@
 
 # Environment
 * Maven Project
-
  
 # Run from IDE
 * Right click testng.xml > Run As > TestNG Suite
