@@ -11,5 +11,6 @@
 
 * Run first suite : ` mvn clean test -DsuiteXmlFile=testng.xml `
 
+
 * Run second suite : ` mvn clean test -DsuiteXmlFile=testngJSError.xml `
 
