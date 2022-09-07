@@ -1,3 +1,19 @@
+# Environment
+* Maven Project
+ 
+# Run from IDE
+* Right click testng.xml > Run As > TestNG Suite
+
+* Right click testngJSError.xml > Run As > TestNG Suite
+
+# Run from command line
+
+* Run first suite : ` mvn clean test -DsuiteXmlFile=testng.xml `
+
+
+* Run second suite : ` mvn clean test -DsuiteXmlFile=testngJSError.xml `
+
+====================================================================================
 # Webdriver Tests
 ## Prerequisites
   * Docker
@@ -123,3 +139,4 @@
     + Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
 
  
+>>>>>>> 1b70ad437003b0fb28b3b21ca3cb4abbda34f860
