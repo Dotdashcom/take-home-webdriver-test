@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Environment
 * Maven Project
  
@@ -15,7 +13,7 @@
 
 * Run second suite : ` mvn clean test -DsuiteXmlFile=testngJSError.xml `
 
-=======
+====================================================================================
 # Webdriver Tests
 ## Prerequisites
   * Docker
