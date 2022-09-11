@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Runner">
+    <test name="the internet Test">
+       <classes>
+           <class name="theInternet.tests.LoginTest"></class>
+           <class name="theInternet.tests.NotificationMessageTest"></class>
+           <class name="theInternet.tests.checkBoxTest"></class>
+           <class name="theInternet.tests.ContextMenuTest"></class>
+           <class name="theInternet.tests.DragAndDropTest"></class>
+           <class name="theInternet.tests.DropDownTest"></class>
+           <class name="theInternet.tests.DynamicContentTest"></class>
+           <class name="theInternet.tests.DynamicControlsTest"></class>
+           <class name="theInternet.tests.DynamicLoadingTest"></class>
+           <class name="theInternet.tests.FileDownloadTest"></class>
+           <class name="theInternet.tests.FileUploadTest"></class>
+           <class name="theInternet.tests.FloatingMenuTest"></class>
+           <class name="theInternet.tests.HoverOverTest"></class>
+           <class name="theInternet.tests.iFrameTest"></class>
+           <class name="theInternet.tests.JavaScriptAlertsTest"></class>
+           <class name="theInternet.tests.JavaScriptErrorTest"></class>
+           <class name="theInternet.tests.MultipleWindowTest"></class>
+
+       </classes>
+    </test>
+</suite>
