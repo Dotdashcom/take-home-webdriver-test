@@ -34,7 +34,7 @@ public class DragAndDrop {
         String expectedHeader = headerA.getText();
 
 
-        Assert.assertEquals(expectedHeader,"A" );
+        Assert.assertEquals(expectedHeader,"B" );
 
 
     }
