@@ -1,12 +1,12 @@
 package tests;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Util.TestBase;
-import graphql.Assert;
 import pages.JavaScriptErrorPage;
 
 public class JavaScriptErrorTest extends TestBase {
