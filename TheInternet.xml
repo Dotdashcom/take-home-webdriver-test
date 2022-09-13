@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="false">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
   <test name="TheInternet">
     <classes>
-      <class name="TheInternet.TheInternet.LoginTest"/>
+     <class name="TheInternet.TheInternet.LoginTest"/>
+      <class name="TheInternet.TheInternet.CheckboxesTest"/>
+      <class name="TheInternet.TheInternet.ContextMenuTest"/>
+      <class name="TheInternet.TheInternet.DownloadTest"/>
+      <class name="TheInternet.TheInternet.DragAndDropTest"/>
+      <class name="TheInternet.TheInternet.DropdownTest"/>
+      <class name="TheInternet.TheInternet.DynamicContentTest"/>
+     <class name="TheInternet.TheInternet.DynamicControlsTest"/> 
+      <class name="TheInternet.TheInternet.DynamicLoadingTest"/>
+      <class name="TheInternet.TheInternet.FloatingMenuTest"/>
+      <class name="TheInternet.TheInternet.HoversTest"/>
+      <class name="TheInternet.TheInternet.IframeTest"/>
+      <class name="TheInternet.TheInternet.JavascriptAlertsTest"/>  
+      <class name="TheInternet.TheInternet.JavascriptErrorsTest"/>
+      <class name="TheInternet.TheInternet.NotificationMessageTest"/>
+      <class name="TheInternet.TheInternet.UploadTest"/>
+      <class name="TheInternet.TheInternet.WindowsTest"/> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
