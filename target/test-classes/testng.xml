@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <test name="Test">
+        <packages>
+            <package name="assignment"></package>
+        </packages>
+        <classes>
+            <class name="faridun.assignment.allScenariosTests">
+                <methods>
+                    <include name="LoginTestPassed"></include>
+                    <include name="LoginTestFailed"></include>
+                    <include name="checkBoxes"></include>
+                    <include name="contextMenu"></include>
+                    <include name="DragAndDrop"></include>
+                    <include name="dropDown"></include>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
