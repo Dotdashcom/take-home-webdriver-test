@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-15T16:35:01 PDT" name="Regression" finished-at="2022-09-15T16:35:05 PDT" duration-ms="3282">
+    <groups>
+    </groups>
+    <test started-at="2022-09-15T16:35:01 PDT" name="Test" finished-at="2022-09-15T16:35:05 PDT" duration-ms="3282">
+      <class name="faridun.assignment.allScenariosTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:faridun.assignment.allScenariosTests@5c1a8622]" started-at="2022-09-15T16:35:01 PDT" name="setup" finished-at="2022-09-15T16:35:04 PDT" duration-ms="2993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginTestPassed()[pri:0, instance:faridun.assignment.allScenariosTests@5c1a8622]" started-at="2022-09-15T16:35:04 PDT" name="LoginTestPassed" finished-at="2022-09-15T16:35:04 PDT" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestPassed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:faridun.assignment.allScenariosTests@5c1a8622]" started-at="2022-09-15T16:35:04 PDT" name="tearDown" finished-at="2022-09-15T16:35:05 PDT" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- faridun.assignment.allScenariosTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Regression -->
+</testng-results>
