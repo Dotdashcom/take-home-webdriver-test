@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extentreports>
+    <configuration>
+        <encoding>UTF-8</encoding>
+        <documentTitle>REPORT TEST - v1.0.0</documentTitle>
+        <reportName>AUTOMATION TESTS</reportName>
+        <reportHeadline> - v1.0.0</reportHeadline>
+
+        <!-- report theme --> <!-- standard, dark -->
+        <theme>dark</theme>
+
+        <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
+        <dateFormat>yyyy-MM-dd</dateFormat>
+
+        <!-- global time format override -->   <!-- defaults to HH:mm:ss -->
+        <timeFormat>HH:mm:ss</timeFormat>
+
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+        $(document).ready(function() {
+
+        });
+      ]]>
+        </scripts>
+
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+
+      ]]>
+        </styles>
+    </configuration>
+</extentreports>
