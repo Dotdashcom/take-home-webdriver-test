@@ -7,8 +7,6 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 
-// Hooks is similar to Listener in TestNG framework
-
 public class Hooks {
 	
 	@Before
