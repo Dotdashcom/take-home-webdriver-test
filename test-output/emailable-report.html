@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">17</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">66,247</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">internet.Tests</td><td><a href="#m0">dragAndDrop</a></td><td rowspan="1">1663884348379</td><td rowspan="1">5965</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="17">internet.Tests</td><td><a href="#m1">checkBoxes</a></td><td rowspan="1">1663884345067</td><td rowspan="1">827</td></tr><tr class="passedeven"><td><a href="#m2">contextMenu</a></td><td rowspan="1">1663884346909</td><td rowspan="1">568</td></tr><tr class="passedeven"><td><a href="#m3">dropdown</a></td><td rowspan="1">1663884355367</td><td rowspan="1">688</td></tr><tr class="passedeven"><td><a href="#m4">dynamicContent</a></td><td rowspan="1">1663884357099</td><td rowspan="1">758</td></tr><tr class="passedeven"><td><a href="#m5">dynamicControls</a></td><td rowspan="1">1663884358693</td><td rowspan="1">15798</td></tr><tr class="passedeven"><td><a href="#m6">dynamicLoading</a></td><td rowspan="1">1663884375393</td><td rowspan="1">5501</td></tr><tr class="passedeven"><td><a href="#m7">fileDownload</a></td><td rowspan="1">1663884381806</td><td rowspan="1">2419</td></tr><tr class="passedeven"><td><a href="#m8">floatingMenu</a></td><td rowspan="1">1663884385057</td><td rowspan="1">1436</td></tr><tr class="passedeven"><td><a href="#m9">iFrame</a></td><td rowspan="1">1663884387381</td><td rowspan="1">6332</td></tr><tr class="passedeven"><td><a href="#m10">javascriptAlerts</a></td><td rowspan="1">1663884394523</td><td rowspan="1">941</td></tr><tr class="passedeven"><td><a href="#m11">javascriptError</a></td><td rowspan="1">1663884396355</td><td rowspan="1">186</td></tr><tr class="passedeven"><td><a href="#m12">loginFail</a></td><td rowspan="1">1663884397482</td><td rowspan="1">725</td></tr><tr class="passedeven"><td><a href="#m13">loginTest</a></td><td rowspan="1">1663884399116</td><td rowspan="1">806</td></tr><tr class="passedeven"><td><a href="#m14">mouseHover</a></td><td rowspan="1">1663884400937</td><td rowspan="1">1108</td></tr><tr class="passedeven"><td><a href="#m15">newWindow</a></td><td rowspan="1">1663884402899</td><td rowspan="1">845</td></tr><tr class="passedeven"><td><a href="#m16">notificationMessage</a></td><td rowspan="1">1663884404657</td><td rowspan="1">881</td></tr><tr class="passedeven"><td><a href="#m17">uploadFile</a></td><td rowspan="1">1663884406452</td><td rowspan="1">1610</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">internet.Tests#dragAndDrop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;B&apos;) to be present in element [[ChromeDriver: chrome on WINDOWS (36dcffc4cfadb331bfd4e8d60c1f0725)] -&gt; id: column-a] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;LAPTOP-6KN3HGT8&apos;, ip: &apos;192.168.2.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\hayns\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:36727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:36727/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36dcffc4cfadb331bfd4e8d60c1f0725
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at internet.Tests.dragAndDrop(Tests.java:123)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">internet.Tests#checkBoxes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">internet.Tests#contextMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">internet.Tests#dropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">internet.Tests#dynamicContent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">internet.Tests#dynamicControls</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">internet.Tests#dynamicLoading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">internet.Tests#fileDownload</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">internet.Tests#floatingMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">internet.Tests#iFrame</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">internet.Tests#javascriptAlerts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">internet.Tests#javascriptError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">internet.Tests#loginFail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">internet.Tests#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">internet.Tests#mouseHover</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">internet.Tests#newWindow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">internet.Tests#notificationMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">internet.Tests#uploadFile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
