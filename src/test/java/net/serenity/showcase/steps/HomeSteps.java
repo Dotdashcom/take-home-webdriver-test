@@ -306,7 +306,7 @@ public class HomeSteps extends ScenarioSteps {
 	public void notificationMessageShouldBeDisplayed() {
 		logger.log(Level.INFO, Util.getMethodName(0) + " Instantiated");
 		String expected1 = "Action successful";
-		String expected2 = "Action unsuccessful, please try again";
+		String expected2 = "Action unsuccesful, please try again";
 		String expected3 = "Action Unsuccessful";
 		String actual = homePage.getTextOf("flashNotification");
 		Assert.assertTrue("Notification message is not displayed !", actual.contains(expected1) | actual.contains(expected2) | actual.contains(expected3));
