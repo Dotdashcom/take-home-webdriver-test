@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-22T16:26:43 GMT-04:00" name="Default suite" finished-at="2022-09-22T16:26:46 GMT-04:00" duration-ms="3256">
+    <groups>
+    </groups>
+    <test started-at="2022-09-22T16:26:43 GMT-04:00" name="Default test" finished-at="2022-09-22T16:26:46 GMT-04:00" duration-ms="3256">
+      <class name="testpackage.Floatingmenutest">
+        <test-method is-config="true" signature="StartSignInTest()[pri:0, instance:testpackage.Floatingmenutest@42a48628]" started-at="2022-09-22T16:26:43 GMT-04:00" name="StartSignInTest" finished-at="2022-09-22T16:26:46 GMT-04:00" duration-ms="2933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartSignInTest -->
+        <test-method signature="floatinmenutest()[pri:0, instance:testpackage.Floatingmenutest@42a48628]" started-at="2022-09-22T16:26:46 GMT-04:00" name="floatinmenutest" finished-at="2022-09-22T16:26:46 GMT-04:00" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatinmenutest -->
+        <test-method is-config="true" signature="EndSignInTest()[pri:0, instance:testpackage.Floatingmenutest@42a48628]" started-at="2022-09-22T16:26:46 GMT-04:00" name="EndSignInTest" finished-at="2022-09-22T16:26:46 GMT-04:00" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSignInTest -->
+      </class> <!-- testpackage.Floatingmenutest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
