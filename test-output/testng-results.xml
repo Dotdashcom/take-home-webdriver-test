@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-22T18:05:41 EDT" name="Suite" finished-at="2022-09-22T18:06:48 EDT" duration-ms="66247">
+    <groups>
+    </groups>
+    <test started-at="2022-09-22T18:05:41 EDT" name="Test" finished-at="2022-09-22T18:06:48 EDT" duration-ms="66247">
+      <class name="internet.Tests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:42 EDT" name="setup" finished-at="2022-09-22T18:05:45 EDT" duration-ms="3036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkBoxes()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:45 EDT" name="checkBoxes" finished-at="2022-09-22T18:05:45 EDT" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxes -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:45 EDT" name="teardown" finished-at="2022-09-22T18:05:46 EDT" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:46 EDT" name="setup" finished-at="2022-09-22T18:05:46 EDT" duration-ms="883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="contextMenu()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:46 EDT" name="contextMenu" finished-at="2022-09-22T18:05:47 EDT" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextMenu -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:47 EDT" name="teardown" finished-at="2022-09-22T18:05:47 EDT" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:47 EDT" name="setup" finished-at="2022-09-22T18:05:48 EDT" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dragAndDrop()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:48 EDT" name="dragAndDrop" finished-at="2022-09-22T18:05:54 EDT" duration-ms="5965" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for text ('B') to be present in element [[ChromeDriver: chrome on WINDOWS (36dcffc4cfadb331bfd4e8d60c1f0725)] -> id: column-a] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-6KN3HGT8', ip: '192.168.2.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\hayns\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:36727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:36727/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36dcffc4cfadb331bfd4e8d60c1f0725]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('B') to be present in element [[ChromeDriver: chrome on WINDOWS (36dcffc4cfadb331bfd4e8d60c1f0725)] -> id: column-a] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-6KN3HGT8', ip: '192.168.2.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\hayns\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:36727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:36727/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36dcffc4cfadb331bfd4e8d60c1f0725
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at internet.Tests.dragAndDrop(Tests.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:54 EDT" name="teardown" finished-at="2022-09-22T18:05:54 EDT" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:54 EDT" name="setup" finished-at="2022-09-22T18:05:55 EDT" duration-ms="893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dropdown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:55 EDT" name="dropdown" finished-at="2022-09-22T18:05:56 EDT" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:56 EDT" name="teardown" finished-at="2022-09-22T18:05:56 EDT" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:56 EDT" name="setup" finished-at="2022-09-22T18:05:57 EDT" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dynamicContent()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:57 EDT" name="dynamicContent" finished-at="2022-09-22T18:05:57 EDT" duration-ms="758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicContent -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:57 EDT" name="teardown" finished-at="2022-09-22T18:05:57 EDT" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:57 EDT" name="setup" finished-at="2022-09-22T18:05:58 EDT" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dynamicControls()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:05:58 EDT" name="dynamicControls" finished-at="2022-09-22T18:06:14 EDT" duration-ms="15798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicControls -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:14 EDT" name="teardown" finished-at="2022-09-22T18:06:14 EDT" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:14 EDT" name="setup" finished-at="2022-09-22T18:06:15 EDT" duration-ms="834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dynamicLoading()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:15 EDT" name="dynamicLoading" finished-at="2022-09-22T18:06:20 EDT" duration-ms="5501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicLoading -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:20 EDT" name="teardown" finished-at="2022-09-22T18:06:21 EDT" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:21 EDT" name="setup" finished-at="2022-09-22T18:06:21 EDT" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="fileDownload()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:21 EDT" name="fileDownload" finished-at="2022-09-22T18:06:24 EDT" duration-ms="2419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:24 EDT" name="teardown" finished-at="2022-09-22T18:06:24 EDT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:24 EDT" name="setup" finished-at="2022-09-22T18:06:25 EDT" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="floatingMenu()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:25 EDT" name="floatingMenu" finished-at="2022-09-22T18:06:26 EDT" duration-ms="1436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenu -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:26 EDT" name="teardown" finished-at="2022-09-22T18:06:26 EDT" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:26 EDT" name="setup" finished-at="2022-09-22T18:06:27 EDT" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="iFrame()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:27 EDT" name="iFrame" finished-at="2022-09-22T18:06:33 EDT" duration-ms="6332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iFrame -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:33 EDT" name="teardown" finished-at="2022-09-22T18:06:33 EDT" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:33 EDT" name="setup" finished-at="2022-09-22T18:06:34 EDT" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="javascriptAlerts()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:34 EDT" name="javascriptAlerts" finished-at="2022-09-22T18:06:35 EDT" duration-ms="941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascriptAlerts -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:35 EDT" name="teardown" finished-at="2022-09-22T18:06:35 EDT" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:35 EDT" name="setup" finished-at="2022-09-22T18:06:36 EDT" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="javascriptError()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:36 EDT" name="javascriptError" finished-at="2022-09-22T18:06:36 EDT" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascriptError -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:36 EDT" name="teardown" finished-at="2022-09-22T18:06:36 EDT" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:36 EDT" name="setup" finished-at="2022-09-22T18:06:37 EDT" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginFail()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:37 EDT" name="loginFail" finished-at="2022-09-22T18:06:38 EDT" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:38 EDT" name="teardown" finished-at="2022-09-22T18:06:38 EDT" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:38 EDT" name="setup" finished-at="2022-09-22T18:06:39 EDT" duration-ms="783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:39 EDT" name="loginTest" finished-at="2022-09-22T18:06:39 EDT" duration-ms="806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:39 EDT" name="teardown" finished-at="2022-09-22T18:06:40 EDT" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:40 EDT" name="setup" finished-at="2022-09-22T18:06:40 EDT" duration-ms="805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="mouseHover()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:40 EDT" name="mouseHover" finished-at="2022-09-22T18:06:42 EDT" duration-ms="1108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHover -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:42 EDT" name="teardown" finished-at="2022-09-22T18:06:42 EDT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:42 EDT" name="setup" finished-at="2022-09-22T18:06:42 EDT" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="newWindow()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:42 EDT" name="newWindow" finished-at="2022-09-22T18:06:43 EDT" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newWindow -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:43 EDT" name="teardown" finished-at="2022-09-22T18:06:43 EDT" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:43 EDT" name="setup" finished-at="2022-09-22T18:06:44 EDT" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="notificationMessage()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:44 EDT" name="notificationMessage" finished-at="2022-09-22T18:06:45 EDT" duration-ms="881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationMessage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:45 EDT" name="teardown" finished-at="2022-09-22T18:06:45 EDT" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:45 EDT" name="setup" finished-at="2022-09-22T18:06:46 EDT" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="uploadFile()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:46 EDT" name="uploadFile" finished-at="2022-09-22T18:06:48 EDT" duration-ms="1610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFile -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:internet.Tests@5d534f5d]" started-at="2022-09-22T18:06:48 EDT" name="teardown" finished-at="2022-09-22T18:06:48 EDT" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- internet.Tests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
