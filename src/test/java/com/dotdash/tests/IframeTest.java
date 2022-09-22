@@ -14,7 +14,6 @@ public class IframeTest extends TestBase {
 
         IframePage iframePage = new IframePage();
         iframePage.navigatePages("Frames");
-
         iframePage.iframeLink.click();
         Driver.getDriver().switchTo().frame(iframePage.iframe);
         iframePage.getIframeBody.clear();
