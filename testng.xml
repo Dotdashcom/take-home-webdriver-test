@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Mitt Assignment Tests" parallel="false">
+    <test name="LoginSuccess Tests">
+        <classes>
+            <class name="com.mitt.test.LoginTests"/>
+        </classes>
+    </test>
+    <test name="CheckBox Tests">
+        <classes>
+            <class name="com.mitt.test.CheckBoxTests"/>
+        </classes>
+    </test>
+    <test name="ContextMenu Tests">
+        <classes>
+            <class name="com.mitt.test.ContextMenuTests"/>
+        </classes>
+    </test>
+    <test name="Dropdown Tests">
+        <classes>
+            <class name="com.mitt.test.DropDownTests"/>
+        </classes>
+    </test>
+
+    <test name="Dynamic Content Tests">
+        <classes>
+            <class name="com.mitt.test.DynamicContentTests"/>
+        </classes>
+    </test>
+
+    <test name="Dynamic Control Tests">
+        <classes>
+            <class name="com.mitt.test.DynamicControlTests"/>
+        </classes>
+    </test>
+
+    <test name="Drag and Drop Tests">
+        <classes>
+            <class name="com.mitt.test.DrangAndDropTests"/>
+        </classes>
+    </test>
+
+    <test name="Dynamic Loading Tests">
+        <classes>
+            <class name="com.mitt.test.DynamicLoadingTests"/>
+        </classes>
+    </test>
+
+    <test name="File Download Tests">
+        <classes>
+            <class name="com.mitt.test.FileDownloadTests"/>
+        </classes>
+    </test>
+
+    <test name="File upload Tests">
+        <classes>
+            <class name="com.mitt.test.FileUploadTests"/>
+        </classes>
+    </test>
+
+    <test name="Floating Menu Tests">
+        <classes>
+            <class name="com.mitt.test.FloatingMenuTests"/>
+        </classes>
+    </test>
+
+    <test name="Iframe">
+        <classes>
+            <class name="com.mitt.test.IFrameTests"/>
+        </classes>
+    </test>
+
+    <test name="Mouse Hover Tests">
+        <classes>
+            <class name="com.mitt.test.MouseHoverTests"/>
+        </classes>
+    </test>
+
+    <test name="JavaScript Alerts Tests">
+        <classes>
+            <class name="com.mitt.test.JsAlertTests"/>
+        </classes>
+    </test>
+
+    <test name="JavaScript Error Tests">
+        <classes>
+            <class name="com.mitt.test.JsErrorTests"/>
+        </classes>
+    </test>
+
+    <test name="Open in New Tab Tests">
+        <classes>
+            <class name="com.mitt.test.NewWIndowTests"/>
+        </classes>
+    </test>
+
+    <test name="Notification Message Tests">
+        <classes>
+            <class name="com.mitt.test.NotificationMessageTests"/>
+        </classes>
+    </test>
+
+</suite>
+
