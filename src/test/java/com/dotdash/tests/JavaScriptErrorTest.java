@@ -12,7 +12,7 @@ import org.openqa.selenium.logging.LogType;
 public class JavaScriptErrorTest extends TestBase {
 
     @Test
-    public void jsError() {
+    public void jsErrorTest() {
 
         JavaScriptErrorPage javaScriptErrorPage = new JavaScriptErrorPage();
         javaScriptErrorPage.navigatePages("JavaScript onload event error");

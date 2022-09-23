@@ -11,7 +11,7 @@ public class FloatingMenuTest extends TestBase {
 
 
     @Test
-    public void floatingMenu() {
+    public void floatingMenuTest() {
 
         FloatingMenuPage floatingMenuPage = new FloatingMenuPage();
         floatingMenuPage.navigatePages("Floating Menu");
