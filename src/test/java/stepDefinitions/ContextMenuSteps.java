@@ -3,6 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
@@ -30,7 +31,7 @@ public class ContextMenuSteps {
         contextMenuPage.WaitUntilElementVisible(contextMenuPage.contextMenuPageHeader);
     }
 
-    @And("user right clicks on context box")
+    @When("user right clicks on context box")
     public void userRightClicksContextBox() {
         contextMenuPage.WaitUntilElementVisible(contextMenuPage.contextBox);
         Actions actions = new Actions(driver);
@@ -43,7 +44,7 @@ public class ContextMenuSteps {
         Assert.assertNotNull(alert);
     }
 
-    @Then("context menu text is displayed")
+    @And("context menu text is displayed")
     public void contextMenuTextDisplayed() {
         String alertText = driver.switchTo().alert().getText();
         Assert.assertEquals(PropertyKeys.getProperty("context.menu.text"), alertText);

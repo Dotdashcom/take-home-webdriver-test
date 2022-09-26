@@ -1,8 +1,8 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -30,7 +30,7 @@ public class DropDownSteps {
         dropDownPage.WaitUntilElementVisible(dropDownPage.dropDownPageHeader);
     }
 
-    @And("^user selects dropdown \"(.*)\"$")
+    @When("^user selects dropdown \"(.*)\"$")
     public void selectDropdownOption(String option) {
         Select select = new Select(dropDownPage.dropDown);
         select.selectByVisibleText(option);

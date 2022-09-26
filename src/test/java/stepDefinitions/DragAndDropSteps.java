@@ -1,8 +1,8 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -30,13 +30,13 @@ public class DragAndDropSteps {
         dragAndDropPage.WaitUntilElementVisible(dragAndDropPage.dragAndDropPageHeader);
     }
 
-    @And("user drags box A to box B")
+    @When("user drags box A to box B")
     public void dragAndDropAToB() throws InterruptedException {
         Actions actions = new Actions(driver);
         actions.dragAndDrop(dragAndDropPage.aBox, dragAndDropPage.bBox).perform();
     }
 
-    @And("user drags box B to box A")
+    @When("user drags box B to box A")
     public void dragAndDropBToA() {
         Actions actions = new Actions(driver);
         actions.dragAndDrop(dragAndDropPage.bBox, dragAndDropPage.aBox).perform();

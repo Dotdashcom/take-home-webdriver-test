@@ -4,6 +4,6 @@ Feature: Download Feature
 
   Scenario: Click on download link
     Given user navigates to download page
-    And user clicks on download link
+    When user clicks on download link
     And wait for three seconds
     Then file is downloaded to device

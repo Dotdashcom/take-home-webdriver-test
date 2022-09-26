@@ -4,10 +4,10 @@ Feature: Checkbox Feature
 
   Scenario: Check all boxes
     Given user navigates to checkboxes page
-    And user checks on all boxes
+    When user checks on all boxes
     Then all boxes are selected
 
   Scenario: Uncheck all boxes
     Given user navigates to checkboxes page
-    And user unchecks all boxes
+    When user unchecks all boxes
     Then all boxes are not selected

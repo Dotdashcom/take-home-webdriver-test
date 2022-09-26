@@ -4,22 +4,22 @@ Feature: Dynamic Controls Feature
 
   Scenario: Click on remove button
     Given user navigates to dynamic controls page
-    And user clicks on remove button
+    When user clicks on remove button
     Then checkbox is not present
 
   Scenario: Click on add button
     Given user navigates to dynamic controls page
-    And user clicks on remove button
+    When user clicks on remove button
     And user clicks on add button
     Then checkbox is present
 
   Scenario: Click on enable button
     Given user navigates to dynamic controls page
-    And user clicks on enable button
+    When user clicks on enable button
     Then text box is enabled
 
   Scenario: Click on disable button
     Given user navigates to dynamic controls page
-    And user clicks on enable button
+    When user clicks on enable button
     And user clicks on disable button
     Then text box is disabled

@@ -3,6 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -29,7 +30,7 @@ public class LoginSteps {
         loginPage.WaitUntilElementVisible(loginPage.loginPageHeader);
     }
 
-    @And("^user inputs \"(.*)\" username$")
+    @When("^user inputs \"(.*)\" username$")
     public void inputsUsername(String validation) {
         loginPage.WaitUntilElementVisible(loginPage.usernameField);
         switch (validation) {

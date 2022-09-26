@@ -4,7 +4,7 @@ Feature: Drop Down Feature
   
   Scenario Outline: Select option 1 from drop down list
     Given user navigates to drop down page
-    And user selects dropdown "<option>"
+    When user selects dropdown "<option>"
     Then dropdown option "<option>" is selected
 
     Examples:

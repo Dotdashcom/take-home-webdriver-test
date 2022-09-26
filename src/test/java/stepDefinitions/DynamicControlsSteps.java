@@ -3,6 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,7 +31,7 @@ public class DynamicControlsSteps {
         dynamicControlsPage.WaitUntilElementVisible(dynamicControlsPage.dynamicControlsPageHeader);
     }
 
-    @And("user clicks on remove button")
+    @When("user clicks on remove button")
     public void clickRemoveButton() {
         dynamicControlsPage.WaitUntilElementVisible(dynamicControlsPage.removeButton);
         dynamicControlsPage.removeButton.click();
@@ -42,7 +43,7 @@ public class DynamicControlsSteps {
         dynamicControlsPage.addButton.click();
     }
 
-    @And("user clicks on enable button")
+    @When("user clicks on enable button")
     public void clickEnableButton() {
         dynamicControlsPage.WaitUntilElementVisible(dynamicControlsPage.enableButton);
         dynamicControlsPage.enableButton.click();

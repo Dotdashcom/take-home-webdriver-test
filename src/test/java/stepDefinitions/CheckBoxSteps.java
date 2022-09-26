@@ -1,8 +1,8 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,7 +28,7 @@ public class CheckBoxSteps {
         driver.get(PropertyKeys.getProperty("baseurl") + "/checkboxes");
     }
 
-    @And("user checks on all boxes")
+    @When("user checks on all boxes")
     public void checkAllBoxes() {
         List<WebElement> checkboxes = checkBoxPage.checkBoxes;
         for (int i = 0; i < checkboxes.size(); i++) {
@@ -38,7 +38,7 @@ public class CheckBoxSteps {
         }
     }
 
-    @And("user unchecks all boxes")
+    @When("user unchecks all boxes")
     public void uncheckAllBoxes() {
         List<WebElement> checkboxes = checkBoxPage.checkBoxes;
         for (int i = 0; i < checkboxes.size(); i++) {

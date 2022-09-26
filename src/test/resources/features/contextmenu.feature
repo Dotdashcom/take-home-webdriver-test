@@ -4,6 +4,6 @@ Feature: Context Menu Feature
 
   Scenario: Right click context box
     Given user navigates to context menu page
-    And user right clicks on context box
+    When user right clicks on context box
     Then context menu alert box is displayed
     And context menu text is displayed

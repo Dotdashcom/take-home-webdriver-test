@@ -1,8 +1,8 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,7 +29,7 @@ public class DynamicLoadingSteps {
         dynamicLoadingPage.WaitUntilElementVisible(dynamicLoadingPage.dynamicLoadPageHeader);
     }
 
-    @And("user clicks on the start button")
+    @When("user clicks on the start button")
     public void clickStartButton() {
         dynamicLoadingPage.WaitUntilElementVisible(dynamicLoadingPage.startButton);
         dynamicLoadingPage.startButton.click();

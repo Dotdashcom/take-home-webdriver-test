@@ -3,6 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -37,7 +38,7 @@ public class DownloadSteps {
         PropertyKeys.setProperty("downloadPath", path);
     }
 
-    @And("user clicks on download link")
+    @When("user clicks on download link")
     public void clickDownloadLink() throws InterruptedException {
         downloadPage.WaitUntilElementVisible(downloadPage.downloadLink);
         downloadPage.downloadLink.click();
