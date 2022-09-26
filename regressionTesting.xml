@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+    <listeners>
+        <listener class-name="Utilities.Listeners"/>
+    </listeners>
+    <test name="RegressionTest" thread-count="5" parallel="none">
+        <classes>
+            <class name="test.Test_001_LoginSuccess"/>
+            <class name="test.Test_002_LoginFailure"/>
+            <class name="test.Test_003_CheckBox"/>
+            <class name="test.Test_004_ContextMenu"/>
+            <class name="test.Test_005_DragAndDrop"/>
+            <class name="test.Test_006_DropDown"/>
+            <class name="test.Test_007_DynamicContent"/>
+            <class name="test.Test_008_DynamicControls"/>
+            <class name="test.Test_009_DynamicLoading"/>
+            <class name="test.Test_010_FileDownload"/>
+            <class name="test.Test_011_FileUpload"/>
+            <class name="test.Test_012_FloatingMenu"/>
+            <class name="test.Test_013_Iframe"/>
+            <class name="test.Test_014_MouseHover"/>
+            <class name="test.Test_015_JavaScriptAlerts"/>
+            <class name="test.Test_016_JavaScriptError"/>
+            <class name="test.Test_017_OpenInNewTab"/>
+            <class name="test.Test_018_NotificationMessage"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
