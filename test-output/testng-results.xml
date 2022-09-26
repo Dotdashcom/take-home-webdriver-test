@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1721" started-at="2022-09-25T19:49:52Z" finished-at="2022-09-25T19:49:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1721" started-at="2022-09-25T19:49:52Z" finished-at="2022-09-25T19:49:54Z">
+      <class name="testCases.Checkboxes">
+        <test-method status="PASS" signature="init()[pri:0, instance:testCases.Checkboxes@4cc0edeb]" name="init" is-config="true" duration-ms="3118" started-at="2022-09-25T15:49:49Z" finished-at="2022-09-25T15:49:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="validateCheckboxes()[pri:0, instance:testCases.Checkboxes@4cc0edeb]" name="validateCheckboxes" duration-ms="1669" started-at="2022-09-25T15:49:53Z" finished-at="2022-09-25T15:49:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckboxes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.Checkboxes@4cc0edeb]" name="tearDown" is-config="true" duration-ms="1265" started-at="2022-09-25T15:49:54Z" finished-at="2022-09-25T15:49:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.Checkboxes -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
