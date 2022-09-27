@@ -122,4 +122,17 @@
     * Test clicks on the Click Here link a multiple times.
     + Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
 
- 
+
+## Running Tests
+
+### Prerequisites
+* Install Maven: `$ brew install maven`
+* Set download path in **config.properties** file: `download.path={PATH_TO_YOUR_DOWNLOADS_FOLDER}`
+* Docker container is running: `docker run -d -p 7080:5000 gprestes/the-internet`
+
+### Running all test cases
+1. Open terminal and navigate to root directory of the project (OR open terminal tab in IntelliJ)
+2. Run command `$ mvn verify`
+3. Open generated html report at **target/cucumber-reports/report.html** after all tests finish
+
+#### ***Alternatively, you can run all tests in IntelliJ by right-clicking on TestRunner.java file and selecting `Run TestRunner`***
