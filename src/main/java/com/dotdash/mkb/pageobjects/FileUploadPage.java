@@ -23,7 +23,13 @@ public class FileUploadPage extends BasePage {
     }
 
     public void uploadFile(String name){
-        String uploadFile = System.getProperty("user.home") + "\\downloads\\" + name;
+        String uploadFile = "";
+        if(System.getProperty("os.name").toLowerCase().startsWith("windows")) {
+            uploadFile = System.getProperty("user.home") + "\\downloads\\" + name;
+        } else if (System.getProperty("os.name").toLowerCase().startsWith("mac")) {
+            uploadFile = System.getProperty("user.home") + "/downloads/" + name;
+        }
+        
         File file = new File(uploadFile);
 
         inputField.sendKeys(uploadFile);
