@@ -34,13 +34,13 @@ public class BasePage {
     protected void clickButtonAndWaitUntilFinish(WebElement buttonElm) {
         buttonElm.click();
 
-        FluentWait fluentWait = new FluentWait(getDriver());
+        FluentWait<WebDriver> fluentWait = new FluentWait<>(getDriver());
         fluentWait.withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofMillis(250)).ignoring(NoSuchElementException.class);
         fluentWait.until(ExpectedConditions.invisibilityOf(getDriver().findElement(By.id("loading"))));
     }
 
     protected void waitUntilFileExists(File file) {
-        FluentWait fluentWait = new FluentWait(getDriver());
+        FluentWait<WebDriver> fluentWait = new FluentWait<>(getDriver());
         fluentWait.withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofMillis(250)).ignoring(NoSuchElementException.class);
         fluentWait.until(x -> file.exists());
     }
