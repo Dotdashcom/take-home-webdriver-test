@@ -37,6 +37,10 @@ public class WindowsPage extends BasePage {
         getDriver().switchTo().window(childWindowHandle);
     }
 
+    public void switchToParentWindow() {
+        getDriver().switchTo().window(parentWindowHandle);
+    }
+
     public String getNewWindowText() {
         return newWindowText.getText();
     }

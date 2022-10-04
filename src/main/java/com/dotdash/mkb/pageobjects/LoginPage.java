@@ -26,17 +26,17 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    public String successLogin() {
-        username.sendKeys("tomsmith");
-        password.sendKeys("SuperSecretPassword!");
+    public String successLogin(String username, String password) {
+        this.username.sendKeys(username);
+        this.password.sendKeys(password);
         loginButton.click();
 
         return successFlashText.getText();
     }
 
-    public String failLogin() {
-        username.sendKeys("tomsmith");
-        password.sendKeys("adsfasdf!");
+    public String failLogin(String username, String password) {
+        this.username.sendKeys(username);
+        this.password.sendKeys(password);
         loginButton.click();
 
         return failFlashText.getText();

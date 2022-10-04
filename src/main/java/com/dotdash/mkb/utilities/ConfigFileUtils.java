@@ -8,13 +8,22 @@ import java.util.Properties;
 
 public class ConfigFileUtils {
 
-    private static Properties properties;
-    private static String propertyFilePath= "src\\main\\resources\\general.config";
+    private static Properties browserProperties;
+    private static Properties userCredentialsProperties;
 
-    public static void readProperties(){
+    private static String browserPropsFilePath= "src\\main\\resources\\general.config";
+    private static String userCreditsPropsFilePath= "src\\main\\resources\\userCredentials.config";
+
+    public static void readAllProperties(){
+        browserProperties = readPropertyFile(browserPropsFilePath);
+        userCredentialsProperties = readPropertyFile(userCreditsPropsFilePath);
+    }
+
+    private static Properties readPropertyFile(String filePath) {
         BufferedReader reader;
+        Properties properties;
         try {
-            reader = new BufferedReader(new FileReader(propertyFilePath));
+            reader = new BufferedReader(new FileReader(filePath));
             properties = new Properties();
             try {
                 properties.load(reader);
@@ -24,12 +33,18 @@ public class ConfigFileUtils {
             }
         } catch ( FileNotFoundException e) {
             e.printStackTrace();
-            throw new RuntimeException("general.config not found at " + propertyFilePath);
+            throw new RuntimeException("general.config not found at " + filePath);
         }
+        return properties;
     }
 
-    public static String getProperty(String property){
-        return properties.getProperty(property);
+    public static String getBrowserProperty(String property){
+        return browserProperties.getProperty(property);
     }
+
+    public static String getUserCredentialsProperty(String property){
+        return userCredentialsProperties.getProperty(property);
+    }
+
 
 }
