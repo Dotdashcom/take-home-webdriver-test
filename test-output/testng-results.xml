@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-03T18:19:04 EDT" name="Suite" finished-at="2022-10-03T18:20:27 EDT" duration-ms="83404">
+    <groups>
+    </groups>
+    <test started-at="2022-10-03T18:19:04 EDT" name="Dotdashcom Tests" finished-at="2022-10-03T18:20:27 EDT" duration-ms="83404">
+      <class name="dotdash.tests.DragNDropTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.DragNDropTest@3e92efc3]" started-at="2022-10-03T18:19:18 EDT" name="initialize" finished-at="2022-10-03T18:19:19 EDT" duration-ms="1412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateDragNDrop()[pri:0, instance:dotdash.tests.DragNDropTest@3e92efc3]" started-at="2022-10-03T18:19:19 EDT" name="validateDragNDrop" finished-at="2022-10-03T18:19:19 EDT" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDragNDrop -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.DragNDropTest@3e92efc3]" started-at="2022-10-03T18:19:19 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:20 EDT" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.DragNDropTest -->
+      <class name="dotdash.tests.DropdownTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.DropdownTest@2e4b8173]" started-at="2022-10-03T18:19:20 EDT" name="initialize" finished-at="2022-10-03T18:19:21 EDT" duration-ms="1418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateDropdown()[pri:0, instance:dotdash.tests.DropdownTest@2e4b8173]" started-at="2022-10-03T18:19:21 EDT" name="validateDropdown" finished-at="2022-10-03T18:19:21 EDT" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDropdown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.DropdownTest@2e4b8173]" started-at="2022-10-03T18:19:21 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:21 EDT" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.DropdownTest -->
+      <class name="dotdash.tests.FrameTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.FrameTest@5a63f509]" started-at="2022-10-03T18:20:07 EDT" name="initialize" finished-at="2022-10-03T18:20:09 EDT" duration-ms="2124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateFileUpload()[pri:0, instance:dotdash.tests.FrameTest@5a63f509]" started-at="2022-10-03T18:20:09 EDT" name="validateFileUpload" finished-at="2022-10-03T18:20:19 EDT" duration-ms="10289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFileUpload -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.FrameTest@5a63f509]" started-at="2022-10-03T18:20:19 EDT" name="closeBrowser" finished-at="2022-10-03T18:20:19 EDT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.FrameTest -->
+      <class name="dotdash.tests.HoversTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.HoversTest@6e4784bc]" started-at="2022-10-03T18:20:19 EDT" name="initialize" finished-at="2022-10-03T18:20:21 EDT" duration-ms="1337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateMouseHover()[pri:0, instance:dotdash.tests.HoversTest@6e4784bc]" started-at="2022-10-03T18:20:21 EDT" name="validateMouseHover" finished-at="2022-10-03T18:20:21 EDT" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMouseHover -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.HoversTest@6e4784bc]" started-at="2022-10-03T18:20:21 EDT" name="closeBrowser" finished-at="2022-10-03T18:20:21 EDT" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.HoversTest -->
+      <class name="dotdash.tests.FloatingMenuTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.FloatingMenuTest@29626d54]" started-at="2022-10-03T18:20:05 EDT" name="initialize" finished-at="2022-10-03T18:20:07 EDT" duration-ms="1331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateFileUpload()[pri:0, instance:dotdash.tests.FloatingMenuTest@29626d54]" started-at="2022-10-03T18:20:07 EDT" name="validateFileUpload" finished-at="2022-10-03T18:20:07 EDT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFileUpload -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.FloatingMenuTest@29626d54]" started-at="2022-10-03T18:20:07 EDT" name="closeBrowser" finished-at="2022-10-03T18:20:07 EDT" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.FloatingMenuTest -->
+      <class name="dotdash.tests.UploadTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.UploadTest@4b0b0854]" started-at="2022-10-03T18:20:24 EDT" name="initialize" finished-at="2022-10-03T18:20:25 EDT" duration-ms="1321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateFileUpload()[pri:0, instance:dotdash.tests.UploadTest@4b0b0854]" started-at="2022-10-03T18:20:25 EDT" name="validateFileUpload" finished-at="2022-10-03T18:20:25 EDT" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFileUpload -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.UploadTest@4b0b0854]" started-at="2022-10-03T18:20:25 EDT" name="closeBrowser" finished-at="2022-10-03T18:20:25 EDT" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.UploadTest -->
+      <class name="dotdash.tests.CheckBoxTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.CheckBoxTest@470f1802]" started-at="2022-10-03T18:19:12 EDT" name="initialize" finished-at="2022-10-03T18:19:13 EDT" duration-ms="1441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateCheckboxes()[pri:0, instance:dotdash.tests.CheckBoxTest@470f1802]" started-at="2022-10-03T18:19:13 EDT" name="validateCheckboxes" finished-at="2022-10-03T18:19:14 EDT" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckboxes -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.CheckBoxTest@470f1802]" started-at="2022-10-03T18:19:14 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:14 EDT" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.CheckBoxTest -->
+      <class name="dotdash.tests.NotificationsTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.NotificationsTest@e056f20]" started-at="2022-10-03T18:20:22 EDT" name="initialize" finished-at="2022-10-03T18:20:23 EDT" duration-ms="1399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateFileUpload()[pri:0, instance:dotdash.tests.NotificationsTest@e056f20]" started-at="2022-10-03T18:20:23 EDT" name="validateFileUpload" finished-at="2022-10-03T18:20:24 EDT" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFileUpload -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.NotificationsTest@e056f20]" started-at="2022-10-03T18:20:24 EDT" name="closeBrowser" finished-at="2022-10-03T18:20:24 EDT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.NotificationsTest -->
+      <class name="dotdash.tests.AlertsTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.AlertsTest@3e2e18f2]" started-at="2022-10-03T18:19:10 EDT" name="initialize" finished-at="2022-10-03T18:19:11 EDT" duration-ms="1412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateAlerts()[pri:0, instance:dotdash.tests.AlertsTest@3e2e18f2]" started-at="2022-10-03T18:19:11 EDT" name="validateAlerts" finished-at="2022-10-03T18:19:12 EDT" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAlerts -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.AlertsTest@3e2e18f2]" started-at="2022-10-03T18:19:12 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:12 EDT" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.AlertsTest -->
+      <class name="dotdash.tests.DynamicLoadingTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.DynamicLoadingTest@5bd03f44]" started-at="2022-10-03T18:19:59 EDT" name="initialize" finished-at="2022-10-03T18:20:00 EDT" duration-ms="1392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateDynamicLoading()[pri:0, instance:dotdash.tests.DynamicLoadingTest@5bd03f44]" started-at="2022-10-03T18:20:00 EDT" name="validateDynamicLoading" finished-at="2022-10-03T18:20:05 EDT" duration-ms="5122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDynamicLoading -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.DynamicLoadingTest@5bd03f44]" started-at="2022-10-03T18:20:05 EDT" name="closeBrowser" finished-at="2022-10-03T18:20:05 EDT" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.DynamicLoadingTest -->
+      <class name="dotdash.tests.DynamicControlsTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.DynamicControlsTest@17046283]" started-at="2022-10-03T18:19:23 EDT" name="initialize" finished-at="2022-10-03T18:19:25 EDT" duration-ms="1475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateDynamicContent()[pri:0, instance:dotdash.tests.DynamicControlsTest@17046283]" started-at="2022-10-03T18:19:25 EDT" name="validateDynamicContent" finished-at="2022-10-03T18:19:59 EDT" duration-ms="33847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDynamicContent -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.DynamicControlsTest@17046283]" started-at="2022-10-03T18:19:59 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:59 EDT" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.DynamicControlsTest -->
+      <class name="dotdash.tests.DownloadTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.DownloadTest@703580bf]" started-at="2022-10-03T18:19:15 EDT" name="initialize" finished-at="2022-10-03T18:19:17 EDT" duration-ms="1445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateFileDownload()[pri:0, instance:dotdash.tests.DownloadTest@703580bf]" started-at="2022-10-03T18:19:17 EDT" name="validateFileDownload" finished-at="2022-10-03T18:19:18 EDT" duration-ms="1082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFileDownload -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.DownloadTest@703580bf]" started-at="2022-10-03T18:19:18 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:18 EDT" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.DownloadTest -->
+      <class name="dotdash.tests.DynamicContentTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.DynamicContentTest@70e8f8e]" started-at="2022-10-03T18:19:21 EDT" name="initialize" finished-at="2022-10-03T18:19:23 EDT" duration-ms="1535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateDynamicContent()[pri:0, instance:dotdash.tests.DynamicContentTest@70e8f8e]" started-at="2022-10-03T18:19:23 EDT" name="validateDynamicContent" finished-at="2022-10-03T18:19:23 EDT" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDynamicContent -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.DynamicContentTest@70e8f8e]" started-at="2022-10-03T18:19:23 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:23 EDT" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.DynamicContentTest -->
+      <class name="dotdash.tests.JavaScriptTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.JavaScriptTest@34b7ac2f]" started-at="2022-10-03T18:20:21 EDT" name="initialize" finished-at="2022-10-03T18:20:22 EDT" duration-ms="1138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateJsErrors()[pri:0, instance:dotdash.tests.JavaScriptTest@34b7ac2f]" started-at="2022-10-03T18:20:22 EDT" name="validateJsErrors" finished-at="2022-10-03T18:20:22 EDT" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateJsErrors -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.JavaScriptTest@34b7ac2f]" started-at="2022-10-03T18:20:22 EDT" name="closeBrowser" finished-at="2022-10-03T18:20:22 EDT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.JavaScriptTest -->
+      <class name="dotdash.tests.LoginTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.LoginTest@48aaecc3]" started-at="2022-10-03T18:19:04 EDT" name="initialize" finished-at="2022-10-03T18:19:07 EDT" duration-ms="3742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateIncorrectlogin()[pri:0, instance:dotdash.tests.LoginTest@48aaecc3]" started-at="2022-10-03T18:19:07 EDT" name="validateIncorrectlogin" finished-at="2022-10-03T18:19:08 EDT" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIncorrectlogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.LoginTest@48aaecc3]" started-at="2022-10-03T18:19:08 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:08 EDT" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.LoginTest@48aaecc3]" started-at="2022-10-03T18:19:08 EDT" name="initialize" finished-at="2022-10-03T18:19:09 EDT" duration-ms="1516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validatelogin()[pri:0, instance:dotdash.tests.LoginTest@48aaecc3]" started-at="2022-10-03T18:19:09 EDT" name="validatelogin" finished-at="2022-10-03T18:19:10 EDT" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatelogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.LoginTest@48aaecc3]" started-at="2022-10-03T18:19:10 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:10 EDT" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.LoginTest -->
+      <class name="dotdash.tests.ContextTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.ContextTest@63021689]" started-at="2022-10-03T18:19:14 EDT" name="initialize" finished-at="2022-10-03T18:19:15 EDT" duration-ms="1413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateCheckboxes()[pri:0, instance:dotdash.tests.ContextTest@63021689]" started-at="2022-10-03T18:19:15 EDT" name="validateCheckboxes" finished-at="2022-10-03T18:19:15 EDT" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckboxes -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.ContextTest@63021689]" started-at="2022-10-03T18:19:15 EDT" name="closeBrowser" finished-at="2022-10-03T18:19:15 EDT" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.ContextTest -->
+      <class name="dotdash.tests.WindowsTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:dotdash.tests.WindowsTest@19bb07ed]" started-at="2022-10-03T18:20:25 EDT" name="initialize" finished-at="2022-10-03T18:20:27 EDT" duration-ms="1282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateNewWindowText()[pri:0, instance:dotdash.tests.WindowsTest@19bb07ed]" started-at="2022-10-03T18:20:27 EDT" name="validateNewWindowText" finished-at="2022-10-03T18:20:27 EDT" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNewWindowText -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dotdash.tests.WindowsTest@19bb07ed]" started-at="2022-10-03T18:20:27 EDT" name="closeBrowser" finished-at="2022-10-03T18:20:27 EDT" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dotdash.tests.WindowsTest -->
+    </test> <!-- Dotdashcom Tests -->
+  </suite> <!-- Suite -->
+</testng-results>
