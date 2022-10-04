@@ -25,3 +25,6 @@ hs_err_pid*
 /.idea/modules.xml
 /.idea/misc.xml
 /.idea/.gitignore
+/.idea/jarRepositories.xml
+/.idea/encodings.xml
+/.idea/compiler.xml
