@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/take-home-webdriver-tests.iml" filepath="$PROJECT_DIR$/.idea/take-home-webdriver-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TakeHomeTestED.iml" filepath="$PROJECT_DIR$/TakeHomeTestED.iml" />
     </modules>
   </component>
 </project>
