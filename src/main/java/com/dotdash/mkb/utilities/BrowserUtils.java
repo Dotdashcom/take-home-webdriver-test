@@ -40,6 +40,10 @@ public class BrowserUtils {
         driver.quit();
     }
 
+    public void closeBrowser() {
+        driver.close();
+    }
+
     public <T> T open(String pageFullURL, Class<T> pageClassProxy) {
         driver.get(pageFullURL);
 

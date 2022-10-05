@@ -52,7 +52,7 @@ public class AppTest {
 
     @AfterMethod
     public void tearDownBrowser() {
-        browserUtils.quitBrowser();
+        browserUtils.closeBrowser();
     }
 
 
