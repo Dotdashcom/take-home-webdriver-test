@@ -27,18 +27,20 @@ public class LoginPage extends BasePage {
     }
 
     public String successLogin(String username, String password) {
-        this.username.sendKeys(username);
-        this.password.sendKeys(password);
-        loginButton.click();
+        doLogin(username, password);
 
         return successFlashText.getText();
     }
 
     public String failLogin(String username, String password) {
+        doLogin(username, password);
+
+        return failFlashText.getText();
+    }
+    
+    private void doLogin(String username, String password) {
         this.username.sendKeys(username);
         this.password.sendKeys(password);
         loginButton.click();
-
-        return failFlashText.getText();
     }
 }
