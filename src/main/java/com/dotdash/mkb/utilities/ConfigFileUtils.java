@@ -11,10 +11,17 @@ public class ConfigFileUtils {
     private static Properties browserProperties;
     private static Properties userCredentialsProperties;
 
-    private static String browserPropsFilePath= "src\\main\\resources\\general.config";
-    private static String userCreditsPropsFilePath= "src\\main\\resources\\userCredentials.config";
+    private static String browserPropsFilePath;
+    private static String userCreditsPropsFilePath;
 
-    public static void readAllProperties(){
+    public static void readAllProperties() {
+        if(OsUtils.isWindows()) {
+            browserPropsFilePath= "src\\main\\resources\\general.config";
+            userCreditsPropsFilePath= "src\\main\\resources\\userCredentials.config";
+        } else if(OsUtils.isMac()) {
+            browserPropsFilePath= "src/main/resources/general.config";
+            userCreditsPropsFilePath= "src/main/resources/userCredentials.config";
+        }
         browserProperties = readPropertyFile(browserPropsFilePath);
         userCredentialsProperties = readPropertyFile(userCreditsPropsFilePath);
     }
