@@ -15,59 +15,55 @@ import java.time.Duration;
 
 public class BrowserUtils {
 
-    private WebDriver driver = null;
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    public void instantiateDriver(String targetBrowser) {
+    public static void instantiateDriver(String targetBrowser) {
 
         if(targetBrowser.equalsIgnoreCase("CHROME")) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            driver.set(new ChromeDriver());
         } else if(targetBrowser.equalsIgnoreCase("FIREFOX")) {
             WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
+            driver.set(new FirefoxDriver());
         } else if(targetBrowser.equalsIgnoreCase("EDGE")) {
             WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver();
+            driver.set(new EdgeDriver());
         } else {
             System.out.println("The browser, " + targetBrowser + ", is NOT supported.");
         }
         if(driver != null) {
-            driver.manage().window().maximize();
+            driver.get().manage().window().maximize();
         }
     }
 
-    public void quitBrowser() {
-        driver.quit();
+    public static void quitBrowser() {
+        driver.get().quit();
     }
 
-    public void closeBrowser() {
-        driver.close();
-    }
-
-    public <T> T open(String pageFullURL, Class<T> pageClassProxy) {
-        driver.get(pageFullURL);
+    public static <T> T open(String pageFullURL, Class<T> pageClassProxy) {
+        driver.get().get(pageFullURL);
 
         // Before creating a PageObject, Wait until page is loaded.
-        WebDriverWait wdWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wdWait = new WebDriverWait(driver.get(), Duration.ofSeconds(10));
         wdWait.until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor)wd).executeScript("return document.readyState").equals("complete"));
 
-        return PageFactory.initElements(driver, pageClassProxy);
+        return PageFactory.initElements(driver.get(), pageClassProxy);
     }
 
-    public void refresh() {
-        driver.navigate().refresh();
+    public static void refresh() {
+        driver.get().navigate().refresh();
     }
 
-    public void scrollByPage() {
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
+    public static void scrollByPage() {
+        JavascriptExecutor jse = (JavascriptExecutor) (driver.get());
         jse.executeScript("window.scrollBy(0,300)", "");
     }
 
-    public void switchToIframe(String id) {
-        driver.switchTo().frame(id);
+    public static void switchToIframe(String id) {
+        driver.get().switchTo().frame(id);
     }
 
-    public void switchToDefault() {
-        driver.switchTo().defaultContent();
+    public static void switchToDefault() {
+        driver.get().switchTo().defaultContent();
     }
 }
