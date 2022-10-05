@@ -1,5 +1,6 @@
 package com.dotdash.mkb.pageobjects;
 
+import com.dotdash.mkb.utilities.OsUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,9 +25,9 @@ public class FileUploadPage extends BasePage {
 
     public void uploadFile(String name){
         String uploadFile = "";
-        if(System.getProperty("os.name").toLowerCase().startsWith("windows")) {
+        if(OsUtils.isWindows()) {
             uploadFile = System.getProperty("user.home") + "\\downloads\\" + name;
-        } else if (System.getProperty("os.name").toLowerCase().startsWith("mac")) {
+        } else if (OsUtils.isMac()) {
             uploadFile = System.getProperty("user.home") + "/downloads/" + name;
         }
         
