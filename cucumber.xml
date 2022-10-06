@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.605">
+    <testcase classname="Meridith_Take_Home" name="Login_Success" time="30.264">
+        <failure message="Unable to find element with locator By.id: username&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'Omers-Air.hitronhub.home', ip: 'fd00:6477:7dac:9032:8d0:1d98:acb8:d2cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.2'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is on the loginPage..............................................passed
+When user puts in credentials as "tomsmith" and "SuperSecretPassword!"......failed
+Then verify the login is successful.........................................skipped
+Then user logs out..........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: username
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Omers-Air.hitronhub.home', ip: 'fd00:6477:7dac:9032:8d0:1d98:acb8:d2cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.sendKeys(Unknown Source)
+	at stepdefinitions.HomePageStepDefs.user_puts_in_correct_credentials_as_and(HomePageStepDefs.java:17)
+	at ✽.user puts in credentials as "tomsmith" and "SuperSecretPassword!"(file:///Users/omerkanca/IdeaProjects/meridith_take_home_test_by_Faruk/./src/test/resources/features/meridith_publication.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>
