@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "TheInternetSuite">
+   <test name = "AllTests">
+      <classes>
+         <class name = "com.tjank.SeleniumTests.LoginTest"/>
+         <class name = "com.tjank.SeleniumTests.FailedLoginTest"/>
+         <class name = "com.tjank.SeleniumTests.CheckboxTest"/>
+         <class name = "com.tjank.SeleniumTests.ContextMenuTest"/>
+         <class name = "com.tjank.SeleniumTests.DragAndDropTest"/>
+         <class name = "com.tjank.SeleniumTests.DropdownTest"/>
+         <class name = "com.tjank.SeleniumTests.DynamicContentTest"/>
+         <class name = "com.tjank.SeleniumTests.DynamicControlsTest"/>
+         <class name = "com.tjank.SeleniumTests.DynamicLoadingTest"/>
+         <class name = "com.tjank.SeleniumTests.FileDownloadTest"/>
+         <class name = "com.tjank.SeleniumTests.FileUploadTest"/>
+         <class name = "com.tjank.SeleniumTests.FloatingMenuTest"/>
+         <class name = "com.tjank.SeleniumTests.IFrameTest"/>
+         <class name = "com.tjank.SeleniumTests.FailedLoginTest"/>
+         <class name = "com.tjank.SeleniumTests.MouseHoverTest"/>
+         <class name = "com.tjank.SeleniumTests.JavascriptAlertsTest"/>
+         <class name = "com.tjank.SeleniumTests.JavascriptErrorTest"/>
+         <class name = "com.tjank.SeleniumTests.NewTabTest"/>
+         <class name = "com.tjank.SeleniumTests.NotificationTest"/>
+      </classes>
+   </test>
+</suite>
