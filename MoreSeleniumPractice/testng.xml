@@ -17,7 +17,6 @@
          <class name = "com.tjank.SeleniumTests.FileUploadTest"/>
          <class name = "com.tjank.SeleniumTests.FloatingMenuTest"/>
          <class name = "com.tjank.SeleniumTests.IFrameTest"/>
-         <class name = "com.tjank.SeleniumTests.FailedLoginTest"/>
          <class name = "com.tjank.SeleniumTests.MouseHoverTest"/>
          <class name = "com.tjank.SeleniumTests.JavascriptAlertsTest"/>
          <class name = "com.tjank.SeleniumTests.JavascriptErrorTest"/>
