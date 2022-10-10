@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-10T15:23:10 EDT" name="Default suite" finished-at="2022-10-10T15:24:14 EDT" duration-ms="64257">
+    <groups>
+    </groups>
+    <test started-at="2022-10-10T15:23:10 EDT" name="Default test" finished-at="2022-10-10T15:24:14 EDT" duration-ms="64257">
+      <class name="com.test.qa.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:10 EDT" name="setUp" finished-at="2022-10-10T15:23:12 EDT" duration-ms="1890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:1, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:12 EDT" name="loginTest" finished-at="2022-10-10T15:23:12 EDT" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:12 EDT" name="tearDown" finished-at="2022-10-10T15:23:12 EDT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:12 EDT" name="setUp" finished-at="2022-10-10T15:23:13 EDT" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTestWithWrongInputs()[pri:2, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:13 EDT" name="loginTestWithWrongInputs" finished-at="2022-10-10T15:23:14 EDT" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestWithWrongInputs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:14 EDT" name="tearDown" finished-at="2022-10-10T15:23:14 EDT" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:14 EDT" name="setUp" finished-at="2022-10-10T15:23:15 EDT" duration-ms="796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkBoxValidation()[pri:3, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:15 EDT" name="checkBoxValidation" finished-at="2022-10-10T15:23:15 EDT" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:15 EDT" name="tearDown" finished-at="2022-10-10T15:23:15 EDT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:15 EDT" name="setUp" finished-at="2022-10-10T15:23:16 EDT" duration-ms="762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkBoxValidationWithInput()[pri:4, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:16 EDT" name="checkBoxValidationWithInput" finished-at="2022-10-10T15:23:16 EDT" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxValidationWithInput -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:16 EDT" name="tearDown" finished-at="2022-10-10T15:23:16 EDT" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:16 EDT" name="setUp" finished-at="2022-10-10T15:23:17 EDT" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="alertValidationTest()[pri:5, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:17 EDT" name="alertValidationTest" finished-at="2022-10-10T15:23:17 EDT" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:17 EDT" name="tearDown" finished-at="2022-10-10T15:23:18 EDT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:18 EDT" name="setUp" finished-at="2022-10-10T15:23:18 EDT" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dragAndDropTest()[pri:6, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:18 EDT" name="dragAndDropTest" finished-at="2022-10-10T15:23:21 EDT" duration-ms="2873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:21 EDT" name="tearDown" finished-at="2022-10-10T15:23:21 EDT" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:21 EDT" name="setUp" finished-at="2022-10-10T15:23:22 EDT" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dropDownTest()[pri:7, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:22 EDT" name="dropDownTest" finished-at="2022-10-10T15:23:25 EDT" duration-ms="2438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:25 EDT" name="tearDown" finished-at="2022-10-10T15:23:25 EDT" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:25 EDT" name="setUp" finished-at="2022-10-10T15:23:26 EDT" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dynamicContentTest()[pri:8, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:26 EDT" name="dynamicContentTest" finished-at="2022-10-10T15:23:26 EDT" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicContentTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:26 EDT" name="tearDown" finished-at="2022-10-10T15:23:26 EDT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:26 EDT" name="setUp" finished-at="2022-10-10T15:23:27 EDT" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dynamicLoadingClickValidationTest()[pri:9, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:27 EDT" name="dynamicLoadingClickValidationTest" finished-at="2022-10-10T15:23:32 EDT" duration-ms="5300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicLoadingClickValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:32 EDT" name="tearDown" finished-at="2022-10-10T15:23:32 EDT" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:32 EDT" name="setUp" finished-at="2022-10-10T15:23:33 EDT" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileDownloadValidationTest()[pri:10, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:33 EDT" name="fileDownloadValidationTest" finished-at="2022-10-10T15:23:35 EDT" duration-ms="2282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownloadValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:35 EDT" name="tearDown" finished-at="2022-10-10T15:23:35 EDT" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:35 EDT" name="setUp" finished-at="2022-10-10T15:23:36 EDT" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="frameValidationTest()[pri:12, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:36 EDT" name="frameValidationTest" finished-at="2022-10-10T15:23:42 EDT" duration-ms="5963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frameValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:42 EDT" name="tearDown" finished-at="2022-10-10T15:23:42 EDT" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:42 EDT" name="setUp" finished-at="2022-10-10T15:23:43 EDT" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="floatingMenuValidationTest()[pri:13, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:43 EDT" name="floatingMenuValidationTest" finished-at="2022-10-10T15:23:43 EDT" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenuValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:43 EDT" name="tearDown" finished-at="2022-10-10T15:23:43 EDT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:43 EDT" name="setUp" finished-at="2022-10-10T15:23:44 EDT" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="mouseHoverValidationTest()[pri:14, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:44 EDT" name="mouseHoverValidationTest" finished-at="2022-10-10T15:23:48 EDT" duration-ms="3694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:48 EDT" name="tearDown" finished-at="2022-10-10T15:23:48 EDT" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:48 EDT" name="setUp" finished-at="2022-10-10T15:23:49 EDT" duration-ms="762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="javaScriptAlertsValidation()[pri:15, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:49 EDT" name="javaScriptAlertsValidation" finished-at="2022-10-10T15:23:52 EDT" duration-ms="3402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaScriptAlertsValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:52 EDT" name="tearDown" finished-at="2022-10-10T15:23:52 EDT" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:52 EDT" name="setUp" finished-at="2022-10-10T15:23:53 EDT" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="childWindowValidationTest()[pri:16, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:53 EDT" name="childWindowValidationTest" finished-at="2022-10-10T15:23:53 EDT" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- childWindowValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:53 EDT" name="tearDown" finished-at="2022-10-10T15:23:54 EDT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:54 EDT" name="setUp" finished-at="2022-10-10T15:23:54 EDT" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="notificationMessageValidationTest()[pri:17, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:54 EDT" name="notificationMessageValidationTest" finished-at="2022-10-10T15:23:55 EDT" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationMessageValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:55 EDT" name="tearDown" finished-at="2022-10-10T15:23:55 EDT" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:55 EDT" name="setUp" finished-at="2022-10-10T15:23:56 EDT" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dynamicControlsValidationTest()[pri:18, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:23:56 EDT" name="dynamicControlsValidationTest" finished-at="2022-10-10T15:24:09 EDT" duration-ms="12967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicControlsValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:24:09 EDT" name="tearDown" finished-at="2022-10-10T15:24:09 EDT" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:24:09 EDT" name="setUp" finished-at="2022-10-10T15:24:10 EDT" duration-ms="758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileUploadValidationTest()[pri:19, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:24:10 EDT" name="fileUploadValidationTest" finished-at="2022-10-10T15:24:14 EDT" duration-ms="4395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-10T15:24:14 EDT" name="tearDown" finished-at="2022-10-10T15:24:14 EDT" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.qa.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
