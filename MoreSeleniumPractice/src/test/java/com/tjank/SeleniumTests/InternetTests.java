@@ -32,7 +32,7 @@ public class InternetTests {
 		WebPage.tearDown();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 1)
 	public void happyPathLogin() {
 		InternetLoginPage loginPage = new InternetLoginPage();
 		loginPage.setup();
@@ -44,7 +44,7 @@ public class InternetTests {
 		securePage.clickLogoutButton();
 	}
 	
-	@Test(enabled = false) 
+	@Test(priority = 2) 
 	public void unhappyPathLogin() {
 		InternetLoginPage loginPage = new InternetLoginPage();
 		loginPage.setup();
@@ -54,7 +54,7 @@ public class InternetTests {
 		Assert.assertTrue(loginPage.getLoginFailedMessage().contains("Your username is invalid!"));
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 3)
 	public void checkboxTest() {
 		CheckboxPage checkboxPage = new CheckboxPage();
 		checkboxPage.setup();
@@ -67,7 +67,7 @@ public class InternetTests {
 		Assert.assertFalse(checkboxPage.checkBoxTwo.isSelected());
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 4)
 	public void contextMenuTest() {
 		ContextMenuPage contextMenuPage = new ContextMenuPage();
 		contextMenuPage.setup();
@@ -77,7 +77,7 @@ public class InternetTests {
 		contextMenuPage.verifyAlertText();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 5)
 	public void dragAndDropTest() {
 		DragAndDropPage dndPage = new DragAndDropPage();
 		dndPage.setup();
@@ -86,7 +86,7 @@ public class InternetTests {
 		dndPage.verifyElementSwitch();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 6)
 	public void dropdownTest() {
 		DropdownPage dropdownPage = new DropdownPage();
 		dropdownPage.setup();
@@ -95,7 +95,7 @@ public class InternetTests {
 		dropdownPage.selectDropdownOption("Option 2");
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 7)
 	public void dynamicContentTest() {
 		DynamicContentPage contentPage = new DynamicContentPage();
 		contentPage.setup();
@@ -105,7 +105,7 @@ public class InternetTests {
 		contentPage.checkForDuplicateCols(list);
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 8)
 	public void dynamicControlsTest() {
 		DynamicControlsPage dynPage = new DynamicControlsPage();
 		dynPage.setup();
@@ -116,7 +116,7 @@ public class InternetTests {
 		dynPage.clickDisableButton();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 9)
 	public void dynamicLoadingTest() {
 		DynamicLoadingPage dynPage = new DynamicLoadingPage();
 		dynPage.setup();
@@ -124,7 +124,7 @@ public class InternetTests {
 		dynPage.clickStartButton();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 10)
 	public void fileDownloadTest() {
 		FileDownloadPage dnPage = new FileDownloadPage();
 		dnPage.setup();
@@ -133,7 +133,7 @@ public class InternetTests {
 		dnPage.verifyFileDownloaded();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 11)
 	public void uploadFileTest() {
 		FileUploadPage fupPage = new FileUploadPage();
 		fupPage.setup();
@@ -142,7 +142,7 @@ public class InternetTests {
 		fupPage.verifyFileUploaded("some-file.txt");
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 12)
 	public void floatingMenutest() {
 		FloatingMenuPage fmPage = new FloatingMenuPage();
 		fmPage.setup();
@@ -151,7 +151,7 @@ public class InternetTests {
 		fmPage.verifyFloatMenu();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 13)
 	public void iframeTest() {
 		IFramePage frPage = new IFramePage();
 		frPage.setup();
@@ -160,7 +160,7 @@ public class InternetTests {
 		frPage.typeText();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 14)
 	public void hoverTest() {
 		MouseHoverPage hoverPage = new MouseHoverPage();
 		hoverPage.setup();
@@ -168,7 +168,7 @@ public class InternetTests {
 		hoverPage.verifyImageText(hoverPage.getImages());
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 15)
 	public void jsAlertTest() {
 		JavascriptAlertsPage jsPage = new JavascriptAlertsPage();
 		jsPage.setup();
@@ -178,7 +178,7 @@ public class InternetTests {
 		jsPage.verifyAlertPrompt();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 16)
 	public void jsErrorPageTest() {
 		JavascriptErrorPage erPage = new JavascriptErrorPage();
 		erPage.setup();
@@ -186,7 +186,7 @@ public class InternetTests {
 		erPage.validateErrorMessage();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 17)
 	public void newTabTest() {
 		NewTabPage tabPage = new NewTabPage();
 		tabPage.setup();
