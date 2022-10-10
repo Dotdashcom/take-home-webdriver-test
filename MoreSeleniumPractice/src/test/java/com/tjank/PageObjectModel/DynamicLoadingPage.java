@@ -25,15 +25,6 @@ public class DynamicLoadingPage extends WebPage {
 		this.URL = this.URL.concat("/dynamic_loading/2");
 		System.out.println(URL);
 	}
-	
-	@Override
-	public void setup() {
-		String url = this.getUrl();
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get(url);
-		assertEquals(driver.getCurrentUrl(),url);
-	}
 
 	public String getUrl() {
 		return this.URL;

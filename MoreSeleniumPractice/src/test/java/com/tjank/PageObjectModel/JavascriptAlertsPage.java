@@ -35,15 +35,6 @@ public class JavascriptAlertsPage extends WebPage {
 	
 	@FindBy(xpath = "//button[text()='Click for JS Prompt']")
 	public WebElement jsPrompt;
-	
-	@Override
-	public void setup() {
-		String url = this.getUrl();
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get(url);
-		assertEquals(driver.getCurrentUrl(),url);
-	}
 
 	public String getUrl() {
 		return this.URL;

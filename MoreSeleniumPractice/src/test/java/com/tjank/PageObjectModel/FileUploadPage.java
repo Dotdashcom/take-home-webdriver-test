@@ -39,15 +39,6 @@ public class FileUploadPage extends WebPage {
 	@FindBy(xpath = "//input[@id='file-submit']")
 	public WebElement uploadButton;
 	
-	@Override
-	public void setup() {
-		String url = this.getUrl();
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get(url);
-		assertEquals(driver.getCurrentUrl(),url);
-	}
-
 	public String getUrl() {
 		return this.URL;
 	}	

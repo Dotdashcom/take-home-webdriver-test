@@ -26,15 +26,6 @@ public class CheckboxPage extends WebPage {
 	
 	@FindBy(xpath = "//input[@type = 'checkbox'][2]")
 	public WebElement checkBoxTwo;
-	
-	@Override
-	public void setup() {
-		String url = this.getUrl();
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get(url);
-		assertEquals(driver.getCurrentUrl(),url);
-	}
 
 	public String getUrl() {
 		return this.URL;

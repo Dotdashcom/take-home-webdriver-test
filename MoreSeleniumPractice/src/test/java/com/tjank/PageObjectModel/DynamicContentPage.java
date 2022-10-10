@@ -32,15 +32,6 @@ public class DynamicContentPage extends WebPage {
 	
 	@FindBy(xpath = "//*[@class='large-10 columns']")
 	public List<WebElement> textCols;
-	
-	@Override
-	public void setup() {
-		String url = this.getUrl();
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get(url);
-		assertEquals(driver.getCurrentUrl(),url);
-	}
 
 	public String getUrl() {
 		return this.URL;

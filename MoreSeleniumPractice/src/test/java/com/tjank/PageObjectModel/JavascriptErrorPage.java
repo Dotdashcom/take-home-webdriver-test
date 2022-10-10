@@ -26,15 +26,6 @@ public class JavascriptErrorPage extends WebPage {
 		this.URL = this.URL.concat("/javascript_error");
 		System.out.println(URL);
 	}
-	
-	@Override
-	public void setup() {
-		String url = this.getUrl();
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get(url);
-		Assert.assertEquals(driver.getCurrentUrl(),url);
-	}
 
 	public String getUrl() {
 		return this.URL;

@@ -31,15 +31,6 @@ public class MouseHoverPage extends WebPage {
 	
 	@FindBy(xpath = "//*[@alt='User Avatar']")
 	public List<WebElement> images;
-	
-	@Override
-	public void setup() {
-		String url = this.getUrl();
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get(url);
-		assertEquals(driver.getCurrentUrl(),url);
-	}
 
 	public String getUrl() {
 		return this.URL;
