@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="15" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-07T08:36:07 PDT" name="TheInternetSuite" finished-at="2022-10-07T08:39:04 PDT" duration-ms="177086">
+    <groups>
+    </groups>
+    <test started-at="2022-10-07T08:36:07 PDT" name="AllTests" finished-at="2022-10-07T08:39:04 PDT" duration-ms="177086">
+      <class name="com.tjank.SeleniumTests.FileUploadTest">
+        <test-method signature="uploadFileTest()[pri:0, instance:com.tjank.SeleniumTests.FileUploadTest@15ff3e9e]" started-at="2022-10-07T08:38:19 PDT" name="uploadFileTest" finished-at="2022-10-07T08:38:35 PDT" duration-ms="16395" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='File Uploaded!'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\t530\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58102}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58102/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 227e8e8695ab7e1b8eacafe5f910a155]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='File Uploaded!'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\t530\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58102}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58102/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 227e8e8695ab7e1b8eacafe5f910a155
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.tjank.PageObjectModel.FileUploadPage.uploadFile(FileUploadPage.java:81)
+at com.tjank.SeleniumTests.FileUploadTest.uploadFileTest(FileUploadTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFileTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.FileUploadTest@15ff3e9e]" started-at="2022-10-07T08:38:35 PDT" name="tearDown" finished-at="2022-10-07T08:38:37 PDT" duration-ms="2282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.FileUploadTest -->
+      <class name="com.tjank.SeleniumTests.DynamicControlsTest">
+        <test-method signature="dynamicControlsTest()[pri:0, instance:com.tjank.SeleniumTests.DynamicControlsTest@62150f9e]" started-at="2022-10-07T08:37:10 PDT" name="dynamicControlsTest" finished-at="2022-10-07T08:37:25 PDT" duration-ms="15458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicControlsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.DynamicControlsTest@62150f9e]" started-at="2022-10-07T08:37:25 PDT" name="tearDown" finished-at="2022-10-07T08:37:42 PDT" duration-ms="16851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.DynamicControlsTest -->
+      <class name="com.tjank.SeleniumTests.FailedLoginTest">
+        <test-method signature="unhappyPathLogin()[pri:0, instance:com.tjank.SeleniumTests.FailedLoginTest@1d9b7cce]" started-at="2022-10-07T08:36:15 PDT" name="unhappyPathLogin" finished-at="2022-10-07T08:36:18 PDT" duration-ms="3088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unhappyPathLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.FailedLoginTest@1d9b7cce]" started-at="2022-10-07T08:36:18 PDT" name="tearDown" finished-at="2022-10-07T08:36:19 PDT" duration-ms="942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.FailedLoginTest -->
+      <class name="com.tjank.SeleniumTests.FileDownloadTest">
+        <test-method signature="fileDownloadTest()[pri:0, instance:com.tjank.SeleniumTests.FileDownloadTest@7fa98a66]" started-at="2022-10-07T08:38:06 PDT" name="fileDownloadTest" finished-at="2022-10-07T08:38:18 PDT" duration-ms="11309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownloadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.FileDownloadTest@7fa98a66]" started-at="2022-10-07T08:38:18 PDT" name="tearDown" finished-at="2022-10-07T08:38:19 PDT" duration-ms="1061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.FileDownloadTest -->
+      <class name="com.tjank.SeleniumTests.FloatingMenuTest">
+        <test-method signature="floatingMenutest()[pri:0, instance:com.tjank.SeleniumTests.FloatingMenuTest@5fdcaa40]" started-at="2022-10-07T08:38:37 PDT" name="floatingMenutest" finished-at="2022-10-07T08:38:40 PDT" duration-ms="2320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenutest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.FloatingMenuTest@5fdcaa40]" started-at="2022-10-07T08:38:40 PDT" name="tearDown" finished-at="2022-10-07T08:38:41 PDT" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.FloatingMenuTest -->
+      <class name="com.tjank.SeleniumTests.LoginTest">
+        <test-method signature="happyPathLogin()[pri:0, instance:com.tjank.SeleniumTests.LoginTest@28eaa59a]" started-at="2022-10-07T08:36:07 PDT" name="happyPathLogin" finished-at="2022-10-07T08:36:14 PDT" duration-ms="7107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- happyPathLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.LoginTest@28eaa59a]" started-at="2022-10-07T08:36:14 PDT" name="tearDown" finished-at="2022-10-07T08:36:15 PDT" duration-ms="846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.LoginTest -->
+      <class name="com.tjank.SeleniumTests.DragAndDropTest">
+        <test-method signature="dragAndDropTest()[pri:0, instance:com.tjank.SeleniumTests.DragAndDropTest@14dd9eb7]" started-at="2022-10-07T08:36:41 PDT" name="dragAndDropTest" finished-at="2022-10-07T08:36:46 PDT" duration-ms="4940" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [B] but found [A]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [B] but found [A]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.tjank.PageObjectModel.DragAndDropPage.verifyElementSwitch(DragAndDropPage.java:75)
+at com.tjank.SeleniumTests.DragAndDropTest.dragAndDropTest(DragAndDropTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.DragAndDropTest@14dd9eb7]" started-at="2022-10-07T08:36:46 PDT" name="tearDown" finished-at="2022-10-07T08:36:47 PDT" duration-ms="792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.DragAndDropTest -->
+      <class name="com.tjank.SeleniumTests.CheckboxTest">
+        <test-method signature="checkboxTest()[pri:0, instance:com.tjank.SeleniumTests.CheckboxTest@4d9e68d0]" started-at="2022-10-07T08:36:19 PDT" name="checkboxTest" finished-at="2022-10-07T08:36:21 PDT" duration-ms="2501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.CheckboxTest@4d9e68d0]" started-at="2022-10-07T08:36:21 PDT" name="tearDown" finished-at="2022-10-07T08:36:38 PDT" duration-ms="16820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.CheckboxTest -->
+      <class name="com.tjank.SeleniumTests.JavascriptErrorTest">
+        <test-method signature="jsErrorPageTest()[pri:0, instance:com.tjank.SeleniumTests.JavascriptErrorTest@8dbdac1]" started-at="2022-10-07T08:38:55 PDT" name="jsErrorPageTest" finished-at="2022-10-07T08:38:56 PDT" duration-ms="1857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsErrorPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.JavascriptErrorTest@8dbdac1]" started-at="2022-10-07T08:38:56 PDT" name="tearDown" finished-at="2022-10-07T08:38:57 PDT" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.JavascriptErrorTest -->
+      <class name="com.tjank.SeleniumTests.NewTabTest">
+        <test-method signature="newTabTest()[pri:0, instance:com.tjank.SeleniumTests.NewTabTest@6e20b53a]" started-at="2022-10-07T08:38:57 PDT" name="newTabTest" finished-at="2022-10-07T08:39:00 PDT" duration-ms="2309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTabTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.NewTabTest@6e20b53a]" started-at="2022-10-07T08:39:00 PDT" name="tearDown" finished-at="2022-10-07T08:39:00 PDT" duration-ms="840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.NewTabTest -->
+      <class name="com.tjank.SeleniumTests.JavascriptAlertsTest">
+        <test-method signature="jsAlertTest()[pri:0, instance:com.tjank.SeleniumTests.JavascriptAlertsTest@32eff876]" started-at="2022-10-07T08:38:51 PDT" name="jsAlertTest" finished-at="2022-10-07T08:38:54 PDT" duration-ms="2653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsAlertTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.JavascriptAlertsTest@32eff876]" started-at="2022-10-07T08:38:54 PDT" name="tearDown" finished-at="2022-10-07T08:38:55 PDT" duration-ms="848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.JavascriptAlertsTest -->
+      <class name="com.tjank.SeleniumTests.MouseHoverTest">
+        <test-method signature="hoverTest()[pri:0, instance:com.tjank.SeleniumTests.MouseHoverTest@5e0826e7]" started-at="2022-10-07T08:38:45 PDT" name="hoverTest" finished-at="2022-10-07T08:38:50 PDT" duration-ms="5702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.MouseHoverTest@5e0826e7]" started-at="2022-10-07T08:38:50 PDT" name="tearDown" finished-at="2022-10-07T08:38:51 PDT" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.MouseHoverTest -->
+      <class name="com.tjank.SeleniumTests.ContextMenuTest">
+        <test-method signature="contextMenuTest()[pri:0, instance:com.tjank.SeleniumTests.ContextMenuTest@42e99e4a]" started-at="2022-10-07T08:36:38 PDT" name="contextMenuTest" finished-at="2022-10-07T08:36:41 PDT" duration-ms="2241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextMenuTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.ContextMenuTest@42e99e4a]" started-at="2022-10-07T08:36:41 PDT" name="tearDown" finished-at="2022-10-07T08:36:41 PDT" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.ContextMenuTest -->
+      <class name="com.tjank.SeleniumTests.DynamicLoadingTest">
+        <test-method signature="dynamicLoadingTest()[pri:0, instance:com.tjank.SeleniumTests.DynamicLoadingTest@1a451d4d]" started-at="2022-10-07T08:37:42 PDT" name="dynamicLoadingTest" finished-at="2022-10-07T08:37:50 PDT" duration-ms="7401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicLoadingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.DynamicLoadingTest@1a451d4d]" started-at="2022-10-07T08:37:50 PDT" name="tearDown" finished-at="2022-10-07T08:38:06 PDT" duration-ms="16811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.DynamicLoadingTest -->
+      <class name="com.tjank.SeleniumTests.NotificationTest">
+        <test-method signature="notificationTest()[pri:0, instance:com.tjank.SeleniumTests.NotificationTest@71809907]" started-at="2022-10-07T08:39:00 PDT" name="notificationTest" finished-at="2022-10-07T08:39:03 PDT" duration-ms="2661" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at com.tjank.PageObjectModel.NotificationMessagePage.verifyNotificationMessage(NotificationMessagePage.java:71)
+at com.tjank.SeleniumTests.NotificationTest.notificationTest(NotificationTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.NotificationTest@71809907]" started-at="2022-10-07T08:39:03 PDT" name="tearDown" finished-at="2022-10-07T08:39:04 PDT" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.NotificationTest -->
+      <class name="com.tjank.SeleniumTests.IFrameTest">
+        <test-method signature="iframeTest()[pri:0, instance:com.tjank.SeleniumTests.IFrameTest@6dc17b83]" started-at="2022-10-07T08:38:41 PDT" name="iframeTest" finished-at="2022-10-07T08:38:44 PDT" duration-ms="3358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.IFrameTest@6dc17b83]" started-at="2022-10-07T08:38:44 PDT" name="tearDown" finished-at="2022-10-07T08:38:45 PDT" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.IFrameTest -->
+      <class name="com.tjank.SeleniumTests.DynamicContentTest">
+        <test-method signature="dynamicContentTest()[pri:0, instance:com.tjank.SeleniumTests.DynamicContentTest@6c80d78a]" started-at="2022-10-07T08:37:06 PDT" name="dynamicContentTest" finished-at="2022-10-07T08:37:09 PDT" duration-ms="2714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicContentTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.DynamicContentTest@6c80d78a]" started-at="2022-10-07T08:37:09 PDT" name="tearDown" finished-at="2022-10-07T08:37:10 PDT" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.DynamicContentTest -->
+      <class name="com.tjank.SeleniumTests.DropdownTest">
+        <test-method signature="dropdownTest()[pri:0, instance:com.tjank.SeleniumTests.DropdownTest@52e6fdee]" started-at="2022-10-07T08:36:47 PDT" name="dropdownTest" finished-at="2022-10-07T08:36:50 PDT" duration-ms="2613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tjank.SeleniumTests.DropdownTest@52e6fdee]" started-at="2022-10-07T08:36:50 PDT" name="tearDown" finished-at="2022-10-07T08:37:06 PDT" duration-ms="16817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tjank.SeleniumTests.DropdownTest -->
+    </test> <!-- AllTests -->
+  </suite> <!-- TheInternetSuite -->
+</testng-results>
