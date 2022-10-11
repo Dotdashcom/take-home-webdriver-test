@@ -1,7 +1,5 @@
 package com.tjank.PageObjectModel;
 
-import static org.testng.Assert.assertEquals;
-
 import java.time.Duration;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

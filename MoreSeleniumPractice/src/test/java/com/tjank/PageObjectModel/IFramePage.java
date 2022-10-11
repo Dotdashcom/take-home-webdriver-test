@@ -1,12 +1,9 @@
 package com.tjank.PageObjectModel;
 
-import static org.testng.Assert.assertEquals;
-
 import java.time.Duration;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;

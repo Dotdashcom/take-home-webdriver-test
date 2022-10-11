@@ -1,5 +1,7 @@
 package com.tjank.PageObjectModel;
 
+import org.testng.Assert;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -11,11 +13,11 @@ public abstract class WebPage {
 	protected static WebDriver driver;
 
 	public void setup() {
-		String url = this.getUrl();
+		String url = this.URL;
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get(url);
-		assertEquals(driver.getCurrentUrl(),url);
+		Assert.assertEquals(driver.getCurrentUrl(),url);
 	}
 	
 	public static void tearDown() {

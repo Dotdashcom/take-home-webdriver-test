@@ -1,12 +1,11 @@
 package com.tjank.PageObjectModel;
 
-import static org.testng.Assert.assertEquals;
+import org.testng.Assert;
 
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
