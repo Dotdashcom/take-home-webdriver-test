@@ -1,6 +1,9 @@
 package com.tjank.PageObjectModel;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public abstract class WebPage {
 
@@ -9,7 +12,7 @@ public abstract class WebPage {
 
 	public void setup() {
 		String url = this.getUrl();
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get(url);
 		assertEquals(driver.getCurrentUrl(),url);
