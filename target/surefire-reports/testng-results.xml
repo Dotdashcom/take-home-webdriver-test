@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-17T11:26:56 EDT" name="Suite" finished-at="2022-10-17T11:28:04 EDT" duration-ms="67508">
+    <groups>
+    </groups>
+    <test started-at="2022-10-17T11:26:56 EDT" name="Test" finished-at="2022-10-17T11:28:04 EDT" duration-ms="67508">
+      <class name="testcases.TestCases">
+        <test-method signature="CheckBoxes()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:26:56 EDT" name="CheckBoxes" finished-at="2022-10-17T11:26:59 EDT" duration-ms="2402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBoxes -->
+        <test-method signature="contextMenu()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:26:59 EDT" name="contextMenu" finished-at="2022-10-17T11:27:01 EDT" duration-ms="2075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextMenu -->
+        <test-method signature="dragAndDrop()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:01 EDT" name="dragAndDrop" finished-at="2022-10-17T11:27:03 EDT" duration-ms="1699" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at testcases.TestCases.dragAndDrop(TestCases.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method signature="dropDown()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:03 EDT" name="dropDown" finished-at="2022-10-17T11:27:04 EDT" duration-ms="1713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDown -->
+        <test-method signature="dynamicContent()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:04 EDT" name="dynamicContent" finished-at="2022-10-17T11:27:06 EDT" duration-ms="2015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicContent -->
+        <test-method signature="dynamicControls()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:06 EDT" name="dynamicControls" finished-at="2022-10-17T11:27:31 EDT" duration-ms="24388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicControls -->
+        <test-method signature="dynamicLoading()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:31 EDT" name="dynamicLoading" finished-at="2022-10-17T11:27:37 EDT" duration-ms="6760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicLoading -->
+        <test-method signature="fileDownload()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:37 EDT" name="fileDownload" finished-at="2022-10-17T11:27:41 EDT" duration-ms="3541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload -->
+        <test-method signature="fileUpload()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:41 EDT" name="fileUpload" finished-at="2022-10-17T11:27:48 EDT" duration-ms="6702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUpload -->
+        <test-method signature="floatingMenu()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:48 EDT" name="floatingMenu" finished-at="2022-10-17T11:27:49 EDT" duration-ms="1561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenu -->
+        <test-method signature="iFrame()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:49 EDT" name="iFrame" finished-at="2022-10-17T11:27:51 EDT" duration-ms="2030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iFrame -->
+        <test-method signature="jsAlert()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:51 EDT" name="jsAlert" finished-at="2022-10-17T11:27:53 EDT" duration-ms="2048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsAlert -->
+        <test-method signature="jsError()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:53 EDT" name="jsError" finished-at="2022-10-17T11:27:55 EDT" duration-ms="1369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsError -->
+        <test-method signature="loginFailure()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:55 EDT" name="loginFailure" finished-at="2022-10-17T11:27:56 EDT" duration-ms="1723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailure -->
+        <test-method signature="loginSuccess()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:56 EDT" name="loginSuccess" finished-at="2022-10-17T11:27:58 EDT" duration-ms="1810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccess -->
+        <test-method signature="mouseHover()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:27:58 EDT" name="mouseHover" finished-at="2022-10-17T11:28:00 EDT" duration-ms="1949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHover -->
+        <test-method signature="notificationMessage()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:28:00 EDT" name="notificationMessage" finished-at="2022-10-17T11:28:02 EDT" duration-ms="2058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationMessage -->
+        <test-method signature="openNewTab()[pri:0, instance:testcases.TestCases@647fd8ce]" started-at="2022-10-17T11:28:02 EDT" name="openNewTab" finished-at="2022-10-17T11:28:04 EDT" duration-ms="1613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openNewTab -->
+      </class> <!-- testcases.TestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

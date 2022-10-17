@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="17" total="18" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-17T11:25:39 EDT" name="Default suite" finished-at="2022-10-17T11:25:46 EDT" duration-ms="7460">
+    <groups>
+    </groups>
+    <test started-at="2022-10-17T11:25:39 EDT" name="Default test" finished-at="2022-10-17T11:25:46 EDT" duration-ms="7460">
+      <class name="testcases.TestCases">
+        <test-method signature="fileDownload()[pri:0, instance:testcases.TestCases@73e9cf30]" started-at="2022-10-17T11:25:39 EDT" name="fileDownload" finished-at="2022-10-17T11:25:46 EDT" duration-ms="7424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload -->
+      </class> <!-- testcases.TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
