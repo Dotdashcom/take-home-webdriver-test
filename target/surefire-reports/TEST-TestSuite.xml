@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="39" failures="2" name="TestSuite" time="124.891" errors="0" skipped="8">
+  <properties>
+    <property name="jansi.mode" value="strip"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\gotid\Documents\Ruchi\Java\WebdriverTestsProject"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\gotid\Documents\Ruchi\Java\WebdriverTestsProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\gotid\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\gotid\Documents\Ruchi\Java\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf766552589517337020.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Android\Android Studio\bin;C:\Program Files\Android\Android Studio\jre;C:\Users\gotid\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files\Java\jdk-17.0.2\lib;C:\Users\gotid\AppData\Local\Android\Sdk\build-tools;C:\Users\gotid\AppData\Local\Android\Sdk\tools;C:\Users\gotid\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\Java\jdk-17.0.2\bin\java.exe;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\allure-2.18.1\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\gotid\AppData\Local\Microsoft\WindowsApps;C:\Users\gotid\AppData\Local\GitHubDesktop\bin;C:\Users\gotid\AppData\Roaming\npm;C:\Users\gotid\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\gotid"/>
+    <property name="user.timezone" value="America/Blanc-Sablon"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="gotid"/>
+    <property name="java.class.path" value="C:\Users\gotid\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\gotid\Documents\Ruchi\Java\WebdriverTestsProject\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="webtests.Testlayers.WT_01_Loginpage_Test" name="LoginSucess" time="0.431"/>
+  <testcase classname="webtests.Testlayers.WT_01_Loginpage_Test" name="LoginFailure" time="0.336"/>
+  <testcase classname="webtests.Testlayers.WT_01_Loginpage_Test" name="LoginFailure" time="0.369"/>
+  <testcase classname="webtests.Testlayers.WT_01_Loginpage_Test" name="LoginFailure" time="0.491"/>
+  <testcase classname="webtests.Testlayers.WT_01_Loginpage_Test" name="LoginFailure" time="0.348"/>
+  <testcase classname="webtests.Testlayers.WT_02_Checkbox_Test" name="Checkbox1validation" time="1.1"/>
+  <testcase classname="webtests.Testlayers.WT_02_Checkbox_Test" name="Checkbox2validation" time="1.12"/>
+  <testcase classname="webtests.Testlayers.WT_03_ContextMenu_Test" name="ContextMenuTest" time="0.244"/>
+  <testcase classname="webtests.Testlayers.WT_04_DragandDrop_Test" name="DragAndDropA" time="1.074"/>
+  <testcase classname="webtests.Testlayers.WT_05_Dropdown_Test" name="DropDownTest1" time="2.282"/>
+  <testcase classname="webtests.Testlayers.WT_05_Dropdown_Test" name="DropDownTest2" time="0.248"/>
+  <testcase classname="webtests.Testlayers.WT_06_DynamicContent_Test" name="DynamicContentTest1" time="4.636">
+    <failure message="did not expect [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg] but found [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg]" type="java.lang.AssertionError">java.lang.AssertionError: did not expect [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg] but found [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failEquals(Assert.java:1417)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+	at org.testng.Assert.assertNotEquals(Assert.java:2033)
+	at org.testng.Assert.assertNotEquals(Assert.java:2055)
+	at webtests.Testlayers.WT_06_DynamicContent_Test.DynamicContentTest1(WT_06_DynamicContent_Test.java:37)
+</failure>
+    <system-out>10-18-2022 11:16:54 WT_BaseClass.java INFO  [main] WebdriverTestsProject 85 - ****Browser Closed****
+Inside chrome
+10-18-2022 11:16:55 WT_06_DynamicContent_Test.java INFO  [main] WebdriverTestsProject 24 - ****DynamicContent url opened****
+</system-out>
+    <system-err>[1666106214.095][SEVERE]: Unable to receive message from renderer
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 54921
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 18, 2022 11:16:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Oct 18, 2022 11:16:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 106
+log4j:ERROR Could not find value for key log4j.appender.info
+log4j:ERROR Could not instantiate appender named &quot;info&quot;.
+</system-err>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_07_DynamicControls_Test" name="RemoveandAddValidation" time="46.848"/>
+  <testcase classname="webtests.Testlayers.WT_07_DynamicControls_Test" name="EnableAndDisableValidation" time="11.727"/>
+  <testcase classname="webtests.Testlayers.WT_08_DynamicLoading_Test" name="DynamicpageTest" time="5.137"/>
+  <testcase classname="webtests.Testlayers.WT_09_FileDownload_Test" name="FileDownloadTest" time="2.127"/>
+  <testcase classname="webtests.Testlayers.WT_09_FileDownload_Test" name="VerifyFile" time="0.005"/>
+  <testcase classname="webtests.Testlayers.WT_10_FileUpload_Test" name="UploadFileTest" time="1.286"/>
+  <testcase classname="webtests.Testlayers.WT_11_FloatingMenu_Test" name="FloatingMenuTest" time="2.119"/>
+  <testcase classname="webtests.Testlayers.WT_12_Iframe_Test" name="IFrameTest" time="40.338"/>
+  <testcase classname="webtests.Testlayers.WT_13_MouseHover_Test" name="hoverOnUser1" time="0.177"/>
+  <testcase classname="webtests.Testlayers.WT_13_MouseHover_Test" name="hoverOnUser2" time="0.222"/>
+  <testcase classname="webtests.Testlayers.WT_13_MouseHover_Test" name="hoverOnUser3" time="0.224"/>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="JavaScriptAlertTest" time="0.072"/>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="teardown" time="0.085">
+    <failure message="unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+	at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="setup" time="0.097">
+    <skipped/>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="initsetup" time="0.097">
+    <skipped/>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="JavaScriptConfirmTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="teardown" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="setup" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="initsetup" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="JavaScriptPromptTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_14_JavaScriptAlerts_Test" name="teardown" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="webtests.Testlayers.WT_15_JavaScriptError_Test" name="JavaScriptErrorTest" time="0.094"/>
+  <testcase classname="webtests.Testlayers.WT_16_NewTab_Test" name="NewTabTest" time="0.247"/>
+  <testcase classname="webtests.Testlayers.WT_17_NotificationMsg_Test" name="NotificationMessageTest" time="0.32"/>
+  <testcase classname="webtests.Testlayers.WT_17_NotificationMsg_Test" name="NotificationMessageTest" time="0.322"/>
+  <testcase classname="webtests.Testlayers.WT_17_NotificationMsg_Test" name="NotificationMessageTest" time="0.318"/>
+  <testcase classname="webtests.Testlayers.WT_17_NotificationMsg_Test" name="NotificationMessageTest" time="0.344"/>
+</testsuite>

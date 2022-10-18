@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebDriver Tests" parallel="tests" thread-count="2">
+
+    <listeners>
+    <listener class-name="webtests.Reports.GenerateExtentReports" ></listener>
+    </listeners>
+	<test name="Functional test" allow-return-values="true">
+		<classes>
+		
+		<class name="webtests.Testlayers.WT_01_Loginpage_Test" />
+		<class name="webtests.Testlayers.WT_08_DynamicLoading_Test" />
+			
+	</classes>
+	</test>
+	<test name="Regression test" allow-return-values="true">
+		<classes>
+		
+		
+		<class name="webtests.Testlayers.WT_15_JavaScriptError_Test" />
+		<class name="webtests.Testlayers.WT_16_NewTab_Test" />
+		<class name="webtests.Testlayers.WT_17_NotificationMsg_Test" />	 
+		</classes>
+	</test>
+	</suite>

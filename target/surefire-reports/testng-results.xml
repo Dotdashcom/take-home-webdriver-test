@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="32" passed="29" failed="1" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-18T11:16:26 AST" name="Command line suite" finished-at="2022-10-18T11:20:10 AST" duration-ms="223865">
+    <groups>
+    </groups>
+    <test started-at="2022-10-18T11:16:26 AST" name="Command line test" finished-at="2022-10-18T11:20:10 AST" duration-ms="223865">
+      <class name="webtests.Testlayers.WT_02_Checkbox_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_02_Checkbox_Test@4445629]" started-at="2022-10-18T11:16:38 AST" name="setup" finished-at="2022-10-18T11:16:40 AST" duration-ms="1312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_02_Checkbox_Test@4445629]" started-at="2022-10-18T11:16:40 AST" name="initsetup" finished-at="2022-10-18T11:16:40 AST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="Checkbox1validation()[pri:1, instance:webtests.Testlayers.WT_02_Checkbox_Test@4445629]" started-at="2022-10-18T11:16:40 AST" name="Checkbox1validation" finished-at="2022-10-18T11:16:41 AST" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkbox1validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_02_Checkbox_Test@4445629]" started-at="2022-10-18T11:16:41 AST" name="teardown" finished-at="2022-10-18T11:16:41 AST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_02_Checkbox_Test@4445629]" started-at="2022-10-18T11:16:41 AST" name="setup" finished-at="2022-10-18T11:16:42 AST" duration-ms="1117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_02_Checkbox_Test@4445629]" started-at="2022-10-18T11:16:42 AST" name="initsetup" finished-at="2022-10-18T11:16:42 AST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="Checkbox2validation()[pri:2, instance:webtests.Testlayers.WT_02_Checkbox_Test@4445629]" started-at="2022-10-18T11:16:42 AST" name="Checkbox2validation" finished-at="2022-10-18T11:16:44 AST" duration-ms="1125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkbox2validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_02_Checkbox_Test@4445629]" started-at="2022-10-18T11:16:44 AST" name="teardown" finished-at="2022-10-18T11:16:44 AST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_02_Checkbox_Test -->
+      <class name="webtests.Testlayers.WT_07_DynamicControls_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7]" started-at="2022-10-18T11:17:00 AST" name="setup" finished-at="2022-10-18T11:17:01 AST" duration-ms="1013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7]" started-at="2022-10-18T11:17:01 AST" name="initsetup" finished-at="2022-10-18T11:17:01 AST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="RemoveandAddValidation()[pri:1, instance:webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7]" started-at="2022-10-18T11:17:01 AST" name="RemoveandAddValidation" finished-at="2022-10-18T11:17:48 AST" duration-ms="46853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveandAddValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7]" started-at="2022-10-18T11:17:48 AST" name="teardown" finished-at="2022-10-18T11:18:05 AST" duration-ms="16242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7]" started-at="2022-10-18T11:18:05 AST" name="setup" finished-at="2022-10-18T11:18:06 AST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7]" started-at="2022-10-18T11:18:06 AST" name="initsetup" finished-at="2022-10-18T11:18:06 AST" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="EnableAndDisableValidation()[pri:2, instance:webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7]" started-at="2022-10-18T11:18:06 AST" name="EnableAndDisableValidation" finished-at="2022-10-18T11:18:18 AST" duration-ms="11733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnableAndDisableValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7]" started-at="2022-10-18T11:18:18 AST" name="teardown" finished-at="2022-10-18T11:18:18 AST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_07_DynamicControls_Test -->
+      <class name="webtests.Testlayers.WT_03_ContextMenu_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_03_ContextMenu_Test@25d250c6]" started-at="2022-10-18T11:16:44 AST" name="setup" finished-at="2022-10-18T11:16:45 AST" duration-ms="982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_03_ContextMenu_Test@25d250c6]" started-at="2022-10-18T11:16:45 AST" name="initsetup" finished-at="2022-10-18T11:16:45 AST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="ContextMenuTest()[pri:0, instance:webtests.Testlayers.WT_03_ContextMenu_Test@25d250c6]" started-at="2022-10-18T11:16:45 AST" name="ContextMenuTest" finished-at="2022-10-18T11:16:45 AST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContextMenuTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_03_ContextMenu_Test@25d250c6]" started-at="2022-10-18T11:16:45 AST" name="teardown" finished-at="2022-10-18T11:16:45 AST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_03_ContextMenu_Test -->
+      <class name="webtests.Testlayers.WT_16_NewTab_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_16_NewTab_Test@419c5f1a]" started-at="2022-10-18T11:19:59 AST" name="setup" finished-at="2022-10-18T11:20:00 AST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_16_NewTab_Test@419c5f1a]" started-at="2022-10-18T11:20:00 AST" name="initsetup" finished-at="2022-10-18T11:20:01 AST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="NewTabTest()[pri:0, instance:webtests.Testlayers.WT_16_NewTab_Test@419c5f1a]" started-at="2022-10-18T11:20:01 AST" name="NewTabTest" finished-at="2022-10-18T11:20:01 AST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewTabTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_16_NewTab_Test@419c5f1a]" started-at="2022-10-18T11:20:01 AST" name="teardown" finished-at="2022-10-18T11:20:01 AST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_16_NewTab_Test -->
+      <class name="webtests.Testlayers.WT_09_FileDownload_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d]" started-at="2022-10-18T11:18:24 AST" name="setup" finished-at="2022-10-18T11:18:26 AST" duration-ms="1201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d]" started-at="2022-10-18T11:18:26 AST" name="initsetup" finished-at="2022-10-18T11:18:26 AST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="FileDownloadTest()[pri:0, instance:webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d]" started-at="2022-10-18T11:18:26 AST" name="FileDownloadTest" finished-at="2022-10-18T11:18:28 AST" duration-ms="2133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileDownloadTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d]" started-at="2022-10-18T11:18:28 AST" name="teardown" finished-at="2022-10-18T11:18:44 AST" duration-ms="16248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d]" started-at="2022-10-18T11:18:44 AST" name="setup" finished-at="2022-10-18T11:18:45 AST" duration-ms="1127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d]" started-at="2022-10-18T11:18:45 AST" name="initsetup" finished-at="2022-10-18T11:18:46 AST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="VerifyFile()[pri:0, instance:webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d]" started-at="2022-10-18T11:18:46 AST" name="VerifyFile" finished-at="2022-10-18T11:18:46 AST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFile -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d]" started-at="2022-10-18T11:18:46 AST" name="teardown" finished-at="2022-10-18T11:18:46 AST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_09_FileDownload_Test -->
+      <class name="webtests.Testlayers.WT_11_FloatingMenu_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_11_FloatingMenu_Test@43301423]" started-at="2022-10-18T11:18:49 AST" name="setup" finished-at="2022-10-18T11:18:50 AST" duration-ms="1100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_11_FloatingMenu_Test@43301423]" started-at="2022-10-18T11:18:50 AST" name="initsetup" finished-at="2022-10-18T11:18:50 AST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="FloatingMenuTest()[pri:0, instance:webtests.Testlayers.WT_11_FloatingMenu_Test@43301423]" started-at="2022-10-18T11:18:50 AST" name="FloatingMenuTest" finished-at="2022-10-18T11:18:52 AST" duration-ms="2131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FloatingMenuTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_11_FloatingMenu_Test@43301423]" started-at="2022-10-18T11:18:52 AST" name="teardown" finished-at="2022-10-18T11:18:52 AST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_11_FloatingMenu_Test -->
+      <class name="webtests.Testlayers.WT_10_FileUpload_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_10_FileUpload_Test@3c9d0b9d]" started-at="2022-10-18T11:18:46 AST" name="setup" finished-at="2022-10-18T11:18:47 AST" duration-ms="1140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_10_FileUpload_Test@3c9d0b9d]" started-at="2022-10-18T11:18:47 AST" name="initsetup" finished-at="2022-10-18T11:18:47 AST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="UploadFileTest()[pri:0, instance:webtests.Testlayers.WT_10_FileUpload_Test@3c9d0b9d]" started-at="2022-10-18T11:18:47 AST" name="UploadFileTest" finished-at="2022-10-18T11:18:49 AST" duration-ms="1297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadFileTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_10_FileUpload_Test@3c9d0b9d]" started-at="2022-10-18T11:18:49 AST" name="teardown" finished-at="2022-10-18T11:18:49 AST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_10_FileUpload_Test -->
+      <class name="webtests.Testlayers.WT_04_DragandDrop_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_04_DragandDrop_Test@4df50bcc]" started-at="2022-10-18T11:16:45 AST" name="setup" finished-at="2022-10-18T11:16:47 AST" duration-ms="1117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_04_DragandDrop_Test@4df50bcc]" started-at="2022-10-18T11:16:47 AST" name="initsetup" finished-at="2022-10-18T11:16:47 AST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="DragAndDropA()[pri:0, instance:webtests.Testlayers.WT_04_DragandDrop_Test@4df50bcc]" started-at="2022-10-18T11:16:47 AST" name="DragAndDropA" finished-at="2022-10-18T11:16:48 AST" duration-ms="1080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragAndDropA -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_04_DragandDrop_Test@4df50bcc]" started-at="2022-10-18T11:16:48 AST" name="teardown" finished-at="2022-10-18T11:16:48 AST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_04_DragandDrop_Test -->
+      <class name="webtests.Testlayers.WT_05_Dropdown_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_05_Dropdown_Test@6b26e945]" started-at="2022-10-18T11:16:48 AST" name="setup" finished-at="2022-10-18T11:16:49 AST" duration-ms="1068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_05_Dropdown_Test@6b26e945]" started-at="2022-10-18T11:16:49 AST" name="initsetup" finished-at="2022-10-18T11:16:49 AST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="DropDownTest1()[pri:1, instance:webtests.Testlayers.WT_05_Dropdown_Test@6b26e945]" started-at="2022-10-18T11:16:49 AST" name="DropDownTest1" finished-at="2022-10-18T11:16:52 AST" duration-ms="2286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDownTest1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_05_Dropdown_Test@6b26e945]" started-at="2022-10-18T11:16:52 AST" name="teardown" finished-at="2022-10-18T11:16:52 AST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_05_Dropdown_Test@6b26e945]" started-at="2022-10-18T11:16:52 AST" name="setup" finished-at="2022-10-18T11:16:53 AST" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_05_Dropdown_Test@6b26e945]" started-at="2022-10-18T11:16:53 AST" name="initsetup" finished-at="2022-10-18T11:16:53 AST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="DropDownTest2()[pri:2, instance:webtests.Testlayers.WT_05_Dropdown_Test@6b26e945]" started-at="2022-10-18T11:16:53 AST" name="DropDownTest2" finished-at="2022-10-18T11:16:54 AST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDownTest2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_05_Dropdown_Test@6b26e945]" started-at="2022-10-18T11:16:54 AST" name="teardown" finished-at="2022-10-18T11:16:54 AST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_05_Dropdown_Test -->
+      <class name="webtests.Testlayers.WT_14_JavaScriptAlerts_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:56 AST" name="setup" finished-at="2022-10-18T11:19:57 AST" duration-ms="1163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:57 AST" name="initsetup" finished-at="2022-10-18T11:19:58 AST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="JavaScriptAlertTest()[pri:1, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="JavaScriptAlertTest" finished-at="2022-10-18T11:19:58 AST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptAlertTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="teardown" finished-at="2022-10-18T11:19:58 AST" duration-ms="6" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="setup" finished-at="2022-10-18T11:19:58 AST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="initsetup" finished-at="2022-10-18T11:19:58 AST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="JavaScriptConfirmTest()[pri:2, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="JavaScriptConfirmTest" finished-at="2022-10-18T11:19:58 AST" duration-ms="6" status="SKIP">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptConfirmTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="teardown" finished-at="2022-10-18T11:19:58 AST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="JavaScriptPromptTest()[pri:3, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="JavaScriptPromptTest" finished-at="2022-10-18T11:19:58 AST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptPromptTest -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="initsetup" finished-at="2022-10-18T11:19:58 AST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="setup" finished-at="2022-10-18T11:19:58 AST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87]" started-at="2022-10-18T11:19:58 AST" name="teardown" finished-at="2022-10-18T11:19:58 AST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_14_JavaScriptAlerts_Test -->
+      <class name="webtests.Testlayers.WT_01_Loginpage_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:26 AST" name="setup" finished-at="2022-10-18T11:16:28 AST" duration-ms="2721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:28 AST" name="initsetup" finished-at="2022-10-18T11:16:29 AST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="LoginSucess()[pri:1, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:29 AST" name="LoginSucess" finished-at="2022-10-18T11:16:29 AST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSucess -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:29 AST" name="teardown" finished-at="2022-10-18T11:16:30 AST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:30 AST" name="setup" finished-at="2022-10-18T11:16:32 AST" duration-ms="1132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:32 AST" name="initsetup" finished-at="2022-10-18T11:16:32 AST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="LoginFailure(java.lang.String,java.lang.String)[pri:2, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:32 AST" name="LoginFailure" data-provider="Parameters" finished-at="2022-10-18T11:16:32 AST" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFailure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:32 AST" name="teardown" finished-at="2022-10-18T11:16:32 AST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:32 AST" name="setup" finished-at="2022-10-18T11:16:33 AST" duration-ms="1151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:33 AST" name="initsetup" finished-at="2022-10-18T11:16:34 AST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="LoginFailure(java.lang.String,java.lang.String)[pri:2, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:34 AST" name="LoginFailure" data-provider="Parameters" finished-at="2022-10-18T11:16:34 AST" duration-ms="376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFailure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:34 AST" name="teardown" finished-at="2022-10-18T11:16:34 AST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:34 AST" name="setup" finished-at="2022-10-18T11:16:35 AST" duration-ms="1187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:35 AST" name="initsetup" finished-at="2022-10-18T11:16:36 AST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="LoginFailure(java.lang.String,java.lang.String)[pri:2, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:36 AST" name="LoginFailure" data-provider="Parameters" finished-at="2022-10-18T11:16:36 AST" duration-ms="496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[topsecret]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFailure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:36 AST" name="teardown" finished-at="2022-10-18T11:16:36 AST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:36 AST" name="setup" finished-at="2022-10-18T11:16:38 AST" duration-ms="1173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:38 AST" name="initsetup" finished-at="2022-10-18T11:16:38 AST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="LoginFailure(java.lang.String,java.lang.String)[pri:2, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:38 AST" name="LoginFailure" data-provider="Parameters" finished-at="2022-10-18T11:16:38 AST" duration-ms="353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tommy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[super]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFailure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d]" started-at="2022-10-18T11:16:38 AST" name="teardown" finished-at="2022-10-18T11:16:38 AST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_01_Loginpage_Test -->
+      <class name="webtests.Testlayers.WT_13_MouseHover_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:51 AST" name="setup" finished-at="2022-10-18T11:19:52 AST" duration-ms="1502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:52 AST" name="initsetup" finished-at="2022-10-18T11:19:53 AST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="hoverOnUser1()[pri:1, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:53 AST" name="hoverOnUser1" finished-at="2022-10-18T11:19:53 AST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnUser1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:53 AST" name="teardown" finished-at="2022-10-18T11:19:53 AST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:53 AST" name="setup" finished-at="2022-10-18T11:19:54 AST" duration-ms="1079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:54 AST" name="initsetup" finished-at="2022-10-18T11:19:54 AST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="hoverOnUser2()[pri:2, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:54 AST" name="hoverOnUser2" finished-at="2022-10-18T11:19:55 AST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnUser2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:55 AST" name="teardown" finished-at="2022-10-18T11:19:55 AST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:55 AST" name="setup" finished-at="2022-10-18T11:19:56 AST" duration-ms="981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:56 AST" name="initsetup" finished-at="2022-10-18T11:19:56 AST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="hoverOnUser3()[pri:3, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:56 AST" name="hoverOnUser3" finished-at="2022-10-18T11:19:56 AST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnUser3 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_13_MouseHover_Test@d4342c2]" started-at="2022-10-18T11:19:56 AST" name="teardown" finished-at="2022-10-18T11:19:56 AST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_13_MouseHover_Test -->
+      <class name="webtests.Testlayers.WT_17_NotificationMsg_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:01 AST" name="setup" finished-at="2022-10-18T11:20:02 AST" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:02 AST" name="initsetup" finished-at="2022-10-18T11:20:03 AST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="NotificationMessageTest()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:03 AST" name="NotificationMessageTest" finished-at="2022-10-18T11:20:03 AST" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMessageTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:03 AST" name="teardown" finished-at="2022-10-18T11:20:03 AST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:03 AST" name="setup" finished-at="2022-10-18T11:20:05 AST" duration-ms="1227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:05 AST" name="initsetup" finished-at="2022-10-18T11:20:05 AST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="NotificationMessageTest()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:05 AST" name="NotificationMessageTest" finished-at="2022-10-18T11:20:05 AST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMessageTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:05 AST" name="teardown" finished-at="2022-10-18T11:20:05 AST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:05 AST" name="setup" finished-at="2022-10-18T11:20:07 AST" duration-ms="1344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:07 AST" name="initsetup" finished-at="2022-10-18T11:20:07 AST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="NotificationMessageTest()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:07 AST" name="NotificationMessageTest" finished-at="2022-10-18T11:20:07 AST" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMessageTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:07 AST" name="teardown" finished-at="2022-10-18T11:20:08 AST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:08 AST" name="setup" finished-at="2022-10-18T11:20:09 AST" duration-ms="1194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:09 AST" name="initsetup" finished-at="2022-10-18T11:20:09 AST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="NotificationMessageTest()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:09 AST" name="NotificationMessageTest" finished-at="2022-10-18T11:20:09 AST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMessageTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f]" started-at="2022-10-18T11:20:09 AST" name="teardown" finished-at="2022-10-18T11:20:10 AST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_17_NotificationMsg_Test -->
+      <class name="webtests.Testlayers.WT_12_Iframe_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_12_Iframe_Test@1a04f701]" started-at="2022-10-18T11:18:52 AST" name="setup" finished-at="2022-10-18T11:18:53 AST" duration-ms="1102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_12_Iframe_Test@1a04f701]" started-at="2022-10-18T11:18:53 AST" name="initsetup" finished-at="2022-10-18T11:18:54 AST" duration-ms="874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="IFrameTest()[pri:0, instance:webtests.Testlayers.WT_12_Iframe_Test@1a04f701]" started-at="2022-10-18T11:18:54 AST" name="IFrameTest" finished-at="2022-10-18T11:19:35 AST" duration-ms="40345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IFrameTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_12_Iframe_Test@1a04f701]" started-at="2022-10-18T11:19:35 AST" name="teardown" finished-at="2022-10-18T11:19:51 AST" duration-ms="16262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_12_Iframe_Test -->
+      <class name="webtests.Testlayers.WT_08_DynamicLoading_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_08_DynamicLoading_Test@318ba8c8]" started-at="2022-10-18T11:18:18 AST" name="setup" finished-at="2022-10-18T11:18:19 AST" duration-ms="1113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_08_DynamicLoading_Test@318ba8c8]" started-at="2022-10-18T11:18:19 AST" name="initsetup" finished-at="2022-10-18T11:18:19 AST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="DynamicpageTest()[pri:0, instance:webtests.Testlayers.WT_08_DynamicLoading_Test@318ba8c8]" started-at="2022-10-18T11:18:19 AST" name="DynamicpageTest" finished-at="2022-10-18T11:18:24 AST" duration-ms="5147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicpageTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_08_DynamicLoading_Test@318ba8c8]" started-at="2022-10-18T11:18:24 AST" name="teardown" finished-at="2022-10-18T11:18:24 AST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_08_DynamicLoading_Test -->
+      <class name="webtests.Testlayers.WT_06_DynamicContent_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_06_DynamicContent_Test@63a65a25]" started-at="2022-10-18T11:16:54 AST" name="setup" finished-at="2022-10-18T11:16:55 AST" duration-ms="1250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_06_DynamicContent_Test@63a65a25]" started-at="2022-10-18T11:16:55 AST" name="initsetup" finished-at="2022-10-18T11:16:55 AST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="DynamicContentTest1()[pri:0, instance:webtests.Testlayers.WT_06_DynamicContent_Test@63a65a25]" started-at="2022-10-18T11:16:55 AST" name="DynamicContentTest1" finished-at="2022-10-18T11:17:00 AST" duration-ms="4641" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg] but found [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg] but found [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at org.testng.Assert.assertNotEquals(Assert.java:2055)
+at webtests.Testlayers.WT_06_DynamicContent_Test.DynamicContentTest1(WT_06_DynamicContent_Test.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicContentTest1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_06_DynamicContent_Test@63a65a25]" started-at="2022-10-18T11:17:00 AST" name="teardown" finished-at="2022-10-18T11:17:00 AST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_06_DynamicContent_Test -->
+      <class name="webtests.Testlayers.WT_15_JavaScriptError_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webtests.Testlayers.WT_15_JavaScriptError_Test@56de5251]" started-at="2022-10-18T11:19:58 AST" name="setup" finished-at="2022-10-18T11:19:59 AST" duration-ms="1176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webtests.Testlayers.WT_15_JavaScriptError_Test@56de5251]" started-at="2022-10-18T11:19:59 AST" name="initsetup" finished-at="2022-10-18T11:19:59 AST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="JavaScriptErrorTest()[pri:0, instance:webtests.Testlayers.WT_15_JavaScriptError_Test@56de5251]" started-at="2022-10-18T11:19:59 AST" name="JavaScriptErrorTest" finished-at="2022-10-18T11:19:59 AST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptErrorTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webtests.Testlayers.WT_15_JavaScriptError_Test@56de5251]" started-at="2022-10-18T11:19:59 AST" name="teardown" finished-at="2022-10-18T11:19:59 AST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webtests.Testlayers.WT_15_JavaScriptError_Test -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

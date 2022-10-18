@@ -1,0 +1,600 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/1/2</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 18 11:16:26 AST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>223 seconds (223865 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.teardown()'><b>teardown</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+	at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace760493524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace760493524'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+	at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.initsetup()'><b>initsetup</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.initsetup()'><b>initsetup</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.setup()'><b>setup</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.teardown()'><b>teardown</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.setup()'><b>setup</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.teardown()'><b>teardown</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webtests.Testlayers.WT_06_DynamicContent_Test.DynamicContentTest1()'><b>DynamicContentTest1</b><br>Test class: webtests.Testlayers.WT_06_DynamicContent_Test</td>
+<td><div><pre>java.lang.AssertionError: did not expect [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg] but found [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg]
+	at webtests.Testlayers.WT_06_DynamicContent_Test.DynamicContentTest1(WT_06_DynamicContent_Test.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641059445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1641059445'><pre>java.lang.AssertionError: did not expect [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg] but found [http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failEquals(Assert.java:1417)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+	at org.testng.Assert.assertNotEquals(Assert.java:2033)
+	at org.testng.Assert.assertNotEquals(Assert.java:2055)
+	at webtests.Testlayers.WT_06_DynamicContent_Test.DynamicContentTest1(WT_06_DynamicContent_Test.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>4</td>
+<td>webtests.Testlayers.WT_06_DynamicContent_Test@63a65a25</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webtests.Testlayers.WT_11_FloatingMenu_Test.FloatingMenuTest()'><b>FloatingMenuTest</b><br>Test class: webtests.Testlayers.WT_11_FloatingMenu_Test</td>
+<td></td>
+<td>2</td>
+<td>webtests.Testlayers.WT_11_FloatingMenu_Test@43301423</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_02_Checkbox_Test.Checkbox1validation()'><b>Checkbox1validation</b><br>Test class: webtests.Testlayers.WT_02_Checkbox_Test</td>
+<td></td>
+<td>1</td>
+<td>webtests.Testlayers.WT_02_Checkbox_Test@4445629</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_07_DynamicControls_Test.RemoveandAddValidation()'><b>RemoveandAddValidation</b><br>Test class: webtests.Testlayers.WT_07_DynamicControls_Test</td>
+<td></td>
+<td>46</td>
+<td>webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_15_JavaScriptError_Test.JavaScriptErrorTest()'><b>JavaScriptErrorTest</b><br>Test class: webtests.Testlayers.WT_15_JavaScriptError_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_15_JavaScriptError_Test@56de5251</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_05_Dropdown_Test.DropDownTest2()'><b>DropDownTest2</b><br>Test class: webtests.Testlayers.WT_05_Dropdown_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_05_Dropdown_Test@6b26e945</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_17_NotificationMsg_Test.NotificationMessageTest()'><b>NotificationMessageTest</b><br>Test class: webtests.Testlayers.WT_17_NotificationMsg_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_01_Loginpage_Test.LoginSucess()'><b>LoginSucess</b><br>Test class: webtests.Testlayers.WT_01_Loginpage_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_07_DynamicControls_Test.EnableAndDisableValidation()'><b>EnableAndDisableValidation</b><br>Test class: webtests.Testlayers.WT_07_DynamicControls_Test</td>
+<td></td>
+<td>11</td>
+<td>webtests.Testlayers.WT_07_DynamicControls_Test@54c562f7</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_05_Dropdown_Test.DropDownTest1()'><b>DropDownTest1</b><br>Test class: webtests.Testlayers.WT_05_Dropdown_Test</td>
+<td></td>
+<td>2</td>
+<td>webtests.Testlayers.WT_05_Dropdown_Test@6b26e945</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_12_Iframe_Test.IFrameTest()'><b>IFrameTest</b><br>Test class: webtests.Testlayers.WT_12_Iframe_Test</td>
+<td></td>
+<td>40</td>
+<td>webtests.Testlayers.WT_12_Iframe_Test@1a04f701</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_01_Loginpage_Test.LoginFailure()'><b>LoginFailure</b><br>Test class: webtests.Testlayers.WT_01_Loginpage_Test<br>Parameters: tommy, super</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_01_Loginpage_Test.LoginFailure()'><b>LoginFailure</b><br>Test class: webtests.Testlayers.WT_01_Loginpage_Test<br>Parameters: smith, secret123</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_17_NotificationMsg_Test.NotificationMessageTest()'><b>NotificationMessageTest</b><br>Test class: webtests.Testlayers.WT_17_NotificationMsg_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_03_ContextMenu_Test.ContextMenuTest()'><b>ContextMenuTest</b><br>Test class: webtests.Testlayers.WT_03_ContextMenu_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_03_ContextMenu_Test@25d250c6</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_02_Checkbox_Test.Checkbox2validation()'><b>Checkbox2validation</b><br>Test class: webtests.Testlayers.WT_02_Checkbox_Test</td>
+<td></td>
+<td>1</td>
+<td>webtests.Testlayers.WT_02_Checkbox_Test@4445629</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_08_DynamicLoading_Test.DynamicpageTest()'><b>DynamicpageTest</b><br>Test class: webtests.Testlayers.WT_08_DynamicLoading_Test</td>
+<td></td>
+<td>5</td>
+<td>webtests.Testlayers.WT_08_DynamicLoading_Test@318ba8c8</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_17_NotificationMsg_Test.NotificationMessageTest()'><b>NotificationMessageTest</b><br>Test class: webtests.Testlayers.WT_17_NotificationMsg_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_01_Loginpage_Test.LoginFailure()'><b>LoginFailure</b><br>Test class: webtests.Testlayers.WT_01_Loginpage_Test<br>Parameters: tom, secret#</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_04_DragandDrop_Test.DragAndDropA()'><b>DragAndDropA</b><br>Test class: webtests.Testlayers.WT_04_DragandDrop_Test</td>
+<td></td>
+<td>1</td>
+<td>webtests.Testlayers.WT_04_DragandDrop_Test@4df50bcc</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_09_FileDownload_Test.FileDownloadTest()'><b>FileDownloadTest</b><br>Test class: webtests.Testlayers.WT_09_FileDownload_Test</td>
+<td></td>
+<td>2</td>
+<td>webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_10_FileUpload_Test.UploadFileTest()'><b>UploadFileTest</b><br>Test class: webtests.Testlayers.WT_10_FileUpload_Test</td>
+<td></td>
+<td>1</td>
+<td>webtests.Testlayers.WT_10_FileUpload_Test@3c9d0b9d</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_13_MouseHover_Test.hoverOnUser3()'><b>hoverOnUser3</b><br>Test class: webtests.Testlayers.WT_13_MouseHover_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_13_MouseHover_Test@d4342c2</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_17_NotificationMsg_Test.NotificationMessageTest()'><b>NotificationMessageTest</b><br>Test class: webtests.Testlayers.WT_17_NotificationMsg_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_17_NotificationMsg_Test@12b0404f</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_09_FileDownload_Test.VerifyFile()'><b>VerifyFile</b><br>Test class: webtests.Testlayers.WT_09_FileDownload_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_09_FileDownload_Test@6dbb137d</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_13_MouseHover_Test.hoverOnUser2()'><b>hoverOnUser2</b><br>Test class: webtests.Testlayers.WT_13_MouseHover_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_13_MouseHover_Test@d4342c2</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_01_Loginpage_Test.LoginFailure()'><b>LoginFailure</b><br>Test class: webtests.Testlayers.WT_01_Loginpage_Test<br>Parameters: tomsmith, topsecret</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_01_Loginpage_Test@27c86f2d</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_13_MouseHover_Test.hoverOnUser1()'><b>hoverOnUser1</b><br>Test class: webtests.Testlayers.WT_13_MouseHover_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_13_MouseHover_Test@d4342c2</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.JavaScriptAlertTest()'><b>JavaScriptAlertTest</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_16_NewTab_Test.NewTabTest()'><b>NewTabTest</b><br>Test class: webtests.Testlayers.WT_16_NewTab_Test</td>
+<td></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_16_NewTab_Test@419c5f1a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.JavaScriptPromptTest()'><b>JavaScriptPromptTest</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+	at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace267463507", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace267463507'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+	at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+<tr>
+<td title='webtests.Testlayers.WT_14_JavaScriptAlerts_Test.JavaScriptConfirmTest()'><b>JavaScriptConfirmTest</b><br>Test class: webtests.Testlayers.WT_14_JavaScriptAlerts_Test</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+	at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace78011456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace78011456'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=106.0.5249.119): I am a JS Alert
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bf3aec225e396eebf8d7abec56e88d0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\gotid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49722/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf3aec225e396eebf8d7abec56e88d0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+	at webtests.BasePackage.WT_BaseClass.teardown(WT_BaseClass.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>webtests.Testlayers.WT_14_JavaScriptAlerts_Test@163e4e87</td></tr>
+</table><p>
+</body>
+</html>

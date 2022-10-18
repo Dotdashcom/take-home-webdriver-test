@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [WebDriver Tests]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="webtests.Reports.GenerateExtentReports"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Regression test(failed)">
+    <classes>
+      <class name="webtests.Testlayers.WT_15_JavaScriptError_Test">
+        <methods>
+          <include name="JavaScriptErrorTest"/>
+          <include name="initsetup"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- webtests.Testlayers.WT_15_JavaScriptError_Test -->
+    </classes>
+  </test> <!-- Regression test(failed) -->
+  <test thread-count="2" parallel="tests" name="Functional test(failed)">
+    <classes>
+      <class name="webtests.Testlayers.WT_08_DynamicLoading_Test">
+        <methods>
+          <include name="initsetup"/>
+          <include name="DynamicpageTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- webtests.Testlayers.WT_08_DynamicLoading_Test -->
+    </classes>
+  </test> <!-- Functional test(failed) -->
+</suite> <!-- Failed suite [WebDriver Tests] -->
