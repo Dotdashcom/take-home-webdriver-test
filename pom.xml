@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dotdash</groupId>
+    <artifactId>dotdash.project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <tags/>
+        <threads/>
+        <suiteXmlFile/>
+        <!-- Versions -->
+        <java.version>11</java.version>
+        <selenium.version>4.4.0</selenium.version>
+        <selenium.server.version>4.0.0-alpha-2</selenium.server.version>
+        <junit.version>5.8.1</junit.version>
+        <junit.surefire.version>3.0.0-M5</junit.surefire.version>
+        <webdrivermanager.version>4.0.0</webdrivermanager.version>
+        <rest-assured.version>4.1.1</rest-assured.version>
+        <maven.failsafe.plugin.version>3.0.0-M3</maven.failsafe.plugin.version>
+        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+    </properties>
+
+
+<dependencies>
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>${webdrivermanager.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.6.1</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.maven.surefire</groupId>
+        <artifactId>surefire-junit4</artifactId>
+        <version>${junit.surefire.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>${selenium.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-server</artifactId>
+        <version>${selenium.server.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports</artifactId>
+        <version>3.0.0</version>
+    </dependency>
+
+</dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${maven.failsafe.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>Run parallel tests</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <forkCount>${threads}</forkCount>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <suiteXmlFiles>
+                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
