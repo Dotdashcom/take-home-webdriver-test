@@ -1,0 +1,344 @@
+<html>
+<head>
+<title>TestNG:  RegressionTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RegressionTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 18 14:01:05 EDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>122 seconds (122349 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testpackage.LoginPageTest.failloginbuttontest()'><b>failloginbuttontest</b><br>Test class: testpackage.LoginPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at pagepackage.LoginPage.AssertionLoginPass(LoginPage.java:52)
+	at testpackage.LoginPageTest.failloginbuttontest(LoginPageTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1915865208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1915865208'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:976)
+	at org.testng.Assert.assertEquals(Assert.java:1010)
+	at pagepackage.LoginPage.AssertionLoginPass(LoginPage.java:52)
+	at testpackage.LoginPageTest.failloginbuttontest(LoginPageTest.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testpackage.LoginPageTest@34a3d150</td></tr>
+<tr>
+<td title='testpackage.Uploadtest.testupload()'><b>testupload</b><br>Test class: testpackage.Uploadtest</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\shiva\Downloads\some-file.txt
+  (Session info: chrome=106.0.5249.119)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-MVNUQ4K1&apos;, ip: &apos;192.168.48.1&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\shiva\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2715dd8d9d3a0a8e965b4feb38317e2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at pagepackage.Upload.upload(Upload.java:26)
+	at testpackage.Uploadtest.testupload(Uploadtest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1917103403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1917103403'><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\shiva\Downloads\some-file.txt
+  (Session info: chrome=106.0.5249.119)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-MVNUQ4K1&apos;, ip: &apos;192.168.48.1&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\shiva\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2715dd8d9d3a0a8e965b4feb38317e2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at pagepackage.Upload.upload(Upload.java:26)
+	at testpackage.Uploadtest.testupload(Uploadtest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testpackage.Uploadtest@3fc2959f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testpackage.Dropdowntest.option2test()'><b>option2test</b><br>Test class: testpackage.Dropdowntest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.Dropdowntest@62379589</td></tr>
+<tr>
+<td title='testpackage.DynamiccontentTest.Dynamiccontent1test()'><b>Dynamiccontent1test</b><br>Test class: testpackage.DynamiccontentTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DynamiccontentTest@4afcd809</td></tr>
+<tr>
+<td title='testpackage.DynamicLoadingTest.startbuttontest()'><b>startbuttontest</b><br>Test class: testpackage.DynamicLoadingTest</td>
+<td></td>
+<td>5</td>
+<td>testpackage.DynamicLoadingTest@44c03695</td></tr>
+<tr>
+<td title='testpackage.CheckBoxTest.UncheckedCheckBoxtest()'><b>UncheckedCheckBoxtest</b><br>Test class: testpackage.CheckBoxTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.CheckBoxTest@36fc695d</td></tr>
+<tr>
+<td title='testpackage.Floatingmenutest.floatinmenutest()'><b>floatinmenutest</b><br>Test class: testpackage.Floatingmenutest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.Floatingmenutest@7e6f74c</td></tr>
+<tr>
+<td title='testpackage.Dynamiccontroltest.emptyelementdisabletest()'><b>emptyelementdisabletest</b><br>Test class: testpackage.Dynamiccontroltest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.Dynamiccontroltest@175c2241</td></tr>
+<tr>
+<td title='testpackage.DynamiccontentTest.Dynamiccontent2test()'><b>Dynamiccontent2test</b><br>Test class: testpackage.DynamiccontentTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DynamiccontentTest@4afcd809</td></tr>
+<tr>
+<td title='testpackage.Dynamiccontroltest.Enablebuttontest()'><b>Enablebuttontest</b><br>Test class: testpackage.Dynamiccontroltest</td>
+<td></td>
+<td>3</td>
+<td>testpackage.Dynamiccontroltest@175c2241</td></tr>
+<tr>
+<td title='testpackage.JSAlertTest.jsconfirmtest()'><b>jsconfirmtest</b><br>Test class: testpackage.JSAlertTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.JSAlertTest@6a78afa0</td></tr>
+<tr>
+<td title='testpackage.Dynamiccontroltest.ACheckboxtest()'><b>ACheckboxtest</b><br>Test class: testpackage.Dynamiccontroltest</td>
+<td></td>
+<td>3</td>
+<td>testpackage.Dynamiccontroltest@175c2241</td></tr>
+<tr>
+<td title='testpackage.MousHoverTest.img1test()'><b>img1test</b><br>Test class: testpackage.MousHoverTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.MousHoverTest@2f4948e4</td></tr>
+<tr>
+<td title='testpackage.Dropdowntest.option1test()'><b>option1test</b><br>Test class: testpackage.Dropdowntest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.Dropdowntest@62379589</td></tr>
+<tr>
+<td title='testpackage.ContextmenuTest.alerttest()'><b>alerttest</b><br>Test class: testpackage.ContextmenuTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.ContextmenuTest@28701274</td></tr>
+<tr>
+<td title='testpackage.JSAlertTest.jsprompttest()'><b>jsprompttest</b><br>Test class: testpackage.JSAlertTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.JSAlertTest@6a78afa0</td></tr>
+<tr>
+<td title='testpackage.DragandDropTest.DragtestforA()'><b>DragtestforA</b><br>Test class: testpackage.DragandDropTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DragandDropTest@3754a4bf</td></tr>
+<tr>
+<td title='testpackage.Downloadtest.testdownload()'><b>testdownload</b><br>Test class: testpackage.Downloadtest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.Downloadtest@13c9d689</td></tr>
+<tr>
+<td title='testpackage.NotificationTest.notificationtest()'><b>notificationtest</b><br>Test class: testpackage.NotificationTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.NotificationTest@10683d9d</td></tr>
+<tr>
+<td title='testpackage.JSAlertTest.jsalerttest()'><b>jsalerttest</b><br>Test class: testpackage.JSAlertTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.JSAlertTest@6a78afa0</td></tr>
+<tr>
+<td title='testpackage.Dynamiccontroltest.Removebuttontest()'><b>Removebuttontest</b><br>Test class: testpackage.Dynamiccontroltest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.Dynamiccontroltest@175c2241</td></tr>
+<tr>
+<td title='testpackage.CheckBoxTest.CheckedCheckBoxtest()'><b>CheckedCheckBoxtest</b><br>Test class: testpackage.CheckBoxTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.CheckBoxTest@36fc695d</td></tr>
+<tr>
+<td title='testpackage.DragandDropTest.DragtestforB()'><b>DragtestforB</b><br>Test class: testpackage.DragandDropTest</td>
+<td></td>
+<td>1</td>
+<td>testpackage.DragandDropTest@3754a4bf</td></tr>
+<tr>
+<td title='testpackage.iframetest.Frametest()'><b>Frametest</b><br>Test class: testpackage.iframetest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.iframetest@dd05255</td></tr>
+<tr>
+<td title='testpackage.DynamiccontentTest.Dynamiccontent3test()'><b>Dynamiccontent3test</b><br>Test class: testpackage.DynamiccontentTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DynamiccontentTest@4afcd809</td></tr>
+<tr>
+<td title='testpackage.LoginPageTest.loginbuttontest()'><b>loginbuttontest</b><br>Test class: testpackage.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.LoginPageTest@34a3d150</td></tr>
+<tr>
+<td title='testpackage.NewTabTest.tabtest()'><b>tabtest</b><br>Test class: testpackage.NewTabTest</td>
+<td></td>
+<td>0</td>
+<td>testpackage.NewTabTest@1f2586d6</td></tr>
+<tr>
+<td title='testpackage.Dynamiccontroltest.emptyelementtest()'><b>emptyelementtest</b><br>Test class: testpackage.Dynamiccontroltest</td>
+<td></td>
+<td>3</td>
+<td>testpackage.Dynamiccontroltest@175c2241</td></tr>
+</table><p>
+</body>
+</html>
