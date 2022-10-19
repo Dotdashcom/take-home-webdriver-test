@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [StaffIT]">
+  <test thread-count="5" parallel="tests" name="RegressionTests(failed)">
+    <classes>
+      <class name="testpackage.Uploadtest">
+        <methods>
+          <include name="testupload"/>
+          <include name="EndSignInTest"/>
+          <include name="StartSignInTest"/>
+        </methods>
+      </class> <!-- testpackage.Uploadtest -->
+      <class name="testpackage.LoginPageTest">
+        <methods>
+          <include name="StartSignInTest"/>
+          <include name="EndSignInTest"/>
+          <include name="failloginbuttontest"/>
+        </methods>
+      </class> <!-- testpackage.LoginPageTest -->
+    </classes>
+  </test> <!-- RegressionTests(failed) -->
+</suite> <!-- Failed suite [StaffIT] -->
