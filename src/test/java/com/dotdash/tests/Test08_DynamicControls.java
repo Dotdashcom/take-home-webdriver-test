@@ -1,9 +1,10 @@
 package com.dotdash.tests;
 
-import com.dotdash.pages.DropdownPage;
+import com.dotdash.pages.DynamicControlsPage;
 import com.dotdash.utilities.ConfigurationReader;
 import com.dotdash.utilities.Driver;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,12 +22,52 @@ public class Test08_DynamicControls {
      */
 
     @Test
-    public void dynamicControlsTest() {
+    public void dynamicControlsCheckboxTest() {
 
-        String url = ConfigurationReader.getProperty("base.url") + "";
+        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage();
+
+        String url = ConfigurationReader.getProperty("base.url") + "/dynamic_controls";
         Driver.getDriver().get(url);
 
+        Assert.assertTrue(dynamicControlsPage.checkbox.isDisplayed());
 
+        dynamicControlsPage.removeAndAddBtn.click();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+        wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loading));
+
+        Assert.assertEquals(dynamicControlsPage.message.getText(), "It's gone!");
+
+        dynamicControlsPage.removeAndAddBtn.click();
+        wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loading));
+
+        Assert.assertTrue(dynamicControlsPage.checkbox.isDisplayed());
+        Assert.assertEquals(dynamicControlsPage.message.getText(), "It's back!");
+
+        Driver.closeDriver();
+    }
+
+    @Test
+    public void dynamicControlsTextboxTest() {
+
+        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage();
+
+        String url = ConfigurationReader.getProperty("base.url") + "/dynamic_controls";
+        Driver.getDriver().get(url);
+
+        Assert.assertFalse(dynamicControlsPage.textBox.isEnabled());
+
+        dynamicControlsPage.enableAndDisableBtn.click();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+        wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loading));
+
+        Assert.assertEquals(dynamicControlsPage.message.getText(), "It's enabled!");
+        Assert.assertTrue(dynamicControlsPage.textBox.isEnabled());
+
+        dynamicControlsPage.enableAndDisableBtn.click();
+        wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loading));
+
+        Assert.assertFalse(dynamicControlsPage.textBox.isEnabled());
+        Assert.assertEquals(dynamicControlsPage.message.getText(), "It's disabled!");
 
         Driver.closeDriver();
     }
