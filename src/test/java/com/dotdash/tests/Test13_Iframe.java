@@ -14,7 +14,7 @@ public class Test13_Iframe {
      */
 
     @Test
-    public void checkbox2CheckedTest(){
+    public void iframeTest(){
 
         IframePage iframePage = new IframePage();
 
