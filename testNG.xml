@@ -1,0 +1,23 @@
+<suite name = "StaffIT" parallel="tests" >	
+      <test name = "RegressionTests" allow-return-values="true"> 
+           <classes> 
+                   <class name = "testLayer.LoginTestCase"/>
+                   <class name = "testpackage.CheckBoxTest"/>
+                   <class namec= "testpackage.ContextmenuTest"/>
+                   <class name = "testpackage.Downloadtest"/>
+                   <class name = "testpackage.DragandDropTest"/>
+                   <class name = "testpackage.Dropdowntest"/>
+                   <class name = "testpackage.DynamiccontentTest"/>
+                   <class name = "testpackage.Dynamiccontroltest"/>
+                   <class name = "testpackage.DynamicLoadingTest"/>
+                   <class name = "testpackage.Floatingmenutest"/>
+                   <class name = "testpackage.iframetest"/>
+                   <class name = "testpackage.JSAlertTest"/>
+                   <class name = "testpackage.LoginPageTest"/>
+                   <class name = "testpackage.MousHoverTest"/>
+                   <class name = "testpackage.NewTabTest"/>
+                   <class name = "testpackage.NotificationTest"/>
+                   <class name = "testpackage.Uploadtest"/>
+           </classes>
+      </test>
+</suite>
