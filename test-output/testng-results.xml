@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="18" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="140838" started-at="2022-10-19T18:45:21 IST" finished-at="2022-10-19T18:47:42 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="140838" started-at="2022-10-19T18:45:21 IST" finished-at="2022-10-19T18:47:42 IST">
+      <class name="com.testing.regression.RegressionTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="3586" started-at="2022-10-19T18:45:21 IST" finished-at="2022-10-19T18:45:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyLoginFailure()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="VerifyLoginFailure" duration-ms="4064" started-at="2022-10-19T18:45:24 IST" finished-at="2022-10-19T18:45:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginFailure -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="817" started-at="2022-10-19T18:45:28 IST" finished-at="2022-10-19T18:45:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1608" started-at="2022-10-19T18:45:29 IST" finished-at="2022-10-19T18:45:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyLoginSuccess()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="VerifyLoginSuccess" duration-ms="4070" started-at="2022-10-19T18:45:31 IST" finished-at="2022-10-19T18:45:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginSuccess -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="839" started-at="2022-10-19T18:45:35 IST" finished-at="2022-10-19T18:45:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1627" started-at="2022-10-19T18:45:36 IST" finished-at="2022-10-19T18:45:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyCheckboxes()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyCheckboxes" duration-ms="619" started-at="2022-10-19T18:45:37 IST" finished-at="2022-10-19T18:45:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckboxes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="849" started-at="2022-10-19T18:45:38 IST" finished-at="2022-10-19T18:45:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1613" started-at="2022-10-19T18:45:39 IST" finished-at="2022-10-19T18:45:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyContextMenu()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyContextMenu" duration-ms="2708" started-at="2022-10-19T18:45:41 IST" finished-at="2022-10-19T18:45:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContextMenu -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="806" started-at="2022-10-19T18:45:43 IST" finished-at="2022-10-19T18:45:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1592" started-at="2022-10-19T18:45:44 IST" finished-at="2022-10-19T18:45:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyDownload()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyDownload" duration-ms="4602" started-at="2022-10-19T18:45:46 IST" finished-at="2022-10-19T18:45:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDownload -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="857" started-at="2022-10-19T18:45:50 IST" finished-at="2022-10-19T18:45:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1589" started-at="2022-10-19T18:45:51 IST" finished-at="2022-10-19T18:45:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyDragnDrop()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyDragnDrop" duration-ms="9723" started-at="2022-10-19T18:45:53 IST" finished-at="2022-10-19T18:46:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDragnDrop -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="815" started-at="2022-10-19T18:46:02 IST" finished-at="2022-10-19T18:46:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1702" started-at="2022-10-19T18:46:03 IST" finished-at="2022-10-19T18:46:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyDropDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyDropDown" duration-ms="883" started-at="2022-10-19T18:46:05 IST" finished-at="2022-10-19T18:46:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDropDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="792" started-at="2022-10-19T18:46:06 IST" finished-at="2022-10-19T18:46:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1634" started-at="2022-10-19T18:46:07 IST" finished-at="2022-10-19T18:46:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyDynamicContent()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyDynamicContent" duration-ms="3132" started-at="2022-10-19T18:46:08 IST" finished-at="2022-10-19T18:46:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicContent -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="766" started-at="2022-10-19T18:46:11 IST" finished-at="2022-10-19T18:46:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1607" started-at="2022-10-19T18:46:12 IST" finished-at="2022-10-19T18:46:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyDynamicControls()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyDynamicControls" duration-ms="14344" started-at="2022-10-19T18:46:14 IST" finished-at="2022-10-19T18:46:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicControls -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="867" started-at="2022-10-19T18:46:28 IST" finished-at="2022-10-19T18:46:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1601" started-at="2022-10-19T18:46:29 IST" finished-at="2022-10-19T18:46:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyDynamicload()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyDynamicload" duration-ms="5568" started-at="2022-10-19T18:46:31 IST" finished-at="2022-10-19T18:46:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicload -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="823" started-at="2022-10-19T18:46:36 IST" finished-at="2022-10-19T18:46:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1632" started-at="2022-10-19T18:46:37 IST" finished-at="2022-10-19T18:46:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyFloatingMenu()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyFloatingMenu" duration-ms="3622" started-at="2022-10-19T18:46:39 IST" finished-at="2022-10-19T18:46:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFloatingMenu -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="789" started-at="2022-10-19T18:46:42 IST" finished-at="2022-10-19T18:46:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1716" started-at="2022-10-19T18:46:43 IST" finished-at="2022-10-19T18:46:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyFrames()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyFrames" duration-ms="14718" started-at="2022-10-19T18:46:45 IST" finished-at="2022-10-19T18:46:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFrames -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="848" started-at="2022-10-19T18:46:59 IST" finished-at="2022-10-19T18:47:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1660" started-at="2022-10-19T18:47:00 IST" finished-at="2022-10-19T18:47:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyJSAlerts()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyJSAlerts" duration-ms="759" started-at="2022-10-19T18:47:02 IST" finished-at="2022-10-19T18:47:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJSAlerts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="740" started-at="2022-10-19T18:47:03 IST" finished-at="2022-10-19T18:47:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1706" started-at="2022-10-19T18:47:03 IST" finished-at="2022-10-19T18:47:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyJSError()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyJSError" duration-ms="1289" started-at="2022-10-19T18:47:05 IST" finished-at="2022-10-19T18:47:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJSError -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="720" started-at="2022-10-19T18:47:06 IST" finished-at="2022-10-19T18:47:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1713" started-at="2022-10-19T18:47:07 IST" finished-at="2022-10-19T18:47:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyMouseHover()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyMouseHover" duration-ms="8157" started-at="2022-10-19T18:47:09 IST" finished-at="2022-10-19T18:47:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMouseHover -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="797" started-at="2022-10-19T18:47:17 IST" finished-at="2022-10-19T18:47:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1629" started-at="2022-10-19T18:47:18 IST" finished-at="2022-10-19T18:47:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyNewWindow()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyNewWindow" duration-ms="2707" started-at="2022-10-19T18:47:19 IST" finished-at="2022-10-19T18:47:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewWindow -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="812" started-at="2022-10-19T18:47:22 IST" finished-at="2022-10-19T18:47:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1695" started-at="2022-10-19T18:47:23 IST" finished-at="2022-10-19T18:47:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyNotifications()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyNotifications" duration-ms="2691" started-at="2022-10-19T18:47:25 IST" finished-at="2022-10-19T18:47:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNotifications -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="776" started-at="2022-10-19T18:47:27 IST" finished-at="2022-10-19T18:47:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="setup" is-config="true" duration-ms="1673" started-at="2022-10-19T18:47:28 IST" finished-at="2022-10-19T18:47:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyUpload()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="verifyUpload" duration-ms="10986" started-at="2022-10-19T18:47:30 IST" finished-at="2022-10-19T18:47:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpload -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testing.regression.RegressionTests@12f41634]" name="tearDown" is-config="true" duration-ms="808" started-at="2022-10-19T18:47:41 IST" finished-at="2022-10-19T18:47:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testing.regression.RegressionTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
