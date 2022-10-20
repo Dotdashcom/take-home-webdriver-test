@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import static com.example.testautomation_dotdash.base.BaseTest.prop;
@@ -36,8 +35,8 @@ public class DynamicControlsPage extends BasePage {
         removeButton.click();
     }
 
-    public void assertCheckboxIsRemoved() throws InterruptedException{
-        Thread.sleep(4000);
+    public void assertCheckboxIsRemoved(){
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkbox")));
         WebElement message = driver.findElement(By.cssSelector("form[id='checkbox-example'] p[id='message']"));
         Assert.assertFalse(isElementPresent(checkboxA));
         Assert.assertTrue(message.isDisplayed());
@@ -49,8 +48,8 @@ public class DynamicControlsPage extends BasePage {
         addButton.click();
     }
 
-    public void assertCheckboxIsAdded() throws InterruptedException{
-        Thread.sleep(4000);
+    public void assertCheckboxIsAdded(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkbox")));
         WebElement message = driver.findElement(By.cssSelector("form[id='checkbox-example'] p[id='message']"));
         Assert.assertTrue(isElementPresent(checkboxA));
         Assert.assertTrue(message.isDisplayed());
@@ -66,16 +65,16 @@ public class DynamicControlsPage extends BasePage {
         disableButton.click();
     }
 
-    public void assertInputIsEnabled() throws InterruptedException{
-        Thread.sleep(4000);
+    public void assertInputIsEnabled(){
+        wait.until(ExpectedConditions.elementToBeClickable(inputField));
         WebElement message = driver.findElement(By.cssSelector("form[id='input-example'] p[id='message']"));
         Assert.assertTrue(inputField.isEnabled());
         Assert.assertTrue(message.isDisplayed());
         Assert.assertEquals("It's enabled!", message.getText());
     }
 
-    public void assertInputIsDisabled() throws InterruptedException{
-        Thread.sleep(4000);
+    public void assertInputIsDisabled(){
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("form[id='input-example'] input[disabled]")));
         WebElement message = driver.findElement(By.cssSelector("form[id='input-example'] p[id='message']"));
         Assert.assertFalse(inputField.isEnabled());
         Assert.assertTrue(message.isDisplayed());

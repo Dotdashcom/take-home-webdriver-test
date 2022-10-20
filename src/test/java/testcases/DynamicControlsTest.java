@@ -11,7 +11,7 @@ public class DynamicControlsTest extends BaseTest {
     }
 
     @Test
-    public void RemoveAndAddCheckbox() throws InterruptedException{
+    public void RemoveAndAddCheckbox(){
         DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(driver);
         dynamicControlsPage.clickRemoveButton();
         dynamicControlsPage.assertCheckboxIsRemoved();
@@ -21,7 +21,7 @@ public class DynamicControlsTest extends BaseTest {
     }
 
     @Test
-    public void EnableAndDisableInputField() throws InterruptedException{
+    public void EnableAndDisableInputField(){
         DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(driver);
         dynamicControlsPage.clickEnableButton();
         dynamicControlsPage.assertInputIsEnabled();

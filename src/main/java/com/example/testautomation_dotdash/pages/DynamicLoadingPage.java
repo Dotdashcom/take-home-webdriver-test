@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import static com.example.testautomation_dotdash.base.BaseTest.prop;
 
@@ -25,8 +26,8 @@ public class DynamicLoadingPage extends BasePage {
         startBtn.click();
     }
 
-    public void assertLoadingFinished() throws InterruptedException{
-        Thread.sleep(7000);
+    public void assertLoadingFinished(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("finish")));
         WebElement text = driver.findElement(By.id("finish"));
 
         Assert.assertEquals("Hello World!", text.getText());
