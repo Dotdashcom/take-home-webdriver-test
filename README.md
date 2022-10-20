@@ -1,17 +1,18 @@
-# Webdriver Tests by JP
+# WebDriver Tests by JP
 
 ## Prerequisites
 * Docker
 + Git
 - Java
-* Webdriver
+* WebDriver
 + ChromeDriver
 * IDE such as IntelliJ
 
 ## Installation
-There's easy way:
+There's the easy way:
 ```
 chmod +x setup.sh
+./setup.sh
 chmod +x run.sh
 ./run.sh
 ```
@@ -31,35 +32,31 @@ And the other way
 
 3. (Optional) In case you don't have a Linux of Mac where to run this code, you can configure the suite to run against a dockerized selenium grid running linux. 
 
-5. (Optional) To do this, open the testng.xml file inside your project's root and do the following change:
+4. (Optional) To do this, open the testng.xml file inside your project's root and do the following change:
 
    ```
    <!-- <parameter name="environment" value="local"/> -->
    <parameter name="remote" value="http://localhost:4445/wd/hub"/>
    ```
-To this:
+   To this:
    ```
    <parameter name="environment" value="local"/>
    <!-- <parameter name="remote" value="http://localhost:4445/wd/hub"/> --> 
    ```
-5. (Optional) Also, take a look at the thread-count configuration in your testng.xml file, it may be useful:
-
+5. (Optional) Also, take a look at the thread-count configuration in your testng.xml file, it may be useful (between 4 and 8 is fine):
    ```
    parallel = "tests" thread-count = "3">
    ```
-
-4. (Optional) Then install the container like this:
+6. (Optional) Then install the container like this:
    ```
    docker pull selenium/standalone-chrome
    ```
-
 ## Running
 1. Run the following commands. The second one is optional.
    ```
    docker run -d -p 7080:5000 gprestes/the-internet
    docker run -d -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
    ```
-
 2. Use the following BaseUrl for your tests:
 
    ```
@@ -70,7 +67,6 @@ To this:
    ```
    http://localhost:4445/wd/hub
    ```
-      
 
 3. To install the project, go to the project's root folder, and run:
    ```
