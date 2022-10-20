@@ -43,7 +43,7 @@ To this:
    <parameter name="environment" value="local"/>
    <!-- <parameter name="remote" value="http://localhost:4445/wd/hub"/> --> 
    ```
-5. (Optional) Also, take a look at the thread-count configuration in your testng.xml file, it may be useful:
+5. (Optional) Also, take a look at the thread-count configuration fn your testng.xml file, it may be useful (from 6 to 8 is ok for running local):
 
    ```
    parallel = "tests" thread-count = "3">
