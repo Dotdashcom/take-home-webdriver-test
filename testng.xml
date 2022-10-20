@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Coding Challenge Website UI Regression Suite" parallel = "tests" thread-count = "4">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browser_version" value="106.0.5249.61"/>
+    <parameter name="headless" value="true"/>
+    <parameter name="base_url" value="http://localhost:7080"/>
+    <parameter name="environment" value="local"/>
+    <!--<parameter name="remote" value="http://localhost:4445/wd/hub"/> -->
+    <test name="LoginTest">
+        <parameter name="username" value="tomsmith"/>
+        <parameter name="password" value="SuperSecretPassword!"/>
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.LoginTest"/>
+        </classes>
+    </test>
+    <test name = "HoversTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.HoversTest"/>
+        </classes>
+    </test>
+    <test name = "ContextMenuTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.ContextMenuTest"/>
+        </classes>
+    </test>
+    <test name = "CheckboxesTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.CheckboxesTest"/>
+        </classes>
+    </test>
+    <test name = "DragAndDropTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.DragAndDropTest"/>
+        </classes>
+    </test>
+    <test name = "DropdownTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.DropdownTest"/>
+        </classes>
+    </test>
+    <test name = "DynamicContentTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.DynamicContentTest"/>
+        </classes>
+    </test>
+    <test name = "DynamicControlsTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.DynamicControlsTest"/>
+        </classes>
+    </test>
+    <test name = "DynamicLoadingTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.DynamicLoadingTest"/>
+        </classes>
+    </test>
+    <test name = "UploadTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.UploadTest"/>
+        </classes>
+    </test>
+    <test name = "DownloadTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.DownloadTest"/>
+        </classes>
+    </test>
+    <test name = "FloatingMenuTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.FloatingMenuTest"/>
+        </classes>
+    </test>
+    <test name = "IFrameTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.IFrameTest"/>
+        </classes>
+    </test>
+    <test name = "JavascriptAlertTests">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.JavascriptAlertsTest"/>
+        </classes>
+    </test>
+    <test name = "JavascriptErrorTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.JavascriptErrorTest"/>
+        </classes>
+    </test>
+    <test name = "WindowsTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.WindowsTest"/>
+        </classes>
+    </test>
+    <test name = "NotificationMessageRenderedTest">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.NotificationMessageRenderedTest"/>
+        </classes>
+    </test>
+</suite>
