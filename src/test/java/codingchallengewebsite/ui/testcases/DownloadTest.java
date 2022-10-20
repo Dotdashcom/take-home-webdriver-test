@@ -10,7 +10,7 @@ public class DownloadTest extends UITests {
     public DownloadTest() {
     }
 
-    @Test(description = "Downloads a file and compares it's size with what's written in the headers")
+    @Test(description = "Downloads a file and compares it with what's expected")
     public void downloadTest() {
         DownloadPage downloadPage = new DownloadPage(this.driver, this);
         Assert.assertTrue(downloadPage.isPageOpen(), "Page not open");
