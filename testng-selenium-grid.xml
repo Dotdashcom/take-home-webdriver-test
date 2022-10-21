@@ -7,11 +7,11 @@
     <parameter name="base_url" value="http://localhost:7080"/>
     <!-- <parameter name="environment" value="local"/> -->
     <parameter name="remote" value="http://localhost:4445/wd/hub"/>
-    <test name="LoginTest">
+    <test name="Login Tests">
         <parameter name="username" value="tomsmith"/>
         <parameter name="password" value="SuperSecretPassword!"/>
         <classes>
-            <class name="codingchallengewebsite.ui.testcases.LoginTest"/>
+            <class name="codingchallengewebsite.ui.testcases.LoginFormTest"/>
         </classes>
     </test>
     <test name = "HoversTest">

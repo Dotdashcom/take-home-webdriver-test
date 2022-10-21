@@ -1,18 +1,19 @@
 package codingchallengewebsite.ui.testcases;
 
-import codingchallengewebsite.ui.UITests;
+import codingchallengewebsite.ui.UITest;
 import codingchallengewebsite.ui.pageobjects.CheckboxesPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckboxesTest extends UITests {
+public class CheckboxesTest extends UITest {
 
-    public CheckboxesTest() {
-    }
+    public CheckboxesTest() { }
 
     @Test(description="Checkboxes can be checked and unchecked")
     public void checkboxChecking() {
-        CheckboxesPage checkboxesPage = new CheckboxesPage(this.driver, this);
+        CheckboxesPage checkboxesPage = new CheckboxesPage(this.getDriver(), this);
+
+        // Validate page loaded
         Assert.assertTrue(checkboxesPage.isPageOpen(), "Page not open");
 
         // Perform check / uncheck

@@ -7,91 +7,44 @@
     <parameter name="base_url" value="http://localhost:7080"/>
     <parameter name="environment" value="local"/>
     <!--<parameter name="remote" value="http://localhost:4445/wd/hub"/> -->
-    <test name="LoginTest">
+    <test name="Login Test">
         <parameter name="username" value="tomsmith"/>
         <parameter name="password" value="SuperSecretPassword!"/>
         <classes>
-            <class name="codingchallengewebsite.ui.testcases.LoginTest"/>
+            <class name="codingchallengewebsite.ui.testcases.LoginFormTest">
+            </class>
         </classes>
     </test>
-    <test name = "HoversTest">
+    <test name = "Javascript Tests">
         <classes>
             <class name="codingchallengewebsite.ui.testcases.HoversTest"/>
-        </classes>
-    </test>
-    <test name = "ContextMenuTest">
-        <classes>
             <class name="codingchallengewebsite.ui.testcases.ContextMenuTest"/>
-        </classes>
-    </test>
-    <test name = "CheckboxesTest">
-        <classes>
-            <class name="codingchallengewebsite.ui.testcases.CheckboxesTest"/>
-        </classes>
-    </test>
-    <test name = "DragAndDropTest">
-        <classes>
             <class name="codingchallengewebsite.ui.testcases.DragAndDropTest"/>
-        </classes>
-    </test>
-    <test name = "DropdownTest">
-        <classes>
-            <class name="codingchallengewebsite.ui.testcases.DropdownTest"/>
-        </classes>
-    </test>
-    <test name = "DynamicContentTest">
-        <classes>
-            <class name="codingchallengewebsite.ui.testcases.DynamicContentTest"/>
-        </classes>
-    </test>
-    <test name = "DynamicControlsTest">
-        <classes>
             <class name="codingchallengewebsite.ui.testcases.DynamicControlsTest"/>
-        </classes>
-    </test>
-    <test name = "DynamicLoadingTest">
-        <classes>
             <class name="codingchallengewebsite.ui.testcases.DynamicLoadingTest"/>
-        </classes>
-    </test>
-    <test name = "UploadTest">
-        <classes>
-            <class name="codingchallengewebsite.ui.testcases.UploadTest"/>
-        </classes>
-    </test>
-    <test name = "DownloadTest">
-        <classes>
-            <class name="codingchallengewebsite.ui.testcases.DownloadTest"/>
-        </classes>
-    </test>
-    <test name = "FloatingMenuTest">
-        <classes>
+            <class name="codingchallengewebsite.ui.testcases.JavascriptAlertsTest"/>
+            <class name="codingchallengewebsite.ui.testcases.JavascriptErrorTest"/>
             <class name="codingchallengewebsite.ui.testcases.FloatingMenuTest"/>
         </classes>
     </test>
-    <test name = "IFrameTest">
+    <test name = "DOM Elements Tests">
         <classes>
+            <class name="codingchallengewebsite.ui.testcases.CheckboxesTest"/>
+            <class name="codingchallengewebsite.ui.testcases.DropdownTest"/>
+            <class name="codingchallengewebsite.ui.testcases.DynamicContentTest"/>
             <class name="codingchallengewebsite.ui.testcases.IFrameTest"/>
+            <class name="codingchallengewebsite.ui.testcases.NotificationMessageRenderedTest"/>
         </classes>
     </test>
-    <test name = "JavascriptAlertTests">
+    <test name = "File Tests">
         <classes>
-            <class name="codingchallengewebsite.ui.testcases.JavascriptAlertsTest"/>
+            <class name="codingchallengewebsite.ui.testcases.DownloadTest"/>
+            <class name="codingchallengewebsite.ui.testcases.UploadTest"/>
         </classes>
     </test>
-    <test name = "JavascriptErrorTest">
-        <classes>
-            <class name="codingchallengewebsite.ui.testcases.JavascriptErrorTest"/>
-        </classes>
-    </test>
-    <test name = "WindowsTest">
+    <test name = "Browser Interactions">
         <classes>
             <class name="codingchallengewebsite.ui.testcases.WindowsTest"/>
-        </classes>
-    </test>
-    <test name = "NotificationMessageRenderedTest">
-        <classes>
-            <class name="codingchallengewebsite.ui.testcases.NotificationMessageRenderedTest"/>
         </classes>
     </test>
 </suite>

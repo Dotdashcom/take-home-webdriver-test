@@ -1,14 +1,12 @@
 package codingchallengewebsite.ui.pageobjects;
 
-import codingchallengewebsite.ui.UITests;
-import org.openqa.selenium.WebDriver;
+import codingchallengewebsite.ui.UITest;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import java.util.HashMap;
-
-import static codingchallengewebsite.ui.UITests.DEFAULT_BASE_URL;
 
 public class DragAndDropPage {
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='Drag and Drop']")
@@ -21,17 +19,16 @@ public class DragAndDropPage {
     private WebElement boxB;
     @FindBy(how = How.XPATH, using = "//*[@id='column-b']/header")
     private WebElement boxTwo;
-    private final UITests caller;
-    private final HashMap<String, WebElement> boxes = new HashMap<String, WebElement>();
-    private final HashMap<String, WebElement> letters = new HashMap<String, WebElement>();
-    private final String pageUrl;
-    public WebDriver driver;
+    private final UITest caller;
+    private HashMap<String, WebElement> boxes = new HashMap<>();
+    private HashMap<String, WebElement> letters = new HashMap<>();
+    private String pageUrl;
 
-    public DragAndDropPage(WebDriver driver, UITests caller) {
+    public DragAndDropPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
-        this.driver = driver;
-        this.pageUrl = new StringBuilder().append(DEFAULT_BASE_URL).append("/drag_and_drop").toString();
-        this.driver.get(this.pageUrl);
+        this.caller.setDriver(driver);
+        this.pageUrl = this.caller.getBaseUrl() + "/drag_and_drop";
+        this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
         this.boxes.put("boxA", this.boxA);
         this.boxes.put("boxB", this.boxB);
@@ -40,14 +37,11 @@ public class DragAndDropPage {
     }
 
     public boolean isPageOpen() {
-        return this.driver.getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().toString().contains("Drag and Drop");
-    }
+        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("Drag and Drop"); }
 
     public void dragAndDropBox(String source, String destination) {
-        caller.dragAndDropJS(this.boxes.get(source), this.boxes.get(destination));
-    }
+        caller.dragAndDropJS(this.boxes.get(source), this.boxes.get(destination)); }
 
     public String getBoxLetter(String box) {
-        return this.letters.get(box).getText().toString();
-    }
+        return this.letters.get(box).getText(); }
 }

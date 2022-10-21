@@ -1,17 +1,15 @@
 package codingchallengewebsite.ui.pageobjects;
 
-import codingchallengewebsite.ui.UITests;
+import codingchallengewebsite.ui.UITest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-
-import static codingchallengewebsite.ui.UITests.DEFAULT_BASE_URL;
 
 public class DynamicControlsPage {
 
@@ -29,55 +27,53 @@ public class DynamicControlsPage {
     private WebElement addButton;
     @FindBy(how = How.XPATH, using = "//button[text()= 'Remove']")
     private WebElement removeButton;
-    private UITests caller;
+    private final UITest caller;
     private final String pageUrl;
-    public WebDriver driver;
 
-    public DynamicControlsPage(WebDriver driver, UITests caller) {
+    public DynamicControlsPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
-        this.driver = driver;
-        this.pageUrl = new StringBuilder().append(DEFAULT_BASE_URL).append("/dynamic_controls").toString();
-        this.driver.get(this.pageUrl);
+        this.caller.setDriver(driver);
+        this.pageUrl = this.caller.getBaseUrl() + "/dynamic_controls";
+        this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
     }
 
     public boolean isPageOpen() { // Check that the page loaded
-        return this.driver.getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().toString().contains("Dynamic Controls"); }
+        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("Dynamic Controls"); }
 
-    public void reloadPage() { caller.reloadPage(this.driver) ;}
+    public void reloadPage() { UITest.reloadPage(caller.getDriver()) ;}
 
     public void enableTextBox() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
         enableButton.click();
         wait.until(ExpectedConditions.elementToBeClickable(disableButton));
         wait.until(ExpectedConditions.elementToBeClickable(textBox)).isEnabled();
     }
 
     public void disableTextBox() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
         disableButton.click();
         wait.until(ExpectedConditions.elementToBeClickable(enableButton));
         wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(textBox)));
     }
 
     public void addCheckboxButton() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
         addButton.click();
         wait.until(ExpectedConditions.elementToBeClickable(removeButton));
         wait.until(ExpectedConditions.visibilityOf(checkBox));
     }
 
     public void removeCheckboxButton() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
         removeButton.click();
         wait.until(ExpectedConditions.elementToBeClickable(addButton));
         wait.until(ExpectedConditions.invisibilityOf(checkBox));
     }
 
     public void clickCheckbox() {
-        boolean currentState;
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        currentState = this.isCheckboxSelected();
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
+        boolean currentState = this.isCheckboxSelected();
         checkBox.click();
         wait.until(ExpectedConditions.elementSelectionStateToBe(checkBox, !currentState));
     }
@@ -87,12 +83,9 @@ public class DynamicControlsPage {
     }
 
     public boolean isCheckboxEnabled() {
-        return !driver.findElements(By.xpath("//input[@type='checkbox']")).isEmpty();
-    }
+        return !caller.getDriver().findElements(By.xpath("//input[@type='checkbox']")).isEmpty(); }
 
     public boolean isTextboxEnabled() {
         return textBox.isEnabled();
     }
-
-
 }

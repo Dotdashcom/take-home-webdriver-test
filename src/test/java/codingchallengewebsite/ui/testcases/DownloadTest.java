@@ -1,20 +1,21 @@
 package codingchallengewebsite.ui.testcases;
 
-import codingchallengewebsite.ui.UITests;
+import codingchallengewebsite.ui.UITest;
 import codingchallengewebsite.ui.pageobjects.DownloadPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DownloadTest extends UITests {
+public class DownloadTest extends UITest {
 
-    public DownloadTest() {
-    }
+    public DownloadTest() { }
 
     @Test(description = "Downloads a file and compares it with what's expected")
-    public void downloadTest() {
-        DownloadPage downloadPage = new DownloadPage(this.driver, this);
+    public void fileDownload() {
+        // Validate page loaded
+        DownloadPage downloadPage = new DownloadPage(this.getDriver(), this);
         Assert.assertTrue(downloadPage.isPageOpen(), "Page not open");
 
+        // Validate file download success
         downloadPage.startFileDownload();
         Assert.assertTrue(downloadPage.validateFileDownload());
     }

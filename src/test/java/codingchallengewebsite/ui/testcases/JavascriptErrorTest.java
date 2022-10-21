@@ -1,20 +1,22 @@
 package codingchallengewebsite.ui.testcases;
 
-import codingchallengewebsite.ui.UITests;
+import codingchallengewebsite.ui.UITest;
 import codingchallengewebsite.ui.pageobjects.JavascriptErrorPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class JavascriptErrorTest extends UITests {
+public class JavascriptErrorTest extends UITest {
 
-    public JavascriptErrorTest() {
-    }
+    public JavascriptErrorTest() { }
 
     @Test(description = "We see the page with the right error message")
     public void validateErrorMessage() {
-        JavascriptErrorPage javascriptErrorPage = new JavascriptErrorPage(this.driver, this);
+        JavascriptErrorPage javascriptErrorPage = new JavascriptErrorPage(this.getDriver(), this);
+
+        // Validate page loaded
         Assert.assertTrue(javascriptErrorPage.isPageOpen(), "Page not open");
 
-        Assert.assertTrue(javascriptErrorPage.validateErrorMessage(), "Message was not as expected");
+        // Validate expected error message
+        Assert.assertTrue(javascriptErrorPage.validateErrorMessage(), "Message was not expected");
     }
 }

@@ -1,15 +1,14 @@
 package codingchallengewebsite.ui.pageobjects;
 
-import static codingchallengewebsite.ui.UITests.*;
+import static codingchallengewebsite.ui.UITest.*;
 
-import codingchallengewebsite.ui.UITests;
-import org.openqa.selenium.WebDriver;
+import codingchallengewebsite.ui.UITest;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -26,22 +25,21 @@ public class DownloadPage {
     private WebElement pageTitle;
     @FindBy(how = How.XPATH, using = "//a[normalize-space()='some-file.txt']")
     private WebElement downloadLink;
-    private final UITests caller;
+    private final UITest caller;
     private final String pageUrl;
-    public WebDriver driver;
     private final String relPathToExpectedFile = Paths.get("src/main/resources", "some-file.txt").toString();
     private String relPathToDownloadedFile;
 
-    public DownloadPage(WebDriver driver, UITests caller) {
+    public DownloadPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
-        this.driver = driver;
-        this.pageUrl = new StringBuilder().append(DEFAULT_BASE_URL).append("/download").toString();
-        this.driver.get(this.pageUrl);
+        this.caller.setDriver(driver);
+        this.pageUrl = this.caller.getBaseUrl() + "/download";
+        this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
     }
 
     public boolean isPageOpen() {
-        return driver.getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().toString().contains("File Downloader");
+        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().toString().contains("File Downloader");
     }
 
     public boolean startFileDownload() {
@@ -63,7 +61,7 @@ public class DownloadPage {
 
         // Begin download; wait until download is complete
         downloadLink.click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         wait.until(d -> {
             return (downloadedFilePath.toFile().exists() && downloadedFilePath.toFile().length() == expectedFilePath.toFile().length());
         });

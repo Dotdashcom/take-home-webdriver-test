@@ -1,19 +1,15 @@
 package codingchallengewebsite.ui.pageobjects;
 
-import codingchallengewebsite.ui.UITests;
+import codingchallengewebsite.ui.UITest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import static codingchallengewebsite.ui.UITests.DEFAULT_BASE_URL;
 
 public class DynamicContentPage {
 
@@ -25,32 +21,30 @@ public class DynamicContentPage {
     private WebElement dynamicText;
     @FindBy(how = How.XPATH, using = "//*[@class='large-2 columns']")
     private WebElement dynamicImages;
-    private UITests caller;
+    private final UITest caller;
     private final String pageUrl;
-    public WebDriver driver;
 
-    public DynamicContentPage (WebDriver driver, UITests caller) {
+    public DynamicContentPage (RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
-        this.driver = driver;
-        this.pageUrl = new StringBuilder().append(DEFAULT_BASE_URL).append("/dynamic_content").toString();
-        this.driver.get(this.pageUrl);
+        this.caller.setDriver(driver);
+        this.pageUrl = this.caller.getBaseUrl() + "/dynamic_content";
+        this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
     }
 
     public boolean isPageOpen() {
         // Check that the page loaded
-        return driver.getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().toString().contains("Dynamic Content");
-    }
+        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().toString().contains("Dynamic Content"); }
 
-    public void reloadPage() { caller.reloadPage(this.driver) ;}
+    public void reloadPage() { caller.reloadPage(caller.getDriver()); }
 
     public HashMap<String, String> getContent(Boolean partial) {
-        if (partial.equals(false)) this.driver.get(this.pageUrl);
+        if (partial.equals(false)) caller.getDriver().get(this.pageUrl);
         String staticContentQueryString = "?with_content=static";
-        if (partial.equals(true)) this.driver.get(this.pageUrl + staticContentQueryString);
+        if (partial.equals(true)) caller.getDriver().get(this.pageUrl + staticContentQueryString);
 
-        List<WebElement> rawImages = this.driver.findElements(By.xpath("(//*[@class='large-2 columns'])"));
-        List<WebElement> rawTexts = this.driver.findElements(By.xpath("(//*[@class='large-10 columns'])"));
+        List<WebElement> rawImages = caller.getDriver().findElements(By.xpath("(//*[@class='large-2 columns'])"));
+        List<WebElement> rawTexts = caller.getDriver().findElements(By.xpath("(//*[@class='large-10 columns'])"));
         List<String> tempList = new ArrayList<>();
         HashMap<String, String> content = new HashMap<String, String>();
 
@@ -64,7 +58,6 @@ public class DynamicContentPage {
             content.put(tempList.get(index), text.getText().toString());
             index++;
         }
-
         return content;
     }
 }

@@ -1,23 +1,24 @@
 package codingchallengewebsite.ui.testcases;
 
-import codingchallengewebsite.ui.UITests;
+import codingchallengewebsite.ui.UITest;
 import codingchallengewebsite.ui.pageobjects.DropdownPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
-public class DropdownTest extends UITests {
+public class DropdownTest extends UITest {
 
-    public DropdownTest() {
-    }
+    public DropdownTest() { }
 
     @Test(description="Dropdown options can be selected")
     public void selectAllOptions() {
-        DropdownPage dropdownPage = new DropdownPage(this.driver, this);
-        Assert.assertTrue(dropdownPage.isPageOpen(), "Page not open");
+        DropdownPage dropdownPage = new DropdownPage(this.getDriver(), this);
         List<String> options = dropdownPage.getDropdownOptions();
 
+        // Validate page loaded
+        Assert.assertTrue(dropdownPage.isPageOpen(), "Page not open");
+
+        // Validate selectable options
         for (String option : options) {
             dropdownPage.setDropdownOption(option);
             Assert.assertTrue(dropdownPage.isDropdownOptionSelected(option), "Dropdown option not selected");

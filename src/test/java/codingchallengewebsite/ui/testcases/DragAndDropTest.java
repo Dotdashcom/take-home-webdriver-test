@@ -1,21 +1,20 @@
 package codingchallengewebsite.ui.testcases;
 
-import codingchallengewebsite.ui.UITests;
+import codingchallengewebsite.ui.UITest;
 import codingchallengewebsite.ui.pageobjects.DragAndDropPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DragAndDropTest extends UITests {
+public class DragAndDropTest extends UITest {
 
-    public DragAndDropTest() {
-    }
+    public DragAndDropTest() { }
 
     @Test(description="Drags box A over box B")
     public void dragLeftToRight() {
-        String boxOneLetter = "A";
-        String boxTwoLetter = "B";
+        String boxOneLetter = "A", boxTwoLetter = "B";
+        DragAndDropPage dragAndDropPage = new DragAndDropPage(this.getDriver(), this);
 
-        DragAndDropPage dragAndDropPage = new DragAndDropPage(this.driver, this);
+        // Validate page loaded
         Assert.assertTrue(dragAndDropPage.isPageOpen(), "Page not open");
 
         // Validate initial settings
@@ -34,8 +33,9 @@ public class DragAndDropTest extends UITests {
     public void dragRightToLeft() {
         String boxOneLetter = "A";
         String boxTwoLetter = "B";
+        DragAndDropPage dragAndDropPage = new DragAndDropPage(this.getDriver(), this);
 
-        DragAndDropPage dragAndDropPage = new DragAndDropPage(this.driver, this);
+        // Validate page loaded
         Assert.assertTrue(dragAndDropPage.isPageOpen(), "Page not open");
 
         // Validate initial settings
@@ -54,8 +54,9 @@ public class DragAndDropTest extends UITests {
     public void dragBothWays() {
         String boxOneLetter = "A";
         String boxTwoLetter = "B";
+        DragAndDropPage dragAndDropPage = new DragAndDropPage(this.getDriver(), this);
 
-        DragAndDropPage dragAndDropPage = new DragAndDropPage(this.driver, this);
+        // Validate page loaded
         Assert.assertTrue(dragAndDropPage.isPageOpen(), "Page not open");
 
         // Validate initial settings
