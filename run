@@ -1,0 +1,76 @@
+#!/bin/sh
+
+CONTAINER1_IMAGE="gprestes/the-internet"
+CONTAINER1_PORTS="7080:5000"
+CONTAINER1_RUN_CMD="docker run -d -p 7080:5000 "$CONTAINER1_IMAGE
+CONTAINER2_IMAGE="selenium/standalone-chrome"
+CONTAINER2_PORTS="4445:4444"
+CONTAINER2_RUN_CMD="docker run -d -p 4445:4444 -v /dev/shm:/dev/shm "$CONTAINER2_IMAGE
+
+while getopts d:t: flag
+do
+    case "${flag}" in
+        d) destination=${OPTARG};;
+        t) threads=${OPTARG};;
+    esac
+done
+
+run_container_when_necessary () {
+  CONTAINER_IMAGE=$1
+  CONTAINER_RUN_CMD=$2
+  CONTAINER_NAME="$(docker ps -a | grep "CONTAINER_IMAGE" | grep -o '[^ ]*$'  | tail -n +2)"
+
+  # Container does not exist
+  if [ ! "$(docker image ls | grep $CONTAINER_IMAGE)" ]; then
+    echo "Container image not found, please try running:"
+    echo "docker pull $CONTAINER_IMAGE"
+    exit 1
+  fi
+
+  # Container cleanup
+  if [ ! "$(docker ps -q -f name="CONTAINER_NAME")" ]; then
+    if [ "$(docker ps -aq -f status=exited -f name="CONTAINER_NAME")" ]; then
+      # Cleanup
+      docker rm "$CONTAINER_NAME"
+    fi
+  fi
+
+  # Run container
+  CID=$(eval $CONTAINER_RUN_CMD)
+  if [ ! "$CID" ]; then
+    echo "Container doesn't exist"
+  else
+    echo "Container running with id: $CID"
+  fi
+  unset CID
+}
+
+wait_until_container_is_ready() {
+  SERVER=$1
+  PORTS=($(echo "$2" | tr ':' "\n"))
+  PORT=${PORTS[0]}
+
+  echo "Trying $SERVER:$PORT"
+  until nc -z "$SERVER" "$PORT"; do sleep 1; done
+  echo "Server $SERVER running on port " PORT.
+}
+
+
+
+echo "Loading containers"
+run_container_when_necessary $CONTAINER1_IMAGE "$CONTAINER1_RUN_CMD"
+if [ "$destination" = "local" ]; then run_container_when_necessary $CONTAINER2_IMAGE "$CONTAINER2_RUN_CMD"; fi;
+echo "Waiting until services are up and running"
+wait_until_container_is_ready localhost $CONTAINER1_PORTS
+if [ "$destination" = "remote" ]; then wait_until_container_is_ready localhost $CONTAINER2_PORTS; fi;
+echo "Run the suite"
+
+echo "Running the test suite"
+# Local
+if [ "$destination" != "remote" ]; then mvn test -DsuiteXmlFile=testng.xml; fi;
+# Selenium grid
+if [ "$destination" = "remote" ]; then mvn test -DsuiteXmlFile=testng-selenium-grid.xml; fi;
+
+echo "Stopping containers"
+docker stop "$(docker ps -q --filter ancestor=gprestes/the-internet)"
+if [ "$destination" = "remote" ]; then docker stop "$(docker ps -q --filter ancestor=selenium/standalone-chrome)"; fi;

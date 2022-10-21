@@ -26,10 +26,11 @@ public class DownloadPage {
     private WebElement pageTitle;
     @FindBy(how = How.XPATH, using = "//a[normalize-space()='some-file.txt']")
     private WebElement downloadLink;
-    private UITests caller;
+    private final UITests caller;
     private final String pageUrl;
     public WebDriver driver;
-    private String downloadedFilePath;
+    private final String relPathToExpectedFile = Paths.get("src/main/resources", "some-file.txt").toString();
+    private String relPathToDownloadedFile;
 
     public DownloadPage(WebDriver driver, UITests caller) {
         this.caller = caller;
@@ -43,39 +44,42 @@ public class DownloadPage {
         return driver.getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().toString().contains("File Downloader");
     }
 
-    public void startFileDownload() {
+    public boolean startFileDownload() {
         String downloadHref = downloadLink.getAttribute("href").replace(":", "");
         String downloadFileName = Paths.get(downloadHref).getFileName().toString();
         Path downloadedFilePath = Paths.get(downloadsFolder, downloadFileName);
-        boolean result;
+        Path expectedFilePath = Paths.get(relPathToExpectedFile).toAbsolutePath();
 
-        File file = new File(downloadedFilePath.toString());
+        // There's no file to compare against to
+        if (!expectedFilePath.toAbsolutePath().toFile().exists()) { return false; }
+
+        // Delete the file if it exists locally
         try {
-            result = Files.deleteIfExists(file.toPath());
+            File file = new File(downloadedFilePath.toAbsolutePath().toString());
+            Files.deleteIfExists(file.toPath());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
+        // Begin download; wait until download is complete
         downloadLink.click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(d -> {
-            downloadedFilePath.toFile().exists();
-            return true;
+            return (downloadedFilePath.toFile().exists() && downloadedFilePath.toFile().length() == expectedFilePath.toFile().length());
         });
-        try {
-            Thread.sleep(3000); // To be modified
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        this.downloadedFilePath = downloadedFilePath.toString();
+
+        this.relPathToDownloadedFile = downloadedFilePath.toString();
+
+        return true;
     }
 
     public boolean validateFileDownload() {
-        File downloadedFile = new File(this.downloadedFilePath);
+        File downloadedFile = new File(this.relPathToDownloadedFile);
+
 
         if (downloadedFile.exists()) {
             try {
-                return compareByMemoryMappedFiles(Paths.get(this.downloadedFilePath), Paths.get("src/main/resources/some-file.txt").toAbsolutePath());
+                return compareByMemoryMappedFiles(Paths.get(this.relPathToDownloadedFile), Paths.get("src/main/resources/some-file.txt").toAbsolutePath());
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

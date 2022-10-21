@@ -11,10 +11,9 @@
 ## Installation
 There's the easy way:
 ```
-chmod +x setup.sh
-./setup.sh
-chmod +x run.sh
-./run.sh
+chmod +x setup
+chmod +x run
+./setup
 ```
 
 And the other way
@@ -52,6 +51,18 @@ And the other way
    docker pull selenium/standalone-chrome
    ```
 ## Running
+
+There's the easy way:
+```
+./run
+```
+or
+```
+./run -d remote
+```
+
+And the other way
+
 1. Run the following commands. The second one is optional.
    ```
    docker run -d -p 7080:5000 gprestes/the-internet

@@ -30,7 +30,6 @@ public class UITests {
 
 
     public UITests() {
-        //this.uiTests = this;
         downloadsFolder = Paths.get("target").toAbsolutePath().toString();
     }
 
