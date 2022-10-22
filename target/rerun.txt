@@ -1,0 +1,16 @@
+file:src/test/resources/features/iframe.feature:5
+file:src/test/resources/features/dynamicContent.feature:5
+file:src/test/resources/features/javaScriptError.feature:5
+file:src/test/resources/features/javaScriptAlerts.feature:5
+file:src/test/resources/features/floatingMenu.feature:5
+file:src/test/resources/features/login.feature:5:11:17
+file:src/test/resources/features/newWindow.feature:5
+file:src/test/resources/features/dynamicLoading.feature:5
+file:src/test/resources/features/mouseHover.feature:5
+file:src/test/resources/features/notificationMessage.feature:5
+file:src/test/resources/features/contextMenu.feature:5
+file:src/test/resources/features/dropdown.feature:5
+file:src/test/resources/features/dynamicControls.feature:5
+file:src/test/resources/features/dargAndDrop.feature:5
+file:src/test/resources/features/fileDownload.feature:5
+file:src/test/resources/features/fileUpload.feature:5
