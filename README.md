@@ -29,70 +29,91 @@ And the other way
    mvn clean install -f pom.xml -DskipTests
    ```
 
-3. (Optional) In case you don't have a Linux of Mac where to run this code, you can configure the suite to run against a dockerized selenium grid running linux. 
+3. (Optional) In case you don't have a Linux or Mac where to run these tests, you can configure the suite to run against a dockerized selenium grid running linux. 
 
-4. (Optional) To do this, open the testng.xml file inside your project's root and do the following change:
+   To do this, open the testng.xml file inside your project's root and do the following change:
 
    ```
-   <!-- <parameter name="environment" value="local"/> -->
-   <parameter name="remote" value="http://localhost:4445/wd/hub"/>
+   <!-- <parameter name="remote" value="http://0.0.0.0:4444/wd/hub"/> -->
    ```
    To this:
    ```
-   <parameter name="environment" value="local"/>
-   <!-- <parameter name="remote" value="http://localhost:4445/wd/hub"/> --> 
+   <parameter name="remote" value="http://0.0.0.0:4444/wd/hub"/> 
    ```
-5. (Optional) Also, take a look at the thread-count configuration in your testng.xml file, it may be useful (between 4 and 8 is fine):
+4. (Optional) Also, take a look at the thread-count configuration in your testng.xml file, it may be useful (between 4 and 8 is fine):
    ```
-   parallel = "tests" thread-count = "3">
+   parallel = "tests" thread-count = "4">
    ```
-6. (Optional) Then install the container like this:
+5. (Optional) Then install the container like this:
    ```
-   docker pull selenium/standalone-chrome
+   docker pull selenium/hub:latest
+   docker pull selenium/node-chrome:4.5.2-20221021
+   docker network create -o com.docker.network.bridge.bridge dotdash
    ```
 ## Running
 
 There's the easy way:
-```
-./run
-```
-or
-```
-./run -d remote
-```
+
+* locally,
+   ```
+   ./run
+   ```
+* or using the selenium grid,
+   ```
+   ./run -d remote
+   ```
 
 And the other way
 
-1. Run the following commands. The second one is optional.
+1. Run the following command for:
+   Local execution:
    ```
    docker run -d -p 7080:5000 gprestes/the-internet
-   docker run -d -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
+   ```
+   Selenium grid execution:
+   ```
+   docker run -d --rm --net dotdash --name website -p 7080:5000 gprestes/the-internet
+   docker run -d --rm --net dotdash --name selenium-hub -p 4442-4444:4442-4444 -v /dev/shm:/dev/shm selenium/hub:4.5.2-20221021
+   docker run -d --net dotdash -e SE_EVENT_BUS_HOST=selenium-hub --shm-size="2g" -e SE_EVENT_BUS_PUBLISH_PORT=4442 -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 selenium/node-chrome:4.5.2-20221021
    ```
 2. Use the following BaseUrl for your tests:
 
    ```
-   http://localhost:7080
+   http://192.168.65.2:7080
    ```
 
    * (Optional) for you Selenium Grid:
    ```
-   http://localhost:4445/wd/hub
+   http://0.0.0.0:4444/wd/hub
    ```
 
 3. To install the project, go to the project's root folder, and run:
    ```
    mvn clean install -f pom.xml -DskipTests
    ```   
-4. To run the suite run:
+4. To run the suite:
+   locally,
    ```
    mvn test -DsuiteXmlFile=testng.xml
    ```
-# Stopping
+   or using the selenium grid,
+   ```
+   mvn test -DsuiteXmlFile=testng-selenium-grid.xml
+   ```
+
+## Stopping
 To stop the docker containers, run:
    ```
    docker stop "$(docker ps -q --filter ancestor=gprestes/the-internet)"
-   docker stop "$(docker ps -q --filter selenium/standalone-chrome)"
+   docker stop "$(docker ps -q --filter selenium/hub:4.5.2-20221021)"
+   docker rm $(docker stop $(docker ps -a -q --filter selenium/node-chrome:4.5.2-20221021 --format="{{.ID}}"))
    ```
+
+## Reporting
+A test report can be found under:
+```
+<project folder>/target/surefire-reports/index.html
+```
 
 ## TestSuite structure
 1. Use ChromeDriver to write Tests for the following scenarios in Java:
