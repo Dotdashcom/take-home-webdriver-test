@@ -1,5 +1,8 @@
 package codingchallengewebsite.ui;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,6 +11,7 @@ import org.testng.annotations.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Paths;
+import org.openqa.selenium.remote.LocalFileDetector;
 import java.util.HashMap;
 import java.util.Map;
 import java.io.File;
@@ -20,9 +24,11 @@ public class UITest {
     public static final String DEFAULT_BROWSER = "chrome";
     public static final String DEFAULT_BROWSER_VERSION = "106.0.5249.61";
     public static final String DEFAULT_BROWSER_HEADLESS = "false";
-    public static final String DEFAULT_BASE_URL = "http://localhost:7080";
+    public static final String DEFAULT_BASE_URL = "http://0.0.0.0:7080";
+    //public static final String REMOTE_SELENIUM_GRID = "http://0.0.0.0:4444/wd/hub";
     public static final String REMOTE_SELENIUM_GRID = "";
-    public static final String downloadsFolder = Paths.get("target").toAbsolutePath().toString();
+    public static final String downloadsFolder = Paths.get("target/").toAbsolutePath().toString();
+    public WebDriverManager wdm;
     private RemoteWebDriver driver;
     private String baseUrl;
 
@@ -32,17 +38,17 @@ public class UITest {
     @BeforeMethod
         public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional(DEFAULT_BROWSER_VERSION) String browser_version, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional(DEFAULT_BASE_URL) String base_url, @Optional(REMOTE_SELENIUM_GRID) String remote) {
         this.setBaseUrl(base_url);
-            switch (browser) {
-                case "chrome":
-                    this.setDriver(requestChromeDriver(browser, browser_version, headless, base_url, remote));
-                    break;
-                case "firefox":
-                    // Firefox To be implemented
-                    break;
-                case "edge":
-                    // Edge To be implemented
-                    break;
-            }
+        switch (browser) {
+            case "chrome":
+                this.setDriver(requestChromeDriver(browser, browser_version, headless, base_url, remote));
+                break;
+            case "firefox":
+                // Firefox To be implemented
+                break;
+            case "edge":
+                // Edge To be implemented
+                break;
+        }
     }
 
     @AfterMethod
@@ -56,23 +62,35 @@ public class UITest {
         Map<String, Object> prefs = new HashMap<>();
 
         // Experimental options
-        prefs.put("download.default_directory", downloadsFolder);
+        if (remote.isBlank()) { prefs.put("download.default_directory", downloadsFolder); }
         prefs.put("download.prompt_for_download", false);
         chromeOptions.setExperimentalOption("prefs", prefs);
+
         // Common options
         chromeOptions.addArguments("download.prompt_for_download", "false");
         chromeOptions.addArguments("safebrowsing.enabled", "false");
         chromeOptions.addArguments("--ignore-certificate-errors", "--disable-gpu");
+        chromeOptions.addArguments("--disable-web-security");
+        chromeOptions.addArguments("--allow-running-insecure-content");
+        chromeOptions.addArguments("--ignore_ssl");
+        chromeOptions.addArguments("--allow-insecure-localhost");
+
         if (headless.equals("true")) {
             chromeOptions.addArguments("--headless", "--window-size=1920,1200", "--no-sandbox");
         }
         // Remote driver session
         if (!remote.isBlank()) {
-            try {
-                return new RemoteWebDriver(new URL(remote), chromeOptions);
-            } catch (MalformedURLException e) {
-                throw new RuntimeException(e);
-            }
+            //driver = new RemoteWebDriver(new URL(remote), chromeOptions);
+            this.wdm.chromedriver().browserInDocker().browserVersion("106.0.5249.61");
+            this.wdm.chromedriver().driverVersion("106.0.5249.61").setup();
+            this.wdm.chromedriver().useBetaVersions();
+            this.wdm.chromedriver().forceDownload();
+            this.wdm.browserVersionDetectionCommand(" ");
+            try { this.wdm.chromedriver().remoteAddress(new URL(remote)); } catch (MalformedURLException e) { throw new RuntimeException(e);}
+            // new ChromeDriver(chromeOptions);
+            this.driver = (RemoteWebDriver) this.wdm.create();
+            this.driver.setFileDetector(new LocalFileDetector());
+            return driver;
         } else {
             chromedriver().browserVersion(browser_version).setup();
             return new ChromeDriver(chromeOptions);

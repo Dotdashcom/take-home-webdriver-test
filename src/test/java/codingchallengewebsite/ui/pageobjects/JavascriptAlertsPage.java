@@ -37,17 +37,22 @@ public class JavascriptAlertsPage {
         popupMessages.add("I am a JS Alert"); popupMessages.add("I am a JS Confirm"); popupMessages.add("I am a JS prompt");
     }
 
-    public boolean isPageOpen() { return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("JavaScript Alerts"); }
+    public boolean isPageOpen() {
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(pageTitle));
+        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("JavaScript Alerts");
+    }
 
     public boolean validatePopupsDisplay(boolean skipMessages) {
         Actions builder = new Actions(caller.getDriver());
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         Alert alertPopup;
         String popUpMessage;
         boolean success = true;
         int i = 0;
 
         for (WebElement button : this.buttons) {
+            wait.until(ExpectedConditions.visibilityOf(button));
             wait.until(ExpectedConditions.elementToBeClickable(button));
             builder.moveToElement(button).click(button).perform();
 
@@ -77,11 +82,12 @@ public class JavascriptAlertsPage {
 
     public boolean validatePopupInputField() {
         Actions builder = new Actions(caller.getDriver());
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         Alert alertPopup;
         String inputMessage = "This is a test message";
         WebElement buttonTobeTested = this.buttons.get(2);
 
+        wait.until(ExpectedConditions.visibilityOf(buttonTobeTested));
         wait.until(ExpectedConditions.elementToBeClickable(buttonTobeTested));
         builder.moveToElement(buttonTobeTested).click(buttonTobeTested).perform();
 

@@ -1,7 +1,6 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import static codingchallengewebsite.ui.UITest.*;
-
 import codingchallengewebsite.ui.UITest;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -27,8 +26,7 @@ public class DownloadPage {
     private WebElement downloadLink;
     private final UITest caller;
     private final String pageUrl;
-    private final String relPathToExpectedFile = Paths.get("src/main/resources", "some-file.txt").toString();
-    private String relPathToDownloadedFile;
+    private final Path relativePathToReferenceFile = Paths.get("src/test/resources", "some-file.txt");
 
     public DownloadPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
@@ -39,49 +37,50 @@ public class DownloadPage {
     }
 
     public boolean isPageOpen() {
-        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().toString().contains("File Downloader");
+        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("File Downloader");
     }
 
-    public boolean startFileDownload() {
-        String downloadHref = downloadLink.getAttribute("href").replace(":", "");
+    public boolean fileDownload() {
+        String downloadHref = downloadLink.getAttribute("href");
         String downloadFileName = Paths.get(downloadHref).getFileName().toString();
-        Path downloadedFilePath = Paths.get(downloadsFolder, downloadFileName);
-        Path expectedFilePath = Paths.get(relPathToExpectedFile).toAbsolutePath();
+        String tempFileName = downloadFileName.split("\\.")[0] + ".crdownload";
+        Path pathToReferenceFile = Paths.get(relativePathToReferenceFile.toString());
+        Path tempDownloadedFilePath = Paths.get(downloadsFolder, tempFileName);
+        Path expectedDownloadedFilePath = Paths.get(downloadsFolder, downloadFileName);
+        File expectedFile = new File(expectedDownloadedFilePath.toAbsolutePath().toString());
+        File expectedTmpFile = new File(tempDownloadedFilePath.toAbsolutePath().toString());
+        long bytes=-1, newBytes=0;
 
-        // There's no file to compare against to
-        if (!expectedFilePath.toAbsolutePath().toFile().exists()) { return false; }
+        // Case: There's no reference file to compare the file against to
+        if (!pathToReferenceFile.toAbsolutePath().toFile().exists()) { return false; }
 
-        // Delete the file if it exists locally
-        try {
-            File file = new File(downloadedFilePath.toAbsolutePath().toString());
-            Files.deleteIfExists(file.toPath());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        // Begin download; wait until download is complete
+        // Case: The file to be downloaded or a .crdownload from it already exist in the download folder - delete it
+        try { Files.deleteIfExists(expectedFile.toPath()); Files.deleteIfExists(expectedTmpFile.toPath()); }
+        catch (IOException e) { }
+        // Start downloading
         downloadLink.click();
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
-        wait.until(d -> {
-            return (downloadedFilePath.toFile().exists() && downloadedFilePath.toFile().length() == expectedFilePath.toFile().length());
-        });
+        //WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
+        //wait.until(d -> (expectedFile.exists() || expectedTmpFile.exists()));
 
-        this.relPathToDownloadedFile = downloadedFilePath.toString();
+        // Give it some buffer time...
+        try { Thread.sleep(5000); } catch (InterruptedException e) { throw new RuntimeException(e); }
 
-        return true;
-    }
-
-    public boolean validateFileDownload() {
-        File downloadedFile = new File(this.relPathToDownloadedFile);
-
-
-        if (downloadedFile.exists()) {
-            try {
-                return compareByMemoryMappedFiles(Paths.get(this.relPathToDownloadedFile), Paths.get("src/main/resources/some-file.txt").toAbsolutePath());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+        // Case: The file is still downloading - keeping track of it's size until the download finishes
+        while ((bytes != newBytes) && expectedTmpFile.exists() && !expectedFile.exists()) {
+            try { newBytes = Files.size(tempDownloadedFilePath); } catch (IOException e) { }
+            bytes = newBytes;
+            // Check again in 1 sec...
+            try { Thread.sleep(1000); } catch (InterruptedException e) { }
         }
+
+        // Case: The file arrived
+        if (expectedFile.exists()) {
+            try {
+                return compareByMemoryMappedFiles(expectedDownloadedFilePath.toAbsolutePath(), pathToReferenceFile.toAbsolutePath());
+            } catch (IOException e) { throw new RuntimeException(e); }
+        }
+
+        // None of the above - download failed
         return false;
     }
 

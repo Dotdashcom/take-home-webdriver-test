@@ -6,6 +6,10 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.HashMap;
 
 public class DragAndDropPage {
@@ -40,8 +44,13 @@ public class DragAndDropPage {
         return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("Drag and Drop"); }
 
     public void dragAndDropBox(String source, String destination) {
+        WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(this.boxes.get(source)));
+        wait.until(ExpectedConditions.visibilityOf(this.boxes.get(destination)));
         caller.dragAndDropJS(this.boxes.get(source), this.boxes.get(destination)); }
 
     public String getBoxLetter(String box) {
+        WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(this.letters.get(box)));
         return this.letters.get(box).getText(); }
 }

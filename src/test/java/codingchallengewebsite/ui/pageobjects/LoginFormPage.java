@@ -6,6 +6,10 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.Objects;
 
 public class LoginFormPage {
@@ -37,18 +41,26 @@ public class LoginFormPage {
         return Objects.equals(caller.getDriver().getCurrentUrl(), this.pageUrl) && this.pageTitle.getText().contains("Login Page"); }
 
     public void setUsername(String username) {
+        WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(this.username));
         this.username.clear();
         this.username.sendKeys(username);
     }
 
     public void setPassword(String password) {
+        WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(this.password));
         this.password.clear();
         this.password.sendKeys(password);
     }
 
     public void clickLoginButton() {
+        WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(this.loginButton));
         loginButton.click(); }
 
     public String getErrorMessage() {
+        WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(this.loginButton));
         return errorMessage.getText(); }
 }

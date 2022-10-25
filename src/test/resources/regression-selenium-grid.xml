@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Coding Challenge Website UI Regression Suite" parallel = "tests" thread-count = "4">
+<suite name="Coding Challenge Website UI Regression Suite">
     <parameter name="browser" value="chrome"/>
     <parameter name="browser_version" value="106.0.5249.61"/>
-    <parameter name="headless" value="true"/>
-    <parameter name="base_url" value="http://localhost:7080"/>
-    <parameter name="environment" value="local"/>
-    <!--<parameter name="remote" value="http://localhost:4445/wd/hub"/> -->
+    <parameter name="headless" value="false"/>
+    <parameter name="base_url" value="http://192.168.65.2:7080"/>
+    <parameter name="remote" value="http://0.0.0.0:4444/wd/hub"/>
+    <test name = "Upload File Tests">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.UploadTest"/>
+        </classes>
+    </test>
+    <test name = "Download File Tests">
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.DownloadTest"/>
+        </classes>
+    </test>
     <test name="Login Test">
         <parameter name="username" value="tomsmith"/>
         <parameter name="password" value="SuperSecretPassword!"/>
         <classes>
-            <class name="codingchallengewebsite.ui.testcases.LoginFormTest">
-            </class>
+            <class name="codingchallengewebsite.ui.testcases.LoginFormTest"/>
         </classes>
     </test>
     <test name = "Javascript Tests">
@@ -34,12 +42,6 @@
             <class name="codingchallengewebsite.ui.testcases.DynamicContentTest"/>
             <class name="codingchallengewebsite.ui.testcases.IFrameTest"/>
             <class name="codingchallengewebsite.ui.testcases.NotificationMessageRenderedTest"/>
-        </classes>
-    </test>
-    <test name = "File Tests">
-        <classes>
-            <class name="codingchallengewebsite.ui.testcases.DownloadTest"/>
-            <class name="codingchallengewebsite.ui.testcases.UploadTest"/>
         </classes>
     </test>
     <test name = "Browser Interactions">

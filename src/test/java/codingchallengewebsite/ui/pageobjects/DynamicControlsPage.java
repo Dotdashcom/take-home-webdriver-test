@@ -44,35 +44,35 @@ public class DynamicControlsPage {
     public void reloadPage() { UITest.reloadPage(caller.getDriver()) ;}
 
     public void enableTextBox() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         enableButton.click();
         wait.until(ExpectedConditions.elementToBeClickable(disableButton));
         wait.until(ExpectedConditions.elementToBeClickable(textBox)).isEnabled();
     }
 
     public void disableTextBox() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         disableButton.click();
         wait.until(ExpectedConditions.elementToBeClickable(enableButton));
         wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(textBox)));
     }
 
     public void addCheckboxButton() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         addButton.click();
         wait.until(ExpectedConditions.elementToBeClickable(removeButton));
         wait.until(ExpectedConditions.visibilityOf(checkBox));
     }
 
     public void removeCheckboxButton() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         removeButton.click();
         wait.until(ExpectedConditions.elementToBeClickable(addButton));
         wait.until(ExpectedConditions.invisibilityOf(checkBox));
     }
 
     public void clickCheckbox() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         boolean currentState = this.isCheckboxSelected();
         checkBox.click();
         wait.until(ExpectedConditions.elementSelectionStateToBe(checkBox, !currentState));

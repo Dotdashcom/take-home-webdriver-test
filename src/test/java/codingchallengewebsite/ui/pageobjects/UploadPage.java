@@ -28,7 +28,7 @@ public class UploadPage {
     private final UITest caller;
     private final String pageUrl;
     private final String fileName = "some-file.txt";
-    private final String folder = "src/main/resources";
+    private final String folder = "src/test/resources";
 
     public UploadPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
