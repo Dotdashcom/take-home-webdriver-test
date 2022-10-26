@@ -10,17 +10,30 @@ THREADS=1
 COUNTER=0
 BGREEN='\033[1;32m' # Bold Green
 NO_COLOR='\033[0m' # No Color
+BOLD='\033[1m'
 
 ##############
-# Args
-USAGE="Usage: $(basename "$0") -r [remote | local] -t [number_of_threads] -g [start | stop]";
-while getopts ":rt:g:" flag
+# Run-command args
+USAGE=$BGREEN"\nUsage:"$NO_COLOR" $(basename "$0")\n \
+      $(basename "$0") [-r [-T threads] | [-T threads] | -h]\n \
+      $(basename "$0") [-G start [-T threads]]\n \
+      $(basename "$0") [-G stop]\n \
+       \n  h : print this help message \
+       \n  r : runs the test suite against a remote Chrome Selenium node\n \
+       \n  g start          : use \`start\' to start a Selenium Node \
+       \n  g start -T nodes : use \`nodes\' to specify the amount of Chrome Selenium nodes to create \
+       \n  g stop           : use \`stop\' to stop the current Selenium Grid \
+       \n  r -T threads     : use \`threads\' to specify the amount of Chrome Selenium nodes used to run the test suite in parallel  \
+       \n  t threads        : use \`threads\' to specify the amount of threads used to run the test suite in parallel\n";
+
+while getopts ":rhT:G:" flag
 do
     case "${flag}" in
         r) WD_CLIENT="remote";;
-        t) THREADS="${OPTARG}";;
-        g) SG_ACTION="${OPTARG}";;
-        ?) echo "$USAGE" 1>&2 ; exit 1;;
+        T) THREADS="${OPTARG}";;
+        G) SG_ACTION="${OPTARG}";;
+        h) printf "$USAGE" 1>&2 ; exit 1;;
+        ?) printf $BOLD"$(basename "$0"): illegal option: -${OPTARG}\n$USAGE\n"$BOLD; exit 1 ;;
     esac
 done
 

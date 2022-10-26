@@ -10,6 +10,12 @@
 - WebDriver
 <br>
 
+## Help
+For help on using the run command, please refer to the _run_ command help
+```
+./run -h
+```
+
 ## Installing
 After installing and configuring the above pre-requisites, type the following:
 ```
@@ -18,7 +24,7 @@ chmod +x run
 ./run
 ```
 _Note: the __run__ command pulls the docker images and configures the docker network automatically._
-<br><br>
+<br>
 
 ## Running
 * Tests locally,
@@ -37,7 +43,7 @@ _Note: the __run__ command pulls the docker images and configures the docker net
         ./run -r -t 6
   
 _Note: all the above commands, start and stop the Webapp and the Selenium Grid automatically._
-<br><br>
+<br>
 
 ## Stopping / Starting
 * To manually start/stop the Webapp and Selenium Grid, without running the test suite:
