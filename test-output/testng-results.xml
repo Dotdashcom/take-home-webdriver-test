@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="36" total="57" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-26T16:09:49 EDT" name="Suite" finished-at="2022-10-26T16:10:48 EDT" duration-ms="58542">
+    <groups>
+    </groups>
+    <test started-at="2022-10-26T16:09:49 EDT" name="Test" finished-at="2022-10-26T16:10:48 EDT" duration-ms="58542">
+      <class name="com.TakeHomeTest.testCases.NotificationMessageTest">
+        <test-method signature="successnotificationmsg()[pri:0, instance:com.TakeHomeTest.testCases.NotificationMessageTest@7ae0a9ec]" started-at="2022-10-26T16:10:00 EDT" name="successnotificationmsg" finished-at="2022-10-26T16:10:00 EDT" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successnotificationmsg -->
+        <test-method signature="unsuccessnotificationmsg()[pri:0, instance:com.TakeHomeTest.testCases.NotificationMessageTest@7ae0a9ec]" started-at="2022-10-26T16:10:00 EDT" name="unsuccessnotificationmsg" finished-at="2022-10-26T16:10:01 EDT" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unsuccessnotificationmsg -->
+      </class> <!-- com.TakeHomeTest.testCases.NotificationMessageTest -->
+      <class name="com.TakeHomeTest.testCases.FileDownloadTest">
+        <test-method signature="download()[pri:0, instance:com.TakeHomeTest.testCases.FileDownloadTest@6f10d5b6]" started-at="2022-10-26T16:10:02 EDT" name="download" finished-at="2022-10-26T16:10:02 EDT" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- download -->
+      </class> <!-- com.TakeHomeTest.testCases.FileDownloadTest -->
+      <class name="com.TakeHomeTest.testCases.IFrameTest">
+        <test-method signature="frametest()[pri:0, instance:com.TakeHomeTest.testCases.IFrameTest@1040be71]" started-at="2022-10-26T16:10:02 EDT" name="frametest" finished-at="2022-10-26T16:10:34 EDT" duration-ms="31612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frametest -->
+      </class> <!-- com.TakeHomeTest.testCases.IFrameTest -->
+      <class name="com.TakeHomeTest.testCases.DropdownTest">
+        <test-method signature="dropdown()[pri:0, instance:com.TakeHomeTest.testCases.DropdownTest@61c4eee0]" started-at="2022-10-26T16:10:01 EDT" name="dropdown" finished-at="2022-10-26T16:10:02 EDT" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdown -->
+      </class> <!-- com.TakeHomeTest.testCases.DropdownTest -->
+      <class name="com.TakeHomeTest.testCases.NewWindowTest">
+        <test-method signature="newwindow()[pri:0, instance:com.TakeHomeTest.testCases.NewWindowTest@433defed]" started-at="2022-10-26T16:10:47 EDT" name="newwindow" finished-at="2022-10-26T16:10:47 EDT" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newwindow -->
+      </class> <!-- com.TakeHomeTest.testCases.NewWindowTest -->
+      <class name="com.TakeHomeTest.testCases.DynamicControlsTest">
+        <test-method signature="dynamic_checkbox()[pri:0, instance:com.TakeHomeTest.testCases.DynamicControlsTest@548a24a]" started-at="2022-10-26T16:10:34 EDT" name="dynamic_checkbox" finished-at="2022-10-26T16:10:40 EDT" duration-ms="6485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_checkbox -->
+        <test-method signature="dynamic_textbox()[pri:0, instance:com.TakeHomeTest.testCases.DynamicControlsTest@548a24a]" started-at="2022-10-26T16:10:40 EDT" name="dynamic_textbox" finished-at="2022-10-26T16:10:47 EDT" duration-ms="6393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_textbox -->
+      </class> <!-- com.TakeHomeTest.testCases.DynamicControlsTest -->
+      <class name="com.TakeHomeTest.testCases.CheckBoxesTest">
+        <test-method signature="checks_test()[pri:0, instance:com.TakeHomeTest.testCases.CheckBoxesTest@2a693f59]" started-at="2022-10-26T16:10:47 EDT" name="checks_test" finished-at="2022-10-26T16:10:48 EDT" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checks_test -->
+        <test-method signature="unchecks_test()[pri:0, instance:com.TakeHomeTest.testCases.CheckBoxesTest@2a693f59]" started-at="2022-10-26T16:10:48 EDT" name="unchecks_test" finished-at="2022-10-26T16:10:48 EDT" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unchecks_test -->
+      </class> <!-- com.TakeHomeTest.testCases.CheckBoxesTest -->
+      <class name="com.TakeHomeTest.testCases.FloatingMenuTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.TakeHomeTest.testCases.FloatingMenuTest@7c37508a]" started-at="2022-10-26T16:09:45 EDT" name="setup" finished-at="2022-10-26T16:09:49 EDT" duration-ms="4342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="floatingmenu()[pri:0, instance:com.TakeHomeTest.testCases.FloatingMenuTest@7c37508a]" started-at="2022-10-26T16:09:49 EDT" name="floatingmenu" finished-at="2022-10-26T16:09:50 EDT" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingmenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TakeHomeTest.testCases.FloatingMenuTest@7c37508a]" started-at="2022-10-26T16:10:48 EDT" name="tearDown" finished-at="2022-10-26T16:10:48 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TakeHomeTest.testCases.FloatingMenuTest -->
+      <class name="com.TakeHomeTest.testCases.FileUploadTest">
+        <test-method signature="Upload()[pri:0, instance:com.TakeHomeTest.testCases.FileUploadTest@35841320]" started-at="2022-10-26T16:10:01 EDT" name="Upload" finished-at="2022-10-26T16:10:01 EDT" duration-ms="506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Upload -->
+      </class> <!-- com.TakeHomeTest.testCases.FileUploadTest -->
+      <class name="com.TakeHomeTest.testCases.InvalidLoginTestCase">
+        <test-method signature="Failure_login()[pri:0, instance:com.TakeHomeTest.testCases.InvalidLoginTestCase@359df09a]" started-at="2022-10-26T16:09:50 EDT" name="Failure_login" finished-at="2022-10-26T16:09:51 EDT" duration-ms="517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Failure_login -->
+      </class> <!-- com.TakeHomeTest.testCases.InvalidLoginTestCase -->
+      <class name="com.TakeHomeTest.testCases.ContextMenutest">
+        <test-method signature="right_click()[pri:0, instance:com.TakeHomeTest.testCases.ContextMenutest@6d60fe40]" started-at="2022-10-26T16:09:57 EDT" name="right_click" finished-at="2022-10-26T16:09:57 EDT" duration-ms="402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- right_click -->
+      </class> <!-- com.TakeHomeTest.testCases.ContextMenutest -->
+      <class name="com.TakeHomeTest.testCases.DynamicLoadingTest">
+        <test-method signature="dynamic_loading()[pri:0, instance:com.TakeHomeTest.testCases.DynamicLoadingTest@43df23d3]" started-at="2022-10-26T16:09:51 EDT" name="dynamic_loading" finished-at="2022-10-26T16:09:57 EDT" duration-ms="6010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_loading -->
+      </class> <!-- com.TakeHomeTest.testCases.DynamicLoadingTest -->
+      <class name="com.TakeHomeTest.testCases.RefreshTest">
+        <test-method signature="refresh()[pri:0, instance:com.TakeHomeTest.testCases.RefreshTest@609e8838]" started-at="2022-10-26T16:09:50 EDT" name="refresh" finished-at="2022-10-26T16:09:50 EDT" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+      </class> <!-- com.TakeHomeTest.testCases.RefreshTest -->
+      <class name="com.TakeHomeTest.testCases.JavaScriptAlertTest">
+        <test-method signature="alerts()[pri:0, instance:com.TakeHomeTest.testCases.JavaScriptAlertTest@1972e513]" started-at="2022-10-26T16:10:00 EDT" name="alerts" finished-at="2022-10-26T16:10:00 EDT" duration-ms="415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alerts -->
+      </class> <!-- com.TakeHomeTest.testCases.JavaScriptAlertTest -->
+      <class name="com.TakeHomeTest.testCases.MouseHoverTest">
+        <test-method signature="hover()[pri:0, instance:com.TakeHomeTest.testCases.MouseHoverTest@305ffe9e]" started-at="2022-10-26T16:09:58 EDT" name="hover" finished-at="2022-10-26T16:09:59 EDT" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover -->
+      </class> <!-- com.TakeHomeTest.testCases.MouseHoverTest -->
+      <class name="com.TakeHomeTest.testCases.DragandDropTest">
+        <test-method signature="drag_drop()[pri:0, instance:com.TakeHomeTest.testCases.DragandDropTest@302c971f]" started-at="2022-10-26T16:09:59 EDT" name="drag_drop" finished-at="2022-10-26T16:10:00 EDT" duration-ms="598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drag_drop -->
+      </class> <!-- com.TakeHomeTest.testCases.DragandDropTest -->
+      <class name="com.TakeHomeTest.testCases.ValidLoginTestCase">
+        <test-method signature="success_logintest()[pri:0, instance:com.TakeHomeTest.testCases.ValidLoginTestCase@792b749c]" started-at="2022-10-26T16:09:57 EDT" name="success_logintest" finished-at="2022-10-26T16:09:58 EDT" duration-ms="1103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_logintest -->
+      </class> <!-- com.TakeHomeTest.testCases.ValidLoginTestCase -->
+      <class name="com.TakeHomeTest.testCases.JavaScriptErrorsTest">
+        <test-method signature="OnloadError()[pri:0, instance:com.TakeHomeTest.testCases.JavaScriptErrorsTest@23e84203]" started-at="2022-10-26T16:09:58 EDT" name="OnloadError" finished-at="2022-10-26T16:09:58 EDT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnloadError -->
+      </class> <!-- com.TakeHomeTest.testCases.JavaScriptErrorsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
