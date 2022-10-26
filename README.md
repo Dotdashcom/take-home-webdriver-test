@@ -48,8 +48,9 @@ _Note: all the above commands, start and stop the Webapp and the Selenium Grid a
 ## Stopping / Starting
 * To manually start/stop the Webapp and Selenium Grid, without running the test suite:
 
-        ./run -t 7 -g start    # Initializes a Selenium Grid with 7 Chrome nodes
-        ./run -t stop          # Terminates the Grid
+        ./run -g start         # Initializes a Selenium Grid with 1 Chrome node
+        ./run -g start -t 7    # Initializes a Selenium Grid with 7 Chrome nodes
+        ./run -g stop          # Terminates the Grid
 
 ## Tests reporting
 A test report can be found under:  
