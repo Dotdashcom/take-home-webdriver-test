@@ -1,54 +1,56 @@
 # WebDriver Tests by JP
 
 ## Prerequisites
-* Docker
-+ Git
-- Java 19
-* WebDriver
-+ ChromeDriver
-* IDE such as IntelliJ
+- Docker  [:link:](https://www.docker.com/products/docker-desktop/)
+- Git  [:link:](https://github.com/git-guides/install-git)
+- Java SE SDK v.19  [:link:](https://www.oracle.com/java/technologies/downloads/#java19)
+- IDE such as IntelliJ  [:link:](https://www.jetbrains.com/idea/download/)
+### Already included in this package
+- ChromeDriver
+- WebDriver
+<br>
 
-## Installation
+## Installing
 After installing and configuring the above pre-requisites, type the following:
 ```
 git clone https://github.com/jpsugg/take-home-webdriver-test.git
 chmod +x run
 ./run
 ```
+_Note: the __run__ command pulls the docker images and configures the docker network automatically._
+<br><br>
 
 ## Running
-
 * Tests locally,
-   ```
-   ./run
-   ```
+
+        ./run
 * Tests against a remote Selenium Grid,
-   ```
-   ./run -r 
-   ```
+
+        ./run -r 
+
 ## Running faster
 * Tests locally; spawns 5 threads in parallel,
-   ```
-   ./run -t 5
-   ```
+
+        ./run -t 5
 * Tests against a remote Selenium Grid; spawns 6 threads/chrome-nodes in parallel,
-   ```
-   ./run -r -t 6
-   ```
-_Note: all of the commands above start and stop the Webapp and Selenium Grid automatically._
+
+        ./run -r -t 6
+  
+_Note: all the above commands, start and stop the Webapp and the Selenium Grid automatically._
+<br><br>
 
 ## Stopping / Starting
 * To manually start/stop the Webapp and Selenium Grid, without running the test suite:
-```
-./run -t 7 -g start    # Initializes a Selenium Grid with 7 Chrome nodes
-./run -t stop          # Terminates the Grid
-```
+
+        ./run -t 7 -g start    # Initializes a Selenium Grid with 7 Chrome nodes
+        ./run -t stop          # Terminates the Grid
 
 ## Tests reporting
-* A test report can be found under:
+A test report can be found under:  
 ```
 target/surefire-reports/index.html
 ```
+<br>
 
 ## TestSuite structure
 1. Use ChromeDriver to write Tests for the following scenarios in Java:
@@ -71,12 +73,7 @@ target/surefire-reports/index.html
     + Open in New Tab: http://localhost:7080/windows Test Link Opens in new tab.
     - Notification Message: http://localhost:7080/notification_message_rendered Test notification Message.
 
-2. Open a Pull Request for Code Review.
-
-
-## Submission Rubrics
-
 ### General Requirements
-- [X] All tests should contain @Test annotation.
-- [X] All tests should provide a setup and tear down mechanism that closes the browser.
-- [X] All tests should run successfully from IDE. Provide a way to run tests on unix based OS.
+- [X] All tests contain @Test annotation.
+- [X] All tests provide a setup and tear down mechanism that closes the browser.
+- [X] All tests run successfully from IDE. A way to run tests on unix based OS is provided.
