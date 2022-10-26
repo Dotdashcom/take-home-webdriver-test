@@ -3,7 +3,7 @@
 ## Prerequisites
 * Docker
 + Git
-- Java
+- Java 19
 * WebDriver
 + ChromeDriver
 * IDE such as IntelliJ
@@ -22,28 +22,29 @@ chmod +x run
    ```
    ./run
    ```
-* Against a remote selenium grid,
+* Tests against a remote Selenium Grid,
    ```
    ./run -r 
    ```
 ## Running faster
-* Tests locally; spawns 5 threads in parallel
+* Tests locally; spawns 5 threads in parallel,
    ```
    ./run -t 5
    ```
-* Tests against a remote Selenium Grid; spawns 6 nodes in parallel
+* Tests against a remote Selenium Grid; spawns 6 threads/chrome-nodes in parallel,
    ```
    ./run -r -t 6
    ```
+_Note: all of the commands above start and stop the Webapp and Selenium Grid automatically._
 
 ## Stopping / Starting
-* To start of stop the Selenium Grid:
+* To manually start/stop the Webapp and Selenium Grid, without running the test suite:
 ```
 ./run -t 7 -g start    # Initializes a Selenium Grid with 7 Chrome nodes
 ./run -t stop          # Terminates the Grid
 ```
 
-## Reporting
+## Tests reporting
 * A test report can be found under:
 ```
 target/surefire-reports/index.html
