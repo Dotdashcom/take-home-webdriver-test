@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.TakeHomeTest.testCases.FloatingMenuTest"/>
+      <class name="com.TakeHomeTest.testCases.RefreshTest"/>
+      <class name="com.TakeHomeTest.testCases.InvalidLoginTestCase"/>
+      <class name="com.TakeHomeTest.testCases.DynamicLoadingTest"/>
+      <class name="com.TakeHomeTest.testCases.ContextMenutest"/>
+      <class name="com.TakeHomeTest.testCases.ValidLoginTestCase"/>
+      <class name="com.TakeHomeTest.testCases.JavaScriptErrorsTest"/>
+      <class name="com.TakeHomeTest.testCases.BaseClass"/>
+      <class name="com.TakeHomeTest.testCases.MouseHoverTest"/>
+      <class name="com.TakeHomeTest.testCases.DragandDropTest"/>
+      <class name="com.TakeHomeTest.testCases.JavaScriptAlertTest"/>
+      <class name="com.TakeHomeTest.testCases.NotificationMessageTest"/>
+      <class name="com.TakeHomeTest.testCases.FileUploadTest"/>
+      <class name="com.TakeHomeTest.testCases.DropdownTest"/>
+      <class name="com.TakeHomeTest.testCases.FileDownloadTest"/>
+      <class name="com.TakeHomeTest.testCases.IFrameTest"/>
+      <class name="com.TakeHomeTest.testCases.DynamicControlsTest"/>
+      <class name="com.TakeHomeTest.testCases.NewWindowTest"/>
+      <class name="com.TakeHomeTest.testCases.CheckBoxesTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
