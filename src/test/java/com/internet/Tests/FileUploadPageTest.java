@@ -24,7 +24,7 @@ public class FileUploadPageTest extends Baseclass {
 
 	@Test
 	public void verifyUploadTest() {
-		upload.chooseFileSendKeys("C:\\Users\\my pc\\Pictures\\puppy.jpg");
+		upload.chooseFileSendKeys("C:\\Users\\LENOVO\\Desktop\\file.txt");
 		upload.clickUpload();
 		Assert.assertEquals(upload.getHeaderText(), "File Uploaded!");
 	}

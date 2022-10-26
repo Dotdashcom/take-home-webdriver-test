@@ -1,9 +1,8 @@
 package com.internet.pages;
 
+import com.internet.utils.Proxywrapper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import com.internet.utils.Proxywrapper;
 
 public class TheInternetPage extends Page {
 
@@ -14,7 +13,7 @@ public class TheInternetPage extends Page {
 	private By formAuthentication = By.xpath("//a[contains(text(),'Form Authentication')]");
 	private By checkBoxes = By.cssSelector("a[href='/checkboxes']");
 	private By contextMenu=By.cssSelector("a[href='/context_menu']");
-	private By drapAndDrop=By.cssSelector("a[href='/drag_and_drop']");
+	private By dragAndDrop=By.cssSelector("a[href='/drag_and_drop']");
 	private By dropDown=By.cssSelector("a[href='/dropdown']");
 	private By dynamicContent=By.cssSelector("a[href='/dynamic_content']");
 
@@ -43,6 +42,11 @@ public class TheInternetPage extends Page {
 	public ContextMenuPage clickContextMenu() {
 		((Proxywrapper) driver).click(contextMenu);
 		return new ContextMenuPage(driver, true);
+	}
+
+	public DragAndDropPage clickDragAndDrop(){
+		((Proxywrapper) driver).click(dragAndDrop);
+		return new DragAndDropPage(driver, true);
 	}
 	
 	public DropDownPage clickDropDown() {
