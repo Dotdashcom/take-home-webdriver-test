@@ -37,10 +37,10 @@ _Note: the __run__ command pulls the docker images and configures the docker net
 ## Running faster
 * Tests locally; spawns 5 threads in parallel,
 
-        ./run -t 5
+        ./run -T 5
 * Tests against a remote Selenium Grid; spawns 6 threads/chrome-nodes in parallel,
 
-        ./run -r -t 6
+        ./run -r -T 6
   
 _Note: all the above commands, start and stop the Webapp and the Selenium Grid automatically._
 <br>
@@ -48,9 +48,9 @@ _Note: all the above commands, start and stop the Webapp and the Selenium Grid a
 ## Stopping / Starting
 * To manually start/stop the Webapp and Selenium Grid, without running the test suite:
 
-        ./run -g start         # Initializes a Selenium Grid with 1 Chrome node
-        ./run -g start -t 7    # Initializes a Selenium Grid with 7 Chrome nodes
-        ./run -g stop          # Terminates the Grid
+        ./run -G start         # Initializes a Selenium Grid with 1 Chrome node
+        ./run -G start -T 7    # Initializes a Selenium Grid with 7 Chrome nodes
+        ./run -G stop          # Terminates the Grid
 
 ## Tests reporting
 A test report can be found under:  
