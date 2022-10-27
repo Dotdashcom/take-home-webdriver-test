@@ -1,65 +1,68 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
+import java.util.function.Function;
 
 public class CheckboxesPage {
-
+    private WebDriverWait wait;
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='Checkboxes']")
     private WebElement pageTitle;
-    @FindBy(how = How.XPATH, using = "//input[@type='checkbox'][1]")
-    private WebElement checkbox1;
-    @FindBy(how = How.XPATH, using = "//input[@type='checkbox'][2]")
-    private WebElement checkbox2;
-    @FindBy(how = How.XPATH, using = "//input[@id = 'username']")
-    private WebElement username;
-
-    boolean checkbox1Status;
-    boolean checkbox1Expected;
-    boolean checkbox2Status;
-    boolean checkbox2Expected;
+    @FindBy(how = How.XPATH, using = "//input[@type='checkbox']")
+    public List<WebElement> checkboxElements;
+    private final HashMap<Integer, Boolean> expectedValues = new HashMap<>();
+    private final HashMap<Integer, Boolean> currentValues = new HashMap<>();
     private final String pageUrl;
     private final UITest caller;
 
-    public CheckboxesPage(RemoteWebDriver driver, UITest caller) {
+    public CheckboxesPage(UITest caller) {
         this.caller = caller;
-        this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/checkboxes";
         this.caller.getDriver().get(this.pageUrl);
-        PageFactory.initElements(driver, this);
-        this.checkbox1Status = this.isCheckboxSelected("checkbox1");
-        this.checkbox1Expected = !this.checkbox1Status;
-        this.checkbox2Status = this.isCheckboxSelected("checkbox2");
-        this.checkbox2Expected = !this.checkbox2Status;
+        wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
+        PageFactory.initElements(this.caller.getDriver(), this);
+        WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(this.pageTitle));
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//input[@type='checkbox']")));
+        this.currentValues.put(0, this.checkboxElements.get(0).isSelected());
+        this.currentValues.put(1, this.checkboxElements.get(1).isSelected());
+        this.expectedValues.put(0, !this.checkboxElements.get(0).isSelected());
+        this.expectedValues.put(1, !this.checkboxElements.get(1).isSelected());
     }
 
     public boolean isPageOpen() {
         return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("Checkboxes"); }
 
-    public boolean getCheckbox1Expected() {
-        return this.checkbox1Expected;
-    }
+    public Boolean clickOnCheckbox(Integer checkbox) {
+        return performClickOnCheckbox(checkbox, updateOnClick); }
 
-    public boolean getCheckbox2Expected() {
-        return this.checkbox2Expected;
-    }
+    public boolean getCheckboxExpectedValue(Integer checkbox) {
+        return this.expectedValues.get(checkbox); }
 
-    public boolean isCheckboxSelected(String checkbox) {
-        return switch (checkbox) {
-            case "checkbox1" -> checkbox1.isSelected();
-            case "checkbox2" -> checkbox2.isSelected();
-            default -> false;
-        };
-    }
+    public boolean getCheckboxCurrentValue(Integer checkbox) {
+        return this.currentValues.get(checkbox); }
 
-    public void clickCheckbox(String checkbox) {
-        switch (checkbox) {
-            case "checkbox1" -> checkbox1.click();
-            case "checkbox2" -> checkbox2.click();
-        }
+    private Boolean performClickOnCheckbox(Integer parameter, Function<Integer, Boolean> updateOnClick) {
+        return updateOnClick.apply(parameter); }
+
+    private Function<Integer, Boolean> updateOnClick = parameter -> {
+        Boolean previousValue = this.getCheckboxCurrentValue(parameter);
+        this.clickCheckbox(parameter);
+        this.currentValues.put(parameter, this.checkboxElements.get(parameter).isSelected());
+        this.expectedValues.put(parameter, !this.checkboxElements.get(parameter).isSelected());
+        return previousValue;
+    };
+
+    private void clickCheckbox(Integer checkbox) {
+        this.checkboxElements.get(checkbox).click();
     }
 }

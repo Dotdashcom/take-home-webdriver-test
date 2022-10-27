@@ -6,30 +6,26 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CheckboxesTest extends UITest {
-
+    private int index;
     public CheckboxesTest() { }
-
     @Test(description="Checkboxes can be checked and unchecked")
     public void checkboxChecking() {
-        CheckboxesPage checkboxesPage = new CheckboxesPage(this.getDriver(), this);
+        CheckboxesPage checkboxesPage = new CheckboxesPage(this);
+        Boolean prevStatus, currentStatus, expectedStatus;
 
         // Validate page loaded
         Assert.assertTrue(checkboxesPage.isPageOpen(), "Page not open");
 
-        // Perform check / uncheck
-        checkboxesPage.clickCheckbox("checkbox1");
-        checkboxesPage.clickCheckbox("checkbox2");
-
-        // Assertion to validate checkboxes were properly checked / unchecked
-        Assert.assertEquals(checkboxesPage.isCheckboxSelected("checkbox1"), checkboxesPage.getCheckbox1Expected());
-        Assert.assertEquals(checkboxesPage.isCheckboxSelected("checkbox2"), checkboxesPage.getCheckbox2Expected());
-
-        // Perform check / uncheck
-        checkboxesPage.clickCheckbox("checkbox1");
-        checkboxesPage.clickCheckbox("checkbox2");
-
-        // Assertion to validate checkboxes were properly checked / unchecked to their initial state
-        Assert.assertNotEquals(checkboxesPage.isCheckboxSelected("checkbox1"), checkboxesPage.getCheckbox1Expected());
-        Assert.assertNotEquals(checkboxesPage.isCheckboxSelected("checkbox2"), checkboxesPage.getCheckbox2Expected());
+        // All checkboxes toggled back and forth
+        index = checkboxesPage.checkboxElements.listIterator(0).nextIndex();
+        while (index>0) {
+            prevStatus = checkboxesPage.clickOnCheckbox(index);
+            currentStatus = checkboxesPage.getCheckboxCurrentValue(index);
+            Assert.assertNotEquals(prevStatus, currentStatus);
+            expectedStatus = checkboxesPage.getCheckboxExpectedValue(index);
+            checkboxesPage.clickOnCheckbox(index);
+            currentStatus = checkboxesPage.getCheckboxCurrentValue(index);
+            Assert.assertEquals(currentStatus, expectedStatus);
+        }
     }
 }
