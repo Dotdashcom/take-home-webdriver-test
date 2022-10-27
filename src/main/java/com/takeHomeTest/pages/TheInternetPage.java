@@ -7,6 +7,7 @@ import com.takeHomeTest.Utils.ProxyDriver;
 
 public class TheInternetPage extends Page {
 
+	// base home class
 	public TheInternetPage(WebDriver wd, boolean waitForPageToLoad) {
 		super(wd, waitForPageToLoad);
 	}

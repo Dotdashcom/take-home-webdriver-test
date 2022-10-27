@@ -29,7 +29,7 @@ public class NotificationMsgTest extends TestBase {
 	public void notificationMsgTest() {
 		notificationMsgPage = theInternetPage.clickNotiifcationPage();
 		Random random = new Random();
-		int n = random.nextInt(7);
+		int n = random.nextInt(7);              // clicking random time to shuffle the message displayed
 		for (int i = 0; i <= n; i++) {
 			notificationMsgPage.clickBtn();
 		}

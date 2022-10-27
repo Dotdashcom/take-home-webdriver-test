@@ -15,7 +15,7 @@ public class IframePage extends Page {
 
 	
 	public String getTextFromIframe() {
-		((ProxyDriver) wd).switchTo().frame("mce_0_ifr");
+		((ProxyDriver) wd).switchTo().frame("mce_0_ifr");   // switching to frame
 
 		return ((ProxyDriver) wd).getText(Iframe);
 	}

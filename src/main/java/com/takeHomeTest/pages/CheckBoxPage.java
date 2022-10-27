@@ -31,7 +31,7 @@ public class CheckBoxPage extends Page {
 	}
 
 	public boolean isCheckBoxesSelected() {
-		if (isCheckBox1Selected() && isCheckBox2Selected()) {
+		if (isCheckBox1Selected() && isCheckBox2Selected()) {    // method for testing if all check boxes selected 
 			return true;
 		}
 		return false;

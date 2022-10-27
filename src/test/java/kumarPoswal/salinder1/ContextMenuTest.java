@@ -21,6 +21,7 @@ public class ContextMenuTest extends TestBase {
 
 	}
 
+	// testing context menu
 	@Test
 	public void contextMenuTest() {
 		theInternetPage = new TheInternetPage(webDriver, true);

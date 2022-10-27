@@ -16,11 +16,11 @@ public class ContextMenuPage extends Page {
 	private By contextBox = By.cssSelector("div#hot-spot");
 	
 	public void rightClick() {
-		((ProxyDriver) wd).contextRightClick(contextBox);
+		((ProxyDriver) wd).contextRightClick(contextBox);   // right click method from proxy wrapper class
 	}
 	
 	public String textFromAlert() {
-		return ((ProxyDriver) wd).alertText();
+		return ((ProxyDriver) wd).alertText();         // alert method from proxy wrapper class
 	}
 
 }

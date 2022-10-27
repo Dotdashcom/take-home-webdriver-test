@@ -21,6 +21,7 @@ public class CheckBoxPageTest extends TestBase {
 
 	}
 
+	// selecting all check boxes
 	@Test
 	public void checkAllBoxesTest() {
 		checkBoxPage = theInternetPage.clickcheckBoxesBtn();
@@ -36,6 +37,7 @@ public class CheckBoxPageTest extends TestBase {
 
 	}
 
+	// unselecting all check boxes
 	@Test
 	public void UncheckAllBoxesTest() {
 		checkBoxPage = theInternetPage.clickcheckBoxesBtn();

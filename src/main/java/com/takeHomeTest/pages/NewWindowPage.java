@@ -14,7 +14,7 @@ public class NewWindowPage extends Page {
 	private By header = By.cssSelector("h3");
 
 	public String getHeader() {
-		((ProxyDriver) wd).switchToNewTab(header);
+		((ProxyDriver) wd).switchToNewTab(header);   // proxy method to switch to new tab
 		return ((ProxyDriver) wd).getText(header);
 	}
 

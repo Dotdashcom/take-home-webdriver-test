@@ -39,15 +39,15 @@ public class TestBase {
 			try {
 				prop.load(file);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
+	// initializing logger 
+	
 	@BeforeClass
 	public void loggerSetUp() {
 		logger = Logger.getLogger(TestBase.class);
@@ -58,6 +58,7 @@ public class TestBase {
 	}
 
 	public void intialization() {
+		
 		// Manages the driver for the browser on which testing is performed
 
 		switch (DEFAULT_BROWSER.getBrowsername()) {
@@ -83,6 +84,7 @@ public class TestBase {
 		 * webDriver = e_driver;
 		 */
 
+		// managing the environment 
 		switch (ENV) {
 		case Dev:
 			webDriver.get(prop.getProperty("base_dev_url"));

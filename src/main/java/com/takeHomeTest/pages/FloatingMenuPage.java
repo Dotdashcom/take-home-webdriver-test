@@ -14,7 +14,7 @@ public class FloatingMenuPage extends Page {
 	private By menuHeader = By.cssSelector("div#menu");
 
 	public void scrollToBottom() {
-		((ProxyDriver) wd).scroll();
+		((ProxyDriver) wd).scroll();    
 	}
 
 	public boolean isMenuDisplayed() {

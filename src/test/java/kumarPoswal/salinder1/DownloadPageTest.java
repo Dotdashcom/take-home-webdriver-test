@@ -24,6 +24,7 @@ public class DownloadPageTest extends TestBase {
 
 	}
 
+	// using verify method to confirm if file downloaded in directory
 	@Test
 	public void downloadTest() {
 		downloadPage = theInternetPage.clickDownloadPageBtn();

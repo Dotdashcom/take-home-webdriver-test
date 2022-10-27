@@ -1,7 +1,6 @@
 package com.takeHomeTest.Utils;
 
 import java.net.URL;
-import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
@@ -16,6 +15,8 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+// proxy methods 
 
 public class ProxyDriver implements WebDriver, JavascriptExecutor {
 	private WebDriver driver;

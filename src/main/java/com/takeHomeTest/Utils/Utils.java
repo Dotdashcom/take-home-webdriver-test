@@ -41,18 +41,21 @@ public class Utils extends TestBase {
 
 	}
 
+	// random email generator 
 	public static String generateRandomEmail() {
 		String email = RandomStringUtils.randomNumeric(3);
 		String emailID = "Salinder" + email + "@gmail.com";
 		return emailID;
 	}
 
+	// random string/password generator 
 	public static String generateRandomPassword() {
 		String randomStringForPassword = RandomStringUtils.randomNumeric(3);
 		String password = "Manager@" + randomStringForPassword;
 		return password;
 	}
 
+	// custom sleep method
 	public static void sleep(int seconds) {
 		try {
 			Thread.sleep(seconds);

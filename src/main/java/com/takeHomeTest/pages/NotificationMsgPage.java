@@ -25,6 +25,7 @@ public class NotificationMsgPage extends Page {
 		return ((ProxyDriver) wd).getText(msgDisplayed).replaceAll("×", "").trim();
 	}
 
+	// creating a list of all possible messages and comparing if message given from the list
 	public boolean msgContaines(String message) {
 		ArrayList<String> msgList = new ArrayList<String>(
 				Arrays.asList("Action successful", "Action unsuccesful, please try again", "Action Unsuccessful"));

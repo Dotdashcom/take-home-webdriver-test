@@ -5,6 +5,7 @@ import org.testng.ITestResult;
 
 import com.takeHomeTest.base.TestBase;
 
+// listener class for implementing logs
 
 public class CustomListener extends TestBase implements ITestListener {
 

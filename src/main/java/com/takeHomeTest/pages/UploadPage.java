@@ -24,7 +24,7 @@ public class UploadPage extends Page {
 	}
 
 	public String getuploadConfirmationMsg() {
-		return ((ProxyDriver) wd).getText(uploadConfirmationMsg);
+		return ((ProxyDriver) wd).getText(uploadConfirmationMsg);   //upload confirmation message 
 	}
 
 }

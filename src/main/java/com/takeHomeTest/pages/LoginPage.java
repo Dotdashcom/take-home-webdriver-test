@@ -29,7 +29,7 @@ public class LoginPage extends Page {
 	}
 
 	public String getTextFromloginSuccessMsg() {
-		return ((ProxyDriver) wd).getText(loginSuccessMsg);
+		return ((ProxyDriver) wd).getText(loginSuccessMsg);   // login success/failure message 
 	}
 
 }

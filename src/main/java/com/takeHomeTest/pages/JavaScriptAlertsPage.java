@@ -43,7 +43,7 @@ public class JavaScriptAlertsPage extends Page {
 	}
 
 	public void jsPromptsendKeysGetText(String keys) {
-		((ProxyDriver) wd).sendKeysAlert(jsPromptBtn, keys);
+		((ProxyDriver) wd).sendKeysAlert(jsPromptBtn, keys);   
 		((ProxyDriver) wd).acceptAlert();
 
 	}
