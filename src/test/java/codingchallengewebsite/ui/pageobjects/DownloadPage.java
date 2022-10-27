@@ -1,13 +1,13 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import static codingchallengewebsite.ui.UITest.*;
+
 import codingchallengewebsite.ui.UITest;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -16,7 +16,6 @@ import java.nio.channels.FileChannel;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.Duration;
 
 public class DownloadPage {
 
@@ -57,10 +56,9 @@ public class DownloadPage {
         // Case: The file to be downloaded or a .crdownload from it already exist in the download folder - delete it
         try { Files.deleteIfExists(expectedFile.toPath()); Files.deleteIfExists(expectedTmpFile.toPath()); }
         catch (IOException e) { }
+
         // Start downloading
         downloadLink.click();
-        //WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
-        //wait.until(d -> (expectedFile.exists() || expectedTmpFile.exists()));
 
         // Give it some buffer time...
         try { Thread.sleep(5000); } catch (InterruptedException e) { throw new RuntimeException(e); }

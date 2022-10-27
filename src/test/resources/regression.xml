@@ -3,9 +3,6 @@
 <suite name="Coding Challenge Website UI Regression Suite">
     <parameter name="browser" value="chrome"/>
     <parameter name="browser_version" value="106.0.5249.61"/>
-    <parameter name="headless" value="true"/>
-    <parameter name="base_url" value="http://0.0.0.0:7080"/>
-    <!--<parameter name="remote" value="http://0.0.0.0:4444/wd/hub"/> -->
     <test name="Login Tests">
         <parameter name="username" value="tomsmith"/>
         <parameter name="password" value="SuperSecretPassword!"/>

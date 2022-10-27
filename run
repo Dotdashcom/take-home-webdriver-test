@@ -1,21 +1,21 @@
 #!/bin/sh
 
-SUITES_FOLDER="src/tests/resources"
-
 ##############
 # Utils
 func_result=''
 STATUS=''
-WD_CLIENT='local'
+WD_REMOTE="false"
 THREADS=1
 COUNTER=0
 BGREEN='\033[1;32m' # Bold Green
 NO_COLOR='\033[0m' # No Color
 BOLD='\033[1m'
+SG_ACTION=''
+TEST_SUITE_XML_FILE=regression.xml
 
 ##############
 # Run-command args
-USAGE=$BGREEN"\nUsage:"$NO_COLOR" $(basename "$0")\n \
+USAGE=$BGREEN"\nUsage:$NO_COLOR $(basename "$0")\n \
       $(basename "$0") [-r [-T threads] | [-T threads] | -h]\n \
       $(basename "$0") [-G start [-T threads]]\n \
       $(basename "$0") [-G stop]\n \
@@ -30,11 +30,11 @@ USAGE=$BGREEN"\nUsage:"$NO_COLOR" $(basename "$0")\n \
 while getopts ":rhT:G:" flag
 do
     case "${flag}" in
-        r) WD_CLIENT="remote";;
+        r) WD_REMOTE="true";;
         T) THREADS="${OPTARG}";;
         G) SG_ACTION="${OPTARG}";;
         h) printf "$USAGE" 1>&2 ; exit 1;;
-        ?) printf $BOLD"$(basename "$0"): illegal option: -${OPTARG}\n$USAGE\n"$BOLD; exit 1 ;;
+        ?) printf "$BOLD""$(basename "$0"): illegal option: -${OPTARG}\n$USAGE\n""$BOLD"; exit 1 ;;
     esac
 done
 
@@ -42,20 +42,22 @@ done
 # Containers
 #
 # The-Internet app
-CONTAINER_APP_IMAGE="gprestes/the-internet";
+CONTAINER_APP_IMAGE="gprestes/the-internet:latest";
 CONTAINER_APP_PORTS="7080:5000";
 CONTAINER_APP_RUN_CMD="docker run -d \
       --rm --net dotdash --name website \
       -p 7080:5000 $CONTAINER_APP_IMAGE";
+CONTAINER_APP_IP="0.0.0.0"
 #
 # Selenium hub
-CONTAINER_SELENIUM_HUB_IMAGE="selenium/hub:4.5.2-20221021";
+CONTAINER_SELENIUM_HUB_IMAGE="selenium/hub:latest";
 CONTAINER_SELENIUM_HUB_PORTS="4442-4444:4442-4444";
 CONTAINER_SELENIUM_HUB_RUN_CMD="docker run -d \
       -e SE_VNC_NO_PASSWORD=1 \
       --rm --net dotdash --name selenium-hub \
       -p 4442-4444:4442-4444 \
       -v /dev/shm:/dev/shm "$CONTAINER_SELENIUM_HUB_IMAGE;
+CONTAINER_SELENIUM_HUB_IP="0.0.0.0"
 #
 # Chrome nodes
 CONTAINER_CHROME_NODES_IMAGE="selenium/node-chrome:4.5.2-20221021";
@@ -64,7 +66,21 @@ CONTAINER_CHROME_NODES_RUN_CMD="docker run -d --name chrome-node%s \
       -v ""$(pwd)""/target:/home/seluser/Downloads \
       --shm-size='2g' -e SE_EVENT_BUS_PUBLISH_PORT=4442 \
       -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 "$CONTAINER_CHROME_NODES_IMAGE;
+#
+# Container network name
+NET_NAME="dotdash"
 
+strip_image_version() {
+  IMAGE=$1;
+  IFS=":"; read -a img <<< "$1"; IMAGE=${img[0]};
+  func_result=$IMAGE;
+}
+
+strip_image_name() {
+  IMAGE=$1;
+  IFS=":"; read -a ver <<< "$1";
+  func_result=${ver[1]};
+}
 
 run_container() {
   CONTAINER_RUN_CMD=$1
@@ -82,20 +98,20 @@ run_container() {
 docker_container_startup () {
   CONTAINER_IMAGE=$1
   CONTAINER_RUN_CMD=$2
-  IFS=" "; CONTAINER_NAME=$(echo $CONTAINER_RUN_CMD | grep -o -E "\-\-name[[:blank:]].+[[:blank:]]" | cut -w -f 2);
-  STATUS="Container image: "$CONTAINER_IMAGE" | name: "$CONTAINER_NAME"";
+  IFS=" "; CONTAINER_NAME=$(echo "$CONTAINER_RUN_CMD" | grep -o -E "\-\-name[[:blank:]].+[[:blank:]]" | cut -w -f 2);
+  STATUS="Container image: $CONTAINER_IMAGE | name: $CONTAINER_NAME";
   printf "$STATUS";
 
   # Container cleanup
-  match=$(echo $CONTAINER_RUN_CMD | grep $CONTAINER_NAME | wc -l);
+  match=$(echo "$CONTAINER_RUN_CMD" | grep $CONTAINER_NAME | wc -l);
   if [ "$match" -gt 0 ]; then
     docker rm -f "$CONTAINER_NAME" > /dev/null 2>&1
   fi
 
   # Clear other statuses as well
-  var=$(docker ps -aq -f status=exited -f ancestor="$CONTAINER_IMAGE" | xargs docker rm -f > /dev/null 2>&1)
-  var=$(docker ps -aq -f status=paused -f ancestor="$CONTAINER_IMAGE" | xargs docker rm -f > /dev/null 2>&1)
-  var=$(docker ps -aq -f status=dead -f ancestor="$CONTAINER_IMAGE" | xargs docker rm -f > /dev/null 2>&1)
+  docker ps -aq -f status=exited -f ancestor="$CONTAINER_IMAGE" | xargs docker rm -f > /dev/null 2>&1
+  docker ps -aq -f status=paused -f ancestor="$CONTAINER_IMAGE" | xargs docker rm -f > /dev/null 2>&1
+  docker ps -aq -f status=dead -f ancestor="$CONTAINER_IMAGE" | xargs docker rm -f > /dev/null 2>&1
 
   # Run the container
   run_container "$CONTAINER_RUN_CMD"
@@ -105,14 +121,11 @@ docker_container_startup () {
 wait_until_container_is_ready() {
   # Get server port
   SERVER=$1;
-  IFS=":"; read -a starr <<< "$2";
-  PORTS=${starr[0]};
+  IFS=":"; read -a starr <<< "$2"; PORTS=${starr[0]};
 
   if [[ $PORTS =~ "-" ]]; then
     IFS="-"; read -a starr2 <<< "$PORTS"; PORT=${starr2[1]}
-  else
-    PORT=${PORTS[0]}
-  fi
+  else PORT=${PORTS[0]}; fi;
 
   # Wait until the server is online
   printf "Trying $SERVER:$PORT ";
@@ -120,7 +133,7 @@ wait_until_container_is_ready() {
     printf ".";
     sleep 1;
   done;
-  printf "\r\033[K[OK] Connection to $SERVER port $PORT succeeded!"
+  printf "\r\033[K[OK] Connection to $SERVER port $PORT succeeded!\n"
   STATUS=''
 }
 
@@ -134,39 +147,55 @@ COUNTER=$1
 }
 
 missing_the_internet_app() {
-  var=$(docker images | grep "gprestes/the-internet" | grep "latest" | wc -l)
-  printf "The-internet App image \r"
+  strip_image_version $CONTAINER_APP_IMAGE;
+  i_name="$func_result"
+  strip_image_name $CONTAINER_APP_IMAGE;
+  i_ver="$func_result"
+  printf "The-Internet App image \r"
+  var=$(docker images | grep "$i_name" | grep "$i_ver" | wc -l)
   if [ ! "$var" ]; then
-    func_result="docker pull gprestes/the-internet:latest";
+    printf "\r\033[KThe-Internet App image not found. Pulling ""$CONTAINER_APP_IMAGE"" from the registry\n";
+    func_result="docker pull $CONTAINER_APP_IMAGE";
   else
     func_result=""
   fi
 }
 
 missing_selenium_grid() {
-  var=$(docker images | grep "selenium/hub" | grep "latest" | wc -l)
+  strip_image_version $CONTAINER_SELENIUM_HUB_IMAGE;
+  i_name="$func_result"
+  strip_image_name $CONTAINER_SELENIUM_HUB_IMAGE;
+  i_ver="$func_result"
   printf "Selenium grid image \r"
+  var=$(docker images | grep "$i_name" | grep "$i_ver" | wc -l)
   if [ ! "$var" ]; then
-    func_result="docker pull selenium/hub:latest";
+    printf "\r\033[KSelenium Grid image not found. Pulling ""$CONTAINER_SELENIUM_HUB_IMAGE"" from the registry\n";
+    func_result="docker pull $CONTAINER_SELENIUM_HUB_IMAGE";
   else
     func_result=""
   fi
 }
 
 missing_chrome_nodes() {
-  var=$(docker images | grep "selenium/node-chrome" | grep "4.5.2-20221021" | wc -l)
+  strip_image_version $CONTAINER_CHROME_NODES_IMAGE;
+  i_name="$func_result"
+  strip_image_name $CONTAINER_CHROME_NODES_IMAGE;
+  i_ver="$func_result"
   printf "Chrome node image \r"
+  var=$(docker images | grep "$i_name" | grep "$i_ver" | wc -l)
   if [ ! "$var" ]; then
-    func_result="docker pull selenium/node-chrome:4.5.2-20221021";
+    printf "\r\033[KChrome node image not found. Pulling ""$CONTAINER_CHROME_NODES_IMAGE"" from the registry\n";
+    func_result="docker pull $CONTAINER_CHROME_NODES_IMAGE";
   else
     func_result=""
   fi
 }
 
 missing_docker_network_config() {
-  var=$(docker network inspect dotdash | grep "dotdash" | wc -l)
   printf "Bridge network configuration \r"
+  var=$(docker network inspect dotdash | grep "$NET_NAME" | wc -l)
   if [ ! "$var" ]; then
+    printf "\r\033[KBridge network configuration missing. Creating dotdash docker network\n";
     func_result="docker network create -o com.docker.network.bridge.bridge dotdash";
   else
     func_result=""
@@ -176,61 +205,69 @@ missing_docker_network_config() {
 ##############
 # Setup
 setup_where_necessary() {
-printf "\n[""$BGREEN""Checking dependencies""$NO_COLOR""]\n";
-missing_docker_network_config
-if [ ! "$(eval "$func_result")" ]; then printf "[OK] Bridge network configuration\n"; fi
-missing_the_internet_app
-if [ ! "$(eval "$func_result")" ]; then printf "[OK] The-internet App image\n"; fi
-missing_selenium_grid
-if [ ! "$(eval "$func_result")" ]; then printf "[OK] Selenium grid image\n"; fi
-missing_chrome_nodes
-if [ ! "$(eval "$func_result")" ]; then printf "[OK] Chrome node image\n"; fi #&
-#wait
+  printf "\n[""$BGREEN""Checking dependencies""$NO_COLOR""]\n";
+  missing_docker_network_config
+  if [ ! "$(eval "$func_result")" ]; then printf "[OK] Bridge network configuration\n"; fi
+  missing_the_internet_app
+  if [ ! "$(eval "$func_result")" ]; then printf "[OK] The-internet App image\n"; fi
+  missing_selenium_grid
+  if [ ! "$(eval "$func_result")" ]; then printf "[OK] Selenium grid image\n"; fi
+  missing_chrome_nodes
+  if [ ! "$(eval "$func_result")" ]; then printf "[OK] Chrome node image\n"; fi
 
-chmod +x restart-grid.sh > /dev/null 2>&1
+  chmod +x restart-grid.sh > /dev/null 2>&1
 }
 
 ##############
 # Clean, build, install, and run the test suite
 execute_the_tests() {
-
   printf "$BGREEN""\n[Clean]\n""$NO_COLOR"
   mvn clean -f pom.xml
   printf "$BGREEN""\n[Compile]\n""$NO_COLOR"
   mvn compile -f pom.xml
   printf "$BGREEN""\n[Install]\n""$NO_COLOR";
-  mvn install -f pom.xml -DskipTests
+  mvn install -f pom.xml -DskipTests &
   wait
-  printf "$BGREEN""\n[Running the test suite]\n""$NO_COLOR"
-  # Local run
-  if [[ "${WD_CLIENT}" == "remote" ]]; then
-    mvn test -e -DsuiteXmlFile="$SUITES_FOLDER"/regression.xml;
-  elif [[ "${WD_CLIENT}" == "local" ]]; then
-  # Selenium grid run
-    mvn test -e -DsuiteXmlFile="$SUITES_FOLDER"/regression-selenium-grid.xml;
-  fi;
+  printf "$BGREEN""\n[Running the test suite]\n""$NO_COLOR";
+  mvn test -e -DsuiteXmlFile="$TEST_SUITE_XML_FILE" -DuseSeleniumGrid="${WD_REMOTE}" -DtestsThreadCount="$THREADS";
 }
 
 stop_containers() {
   NAMES=$1;
-  echo "\n[Stopping containers]";
-  if [ "$NAMES" ]; then
+  printf "\n[""$BGREEN""Stopping containers]\n""$NO_COLOR";
+  if [ "$NAMES" ]; then # Several names
     if [[ $NAMES =~ "," ]]; then
       IFS=","; read -a starr <<< "$NAMES";
-      for i in "${starr[@]}"
-      do
-        echo $i;
-        docker ps -a -q --filter "name=""$i" | xargs docker rm -f
+      for i in "${starr[@]}"; do
+        docker ps -a -q --filter "name=""$i" | xargs docker rm -f;
       done
-    else
-      docker rm -f "$(docker ps -a -q --filter ancestor=gprestes/the-internet)";
+    else # Just one name
+      docker ps -a -q --filter "name=""$NAMES" | xargs docker rm -f;
     fi;
-  else
-    if [ "$WD_CLIENT" = "remote" ]; then
-    docker rm -f "$(docker ps -a -q --filter ancestor=selenium/hub:4.5.2-20221021)";
-    docker rm -f "$(docker ps -a -q --filter ancestor=selenium/node-chrome:4.5.2-20221021 --format="{{.ID}}")";
+  else # No name provided
+    strip_image_version $CONTAINER_APP_IMAGE;
+    docker ps -a -q --filter ancestor="$func_result" | xargs docker rm -f
+    if [ "$WD_REMOTE" = "true" ]; then
+      strip_image_version $CONTAINER_SELENIUM_HUB_IMAGE;
+      docker ps -a -q --filter ancestor="$func_result" | xargs docker rm -f
+      strip_image_version $CONTAINER_CHROME_NODES_IMAGE;
+      docker ps -a -q --filter ancestor="$func_result" --format="{{.ID}}" | xargs docker rm -f
     fi;
   fi;
+}
+
+start_the_internet_app() {
+  printf "\n[""$BGREEN""Starting The-Internet App""$NO_COLOR""]\n";
+  docker_container_startup "$CONTAINER_APP_IMAGE" "$CONTAINER_APP_RUN_CMD";
+  wait_until_container_is_ready "$CONTAINER_APP_IP" "$CONTAINER_APP_PORTS";
+}
+
+start_selenium_grid() {
+  printf "\n[""$BGREEN""Starting Selenium Grid""$NO_COLOR""]\n";
+  docker_container_startup "$CONTAINER_SELENIUM_HUB_IMAGE" "$CONTAINER_SELENIUM_HUB_RUN_CMD";
+  wait_until_container_is_ready "$CONTAINER_SELENIUM_HUB_IP" "$CONTAINER_SELENIUM_HUB_PORTS";
+  printf "\n[""$BGREEN""Starting Chrome nodes""$NO_COLOR""]\n";
+  start_chrome_nodes "$THREADS";
 }
 
 ##############
@@ -238,53 +275,32 @@ stop_containers() {
 main() {
   setup_where_necessary;
 
-  # On Selenium grid action [start | stop]
-  if [ "$SG_ACTION" ]; then
-    USAGE="Usage: $(basename "$0") -g [start | stop]";
-    case $SG_ACTION in
-      start)
-        # The-internet
-        printf "\n[""$BGREEN""Starting The-Internet App""$NO_COLOR""]\n";
-        docker_container_startup "$CONTAINER_APP_IMAGE" "$CONTAINER_APP_RUN_CMD";
-        wait_until_container_is_ready "0.0.0.0" "$CONTAINER_APP_PORTS";
-        # Selenium grid
-        printf "\n[""$BGREEN""Starting Selenium Grid""$NO_COLOR""]\n";
-        docker_container_startup "$CONTAINER_SELENIUM_HUB_IMAGE" "$CONTAINER_SELENIUM_HUB_RUN_CMD";
-        wait_until_container_is_ready "0.0.0.0" "$CONTAINER_SELENIUM_HUB_PORTS";
-        # Chrome nodes
-        printf "\n[""$BGREEN""Starting Chrome nodes""$NO_COLOR""]\n";
-        start_chrome_nodes "$THREADS";
-        exit 0;;
-      stop)
-        stop_containers "website,selenium-hub,chrome-node"; exit 0;;
-      *)
-        echo "$USAGE" 1>&2 ; exit 1;;
-    esac
-  # On standard call via -t and -d args
-  else
-    # Init The-Internet App
-    printf "\n[""$BGREEN""Starting The-Internet App""$NO_COLOR""]\n";
-    docker_container_startup "$CONTAINER_APP_IMAGE" "$CONTAINER_APP_RUN_CMD";
-    wait_until_container_is_ready "0.0.0.0" "$CONTAINER_APP_PORTS";
+  # Only start/stop Selenium Grid
+  case $SG_ACTION in
+    stop) stop_containers "website,selenium-hub,chrome-node"; exit 0;;
+    start)
+      # Init The-internet App
+      start_the_internet_app;
+      start_selenium_grid;
+      exit 0;;
+  esac
 
-    # Init Selenium Grid and Chrome nodes
-    if [[ "$WD_CLIENT" == "remote" ]]; then
-      printf "\n[""$BGREEN""Starting Selenium Grid""$NO_COLOR""]\n";
-      docker_container_startup "$CONTAINER_SELENIUM_HUB_IMAGE" "$CONTAINER_SELENIUM_HUB_RUN_CMD";
-      wait_until_container_is_ready "0.0.0.0" "$CONTAINER_SELENIUM_HUB_PORTS";
-      printf "\n[""$BGREEN""Starting Chrome nodes""$NO_COLOR""]\n";
-      start_chrome_nodes "$THREADS";
-    fi;
+  # Init The-internet App
+  start_the_internet_app;
 
-    # Run the test suite
-    execute_the_tests;
+  # Remote tests execution, init Selenium Grid
+  if [[ "$WD_REMOTE" == "true" ]]; then
+    start_selenium_grid;
+  fi
 
-    # Link to test report
-    printf '\n\n['"${BGREEN}"'Test results report: \e]8;;file://%s/target/surefire-reports/index.html\e\\Link to test report\e]8;;\e\\]\n'"${NO_COLOR}"'' "$(pwd)";
+  # Run the test suite
+  execute_the_tests;
+  # Add link to the test report
+  printf '\n\n['"${BGREEN}"'Test results report: \e]8;;file://%s/target/surefire-reports/index.html\e\\Link to test report\e]8;;\e\\]\n'"${NO_COLOR}"'' "$(pwd)";
 
-    #stop_containers;
-    stop_containers "website,selenium-hub,chrome-node"
-  fi;
+  # Stop containers;
+  stop_containers &
+  wait
 }
 
 main;

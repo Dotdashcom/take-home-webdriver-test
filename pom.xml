@@ -23,7 +23,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
-            <version>4.5.0</version>
+            <version>4.5.3</version>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.5.0</version>
+            <version>4.5.3</version>
         </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -46,6 +46,16 @@
             <artifactId>annotations</artifactId>
             <version>23.0.0</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-reload4j</artifactId>
+            <version>2.0.3</version>
         </dependency>
     </dependencies>
     <build>
@@ -72,20 +82,17 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!-- TestNG suite XML files -->
-                        <!-- <suiteXmlFile>src/test/resources/${suiteXmlFile}</suiteXmlFile> -->
-                        <suiteXmlFile>src/test/resources/regression.xml</suiteXmlFile>
-                        <!-- <suiteXmlFile>src/test/resources/regression-selenium-grid.xml</suiteXmlFile> -->
+                        <suiteXmlFile>src/test/resources/${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
-                    <properties>
-                        <property>
-                            <name>parallel</name>
-                            <value>tests</value>
-                        </property>
-                        <property>
-                            <name>suitethreadpoolsize</name>
-                            <value>6</value>
-                        </property>
-                    </properties>
+                    <parallel>tests</parallel>
+                    <threadCount>${testsThreadCount}</threadCount>
+                    <systemPropertyVariables>
+                        <codingChallengeWebsite.baseUrl>http://0.0.0.0:7080</codingChallengeWebsite.baseUrl>
+                        <codingChallengeWebsite.baseUrlSG>http://192.168.65.2:7080</codingChallengeWebsite.baseUrlSG>
+                        <codingChallengeWebsite.seleniumGridUrl>http://0.0.0.0:4444/wd/hub</codingChallengeWebsite.seleniumGridUrl>
+                        <codingChallengeWebsite.useSeleniumGrid>${useSeleniumGrid}</codingChallengeWebsite.useSeleniumGrid>>
+                        <codingChallengeWebsite.headlessBrowser>false</codingChallengeWebsite.headlessBrowser>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
