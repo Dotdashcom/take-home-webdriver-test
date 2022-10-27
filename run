@@ -5,6 +5,7 @@ SUITES_FOLDER="src/tests/resources"
 ##############
 # Utils
 func_result=''
+STATUS=''
 WD_CLIENT='local'
 THREADS=1
 COUNTER=0
@@ -71,9 +72,9 @@ run_container() {
   # Run container
   CID=$(eval "$CONTAINER_RUN_CMD") 1>&2
   if [ ! "$CID" ]; then
-    echo "Container doesn't exist"
+    echo "Container doesn't exist";
   else
-    echo "Container running with id: $CID"
+    printf "\r\033[K[OK] $STATUS | Id: $CID\n";
   fi
   unset CID
 }
@@ -81,11 +82,15 @@ run_container() {
 docker_container_startup () {
   CONTAINER_IMAGE=$1
   CONTAINER_RUN_CMD=$2
-  CONTAINER_NAME="$(docker ps -a | grep "$CONTAINER_IMAGE" | grep -o '[^ ]*$')" > /dev/null 2>&1
+  IFS=" "; CONTAINER_NAME=$(echo $CONTAINER_RUN_CMD | grep -o -E "\-\-name[[:blank:]].+[[:blank:]]" | cut -w -f 2);
+  STATUS="Container image: "$CONTAINER_IMAGE" | name: "$CONTAINER_NAME"";
+  printf "$STATUS";
 
   # Container cleanup
-  var=$(echo "$CONTAINER_NAME" | grep CONTAINER_RUN_CMD)
-  var=$(docker rm -f "$var" > /dev/null 2>&1)
+  match=$(echo $CONTAINER_RUN_CMD | grep $CONTAINER_NAME | wc -l);
+  if [ "$match" -gt 0 ]; then
+    docker rm -f "$CONTAINER_NAME" > /dev/null 2>&1
+  fi
 
   # Clear other statuses as well
   var=$(docker ps -aq -f status=exited -f ancestor="$CONTAINER_IMAGE" | xargs docker rm -f > /dev/null 2>&1)
@@ -94,6 +99,7 @@ docker_container_startup () {
 
   # Run the container
   run_container "$CONTAINER_RUN_CMD"
+  STATUS=''
 }
 
 wait_until_container_is_ready() {
@@ -108,18 +114,22 @@ wait_until_container_is_ready() {
     PORT=${PORTS[0]}
   fi
 
-  # Wait until it's up-and-running
-  echo "Trying $SERVER:$PORT";
-  until nc -z "$SERVER" "$PORT"; do sleep 1; done;
+  # Wait until the server is online
+  printf "Trying $SERVER:$PORT ";
+  until STATUS=$(nc -z "$SERVER" "$PORT" > /dev/null 2>&1); do
+    printf ".";
+    sleep 1;
+  done;
+  printf "\r\033[K[OK] Connection to $SERVER port $PORT succeeded!"
+  STATUS=''
 }
 
 start_chrome_nodes() {
 COUNTER=$1
   while [[ $COUNTER -ne 0 ]]
   do
-    docker_container_startup "$CONTAINER_CHROME_NODES_IMAGE" "$(printf "$CONTAINER_CHROME_NODES_RUN_CMD" "$COUNTER")" #&
+    docker_container_startup "$CONTAINER_CHROME_NODES_IMAGE" "$(printf "$CONTAINER_CHROME_NODES_RUN_CMD" "$COUNTER")"
     COUNTER=$((COUNTER-1));
-    #wait
   done
 }
 
