@@ -1,14 +1,14 @@
 package codingchallengewebsite.ui;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,33 +25,33 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class UITest {
     public static final String DEFAULT_BROWSER = "chrome";
-    public static final String DEFAULT_BROWSER_VERSION = "106.0.5249.119";
     public static final String DEFAULT_BROWSER_HEADLESS = "false";
     public static final String downloadsFolder = Paths.get("target/").toAbsolutePath().toString();
     private RemoteWebDriver driver;
     private String baseUrl;
     private static final String pageFooterXpath = "//*[@id='page-footer']";
 
-    public UITest() {
-        BasicConfigurator.configure();
-        Logger.getRootLogger().setLevel(Level.INFO);
-    }
+    public UITest() { }
 
     @Parameters({"browser", "browserVersion", "codingChallengeWebsite.headlessBrowser", "codingChallengeWebsite.baseUrl", "codingChallengeWebsite.baseUrlSG", "codingChallengeWebsite.seleniumGridUrl", "codingChallengeWebsite.useSeleniumGrid"})
     @BeforeMethod
-        public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional(DEFAULT_BROWSER_VERSION) String browserVersion, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String baseUrl, @Optional("") String baseUrlSG, @Optional("") String remoteUrl, @Optional("") String useSeleniumGrid) {
+        public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional("") String browserVersion, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String baseUrl, @Optional("") String baseUrlSG, @Optional("") String remoteUrl, @Optional("") @NotNull String useSeleniumGrid) {
         if (useSeleniumGrid.equals("true")) { this.setBaseUrl(baseUrlSG); } else { this.setBaseUrl(baseUrl); }
+        browser = browser.toLowerCase();
 
         switch (browser) {
-            case "chrome":
-                this.setDriver(requestChromeDriver(browserVersion, headless, remoteUrl, useSeleniumGrid));
-                break;
-            case "firefox":
+            case "chrome", "remote-chrome" ->
+                    this.setDriver(requestChromeDriver(browser, browserVersion, headless, remoteUrl, useSeleniumGrid));
+            /*case "firefox" ->
                 // Firefox To be implemented
-                break;
-            case "edge":
+                    this.setDriver(requestFirefoxDriver(browserVersion, headless, remoteUrl, useSeleniumGrid));
+            case "microsoftedge" ->
                 // Edge To be implemented
-                break;
+                    this.setDriver(requestMicrosoftEdgeDriver(browserVersion, headless, remoteUrl, useSeleniumGrid));
+            case "opera" ->
+                // Opera To be implemented
+                    this.setDriver(requestOperaDriver(browserVersion, headless, remoteUrl, useSeleniumGrid));*/
+            default -> throw new IllegalStateException("Unexpected value: " + browser);
         }
     }
 
@@ -61,7 +61,7 @@ public class UITest {
         driver.quit();
     }
 
-    private RemoteWebDriver requestChromeDriver(String browserVersion, String headless, String remoteUrl, String useSeleniumGrid) {
+    private RemoteWebDriver requestChromeDriver(String browser, String browserVersion, String headless, String remoteUrl, String useSeleniumGrid) {
         ChromeOptions chromeOptions = new ChromeOptions();
         Map<String, Object> chromeExpOptions = new HashMap<>();
 
@@ -77,7 +77,8 @@ public class UITest {
         // Common + hacky options
         chromeOptions.addArguments("download.prompt_for_download", "false");
         chromeOptions.addArguments("safebrowsing.enabled", "false");
-        chromeOptions.addArguments("--ignore-certificate-errors", "--disable-gpu");
+        chromeOptions.addArguments("--ignore-certificate-errors");
+        chromeOptions.addArguments("--disable-gpu");
         chromeOptions.addArguments("--disable-web-security");
         chromeOptions.addArguments("--allow-running-insecure-content");
         chromeOptions.addArguments("--ignore_ssl");
@@ -85,18 +86,23 @@ public class UITest {
         chromeOptions.addArguments("--disable-infobars"); //
         chromeOptions.addArguments("--test-type"); //
         chromeOptions.addArguments("--disable-extensions"); //
+        chromeOptions.addArguments("--disable-dev-shm-usage"); //
+        chromeOptions.addArguments("--no-sandbox"); //
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+        capabilities.setCapability(CapabilityType.SUPPORTS_NETWORK_CONNECTION, true);
 
+        WebDriverManager.chromedriver().browserVersionDetectionCommand(" ");
+        WebDriverManager.chromedriver().forceDownload();
         // Use headless only on local runs. When using selenium grid, download fails in Chrome because of a bug.
         if (headless.equals("true") && useSeleniumGrid.equals("false")) {
             chromeOptions.addArguments("--headless", "--window-size=1920,1200", "--no-sandbox"); }
 
         // Remote driver session
-        if (useSeleniumGrid.equals("true")) {
-            //WebDriverManager.chromedriver().browserInDocker().browserVersion("106.0.5249.119");
-            WebDriverManager.chromedriver().driverVersion("106.0.5249.61").setup();
-            WebDriverManager.chromedriver().useBetaVersions();
-            WebDriverManager.chromedriver().forceDownload();
-            WebDriverManager.chromedriver().browserVersionDetectionCommand(" ");
+        if (useSeleniumGrid.equals("true") || browser.equals("remote-chrome")) {
+            //WebDriverManager.chromedriver().useBetaVersions();
+            WebDriverManager.chromedriver().dockerNetwork("dotdash");
+
             try {
                 this.driver = (RemoteWebDriver) WebDriverManager.chromedriver().remoteAddress(new URL(remoteUrl)).capabilities(chromeOptions).create();
             } catch (MalformedURLException e) {
@@ -105,9 +111,21 @@ public class UITest {
             this.driver.setFileDetector(new LocalFileDetector());
             return driver;
         } else {
-            chromedriver().browserVersion(browserVersion).setup();
+            chromedriver().setup();
             return new ChromeDriver(chromeOptions);
         }
+    }
+
+    private RemoteWebDriver requestFirefoxDriver(String browserVersion, String headless, String remoteUrl, String useSeleniumGrid) {
+        return null;
+    }
+
+    private RemoteWebDriver requestMicrosoftEdgeDriver(String browserVersion, String headless, String remoteUrl, String useSeleniumGrid) {
+        return null;
+    }
+
+    private RemoteWebDriver requestOperaDriver(String browserVersion, String headless, String remoteUrl, String useSeleniumGrid) {
+        return null;
     }
 
     public void dragAndDropJS(WebElement source, WebElement destination)
@@ -182,7 +200,11 @@ public class UITest {
         this.baseUrl = baseUrl;
     }
 
-    public final Boolean isPageOpen(String pageUrl, WebElement pageTitle) { return this.getDriver().getCurrentUrl().equals(pageUrl) && pageTitle.isDisplayed(); }
+    public final Boolean isPageOpen(String pageUrl, WebElement pageTitle) {
+        WebDriverWait genericWait = new WebDriverWait(this.getDriver(), Duration.ofSeconds(10));;
+        genericWait.until(ExpectedConditions.visibilityOf(pageTitle));
+        return this.getDriver().getCurrentUrl().equals(pageUrl) && pageTitle.isDisplayed();
+    }
     public final Boolean isPageOpen(String pageUrl) { return this.getDriver().getCurrentUrl().equals(pageUrl); }
 
     public final WebElement getPageFooter() { return this.getDriver().findElement(By.xpath(pageFooterXpath)); }

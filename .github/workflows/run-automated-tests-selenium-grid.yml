@@ -1,5 +1,4 @@
 # Workflow to run automated tests on code pushed to master branch
-
 name: Run automated tests suite - Selenium Grid
 env:
   LOG_LEVEL: info
@@ -25,13 +24,20 @@ on:
         type: environment
         required: true
         default: staging
+      chromeVersion:
+        description: 'Chrome Version'
+        required: true
+        default: '106.0.5249.119'
+        type: choice
+        options:
+          - "latest"
+          - "106.0.5249.119"
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
-    
     services:
       website:
         image: gprestes/the-internet:latest
@@ -41,8 +47,11 @@ jobs:
           --rm
       selenium-hub:
         image: selenium/hub:latest
+        container_name: selenium-hub
         ports:
-          - 4442-4444:4442-4444
+          - 4442:4442
+          - 4443:4443
+          - 4444:4444
         options: >-
           --rm
           -v /dev/shm:/dev/shm
@@ -52,63 +61,40 @@ jobs:
           SE_SESSION_RETRY_INTERVAL: 1
       chrome-node1:
         image: selenium/node-chrome:latest
+        container_name: chrome-node1
+        shm_size: 2gb
+        depends_on: selenium-hub
+        environment:
+          - SE_EVENT_BUS_HOST=selenium-hub
+          - SE_EVENT_BUS_PUBLISH_PORT=4442
+          - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          - SE_SESSION_RETRY_INTERVAL=1
+          - SE_NODE_MAX_INSTANCES=4
+          - SE_NODE_MAX_SESSIONS=2
+          - SE_NODE_SESSION_TIMEOUT=10
         options: >-
           -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
-          --shm-size=2g
-          -e SE_EVENT_BUS_HOST=selenium-hub
-          -e SE_EVENT_BUS_PUBLISH_PORT=4442
-          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-          -e SE_SESSION_RETRY_INTERVAL=1
       chrome-node2:
         image: selenium/node-chrome:latest
+        container_name: chrome-node2
+        shm_size: 2gb
+        depends_on: selenium-hub
+        environment:
+          - SE_EVENT_BUS_HOST=selenium-hub
+          - SE_EVENT_BUS_PUBLISH_PORT=4442
+          - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          - SE_SESSION_RETRY_INTERVAL=1
+          - SE_NODE_MAX_INSTANCES=4
+          - SE_NODE_MAX_SESSIONS=2
+          - SE_NODE_SESSION_TIMEOUT=10
         options: >-
           -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
-          --shm-size=2g
-          -e SE_EVENT_BUS_HOST=selenium-hub
-          -e SE_EVENT_BUS_PUBLISH_PORT=4442
-          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-          -e SE_SESSION_RETRY_INTERVAL=1
-      chrome-node3:
-        image: selenium/node-chrome:latest
-        options: >-
-          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
-          --shm-size=2g
-          -e SE_EVENT_BUS_HOST=selenium-hub
-          -e SE_EVENT_BUS_PUBLISH_PORT=4442
-          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-          -e SE_SESSION_RETRY_INTERVAL=1
-      chrome-node4:
-        image: selenium/node-chrome:latest
-        options: >-
-          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
-          --shm-size=2g
-          -e SE_EVENT_BUS_HOST=selenium-hub
-          -e SE_EVENT_BUS_PUBLISH_PORT=4442
-          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-          -e SE_SESSION_RETRY_INTERVAL=1
-      chrome-node5:
-        image: selenium/node-chrome:latest
-        options: >-
-          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
-          --shm-size=2g
-          -e SE_EVENT_BUS_HOST=selenium-hub
-          -e SE_EVENT_BUS_PUBLISH_PORT=4442
-          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-          -e SE_SESSION_RETRY_INTERVAL=1
-      chrome-node6:
-        image: selenium/node-chrome:latest
-        options: >-
-          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
-          --shm-size=2g
-          -e SE_EVENT_BUS_HOST=selenium-hub
-          -e SE_EVENT_BUS_PUBLISH_PORT=4442
-          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-          SE_SESSION_RETRY_INTERVAL=1
-          
     steps:
-    - name: Check test-runner IP
-      run: curl https://api.ipify.org
+    - name: Get test-runner IP
+      run: message=$(curl https://api.ipify.org) && message=$(echo $message | tr '\n' ' ') && message=$(echo $message | xargs) && echo "ip=$message" >> $GITHUB_OUTPUT
       id: test_runner_address
+    - name: Host address
+      run: echo "Host address ${{steps.test_runner_address.outputs.ip}}"
     - name: Checkout repo code 
       uses: actions/checkout@v3
     - name: Set up JDK 19
@@ -123,7 +109,17 @@ jobs:
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
     - name: Run the test suite
-      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=4 -DtestRunnerAddress=http://${{steps.test_runner_address.outputs.*}}:7080 -DwebAppAddress=http://localhost:7080 -DseleniumGridAddress=http://localhost:4444/wd/hub --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
+      run: >-
+        mvn test -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true 
+        -Dbrowser="remote-chrome" 
+        -DbrowserVersion=${{ needs.workflow_dispatch.inputs.chromeVersion.default }} 
+        -DheadlessBrowser=false -DtestsThreadCount=2
+        -DtestRunnerAddress="http://${{steps.test_runner_address.outputs.ip}}:7080"
+        -DwebAppAddress="http://localhost:7080"
+        -DuseSeleniumGrid=true
+        -DseleniumGridAddress="http://localhost:4444/wd/hub" 
+        -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
+        --batch-mode --update-snapshots
     - uses: actions/upload-artifact@v2
       if: always()
       with:

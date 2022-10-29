@@ -54,8 +54,9 @@
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-reload4j</artifactId>
+            <artifactId>slf4j-simple</artifactId>
             <version>2.0.3</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>
@@ -91,7 +92,9 @@
                         <codingChallengeWebsite.baseUrlSG>${testRunnerAddress}</codingChallengeWebsite.baseUrlSG>
                         <codingChallengeWebsite.seleniumGridUrl>${seleniumGridAddress}</codingChallengeWebsite.seleniumGridUrl>
                         <codingChallengeWebsite.useSeleniumGrid>${useSeleniumGrid}</codingChallengeWebsite.useSeleniumGrid>>
-                        <codingChallengeWebsite.headlessBrowser>true</codingChallengeWebsite.headlessBrowser>
+                        <codingChallengeWebsite.headlessBrowser>${headlessBrowser}</codingChallengeWebsite.headlessBrowser>
+                        <codingChallengeWebsite.browser>${browser}</codingChallengeWebsite.browser>
+                        <codingChallengeWebsite.browserVersion>${browserVersion}</codingChallengeWebsite.browserVersion>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

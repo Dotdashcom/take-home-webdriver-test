@@ -13,12 +13,22 @@ SG_ACTION=''
 
 ##############
 # Options
-DEFAULT_LOG_LEVEL=info
-TEST_SUITE_XML_FILE=regression.xml
-WD_REMOTE=false
-TEST_RUNNER_ADDR=http://192.168.65.2:7080
-SELENIUM_GRID_ADDRESS=http://0.0.0.0:4444/wd/hub
-WEB_APP_ADDRESS=http://0.0.0.0:7080
+DEFAULT_LOG_LEVEL="INFO"
+TEST_SUITE_XML_FILE="regression.xml"
+WD_REMOTE="false"
+TEST_RUNNER_ADDR="http://192.168.65.2:7080"
+SELENIUM_GRID_ADDRESS="http://0.0.0.0:4444/wd/hub"
+WEB_APP_ADDRESS="http://0.0.0.0:7080"
+SUREFIRE_REPORTS_FILE="/target/surefire-reports/index.html"
+
+# BROWSER for remote use
+BROWSER="chrome"
+BROWSER_VERSION="106.0.5249.119"
+REMOTE_CHROME_NODE_IMAGE_VERSION="4.5.2-20221021"
+# BROWSER_VERSION for local use
+#BROWSER=$(printf "chrome"
+#BROWSER_VERSION=""
+HEADLESS_BROWSER="false"
 
 ##############
 # Run-command args
@@ -38,7 +48,7 @@ while getopts ":rhT:G:" flag
 do
     case "${flag}" in
         r) WD_REMOTE="true";;
-        T) THREADS="${OPTARG}";;
+        T) THREADS=$(printf -v int "%d" ${OPTARG});;
         G) SG_ACTION="${OPTARG}";;
         h) printf "$USAGE" 1>&2 ; exit 1;;
         ?) printf "$BOLD""$(basename "$0"): illegal option: -${OPTARG}\n$USAGE\n""$BOLD"; exit 1 ;;
@@ -61,6 +71,7 @@ CONTAINER_SELENIUM_HUB_IMAGE="selenium/hub:latest";
 CONTAINER_SELENIUM_HUB_PORTS="4442-4444:4442-4444";
 CONTAINER_SELENIUM_HUB_RUN_CMD="docker run -d \
       -e SE_VNC_NO_PASSWORD=1 \
+      -e SE_SESSION_RETRY_INTERVAL=1 \
       --rm --net dotdash --name selenium-hub \
       -p 4442-4444:4442-4444 \
       -v /dev/shm:/dev/shm "$CONTAINER_SELENIUM_HUB_IMAGE;
@@ -71,8 +82,13 @@ CONTAINER_CHROME_NODES_IMAGE="selenium/node-chrome:latest";
 CONTAINER_CHROME_NODES_RUN_CMD="docker run -d --name chrome-node%s \
       --net dotdash -e SE_EVENT_BUS_HOST=selenium-hub \
       -v ""$(pwd)""/target:/home/seluser/Downloads \
-      --shm-size='2g' -e SE_EVENT_BUS_PUBLISH_PORT=4442 \
-      -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 "$CONTAINER_CHROME_NODES_IMAGE;
+      --shm-size='2g' \
+      -e SE_EVENT_BUS_PUBLISH_PORT=4442 \
+      -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 \
+      -e SE_NODE_SESSION_TIMEOUT=10 \
+      -e SE_NODE_MAX_SESSIONS=4 \
+      -e SE_NODE_MAX_INSTANCES="THREADS" \
+      -e SE_SESSION_RETRY_INTERVAL=1 "$CONTAINER_CHROME_NODES_IMAGE;
 #
 # Container network name
 NET_NAME="dotdash"
@@ -146,6 +162,17 @@ wait_until_container_is_ready() {
 
 start_chrome_nodes() {
 COUNTER=$1
+CONTAINER_IMAGE=$2
+strip_image_version "$CONTAINER_IMAGE"
+i_ver="$func_result"
+
+if [ "$BROWSER_VERSION" = "" ]; then
+  strip_image_name "$CONTAINER_IMAGE"
+  i_name="$REMOTE_CHROME_NODE_IMAGE_VERSION"
+  elif [ "$BROWSER_VERSION" != "" ]; then
+    i_name=
+  fi;
+  CONTAINER_CHROME_NODES_IMAGE="$i_name":"$i_ver"
   while [[ $COUNTER -ne 0 ]]
   do
     docker_container_startup "$CONTAINER_CHROME_NODES_IMAGE" "$(printf "$CONTAINER_CHROME_NODES_RUN_CMD" "$COUNTER")"
@@ -185,7 +212,11 @@ missing_selenium_grid() {
 
 missing_chrome_nodes() {
   strip_image_version $CONTAINER_CHROME_NODES_IMAGE;
-  i_name="$func_result"
+  i_name="$func_result";
+  if [[ "$BROWSER_VERSION" != "$func_result" && "$BROWSER_VERSION" != "" ]]; then
+    i_name=$BROWSER_VERSION;
+  fi;
+
   strip_image_name $CONTAINER_CHROME_NODES_IMAGE;
   i_ver="$func_result"
   printf "Chrome node image \r"
@@ -193,9 +224,8 @@ missing_chrome_nodes() {
   if [ ! "$var" ]; then
     printf "\r\033[KChrome node image not found. Pulling ""$CONTAINER_CHROME_NODES_IMAGE"" from the registry\n";
     func_result="docker pull $CONTAINER_CHROME_NODES_IMAGE";
-  else
-    func_result=""
-  fi
+  fi;
+  func_result=""
 }
 
 missing_docker_network_config() {
@@ -206,7 +236,7 @@ missing_docker_network_config() {
     func_result="docker network create -o com.docker.network.bridge.bridge dotdash";
   else
     func_result=""
-  fi
+  fi;
 }
 
 ##############
@@ -226,20 +256,29 @@ setup_where_necessary() {
 ##############
 # Clean, build, install, and run the test suite
 execute_the_tests() {
-  printf "$BGREEN""\n[Clean]\n""$NO_COLOR";
+  LIFE_CICLE_GOAL="test"
+  printf "\n[""$BGREEN""Clean""$NO_COLOR""]\n";
   mvn clean -f pom.xml --batch-mode --update-snapshots;
-  printf "$BGREEN""\n[Compile]\n""$NO_COLOR";
+  printf "\n["$BGREEN"Compile""$NO_COLOR""]\n";
   mvn compile -f pom.xml --batch-mode --update-snapshots;
+  printf "\n["$BGREEN"Running the test suite""$NO_COLOR""]\n";
+  mvn ${LIFE_CICLE_GOAL} -DsuiteXmlFile=$TEST_SUITE_XML_FILE \
+  -Dbrowser=$BROWSER -DbrowserVersion=$BROWSER_VERSION \
+  -DheadlessBrowser=$HEADLESS_BROWSER -DuseSeleniumGrid=$WD_REMOTE \
+  -DtestsThreadCount=$(( THREADS * 4)) -DtestRunnerAddress="${TEST_RUNNER_ADDR}" \
+  -DwebAppAddress="${WEB_APP_ADDRESS}" \
+  -DseleniumGridAddress="${SELENIUM_GRID_ADDRESS}" \
+  -Dorg.slf4j.simpleLogger.defaultLogLevel=$DEFAULT_LOG_LEVEL \
+  --batch-mode --update-snapshots &
+  wait;
   printf "$BGREEN""\n[Install]\n""$NO_COLOR";
   mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots &
   wait;
-  printf "$BGREEN""\n[Running the test suite]\n""$NO_COLOR";
-  mvn test -e -DsuiteXmlFile="$TEST_SUITE_XML_FILE" -DuseSeleniumGrid="${WD_REMOTE}" -DtestsThreadCount="$THREADS" -DtestRunnerAddress="$TEST_RUNNER_ADDR" -DwebAppAddress="$WEB_APP_ADDRESS" -DseleniumGridAddress="$SELENIUM_GRID_ADDRESS" --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel="${DEFAULT_LOG_LEVEL}";
 }
 
 stop_containers() {
   NAMES=$1;
-  printf "\n[""$BGREEN""Stopping containers]\n""$NO_COLOR";
+  printf "\n\n[""$BGREEN""Stopping containers""$NO_COLOR""]\n";
   if [ "$NAMES" ]; then # Several names
     if [[ $NAMES =~ "," ]]; then
       IFS=","; read -a starr <<< "$NAMES";
@@ -272,7 +311,7 @@ start_selenium_grid() {
   docker_container_startup "$CONTAINER_SELENIUM_HUB_IMAGE" "$CONTAINER_SELENIUM_HUB_RUN_CMD";
   wait_until_container_is_ready "$CONTAINER_SELENIUM_HUB_IP" "$CONTAINER_SELENIUM_HUB_PORTS";
   printf "\n[""$BGREEN""Starting Chrome nodes""$NO_COLOR""]\n";
-  start_chrome_nodes "$THREADS";
+  start_chrome_nodes THREADS "$CONTAINER_SELENIUM_HUB_IMAGE";
 }
 
 ##############
@@ -301,7 +340,7 @@ main() {
   # Run the test suite
   execute_the_tests;
   # Add link to the test report
-  printf '\n\n['"${BGREEN}"'Test results report: \e]8;;file://%s/target/surefire-reports/index.html\e\\Link to test report\e]8;;\e\\]\n'"${NO_COLOR}"'' "$(pwd)";
+  printf ''"${NO_COLOR}"'['"${BGREEN}"'Test results report'"${NO_COLOR}"']\n \e]8;;file://'"$(pwd)${SUREFIRE_REPORTS_FILE}"'\aLink to the test report\e]8;;\a';
 
   # Stop containers;
   stop_containers &

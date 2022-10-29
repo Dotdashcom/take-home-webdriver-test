@@ -33,13 +33,11 @@ public class DynamicContentPage {
 
     public DynamicContentPage (RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
-        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
         this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/dynamic_content";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
         this.caller.pageFactoryInitWait(pageTitle);
-        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//*[@href and text()= 'click here']"))));
     }
 
     public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }

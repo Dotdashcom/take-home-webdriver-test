@@ -33,13 +33,11 @@ public class ContextMenuPage {
 
     public ContextMenuPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
-        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
         this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/context_menu";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
         this.caller.pageFactoryInitWait(pageTitle);
-        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//div[@id='hot-spot']"))));
         this.mainWindow = caller.getDriver().getWindowHandle();
     }
 
