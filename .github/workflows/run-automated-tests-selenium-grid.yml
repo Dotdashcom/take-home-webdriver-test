@@ -62,7 +62,6 @@ jobs:
           SE_SESSION_RETRY_INTERVAL: 1
       chrome-node1:
         image: selenium/node-chrome:latest
-        depends_on: selenium-hub
         environment:
           - SE_EVENT_BUS_HOST=selenium-hub
           - SE_EVENT_BUS_PUBLISH_PORT=4442
