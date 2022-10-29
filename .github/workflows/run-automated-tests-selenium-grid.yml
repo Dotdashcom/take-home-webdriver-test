@@ -109,6 +109,6 @@ jobs:
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
     - name: Run the test suite
-      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=6 --batch-mode --update-snapshots
+      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=6 --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ github.event.inputs.logLevel }}
     - uses: actions/upload-artifact@v2
       if: always()
