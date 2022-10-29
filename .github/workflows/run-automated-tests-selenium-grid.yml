@@ -49,7 +49,6 @@ jobs:
           --rm
       selenium-hub:
         image: selenium/hub:latest
-        container_name: selenium-hub
         ports:
           - 4442:4442
           - 4443:4443
@@ -63,7 +62,6 @@ jobs:
           SE_SESSION_RETRY_INTERVAL: 1
       chrome-node1:
         image: selenium/node-chrome:latest
-        container_name: chrome-node1
         shm_size: 2gb
         depends_on: selenium-hub
         environment:
@@ -78,7 +76,6 @@ jobs:
           -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
       chrome-node2:
         image: selenium/node-chrome:latest
-        container_name: chrome-node2
         shm_size: 2gb
         depends_on: selenium-hub
         environment:
@@ -91,7 +88,6 @@ jobs:
           - SE_NODE_SESSION_TIMEOUT=10
         options: >-
           -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
-
     steps:
     - name: Get test-runner IP
       run: message=$(curl https://api.ipify.org) && message=$(echo $message | tr '\n' ' ') && message=$(echo $message | xargs) && echo "ip=$message" >> $GITHUB_OUTPUT
