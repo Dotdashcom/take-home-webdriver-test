@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${GITHUB_WORKSPACE}
     
     services:
       website:
@@ -35,8 +38,8 @@ jobs:
           -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
   
     steps:
-    - name: Checkout
-      run: actions/checkout
+    - name: Checkout repo code 
+      uses: actions/checkout@v3
     - name: Set up JDK 19
       uses: actions/setup-java@v3
       with:
