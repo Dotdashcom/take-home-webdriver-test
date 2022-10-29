@@ -29,7 +29,7 @@ jobs:
         image: selenium/node-chrome:latest
         options: >-
           -v $(pwd)/target:/home/seluser/Downloads
-          --shm-size='2g'
+          --shm-size=2g
           -e SE_EVENT_BUS_HOST=selenium-hub
           -e SE_EVENT_BUS_PUBLISH_PORT=4442
           -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
