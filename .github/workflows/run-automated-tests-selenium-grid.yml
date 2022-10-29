@@ -107,7 +107,7 @@ jobs:
           
     steps:
     - name: Check test-runner IP
-      run: message=$(curl https://api.ipify.org) && message=$(echo $message | tr '\n' ' ') && echo "ip=$message" >> $GITHUB_OUTPUT
+      run: message=$(curl https://api.ipify.org) && message=$(echo $message | tr '\n' ' ') && message=$(echo $message | xargs) && echo "ip=$message" >> $GITHUB_OUTPUT
       id: test_runner_address
     - name: Checkout repo code 
       uses: actions/checkout@v3
