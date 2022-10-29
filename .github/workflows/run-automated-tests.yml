@@ -47,6 +47,8 @@ jobs:
       with:
         java-version: '19'
         distribution: 'corretto'
+    - uses: browser-actions/setup-chrome@latest
+    - run: chrome --version
     - name: Clean 
       run: mvn clean -f pom.xml --batch-mode --update-snapshots 
     - name: Build
