@@ -67,10 +67,10 @@ jobs:
         -DsuiteXmlFile=regression.xml -DheadlessBrowser=false
         -Dbrowser="remote-chrome"
         -DbrowserVersion=${{ needs.workflow_dispatch.inputs.chromeVersion.default }}
-        -DtestRunnerAddress="http://localhost:7080" 
-        -DwebAppAddress="http://localhost:7080"
+        -DtestRunnerAddress="http://0.0.0.0:7080" 
+        -DwebAppAddress="http://0.0.0.0:7080"
         -DuseSeleniumGrid=false -DtestsThreadCount=4
-        -DseleniumGridAddress="http://localhost:4444/wd/hub" 
+        -DseleniumGridAddress="http://0.0.0.0:4444/wd/hub" 
         -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
         --batch-mode --update-snapshots
     - name: Install
