@@ -221,15 +221,15 @@ setup_where_necessary() {
 ##############
 # Clean, build, install, and run the test suite
 execute_the_tests() {
-  printf "$BGREEN""\n[Clean]\n""$NO_COLOR"
-  mvn clean -f pom.xml
-  printf "$BGREEN""\n[Compile]\n""$NO_COLOR"
-  mvn compile -f pom.xml
+  printf "$BGREEN""\n[Clean]\n""$NO_COLOR";
+  mvn clean -f pom.xml --batch-mode --update-snapshots;
+  printf "$BGREEN""\n[Compile]\n""$NO_COLOR";
+  mvn compile -f pom.xml --batch-mode --update-snapshots;
   printf "$BGREEN""\n[Install]\n""$NO_COLOR";
-  mvn install -f pom.xml -DskipTests &
-  wait
+  mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots &
+  wait;
   printf "$BGREEN""\n[Running the test suite]\n""$NO_COLOR";
-  mvn test -e -DsuiteXmlFile="$TEST_SUITE_XML_FILE" -DuseSeleniumGrid="${WD_REMOTE}" -DtestsThreadCount="$THREADS";
+  mvn test -e -DsuiteXmlFile="$TEST_SUITE_XML_FILE" -DuseSeleniumGrid="${WD_REMOTE}" -DtestsThreadCount="$THREADS" --batch-mode --update-snapshots;
 }
 
 stop_containers() {
