@@ -75,7 +75,7 @@ jobs:
         --batch-mode --update-snapshots
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       if: always()
       with:
         name: Test run report

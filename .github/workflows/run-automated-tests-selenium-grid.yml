@@ -113,7 +113,7 @@ jobs:
         -DseleniumGridAddress="http://localhost:4444/wd/hub" 
         -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
         --batch-mode --update-snapshots
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       if: always()
       with:
         name: Test run report
