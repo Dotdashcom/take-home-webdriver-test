@@ -22,7 +22,6 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class UITest {
     public static final String DEFAULT_BROWSER = "chrome";
-    //public static final String DEFAULT_BROWSER_VERSION = "106.0.5249.119";
     public static final String DEFAULT_BROWSER_HEADLESS = "false";
     public static final String downloadsFolder = Paths.get("target/").toAbsolutePath().toString();
     private RemoteWebDriver driver;
@@ -72,7 +71,8 @@ public class UITest {
         // Common + hacky options
         chromeOptions.addArguments("download.prompt_for_download", "false");
         chromeOptions.addArguments("safebrowsing.enabled", "false");
-        chromeOptions.addArguments("--ignore-certificate-errors", "--disable-gpu");
+        chromeOptions.addArguments("--ignore-certificate-errors");
+        chromeOptions.addArguments("--disable-gpu");
         chromeOptions.addArguments("--disable-web-security");
         chromeOptions.addArguments("--allow-running-insecure-content");
         chromeOptions.addArguments("--ignore_ssl");
@@ -100,7 +100,7 @@ public class UITest {
             this.driver.setFileDetector(new LocalFileDetector());
             return driver;
         } else {
-            chromedriver().browserVersion(browserVersion).setup();
+            chromedriver().setup();
             return new ChromeDriver(chromeOptions);
         }
     }
