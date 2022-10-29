@@ -23,6 +23,7 @@ public class CheckboxesPage {
     public List<WebElement> checkboxElements;
     private final HashMap<Integer, Boolean> expectedValues = new HashMap<>();
     private final HashMap<Integer, Boolean> currentValues = new HashMap<>();
+    private final WebDriverWait genericWait;
     private final String pageUrl;
     private final UITest caller;
 
@@ -30,9 +31,8 @@ public class CheckboxesPage {
         this.caller = caller;
         this.pageUrl = this.caller.getBaseUrl() + "/checkboxes";
         this.caller.getDriver().get(this.pageUrl);
-        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
+        this.genericWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
         PageFactory.initElements(this.caller.getDriver(), this);
-        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//input[@type='checkbox']"))));
         this.caller.pageFactoryInitWait(pageTitle);
         this.currentValues.put(0, this.checkboxElements.get(0).isSelected());
         this.currentValues.put(1, this.checkboxElements.get(1).isSelected());
@@ -63,6 +63,7 @@ public class CheckboxesPage {
     };
 
     private void clickCheckbox(Integer checkbox) {
+        genericWait.until(ExpectedConditions.visibilityOf(checkboxElements.get(checkbox)));
         this.checkboxElements.get(checkbox).click();
     }
 

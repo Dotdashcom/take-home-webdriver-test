@@ -26,13 +26,11 @@ public class DropdownPage {
 
     public DropdownPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
-        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
         this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/dropdown";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
         this.caller.pageFactoryInitWait(pageTitle);
-        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle), visibilityOf(this.dropdown)));
         this.dropdwn = new Select(this.dropdown);
         this.dropdownOptions = this.dropdwn.getOptions();
     }

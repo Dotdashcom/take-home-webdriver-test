@@ -32,13 +32,11 @@ public class DragAndDropPage {
 
     public DragAndDropPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
-        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
         this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/drag_and_drop";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
         this.caller.pageFactoryInitWait(pageTitle);
-        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//*[@id='column-a']"))));
         this.boxes.put("boxA", this.boxA);
         this.boxes.put("boxB", this.boxB);
         this.letters.put("boxOne", this.boxOne);

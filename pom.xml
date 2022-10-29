@@ -93,6 +93,8 @@
                         <codingChallengeWebsite.seleniumGridUrl>${seleniumGridAddress}</codingChallengeWebsite.seleniumGridUrl>
                         <codingChallengeWebsite.useSeleniumGrid>${useSeleniumGrid}</codingChallengeWebsite.useSeleniumGrid>>
                         <codingChallengeWebsite.headlessBrowser>${headlessBrowser}</codingChallengeWebsite.headlessBrowser>
+                        <codingChallengeWebsite.browser>${browser}</codingChallengeWebsite.browser>
+                        <codingChallengeWebsite.browserVersion>${browserVersion}</codingChallengeWebsite.browserVersion>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

@@ -36,15 +36,12 @@ public class DynamicControlsPage {
 
     public DynamicControlsPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
-        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(3));
-        this.genericWait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
+        this.genericWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
         this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/dynamic_controls";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
         this.caller.pageFactoryInitWait(pageTitle);
-        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//input[@type='checkbox']"))));
-
     }
 
     public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }

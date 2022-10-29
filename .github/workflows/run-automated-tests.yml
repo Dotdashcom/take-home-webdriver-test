@@ -26,6 +26,14 @@ on:
         description: 'Environment to run tests against'
         type: environment
         required: true
+      chromeVersion:
+        description: 'Chrome Version'
+        required: true
+        default: '106.0.5249.119'
+        type: choice
+        options:
+          - "latest"
+          - "106.0.5249.119"
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -48,20 +56,30 @@ jobs:
         java-version: '19'
         distribution: 'corretto'
     - uses: browser-actions/setup-chrome@latest
-    - run: chrome --version
+    - run: chrome --version && whoami
     - name: Clean 
       run: mvn clean -f pom.xml --batch-mode --update-snapshots 
     - name: Build
       run: mvn compile -f pom.xml --batch-mode --update-snapshots
+    - name: Run the test suite
+      run: >-
+        mvn test -e 
+        -DsuiteXmlFile=regression.xml -DheadlessBrowser=false
+        -Dbrowser="remote-chrome"
+        -DbrowserVersion=${{ needs.workflow_dispatch.inputs.chromeVersion.default }}
+        -DtestRunnerAddress="http://localhost:7080" 
+        -DwebAppAddress="http://localhost:7080"
+        -DuseSeleniumGrid=false -DtestsThreadCount=4
+        -DseleniumGridAddress="http://localhost:4444/wd/hub" 
+        -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
+        --batch-mode --update-snapshots
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
-    - name: Run the test suite
-      run: mvn test -e -DsuiteXmlFile=regression.xml -DheadlessBrowser=false -DuseSeleniumGrid=false -DtestsThreadCount=4 -DtestRunnerAddress="http://localhost:7080" -DwebAppAddress="http://localhost:7080" -DseleniumGridAddress="http://localhost:4444/wd/hub" --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
     - uses: actions/upload-artifact@v2
       if: always()
       with:
         name: Test run report
-        path: target/surefire-reports/
+        path: target/
     - name: Display structure of uploaded files
       run: ls -R
-      working-directory: target/surefire-reports/
+      working-directory: target/
