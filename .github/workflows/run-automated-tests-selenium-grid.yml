@@ -62,16 +62,15 @@ jobs:
           SE_SESSION_RETRY_INTERVAL: 1
       chrome-node1:
         image: selenium/node-chrome:latest
-        environment:
-          - SE_EVENT_BUS_HOST=selenium-hub
-          - SE_EVENT_BUS_PUBLISH_PORT=4442
-          - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-          - SE_SESSION_RETRY_INTERVAL=1
-          - SE_NODE_MAX_INSTANCES=4
-          - SE_NODE_MAX_SESSIONS=2
-          - SE_NODE_SESSION_TIMEOUT=10
         options: >-
           -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
+          -e SE_EVENT_BUS_HOST=selenium-hub
+          -e SE_EVENT_BUS_PUBLISH_PORT=4442
+          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          -e SE_SESSION_RETRY_INTERVAL=1
+          -e SE_NODE_MAX_INSTANCES=4
+          -e SE_NODE_MAX_SESSIONS=2
+          -e SE_NODE_SESSION_TIMEOUT=10
       chrome-node2:
         image: selenium/node-chrome:latest
         shm_size: 2gb
