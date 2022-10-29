@@ -10,7 +10,7 @@ on:
       logLevel:
         description: 'Log level'
         required: true
-        default: ${{ env.LOG_LEVEL }}
+        default: info
         type: choice
         options:
         - info
@@ -24,7 +24,7 @@ on:
         description: 'Environment to run tests against'
         type: environment
         required: true
-        default: ${{ env.environment }}
+        default: staging
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -116,3 +116,9 @@ jobs:
       run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=6 --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
     - uses: actions/upload-artifact@v2
       if: always()
+      with:
+        name: Test run report
+        path: target/surefire-reports/
+    - name: Display structure of uploaded files
+      run: ls -R
+      working-directory: target/surefire-reports/
