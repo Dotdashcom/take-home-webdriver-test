@@ -1,13 +1,16 @@
 # Workflow to run automated tests on code pushed to master branch
 
 name: Run automated tests in parallel when code is pushed to master
+env:
+  LOG_LEVEL: info
+  ENVIRONMENT: staging
 on:
   workflow_dispatch:
     inputs:
       logLevel:
         description: 'Log level'
         required: true
-        default: 'warning'
+        default: ${{ env.LOG_LEVEL }}
         type: choice
         options:
         - info
@@ -20,7 +23,8 @@ on:
       environment:
         description: 'Environment to run tests against'
         type: environment
-        required: true      
+        required: true
+        default: ${{ env.environment }}
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -109,6 +113,6 @@ jobs:
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
     - name: Run the test suite
-      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=6 --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ workflow_dispatch.inputs.logLevel.default }}
+      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=6 --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
     - uses: actions/upload-artifact@v2
       if: always()
