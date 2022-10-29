@@ -12,7 +12,7 @@ on:
       logLevel:
         description: 'Log level'
         required: true
-        default: ${{ env.LOG_LEVEL }}
+        default: info
         type: choice
         options:
         - info
