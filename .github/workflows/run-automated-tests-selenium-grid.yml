@@ -46,6 +46,7 @@ jobs:
         options: >-
           --rm
           -v /dev/shm:/dev/shm
+          -e SE_SESSION_RETRY_INTERVAL=1
         env:
           SE_VNC_NO_PASSWORD: 1
           SE_SESSION_RETRY_INTERVAL: 1
