@@ -1,6 +1,8 @@
 # Workflow to run automated tests on code pushed to master branch
 
 name: Run automated tests on code pushed to master
+env:
+  LOG_LEVEL: info
 on:
   push:
     branches:
@@ -10,7 +12,7 @@ on:
       logLevel:
         description: 'Log level'
         required: true
-        default: 'info'
+        default: ${{ env.LOG_LEVEL }}
         type: choice
         options:
         - info
@@ -23,15 +25,13 @@ on:
       environment:
         description: 'Environment to run tests against'
         type: environment
-        required: true  
+        required: true
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
-    env:
-       logLevel: ${{ workflow_dispatch.inputs.logLevel.default }}
     services:
       website:
         image: gprestes/the-internet:latest
@@ -112,6 +112,6 @@ jobs:
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
     - name: Run the test suite
-      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=1 --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.build-and-test.env.logLevel }}
+      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=1 --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
     - uses: actions/upload-artifact@v2
       if: always()
