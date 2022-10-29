@@ -24,7 +24,7 @@ on:
         description: 'Environment to run tests against'
         type: environment
         required: true
-        default: ${{ env.environment }}
+        default: staging
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
