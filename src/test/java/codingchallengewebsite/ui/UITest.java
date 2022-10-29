@@ -80,6 +80,8 @@ public class UITest {
         chromeOptions.addArguments("--disable-infobars"); //
         chromeOptions.addArguments("--test-type"); //
         chromeOptions.addArguments("--disable-extensions"); //
+        chromeOptions.addArguments("--disable-dev-shm-usage"); //
+        chromeOptions.addArguments("--no-sandbox"); //
 
         // Use headless only on local runs. When using selenium grid, download fails in Chrome because of a bug.
         if (headless.equals("true") && useSeleniumGrid.equals("false")) {
