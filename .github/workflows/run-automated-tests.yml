@@ -56,7 +56,7 @@ jobs:
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
     - name: Run the test suite
-      run: mvn test -e -DsuiteXmlFile=regression.xml -DheadlessBrowser=false -DuseSeleniumGrid=false -DtestsThreadCount=4 -DtestRunnerAddress=http://localhost:7080 -DwebAppAddress=http://localhost:7080 -DseleniumGridAddress=http://localhost:4444/wd/hub --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
+      run: mvn test -e -DsuiteXmlFile=regression.xml -DheadlessBrowser=false -DuseSeleniumGrid=false -DtestsThreadCount=4 -DtestRunnerAddress="http://localhost:7080" -DwebAppAddress="http://localhost:7080" -DseleniumGridAddress="http://localhost:4444/wd/hub" --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
     - uses: actions/upload-artifact@v2
       if: always()
       with:
