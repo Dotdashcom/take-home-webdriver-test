@@ -1,9 +1,6 @@
 package codingchallengewebsite.ui;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -25,21 +22,19 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class UITest {
     public static final String DEFAULT_BROWSER = "chrome";
-    public static final String DEFAULT_BROWSER_VERSION = "106.0.5249.119";
+    //public static final String DEFAULT_BROWSER_VERSION = "106.0.5249.119";
     public static final String DEFAULT_BROWSER_HEADLESS = "false";
     public static final String downloadsFolder = Paths.get("target/").toAbsolutePath().toString();
     private RemoteWebDriver driver;
     private String baseUrl;
     private static final String pageFooterXpath = "//*[@id='page-footer']";
 
-    public UITest() {
-        BasicConfigurator.configure();
-        Logger.getRootLogger().setLevel(Level.INFO);
-    }
+    public UITest() { }
 
     @Parameters({"browser", "browserVersion", "codingChallengeWebsite.headlessBrowser", "codingChallengeWebsite.baseUrl", "codingChallengeWebsite.baseUrlSG", "codingChallengeWebsite.seleniumGridUrl", "codingChallengeWebsite.useSeleniumGrid"})
     @BeforeMethod
-        public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional(DEFAULT_BROWSER_VERSION) String browserVersion, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String baseUrl, @Optional("") String baseUrlSG, @Optional("") String remoteUrl, @Optional("") String useSeleniumGrid) {
+        //public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional(DEFAULT_BROWSER_VERSION) String browserVersion, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String baseUrl, @Optional("") String baseUrlSG, @Optional("") String remoteUrl, @Optional("") String useSeleniumGrid) {
+        public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional("") String browserVersion, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String baseUrl, @Optional("") String baseUrlSG, @Optional("") String remoteUrl, @Optional("") String useSeleniumGrid) {
         if (useSeleniumGrid.equals("true")) { this.setBaseUrl(baseUrlSG); } else { this.setBaseUrl(baseUrl); }
 
         switch (browser) {
@@ -92,9 +87,7 @@ public class UITest {
 
         // Remote driver session
         if (useSeleniumGrid.equals("true")) {
-            //WebDriverManager.chromedriver().browserInDocker().browserVersion("106.0.5249.119");
-            WebDriverManager.chromedriver().driverVersion("106.0.5249.61").setup();
-            WebDriverManager.chromedriver().useBetaVersions();
+            //WebDriverManager.chromedriver().useBetaVersions();
             WebDriverManager.chromedriver().forceDownload();
             WebDriverManager.chromedriver().browserVersionDetectionCommand(" ");
             try {
