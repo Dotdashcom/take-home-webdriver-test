@@ -1,6 +1,6 @@
 # Workflow to run automated tests on code pushed to master branch
 
-name: Run automated tests on code pushed to master
+name: Run automated tests suite
 env:
   LOG_LEVEL: info
 on:
@@ -12,7 +12,7 @@ on:
       logLevel:
         description: 'Log level'
         required: true
-        default: info #${{env.LOG_LEVEL}}
+        default: info
         type: choice
         options:
         - info
