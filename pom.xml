@@ -92,7 +92,7 @@
                         <codingChallengeWebsite.baseUrlSG>${testRunnerAddress}</codingChallengeWebsite.baseUrlSG>
                         <codingChallengeWebsite.seleniumGridUrl>${seleniumGridAddress}</codingChallengeWebsite.seleniumGridUrl>
                         <codingChallengeWebsite.useSeleniumGrid>${useSeleniumGrid}</codingChallengeWebsite.useSeleniumGrid>>
-                        <codingChallengeWebsite.headlessBrowser>true</codingChallengeWebsite.headlessBrowser>
+                        <codingChallengeWebsite.headlessBrowser>${headlessBrowser}</codingChallengeWebsite.headlessBrowser>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

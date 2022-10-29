@@ -107,7 +107,7 @@ jobs:
           
     steps:
     - name: Check test-runner IP
-      run: curl https://api.ipify.org >> $GITHUB_OUTPUT
+      run: $message=$(curl https://api.ipify.org) && $message=$(echo $message | tr '\n' ' ') && echo "ip=$message" >> $GITHUB_OUTPUT
       id: test_runner_address
     - name: Checkout repo code 
       uses: actions/checkout@v3
@@ -123,7 +123,7 @@ jobs:
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
     - name: Run the test suite
-      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=4 -DtestRunnerAddress=http://${{steps.test_runner_address.outputs.*}}:7080 -DwebAppAddress=http://localhost:7080 -DseleniumGridAddress=http://localhost:4444/wd/hub --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
+      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DheadlessBrowser=false -DtestsThreadCount=4 -DtestRunnerAddress=http://${{steps.test_runner_address.outputs.*}}:7080 -DwebAppAddress=http://localhost:7080 -DseleniumGridAddress=http://localhost:4444/wd/hub --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
     - uses: actions/upload-artifact@v2
       if: always()
       with:
