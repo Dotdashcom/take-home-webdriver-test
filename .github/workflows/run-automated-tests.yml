@@ -1,6 +1,6 @@
 # Workflow to run automated tests on code pushed to master branch
 
-name: Run automated tests on code pushed to master
+name: Run automated tests suite
 env:
   LOG_LEVEL: info
 on:
