@@ -87,12 +87,12 @@ jobs:
         java-version: '19'
         distribution: 'corretto'
     - name: Clean 
-      run: mvn clean -f pom.xml --batch-mode --update-snapshots
+      run: mvn clean -f pom.xml --batch-mode --update-snapshots 
     - name: Build
       run: mvn compile -f pom.xml --batch-mode --update-snapshots
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
     - name: Run the test suite
-      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=1 --batch-mode --update-snapshots
+      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=1 --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=debug
     - uses: actions/upload-artifact@v2
       if: always()
