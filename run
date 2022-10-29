@@ -60,7 +60,7 @@ CONTAINER_SELENIUM_HUB_RUN_CMD="docker run -d \
 CONTAINER_SELENIUM_HUB_IP="0.0.0.0"
 #
 # Chrome nodes
-CONTAINER_CHROME_NODES_IMAGE="selenium/node-chrome:4.5.2-20221021";
+CONTAINER_CHROME_NODES_IMAGE="selenium/node-chrome:latest";
 CONTAINER_CHROME_NODES_RUN_CMD="docker run -d --name chrome-node%s \
       --net dotdash -e SE_EVENT_BUS_HOST=selenium-hub \
       -v ""$(pwd)""/target:/home/seluser/Downloads \

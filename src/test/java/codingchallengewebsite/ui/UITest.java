@@ -4,35 +4,38 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Paths;
 import org.openqa.selenium.remote.LocalFileDetector;
+
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.util.stream.Stream;
 import static io.github.bonigarcia.wdm.WebDriverManager.chromedriver;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class UITest {
     public static final String DEFAULT_BROWSER = "chrome";
-    public static final String DEFAULT_BROWSER_VERSION = "106.0.5249.61";
+    public static final String DEFAULT_BROWSER_VERSION = "106.0.5249.119";
     public static final String DEFAULT_BROWSER_HEADLESS = "false";
     public static final String downloadsFolder = Paths.get("target/").toAbsolutePath().toString();
     private RemoteWebDriver driver;
     private String baseUrl;
+    private static final String pageFooterXpath = "//*[@id='page-footer']";
 
-    public UITest() { BasicConfigurator.configure(); Logger.getRootLogger().setLevel(Level.ERROR);}
+    public UITest() { BasicConfigurator.configure(); Logger.getRootLogger().setLevel(Level.INFO);}
 
-    @Parameters({"browser", "browser_version", "codingChallengeWebsite.headlessBrowser", "codingChallengeWebsite.baseUrl", "codingChallengeWebsite.baseUrlSG", "codingChallengeWebsite.seleniumGridUrl", "codingChallengeWebsite.useSeleniumGrid"})
+    @Parameters({"browser", "browserVersion", "codingChallengeWebsite.headlessBrowser", "codingChallengeWebsite.baseUrl", "codingChallengeWebsite.baseUrlSG", "codingChallengeWebsite.seleniumGridUrl", "codingChallengeWebsite.useSeleniumGrid"})
     @BeforeMethod
         public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional(DEFAULT_BROWSER_VERSION) String browser_version, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String base_url, @Optional("") String base_urlSG, @Optional("") String remote_url, @Optional("") String useSeleniumGrid) {
         if (useSeleniumGrid.equals("true")) { this.setBaseUrl(base_urlSG); } else { this.setBaseUrl(base_url); }
@@ -56,7 +59,7 @@ public class UITest {
         driver.quit();
     }
 
-    private RemoteWebDriver requestChromeDriver(String browser_version, String headless, String remote_url, String useSeleniumGrid) {
+    private RemoteWebDriver requestChromeDriver(String browserVersion, String headless, String remoteUrl, String useSeleniumGrid) {
         ChromeOptions chromeOptions = new ChromeOptions();
         Map<String, Object> chromeExpOptions = new HashMap<>();
 
@@ -86,20 +89,20 @@ public class UITest {
 
         // Remote driver session
         if (useSeleniumGrid.equals("true")) {
-            WebDriverManager.chromedriver().browserInDocker().browserVersion("106.0.5249.61");
+            //WebDriverManager.chromedriver().browserInDocker().browserVersion("106.0.5249.119");
             WebDriverManager.chromedriver().driverVersion("106.0.5249.61").setup();
             WebDriverManager.chromedriver().useBetaVersions();
             WebDriverManager.chromedriver().forceDownload();
             WebDriverManager.chromedriver().browserVersionDetectionCommand(" ");
             try {
-                this.driver = (RemoteWebDriver) WebDriverManager.chromedriver().remoteAddress(new URL(remote_url)).capabilities(chromeOptions).create();
+                this.driver = (RemoteWebDriver) WebDriverManager.chromedriver().remoteAddress(new URL(remoteUrl)).capabilities(chromeOptions).create();
             } catch (MalformedURLException e) {
                 throw new RuntimeException(e);
             }
             this.driver.setFileDetector(new LocalFileDetector());
             return driver;
         } else {
-            chromedriver().browserVersion(browser_version).setup();
+            chromedriver().browserVersion(browserVersion).setup();
             return new ChromeDriver(chromeOptions);
         }
     }
@@ -149,41 +152,15 @@ public class UITest {
     }
     public static void reloadPage(RemoteWebDriver driver) { driver.navigate().refresh(); }
 
-    public static final class CleanText
+    public static String cleanTextContent(String text)
     {
-        public static void main(String[] args)
-        {
-            File file = new File("c:/temp/data.txt");
-            String uncleanContent = readFileIntoString(file);
-            System.out.println(uncleanContent);
-            String cleanContent = cleanTextContent(uncleanContent);
-            System.out.println(cleanContent);
-        }
-
-        public static String readFileIntoString(File file)
-        {
-            StringBuilder contentBuilder = new StringBuilder();
-            try (Stream<String> stream = Files.lines(Paths.get(file.toURI())))
-            {
-                stream.forEach(s -> contentBuilder.append(s).append("\n"));
-            }
-            catch (IOException e)
-            {
-                System.out.println("Error reading " + file.getAbsolutePath());
-            }
-            return contentBuilder.toString();
-        }
-
-        public static String cleanTextContent(String text)
-        {
-            // strips off all non-ASCII characters
-            text = text.replaceAll("[^\\x00-\\x7F]", "");
-            // erases all the ASCII control characters
-            text = text.replaceAll("[\\p{Cntrl}&&[^\r\n\t]]", "");
-            // removes non-printable characters from Unicode
-            text = text.replaceAll("\\p{C}", "");
-            return text.trim();
-        }
+        // strips off all non-ASCII characters
+        text = text.replaceAll("[^\\x00-\\x7F]", "");
+        // erases all the ASCII control characters
+        text = text.replaceAll("[\\p{Cntrl}&&[^\r\n\t]]", "");
+        // removes non-printable characters from Unicode
+        text = text.replaceAll("\\p{C}", "");
+        return text.trim();
     }
 
     public RemoteWebDriver getDriver() {
@@ -200,5 +177,15 @@ public class UITest {
 
     public void setBaseUrl(String baseUrl) {
         this.baseUrl = baseUrl;
+    }
+
+    public final Boolean isPageOpen(String pageUrl, WebElement pageTitle) { return this.getDriver().getCurrentUrl().equals(pageUrl) && pageTitle.isDisplayed(); }
+    public final Boolean isPageOpen(String pageUrl) { return this.getDriver().getCurrentUrl().equals(pageUrl); }
+
+    public final WebElement getPageFooter() { return this.getDriver().findElement(By.xpath(pageFooterXpath)); }
+
+    public final void pageFactoryInitWait(WebElement pageTitle) {
+        WebDriverWait pageFactoryInitWait = new WebDriverWait(this.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
+        pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(pageTitle), visibilityOf(this.getPageFooter())));
     }
 }

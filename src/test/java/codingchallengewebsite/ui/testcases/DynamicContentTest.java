@@ -40,7 +40,7 @@ public class DynamicContentTest extends UITest {
         HashMap<String, String> content, newContent;
         DynamicContentPage dynamicContentPage = new DynamicContentPage(this.getDriver(), this);
         int attempts = 10;
-        boolean difference;
+        Boolean difference;
 
         // Validate page loaded
         Assert.assertTrue(dynamicContentPage.isPageOpen(), "Page not open");

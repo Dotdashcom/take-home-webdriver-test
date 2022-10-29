@@ -1,6 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -11,31 +12,36 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+
 public class FloatingMenuPage {
 
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='Floating Menu']")
-    private WebElement pageTitle;
+    public WebElement pageTitle;
     @FindBy(how = How.XPATH, using = "//*[@id='menu']")
-    private WebElement menu;
+    public WebElement menu;
     @FindBy(how = How.XPATH, using = "//body")
-    private WebElement pageBody;
+    public WebElement pageBody;
     @FindBy(how = How.XPATH, using = "//img[@alt='Fork me on GitHub']")
-    private WebElement gitHubLogo;
+    public WebElement gitHubLogo;
     @FindBy(how = How.XPATH, using = "//*[@id='page-footer']/div/div/a")
-    private WebElement elementalSeleniumLink;
-    private UITest caller;
+    public WebElement elementalSeleniumLink;
+    private final UITest caller;
     private final String pageUrl;
 
     public FloatingMenuPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
+        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
         this.caller.setDriver(driver);
         this.pageUrl = new StringBuilder(this.caller.getBaseUrl()).append("/floating_menu").toString();
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
+        this.caller.pageFactoryInitWait(pageTitle);
+        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//*[@id='menu']"))));
     }
 
-    public boolean isPageOpen() {
-        return this.caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().toString().contains("Floating Menu"); }
+    public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }
 
     public String getMenuPosition() {
         return menu.getAttribute("style"); }
@@ -47,6 +53,6 @@ public class FloatingMenuPage {
         wait.until(ExpectedConditions.visibilityOf(elementalSeleniumLink));
     }
 
-    public boolean validateMenuVisibility() {
+    public Boolean validateMenuVisibility() {
         return menu.isDisplayed(); }
 }

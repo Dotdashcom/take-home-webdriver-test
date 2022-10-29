@@ -11,81 +11,89 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+
 public class DynamicControlsPage {
 
     @FindBy(how = How.XPATH, using = "//h4[normalize-space()='Dynamic Controls']")
-    private WebElement pageTitle;
+    public WebElement pageTitle;
     @FindBy(how = How.XPATH, using = "//input[@type='text']")
-    private WebElement textBox;
+    public WebElement textBox;
     @FindBy(how = How.XPATH, using = "//input[@type='checkbox']")
-    private WebElement checkBox;
+    public WebElement checkBox;
     @FindBy(how = How.XPATH, using = "//button[text()= 'Enable']")
-    private WebElement enableButton;
+    public WebElement enableButton;
     @FindBy(how = How.XPATH, using = "//button[text()= 'Disable']")
-    private WebElement disableButton;
+    public WebElement disableButton;
     @FindBy(how = How.XPATH, using = "//button[text()= 'Add']")
-    private WebElement addButton;
+    public WebElement addButton;
     @FindBy(how = How.XPATH, using = "//button[text()= 'Remove']")
-    private WebElement removeButton;
+    public WebElement removeButton;
+    private final WebDriverWait genericWait;
     private final UITest caller;
     private final String pageUrl;
 
     public DynamicControlsPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
+        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(3));
+        this.genericWait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/dynamic_controls";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
+        this.caller.pageFactoryInitWait(pageTitle);
+        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//input[@type='checkbox']"))));
+
     }
 
-    public boolean isPageOpen() { // Check that the page loaded
-        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("Dynamic Controls"); }
+    public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }
 
     public void reloadPage() { UITest.reloadPage(caller.getDriver()) ;}
 
     public void enableTextBox() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
+        //WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         enableButton.click();
-        wait.until(ExpectedConditions.elementToBeClickable(disableButton));
-        wait.until(ExpectedConditions.elementToBeClickable(textBox)).isEnabled();
+        this.genericWait.until(ExpectedConditions.elementToBeClickable(disableButton));
+        this.genericWait.until(ExpectedConditions.elementToBeClickable(textBox)).isEnabled();
     }
 
     public void disableTextBox() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
+        //WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         disableButton.click();
-        wait.until(ExpectedConditions.elementToBeClickable(enableButton));
-        wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(textBox)));
+        this.genericWait.until(ExpectedConditions.elementToBeClickable(enableButton));
+        this.genericWait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(textBox)));
     }
 
     public void addCheckboxButton() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
+        //WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         addButton.click();
-        wait.until(ExpectedConditions.elementToBeClickable(removeButton));
-        wait.until(ExpectedConditions.visibilityOf(checkBox));
+        this.genericWait.until(ExpectedConditions.elementToBeClickable(removeButton));
+        this.genericWait.until(ExpectedConditions.visibilityOf(checkBox));
     }
 
     public void removeCheckboxButton() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
+        //WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         removeButton.click();
-        wait.until(ExpectedConditions.elementToBeClickable(addButton));
-        wait.until(ExpectedConditions.invisibilityOf(checkBox));
+        this.genericWait.until(ExpectedConditions.elementToBeClickable(addButton));
+        this.genericWait.until(ExpectedConditions.invisibilityOf(checkBox));
     }
 
     public void clickCheckbox() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
-        boolean currentState = this.isCheckboxSelected();
+        //WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
+        Boolean currentState = this.isCheckboxSelected();
         checkBox.click();
-        wait.until(ExpectedConditions.elementSelectionStateToBe(checkBox, !currentState));
+        this.genericWait.until(ExpectedConditions.elementSelectionStateToBe(checkBox, !currentState));
     }
 
-    public boolean isCheckboxSelected() {
+    public Boolean isCheckboxSelected() {
         return checkBox.isSelected();
     }
 
-    public boolean isCheckboxEnabled() {
+    public Boolean isCheckboxEnabled() {
         return !caller.getDriver().findElements(By.xpath("//input[@type='checkbox']")).isEmpty(); }
 
-    public boolean isTextboxEnabled() {
+    public Boolean isTextboxEnabled() {
         return textBox.isEnabled();
     }
 }

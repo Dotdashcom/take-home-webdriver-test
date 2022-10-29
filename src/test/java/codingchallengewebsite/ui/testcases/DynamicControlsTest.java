@@ -59,7 +59,7 @@ public class DynamicControlsTest extends UITest {
         Assert.assertTrue(dynamicControlsPage.isPageOpen(), "Page not open");
 
         // Validate checkbox toggle behaviour
-        boolean currentState = dynamicControlsPage.isCheckboxSelected();
+        Boolean currentState = dynamicControlsPage.isCheckboxSelected();
         dynamicControlsPage.clickCheckbox();
         Assert.assertEquals(dynamicControlsPage.isCheckboxSelected(), !currentState);
         dynamicControlsPage.clickCheckbox();

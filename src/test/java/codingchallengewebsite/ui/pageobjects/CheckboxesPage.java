@@ -13,10 +13,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.function.Function;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+
 public class CheckboxesPage {
-    private WebDriverWait wait;
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='Checkboxes']")
-    private WebElement pageTitle;
+    public WebElement pageTitle;
     @FindBy(how = How.XPATH, using = "//input[@type='checkbox']")
     public List<WebElement> checkboxElements;
     private final HashMap<Integer, Boolean> expectedValues = new HashMap<>();
@@ -28,33 +30,31 @@ public class CheckboxesPage {
         this.caller = caller;
         this.pageUrl = this.caller.getBaseUrl() + "/checkboxes";
         this.caller.getDriver().get(this.pageUrl);
-        wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
+        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
         PageFactory.initElements(this.caller.getDriver(), this);
-        WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(this.pageTitle));
-        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//input[@type='checkbox']")));
+        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//input[@type='checkbox']"))));
+        this.caller.pageFactoryInitWait(pageTitle);
         this.currentValues.put(0, this.checkboxElements.get(0).isSelected());
         this.currentValues.put(1, this.checkboxElements.get(1).isSelected());
         this.expectedValues.put(0, !this.checkboxElements.get(0).isSelected());
         this.expectedValues.put(1, !this.checkboxElements.get(1).isSelected());
     }
 
-    public boolean isPageOpen() {
-        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("Checkboxes"); }
+    public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }
 
     public Boolean clickOnCheckbox(Integer checkbox) {
         return performClickOnCheckbox(checkbox, updateOnClick); }
 
-    public boolean getCheckboxExpectedValue(Integer checkbox) {
+    public Boolean getCheckboxExpectedValue(Integer checkbox) {
         return this.expectedValues.get(checkbox); }
 
-    public boolean getCheckboxCurrentValue(Integer checkbox) {
+    public Boolean getCheckboxCurrentValue(Integer checkbox) {
         return this.currentValues.get(checkbox); }
 
     private Boolean performClickOnCheckbox(Integer parameter, Function<Integer, Boolean> updateOnClick) {
         return updateOnClick.apply(parameter); }
 
-    private Function<Integer, Boolean> updateOnClick = parameter -> {
+    Function<Integer, Boolean> updateOnClick = parameter -> {
         Boolean previousValue = this.getCheckboxCurrentValue(parameter);
         this.clickCheckbox(parameter);
         this.currentValues.put(parameter, this.checkboxElements.get(parameter).isSelected());
@@ -64,5 +64,9 @@ public class CheckboxesPage {
 
     private void clickCheckbox(Integer checkbox) {
         this.checkboxElements.get(checkbox).click();
+    }
+
+    public List<WebElement> getCheckboxElements() {
+        return this.checkboxElements;
     }
 }

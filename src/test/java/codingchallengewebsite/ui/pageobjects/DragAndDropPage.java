@@ -1,6 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -8,40 +9,43 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 import java.util.HashMap;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class DragAndDropPage {
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='Drag and Drop']")
-    private WebElement pageTitle;
+    public WebElement pageTitle;
     @FindBy(how = How.XPATH, using = "//*[@id='column-a']")
-    private WebElement boxA;
+    public WebElement boxA;
     @FindBy(how = How.XPATH, using = "//*[@id='column-a']/header")
-    private WebElement boxOne;
+    public WebElement boxOne;
     @FindBy(how = How.XPATH, using = "//*[@id='column-b']")
-    private WebElement boxB;
+    public WebElement boxB;
     @FindBy(how = How.XPATH, using = "//*[@id='column-b']/header")
-    private WebElement boxTwo;
+    public WebElement boxTwo;
     private final UITest caller;
-    private HashMap<String, WebElement> boxes = new HashMap<>();
-    private HashMap<String, WebElement> letters = new HashMap<>();
-    private String pageUrl;
+    private final HashMap<String, WebElement> boxes = new HashMap<>();
+    private final HashMap<String, WebElement> letters = new HashMap<>();
+    private final String pageUrl;
 
     public DragAndDropPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
+        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
         this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/drag_and_drop";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
+        this.caller.pageFactoryInitWait(pageTitle);
+        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//*[@id='column-a']"))));
         this.boxes.put("boxA", this.boxA);
         this.boxes.put("boxB", this.boxB);
         this.letters.put("boxOne", this.boxOne);
         this.letters.put("boxTwo", this.boxTwo);
     }
 
-    public boolean isPageOpen() {
-        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("Drag and Drop"); }
+    public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }
 
     public void dragAndDropBox(String source, String destination) {
         WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10));

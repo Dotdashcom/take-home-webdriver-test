@@ -12,34 +12,38 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.Objects;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class NotificationMessageRenderedPage {
 
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='Notification Message']")
-    private WebElement pageTitle;
-    @FindBy(how = How.XPATH, using = "//div[@id='flash']")
-    private WebElement flashNotification;
+    public WebElement pageTitle;
     @FindBy(how = How.XPATH, using = "//a[normalize-space()='Click here']")
-    private WebElement link;
+    public WebElement link;
+    @FindBy(how = How.XPATH, using = "//div[@id='flash']")
+    public WebElement flashNotification;
     public ArrayList<String> possibleMessages = new ArrayList<>();
     private final UITest caller;
     private final String pageUrl;
 
     public NotificationMessageRenderedPage(RemoteWebDriver driver, UITest caller) {
         this.caller = caller;
+        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
         this.caller.setDriver(driver);
-        this.pageUrl = new StringBuilder(this.caller.getBaseUrl()).append("/notification_message_rendered").toString();
+        this.pageUrl = this.caller.getBaseUrl() + "/notification_message_rendered";
         this.caller.getDriver().get(this.pageUrl);
         this.possibleMessages.add("Action unsuccesful, please try again");
         this.possibleMessages.add("Action successful");
         // Deactivated, because it never showed up on the website: bug?
         //---> this.possibleMessages.add("Action Unsuccessful");
         PageFactory.initElements(driver, this);
+        this.caller.pageFactoryInitWait(pageTitle);
+        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//a[normalize-space()='Click here']"))));
     }
 
-    public boolean isPageOpen() {
-        return Objects.equals(caller.getDriver().getCurrentUrl(), this.pageUrl) && this.pageTitle.getText().toString().contains("Notification Message"); }
+    public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }
 
     public void clickOnLink() {
         Actions builder = new Actions(caller.getDriver());
@@ -54,20 +58,20 @@ public class NotificationMessageRenderedPage {
         WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
 
         this.clickOnLink();
-        newMessage = UITest.CleanText.cleanTextContent(flashNotification.getText().trim());
+        newMessage = UITest.cleanTextContent(flashNotification.getText().trim());
         wait.until(ExpectedConditions.visibilityOf(flashNotification));
 
         return newMessage;
     }
 
-    public boolean validateFlashMessages() {
+    public Boolean validateFlashMessages() {
         WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
         String currentMessage = this.getFlashMessage();
         this.clickOnLink();
-        int retries = this.possibleMessages.size();
+        int retries = this.getPossibleMessages().size();
 
         while (retries > 0) {
-            for (String message : this.possibleMessages) {
+            for (String message : this.getPossibleMessages()) {
                 if (message.trim().contains(currentMessage.trim())) {
                     retries--; }
             }

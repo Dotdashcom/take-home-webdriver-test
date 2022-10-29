@@ -38,11 +38,12 @@ _Note: the __run__ command pulls the docker images and configures the docker net
 * Tests locally; spawns 5 threads in parallel,
 
         ./run -T 5
-* Tests against a remote Selenium Grid; spawns 6 threads/chrome-nodes in parallel,
+* Tests against a remote Selenium Grid; spawns 4 threads/chrome-nodes in parallel,
 
-        ./run -r -T 6
+        ./run -r -T 4
   
 _Note: all the above commands, start and stop the Webapp and the Selenium Grid automatically._
+_Note2: The amount of chrome nodes that will successfully run your tests will depend on your machine. On my machine, running more than 4 nodes may turn tests unstable._
 <br>
 
 ## Stopping / Starting

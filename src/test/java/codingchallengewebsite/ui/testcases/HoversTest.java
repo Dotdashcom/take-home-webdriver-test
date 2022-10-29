@@ -15,7 +15,7 @@ public class HoversTest extends UITest {
     public void validateHoverAndUserDetails() {
         HoversPage hoversPage = new HoversPage(this.getDriver(), this);
         Map.Entry<String, String> firstEntry = null;
-        boolean hoverValidation;
+        Boolean hoverValidation;
 
         // Validate page loaded
         Assert.assertTrue(hoversPage.isPageOpen(), "Page not open");
@@ -29,7 +29,7 @@ public class HoversTest extends UITest {
         // Validate information displayed
         Assert.assertTrue(hoverValidation, "Hover isn't working as expected");
 
-        // Make up a user
+        // Make up a fake user
         hoverValidation = hoversPage.validateHoverOverFigure("John Doe", "myFunPic.png");
         // Validate information not displayed
         Assert.assertFalse(hoverValidation, "Hover shouldn't be working, but it is");

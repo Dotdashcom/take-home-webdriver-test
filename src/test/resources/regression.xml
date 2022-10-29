@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Coding Challenge Website UI Regression Suite">
     <parameter name="browser" value="chrome"/>
-    <parameter name="browser_version" value="106.0.5249.61"/>
+    <parameter name="browserVersion" value="106.0.5249.119"/>
     <test name="Login Tests">
         <parameter name="username" value="tomsmith"/>
         <parameter name="password" value="SuperSecretPassword!"/>

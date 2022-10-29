@@ -15,7 +15,7 @@ public class LoginFormTest extends UITest {
     public LoginFormTest() { }
 
     @Parameters({"username", "password"})
-    @Test(description="Credentials validation - Valid Credentials")
+    @Test(description="Login form - Using valid Credentials")
     public void successfulLogin(@Optional(DEFAULT_USERNAME) String username, @Optional(DEFAULT_PASSWORD) String password) {
         LoginFormPage loginFormPage = new LoginFormPage(this.getDriver(), this);
 
@@ -28,7 +28,7 @@ public class LoginFormTest extends UITest {
     }
 
     @Parameters({"username", "password"})
-    @Test(description="Credentials validation - Invalid Username")
+    @Test(description="Login form - Using invalid Username")
     public void invalidUsername(@Optional(DEFAULT_USERNAME) String username, @Optional(DEFAULT_PASSWORD) String password) {
         String expectedUserErrorMessage = "Your username is invalid!";
         LoginFormPage loginFormPage = this.login("invalidUsername", password);
@@ -42,7 +42,7 @@ public class LoginFormTest extends UITest {
     }
 
     @Parameters({"username", "password"})
-    @Test(description="Credentials validation - Invalid Password")
+    @Test(description="Login form - Using invalid Password")
     public void invalidPassword(@Optional(DEFAULT_USERNAME) String username, @Optional(DEFAULT_PASSWORD) String password) {
         String expectedPasswordErrorMessage = "Your password is invalid!";
         LoginFormPage loginFormPage = this.login(username, "invalidPassword");

@@ -1,7 +1,9 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -14,57 +16,57 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+
 public class JavascriptAlertsPage {
 
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='JavaScript Alerts']")
-    private WebElement pageTitle;
+    public WebElement pageTitle;
     @FindBy(how = How.XPATH, using = "//button")
-    private List<WebElement> buttons;
+    public List<WebElement> buttons;
     @FindBy(how = How.XPATH, using = "//p[@id='result']")
-    private WebElement resultTextMessage;
+    public WebElement resultTextMessage;
     private final UITest caller;
-    private ArrayList<String> popupMessages = new ArrayList<>();
+    private final WebDriverWait genericWait;
+    private final ArrayList<String> popupMessages = new ArrayList<>();
     private final String pageUrl;
     private final String mainWindow;
 
-    public JavascriptAlertsPage(RemoteWebDriver driver, UITest caller) {
+    public JavascriptAlertsPage(RemoteWebDriver driver, @NotNull UITest caller) {
         this.caller = caller;
+        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
+        this.genericWait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         this.caller.setDriver(driver);
-        this.pageUrl = new StringBuilder(caller.getBaseUrl()).append("/javascript_alerts").toString();
+        this.pageUrl = caller.getBaseUrl() + "/javascript_alerts";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(driver, this);
+        this.caller.pageFactoryInitWait(pageTitle);
+        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//button"))));
         this.mainWindow = this.caller.getDriver().getWindowHandle();
         popupMessages.add("I am a JS Alert"); popupMessages.add("I am a JS Confirm"); popupMessages.add("I am a JS prompt");
     }
 
-    public boolean isPageOpen() {
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(pageTitle));
-        return caller.getDriver().getCurrentUrl().equals(this.pageUrl) && this.pageTitle.getText().contains("JavaScript Alerts");
-    }
+    public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }
 
-    public boolean validatePopupsDisplay(boolean skipMessages) {
+    public Boolean validatePopupsDisplay(Boolean skipMessages) {
         Actions builder = new Actions(caller.getDriver());
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         Alert alertPopup;
         String popUpMessage;
-        boolean success = true;
+        Boolean success = true;
         int i = 0;
 
         for (WebElement button : this.buttons) {
-            wait.until(ExpectedConditions.visibilityOf(button));
-            wait.until(ExpectedConditions.elementToBeClickable(button));
+            genericWait.until(ExpectedConditions.visibilityOf(button));
+            genericWait.until(ExpectedConditions.elementToBeClickable(button));
             builder.moveToElement(button).click(button).perform();
 
-            wait.until( d -> {
-                ExpectedConditions.alertIsPresent();
-                return true;
-            });
+            genericWait.until(ExpectedConditions.alertIsPresent());
 
             try {
                 alertPopup = caller.getDriver().switchTo().alert();
-                popUpMessage = alertPopup.getText().toString();
-                if (!popUpMessage.equals(popupMessages.get(i).toString())) {
+                popUpMessage = alertPopup.getText();
+                if (!popUpMessage.equals(popupMessages.get(i))) {
                     alertPopup.dismiss();
                     return false;
                 }
@@ -80,15 +82,15 @@ public class JavascriptAlertsPage {
         return success;
     }
 
-    public boolean validatePopupInputField() {
+    public Boolean validatePopupInputField() {
         Actions builder = new Actions(caller.getDriver());
-        WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
+        //WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         Alert alertPopup;
         String inputMessage = "This is a test message";
         WebElement buttonTobeTested = this.buttons.get(2);
 
-        wait.until(ExpectedConditions.visibilityOf(buttonTobeTested));
-        wait.until(ExpectedConditions.elementToBeClickable(buttonTobeTested));
+        genericWait.until(ExpectedConditions.visibilityOf(buttonTobeTested));
+        genericWait.until(ExpectedConditions.elementToBeClickable(buttonTobeTested));
         builder.moveToElement(buttonTobeTested).click(buttonTobeTested).perform();
 
         try {
@@ -96,7 +98,7 @@ public class JavascriptAlertsPage {
             alertPopup.sendKeys(inputMessage);
             alertPopup.accept();
             caller.getDriver().switchTo().window(this.mainWindow);
-            return resultTextMessage.getText().toString().equals("You entered: "+inputMessage);
+            return resultTextMessage.getText().equals("You entered: "+inputMessage);
         }
         catch (Exception e) {
             return false;
