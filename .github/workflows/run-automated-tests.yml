@@ -5,13 +5,33 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'info'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true  
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
-    
+    env:
+       logLevel: ${{ workflow_dispatch.inputs.logLevel.default }}
     services:
       website:
         image: gprestes/the-internet:latest
@@ -77,7 +97,6 @@ jobs:
           -e SE_EVENT_BUS_HOST=selenium-hub
           -e SE_EVENT_BUS_PUBLISH_PORT=4442
           -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-          
     steps:
     - name: Checkout repo code 
       uses: actions/checkout@v3
@@ -93,6 +112,6 @@ jobs:
     - name: Install
       run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
     - name: Run the test suite
-      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=1 --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=debug
+      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=1 --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.build-and-test.env.logLevel }}
     - uses: actions/upload-artifact@v2
       if: always()
