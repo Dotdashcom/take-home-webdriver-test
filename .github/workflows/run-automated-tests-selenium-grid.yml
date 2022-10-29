@@ -62,7 +62,6 @@ jobs:
           SE_SESSION_RETRY_INTERVAL: 1
       chrome-node1:
         image: selenium/node-chrome:latest
-        shm_size: 2gb
         depends_on: selenium-hub
         environment:
           - SE_EVENT_BUS_HOST=selenium-hub
