@@ -28,7 +28,7 @@ jobs:
       chrome-node:
         image: selenium/node-chrome:latest
         options: >-
-          -v $(pwd)/target:/home/seluser/Downloads
+          -v $GITHUB_WORKSPACE/target:/home/seluser/Downloads
           --shm-size=2g
           -e SE_EVENT_BUS_HOST=selenium-hub
           -e SE_EVENT_BUS_PUBLISH_PORT=4442
