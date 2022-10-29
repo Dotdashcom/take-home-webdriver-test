@@ -16,6 +16,9 @@ SG_ACTION=''
 DEFAULT_LOG_LEVEL=info
 TEST_SUITE_XML_FILE=regression.xml
 WD_REMOTE=false
+TEST_RUNNER_ADDR=http://192.168.65.2:7080
+SELENIUM_GRID_ADDRESS=http://0.0.0.0:4444/wd/hub
+WEB_APP_ADDRESS=http://0.0.0.0:7080
 
 ##############
 # Run-command args
@@ -231,7 +234,7 @@ execute_the_tests() {
   mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots &
   wait;
   printf "$BGREEN""\n[Running the test suite]\n""$NO_COLOR";
-  mvn test -e -DsuiteXmlFile="$TEST_SUITE_XML_FILE" -DuseSeleniumGrid="${WD_REMOTE}" -DtestsThreadCount="$THREADS" --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel="${DEFAULT_LOG_LEVEL}";
+  mvn test -e -DsuiteXmlFile="$TEST_SUITE_XML_FILE" -DuseSeleniumGrid="${WD_REMOTE}" -DtestsThreadCount="$THREADS" -DtestRunnerAddress="$TEST_RUNNER_ADDR" -DwebAppAddress="$WEB_APP_ADDRESS" -DseleniumGridAddress="$SELENIUM_GRID_ADDRESS" --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel="${DEFAULT_LOG_LEVEL}";
 }
 
 stop_containers() {
