@@ -32,8 +32,9 @@ public class UITest {
     private String baseUrl;
     private static final String pageFooterXpath = "//*[@id='page-footer']";
 
-    public UITest() { BasicConfigurator.configure();
-    //    Logger.getRootLogger().setLevel(Level.INFO);
+    public UITest() {
+        BasicConfigurator.configure();
+        Logger.getRootLogger().setLevel(Level.INFO);
     }
 
     @Parameters({"browser", "browserVersion", "codingChallengeWebsite.headlessBrowser", "codingChallengeWebsite.baseUrl", "codingChallengeWebsite.baseUrlSG", "codingChallengeWebsite.seleniumGridUrl", "codingChallengeWebsite.useSeleniumGrid"})
