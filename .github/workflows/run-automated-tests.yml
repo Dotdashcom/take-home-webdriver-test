@@ -1,0 +1,98 @@
+# Workflow to run automated tests on code pushed to master branch
+
+name: Run automated tests on code pushed to master
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    
+    services:
+      website:
+        image: gprestes/the-internet:latest
+        ports:
+          - 7080:5000
+        options: >-
+          --rm
+      selenium-hub:
+        image: selenium/hub:latest
+        ports:
+          - 4442-4444:4442-4444
+        options: >-
+          --rm
+          -v /dev/shm:/dev/shm
+        env:
+          SE_VNC_NO_PASSWORD: 1
+          SE_SESSION_RETRY_INTERVAL: 1
+      chrome-node1:
+        image: selenium/node-chrome:latest
+        options: >-
+          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
+          --shm-size=2g
+          -e SE_EVENT_BUS_HOST=selenium-hub
+          -e SE_EVENT_BUS_PUBLISH_PORT=4442
+          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      chrome-node2:
+        image: selenium/node-chrome:latest
+        options: >-
+          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
+          --shm-size=2g
+          -e SE_EVENT_BUS_HOST=selenium-hub
+          -e SE_EVENT_BUS_PUBLISH_PORT=4442
+          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      chrome-node3:
+        image: selenium/node-chrome:latest
+        options: >-
+          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
+          --shm-size=2g
+          -e SE_EVENT_BUS_HOST=selenium-hub
+          -e SE_EVENT_BUS_PUBLISH_PORT=4442
+          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      chrome-node4:
+        image: selenium/node-chrome:latest
+        options: >-
+          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
+          --shm-size=2g
+          -e SE_EVENT_BUS_HOST=selenium-hub
+          -e SE_EVENT_BUS_PUBLISH_PORT=4442
+          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      chrome-node5:
+        image: selenium/node-chrome:latest
+        options: >-
+          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
+          --shm-size=2g
+          -e SE_EVENT_BUS_HOST=selenium-hub
+          -e SE_EVENT_BUS_PUBLISH_PORT=4442
+          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      chrome-node6:
+        image: selenium/node-chrome:latest
+        options: >-
+          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
+          --shm-size=2g
+          -e SE_EVENT_BUS_HOST=selenium-hub
+          -e SE_EVENT_BUS_PUBLISH_PORT=4442
+          -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          
+    steps:
+    - name: Checkout repo code 
+      uses: actions/checkout@v3
+    - name: Set up JDK 19
+      uses: actions/setup-java@v3
+      with:
+        java-version: '19'
+        distribution: 'corretto'
+    - name: Clean 
+      run: mvn clean -f pom.xml --batch-mode --update-snapshots
+    - name: Build
+      run: mvn compile -f pom.xml --batch-mode --update-snapshots
+    - name: Install
+      run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
+    - name: Run the test suite
+      run: mvn test -e -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true -DtestsThreadCount=1 --batch-mode --update-snapshots
+    - uses: actions/upload-artifact@v2
+      if: always()
