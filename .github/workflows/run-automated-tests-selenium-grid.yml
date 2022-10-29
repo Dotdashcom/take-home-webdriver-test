@@ -87,7 +87,7 @@ jobs:
       run: message=$(curl https://api.ipify.org) && message=$(echo $message | tr '\n' ' ') && message=$(echo $message | xargs) && echo "ip=$message" >> $GITHUB_OUTPUT
       id: test_runner_address
     - name: Host address
-      run: echo "Host address ${{steps.test_runner_address.outputs.ip}}"
+      run: echo "Host IP address ${{steps.test_runner_address.outputs.ip}}"
     - name: Checkout repo code 
       uses: actions/checkout@v3
     - name: Set up JDK 19

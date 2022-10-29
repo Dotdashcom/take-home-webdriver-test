@@ -57,6 +57,11 @@ jobs:
         distribution: 'corretto'
     - uses: browser-actions/setup-chrome@latest
     - run: chrome --version && whoami
+    - name: Get test-runner IP
+      run: message=$(curl https://api.ipify.org) && message=$(echo $message | tr '\n' ' ') && message=$(echo $message | xargs) && echo "ip=$message" >> $GITHUB_OUTPUT
+      id: test_runner_address
+    - name: Host address
+      run: echo "Host IP address ${{steps.test_runner_address.outputs.ip}}"
     - name: Clean 
       run: mvn clean -f pom.xml --batch-mode --update-snapshots 
     - name: Build
@@ -67,10 +72,10 @@ jobs:
         -DsuiteXmlFile=regression.xml -DheadlessBrowser=false
         -Dbrowser="remote-chrome"
         -DbrowserVersion=${{ needs.workflow_dispatch.inputs.chromeVersion.default }}
-        -DtestRunnerAddress="http://0.0.0.0:7080" 
-        -DwebAppAddress="http://0.0.0.0:7080"
+        -DtestRunnerAddress="http://${{steps.test_runner_address.outputs.ip}}:7080" 
+        -DwebAppAddress="http://${{steps.test_runner_address.outputs.ip}}:7080"
         -DuseSeleniumGrid=false -DtestsThreadCount=4
-        -DseleniumGridAddress="http://0.0.0.0:4444/wd/hub" 
+        -DseleniumGridAddress="http://${{steps.test_runner_address.outputs.ip}}:4444/wd/hub" 
         -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
         --batch-mode --update-snapshots
     - name: Install
