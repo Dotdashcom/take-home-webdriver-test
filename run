@@ -4,14 +4,18 @@
 # Utils
 func_result=''
 STATUS=''
-WD_REMOTE="false"
 THREADS=1
 COUNTER=0
 BGREEN='\033[1;32m' # Bold Green
 NO_COLOR='\033[0m' # No Color
 BOLD='\033[1m'
 SG_ACTION=''
+
+##############
+# Options
+DEFAULT_LOG_LEVEL=info
 TEST_SUITE_XML_FILE=regression.xml
+WD_REMOTE=false
 
 ##############
 # Run-command args
@@ -25,7 +29,7 @@ USAGE=$BGREEN"\nUsage:$NO_COLOR $(basename "$0")\n \
        \n  g start -T nodes : use \`nodes\' to specify the amount of Chrome Selenium nodes to create \
        \n  g stop           : use \`stop\' to stop the current Selenium Grid \
        \n  r -T threads     : use \`threads\' to specify the amount of Chrome Selenium nodes used to run the test suite in parallel  \
-       \n  t threads        : use \`threads\' to specify the amount of threads used to run the test suite in parallel\n";
+       \n  T threads        : use \`threads\' to specify the amount of threads used to run the test suite in parallel\n";
 
 while getopts ":rhT:G:" flag
 do
@@ -214,8 +218,6 @@ setup_where_necessary() {
   if [ ! "$(eval "$func_result")" ]; then printf "[OK] Selenium grid image\n"; fi
   missing_chrome_nodes
   if [ ! "$(eval "$func_result")" ]; then printf "[OK] Chrome node image\n"; fi
-
-  chmod +x restart-grid.sh > /dev/null 2>&1
 }
 
 ##############
@@ -229,7 +231,7 @@ execute_the_tests() {
   mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots &
   wait;
   printf "$BGREEN""\n[Running the test suite]\n""$NO_COLOR";
-  mvn test -e -DsuiteXmlFile="$TEST_SUITE_XML_FILE" -DuseSeleniumGrid="${WD_REMOTE}" -DtestsThreadCount="$THREADS" --batch-mode --update-snapshots;
+  mvn test -e -DsuiteXmlFile="$TEST_SUITE_XML_FILE" -DuseSeleniumGrid="${WD_REMOTE}" -DtestsThreadCount="$THREADS" --batch-mode --update-snapshots -Dorg.slf4j.simpleLogger.defaultLogLevel="${DEFAULT_LOG_LEVEL}";
 }
 
 stop_containers() {

@@ -17,7 +17,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Paths;
 import org.openqa.selenium.remote.LocalFileDetector;
-
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
@@ -33,16 +32,18 @@ public class UITest {
     private String baseUrl;
     private static final String pageFooterXpath = "//*[@id='page-footer']";
 
-    public UITest() { BasicConfigurator.configure(); Logger.getRootLogger().setLevel(Level.INFO);}
+    public UITest() { BasicConfigurator.configure();
+    //    Logger.getRootLogger().setLevel(Level.INFO);
+    }
 
     @Parameters({"browser", "browserVersion", "codingChallengeWebsite.headlessBrowser", "codingChallengeWebsite.baseUrl", "codingChallengeWebsite.baseUrlSG", "codingChallengeWebsite.seleniumGridUrl", "codingChallengeWebsite.useSeleniumGrid"})
     @BeforeMethod
-        public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional(DEFAULT_BROWSER_VERSION) String browser_version, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String base_url, @Optional("") String base_urlSG, @Optional("") String remote_url, @Optional("") String useSeleniumGrid) {
-        if (useSeleniumGrid.equals("true")) { this.setBaseUrl(base_urlSG); } else { this.setBaseUrl(base_url); }
+        public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional(DEFAULT_BROWSER_VERSION) String browserVersion, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String baseUrl, @Optional("") String baseUrlSG, @Optional("") String remoteUrl, @Optional("") String useSeleniumGrid) {
+        if (useSeleniumGrid.equals("true")) { this.setBaseUrl(baseUrlSG); } else { this.setBaseUrl(baseUrl); }
 
         switch (browser) {
             case "chrome":
-                this.setDriver(requestChromeDriver(browser_version, headless, remote_url, useSeleniumGrid));
+                this.setDriver(requestChromeDriver(browserVersion, headless, remoteUrl, useSeleniumGrid));
                 break;
             case "firefox":
                 // Firefox To be implemented
@@ -84,7 +85,8 @@ public class UITest {
         chromeOptions.addArguments("--test-type"); //
         chromeOptions.addArguments("--disable-extensions"); //
 
-        if (headless.equals("true")) {
+        // Use headless only on local runs. When using selenium grid, download fails in Chrome because of a bug.
+        if (headless.equals("true") && useSeleniumGrid.equals("false")) {
             chromeOptions.addArguments("--headless", "--window-size=1920,1200", "--no-sandbox"); }
 
         // Remote driver session

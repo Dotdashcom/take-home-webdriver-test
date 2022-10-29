@@ -91,7 +91,7 @@
                         <codingChallengeWebsite.baseUrlSG>http://192.168.65.2:7080</codingChallengeWebsite.baseUrlSG>
                         <codingChallengeWebsite.seleniumGridUrl>http://0.0.0.0:4444/wd/hub</codingChallengeWebsite.seleniumGridUrl>
                         <codingChallengeWebsite.useSeleniumGrid>${useSeleniumGrid}</codingChallengeWebsite.useSeleniumGrid>>
-                        <codingChallengeWebsite.headlessBrowser>false</codingChallengeWebsite.headlessBrowser>
+                        <codingChallengeWebsite.headlessBrowser>true</codingChallengeWebsite.headlessBrowser>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
