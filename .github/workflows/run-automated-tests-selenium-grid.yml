@@ -46,6 +46,7 @@ jobs:
         options: >-
           --rm
           -v /dev/shm:/dev/shm
+          -e SE_SESSION_RETRY_INTERVAL=1
         env:
           SE_VNC_NO_PASSWORD: 1
           SE_SESSION_RETRY_INTERVAL: 1
@@ -57,6 +58,7 @@ jobs:
           -e SE_EVENT_BUS_HOST=selenium-hub
           -e SE_EVENT_BUS_PUBLISH_PORT=4442
           -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          -e SE_SESSION_RETRY_INTERVAL=1
       chrome-node2:
         image: selenium/node-chrome:latest
         options: >-
@@ -65,6 +67,7 @@ jobs:
           -e SE_EVENT_BUS_HOST=selenium-hub
           -e SE_EVENT_BUS_PUBLISH_PORT=4442
           -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          -e SE_SESSION_RETRY_INTERVAL=1
       chrome-node3:
         image: selenium/node-chrome:latest
         options: >-
@@ -73,6 +76,7 @@ jobs:
           -e SE_EVENT_BUS_HOST=selenium-hub
           -e SE_EVENT_BUS_PUBLISH_PORT=4442
           -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          -e SE_SESSION_RETRY_INTERVAL=1
       chrome-node4:
         image: selenium/node-chrome:latest
         options: >-
@@ -81,6 +85,7 @@ jobs:
           -e SE_EVENT_BUS_HOST=selenium-hub
           -e SE_EVENT_BUS_PUBLISH_PORT=4442
           -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          -e SE_SESSION_RETRY_INTERVAL=1
       chrome-node5:
         image: selenium/node-chrome:latest
         options: >-
@@ -89,6 +94,7 @@ jobs:
           -e SE_EVENT_BUS_HOST=selenium-hub
           -e SE_EVENT_BUS_PUBLISH_PORT=4442
           -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          -e SE_SESSION_RETRY_INTERVAL=1
       chrome-node6:
         image: selenium/node-chrome:latest
         options: >-
@@ -97,6 +103,7 @@ jobs:
           -e SE_EVENT_BUS_HOST=selenium-hub
           -e SE_EVENT_BUS_PUBLISH_PORT=4442
           -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          SE_SESSION_RETRY_INTERVAL=1
           
     steps:
     - name: Checkout repo code 
