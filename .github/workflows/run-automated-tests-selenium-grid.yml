@@ -28,6 +28,7 @@ jobs:
           -v /dev/shm:/dev/shm
         env:
           SE_VNC_NO_PASSWORD: 1
+          SE_SESSION_RETRY_INTERVAL: 1
       chrome-node1:
         image: selenium/node-chrome:latest
         options: >-
