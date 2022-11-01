@@ -1,9 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -11,9 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.nio.file.Paths;
 import java.time.Duration;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class UploadPage {
 
@@ -35,15 +30,12 @@ public class UploadPage {
     private final String pageUrl;
     private final String fileName = "some-file.txt";
 
-    public UploadPage(RemoteWebDriver driver, UITest caller) {
+    public UploadPage(UITest caller) {
         this.caller = caller;
-        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
-        this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/upload";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);
-        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle), visibilityOf(this.pageFooterLink)));
     }
 
     public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }

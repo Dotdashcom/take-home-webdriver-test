@@ -12,7 +12,7 @@ public class DownloadTest extends UITest {
     @Test(description = "Downloads a file and compares it with what's expected")
     public void fileDownload() {
         // Validate page loaded
-        DownloadPage downloadPage = new DownloadPage(this.getDriver(), this);
+        DownloadPage downloadPage = new DownloadPage(this);
         Assert.assertTrue(downloadPage.isPageOpen(), "Page not open");
 
         // Validate file download success

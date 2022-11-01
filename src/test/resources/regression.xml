@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Coding Challenge Website UI Regression Suite">
+<suite name="Coding Challenge Website UI Regression Suite" parallel="tests" thread-count="3">
     <parameter name="browser" value="${codingChallengeWebsite.browser}"/>
+    <parameter name="browserVersion" value="${codingChallengeWebsite.browserVersion}"/>
+    <parameter name="headlessBrowser" value="${codingChallengeWebsite.headlessBrowser}"/>
+    <parameter name="useSeleniumGrid" value="${codingChallengeWebsite.useSeleniumGrid}"/>
+    <parameter name="seleniumGridUrl" value="${codingChallengeWebsite.seleniumGridUrl}"/>
+    <parameter name="baseUrlSG" value="${codingChallengeWebsite.baseUrlSG}"/>
+    <parameter name="baseUrl" value="${codingChallengeWebsite.baseUrl}"/>
     <!--<parameter name="browserVersion" value="106.0.5249.119"/>-->
-    <test name="Login Tests">
+    <test name = "Login Tests">
         <parameter name="username" value="tomsmith"/>
         <parameter name="password" value="SuperSecretPassword!"/>
         <classes>

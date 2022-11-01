@@ -12,7 +12,7 @@ public class DropdownTest extends UITest {
 
     @Test(description="Dropdown options can be selected")
     public void selectAllOptions() {
-        DropdownPage dropdownPage = new DropdownPage(this.getDriver(), this);
+        DropdownPage dropdownPage = new DropdownPage(this);
         List<String> options = dropdownPage.getDropdownOptions();
 
         // Validate page loaded

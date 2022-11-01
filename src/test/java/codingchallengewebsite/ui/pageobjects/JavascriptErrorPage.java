@@ -1,21 +1,15 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class JavascriptErrorPage {
     @FindBy(how = How.XPATH, using = "//p[contains(text(),'This page has a JavaScript error in the onload eve')]")
@@ -23,13 +17,12 @@ public class JavascriptErrorPage {
     private final UITest caller;
     private final String pageUrl;
 
-    public JavascriptErrorPage(RemoteWebDriver driver, UITest caller) {
+    public JavascriptErrorPage(UITest caller) {
         this.caller = caller;
         WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
-        this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "//javascript_error";
         this.caller.getDriver().get(this.pageUrl);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.caller.getDriver(), this);
         pageFactoryInitWait.until(ExpectedConditions.visibilityOf(this.pageErrorMessage));
     }
 

@@ -12,7 +12,7 @@ public class ContextMenuTest extends UITest {
     @Test(description="Expected alert popup opens on right click over box")
     public void triggerPopupOnContextClick() {
         String expectedPopupText = "You selected a context menu";
-        ContextMenuPage contextMenuPage = new ContextMenuPage(this.getDriver(), this);
+        ContextMenuPage contextMenuPage = new ContextMenuPage(this);
 
         // Validate page loaded
         Assert.assertTrue(contextMenuPage.isPageOpen(), "Page not open");

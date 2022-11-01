@@ -16,7 +16,7 @@ public class DynamicContentTest extends UITest {
     @Test(description="Loads new texts and images on each page refresh")
     public void loadNewContent() {
         HashMap<String, String> content, newContent;
-        DynamicContentPage dynamicContentPage = new DynamicContentPage(this.getDriver(), this);
+        DynamicContentPage dynamicContentPage = new DynamicContentPage(this);
         int testAttempts = 5;
 
         // Validate page loaded
@@ -38,7 +38,7 @@ public class DynamicContentTest extends UITest {
     @Test(description="Loads partially new content (text and images) on each page refresh")
     public void loadPartiallyNewContent() {
         HashMap<String, String> content, newContent;
-        DynamicContentPage dynamicContentPage = new DynamicContentPage(this.getDriver(), this);
+        DynamicContentPage dynamicContentPage = new DynamicContentPage(this);
         int attempts = 10;
         Boolean difference;
 

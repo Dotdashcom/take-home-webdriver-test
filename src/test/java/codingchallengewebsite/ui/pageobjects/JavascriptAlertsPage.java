@@ -3,10 +3,8 @@ package codingchallengewebsite.ui.pageobjects;
 import codingchallengewebsite.ui.UITest;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -15,9 +13,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class JavascriptAlertsPage {
 
@@ -33,13 +28,12 @@ public class JavascriptAlertsPage {
     private final String pageUrl;
     private final String mainWindow;
 
-    public JavascriptAlertsPage(RemoteWebDriver driver, @NotNull UITest caller) {
+    public JavascriptAlertsPage(@NotNull UITest caller) {
         this.caller = caller;
         this.genericWait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
-        this.caller.setDriver(driver);
         this.pageUrl = caller.getBaseUrl() + "/javascript_alerts";
         this.caller.getDriver().get(this.pageUrl);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);
         this.mainWindow = this.caller.getDriver().getWindowHandle();
         popupMessages.add("I am a JS Alert"); popupMessages.add("I am a JS Confirm"); popupMessages.add("I am a JS prompt");
@@ -58,7 +52,6 @@ public class JavascriptAlertsPage {
             genericWait.until(ExpectedConditions.visibilityOf(button));
             genericWait.until(ExpectedConditions.elementToBeClickable(button));
             builder.moveToElement(button).click(button).perform();
-
             genericWait.until(ExpectedConditions.alertIsPresent());
 
             try {
@@ -74,7 +67,6 @@ public class JavascriptAlertsPage {
             catch (Exception e) {
                 return false;
             }
-
             i++;
         }
         return success;
@@ -82,7 +74,6 @@ public class JavascriptAlertsPage {
 
     public Boolean validatePopupInputField() {
         Actions builder = new Actions(caller.getDriver());
-        //WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         Alert alertPopup;
         String inputMessage = "This is a test message";
         WebElement buttonTobeTested = this.buttons.get(2);

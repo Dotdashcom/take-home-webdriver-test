@@ -33,7 +33,7 @@ public class UITest {
 
     public UITest() { }
 
-    @Parameters({"browser", "browserVersion", "codingChallengeWebsite.headlessBrowser", "codingChallengeWebsite.baseUrl", "codingChallengeWebsite.baseUrlSG", "codingChallengeWebsite.seleniumGridUrl", "codingChallengeWebsite.useSeleniumGrid"})
+    @Parameters({"browser", "browserVersion", "headlessBrowser", "baseUrl", "baseUrlSG", "seleniumGridUrl", "useSeleniumGrid"})
     @BeforeMethod
         public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional("") String browserVersion, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String baseUrl, @Optional("") String baseUrlSG, @Optional("") String remoteUrl, @Optional("") @NotNull String useSeleniumGrid) {
         if (useSeleniumGrid.equals("true")) { this.setBaseUrl(baseUrlSG); } else { this.setBaseUrl(baseUrl); }

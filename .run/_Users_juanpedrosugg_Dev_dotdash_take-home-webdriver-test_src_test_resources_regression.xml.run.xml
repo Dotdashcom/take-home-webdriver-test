@@ -1,0 +1,24 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="/Users/juanpedrosugg/Dev/dotdash/take-home-webdriver-test/src/test/resources/regression.xml" type="TestNG" singleton="false" nameIsGenerated="true">
+    <shortenClasspath name="NONE" />
+    <useClassPathOnly />
+    <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/regression.xml" />
+    <option name="PACKAGE_NAME" value="" />
+    <option name="MAIN_CLASS_NAME" value="" />
+    <option name="METHOD_NAME" value="" />
+    <option name="GROUP_NAME" value="" />
+    <option name="TEST_OBJECT" value="SUITE" />
+    <option name="VM_PARAMETERS" value="-ea -Dbrowser=chrome -DbrowserVersion=&quot;&quot; -DthreadCount=4 -Dthread-count=4 -DtestsThreadCount=4 -DbaseUrl=&quot;http://0.0.0.0:7080&quot; -DbaseUrlSG=&quot;http://192.168.65.2:7080&quot; -DseleniumGridUrl=&quot;http://0.0.0.0:4444/wd/hub&quot; -DuseSeleniumGrid=&quot;true&quot; -DheadlessBrowser=&quot;false&quot;" />
+    <option name="PARAMETERS" value="" />
+    <option name="OUTPUT_DIRECTORY" value="" />
+    <option name="TEST_SEARCH_SCOPE">
+      <value defaultName="wholeProject" />
+    </option>
+    <option name="PROPERTIES_FILE" value="" />
+    <properties />
+    <listeners />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

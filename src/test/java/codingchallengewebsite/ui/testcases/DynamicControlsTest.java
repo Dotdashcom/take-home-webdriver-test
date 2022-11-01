@@ -11,7 +11,7 @@ public class DynamicControlsTest extends UITest {
 
     @Test(description="Removes and adds a checkbox")
     public void checkboxTest() {
-        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(this.getDriver(), this);
+        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(this);
         int testAttempts = 3;
 
         // Validate page loaded
@@ -23,12 +23,10 @@ public class DynamicControlsTest extends UITest {
             dynamicControlsPage.removeCheckboxButton();
             // Validate removed checkbox
             Assert.assertFalse(dynamicControlsPage.isCheckboxEnabled(), "Checkbox is enabled");
-
             // Add checkbox
             dynamicControlsPage.addCheckboxButton();
             // Validate added checkbox
             Assert.assertTrue(dynamicControlsPage.isCheckboxEnabled(), "Checkbox is disabled");
-
             testAttempts--;
         }
 
@@ -39,12 +37,10 @@ public class DynamicControlsTest extends UITest {
             dynamicControlsPage.removeCheckboxButton();
             // Validate removed checkbox
             Assert.assertFalse(dynamicControlsPage.isCheckboxEnabled(), "Checkbox is enabled");
-
             // Add checkbox
             dynamicControlsPage.addCheckboxButton();
             // Validate added checkbox
             Assert.assertTrue(dynamicControlsPage.isCheckboxEnabled(), "Checkbox is disabled");
-
             // Reload the page
             dynamicControlsPage.reloadPage();
             testAttempts--;
@@ -53,11 +49,10 @@ public class DynamicControlsTest extends UITest {
 
     @Test(description = "Toggles the checkbox on and off")
     public void toggleCheckbox() {
-        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(this.getDriver(), this);
+        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(this);
 
         // Validate page loaded
         Assert.assertTrue(dynamicControlsPage.isPageOpen(), "Page not open");
-
         // Validate checkbox toggle behaviour
         Boolean currentState = dynamicControlsPage.isCheckboxSelected();
         dynamicControlsPage.clickCheckbox();
@@ -68,15 +63,13 @@ public class DynamicControlsTest extends UITest {
 
     @Test(description = "Enables and disables the textbox")
     public void textboxTest() {
-        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(this.getDriver(), this);
+        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(this);
 
         // Validate page loaded
         Assert.assertTrue(dynamicControlsPage.isPageOpen(), "Page not open");
-
         // Validate textbox enabled
         dynamicControlsPage.enableTextBox();
         Assert.assertTrue(dynamicControlsPage.isTextboxEnabled(), "Textbox is disabled");
-
         // Validate textbox disabled
         dynamicControlsPage.disableTextBox();
         Assert.assertFalse(dynamicControlsPage.isTextboxEnabled(), "Textbox is enabled");

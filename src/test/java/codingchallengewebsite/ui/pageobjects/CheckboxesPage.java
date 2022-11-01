@@ -1,7 +1,6 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -12,9 +11,6 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.function.Function;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class CheckboxesPage {
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='Checkboxes']")

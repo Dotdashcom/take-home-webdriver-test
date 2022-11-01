@@ -12,7 +12,7 @@ public class DragAndDropTest extends UITest {
     @Test(description="Drags box A over box B")
     public void dragLeftToRight() {
         String boxOneLetter = "A", boxTwoLetter = "B";
-        DragAndDropPage dragAndDropPage = new DragAndDropPage(this.getDriver(), this);
+        DragAndDropPage dragAndDropPage = new DragAndDropPage(this);
 
         // Validate page loaded
         Assert.assertTrue(dragAndDropPage.isPageOpen(), "Page not open");
@@ -33,7 +33,7 @@ public class DragAndDropTest extends UITest {
     public void dragRightToLeft() {
         String boxOneLetter = "A";
         String boxTwoLetter = "B";
-        DragAndDropPage dragAndDropPage = new DragAndDropPage(this.getDriver(), this);
+        DragAndDropPage dragAndDropPage = new DragAndDropPage(this);
 
         // Validate page loaded
         Assert.assertTrue(dragAndDropPage.isPageOpen(), "Page not open");
@@ -54,7 +54,7 @@ public class DragAndDropTest extends UITest {
     public void dragBothWays() {
         String boxOneLetter = "A";
         String boxTwoLetter = "B";
-        DragAndDropPage dragAndDropPage = new DragAndDropPage(this.getDriver(), this);
+        DragAndDropPage dragAndDropPage = new DragAndDropPage(this);
 
         // Validate page loaded
         Assert.assertTrue(dragAndDropPage.isPageOpen(), "Page not open");

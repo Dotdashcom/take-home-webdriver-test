@@ -17,7 +17,7 @@ public class LoginFormTest extends UITest {
     @Parameters({"username", "password"})
     @Test(description="Login form - Using valid Credentials")
     public void successfulLogin(@Optional(DEFAULT_USERNAME) String username, @Optional(DEFAULT_PASSWORD) String password) {
-        LoginFormPage loginFormPage = new LoginFormPage(this.getDriver(), this);
+        LoginFormPage loginFormPage = new LoginFormPage(this);
 
         // Validate page loaded
         Assert.assertTrue(loginFormPage.isPageOpen(), "Page not open");
@@ -56,7 +56,7 @@ public class LoginFormTest extends UITest {
     }
 
     private LoginFormPage login(String username, String password) {
-        LoginFormPage loginFormPage = new LoginFormPage(this.getDriver(), this);
+        LoginFormPage loginFormPage = new LoginFormPage(this);
         loginFormPage.setUsername(username);
         loginFormPage.setPassword(password);
         loginFormPage.clickLoginButton();

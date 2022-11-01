@@ -1,17 +1,11 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import static codingchallengewebsite.ui.UITest.*;
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 import codingchallengewebsite.ui.UITest;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -20,7 +14,6 @@ import java.nio.channels.FileChannel;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.Duration;
 
 public class DownloadPage {
 
@@ -32,12 +25,11 @@ public class DownloadPage {
     private final String pageUrl;
     private final Path relativePathToReferenceFile = Paths.get("src/test/resources", "some-file.txt");
 
-    public DownloadPage(RemoteWebDriver driver, UITest caller) {
+    public DownloadPage(UITest caller) {
         this.caller = caller;
-        this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/download";
         this.caller.getDriver().get(this.pageUrl);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);
     }
 

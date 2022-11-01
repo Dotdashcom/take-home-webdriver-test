@@ -48,7 +48,7 @@ while getopts ":rhT:G:" flag
 do
     case "${flag}" in
         r) WD_REMOTE="true";;
-        T) THREADS=$(printf -v int "%d" ${OPTARG});;
+        T) THREADS=$(printf "%d" ${OPTARG});;
         G) SG_ACTION="${OPTARG}";;
         h) printf "$USAGE" 1>&2 ; exit 1;;
         ?) printf "$BOLD""$(basename "$0"): illegal option: -${OPTARG}\n$USAGE\n""$BOLD"; exit 1 ;;
@@ -166,11 +166,12 @@ CONTAINER_IMAGE=$2
 strip_image_version "$CONTAINER_IMAGE"
 i_ver="$func_result"
 
-if [ "$BROWSER_VERSION" = "" ]; then
-  strip_image_name "$CONTAINER_IMAGE"
-  i_name="$REMOTE_CHROME_NODE_IMAGE_VERSION"
-  elif [ "$BROWSER_VERSION" != "" ]; then
-    i_name=
+if [ "$BROWSER_VERSION" = "" ]; then  #local, using $CONTAINER_CHROME_NODES_IMAGE
+  strip_image_name "$CONTAINER_CHROME_NODES_IMAGE"
+  i_name="$func_result"
+  elif [ "$BROWSER_VERSION" != "" ]; then #remote, using $REMOTE_CHROME_NODE_IMAGE_VERSION
+    strip_image_name "$REMOTE_CHROME_NODE_IMAGE_VERSION"
+    i_name="$func_result";
   fi;
   CONTAINER_CHROME_NODES_IMAGE="$i_name":"$i_ver"
   while [[ $COUNTER -ne 0 ]]
@@ -311,7 +312,7 @@ start_selenium_grid() {
   docker_container_startup "$CONTAINER_SELENIUM_HUB_IMAGE" "$CONTAINER_SELENIUM_HUB_RUN_CMD";
   wait_until_container_is_ready "$CONTAINER_SELENIUM_HUB_IP" "$CONTAINER_SELENIUM_HUB_PORTS";
   printf "\n[""$BGREEN""Starting Chrome nodes""$NO_COLOR""]\n";
-  start_chrome_nodes THREADS "$CONTAINER_SELENIUM_HUB_IMAGE";
+  start_chrome_nodes "$THREADS" "$CONTAINER_SELENIUM_HUB_IMAGE";
 }
 
 ##############
