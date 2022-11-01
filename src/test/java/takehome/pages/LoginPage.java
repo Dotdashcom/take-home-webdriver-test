@@ -1,6 +1,6 @@
-package meridith.pages;
+package takehome.pages;
 
-import meridith.utilities.Driver;
+import takehome.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

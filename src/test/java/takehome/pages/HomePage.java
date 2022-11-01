@@ -1,6 +1,6 @@
-package meridith.pages;
+package takehome.pages;
 
-import meridith.utilities.Driver;
+import takehome.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,7 +13,7 @@ public class HomePage {
     }
 
     @FindBy(xpath="//li[.='Checkboxes']")
-    public WebElement checkBoxesLinkk;
+    public WebElement checkBoxesLink;
 
     @FindBy(xpath="//*[@id='checkboxes']/input[1]")
     public WebElement checkBox1;

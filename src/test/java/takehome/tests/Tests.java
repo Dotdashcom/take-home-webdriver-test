@@ -1,10 +1,6 @@
-package meridith.tests;
+package takehome.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import meridith.pages.HomePage;
-import meridith.pages.LoginPage;
-import meridith.utilities.Driver;
-import meridith.utilities.ReusableMethods;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -17,6 +13,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import takehome.utilities.Driver;
+import takehome.utilities.ReusableMethods;
+import takehome.pages.LoginPage;
+import takehome.pages.HomePage;
+
+
 
 import java.io.File;
 import java.io.IOException;
@@ -360,11 +362,11 @@ public class Tests {
        Assert.assertEquals("I am a JS Confirm",jsconfirm);
        driver2.switchTo().alert().accept();
        driver2.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
-       driver2.switchTo().alert().sendKeys("Hello Meridith");
+       driver2.switchTo().alert().sendKeys("Hello World!");
         driver2.switchTo().alert().accept();
 
        String result=driver2.findElement(By.id("result")).getText();
-       Assert.assertTrue(result.contains("Hello Meridith"));
+       Assert.assertTrue(result.contains("Hello World!"));
 
     //In this test, i had to switch to a new driver since for some strange reason "driver.manage().window().maximize();" was preventing the
     //program work
