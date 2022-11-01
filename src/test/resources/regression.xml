@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Coding Challenge Website UI Regression Suite" parallel="tests" thread-count="3">
+<suite name="Coding Challenge Website UI Regression Suite" parallel="tests" thread-count="2">
     <parameter name="browser" value="${codingChallengeWebsite.browser}"/>
     <parameter name="browserVersion" value="${codingChallengeWebsite.browserVersion}"/>
     <parameter name="headlessBrowser" value="${codingChallengeWebsite.headlessBrowser}"/>
