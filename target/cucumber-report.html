@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cucumber</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<style>
+.cucumber-react .cucumber-status--passed {
+  color: #2CB14A;
+}
+.cucumber-react .cucumber-status--skipped {
+  color: #00A0CC;
+}
+.cucumber-react .cucumber-status--pending {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--undefined {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--ambiguous {
+  color: #F4EBFD;
+}
+.cucumber-react .cucumber-status--failed {
+  color: #BB0000;
+}
+.cucumber-react .cucumber-status--unknown {
+  color: #B6BECB;
+}
+.cucumber-react h1, .cucumber-react h2, .cucumber-react h3 {
+  padding: 0;
+  margin: 0;
+}
+.cucumber-react a {
+  color: inherit;
+}
+.cucumber-react .gherkin-document-list {
+  font: 14px "Open Sans", sans-serif;
+  color: #161C24;
+  background: #fff;
+  overflow-x: hidden;
+}
+.cucumber-react .cucumber-title {
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.cucumber-react .cucumber-title__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-title__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-tags {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cucumber-react .cucumber-tags .cucumber-tag {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 8px 4px 8px;
+  margin-right: 6px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.cucumber-react .cucumber-feature__icon {
+  padding-top: 0.35em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-description,
+.cucumber-react .cucumber-children {
+  margin-left: 1em;
+}
+.cucumber-react .cucumber-feature,
+.cucumber-react .cucumber-rule,
+.cucumber-react .cucumber-scenario,
+.cucumber-react .cucumber-background {
+  margin-bottom: 1em;
+}
+.cucumber-react .cucumber-steps {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.cucumber-react .cucumber-steps .cucumber-step {
+  display: flex;
+}
+.cucumber-react .cucumber-steps .cucumber-step__status {
+  padding-top: 0.2em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-steps .cucumber-step__content {
+  flex-grow: 1;
+}
+.cucumber-react .cucumber-steps .cucumber-step__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-steps .cucumber-step__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-steps .cucumber-step__param {
+  font-weight: normal;
+  font-style: italic;
+}
+.cucumber-react .cucumber-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .cucumber-table__header-cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .cucumber-table__cell__step {
+  flex-grow: 1;
+}
+.cucumber-react .cucumber-code {
+  padding: 0.25em;
+  background-color: #ebebeb;
+}
+.cucumber-react .cucumber-error {
+  padding: 0.5em;
+  margin: 0;
+  overflow: scroll;
+}
+.cucumber-react .cucumber-no-documents {
+  font: 14px "Open Sans", sans-serif;
+}
+.cucumber-react .cucumber-attachment {
+  background-color: #ebebeb;
+  padding: 0.5em;
+}
+.cucumber-react .cucumber-attachment__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-attachment__image {
+  margin-top: 1em;
+}
+.cucumber-react .cucumber-anchor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 0.3em;
+}
+.cucumber-react .cucumber-anchor__link {
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+  position: absolute;
+  left: -20px;
+  display: flex;
+  align-items: center;
+}
+.cucumber-react .cucumber-anchor__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-anchor:hover a {
+  opacity: 1;
+  width: max-content;
+  transition: all 0.35s ease-in-out;
+}
+.cucumber-react .cucumber-anchor > * {
+  height: 100%;
+  margin-top: 0px;
+}
+
+.cucumber-report-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font: 11px "Open Sans", sans-serif;
+  margin-bottom: 1em;
+}
+.cucumber-report-header > * {
+  padding: 1em;
+}
+.cucumber-report-header .cucumber-status-filter {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-status-filter table {
+  width: 100%;
+}
+.cucumber-report-header .cucumber-execution-data {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-search-bar {
+  border-right: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search input {
+  padding: 0.4em;
+  border-radius: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search button {
+  height: 2.2em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar p.help {
+  font-size: 80%;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul {
+  display: inline;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li input {
+  display: inline-block;
+  width: auto;
+  height: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li label {
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-execution-data {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: auto;
+  }
+}
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+	</style>
+</head>
+<body>
+<div id="content">
+</div>
+<script>
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"13.2.1","implementation":{"name":"cucumber-jvm","version":"6.9.1"},"runtime":{"name":"OpenJDK 64-Bit Server VM","version":"11.0.10+8-b1145.96"},"os":{"name":"Mac OS X"},"cpu":{"name":"x86_64"}}},{"testRunStarted":{"timestamp":{"seconds":"1623550139","nanos":60410000}}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Checkboxes.feature","data":"@test1\nFeature: checkBox feature\n  Test checks and unchecks checkboxes.\n  Test uses assertions to make sure boxes were properly checked and unchecked.\n\n  Background: User is already in checkbox page\n    Given user is on the checkbox page\n  Scenario:click the checkbox1\n    When user click the checkbox1\n    Then  checkbox1 is selected\n\n    Scenario: click the checkbox2\n      When user click the checkbox2\n      Then  checkbox2 is selected\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Checkboxes.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test1","id":"e8ca984d-9d92-4b1e-9964-3805f4491c5a"}],"language":"en","keyword":"Feature","name":"checkBox feature","description":"  Test checks and unchecks checkboxes.\n  Test uses assertions to make sure boxes were properly checked and unchecked.","children":[{"background":{"location":{"line":6,"column":3},"keyword":"Background","name":"User is already in checkbox page","steps":[{"location":{"line":7,"column":5},"keyword":"Given ","text":"user is on the checkbox page","id":"c19888c4-7f0b-4f37-aead-0015e45f394c"}],"id":"dc48d31f-7c2f-48e6-9504-e7afe4e23084"}},{"scenario":{"location":{"line":8,"column":3},"keyword":"Scenario","name":"click the checkbox1","steps":[{"location":{"line":9,"column":5},"keyword":"When ","text":"user click the checkbox1","id":"9fd45c62-90b8-4cfa-92cc-52b056a46ae3"},{"location":{"line":10,"column":5},"keyword":"Then ","text":"checkbox1 is selected","id":"a30c93b7-d7e8-4f9c-a9b2-98b8b54c5afb"}],"id":"c06ea981-a875-4ef6-9155-1ebe85adf40c"}},{"scenario":{"location":{"line":12,"column":5},"keyword":"Scenario","name":"click the checkbox2","steps":[{"location":{"line":13,"column":7},"keyword":"When ","text":"user click the checkbox2","id":"34daa21c-4bbd-4d56-a65c-05651ab6a2df"},{"location":{"line":14,"column":7},"keyword":"Then ","text":"checkbox2 is selected","id":"9c4fd328-e47b-419a-832b-7d8c093b970b"}],"id":"6741b59c-6fc9-46d4-adf0-0dbe3e17699f"}}]}}},{"pickle":{"id":"8c4951b7-215f-4771-8187-cb0c7103dfb9","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Checkboxes.feature","name":"click the checkbox1","language":"en","steps":[{"text":"user is on the checkbox page","id":"40bf82d8-3e6e-4c01-b04f-bf1ab481e34a","astNodeIds":["c19888c4-7f0b-4f37-aead-0015e45f394c"]},{"text":"user click the checkbox1","id":"bf25c8ec-5e13-40eb-ab50-c0e33623721b","astNodeIds":["9fd45c62-90b8-4cfa-92cc-52b056a46ae3"]},{"text":"checkbox1 is selected","id":"43c6d23f-3011-4f75-9f07-32457ae7335c","astNodeIds":["a30c93b7-d7e8-4f9c-a9b2-98b8b54c5afb"]}],"tags":[{"name":"@test1","astNodeId":"e8ca984d-9d92-4b1e-9964-3805f4491c5a"}],"astNodeIds":["c06ea981-a875-4ef6-9155-1ebe85adf40c"]}},{"pickle":{"id":"3290ee25-a52e-4e08-ac90-d306eb849d6b","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Checkboxes.feature","name":"click the checkbox2","language":"en","steps":[{"text":"user is on the checkbox page","id":"19b721f2-971d-499c-ab84-a76fc095fcde","astNodeIds":["c19888c4-7f0b-4f37-aead-0015e45f394c"]},{"text":"user click the checkbox2","id":"3d61055a-7afb-403d-a282-ae1c50da0571","astNodeIds":["34daa21c-4bbd-4d56-a65c-05651ab6a2df"]},{"text":"checkbox2 is selected","id":"405cb718-a0fa-446b-be46-193d95b0d697","astNodeIds":["9c4fd328-e47b-419a-832b-7d8c093b970b"]}],"tags":[{"name":"@test1","astNodeId":"e8ca984d-9d92-4b1e-9964-3805f4491c5a"}],"astNodeIds":["6741b59c-6fc9-46d4-adf0-0dbe3e17699f"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/ContextMenu.feature","data":"@test2\n  Feature: Context Menu\n\n\n    Background: User is already in Context Menu page\n      Given user is on the Context Menu page\n\nScenario:Test right clicks on the context menu.\nTest asserts the alert menu text.\n\n  When user do the right clicks\n  Then Alert popped up","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/ContextMenu.feature","feature":{"location":{"line":2,"column":3},"tags":[{"location":{"line":1,"column":1},"name":"@test2","id":"f19c36a3-7681-4a05-8f42-1a0eb0002bfe"}],"language":"en","keyword":"Feature","name":"Context Menu","children":[{"background":{"location":{"line":5,"column":5},"keyword":"Background","name":"User is already in Context Menu page","steps":[{"location":{"line":6,"column":7},"keyword":"Given ","text":"user is on the Context Menu page","id":"3eca4876-a351-4653-94fd-98992ec1593b"}],"id":"f82004e2-9874-4016-bdd1-9301f4512a1d"}},{"scenario":{"location":{"line":8,"column":1},"keyword":"Scenario","name":"Test right clicks on the context menu.","description":"Test asserts the alert menu text.","steps":[{"location":{"line":11,"column":3},"keyword":"When ","text":"user do the right clicks","id":"353815d6-4a91-482e-b15b-509b1fbfb93b"},{"location":{"line":12,"column":3},"keyword":"Then ","text":"Alert popped up","id":"cbf179b1-e409-45b5-b26a-5261ba4cb452"}],"id":"fe7c43f4-c222-4729-b933-27a2c15a266f"}}]}}},{"pickle":{"id":"922f446a-a09c-4d42-9dd9-93638eec58c2","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/ContextMenu.feature","name":"Test right clicks on the context menu.","language":"en","steps":[{"text":"user is on the Context Menu page","id":"04a231f9-561b-4dd9-b528-cd809ac67648","astNodeIds":["3eca4876-a351-4653-94fd-98992ec1593b"]},{"text":"user do the right clicks","id":"dd164370-9e23-4576-93c5-a3b4c42a0383","astNodeIds":["353815d6-4a91-482e-b15b-509b1fbfb93b"]},{"text":"Alert popped up","id":"f86baf01-5312-4107-8cc2-f0614e27e75c","astNodeIds":["cbf179b1-e409-45b5-b26a-5261ba4cb452"]}],"tags":[{"name":"@test2","astNodeId":"f19c36a3-7681-4a05-8f42-1a0eb0002bfe"}],"astNodeIds":["fe7c43f4-c222-4729-b933-27a2c15a266f"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DragAndDrop.feature","data":"@test\nFeature: Drag and Drop\n\n  Scenario: Test drags element A to element B.\n  Test asserts that the text on element A and B are switched.\n    Given user is on the drag and drop page\n    When user drag A to drop B\n    Then A and B is switched\n\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DragAndDrop.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"c3405b40-f543-4a54-9769-678177fa5bb8"}],"language":"en","keyword":"Feature","name":"Drag and Drop","children":[{"scenario":{"location":{"line":4,"column":3},"keyword":"Scenario","name":"Test drags element A to element B.","description":"  Test asserts that the text on element A and B are switched.","steps":[{"location":{"line":6,"column":5},"keyword":"Given ","text":"user is on the drag and drop page","id":"68a69570-7319-4685-a4a6-2226b8cbe491"},{"location":{"line":7,"column":5},"keyword":"When ","text":"user drag A to drop B","id":"63a70da7-43e0-4cfb-a8c8-1f7529a7a3d6"},{"location":{"line":8,"column":5},"keyword":"Then ","text":"A and B is switched","id":"8ea25cff-bfc1-41b5-bf29-ea24b41e053a"}],"id":"784914b4-a176-405f-9923-35869a8b5c6c"}}]}}},{"pickle":{"id":"8a3b5546-0713-4dd8-90e7-41d7c51cacb2","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DragAndDrop.feature","name":"Test drags element A to element B.","language":"en","steps":[{"text":"user is on the drag and drop page","id":"5146d440-53a8-4a5d-b054-d05b20c646c5","astNodeIds":["68a69570-7319-4685-a4a6-2226b8cbe491"]},{"text":"user drag A to drop B","id":"03e4df48-f9e7-4e03-8343-90887cdcb731","astNodeIds":["63a70da7-43e0-4cfb-a8c8-1f7529a7a3d6"]},{"text":"A and B is switched","id":"c91005ae-bc21-4eb9-8708-26e85047078b","astNodeIds":["8ea25cff-bfc1-41b5-bf29-ea24b41e053a"]}],"tags":[{"name":"@test","astNodeId":"c3405b40-f543-4a54-9769-678177fa5bb8"}],"astNodeIds":["784914b4-a176-405f-9923-35869a8b5c6c"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Dropdown.feature","data":"@test\nFeature: Dropdown feature\n\n  Scenario:\n  Test selects Option 1 and Option 2 from the drop down menu.\n  Test asserts Option 1 and Option 2 are selected.\n    Given user is on the DropDown page\n    When user select Option1 and Option2\n    Then Option1 and Option2 is selected","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Dropdown.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"106e8dd8-b2ca-4261-be10-26c4fe8167c9"}],"language":"en","keyword":"Feature","name":"Dropdown feature","children":[{"scenario":{"location":{"line":4,"column":3},"keyword":"Scenario","description":"  Test selects Option 1 and Option 2 from the drop down menu.\n  Test asserts Option 1 and Option 2 are selected.","steps":[{"location":{"line":7,"column":5},"keyword":"Given ","text":"user is on the DropDown page","id":"82759762-6be4-4e75-b8c9-cba98c29800e"},{"location":{"line":8,"column":5},"keyword":"When ","text":"user select Option1 and Option2","id":"6e61ac77-f89f-4cc9-9b8e-6e2bbe4f24e1"},{"location":{"line":9,"column":5},"keyword":"Then ","text":"Option1 and Option2 is selected","id":"3f36be31-e85f-40b7-b996-5458844c3824"}],"id":"24d12ae8-4fff-4b9c-b470-dafe08d39a97"}}]}}},{"pickle":{"id":"202353ff-ac16-4442-839c-2e478c2a44bc","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Dropdown.feature","language":"en","steps":[{"text":"user is on the DropDown page","id":"a58eac37-8148-4fd5-933b-98ced555bf0b","astNodeIds":["82759762-6be4-4e75-b8c9-cba98c29800e"]},{"text":"user select Option1 and Option2","id":"3aeffc46-ef6e-445a-b004-663a290a712f","astNodeIds":["6e61ac77-f89f-4cc9-9b8e-6e2bbe4f24e1"]},{"text":"Option1 and Option2 is selected","id":"21071595-8712-4f7a-babf-5dd46b8d978b","astNodeIds":["3f36be31-e85f-40b7-b996-5458844c3824"]}],"tags":[{"name":"@test","astNodeId":"106e8dd8-b2ca-4261-be10-26c4fe8167c9"}],"astNodeIds":["24d12ae8-4fff-4b9c-b470-dafe08d39a97"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicContent.feature","data":"@test\nFeature: Dynamic Content\n\n  Scenario: Test refreshes the page a couple of times.\n  Test asserts that the content changes on each refresh.\n    Given user is on the Dynamic content page\n    When user clicks on the click here for  Dynamic content  changes\n    Then content changes on each refresh\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicContent.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"3a893df7-0aa7-4ff4-ac63-eebc3106d12c"}],"language":"en","keyword":"Feature","name":"Dynamic Content","children":[{"scenario":{"location":{"line":4,"column":3},"keyword":"Scenario","name":"Test refreshes the page a couple of times.","description":"  Test asserts that the content changes on each refresh.","steps":[{"location":{"line":6,"column":5},"keyword":"Given ","text":"user is on the Dynamic content page","id":"17c7eb06-c42a-4c75-ac8b-007fd47de908"},{"location":{"line":7,"column":5},"keyword":"When ","text":"user clicks on the click here for  Dynamic content  changes","id":"efb13a6a-3aae-461c-afd2-747484276066"},{"location":{"line":8,"column":5},"keyword":"Then ","text":"content changes on each refresh","id":"84113523-8fd9-495a-a1fc-0230c201fed2"}],"id":"92d4f18b-0b7c-464d-83dc-c93b9ba9cf60"}}]}}},{"pickle":{"id":"f8e16b28-5d3c-4ff1-912f-6e0daeee8fb7","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicContent.feature","name":"Test refreshes the page a couple of times.","language":"en","steps":[{"text":"user is on the Dynamic content page","id":"37de9d54-db60-4081-9169-72a70c93ae2c","astNodeIds":["17c7eb06-c42a-4c75-ac8b-007fd47de908"]},{"text":"user clicks on the click here for  Dynamic content  changes","id":"07054815-ea19-4331-a95d-f353b9a46d0c","astNodeIds":["efb13a6a-3aae-461c-afd2-747484276066"]},{"text":"content changes on each refresh","id":"51d7e6ad-f81c-4d51-a371-045df831b27b","astNodeIds":["84113523-8fd9-495a-a1fc-0230c201fed2"]}],"tags":[{"name":"@test","astNodeId":"3a893df7-0aa7-4ff4-ac63-eebc3106d12c"}],"astNodeIds":["92d4f18b-0b7c-464d-83dc-c93b9ba9cf60"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicControls.feature","data":"@test\nFeature: Dynamic Controls\n\n  Background:\n    Given user is on the Dynamic Controls page\n\n  Scenario: As user click on the Remove/add button either of one is presented\n\n    When Test clicks on the Remove Button and uses explicit wait.\n    Then   Test asserts that the checkbox is gone.\n    And Test clicks on Add Button and uses explicit wait.\n    Then Test asserts that the checkbox is present.\n\n  Scenario: As user click on the Enable button user will see the text either it\u0027s enabled or disabled\n    When Test clicks on the Enable Button and uses explicit wait.\n    Then Test asserts that the text box is enabled.\n    And Test clicks on the Disable Button and uses explicit wait.\n    Then Test asserts that the text box is disabled.\n\n\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicControls.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"5bee9541-7c76-4310-983a-4f413b287607"}],"language":"en","keyword":"Feature","name":"Dynamic Controls","children":[{"background":{"location":{"line":4,"column":3},"keyword":"Background","steps":[{"location":{"line":5,"column":5},"keyword":"Given ","text":"user is on the Dynamic Controls page","id":"bdfb2676-5852-4b4c-8a19-cad693b66db1"}],"id":"b8ed400f-fddb-4b13-b3ee-e4f31bc68d2b"}},{"scenario":{"location":{"line":7,"column":3},"keyword":"Scenario","name":"As user click on the Remove/add button either of one is presented","steps":[{"location":{"line":9,"column":5},"keyword":"When ","text":"Test clicks on the Remove Button and uses explicit wait.","id":"88c8bed1-c507-40f3-806d-68e1b03fd631"},{"location":{"line":10,"column":5},"keyword":"Then ","text":"Test asserts that the checkbox is gone.","id":"6f9545da-dafd-4ac3-bc2c-4140f5ae16c8"},{"location":{"line":11,"column":5},"keyword":"And ","text":"Test clicks on Add Button and uses explicit wait.","id":"f66babe4-f924-469f-be91-5b981c5737b7"},{"location":{"line":12,"column":5},"keyword":"Then ","text":"Test asserts that the checkbox is present.","id":"a41fcd3f-96a3-466d-abca-ff5d0dafe316"}],"id":"2998d741-de6c-484b-92de-78744efb6ce8"}},{"scenario":{"location":{"line":14,"column":3},"keyword":"Scenario","name":"As user click on the Enable button user will see the text either it\u0027s enabled or disabled","steps":[{"location":{"line":15,"column":5},"keyword":"When ","text":"Test clicks on the Enable Button and uses explicit wait.","id":"79eca3cd-4d19-4634-90e1-44030182e6b4"},{"location":{"line":16,"column":5},"keyword":"Then ","text":"Test asserts that the text box is enabled.","id":"a07d0ee5-93af-49d1-9457-537bce11f0f7"},{"location":{"line":17,"column":5},"keyword":"And ","text":"Test clicks on the Disable Button and uses explicit wait.","id":"93bac409-151d-49a8-908a-c3666a33e10b"},{"location":{"line":18,"column":5},"keyword":"Then ","text":"Test asserts that the text box is disabled.","id":"273eda4b-a052-4e42-9a4b-15b5d38d8b10"}],"id":"b70294e5-9190-44f6-bff9-f3ed3bc0c4ef"}}]}}},{"pickle":{"id":"640b9eb8-79b0-4701-9099-3ca51a99c0b8","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicControls.feature","name":"As user click on the Remove/add button either of one is presented","language":"en","steps":[{"text":"user is on the Dynamic Controls page","id":"7ade68d6-4828-4eb4-afde-064a0d26fc30","astNodeIds":["bdfb2676-5852-4b4c-8a19-cad693b66db1"]},{"text":"Test clicks on the Remove Button and uses explicit wait.","id":"e88d671f-6359-48f1-a442-15e68a01390c","astNodeIds":["88c8bed1-c507-40f3-806d-68e1b03fd631"]},{"text":"Test asserts that the checkbox is gone.","id":"12659d84-d308-471b-8919-6229c2f75b7a","astNodeIds":["6f9545da-dafd-4ac3-bc2c-4140f5ae16c8"]},{"text":"Test clicks on Add Button and uses explicit wait.","id":"59c0023b-e30e-426f-943b-80439e56eecd","astNodeIds":["f66babe4-f924-469f-be91-5b981c5737b7"]},{"text":"Test asserts that the checkbox is present.","id":"f82bb624-9290-40e1-a368-1a6cc6cf71fa","astNodeIds":["a41fcd3f-96a3-466d-abca-ff5d0dafe316"]}],"tags":[{"name":"@test","astNodeId":"5bee9541-7c76-4310-983a-4f413b287607"}],"astNodeIds":["2998d741-de6c-484b-92de-78744efb6ce8"]}},{"pickle":{"id":"8fdb6072-c364-4a56-b5e1-ca3d88e109b1","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicControls.feature","name":"As user click on the Enable button user will see the text either it\u0027s enabled or disabled","language":"en","steps":[{"text":"user is on the Dynamic Controls page","id":"211029ea-c8cb-45cf-8e37-954db24c6700","astNodeIds":["bdfb2676-5852-4b4c-8a19-cad693b66db1"]},{"text":"Test clicks on the Enable Button and uses explicit wait.","id":"02138232-9ae0-416e-b352-84993db20bc9","astNodeIds":["79eca3cd-4d19-4634-90e1-44030182e6b4"]},{"text":"Test asserts that the text box is enabled.","id":"ee1f4c0b-7022-43ed-9427-faace3afe276","astNodeIds":["a07d0ee5-93af-49d1-9457-537bce11f0f7"]},{"text":"Test clicks on the Disable Button and uses explicit wait.","id":"89a563a2-89a3-4c6b-af77-491ec5e86194","astNodeIds":["93bac409-151d-49a8-908a-c3666a33e10b"]},{"text":"Test asserts that the text box is disabled.","id":"918335c9-8266-4465-8e5b-075c53d86ad7","astNodeIds":["273eda4b-a052-4e42-9a4b-15b5d38d8b10"]}],"tags":[{"name":"@test","astNodeId":"5bee9541-7c76-4310-983a-4f413b287607"}],"astNodeIds":["b70294e5-9190-44f6-bff9-f3ed3bc0c4ef"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicLoading.feature","data":"@test\nFeature: Dynamic Loading\n\nScenario:\n  Given user is on the dynamic loading page\nWhen user clicks the start button and uses explicit wait.\nThen  asserts that “Hello World!” text is displayed.\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicLoading.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"e8c3f107-38b7-4f9f-9beb-4f856eb7e6c0"}],"language":"en","keyword":"Feature","name":"Dynamic Loading","children":[{"scenario":{"location":{"line":4,"column":1},"keyword":"Scenario","steps":[{"location":{"line":5,"column":3},"keyword":"Given ","text":"user is on the dynamic loading page","id":"b8dcf98c-2fac-42dd-8426-dd3d5971cf9f"},{"location":{"line":6,"column":1},"keyword":"When ","text":"user clicks the start button and uses explicit wait.","id":"4581b2c8-76e0-4a0f-a977-8c5b1da04155"},{"location":{"line":7,"column":1},"keyword":"Then ","text":"asserts that “Hello World!” text is displayed.","id":"d62ed5e7-8f7f-404d-8ab4-73fb20020716"}],"id":"fe015107-86f8-4b9f-b504-6080c2b55147"}}]}}},{"pickle":{"id":"e33f7d7b-0c19-4b04-919e-ff01cc5904de","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/DynamicLoading.feature","language":"en","steps":[{"text":"user is on the dynamic loading page","id":"aaa03046-b97e-47b7-992b-5e80a0f087de","astNodeIds":["b8dcf98c-2fac-42dd-8426-dd3d5971cf9f"]},{"text":"user clicks the start button and uses explicit wait.","id":"caace92f-cd77-414e-ad09-1be08203169f","astNodeIds":["4581b2c8-76e0-4a0f-a977-8c5b1da04155"]},{"text":"asserts that “Hello World!” text is displayed.","id":"b9021ab9-75e3-4308-aa13-5c89fe873396","astNodeIds":["d62ed5e7-8f7f-404d-8ab4-73fb20020716"]}],"tags":[{"name":"@test","astNodeId":"e8c3f107-38b7-4f9f-9beb-4f856eb7e6c0"}],"astNodeIds":["fe015107-86f8-4b9f-b504-6080c2b55147"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/FileDownload.feature","data":"@test\nFeature: File Download\n\n  Scenario: Test clicks on the file.\n  Test asserts that the file is downloaded.\n    Given user is on the file download page\n    When user click the some-file.txt\n    Then it is downloaded","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/FileDownload.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"6fe368f9-dd92-4662-889c-30995cbf761b"}],"language":"en","keyword":"Feature","name":"File Download","children":[{"scenario":{"location":{"line":4,"column":3},"keyword":"Scenario","name":"Test clicks on the file.","description":"  Test asserts that the file is downloaded.","steps":[{"location":{"line":6,"column":5},"keyword":"Given ","text":"user is on the file download page","id":"7b10b4d5-34bd-4206-bc23-4318c17ec684"},{"location":{"line":7,"column":5},"keyword":"When ","text":"user click the some-file.txt","id":"363bfa60-b2d4-477c-bb99-a75d77b21a5d"},{"location":{"line":8,"column":5},"keyword":"Then ","text":"it is downloaded","id":"a53ba5e0-69fb-4075-bea6-dc931ca2ea78"}],"id":"fe663b16-fe38-497d-a637-4fe8ccd74f2b"}}]}}},{"pickle":{"id":"8e165ac9-b434-4270-b8c8-18616914b28a","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/FileDownload.feature","name":"Test clicks on the file.","language":"en","steps":[{"text":"user is on the file download page","id":"bf56c596-18da-4068-b7ab-bc982e08fa18","astNodeIds":["7b10b4d5-34bd-4206-bc23-4318c17ec684"]},{"text":"user click the some-file.txt","id":"e44dde34-dd2a-468b-8b3c-a70fcf2d322e","astNodeIds":["363bfa60-b2d4-477c-bb99-a75d77b21a5d"]},{"text":"it is downloaded","id":"9ff14811-3173-41b3-9918-aaa14b6161a3","astNodeIds":["a53ba5e0-69fb-4075-bea6-dc931ca2ea78"]}],"tags":[{"name":"@test","astNodeId":"6fe368f9-dd92-4662-889c-30995cbf761b"}],"astNodeIds":["fe663b16-fe38-497d-a637-4fe8ccd74f2b"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/FileUpload.feature","data":"@test\nFeature: File Upload\n\n  Scenario: Test uses Upload Button or Drag and Drop to upload a file.\n  Test asserts that the file is uploaded.\n\n    Given user is on the file upload page\n    When user click chooseFIle button and select file\n    And click the upload button\n    Then user will see File is Uploaded!","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/FileUpload.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"f76d4bb7-e3ce-436b-8907-14a4c486e10a"}],"language":"en","keyword":"Feature","name":"File Upload","children":[{"scenario":{"location":{"line":4,"column":3},"keyword":"Scenario","name":"Test uses Upload Button or Drag and Drop to upload a file.","description":"  Test asserts that the file is uploaded.","steps":[{"location":{"line":7,"column":5},"keyword":"Given ","text":"user is on the file upload page","id":"66a9e16b-f849-48f0-89e3-feb9496570d9"},{"location":{"line":8,"column":5},"keyword":"When ","text":"user click chooseFIle button and select file","id":"34b52663-79b7-4395-821c-c05bc06078df"},{"location":{"line":9,"column":5},"keyword":"And ","text":"click the upload button","id":"4c7a526a-475f-463d-9b84-7cc108045cd1"},{"location":{"line":10,"column":5},"keyword":"Then ","text":"user will see File is Uploaded!","id":"d595848f-f91d-47b0-9e5e-266569ff6f2c"}],"id":"4dd73183-33bc-4fd3-8655-618a4efa52ed"}}]}}},{"pickle":{"id":"e05edef3-a224-4d0e-b63d-72aff3edc1d5","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/FileUpload.feature","name":"Test uses Upload Button or Drag and Drop to upload a file.","language":"en","steps":[{"text":"user is on the file upload page","id":"7bc64ce8-9039-4ff2-b362-cb94b90a5bc9","astNodeIds":["66a9e16b-f849-48f0-89e3-feb9496570d9"]},{"text":"user click chooseFIle button and select file","id":"0177e964-a39b-4415-ae1b-8904e7daadbf","astNodeIds":["34b52663-79b7-4395-821c-c05bc06078df"]},{"text":"click the upload button","id":"5de2391e-4e50-4be9-b1e3-89653521131e","astNodeIds":["4c7a526a-475f-463d-9b84-7cc108045cd1"]},{"text":"user will see File is Uploaded!","id":"7fa2cf41-1ffd-4f6b-bdd3-e971348fea11","astNodeIds":["d595848f-f91d-47b0-9e5e-266569ff6f2c"]}],"tags":[{"name":"@test","astNodeId":"f76d4bb7-e3ce-436b-8907-14a4c486e10a"}],"astNodeIds":["4dd73183-33bc-4fd3-8655-618a4efa52ed"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/FloatingMenu.feature","data":"@test\nFeature: Floating Menu\n  Scenario: Test scrolls the page.\n  Test asserts that the floating menu is still displayed.\nGiven user is on the Floating Menu page\n    When user scrolls the page\n    Then the floating menu is still displayed","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/FloatingMenu.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"711eb498-1e60-47e1-8449-b8da7326b1e1"}],"language":"en","keyword":"Feature","name":"Floating Menu","children":[{"scenario":{"location":{"line":3,"column":3},"keyword":"Scenario","name":"Test scrolls the page.","description":"  Test asserts that the floating menu is still displayed.","steps":[{"location":{"line":5,"column":1},"keyword":"Given ","text":"user is on the Floating Menu page","id":"d3d75e66-0289-40b4-93fd-2e3cb4bfb2e6"},{"location":{"line":6,"column":5},"keyword":"When ","text":"user scrolls the page","id":"8e37e0e8-7cc1-49e3-8fc2-3794c137d8c8"},{"location":{"line":7,"column":5},"keyword":"Then ","text":"the floating menu is still displayed","id":"6fb48fec-40a6-4c6a-b5f1-6dae9ab15a5a"}],"id":"c9664a8d-9465-4456-a182-6d2faade08ca"}}]}}},{"pickle":{"id":"ad638c2a-8096-4539-8baf-2eec682d35ef","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/FloatingMenu.feature","name":"Test scrolls the page.","language":"en","steps":[{"text":"user is on the Floating Menu page","id":"d85be97d-6045-4c1b-9508-d8a75720cc3a","astNodeIds":["d3d75e66-0289-40b4-93fd-2e3cb4bfb2e6"]},{"text":"user scrolls the page","id":"7c99198d-df3f-4c2e-aeba-e48233114522","astNodeIds":["8e37e0e8-7cc1-49e3-8fc2-3794c137d8c8"]},{"text":"the floating menu is still displayed","id":"07b8c0f3-3005-485a-9fe1-05c2f5fc7d8e","astNodeIds":["6fb48fec-40a6-4c6a-b5f1-6dae9ab15a5a"]}],"tags":[{"name":"@test","astNodeId":"711eb498-1e60-47e1-8449-b8da7326b1e1"}],"astNodeIds":["c9664a8d-9465-4456-a182-6d2faade08ca"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Iframe.feature","data":"@test\nFeature: Iframe\n  Scenario: Test switches to Iframe and types some text.\n  Test asserts that the typed text is as expected.\nGiven user is on the iframe page\n    When user type in the iframe text box\n    Then the typed text is as expected","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Iframe.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"3450ffd1-d5b8-4564-9224-4d88b7ba27e8"}],"language":"en","keyword":"Feature","name":"Iframe","children":[{"scenario":{"location":{"line":3,"column":3},"keyword":"Scenario","name":"Test switches to Iframe and types some text.","description":"  Test asserts that the typed text is as expected.","steps":[{"location":{"line":5,"column":1},"keyword":"Given ","text":"user is on the iframe page","id":"b358e855-ed1a-4241-8bb6-6da0d072622f"},{"location":{"line":6,"column":5},"keyword":"When ","text":"user type in the iframe text box","id":"153b4f18-10cb-43e4-ae45-e9b8367656ff"},{"location":{"line":7,"column":5},"keyword":"Then ","text":"the typed text is as expected","id":"a5ebb8b4-0523-48f2-b3be-d063c8cf9fbe"}],"id":"3c2f90b9-f846-466d-b53a-221c749cf7f2"}}]}}},{"pickle":{"id":"ed2760e5-2748-4c44-bd0d-85b2bfd887a8","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Iframe.feature","name":"Test switches to Iframe and types some text.","language":"en","steps":[{"text":"user is on the iframe page","id":"5ff719d2-b02b-4a10-9778-cc79305b49ac","astNodeIds":["b358e855-ed1a-4241-8bb6-6da0d072622f"]},{"text":"user type in the iframe text box","id":"622dfeff-d657-4ebb-89e9-cb198cd4678d","astNodeIds":["153b4f18-10cb-43e4-ae45-e9b8367656ff"]},{"text":"the typed text is as expected","id":"3ffbee2e-ab28-4f0f-b40f-ec935a32fdb0","astNodeIds":["a5ebb8b4-0523-48f2-b3be-d063c8cf9fbe"]}],"tags":[{"name":"@test","astNodeId":"3450ffd1-d5b8-4564-9224-4d88b7ba27e8"}],"astNodeIds":["3c2f90b9-f846-466d-b53a-221c749cf7f2"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/JavaScriptAlerts.feature","data":"@test\nFeature: JavaScript Alerts\n  Scenario: Test Clicks on JS Alert Button.\n  Test asserts alert message.\n  Test clicks on JS confirm Button and clicks ok on alert.\n  Test asserts the alert message.\n  Test clicks on JS Prompt Button and types a message on Prompt.\n  Test asserts that the alert message contains the typed message.\nGiven user is on the alert page\n    When user clicks on JS Alert Button alert message displayed\n    And user clicks on JS confirm Button and clicks ok on alert\n    Then new alert message is displayed\n    When user clicks on JS Prompt Button and types a message on Prompt\n    Then the alert message contains the typed message\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/JavaScriptAlerts.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"2c5c9b67-2415-4cc3-becd-90ef7a8046f2"}],"language":"en","keyword":"Feature","name":"JavaScript Alerts","children":[{"scenario":{"location":{"line":3,"column":3},"keyword":"Scenario","name":"Test Clicks on JS Alert Button.","description":"  Test asserts alert message.\n  Test clicks on JS confirm Button and clicks ok on alert.\n  Test asserts the alert message.\n  Test clicks on JS Prompt Button and types a message on Prompt.\n  Test asserts that the alert message contains the typed message.","steps":[{"location":{"line":9,"column":1},"keyword":"Given ","text":"user is on the alert page","id":"e2e6f4d2-75a5-450f-9360-471b8a934ec1"},{"location":{"line":10,"column":5},"keyword":"When ","text":"user clicks on JS Alert Button alert message displayed","id":"1f4ff4c9-3860-4054-81b3-979dcf0a9b8a"},{"location":{"line":11,"column":5},"keyword":"And ","text":"user clicks on JS confirm Button and clicks ok on alert","id":"867f2195-7119-42c6-8980-aa7ed7ac09af"},{"location":{"line":12,"column":5},"keyword":"Then ","text":"new alert message is displayed","id":"1e5d50be-3c9b-4a29-9593-556b86922f55"},{"location":{"line":13,"column":5},"keyword":"When ","text":"user clicks on JS Prompt Button and types a message on Prompt","id":"8bbcde8c-c26e-4cd4-862b-db99aa436ecf"},{"location":{"line":14,"column":5},"keyword":"Then ","text":"the alert message contains the typed message","id":"4608b41c-5fc3-41a5-acf0-ef35c93f2800"}],"id":"1c8cf496-ffda-4cdc-b732-a68b71d2374a"}}]}}},{"pickle":{"id":"a7dc2223-3438-4d96-bdae-0b745e22e72a","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/JavaScriptAlerts.feature","name":"Test Clicks on JS Alert Button.","language":"en","steps":[{"text":"user is on the alert page","id":"5d7ced6d-8b09-4840-8a98-7383a5fc3cdc","astNodeIds":["e2e6f4d2-75a5-450f-9360-471b8a934ec1"]},{"text":"user clicks on JS Alert Button alert message displayed","id":"de80c948-e19f-4520-8b15-eb24cce5acdb","astNodeIds":["1f4ff4c9-3860-4054-81b3-979dcf0a9b8a"]},{"text":"user clicks on JS confirm Button and clicks ok on alert","id":"44c8d717-7ef3-4d31-9986-0623e5af44f6","astNodeIds":["867f2195-7119-42c6-8980-aa7ed7ac09af"]},{"text":"new alert message is displayed","id":"70b3fc5c-e606-4578-ad5c-1863afefbd5c","astNodeIds":["1e5d50be-3c9b-4a29-9593-556b86922f55"]},{"text":"user clicks on JS Prompt Button and types a message on Prompt","id":"5096fa3d-482c-4f82-b86c-c26a0129e771","astNodeIds":["8bbcde8c-c26e-4cd4-862b-db99aa436ecf"]},{"text":"the alert message contains the typed message","id":"37d7aa6f-95b9-47d9-946a-ee460ed6d40a","astNodeIds":["4608b41c-5fc3-41a5-acf0-ef35c93f2800"]}],"tags":[{"name":"@test","astNodeId":"2c5c9b67-2415-4cc3-becd-90ef7a8046f2"}],"astNodeIds":["1c8cf496-ffda-4cdc-b732-a68b71d2374a"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/JavaScriptError.feature","data":"@test\nFeature: JavaScript Error\n  Scenario: Test finds the JavaScript error on the page.\n  Test asserts that the page contains error: Cannot read property \u0027xyz\u0027 of undefined.\n    When user is on the JavaScript Error page\n   Then asserts that the page contains error\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/JavaScriptError.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"3e306205-b154-467e-87cb-1a342807e465"}],"language":"en","keyword":"Feature","name":"JavaScript Error","children":[{"scenario":{"location":{"line":3,"column":3},"keyword":"Scenario","name":"Test finds the JavaScript error on the page.","description":"  Test asserts that the page contains error: Cannot read property \u0027xyz\u0027 of undefined.","steps":[{"location":{"line":5,"column":5},"keyword":"When ","text":"user is on the JavaScript Error page","id":"89ae90b6-0f9d-450b-9be7-4a13105314ba"},{"location":{"line":6,"column":4},"keyword":"Then ","text":"asserts that the page contains error","id":"14b15492-8177-4b94-af6b-23ffaff40145"}],"id":"881cbfd9-a6a8-4b56-a91b-ddd57c7ce5be"}}]}}},{"pickle":{"id":"9b4c1062-2aa9-4549-be02-a91d50be08eb","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/JavaScriptError.feature","name":"Test finds the JavaScript error on the page.","language":"en","steps":[{"text":"user is on the JavaScript Error page","id":"2ef389dd-53de-41d5-8c03-1d5b23b565aa","astNodeIds":["89ae90b6-0f9d-450b-9be7-4a13105314ba"]},{"text":"asserts that the page contains error","id":"32f05843-ee86-4982-98c7-2af5d5a4729a","astNodeIds":["14b15492-8177-4b94-af6b-23ffaff40145"]}],"tags":[{"name":"@test","astNodeId":"3e306205-b154-467e-87cb-1a342807e465"}],"astNodeIds":["881cbfd9-a6a8-4b56-a91b-ddd57c7ce5be"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Login.feature","data":"@test\nFeature:Login  feature\n  As a user, I should be able to login with correct credential\n  As a user, I should fail to log in with wrong credential\n\n  Background: User is already in login page\n    Given user is on the login page\n\n    Scenario: Login with correct credential\n    When user enters correct username\n    And user enter correct password\n    Then logged in successfully\n\n\n      Scenario: Login with wrong credential\n        When user enters wrong username\n        And  user enter wrong password\n        Then failed login\n\n\n\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Login.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"c618b778-3b87-45b6-b4d8-9cfadcbb10c2"}],"language":"en","keyword":"Feature","name":"Login  feature","description":"  As a user, I should be able to login with correct credential\n  As a user, I should fail to log in with wrong credential","children":[{"background":{"location":{"line":6,"column":3},"keyword":"Background","name":"User is already in login page","steps":[{"location":{"line":7,"column":5},"keyword":"Given ","text":"user is on the login page","id":"67b6fe45-c220-4262-9d9d-913142c844b6"}],"id":"2b115eac-a9aa-4aac-8427-e370732d254e"}},{"scenario":{"location":{"line":9,"column":5},"keyword":"Scenario","name":"Login with correct credential","steps":[{"location":{"line":10,"column":5},"keyword":"When ","text":"user enters correct username","id":"77361a16-40f6-411f-a7f3-3c65ba6c853b"},{"location":{"line":11,"column":5},"keyword":"And ","text":"user enter correct password","id":"8236d856-11bf-4173-b7cb-593e493ee954"},{"location":{"line":12,"column":5},"keyword":"Then ","text":"logged in successfully","id":"1e961e52-1e68-4756-abb8-021ba4f0bf82"}],"id":"c359604f-f383-49b7-b480-1aceccff25e6"}},{"scenario":{"location":{"line":15,"column":7},"keyword":"Scenario","name":"Login with wrong credential","steps":[{"location":{"line":16,"column":9},"keyword":"When ","text":"user enters wrong username","id":"092119e6-854b-4927-8ba1-37e38f8f60da"},{"location":{"line":17,"column":9},"keyword":"And ","text":"user enter wrong password","id":"b1a7dfd7-bb42-4054-ba58-3987e34efbc4"},{"location":{"line":18,"column":9},"keyword":"Then ","text":"failed login","id":"8852ee03-02d0-4c58-8e88-577e11b5e7a3"}],"id":"82d94f04-d20a-4481-a761-615f0edfaccc"}}]}}},{"pickle":{"id":"99c95845-58e5-4994-a1d7-8d3f2cc6fee0","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Login.feature","name":"Login with correct credential","language":"en","steps":[{"text":"user is on the login page","id":"ff8881ec-1454-4967-aa05-dbd998dedfd0","astNodeIds":["67b6fe45-c220-4262-9d9d-913142c844b6"]},{"text":"user enters correct username","id":"116e46b1-8dbb-46bc-8bef-0f84348336bb","astNodeIds":["77361a16-40f6-411f-a7f3-3c65ba6c853b"]},{"text":"user enter correct password","id":"865430e6-3f4d-41c8-b68e-896f3c85eeca","astNodeIds":["8236d856-11bf-4173-b7cb-593e493ee954"]},{"text":"logged in successfully","id":"77a2d34a-8198-4e18-9938-74621ebeb762","astNodeIds":["1e961e52-1e68-4756-abb8-021ba4f0bf82"]}],"tags":[{"name":"@test","astNodeId":"c618b778-3b87-45b6-b4d8-9cfadcbb10c2"}],"astNodeIds":["c359604f-f383-49b7-b480-1aceccff25e6"]}},{"pickle":{"id":"f32be88e-88bf-4592-8de3-d0757e276072","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/Login.feature","name":"Login with wrong credential","language":"en","steps":[{"text":"user is on the login page","id":"f6585215-5bf3-44e8-8d51-17211a975914","astNodeIds":["67b6fe45-c220-4262-9d9d-913142c844b6"]},{"text":"user enters wrong username","id":"ddaaa37c-940b-4103-a0c4-c71ff7f6d275","astNodeIds":["092119e6-854b-4927-8ba1-37e38f8f60da"]},{"text":"user enter wrong password","id":"4b7b961e-74c9-4c18-b65e-e2066872a5ac","astNodeIds":["b1a7dfd7-bb42-4054-ba58-3987e34efbc4"]},{"text":"failed login","id":"a479fa63-1e0a-4a77-bc3e-b6b59ed2a479","astNodeIds":["8852ee03-02d0-4c58-8e88-577e11b5e7a3"]}],"tags":[{"name":"@test","astNodeId":"c618b778-3b87-45b6-b4d8-9cfadcbb10c2"}],"astNodeIds":["82d94f04-d20a-4481-a761-615f0edfaccc"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/MouseHover.feature","data":"@test\nFeature: Mouse Hover\n  Scenario: Test does a mouse hover on each image.\n  Test asserts that additional information is displayed for each image.\n    Given user is on the Mouse Hover page\n    When mouse hover on each image\n    Then additional information is displayed for each image.\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/MouseHover.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"1935fbbf-bf2e-49d0-b5b2-7c21a28e5d03"}],"language":"en","keyword":"Feature","name":"Mouse Hover","children":[{"scenario":{"location":{"line":3,"column":3},"keyword":"Scenario","name":"Test does a mouse hover on each image.","description":"  Test asserts that additional information is displayed for each image.","steps":[{"location":{"line":5,"column":5},"keyword":"Given ","text":"user is on the Mouse Hover page","id":"948fe901-43cf-4836-8dbd-c7c7387f0ab2"},{"location":{"line":6,"column":5},"keyword":"When ","text":"mouse hover on each image","id":"7541d95d-70a7-47f0-b957-5ded720989e5"},{"location":{"line":7,"column":5},"keyword":"Then ","text":"additional information is displayed for each image.","id":"1e2047d3-048c-413a-83dc-dd2fcda5bf31"}],"id":"29168f58-7b90-4b85-8048-d450614fe4cb"}}]}}},{"pickle":{"id":"9228371d-ee62-4083-958e-1a93b867403c","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/MouseHover.feature","name":"Test does a mouse hover on each image.","language":"en","steps":[{"text":"user is on the Mouse Hover page","id":"fcb3aa7b-ba16-47ac-b006-6ba7b162ef51","astNodeIds":["948fe901-43cf-4836-8dbd-c7c7387f0ab2"]},{"text":"mouse hover on each image","id":"ef9a3a08-3336-4b3e-a1f0-342d537e363c","astNodeIds":["7541d95d-70a7-47f0-b957-5ded720989e5"]},{"text":"additional information is displayed for each image.","id":"3416f99a-cde3-4bac-9cba-c7184c87afe9","astNodeIds":["1e2047d3-048c-413a-83dc-dd2fcda5bf31"]}],"tags":[{"name":"@test","astNodeId":"1935fbbf-bf2e-49d0-b5b2-7c21a28e5d03"}],"astNodeIds":["29168f58-7b90-4b85-8048-d450614fe4cb"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/NotificationMessage.feature","data":"@test\nFeature: Notification Message\n\n  Scenario: Test clicks on the Click Here link a multiple times.\n  Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again”\n  and “Action Unsuccessful” messages show on click.\n    Given user is on the Notification Message Page\n    When user clicks on the Click Here link a multiple times\n    Then asserts that one of the “Action Successful”, “Action unsuccessful, please try again”and “Action Unsuccessful” messages show on click","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/NotificationMessage.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"51051dfa-a5cb-4365-ae44-ffac9758c8d2"}],"language":"en","keyword":"Feature","name":"Notification Message","children":[{"scenario":{"location":{"line":4,"column":3},"keyword":"Scenario","name":"Test clicks on the Click Here link a multiple times.","description":"  Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again”\n  and “Action Unsuccessful” messages show on click.","steps":[{"location":{"line":7,"column":5},"keyword":"Given ","text":"user is on the Notification Message Page","id":"4d407ea3-495f-4548-a292-3050997c1e67"},{"location":{"line":8,"column":5},"keyword":"When ","text":"user clicks on the Click Here link a multiple times","id":"01fc05c2-d385-4e73-87aa-1d320e968aa6"},{"location":{"line":9,"column":5},"keyword":"Then ","text":"asserts that one of the “Action Successful”, “Action unsuccessful, please try again”and “Action Unsuccessful” messages show on click","id":"b7d33808-8d04-4ae5-b71f-3551881c7f63"}],"id":"46e53c36-c963-4b2c-aeca-7f5e99fb4f67"}}]}}},{"pickle":{"id":"71f8cec5-7df4-4f71-b966-2e7d4b949a1f","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/NotificationMessage.feature","name":"Test clicks on the Click Here link a multiple times.","language":"en","steps":[{"text":"user is on the Notification Message Page","id":"fd8bc215-e0b1-475c-b705-1b148aecb8a3","astNodeIds":["4d407ea3-495f-4548-a292-3050997c1e67"]},{"text":"user clicks on the Click Here link a multiple times","id":"ab169de2-38f9-4025-8bb5-5d3098af4e77","astNodeIds":["01fc05c2-d385-4e73-87aa-1d320e968aa6"]},{"text":"asserts that one of the “Action Successful”, “Action unsuccessful, please try again”and “Action Unsuccessful” messages show on click","id":"0b3dc883-9dc8-426b-a423-1d86b1eaf8a3","astNodeIds":["b7d33808-8d04-4ae5-b71f-3551881c7f63"]}],"tags":[{"name":"@test","astNodeId":"51051dfa-a5cb-4365-ae44-ffac9758c8d2"}],"astNodeIds":["46e53c36-c963-4b2c-aeca-7f5e99fb4f67"]}},{"source":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/OpenNewTap.feature","data":"@test\nFeature: Open in New Tab\n\n  Scenario: Test clicks on the Click Here link.\n  Test asserts that a new tab is opened with text New Window.\n    Given user is on the Open in new Tap page\n    When user clicks on the Click Here link\n    Then asserts that a new tab is opened with text New Window\n\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/OpenNewTap.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@test","id":"6c3fde4a-b747-4f43-9b9e-2f6a664a9a40"}],"language":"en","keyword":"Feature","name":"Open in New Tab","children":[{"scenario":{"location":{"line":4,"column":3},"keyword":"Scenario","name":"Test clicks on the Click Here link.","description":"  Test asserts that a new tab is opened with text New Window.","steps":[{"location":{"line":6,"column":5},"keyword":"Given ","text":"user is on the Open in new Tap page","id":"7ab7826a-0ccf-490e-aebc-959d9f95bca8"},{"location":{"line":7,"column":5},"keyword":"When ","text":"user clicks on the Click Here link","id":"119c8fa4-c196-40df-b833-fda52fab8a23"},{"location":{"line":8,"column":5},"keyword":"Then ","text":"asserts that a new tab is opened with text New Window","id":"5b5b6fd7-2a2f-4627-ad3b-6654735259c0"}],"id":"0a30fda5-6e17-4b59-9637-fc6c063487c0"}}]}}},{"pickle":{"id":"23295060-83d5-43ef-ad95-11e7280b06df","uri":"file:///Users/minibae/take-home-webdriver-test/src/test/resources/features/OpenNewTap.feature","name":"Test clicks on the Click Here link.","language":"en","steps":[{"text":"user is on the Open in new Tap page","id":"cea62475-e8d5-48f6-9ffb-95510b6426f1","astNodeIds":["7ab7826a-0ccf-490e-aebc-959d9f95bca8"]},{"text":"user clicks on the Click Here link","id":"52beec65-2d24-4cac-ad48-ac1b54f032a5","astNodeIds":["119c8fa4-c196-40df-b833-fda52fab8a23"]},{"text":"asserts that a new tab is opened with text New Window","id":"0fc3f847-601f-442d-b366-dbff8db83de6","astNodeIds":["5b5b6fd7-2a2f-4627-ad3b-6654735259c0"]}],"tags":[{"name":"@test","astNodeId":"6c3fde4a-b747-4f43-9b9e-2f6a664a9a40"}],"astNodeIds":["0a30fda5-6e17-4b59-9637-fc6c063487c0"]}},{"testCase":{"id":"d145d83f-2445-4431-93e7-7267436bd6b5","pickleId":"8a3b5546-0713-4dd8-90e7-41d7c51cacb2","testSteps":[{"id":"a7120138-226e-4646-915c-298bd3aef983","hookId":"967a2565-49fa-4eb6-9722-94239afe44d7"},{"id":"1afe0742-1bf2-4996-ba07-8b344e661b53","hookId":"c7b75b9a-869a-4500-ab9a-9bc53c145580"},{"id":"ceab63ce-ce1e-4b20-bc87-76acd6249a39","pickleStepId":"5146d440-53a8-4a5d-b054-d05b20c646c5","stepDefinitionIds":["35cb4314-2d16-45ec-a9e3-309e47b87e66"],"stepMatchArgumentsLists":[{}]},{"id":"d13e2e9f-c6a8-47d0-81c8-ed30d7406350","hookId":"a284469d-260c-42e7-83cd-7d690b52fe7f"},{"id":"1927a3f0-c35b-4ffb-9bca-c7c7febd2745","hookId":"c7b75b9a-869a-4500-ab9a-9bc53c145580"},{"id":"8fd16790-72d2-4a9a-a736-c23aea4f087e","pickleStepId":"03e4df48-f9e7-4e03-8343-90887cdcb731","stepDefinitionIds":["861367b4-1c0c-4d49-80f8-1d591180e1c4"],"stepMatchArgumentsLists":[{}]},{"id":"f5368d6d-eeb3-4d09-a7cf-024c90333440","hookId":"a284469d-260c-42e7-83cd-7d690b52fe7f"},{"id":"83478a48-e372-438c-aab1-6389cddc36a3","hookId":"c7b75b9a-869a-4500-ab9a-9bc53c145580"},{"id":"de95d8b7-aaeb-4291-8552-914bae6c7d65","pickleStepId":"c91005ae-bc21-4eb9-8708-26e85047078b","stepDefinitionIds":["b424eddb-516b-40c6-8880-9684f3d82b58"],"stepMatchArgumentsLists":[{}]},{"id":"fb6dca86-3120-41e5-acb3-1f77bc330aed","hookId":"a284469d-260c-42e7-83cd-7d690b52fe7f"},{"id":"97ee372c-2a96-4565-84d5-95aef2ac8ae5","hookId":"cbf88a94-e105-47ce-9974-de7f50f400cd"}]}},{"testCase":{"id":"be4d10be-e936-46fb-bbf8-f1e353d122d2","pickleId":"8c4951b7-215f-4771-8187-cb0c7103dfb9","testSteps":[{"id":"a7638c58-06c3-48b0-bafb-8272a3a9197d","hookId":"e8853cb9-c9b6-4f88-ba51-500f5cacfc23"},{"id":"e9fcdd80-63b6-437c-b4e7-e591ee7ed8ae","hookId":"a0883fbb-c735-4e04-b2aa-a212dbfa0060"},{"id":"a5a9a7a0-e89b-4729-8854-579cab0e3d3f","pickleStepId":"40bf82d8-3e6e-4c01-b04f-bf1ab481e34a","stepDefinitionIds":["435329bb-7b9a-49eb-b4c4-7e78b3b36cc0"],"stepMatchArgumentsLists":[{}]},{"id":"df4f7921-44ad-43a6-995f-92038101b7e5","hookId":"7bedeb23-3fa7-4213-af6c-5c15f3774f32"},{"id":"84742038-ad7b-4201-a160-38803e15505c","hookId":"a0883fbb-c735-4e04-b2aa-a212dbfa0060"},{"id":"04d70f3c-297c-4d0a-9724-a42d0fc5cce1","pickleStepId":"bf25c8ec-5e13-40eb-ab50-c0e33623721b","stepDefinitionIds":["d4bead5d-f54b-4ccc-bde5-32959c85d01b"],"stepMatchArgumentsLists":[{}]},{"id":"72b12030-8047-45ee-8fc7-c0ee9b0821f2","hookId":"7bedeb23-3fa7-4213-af6c-5c15f3774f32"},{"id":"59c4c9fd-3b6a-4de7-941a-a69bedadc0b9","hookId":"a0883fbb-c735-4e04-b2aa-a212dbfa0060"},{"id":"60999042-3683-4fa1-a41b-53c8a2f80248","pickleStepId":"43c6d23f-3011-4f75-9f07-32457ae7335c","stepDefinitionIds":[
