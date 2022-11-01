@@ -13,7 +13,7 @@ public class HomePage {
     }
 
     @FindBy(xpath="//li[.='Checkboxes']")
-    public WebElement checkBoxesLink;
+    public WebElement checkBoxesLinkk;
 
     @FindBy(xpath="//*[@id='checkboxes']/input[1]")
     public WebElement checkBox1;
