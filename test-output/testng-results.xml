@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-06T19:13:01 CST" name="Suite" finished-at="2022-11-06T19:14:40 CST" duration-ms="99554">
+    <groups>
+    </groups>
+    <test started-at="2022-11-06T19:13:01 CST" name="Test" finished-at="2022-11-06T19:14:40 CST" duration-ms="99554">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@67f639d3]" started-at="2022-11-06T19:14:00 CST" name="setup" finished-at="2022-11-06T19:14:01 CST" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginPageInvalidData()[pri:0, instance:tests.LoginTest@67f639d3]" started-at="2022-11-06T19:14:01 CST" name="testLoginPageInvalidData" finished-at="2022-11-06T19:14:03 CST" duration-ms="2492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageInvalidData -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.LoginTest@67f639d3]" started-at="2022-11-06T19:14:03 CST" name="clear" finished-at="2022-11-06T19:14:03 CST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@67f639d3]" started-at="2022-11-06T19:14:03 CST" name="setup" finished-at="2022-11-06T19:14:04 CST" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginPageValidData()[pri:0, instance:tests.LoginTest@67f639d3]" started-at="2022-11-06T19:14:04 CST" name="testLoginPageValidData" finished-at="2022-11-06T19:14:07 CST" duration-ms="2537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageValidData -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.LoginTest@67f639d3]" started-at="2022-11-06T19:14:07 CST" name="clear" finished-at="2022-11-06T19:14:07 CST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.MouseHoverTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MouseHoverTest@51e69659]" started-at="2022-11-06T19:14:29 CST" name="setup" finished-at="2022-11-06T19:14:30 CST" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testMouseHover()[pri:0, instance:tests.MouseHoverTest@51e69659]" started-at="2022-11-06T19:14:30 CST" name="testMouseHover" finished-at="2022-11-06T19:14:35 CST" duration-ms="4700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMouseHover -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.MouseHoverTest@51e69659]" started-at="2022-11-06T19:14:35 CST" name="clear" finished-at="2022-11-06T19:14:35 CST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.MouseHoverTest -->
+      <class name="tests.JavascriptAlertsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.JavascriptAlertsTest@290222c1]" started-at="2022-11-06T19:13:54 CST" name="setup" finished-at="2022-11-06T19:13:55 CST" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testClickForJSAlert()[pri:0, instance:tests.JavascriptAlertsTest@290222c1]" started-at="2022-11-06T19:13:55 CST" name="testClickForJSAlert" finished-at="2022-11-06T19:13:55 CST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickForJSAlert -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.JavascriptAlertsTest@290222c1]" started-at="2022-11-06T19:13:55 CST" name="clear" finished-at="2022-11-06T19:13:55 CST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.JavascriptAlertsTest@290222c1]" started-at="2022-11-06T19:13:55 CST" name="setup" finished-at="2022-11-06T19:13:56 CST" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testClickForJSConfirm()[pri:0, instance:tests.JavascriptAlertsTest@290222c1]" started-at="2022-11-06T19:13:56 CST" name="testClickForJSConfirm" finished-at="2022-11-06T19:13:56 CST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickForJSConfirm -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.JavascriptAlertsTest@290222c1]" started-at="2022-11-06T19:13:56 CST" name="clear" finished-at="2022-11-06T19:13:56 CST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.JavascriptAlertsTest@290222c1]" started-at="2022-11-06T19:13:56 CST" name="setup" finished-at="2022-11-06T19:13:57 CST" duration-ms="886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testClickForJSPrompt()[pri:0, instance:tests.JavascriptAlertsTest@290222c1]" started-at="2022-11-06T19:13:57 CST" name="testClickForJSPrompt" finished-at="2022-11-06T19:14:00 CST" duration-ms="2358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickForJSPrompt -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.JavascriptAlertsTest@290222c1]" started-at="2022-11-06T19:14:00 CST" name="clear" finished-at="2022-11-06T19:14:00 CST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.JavascriptAlertsTest -->
+      <class name="tests.NotificationMessageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NotificationMessageTest@27462a88]" started-at="2022-11-06T19:14:25 CST" name="setup" finished-at="2022-11-06T19:14:26 CST" duration-ms="764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNotificationMessageTest()[pri:0, instance:tests.NotificationMessageTest@27462a88]" started-at="2022-11-06T19:14:26 CST" name="testNotificationMessageTest" finished-at="2022-11-06T19:14:26 CST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNotificationMessageTest -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.NotificationMessageTest@27462a88]" started-at="2022-11-06T19:14:26 CST" name="clear" finished-at="2022-11-06T19:14:26 CST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.NotificationMessageTest -->
+      <class name="tests.DropDownTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DropDownTest@71a8adcf]" started-at="2022-11-06T19:14:19 CST" name="setup" finished-at="2022-11-06T19:14:19 CST" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testdropdownoption1()[pri:0, instance:tests.DropDownTest@71a8adcf]" started-at="2022-11-06T19:14:19 CST" name="testdropdownoption1" finished-at="2022-11-06T19:14:22 CST" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdropdownoption1 -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.DropDownTest@71a8adcf]" started-at="2022-11-06T19:14:22 CST" name="clear" finished-at="2022-11-06T19:14:22 CST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DropDownTest@71a8adcf]" started-at="2022-11-06T19:14:22 CST" name="setup" finished-at="2022-11-06T19:14:23 CST" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testdropdownoption2()[pri:0, instance:tests.DropDownTest@71a8adcf]" started-at="2022-11-06T19:14:23 CST" name="testdropdownoption2" finished-at="2022-11-06T19:14:25 CST" duration-ms="2322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdropdownoption2 -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.DropDownTest@71a8adcf]" started-at="2022-11-06T19:14:25 CST" name="clear" finished-at="2022-11-06T19:14:25 CST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.DropDownTest -->
+      <class name="tests.JavaScriptErrorTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.JavaScriptErrorTest@82de64a]" started-at="2022-11-06T19:14:26 CST" name="setup" finished-at="2022-11-06T19:14:27 CST" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testJavaScriptError()[pri:0, instance:tests.JavaScriptErrorTest@82de64a]" started-at="2022-11-06T19:14:27 CST" name="testJavaScriptError" finished-at="2022-11-06T19:14:27 CST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJavaScriptError -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.JavaScriptErrorTest@82de64a]" started-at="2022-11-06T19:14:27 CST" name="clear" finished-at="2022-11-06T19:14:27 CST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.JavaScriptErrorTest -->
+      <class name="tests.FileUploaderTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FileUploaderTest@47e2e487]" started-at="2022-11-06T19:14:35 CST" name="setup" finished-at="2022-11-06T19:14:36 CST" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFileUploader()[pri:0, instance:tests.FileUploaderTest@47e2e487]" started-at="2022-11-06T19:14:36 CST" name="testFileUploader" finished-at="2022-11-06T19:14:36 CST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFileUploader -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.FileUploaderTest@47e2e487]" started-at="2022-11-06T19:14:36 CST" name="clear" finished-at="2022-11-06T19:14:36 CST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.FileUploaderTest -->
+      <class name="tests.FloatingMenuTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FloatingMenuTest@201a4587]" started-at="2022-11-06T19:14:36 CST" name="setup" finished-at="2022-11-06T19:14:37 CST" duration-ms="839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFloatingMenu()[pri:0, instance:tests.FloatingMenuTest@201a4587]" started-at="2022-11-06T19:14:37 CST" name="testFloatingMenu" finished-at="2022-11-06T19:14:37 CST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFloatingMenu -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.FloatingMenuTest@201a4587]" started-at="2022-11-06T19:14:37 CST" name="clear" finished-at="2022-11-06T19:14:37 CST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.FloatingMenuTest -->
+      <class name="tests.OpenInNewWindowTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.OpenInNewWindowTest@61001b64]" started-at="2022-11-06T19:14:37 CST" name="setup" finished-at="2022-11-06T19:14:38 CST" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOpenInNewWindowTest()[pri:0, instance:tests.OpenInNewWindowTest@61001b64]" started-at="2022-11-06T19:14:38 CST" name="testOpenInNewWindowTest" finished-at="2022-11-06T19:14:40 CST" duration-ms="2324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenInNewWindowTest -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.OpenInNewWindowTest@61001b64]" started-at="2022-11-06T19:14:40 CST" name="clear" finished-at="2022-11-06T19:14:40 CST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.OpenInNewWindowTest -->
+      <class name="tests.DragandDrpoTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DragandDrpoTest@611889f4]" started-at="2022-11-06T19:13:01 CST" name="setup" finished-at="2022-11-06T19:13:03 CST" duration-ms="1610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testdraganddrop()[pri:0, instance:tests.DragandDrpoTest@611889f4]" started-at="2022-11-06T19:13:03 CST" name="testdraganddrop" finished-at="2022-11-06T19:13:27 CST" duration-ms="24638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdraganddrop -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.DragandDrpoTest@611889f4]" started-at="2022-11-06T19:13:27 CST" name="clear" finished-at="2022-11-06T19:13:27 CST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.DragandDrpoTest -->
+      <class name="tests.DynamicContentTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DynamicContentTest@7bab3f1a]" started-at="2022-11-06T19:13:27 CST" name="setup" finished-at="2022-11-06T19:13:28 CST" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDynamicContent()[pri:0, instance:tests.DynamicContentTest@7bab3f1a]" started-at="2022-11-06T19:13:28 CST" name="testDynamicContent" finished-at="2022-11-06T19:13:29 CST" duration-ms="818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicContent -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.DynamicContentTest@7bab3f1a]" started-at="2022-11-06T19:13:29 CST" name="clear" finished-at="2022-11-06T19:13:29 CST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.DynamicContentTest -->
+      <class name="tests.IFrameTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.IFrameTest@659499f1]" started-at="2022-11-06T19:14:27 CST" name="setup" finished-at="2022-11-06T19:14:28 CST" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testIFrame()[pri:0, instance:tests.IFrameTest@659499f1]" started-at="2022-11-06T19:14:28 CST" name="testIFrame" finished-at="2022-11-06T19:14:29 CST" duration-ms="825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIFrame -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.IFrameTest@659499f1]" started-at="2022-11-06T19:14:29 CST" name="clear" finished-at="2022-11-06T19:14:29 CST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.IFrameTest -->
+      <class name="tests.DynamicLoadingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DynamicLoadingTest@437da279]" started-at="2022-11-06T19:13:29 CST" name="setup" finished-at="2022-11-06T19:13:30 CST" duration-ms="904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDynamicLoading()[pri:0, instance:tests.DynamicLoadingTest@437da279]" started-at="2022-11-06T19:13:30 CST" name="testDynamicLoading" finished-at="2022-11-06T19:13:36 CST" duration-ms="5554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicLoading -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.DynamicLoadingTest@437da279]" started-at="2022-11-06T19:13:36 CST" name="clear" finished-at="2022-11-06T19:13:36 CST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.DynamicLoadingTest -->
+      <class name="tests.FileDownloaderTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FileDownloaderTest@23c30a20]" started-at="2022-11-06T19:13:36 CST" name="setup" finished-at="2022-11-06T19:13:37 CST" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testClickForJSAlert()[pri:0, instance:tests.FileDownloaderTest@23c30a20]" started-at="2022-11-06T19:13:37 CST" name="testClickForJSAlert" finished-at="2022-11-06T19:13:37 CST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickForJSAlert -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.FileDownloaderTest@23c30a20]" started-at="2022-11-06T19:13:37 CST" name="clear" finished-at="2022-11-06T19:13:37 CST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.FileDownloaderTest -->
+      <class name="tests.DynamicControlsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DynamicControlsTest@1e1a0406]" started-at="2022-11-06T19:13:37 CST" name="setup" finished-at="2022-11-06T19:13:38 CST" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDynamicControls()[pri:0, instance:tests.DynamicControlsTest@1e1a0406]" started-at="2022-11-06T19:13:38 CST" name="testDynamicControls" finished-at="2022-11-06T19:13:53 CST" duration-ms="15178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicControls -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.DynamicControlsTest@1e1a0406]" started-at="2022-11-06T19:13:53 CST" name="clear" finished-at="2022-11-06T19:13:54 CST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.DynamicControlsTest -->
+      <class name="tests.CheckBoxTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckBoxTest@6253c26]" started-at="2022-11-06T19:14:07 CST" name="setup" finished-at="2022-11-06T19:14:08 CST" duration-ms="748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckBox1Selected()[pri:0, instance:tests.CheckBoxTest@6253c26]" started-at="2022-11-06T19:14:08 CST" name="testCheckBox1Selected" finished-at="2022-11-06T19:14:10 CST" duration-ms="2266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckBox1Selected -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.CheckBoxTest@6253c26]" started-at="2022-11-06T19:14:10 CST" name="clear" finished-at="2022-11-06T19:14:10 CST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckBoxTest@6253c26]" started-at="2022-11-06T19:14:10 CST" name="setup" finished-at="2022-11-06T19:14:11 CST" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckBox2UnSelected()[pri:0, instance:tests.CheckBoxTest@6253c26]" started-at="2022-11-06T19:14:11 CST" name="testCheckBox2UnSelected" finished-at="2022-11-06T19:14:13 CST" duration-ms="2293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckBox2UnSelected -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.CheckBoxTest@6253c26]" started-at="2022-11-06T19:14:13 CST" name="clear" finished-at="2022-11-06T19:14:13 CST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.CheckBoxTest -->
+      <class name="tests.ContextClickTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ContextClickTest@49049a04]" started-at="2022-11-06T19:14:13 CST" name="setup" finished-at="2022-11-06T19:14:14 CST" duration-ms="783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testcontextclick()[pri:0, instance:tests.ContextClickTest@49049a04]" started-at="2022-11-06T19:14:14 CST" name="testcontextclick" finished-at="2022-11-06T19:14:18 CST" duration-ms="4395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcontextclick -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:tests.ContextClickTest@49049a04]" started-at="2022-11-06T19:14:18 CST" name="clear" finished-at="2022-11-06T19:14:19 CST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- tests.ContextClickTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
