@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 06 19:13:01 CST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>99 seconds (99554 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DragandDrpoTest.testdraganddrop()'><b>testdraganddrop</b><br>Test class: tests.DragandDrpoTest</td>
+<td></td>
+<td>24</td>
+<td>tests.DragandDrpoTest@611889f4</td></tr>
+<tr>
+<td title='tests.OpenInNewWindowTest.testOpenInNewWindowTest()'><b>testOpenInNewWindowTest</b><br>Test class: tests.OpenInNewWindowTest</td>
+<td></td>
+<td>2</td>
+<td>tests.OpenInNewWindowTest@61001b64</td></tr>
+<tr>
+<td title='tests.ContextClickTest.testcontextclick()'><b>testcontextclick</b><br>Test class: tests.ContextClickTest</td>
+<td></td>
+<td>4</td>
+<td>tests.ContextClickTest@49049a04</td></tr>
+<tr>
+<td title='tests.FloatingMenuTest.testFloatingMenu()'><b>testFloatingMenu</b><br>Test class: tests.FloatingMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FloatingMenuTest@201a4587</td></tr>
+<tr>
+<td title='tests.LoginTest.testLoginPageInvalidData()'><b>testLoginPageInvalidData</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@67f639d3</td></tr>
+<tr>
+<td title='tests.IFrameTest.testIFrame()'><b>testIFrame</b><br>Test class: tests.IFrameTest</td>
+<td></td>
+<td>0</td>
+<td>tests.IFrameTest@659499f1</td></tr>
+<tr>
+<td title='tests.CheckBoxTest.testCheckBox2UnSelected()'><b>testCheckBox2UnSelected</b><br>Test class: tests.CheckBoxTest</td>
+<td></td>
+<td>2</td>
+<td>tests.CheckBoxTest@6253c26</td></tr>
+<tr>
+<td title='tests.DropDownTest.testdropdownoption1()'><b>testdropdownoption1</b><br>Test class: tests.DropDownTest</td>
+<td></td>
+<td>2</td>
+<td>tests.DropDownTest@71a8adcf</td></tr>
+<tr>
+<td title='tests.NotificationMessageTest.testNotificationMessageTest()'><b>testNotificationMessageTest</b><br>Test class: tests.NotificationMessageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.NotificationMessageTest@27462a88</td></tr>
+<tr>
+<td title='tests.DynamicControlsTest.testDynamicControls()'><b>testDynamicControls</b><br>Test class: tests.DynamicControlsTest</td>
+<td></td>
+<td>15</td>
+<td>tests.DynamicControlsTest@1e1a0406</td></tr>
+<tr>
+<td title='tests.DropDownTest.testdropdownoption2()'><b>testdropdownoption2</b><br>Test class: tests.DropDownTest</td>
+<td></td>
+<td>2</td>
+<td>tests.DropDownTest@71a8adcf</td></tr>
+<tr>
+<td title='tests.JavascriptAlertsTest.testClickForJSPrompt()'><b>testClickForJSPrompt</b><br>Test class: tests.JavascriptAlertsTest</td>
+<td></td>
+<td>2</td>
+<td>tests.JavascriptAlertsTest@290222c1</td></tr>
+<tr>
+<td title='tests.DynamicContentTest.testDynamicContent()'><b>testDynamicContent</b><br>Test class: tests.DynamicContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DynamicContentTest@7bab3f1a</td></tr>
+<tr>
+<td title='tests.MouseHoverTest.testMouseHover()'><b>testMouseHover</b><br>Test class: tests.MouseHoverTest</td>
+<td></td>
+<td>4</td>
+<td>tests.MouseHoverTest@51e69659</td></tr>
+<tr>
+<td title='tests.JavaScriptErrorTest.testJavaScriptError()'><b>testJavaScriptError</b><br>Test class: tests.JavaScriptErrorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.JavaScriptErrorTest@82de64a</td></tr>
+<tr>
+<td title='tests.JavascriptAlertsTest.testClickForJSAlert()'><b>testClickForJSAlert</b><br>Test class: tests.JavascriptAlertsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.JavascriptAlertsTest@290222c1</td></tr>
+<tr>
+<td title='tests.FileUploaderTest.testFileUploader()'><b>testFileUploader</b><br>Test class: tests.FileUploaderTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FileUploaderTest@47e2e487</td></tr>
+<tr>
+<td title='tests.CheckBoxTest.testCheckBox1Selected()'><b>testCheckBox1Selected</b><br>Test class: tests.CheckBoxTest</td>
+<td></td>
+<td>2</td>
+<td>tests.CheckBoxTest@6253c26</td></tr>
+<tr>
+<td title='tests.FileDownloaderTest.testClickForJSAlert()'><b>testClickForJSAlert</b><br>Test class: tests.FileDownloaderTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FileDownloaderTest@23c30a20</td></tr>
+<tr>
+<td title='tests.LoginTest.testLoginPageValidData()'><b>testLoginPageValidData</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@67f639d3</td></tr>
+<tr>
+<td title='tests.JavascriptAlertsTest.testClickForJSConfirm()'><b>testClickForJSConfirm</b><br>Test class: tests.JavascriptAlertsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.JavascriptAlertsTest@290222c1</td></tr>
+<tr>
+<td title='tests.DynamicLoadingTest.testDynamicLoading()'><b>testDynamicLoading</b><br>Test class: tests.DynamicLoadingTest</td>
+<td></td>
+<td>5</td>
+<td>tests.DynamicLoadingTest@437da279</td></tr>
+</table><p>
+</body>
+</html>
