@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  Login</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Nov 05 20:38:59 BOT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4585 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='LoginCases.Login()'><b>Login</b><br>Test class: LoginCases<br>Parameters: tomsmith, SuperSecretPassword!, You logged into a secure area!<br/>
+<a href="#Output-1578026015" onClick='toggleBox("Output-1578026015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1578026015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1578026015">
+Validating next element is present Form Authentication<br/>
+Clicking Form Authentication<br/>
+Validating next element is present Username<br/>
+Writing ** [Ljava.lang.CharSequence;@35e26d05 ** into Username<br/>
+Validating next element is present Password<br/>
+Writing ** [Ljava.lang.CharSequence;@4eb166a1 ** into Password<br/>
+Validating next element is present  Login<br/>
+Clicking  Login<br/>
+Validating next element is present <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginCases@d706f19</td></tr>
+<tr>
+<td title='LoginCases.Login()'><b>Login</b><br>Test class: LoginCases<br>Parameters: wrong, wrongpaas, Your username is invalid!<br/>
+<a href="#Output-1955566523" onClick='toggleBox("Output-1955566523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1955566523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1955566523">
+Validating next element is present Form Authentication<br/>
+Clicking Form Authentication<br/>
+Validating next element is present Username<br/>
+Writing ** [Ljava.lang.CharSequence;@72eb6200 ** into Username<br/>
+Validating next element is present Password<br/>
+Writing ** [Ljava.lang.CharSequence;@431e86b1 ** into Password<br/>
+Validating next element is present  Login<br/>
+Clicking  Login<br/>
+Validating next element is present <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginCases@d706f19</td></tr>
+</table><p>
+</body>
+</html>

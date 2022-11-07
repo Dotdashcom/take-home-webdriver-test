@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="25" passed="25" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Form Authentication]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Form Authentication]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Username]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@45f756e6 ** into Username]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Password]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@2a53f215 ** into Password]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present  Login]]>
+    </line>
+    <line>
+      <![CDATA[Clicking  Login]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Form Authentication]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Form Authentication]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Username]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@18a19e ** into Username]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Password]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@343e225a ** into Password]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present  Login]]>
+    </line>
+    <line>
+      <![CDATA[Clicking  Login]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Checkboxes]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Checkboxes]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Checkboxes]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Checkboxes]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Context Menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Context Menu]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Scroll to element ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Drag and Drop]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Drag and Drop]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Scroll to element ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Option 1]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Option 2]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Dynamic Content]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Dynamic Content]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Dynamic Controls]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Dynamic Controls]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Remove]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Remove]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Add]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Add]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Enable]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Enable]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Disable]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Disable]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Dynamic Loading]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Dynamic Loading]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Example 1: Element on page that is hidden]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Example 1: Element on page that is hidden]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Start]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Start]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Hello World!]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Dynamic Loading]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Dynamic Loading]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Example 2: Element rendered after the fact]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Example 2: Element rendered after the fact]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Start]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Start]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Hello World!]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present File Download]]>
+    </line>
+    <line>
+      <![CDATA[Clicking File Download]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present some-file.txt]]>
+    </line>
+    <line>
+      <![CDATA[Clicking some-file.txt]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present File Upload]]>
+    </line>
+    <line>
+      <![CDATA[Clicking File Upload]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@69d021c1 ** into ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Upload]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Upload]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Floating Menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Floating Menu]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Frames]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Frames]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present iFrame]]>
+    </line>
+    <line>
+      <![CDATA[Clicking iFrame]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Rich Text Area]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Rich Text Area. Press ALT-0 for help.]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@a2fb8a5 ** into Rich Text Area. Press ALT-0 for help.]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Hovers]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Hovers]]>
+    </line>
+    <line>
+      <![CDATA[Scroll to element ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Scroll to element ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Scroll to element ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present JavaScript Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Clicking JavaScript Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Click for JS Alert]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Click for JS Alert]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present JavaScript Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Clicking JavaScript Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Click for JS Confirm]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Click for JS Confirm]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present JavaScript Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Clicking JavaScript Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Click for JS Confirm]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Click for JS Confirm]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present JavaScript Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Clicking JavaScript Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Click for JS Prompt]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Click for JS Prompt]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present JavaScript onload event error]]>
+    </line>
+    <line>
+      <![CDATA[Clicking JavaScript onload event error]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Multiple Windows]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Multiple Windows]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Click Here]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Click Here]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Notification Messages]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Notification Messages]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Notification Messages]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Notification Messages]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-11-07T00:58:54 BOT" name="ChromeLocalSuite" finished-at="2022-11-07T01:00:21 BOT" duration-ms="87013">
+    <groups>
+    </groups>
+    <test started-at="2022-11-07T00:58:54 BOT" name="Login" finished-at="2022-11-07T00:58:58 BOT" duration-ms="4525">
+      <class name="LoginCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:LoginCases@32eff876]" started-at="2022-11-07T00:58:54 BOT" name="Setup" finished-at="2022-11-07T00:58:56 BOT" duration-ms="1899" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:LoginCases@32eff876]" started-at="2022-11-07T00:58:56 BOT" name="Login" data-provider="Login" finished-at="2022-11-07T00:58:56 BOT" duration-ms="774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You logged into a secure area!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Form Authentication]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Form Authentication]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Username]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@45f756e6 ** into Username]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Password]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@2a53f215 ** into Password]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present  Login]]>
+            </line>
+            <line>
+              <![CDATA[Clicking  Login]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:LoginCases@32eff876]" started-at="2022-11-07T00:58:56 BOT" name="Cleanup" finished-at="2022-11-07T00:58:56 BOT" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:LoginCases@32eff876]" started-at="2022-11-07T00:58:56 BOT" name="Setup" finished-at="2022-11-07T00:58:57 BOT" duration-ms="951" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:LoginCases@32eff876]" started-at="2022-11-07T00:58:57 BOT" name="Login" data-provider="Login" finished-at="2022-11-07T00:58:58 BOT" duration-ms="646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpaas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Form Authentication]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Form Authentication]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Username]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@18a19e ** into Username]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Password]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@343e225a ** into Password]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present  Login]]>
+            </line>
+            <line>
+              <![CDATA[Clicking  Login]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:LoginCases@32eff876]" started-at="2022-11-07T00:58:58 BOT" name="Cleanup" finished-at="2022-11-07T00:58:58 BOT" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- LoginCases -->
+    </test> <!-- Login -->
+    <test started-at="2022-11-07T00:58:58 BOT" name="Checkboxes" finished-at="2022-11-07T00:59:01 BOT" duration-ms="2580">
+      <class name="CheckboxCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:CheckboxCases@5b8dfcc1]" started-at="2022-11-07T00:58:58 BOT" name="Setup" finished-at="2022-11-07T00:58:59 BOT" duration-ms="967" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Checkbox(int,boolean)[pri:0, instance:CheckboxCases@5b8dfcc1]" started-at="2022-11-07T00:58:59 BOT" name="Checkbox" data-provider="Checkbox" finished-at="2022-11-07T00:58:59 BOT" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Checkboxes]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Checkboxes]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Checkbox -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:CheckboxCases@5b8dfcc1]" started-at="2022-11-07T00:58:59 BOT" name="Cleanup" finished-at="2022-11-07T00:58:59 BOT" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:CheckboxCases@5b8dfcc1]" started-at="2022-11-07T00:58:59 BOT" name="Setup" finished-at="2022-11-07T00:59:00 BOT" duration-ms="913" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Checkbox(int,boolean)[pri:0, instance:CheckboxCases@5b8dfcc1]" started-at="2022-11-07T00:59:00 BOT" name="Checkbox" data-provider="Checkbox" finished-at="2022-11-07T00:59:01 BOT" duration-ms="270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Checkboxes]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Checkboxes]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Checkbox -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:CheckboxCases@5b8dfcc1]" started-at="2022-11-07T00:59:01 BOT" name="Cleanup" finished-at="2022-11-07T00:59:01 BOT" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- CheckboxCases -->
+    </test> <!-- Checkboxes -->
+    <test started-at="2022-11-07T00:59:01 BOT" name="ContextMenu" finished-at="2022-11-07T00:59:02 BOT" duration-ms="1515">
+      <class name="ContextMenuCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:ContextMenuCases@55183b20]" started-at="2022-11-07T00:59:01 BOT" name="Setup" finished-at="2022-11-07T00:59:02 BOT" duration-ms="1020" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Checkbox(java.lang.String)[pri:0, instance:ContextMenuCases@55183b20]" started-at="2022-11-07T00:59:02 BOT" name="Checkbox" data-provider="Contextmenu" finished-at="2022-11-07T00:59:02 BOT" duration-ms="401" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[You selected a context menu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Context Menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Context Menu]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Scroll to element ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Checkbox -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:ContextMenuCases@55183b20]" started-at="2022-11-07T00:59:02 BOT" name="Cleanup" finished-at="2022-11-07T00:59:02 BOT" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- ContextMenuCases -->
+    </test> <!-- ContextMenu -->
+    <test started-at="2022-11-07T00:59:02 BOT" name="DragDrop" finished-at="2022-11-07T00:59:06 BOT" duration-ms="3707">
+      <class name="DragDropCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:DragDropCases@293a5bf6]" started-at="2022-11-07T00:59:02 BOT" name="Setup" finished-at="2022-11-07T00:59:03 BOT" duration-ms="956" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="DragDrop(int,int)[pri:0, instance:DragDropCases@293a5bf6]" started-at="2022-11-07T00:59:03 BOT" name="DragDrop" data-provider="Dragdrop" finished-at="2022-11-07T00:59:06 BOT" duration-ms="2581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Drag and Drop]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Drag and Drop]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Scroll to element ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DragDrop -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:DragDropCases@293a5bf6]" started-at="2022-11-07T00:59:06 BOT" name="Cleanup" finished-at="2022-11-07T00:59:06 BOT" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- DragDropCases -->
+    </test> <!-- DragDrop -->
+    <test started-at="2022-11-07T00:59:06 BOT" name="Dropdown" finished-at="2022-11-07T00:59:09 BOT" duration-ms="2724">
+      <class name="DropDownCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:DropDownCases@3349e9bb]" started-at="2022-11-07T00:59:06 BOT" name="Setup" finished-at="2022-11-07T00:59:07 BOT" duration-ms="967" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Dropdown(java.lang.String)[pri:0, instance:DropDownCases@3349e9bb]" started-at="2022-11-07T00:59:07 BOT" name="Dropdown" data-provider="DropDown" finished-at="2022-11-07T00:59:07 BOT" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Option 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Option 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Dropdown -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:DropDownCases@3349e9bb]" started-at="2022-11-07T00:59:07 BOT" name="Cleanup" finished-at="2022-11-07T00:59:07 BOT" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:DropDownCases@3349e9bb]" started-at="2022-11-07T00:59:07 BOT" name="Setup" finished-at="2022-11-07T00:59:08 BOT" duration-ms="912" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Dropdown(java.lang.String)[pri:0, instance:DropDownCases@3349e9bb]" started-at="2022-11-07T00:59:08 BOT" name="Dropdown" data-provider="DropDown" finished-at="2022-11-07T00:59:09 BOT" duration-ms="337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Option 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Option 2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Dropdown -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:DropDownCases@3349e9bb]" started-at="2022-11-07T00:59:09 BOT" name="Cleanup" finished-at="2022-11-07T00:59:09 BOT" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- DropDownCases -->
+    </test> <!-- Dropdown -->
+    <test started-at="2022-11-07T00:59:09 BOT" name="Dynamic Content" finished-at="2022-11-07T00:59:15 BOT" duration-ms="6635">
+      <class name="DynamicContentCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:DynamicContentCases@55b699ef]" started-at="2022-11-07T00:59:09 BOT" name="Setup" finished-at="2022-11-07T00:59:10 BOT" duration-ms="1077" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="DynamicContent(int)[pri:0, instance:DynamicContentCases@55b699ef]" started-at="2022-11-07T00:59:10 BOT" name="DynamicContent" data-provider="DynamicContent" finished-at="2022-11-07T00:59:15 BOT" duration-ms="5452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Dynamic Content]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Dynamic Content]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DynamicContent -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:DynamicContentCases@55b699ef]" started-at="2022-11-07T00:59:15 BOT" name="Cleanup" finished-at="2022-11-07T00:59:15 BOT" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- DynamicContentCases -->
+    </test> <!-- Dynamic Content -->
+    <test started-at="2022-11-07T00:59:15 BOT" name="Dynamic Controls" finished-at="2022-11-07T00:59:33 BOT" duration-ms="17907">
+      <class name="DynamicControlCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:DynamicControlCases@145f66e3]" started-at="2022-11-07T00:59:15 BOT" name="Setup" finished-at="2022-11-07T00:59:16 BOT" duration-ms="996" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="DynamicControl()[pri:0, instance:DynamicControlCases@145f66e3]" started-at="2022-11-07T00:59:16 BOT" name="DynamicControl" finished-at="2022-11-07T00:59:33 BOT" duration-ms="16793" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Dynamic Controls]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Dynamic Controls]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Remove]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Remove]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Add]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Add]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Enable]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Enable]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Disable]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Disable]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DynamicControl -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:DynamicControlCases@145f66e3]" started-at="2022-11-07T00:59:33 BOT" name="Cleanup" finished-at="2022-11-07T00:59:33 BOT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- DynamicControlCases -->
+    </test> <!-- Dynamic Controls -->
+    <test started-at="2022-11-07T00:59:33 BOT" name="Dynamic Loading" finished-at="2022-11-07T00:59:47 BOT" duration-ms="13547">
+      <class name="DynamicLoadingCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:DynamicLoadingCases@31304f14]" started-at="2022-11-07T00:59:33 BOT" name="Setup" finished-at="2022-11-07T00:59:34 BOT" duration-ms="992" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="DynamicLoadingExaple1(java.lang.String)[pri:0, instance:DynamicLoadingCases@31304f14]" started-at="2022-11-07T00:59:34 BOT" name="DynamicLoadingExaple1" data-provider="DynamicLoading" finished-at="2022-11-07T00:59:40 BOT" duration-ms="5774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hello World!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Dynamic Loading]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Dynamic Loading]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Example 1: Element on page that is hidden]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Example 1: Element on page that is hidden]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Start]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Start]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Hello World!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DynamicLoadingExaple1 -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:DynamicLoadingCases@31304f14]" started-at="2022-11-07T00:59:40 BOT" name="Cleanup" finished-at="2022-11-07T00:59:40 BOT" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:DynamicLoadingCases@31304f14]" started-at="2022-11-07T00:59:40 BOT" name="Setup" finished-at="2022-11-07T00:59:41 BOT" duration-ms="946" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="DynamicLoadingExaple2(java.lang.String)[pri:0, instance:DynamicLoadingCases@31304f14]" started-at="2022-11-07T00:59:41 BOT" name="DynamicLoadingExaple2" data-provider="DynamicLoading" finished-at="2022-11-07T00:59:47 BOT" duration-ms="5599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hello World!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Dynamic Loading]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Dynamic Loading]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Example 2: Element rendered after the fact]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Example 2: Element rendered after the fact]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Start]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Start]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Hello World!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DynamicLoadingExaple2 -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:DynamicLoadingCases@31304f14]" started-at="2022-11-07T00:59:47 BOT" name="Cleanup" finished-at="2022-11-07T00:59:47 BOT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- DynamicLoadingCases -->
+    </test> <!-- Dynamic Loading -->
+    <test started-at="2022-11-07T00:59:47 BOT" name="File Download" finished-at="2022-11-07T00:59:50 BOT" duration-ms="3425">
+      <class name="FileDownloadCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:FileDownloadCases@692f203f]" started-at="2022-11-07T00:59:47 BOT" name="Setup" finished-at="2022-11-07T00:59:48 BOT" duration-ms="948" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="FileDownload(java.lang.String,java.lang.String)[pri:0, instance:FileDownloadCases@692f203f]" started-at="2022-11-07T00:59:48 BOT" name="FileDownload" data-provider="FileDownload" finished-at="2022-11-07T00:59:50 BOT" duration-ms="2354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Users\lwiss\Downloads]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[some-file.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present File Download]]>
+            </line>
+            <line>
+              <![CDATA[Clicking File Download]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present some-file.txt]]>
+            </line>
+            <line>
+              <![CDATA[Clicking some-file.txt]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FileDownload -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:FileDownloadCases@692f203f]" started-at="2022-11-07T00:59:50 BOT" name="Cleanup" finished-at="2022-11-07T00:59:50 BOT" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- FileDownloadCases -->
+    </test> <!-- File Download -->
+    <test started-at="2022-11-07T00:59:50 BOT" name="File Upload" finished-at="2022-11-07T00:59:52 BOT" duration-ms="1563">
+      <class name="FileUploadCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:FileUploadCases@47eaca72]" started-at="2022-11-07T00:59:50 BOT" name="Setup" finished-at="2022-11-07T00:59:51 BOT" duration-ms="990" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="FileDownload(java.lang.String)[pri:0, instance:FileUploadCases@47eaca72]" started-at="2022-11-07T00:59:51 BOT" name="FileDownload" data-provider="FileUpload" finished-at="2022-11-07T00:59:52 BOT" duration-ms="501" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Users\lwiss\Downloads\DragdropTest.java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present File Upload]]>
+            </line>
+            <line>
+              <![CDATA[Clicking File Upload]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@69d021c1 ** into ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Upload]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Upload]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FileDownload -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:FileUploadCases@47eaca72]" started-at="2022-11-07T00:59:52 BOT" name="Cleanup" finished-at="2022-11-07T00:59:52 BOT" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- FileUploadCases -->
+    </test> <!-- File Upload -->
+    <test started-at="2022-11-07T00:59:52 BOT" name="Floating Menu" finished-at="2022-11-07T00:59:53 BOT" duration-ms="1425">
+      <class name="FloatingMenuCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:FloatingMenuCases@4218d6a3]" started-at="2022-11-07T00:59:52 BOT" name="Setup" finished-at="2022-11-07T00:59:53 BOT" duration-ms="977" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="FloatingMenu()[pri:0, instance:FloatingMenuCases@4218d6a3]" started-at="2022-11-07T00:59:53 BOT" name="FloatingMenu" finished-at="2022-11-07T00:59:53 BOT" duration-ms="341" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Floating Menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Floating Menu]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FloatingMenu -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:FloatingMenuCases@4218d6a3]" started-at="2022-11-07T00:59:53 BOT" name="Cleanup" finished-at="2022-11-07T00:59:53 BOT" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- FloatingMenuCases -->
+    </test> <!-- Floating Menu -->
+    <test started-at="2022-11-07T00:59:53 BOT" name="Iframe" finished-at="2022-11-07T00:59:55 BOT" duration-ms="2146">
+      <class name="IFrameCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:IFrameCases@7b98f307]" started-at="2022-11-07T00:59:53 BOT" name="Setup" finished-at="2022-11-07T00:59:54 BOT" duration-ms="900" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Iframe(int,java.lang.String)[pri:0, instance:IFrameCases@7b98f307]" started-at="2022-11-07T00:59:54 BOT" name="Iframe" data-provider="IFrame" finished-at="2022-11-07T00:59:55 BOT" duration-ms="1166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hello world]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Frames]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Frames]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present iFrame]]>
+            </line>
+            <line>
+              <![CDATA[Clicking iFrame]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Rich Text Area]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Rich Text Area. Press ALT-0 for help.]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@a2fb8a5 ** into Rich Text Area. Press ALT-0 for help.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Iframe -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:IFrameCases@7b98f307]" started-at="2022-11-07T00:59:55 BOT" name="Cleanup" finished-at="2022-11-07T00:59:55 BOT" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- IFrameCases -->
+    </test> <!-- Iframe -->
+    <test started-at="2022-11-07T00:59:55 BOT" name="Mouse Hover" finished-at="2022-11-07T00:59:57 BOT" duration-ms="1898">
+      <class name="MouseHoverCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:MouseHoverCases@3e694b3f]" started-at="2022-11-07T00:59:55 BOT" name="Setup" finished-at="2022-11-07T00:59:56 BOT" duration-ms="998" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="DynamicControl()[pri:0, instance:MouseHoverCases@3e694b3f]" started-at="2022-11-07T00:59:56 BOT" name="DynamicControl" finished-at="2022-11-07T00:59:57 BOT" duration-ms="791" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Hovers]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Hovers]]>
+            </line>
+            <line>
+              <![CDATA[Scroll to element ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Scroll to element ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Scroll to element ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DynamicControl -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:MouseHoverCases@3e694b3f]" started-at="2022-11-07T00:59:57 BOT" name="Cleanup" finished-at="2022-11-07T00:59:57 BOT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- MouseHoverCases -->
+    </test> <!-- Mouse Hover -->
+    <test started-at="2022-11-07T00:59:57 BOT" name="JavaScript Alerts" finished-at="2022-11-07T01:00:03 BOT" duration-ms="5801">
+      <class name="JSAlertsCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T00:59:57 BOT" name="Setup" finished-at="2022-11-07T00:59:58 BOT" duration-ms="879" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="JSAlert(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T00:59:58 BOT" name="JSAlert" data-provider="JSAlert" finished-at="2022-11-07T00:59:59 BOT" duration-ms="420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[simple]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[accept]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You successfuly clicked an alert]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present JavaScript Alerts]]>
+            </line>
+            <line>
+              <![CDATA[Clicking JavaScript Alerts]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Click for JS Alert]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Click for JS Alert]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- JSAlert -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T00:59:59 BOT" name="Cleanup" finished-at="2022-11-07T00:59:59 BOT" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T00:59:59 BOT" name="Setup" finished-at="2022-11-07T01:00:00 BOT" duration-ms="871" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="JSAlert(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T01:00:00 BOT" name="JSAlert" data-provider="JSAlert" finished-at="2022-11-07T01:00:00 BOT" duration-ms="426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mixed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[accept]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You clicked: Ok]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present JavaScript Alerts]]>
+            </line>
+            <line>
+              <![CDATA[Clicking JavaScript Alerts]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Click for JS Confirm]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Click for JS Confirm]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- JSAlert -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T01:00:00 BOT" name="Cleanup" finished-at="2022-11-07T01:00:00 BOT" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T01:00:00 BOT" name="Setup" finished-at="2022-11-07T01:00:01 BOT" duration-ms="936" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="JSAlert(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T01:00:01 BOT" name="JSAlert" data-provider="JSAlert" finished-at="2022-11-07T01:00:01 BOT" duration-ms="434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mixed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dismiss]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You clicked: Cancel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present JavaScript Alerts]]>
+            </line>
+            <line>
+              <![CDATA[Clicking JavaScript Alerts]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Click for JS Confirm]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Click for JS Confirm]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- JSAlert -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T01:00:01 BOT" name="Cleanup" finished-at="2022-11-07T01:00:02 BOT" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T01:00:02 BOT" name="Setup" finished-at="2022-11-07T01:00:03 BOT" duration-ms="1050" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="JSAlert(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T01:00:03 BOT" name="JSAlert" data-provider="JSAlert" finished-at="2022-11-07T01:00:03 BOT" duration-ms="481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prompt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[accept]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sample]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present JavaScript Alerts]]>
+            </line>
+            <line>
+              <![CDATA[Clicking JavaScript Alerts]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Click for JS Prompt]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Click for JS Prompt]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- JSAlert -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:JSAlertsCases@33d512c1]" started-at="2022-11-07T01:00:03 BOT" name="Cleanup" finished-at="2022-11-07T01:00:03 BOT" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- JSAlertsCases -->
+    </test> <!-- JavaScript Alerts -->
+    <test started-at="2022-11-07T01:00:03 BOT" name="JavaScript Error" finished-at="2022-11-07T01:00:05 BOT" duration-ms="1437">
+      <class name="JSLoadCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:JSLoadCases@74235045]" started-at="2022-11-07T01:00:03 BOT" name="Setup" finished-at="2022-11-07T01:00:04 BOT" duration-ms="1003" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="JSLoad(java.lang.String)[pri:0, instance:JSLoadCases@74235045]" started-at="2022-11-07T01:00:04 BOT" name="JSLoad" data-provider="JSLoadError" finished-at="2022-11-07T01:00:04 BOT" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[This page has a JavaScript error in the onload event]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present JavaScript onload event error]]>
+            </line>
+            <line>
+              <![CDATA[Clicking JavaScript onload event error]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- JSLoad -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:JSLoadCases@74235045]" started-at="2022-11-07T01:00:04 BOT" name="Cleanup" finished-at="2022-11-07T01:00:05 BOT" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- JSLoadCases -->
+    </test> <!-- JavaScript Error -->
+    <test started-at="2022-11-07T01:00:05 BOT" name="Open in New Tab" finished-at="2022-11-07T01:00:06 BOT" duration-ms="1447">
+      <class name="MultiWindowsCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:MultiWindowsCases@51399530]" started-at="2022-11-07T01:00:05 BOT" name="Setup" finished-at="2022-11-07T01:00:05 BOT" duration-ms="900" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="NewWindows(int,java.lang.String)[pri:0, instance:MultiWindowsCases@51399530]" started-at="2022-11-07T01:00:05 BOT" name="NewWindows" data-provider="MultiWindows" finished-at="2022-11-07T01:00:06 BOT" duration-ms="465" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Window]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Multiple Windows]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Multiple Windows]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Click Here]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Click Here]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NewWindows -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:MultiWindowsCases@51399530]" started-at="2022-11-07T01:00:06 BOT" name="Cleanup" finished-at="2022-11-07T01:00:06 BOT" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- MultiWindowsCases -->
+    </test> <!-- Open in New Tab -->
+    <test started-at="2022-11-07T01:00:06 BOT" name="Notification Message" finished-at="2022-11-07T01:00:21 BOT" duration-ms="14578">
+      <class name="NotificationCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:NotificationCases@13c9d689]" started-at="2022-11-07T01:00:06 BOT" name="Setup" finished-at="2022-11-07T01:00:07 BOT" duration-ms="971" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="NewNotification(java.lang.String)[pri:0, instance:NotificationCases@13c9d689]" started-at="2022-11-07T01:00:07 BOT" name="NewNotification" data-provider="Notification" finished-at="2022-11-07T01:00:15 BOT" duration-ms="7728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Action successful]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Notification Messages]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Notification Messages]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Clicking ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Clicking ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NewNotification -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:NotificationCases@13c9d689]" started-at="2022-11-07T01:00:15 BOT" name="Cleanup" finished-at="2022-11-07T01:00:15 BOT" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:NotificationCases@13c9d689]" started-at="2022-11-07T01:00:15 BOT" name="Setup" finished-at="2022-11-07T01:00:16 BOT" duration-ms="935" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="NewNotification(java.lang.String)[pri:0, instance:NotificationCases@13c9d689]" started-at="2022-11-07T01:00:16 BOT" name="NewNotification" data-provider="Notification" finished-at="2022-11-07T01:00:20 BOT" duration-ms="4717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Action unsuccesful]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Notification Messages]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Notification Messages]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Clicking ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Clicking ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Clicking ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NewNotification -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:NotificationCases@13c9d689]" started-at="2022-11-07T01:00:20 BOT" name="Cleanup" finished-at="2022-11-07T01:00:21 BOT" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- NotificationCases -->
+    </test> <!-- Notification Message -->
+  </suite> <!-- ChromeLocalSuite -->
+</testng-results>
