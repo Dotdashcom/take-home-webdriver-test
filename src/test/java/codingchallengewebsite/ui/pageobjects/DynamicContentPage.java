@@ -1,6 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,7 +36,7 @@ public class DynamicContentPage {
 
     public void reloadPage() { UITest.reloadPage(caller.getDriver()); }
 
-    public HashMap<String, String> getContent(Boolean partial) {
+    public HashMap<String, String> getContent(@NotNull Boolean partial) {
         if (partial.equals(false)) caller.getDriver().get(this.pageUrl);
         String staticContentQueryString = "?with_content=static";
         if (partial.equals(true)) caller.getDriver().get(this.pageUrl + staticContentQueryString);

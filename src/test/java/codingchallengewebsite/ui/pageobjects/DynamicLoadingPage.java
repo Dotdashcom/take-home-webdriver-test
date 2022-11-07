@@ -22,7 +22,7 @@ public class DynamicLoadingPage {
 
     public DynamicLoadingPage(UITest caller) {
         this.caller = caller;
-        this.pageUrl = new StringBuilder(this.caller.getBaseUrl()).append("/dynamic_loading/2").toString();
+        this.pageUrl = this.caller.getBaseUrl() + "/dynamic_loading/2";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);
@@ -37,6 +37,6 @@ public class DynamicLoadingPage {
     }
 
     public String getSuccessMessage() {
-        return successMessage.getText().toString();
+        return successMessage.getText();
     }
 }

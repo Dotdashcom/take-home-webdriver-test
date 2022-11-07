@@ -1,6 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -21,7 +22,7 @@ public class IFramePage {
     private final UITest caller;
     private final String pageUrl;
 
-    public IFramePage(UITest caller) {
+    public IFramePage(@NotNull UITest caller) {
         this.caller = caller;
         this.genericWait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(10));
         this.pageUrl = this.caller.getBaseUrl() + "/iframe";

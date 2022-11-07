@@ -1,0 +1,25 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Properties via console parameters" type="TestNG" singleton="false">
+    <shortenClasspath name="NONE" />
+    <useClassPathOnly />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" value="19" />
+    <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/regression.xml" />
+    <option name="PACKAGE_NAME" value="" />
+    <option name="MAIN_CLASS_NAME" value="" />
+    <option name="METHOD_NAME" value="" />
+    <option name="GROUP_NAME" value="" />
+    <option name="TEST_OBJECT" value="SUITE" />
+    <option name="PARAMETERS" value=" -DsuiteXmlFile=regression.xml -Dbrowser=chrome -DheadlessBrowser=false -DuseSeleniumGrid=false -DtestsThreadCount=8 -DtestRunnerAddress=\&quot;http://192.168.65.2:7080\&quot; -DwebAppAddress=\&quot;http://0.0.0.0:7080\&quot; -DseleniumGridAddress=\&quot;http://0.0.0.0:4444/wd/hub\&quot;" />
+    <option name="OUTPUT_DIRECTORY" value="" />
+    <option name="TEST_SEARCH_SCOPE">
+      <value defaultName="wholeProject" />
+    </option>
+    <option name="PROPERTIES_FILE" value="" />
+    <properties />
+    <listeners />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,6 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -19,10 +20,9 @@ public class HoversPage {
     @FindBy(how = How.XPATH, using = "//div[@class='figure']")
     public List<WebElement> figures;
     private final UITest caller;
-    public HashMap<String, String> usersDetails;
     private final String pageUrl;
 
-    public HoversPage(UITest caller) {
+    public HoversPage(@NotNull UITest caller) {
         this.caller = caller;
         WebDriverWait wait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(30));
         this.pageUrl = caller.getBaseUrl() + "/hovers";
@@ -30,7 +30,7 @@ public class HoversPage {
         PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);
         wait.until( d-> {
-            this.usersDetails = this.getUsersDetails();
+            this.setUsersDetails(this.getUsersDetails());
             return true;
         });
     }
@@ -54,9 +54,9 @@ public class HoversPage {
     // To be used in a future testcase
     public Boolean validateUserDetails() {
         final int[] actual = {0};
-        int expected = usersDetails.size();
+        int expected = getUsersDetails().size();
 
-        usersDetails.forEach((key, value) -> {
+        getUsersDetails().forEach((key, value) -> {
             if(this.validateHoverOverFigure(key, value)) actual[0]++;
         });
         return actual[0] == expected;
@@ -77,4 +77,7 @@ public class HoversPage {
 
     public String getErrorPageUrl() {
         return "http://localhost:7080/users/"; }
+
+    public void setUsersDetails(HashMap<String, String> usersDetails) {
+    }
 }

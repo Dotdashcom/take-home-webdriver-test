@@ -1,6 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -47,7 +48,7 @@ public class CheckboxesPage {
     public Boolean getCheckboxCurrentValue(Integer checkbox) {
         return this.currentValues.get(checkbox); }
 
-    private Boolean performClickOnCheckbox(Integer parameter, Function<Integer, Boolean> updateOnClick) {
+    private Boolean performClickOnCheckbox(Integer parameter, @NotNull Function<Integer, Boolean> updateOnClick) {
         return updateOnClick.apply(parameter); }
 
     Function<Integer, Boolean> updateOnClick = parameter -> {

@@ -37,7 +37,6 @@ public class WindowsPage {
         WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
         String originalWindow = caller.getDriver().getWindowHandle();
         String expectedMessage ="New Window";
- //       String newTabHandle;
 
         this.clickLink();
         wait.until(numberOfWindowsToBe(2));
@@ -45,7 +44,6 @@ public class WindowsPage {
         //Loop through until we find a new window handle
         for (String windowHandle : caller.getDriver().getWindowHandles()) {
             if(!originalWindow.contentEquals(windowHandle)) {
- //               newTabHandle = windowHandle;
                 caller.getDriver().switchTo().window(windowHandle);
                 wait.until(titleIs("New Window"));
                 return newTab.getText().equals(expectedMessage);

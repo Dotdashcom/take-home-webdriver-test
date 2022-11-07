@@ -2,6 +2,7 @@ package codingchallengewebsite.ui.pageobjects;
 
 import static codingchallengewebsite.ui.UITest.*;
 import codingchallengewebsite.ui.UITest;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -78,7 +79,7 @@ public class DownloadPage {
         return false;
     }
 
-    public static Boolean compareByMemoryMappedFiles(Path path1, Path path2) throws IOException {
+    public static @NotNull Boolean compareByMemoryMappedFiles(Path path1, Path path2) throws IOException {
         try (RandomAccessFile randomAccessFile1 = new RandomAccessFile(path1.toFile(), "r");
              RandomAccessFile randomAccessFile2 = new RandomAccessFile(path2.toFile(), "r")) {
 

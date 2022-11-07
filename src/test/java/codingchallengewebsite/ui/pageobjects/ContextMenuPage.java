@@ -1,6 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -22,7 +23,7 @@ public class ContextMenuPage {
     private final String pageUrl;
     private final String mainWindow;
 
-    public ContextMenuPage(UITest caller) {
+    public ContextMenuPage(@NotNull UITest caller) {
         this.caller = caller;
         this.pageUrl = this.caller.getBaseUrl() + "/context_menu";
         this.caller.getDriver().get(this.pageUrl);

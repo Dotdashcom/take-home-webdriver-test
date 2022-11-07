@@ -27,7 +27,7 @@ public class FloatingMenuPage {
 
     public FloatingMenuPage(UITest caller) {
         this.caller = caller;
-        this.pageUrl = new StringBuilder(this.caller.getBaseUrl()).append("/floating_menu").toString();
+        this.pageUrl = this.caller.getBaseUrl() + "/floating_menu";
         this.caller.getDriver().get(this.pageUrl);
         PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);

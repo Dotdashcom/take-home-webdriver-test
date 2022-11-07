@@ -26,9 +26,9 @@ BROWSER="chrome"
 BROWSER_VERSION="106.0.5249.119"
 REMOTE_CHROME_NODE_IMAGE_VERSION="4.5.2-20221021"
 # BROWSER_VERSION for local use
-#BROWSER=$(printf "chrome"
+#BROWSER=$(printf "chrome")
 #BROWSER_VERSION=""
-HEADLESS_BROWSER="false"
+HEADLESS_BROWSER="true"
 
 ##############
 # Run-command args
@@ -86,8 +86,8 @@ CONTAINER_CHROME_NODES_RUN_CMD="docker run -d --name chrome-node%s \
       -e SE_EVENT_BUS_PUBLISH_PORT=4442 \
       -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 \
       -e SE_NODE_SESSION_TIMEOUT=10 \
-      -e SE_NODE_MAX_SESSIONS=4 \
-      -e SE_NODE_MAX_INSTANCES="THREADS" \
+      -e SE_NODE_MAX_SESSIONS=3 \
+      -e SE_NODE_MAX_INSTANCES=$THREADS \
       -e SE_SESSION_RETRY_INTERVAL=1 "$CONTAINER_CHROME_NODES_IMAGE;
 #
 # Container network name
@@ -258,28 +258,32 @@ setup_where_necessary() {
 # Clean, build, install, and run the test suite
 execute_the_tests() {
   LIFE_CICLE_GOAL="test"
+  if [ "$WD_REMOTE" == "true" ]; then
+      THREADS=$(( THREADS * 2));
+      HEADLESS_BROWSER="false";
+  fi
   printf "\n[""$BGREEN""Clean""$NO_COLOR""]\n";
-  mvn clean -f pom.xml --batch-mode --update-snapshots;
+  mvn clean -P CLI_Parameters -f pom.xml --batch-mode --update-snapshots;
   printf "\n["$BGREEN"Compile""$NO_COLOR""]\n";
-  mvn compile -f pom.xml --batch-mode --update-snapshots;
+  mvn compile -P CLI_Parameters -f pom.xml --batch-mode --update-snapshots;
   printf "\n["$BGREEN"Running the test suite""$NO_COLOR""]\n";
-  mvn ${LIFE_CICLE_GOAL} -DsuiteXmlFile=$TEST_SUITE_XML_FILE \
+  mvn ${LIFE_CICLE_GOAL} -P CLI_Parameters -DsuiteXmlFile=$TEST_SUITE_XML_FILE \
   -Dbrowser=$BROWSER -DbrowserVersion=$BROWSER_VERSION \
   -DheadlessBrowser=$HEADLESS_BROWSER -DuseSeleniumGrid=$WD_REMOTE \
-  -DtestsThreadCount=$(( THREADS * 4)) -DtestRunnerAddress="${TEST_RUNNER_ADDR}" \
+  -DtestsThreadCount=$THREADS -DtestRunnerAddress="${TEST_RUNNER_ADDR}" \
   -DwebAppAddress="${WEB_APP_ADDRESS}" \
   -DseleniumGridAddress="${SELENIUM_GRID_ADDRESS}" \
   -Dorg.slf4j.simpleLogger.defaultLogLevel=$DEFAULT_LOG_LEVEL \
   --batch-mode --update-snapshots &
   wait;
   printf "$BGREEN""\n[Install]\n""$NO_COLOR";
-  mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots &
+  mvn install -P CLI_Parameters -f pom.xml -DskipTests --batch-mode --update-snapshots &
   wait;
 }
 
 stop_containers() {
   NAMES=$1;
-  printf "\n\n[""$BGREEN""Stopping containers""$NO_COLOR""]\n";
+  printf "\n[""$BGREEN""Stopping containers""$NO_COLOR""]\n";
   if [ "$NAMES" ]; then # Several names
     if [[ $NAMES =~ "," ]]; then
       IFS=","; read -a starr <<< "$NAMES";
@@ -340,12 +344,14 @@ main() {
 
   # Run the test suite
   execute_the_tests;
-  # Add link to the test report
-  printf ''"${NO_COLOR}"'['"${BGREEN}"'Test results report'"${NO_COLOR}"']\n \e]8;;file://'"$(pwd)${SUREFIRE_REPORTS_FILE}"'\aLink to the test report\e]8;;\a';
 
   # Stop containers;
   stop_containers &
   wait
+
+  # Add link to the test report
+  printf "\n${NO_COLOR}"'['"${BGREEN}"'Test results report'"${NO_COLOR}"']\n'
+  printf "\e]8;;file://$(pwd)$SUREFIRE_REPORTS_FILE\e\\Link to the test report\e]8;;\e\\n"'\\n'
 }
 
 main;

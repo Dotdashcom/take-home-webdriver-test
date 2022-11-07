@@ -2,20 +2,24 @@ package codingchallengewebsite.ui.testcases;
 
 import codingchallengewebsite.ui.UITest;
 import codingchallengewebsite.ui.pageobjects.LoginFormPage;
+import org.jetbrains.annotations.NotNull;
 import org.testng.Assert;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class LoginFormTest extends UITest {
+public class LoginTest extends UITest {
 
+    //private final String username;
     private final String DEFAULT_USERNAME  = "tomsmith";
+    //private final String password;
     private final String DEFAULT_PASSWORD = "SuperSecretPassword!";
+    //private final String invalid;
 
-    public LoginFormTest() { }
+    public LoginTest() {}
 
     @Parameters({"username", "password"})
-    @Test(description="Login form - Using valid Credentials")
+    @Test(description="Login form - Using valid Credentials", groups={ "loginForm" })
     public void successfulLogin(@Optional(DEFAULT_USERNAME) String username, @Optional(DEFAULT_PASSWORD) String password) {
         LoginFormPage loginFormPage = new LoginFormPage(this);
 
@@ -28,7 +32,7 @@ public class LoginFormTest extends UITest {
     }
 
     @Parameters({"username", "password"})
-    @Test(description="Login form - Using invalid Username")
+    @Test(description="Login form - Using invalid Username", groups={ "loginForm" })
     public void invalidUsername(@Optional(DEFAULT_USERNAME) String username, @Optional(DEFAULT_PASSWORD) String password) {
         String expectedUserErrorMessage = "Your username is invalid!";
         LoginFormPage loginFormPage = this.login("invalidUsername", password);
@@ -42,7 +46,7 @@ public class LoginFormTest extends UITest {
     }
 
     @Parameters({"username", "password"})
-    @Test(description="Login form - Using invalid Password")
+    @Test(description="Login form - Using invalid Password", groups={ "loginForm" })
     public void invalidPassword(@Optional(DEFAULT_USERNAME) String username, @Optional(DEFAULT_PASSWORD) String password) {
         String expectedPasswordErrorMessage = "Your password is invalid!";
         LoginFormPage loginFormPage = this.login(username, "invalidPassword");
@@ -55,7 +59,7 @@ public class LoginFormTest extends UITest {
         Assert.assertTrue(loginFormPage.getErrorMessage().contains(expectedPasswordErrorMessage), "expectedErrorMessage mismatch");
     }
 
-    private LoginFormPage login(String username, String password) {
+    private @NotNull LoginFormPage login(String username, String password) {
         LoginFormPage loginFormPage = new LoginFormPage(this);
         loginFormPage.setUsername(username);
         loginFormPage.setPassword(password);

@@ -20,7 +20,7 @@ public class HoversTest extends UITest {
         // Validate page loaded
         Assert.assertTrue(hoversPage.isPageOpen(), "Page not open");
         // Select user from page
-        firstEntry = hoversPage.usersDetails.entrySet().stream().findFirst().get();
+        firstEntry = hoversPage.getUsersDetails().entrySet().stream().findFirst().get();
         String username = firstEntry.getKey();
         String profilePhoto = firstEntry.getValue();
         // Hover over user
