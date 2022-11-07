@@ -3,6 +3,7 @@
 name: Run automated tests suite
 env:
   LOG_LEVEL: info
+  ENVIRONMENT: staging
 on:
   push:
     branches:
@@ -26,6 +27,7 @@ on:
         description: 'Environment to run tests against'
         type: environment
         required: true
+        default: staging
       chromeVersion:
         description: 'Chrome Version'
         required: true
