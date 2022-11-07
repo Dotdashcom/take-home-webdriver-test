@@ -81,8 +81,7 @@ jobs:
       run: mvn compile -P Staging -f pom.xml --batch-mode --update-snapshots
     - name: Run the test suite
       run: >-
-        mvn test -f pom.xml -P Staging 
-        --batch-mode --update-snapshots
+        mvn test -f pom.xml -P Staging --batch-mode --update-snapshots
       env:
         WEBSITE_HOST: website
         WEBSITE_PORT: 7080
