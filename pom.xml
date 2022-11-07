@@ -92,7 +92,7 @@
                         <configuration>
                             <suiteXmlFiles>
                                 <!-- TestNG suite XML files -->
-                                <suiteXmlFile>${env.suiteXmlFile}</suiteXmlFile>
+                                <suiteXmlFile>src/test/resources/${env.suiteXmlFile}</suiteXmlFile>
                             </suiteXmlFiles>
                             <parallel>tests</parallel>
                             <threadCount>${env.testsThreadCount}</threadCount>
