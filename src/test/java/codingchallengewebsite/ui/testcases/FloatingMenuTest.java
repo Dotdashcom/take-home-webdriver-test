@@ -11,7 +11,7 @@ public class FloatingMenuTest extends UITest {
 
     @Test(description = "Scrolls down the page and the menu is still there")
     public void scrollTest() {
-        FloatingMenuPage floatingMenuPage = new FloatingMenuPage(this.getDriver(), this);
+        FloatingMenuPage floatingMenuPage = new FloatingMenuPage(this);
 
         // Validate page loaded
         Assert.assertTrue(floatingMenuPage.isPageOpen(), "Page not open");

@@ -11,7 +11,7 @@ public class JavascriptAlertsTest extends UITest {
 
     @Test(description="Popups appear on button click")
     public void popupDisplay() {
-        JavascriptAlertsPage javascriptAlertsPage = new JavascriptAlertsPage(this.getDriver(), this);
+        JavascriptAlertsPage javascriptAlertsPage = new JavascriptAlertsPage(this);
 
         // Validate page loaded
         Assert.assertTrue(javascriptAlertsPage.isPageOpen(), "Page not open");
@@ -22,7 +22,7 @@ public class JavascriptAlertsTest extends UITest {
 
     @Test(description="Popups messages are as expected")
     public void popupMessages() {
-        JavascriptAlertsPage javascriptAlertsPage = new JavascriptAlertsPage(this.getDriver(), this);
+        JavascriptAlertsPage javascriptAlertsPage = new JavascriptAlertsPage(this);
 
         // Validate page loaded
         Assert.assertTrue(javascriptAlertsPage.isPageOpen(), "Page not open");
@@ -33,7 +33,7 @@ public class JavascriptAlertsTest extends UITest {
 
     @Test(description="Popup's input field works as expected")
     public void popupInputField() {
-        JavascriptAlertsPage javascriptAlertsPage = new JavascriptAlertsPage(this.getDriver(), this);
+        JavascriptAlertsPage javascriptAlertsPage = new JavascriptAlertsPage(this);
 
         // Validate page loaded
         Assert.assertTrue(javascriptAlertsPage.isPageOpen(), "Page not open");

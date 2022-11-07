@@ -4,7 +4,6 @@ import codingchallengewebsite.ui.UITest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -12,9 +11,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.ArrayList;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class NotificationMessageRenderedPage {
 
@@ -28,19 +24,16 @@ public class NotificationMessageRenderedPage {
     private final UITest caller;
     private final String pageUrl;
 
-    public NotificationMessageRenderedPage(RemoteWebDriver driver, UITest caller) {
+    public NotificationMessageRenderedPage(UITest caller) {
         this.caller = caller;
-        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
-        this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/notification_message_rendered";
         this.caller.getDriver().get(this.pageUrl);
         this.possibleMessages.add("Action unsuccesful, please try again");
         this.possibleMessages.add("Action successful");
         // Deactivated, because it never showed up on the website: bug?
         //---> this.possibleMessages.add("Action Unsuccessful");
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);
-        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),presenceOfAllElementsLocatedBy(By.xpath("//a[normalize-space()='Click here']"))));
     }
 
     public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }
@@ -56,11 +49,9 @@ public class NotificationMessageRenderedPage {
     public String getFlashMessage() {
         String newMessage;
         WebDriverWait wait = new WebDriverWait(caller.getDriver(), Duration.ofSeconds(30));
-
         this.clickOnLink();
         newMessage = UITest.cleanTextContent(flashNotification.getText().trim());
         wait.until(ExpectedConditions.visibilityOf(flashNotification));
-
         return newMessage;
     }
 

@@ -11,7 +11,7 @@ public class JavascriptErrorTest extends UITest {
 
     @Test(description = "We see the page with the right error message")
     public void validateErrorMessage() {
-        JavascriptErrorPage javascriptErrorPage = new JavascriptErrorPage(this.getDriver(), this);
+        JavascriptErrorPage javascriptErrorPage = new JavascriptErrorPage(this);
 
         // Validate page loaded
         Assert.assertTrue(javascriptErrorPage.isPageOpen(), "Page not open");

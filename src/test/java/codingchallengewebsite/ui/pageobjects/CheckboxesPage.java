@@ -1,7 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
-import org.openqa.selenium.By;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -12,9 +12,6 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.function.Function;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class CheckboxesPage {
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='Checkboxes']")
@@ -51,7 +48,7 @@ public class CheckboxesPage {
     public Boolean getCheckboxCurrentValue(Integer checkbox) {
         return this.currentValues.get(checkbox); }
 
-    private Boolean performClickOnCheckbox(Integer parameter, Function<Integer, Boolean> updateOnClick) {
+    private Boolean performClickOnCheckbox(Integer parameter, @NotNull Function<Integer, Boolean> updateOnClick) {
         return updateOnClick.apply(parameter); }
 
     Function<Integer, Boolean> updateOnClick = parameter -> {

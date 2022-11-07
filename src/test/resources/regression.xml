@@ -2,12 +2,37 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Coding Challenge Website UI Regression Suite">
     <parameter name="browser" value="${codingChallengeWebsite.browser}"/>
-    <!--<parameter name="browserVersion" value="106.0.5249.119"/>-->
-    <test name="Login Tests">
+    <parameter name="browserVersion" value="${codingChallengeWebsite.browserVersion}"/>
+    <parameter name="headlessBrowser" value="${codingChallengeWebsite.headlessBrowser}"/>
+    <parameter name="useSeleniumGrid" value="${codingChallengeWebsite.useSeleniumGrid}"/>
+    <parameter name="seleniumGridUrl" value="${codingChallengeWebsite.seleniumGridUrl}"/>
+    <parameter name="baseUrlSG" value="${codingChallengeWebsite.baseUrlSG}"/>
+    <parameter name="baseUrl" value="${codingChallengeWebsite.baseUrl}"/>
+    <test name = "Login Tests - Success">
         <parameter name="username" value="tomsmith"/>
         <parameter name="password" value="SuperSecretPassword!"/>
         <classes>
-            <class name="codingchallengewebsite.ui.testcases.LoginFormTest"/>
+            <class name="codingchallengewebsite.ui.testcases.LoginTest">
+                <methods><include name="successfulLogin"/></methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "Login Tests - Invalid username">
+        <parameter name="username" value="Invalid username"/>
+        <parameter name="password" value="SuperSecretPassword!"/>
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.LoginTest">
+                <methods><include name="invalidUsername"/></methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "Login Tests - Invalid password">
+        <parameter name="username" value="tomsmith"/>
+        <parameter name="password" value="Invalid password"/>
+        <classes>
+            <class name="codingchallengewebsite.ui.testcases.LoginTest">
+                <methods><include name="invalidPassword"/></methods>
+            </class>
         </classes>
     </test>
     <test name = "HoversTest">
@@ -50,9 +75,13 @@
             <class name="codingchallengewebsite.ui.testcases.DynamicLoadingTest"/>
         </classes>
     </test>
-    <test name = "Upload/Download Test">
+    <test name = "Upload Test">
         <classes>
             <class name="codingchallengewebsite.ui.testcases.UploadTest"/>
+        </classes>
+    </test>
+    <test name = "Download Test">
+        <classes>
             <class name="codingchallengewebsite.ui.testcases.DownloadTest"/>
         </classes>
     </test>

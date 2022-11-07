@@ -33,8 +33,8 @@ public class UITest {
 
     public UITest() { }
 
-    @Parameters({"browser", "browserVersion", "codingChallengeWebsite.headlessBrowser", "codingChallengeWebsite.baseUrl", "codingChallengeWebsite.baseUrlSG", "codingChallengeWebsite.seleniumGridUrl", "codingChallengeWebsite.useSeleniumGrid"})
-    @BeforeMethod
+    @Parameters({"browser", "browserVersion", "headlessBrowser", "baseUrl", "baseUrlSG", "seleniumGridUrl", "useSeleniumGrid"})
+    @BeforeTest
         public void setUp(@Optional(DEFAULT_BROWSER) String browser, @Optional("") String browserVersion, @Optional(DEFAULT_BROWSER_HEADLESS) String headless, @Optional("") String baseUrl, @Optional("") String baseUrlSG, @Optional("") String remoteUrl, @Optional("") @NotNull String useSeleniumGrid) {
         if (useSeleniumGrid.equals("true")) { this.setBaseUrl(baseUrlSG); } else { this.setBaseUrl(baseUrl); }
         browser = browser.toLowerCase();
@@ -42,7 +42,7 @@ public class UITest {
         switch (browser) {
             case "chrome", "remote-chrome" ->
                     this.setDriver(requestChromeDriver(browser, browserVersion, headless, remoteUrl, useSeleniumGrid));
-            /*case "firefox" ->
+            case "firefox" ->
                 // Firefox To be implemented
                     this.setDriver(requestFirefoxDriver(browserVersion, headless, remoteUrl, useSeleniumGrid));
             case "microsoftedge" ->
@@ -50,18 +50,18 @@ public class UITest {
                     this.setDriver(requestMicrosoftEdgeDriver(browserVersion, headless, remoteUrl, useSeleniumGrid));
             case "opera" ->
                 // Opera To be implemented
-                    this.setDriver(requestOperaDriver(browserVersion, headless, remoteUrl, useSeleniumGrid));*/
+                    this.setDriver(requestOperaDriver(browserVersion, headless, remoteUrl, useSeleniumGrid));
             default -> throw new IllegalStateException("Unexpected value: " + browser);
         }
     }
 
-    @AfterMethod
+    @AfterTest
     public void tearDown() {
         driver.close();
         driver.quit();
     }
 
-    private RemoteWebDriver requestChromeDriver(String browser, String browserVersion, String headless, String remoteUrl, String useSeleniumGrid) {
+    private RemoteWebDriver requestChromeDriver(String browser, String browserVersion, String headless, String remoteUrl, @NotNull String useSeleniumGrid) {
         ChromeOptions chromeOptions = new ChromeOptions();
         Map<String, Object> chromeExpOptions = new HashMap<>();
 
@@ -171,9 +171,9 @@ public class UITest {
                 var destination = arguments[1];
                 simulateHTML5DragAndDrop(source,destination);""",source, destination);
     }
-    public static void reloadPage(RemoteWebDriver driver) { driver.navigate().refresh(); }
+    public static void reloadPage(@NotNull RemoteWebDriver driver) { driver.navigate().refresh(); }
 
-    public static String cleanTextContent(String text)
+    public static @NotNull String cleanTextContent(String text)
     {
         // strips off all non-ASCII characters
         text = text.replaceAll("[^\\x00-\\x7F]", "");
@@ -200,12 +200,12 @@ public class UITest {
         this.baseUrl = baseUrl;
     }
 
-    public final Boolean isPageOpen(String pageUrl, WebElement pageTitle) {
+    public final @NotNull Boolean isPageOpen(String pageUrl, WebElement pageTitle) {
         WebDriverWait genericWait = new WebDriverWait(this.getDriver(), Duration.ofSeconds(10));;
         genericWait.until(ExpectedConditions.visibilityOf(pageTitle));
         return this.getDriver().getCurrentUrl().equals(pageUrl) && pageTitle.isDisplayed();
     }
-    public final Boolean isPageOpen(String pageUrl) { return this.getDriver().getCurrentUrl().equals(pageUrl); }
+    public final @NotNull Boolean isPageOpen(String pageUrl) { return this.getDriver().getCurrentUrl().equals(pageUrl); }
 
     public final WebElement getPageFooter() { return this.getDriver().findElement(By.xpath(pageFooterXpath)); }
 

@@ -1,0 +1,28 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LocalExecution Profile - regression.xml" type="TestNG" singleton="false">
+    <shortenClasspath name="NONE" />
+    <useClassPathOnly />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" value="19" />
+    <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/regression.xml" />
+    <option name="PACKAGE_NAME" value="" />
+    <option name="MAIN_CLASS_NAME" value="" />
+    <option name="METHOD_NAME" value="" />
+    <option name="GROUP_NAME" value="" />
+    <option name="TEST_OBJECT" value="SUITE" />
+    <option name="PARAMETERS" value="" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="TEST_SEARCH_SCOPE">
+      <value defaultName="wholeProject" />
+    </option>
+    <option name="PROPERTIES_FILE" value="" />
+    <properties>
+      <property name="P" value="LocalExecution" />
+    </properties>
+    <listeners />
+    <method v="2">
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

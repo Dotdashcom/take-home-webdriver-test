@@ -1,9 +1,7 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -11,8 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.HashMap;
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class DragAndDropPage {
     @FindBy(how = How.XPATH, using = "//h3[normalize-space()='Drag and Drop']")
@@ -30,12 +26,11 @@ public class DragAndDropPage {
     private final HashMap<String, WebElement> letters = new HashMap<>();
     private final String pageUrl;
 
-    public DragAndDropPage(RemoteWebDriver driver, UITest caller) {
+    public DragAndDropPage(UITest caller) {
         this.caller = caller;
-        this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/drag_and_drop";
         this.caller.getDriver().get(this.pageUrl);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);
         this.boxes.put("boxA", this.boxA);
         this.boxes.put("boxB", this.boxB);

@@ -3,6 +3,7 @@
 name: Run automated tests suite
 env:
   LOG_LEVEL: info
+  ENVIRONMENT: staging
 on:
   push:
     branches:
@@ -26,6 +27,7 @@ on:
         description: 'Environment to run tests against'
         type: environment
         required: true
+        default: staging
       chromeVersion:
         description: 'Chrome Version'
         required: true
@@ -34,6 +36,13 @@ on:
         options:
           - "latest"
           - "106.0.5249.119"
+  outputs:
+    cid:
+      description: Container ID
+      value: ${{ steps.info.outputs.website_cid }}
+    address:
+      description: Container ID
+      value: ${{ steps.info.outputs.website_address }}
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -50,6 +59,10 @@ jobs:
     steps:
     - name: Checkout repo code 
       uses: actions/checkout@v3
+    - run: apt-get update; apt-get install curl -y
+    - run: curl website:7080 > curl_result_docker
+    - name: Get
+    - run: cat curl_result_docker
     - name: Set up JDK 19
       uses: actions/setup-java@v3
       with:
@@ -57,25 +70,41 @@ jobs:
         distribution: 'corretto'
     - uses: browser-actions/setup-chrome@latest
     - run: chrome --version && whoami
+    - name: Get test-runner IP
+      run: message=$(curl https://api.ipify.org) && message=$(echo $message | tr '\n' ' ') && message=$(echo $message | xargs) && echo "ip=$message" >> $GITHUB_OUTPUT
+      id: testRunnerAddress
+    - name: Host address
+      run: echo "Host IP address ${{steps.testRunnerAddress.outputs.ip}}"
     - name: Clean 
-      run: mvn clean -f pom.xml --batch-mode --update-snapshots 
+      run: mvn clean -P Staging -f pom.xml --batch-mode --update-snapshots
     - name: Build
-      run: mvn compile -f pom.xml --batch-mode --update-snapshots
+      run: mvn compile -P Staging -f pom.xml --batch-mode --update-snapshots
     - name: Run the test suite
       run: >-
-        mvn test -e 
-        -DsuiteXmlFile=regression.xml -DheadlessBrowser=false
-        -Dbrowser="remote-chrome"
-        -DbrowserVersion=${{ needs.workflow_dispatch.inputs.chromeVersion.default }}
-        -DtestRunnerAddress="http://localhost:7080" 
-        -DwebAppAddress="http://localhost:7080"
-        -DuseSeleniumGrid=false -DtestsThreadCount=4
-        -DseleniumGridAddress="http://localhost:4444/wd/hub" 
-        -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
+        mvn test -f pom.xml -P Staging 
         --batch-mode --update-snapshots
+      env:
+        WEBSITE_HOST: website
+        WEBSITE_PORT: 7080
+        suiteXmlFile: regression.xml
+        browser: remote-chrome
+        browserVersion: ${{ needs.workflow_dispatch.inputs.chromeVersion.default }}
+        headlessBrowser: false
+        useSeleniumGrid: false
+        testsThreadCount: 4
+        testRunnerAddress: "http://${{steps.testRunnerAddress.outputs.ip}}:7080"
+        webAppAddress: "http://$WEBSITE_HOST:$WEBSITE_PORT"
+        seleniumGridAddress: "http://${{steps.testRunnerAddress.outputs.ip}}:4444/wd/hub"
+        org.slf4j.simpleLogger.defaultLogLevel: ${{ needs.workflow_dispatch.inputs.logLevel.default }}
     - name: Install
-      run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
-    - uses: actions/upload-artifact@v2
+      run: mvn install -P Staging -f pom.xml -DskipTests --batch-mode --update-snapshots
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run build --if-present
+        npm test
       if: always()
       with:
         name: Test run report

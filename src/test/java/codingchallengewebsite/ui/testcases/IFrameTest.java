@@ -2,7 +2,6 @@ package codingchallengewebsite.ui.testcases;
 
 import codingchallengewebsite.ui.UITest;
 import codingchallengewebsite.ui.pageobjects.IFramePage;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,14 +12,13 @@ public class IFrameTest extends UITest {
 
     @Test(description = "Switches between contexts and performs operations")
     public void testContextSwitching() {
-        IFramePage iFramePage = new IFramePage(this.getDriver(), this);
+        IFramePage iFramePage = new IFramePage(this);
         String textBucket = "Test in progress...", aux;
 
         // Validate page loaded
         Assert.assertTrue(iFramePage.isPageOpen(), "Page not open");
 
         // Write to the iframe's context textarea
-        //this.setDriver((RemoteWebDriver) iFramePage.switchTo("iframe"));
         this.setDriver((RemoteWebDriver) iFramePage.switchTo("iframe"));
         aux = iFramePage.getIFrameTextAreaText();
         iFramePage.writeIFrameTextAreaText(textBucket);

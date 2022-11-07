@@ -1,18 +1,13 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-import java.util.Objects;
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class LoginFormPage {
 
@@ -30,16 +25,13 @@ public class LoginFormPage {
     private final String pageUrl;
     public String EXPECTED_LOGGED_IN_PAGE_URL;
 
-    public LoginFormPage(RemoteWebDriver driver, UITest caller) {
+    public LoginFormPage(UITest caller) {
         this.caller = caller;
-        //WebDriverWait pageFactoryInitWait = new WebDriverWait(this.caller.getDriver(), Duration.ofSeconds(10), Duration.ofSeconds(5));
-        this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/login";
         this.EXPECTED_LOGGED_IN_PAGE_URL = this.caller.getBaseUrl() + "/secure";
         this.caller.getDriver().get(this.pageUrl);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);
-        //pageFactoryInitWait.until(ExpectedConditions.and(visibilityOf(this.pageTitle),visibilityOf(this.caller.getPageFooter())));
     }
 
     public Boolean isPageOpen() { return this.caller.isPageOpen(this.pageUrl, this.pageTitle); }

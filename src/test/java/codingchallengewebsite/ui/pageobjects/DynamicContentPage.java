@@ -1,22 +1,15 @@
 package codingchallengewebsite.ui.pageobjects;
 
 import codingchallengewebsite.ui.UITest;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class DynamicContentPage {
 
@@ -31,12 +24,11 @@ public class DynamicContentPage {
     private final UITest caller;
     private final String pageUrl;
 
-    public DynamicContentPage (RemoteWebDriver driver, UITest caller) {
+    public DynamicContentPage (UITest caller) {
         this.caller = caller;
-        this.caller.setDriver(driver);
         this.pageUrl = this.caller.getBaseUrl() + "/dynamic_content";
         this.caller.getDriver().get(this.pageUrl);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.caller.getDriver(), this);
         this.caller.pageFactoryInitWait(pageTitle);
     }
 
@@ -44,7 +36,7 @@ public class DynamicContentPage {
 
     public void reloadPage() { UITest.reloadPage(caller.getDriver()); }
 
-    public HashMap<String, String> getContent(Boolean partial) {
+    public HashMap<String, String> getContent(@NotNull Boolean partial) {
         if (partial.equals(false)) caller.getDriver().get(this.pageUrl);
         String staticContentQueryString = "?with_content=static";
         if (partial.equals(true)) caller.getDriver().get(this.pageUrl + staticContentQueryString);
