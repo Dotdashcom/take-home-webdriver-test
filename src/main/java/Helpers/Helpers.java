@@ -217,10 +217,10 @@ public static void Refresh(){
         driver.navigate().refresh();
 }
 
-public static boolean GetConsoleLogs(String text){
+public static LogEntries GetConsoleLogs(){
     LogEntries logs = driver.manage().logs().get(LogType.BROWSER);
     //Gets all errors and puts them in a list
-     return logs.getAll().stream().anyMatch(n -> n.getMessage().contains(text));
+     return logs;
 
 }
 }
