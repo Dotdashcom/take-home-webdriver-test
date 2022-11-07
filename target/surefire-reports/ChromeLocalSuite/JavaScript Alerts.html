@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>TestNG:  JavaScript Alerts</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>JavaScript Alerts</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 07 00:59:57 BOT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5801 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='JSAlertsCases.JSAlert()'><b>JSAlert</b><br>Test class: JSAlertsCases<br>Parameters: mixed, dismiss, You clicked: Cancel<br/>
+<a href="#Output-614991785" onClick='toggleBox("Output-614991785", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-614991785" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-614991785">
+Validating next element is present JavaScript Alerts<br/>
+Clicking JavaScript Alerts<br/>
+Validating next element is present Click for JS Confirm<br/>
+Clicking Click for JS Confirm<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JSAlertsCases@33d512c1</td></tr>
+<tr>
+<td title='JSAlertsCases.JSAlert()'><b>JSAlert</b><br>Test class: JSAlertsCases<br>Parameters: simple, accept, You successfuly clicked an alert<br/>
+<a href="#Output-273714086" onClick='toggleBox("Output-273714086", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-273714086" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-273714086">
+Validating next element is present JavaScript Alerts<br/>
+Clicking JavaScript Alerts<br/>
+Validating next element is present Click for JS Alert<br/>
+Clicking Click for JS Alert<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JSAlertsCases@33d512c1</td></tr>
+<tr>
+<td title='JSAlertsCases.JSAlert()'><b>JSAlert</b><br>Test class: JSAlertsCases<br>Parameters: mixed, accept, You clicked: Ok<br/>
+<a href="#Output-1946315544" onClick='toggleBox("Output-1946315544", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1946315544" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1946315544">
+Validating next element is present JavaScript Alerts<br/>
+Clicking JavaScript Alerts<br/>
+Validating next element is present Click for JS Confirm<br/>
+Clicking Click for JS Confirm<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JSAlertsCases@33d512c1</td></tr>
+<tr>
+<td title='JSAlertsCases.JSAlert()'><b>JSAlert</b><br>Test class: JSAlertsCases<br>Parameters: prompt, accept, sample<br/>
+<a href="#Output-1228481110" onClick='toggleBox("Output-1228481110", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1228481110" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1228481110">
+Validating next element is present JavaScript Alerts<br/>
+Clicking JavaScript Alerts<br/>
+Validating next element is present Click for JS Prompt<br/>
+Clicking Click for JS Prompt<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JSAlertsCases@33d512c1</td></tr>
+</table><p>
+</body>
+</html>

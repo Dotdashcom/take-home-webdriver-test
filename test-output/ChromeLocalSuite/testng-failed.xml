@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ChromeLocalSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="Local"/>
+  <parameter name="URL" value="http://localhost:7080/"/>
+  <test thread-count="5" name="DragDrop(failed)">
+    <parameter name="URL" value="http://localhost:7080/"/>
+    <classes>
+      <class name="DragDropCases">
+        <methods>
+          <include name="Cleanup"/>
+          <include name="Setup"/>
+          <include name="DragDrop" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- DragDropCases -->
+    </classes>
+  </test> <!-- DragDrop(failed) -->
+</suite> <!-- Failed suite [ChromeLocalSuite] -->

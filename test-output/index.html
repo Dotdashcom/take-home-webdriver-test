@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-ChromeLocalSuite" class="navigator-link">
+              <span class="suite-name border-passed">ChromeLocalSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-ChromeLocalSuite" class="navigator-link ">
+                    <span>C:\Users\lwiss\IdeaProjects\take-home-webdriver-test\ChromeLocalSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-ChromeLocalSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-ChromeLocalSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-ChromeLocalSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-ChromeLocalSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-ChromeLocalSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-ChromeLocalSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ChromeLocalSuite" class="hide-methods passed suite-ChromeLocalSuite"> (hide)</a> <!-- hide-methods passed suite-ChromeLocalSuite -->
+                      <a href="#" panel-name="suite-ChromeLocalSuite" class="show-methods passed suite-ChromeLocalSuite"> (show)</a> <!-- show-methods passed suite-ChromeLocalSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-ChromeLocalSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ChromeLocalSuite" title="CheckboxCases" class="method navigator-link" hash-for-method="Checkbox(0, false)">Checkbox(0, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ChromeLocalSuite" title="CheckboxCases" class="method navigator-link" hash-for-method="Checkbox(1, true)">Checkbox(1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ChromeLocalSuite" title="LoginCases" class="method navigator-link" hash-for-method="Login(wrong, wrongpaas, Your username is invalid!)">Login(wrong, wrongpaas, Your username is invalid!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ChromeLocalSuite" title="LoginCases" class="method navigator-link" hash-for-method="Login(tomsmith, SuperSecretPassword!, You logged into a secure area!)">Login(tomsmith, SuperSecretPassword!, You logged into a secure area!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ChromeLocalSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ChromeLocalSuite" class="panel ChromeLocalSuite">
+          <div class="suite-ChromeLocalSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LoginCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(wrong, wrongpaas, Your username is invalid!)">
+                  </a> <!-- Login(wrong, wrongpaas, Your username is invalid!) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(wrong,wrongpaas,Your username is invalid!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(tomsmith, SuperSecretPassword!, You logged into a secure area!)">
+                  </a> <!-- Login(tomsmith, SuperSecretPassword!, You logged into a secure area!) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(tomsmith,SuperSecretPassword!,You logged into a secure area!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ChromeLocalSuite-class-passed -->
+          <div class="suite-ChromeLocalSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CheckboxCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Checkbox(0, false)">
+                  </a> <!-- Checkbox(0, false) -->
+                  <span class="method-name">Checkbox</span>
+                  <span class="parameters">(0,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Checkbox(1, true)">
+                  </a> <!-- Checkbox(1, true) -->
+                  <span class="method-name">Checkbox</span>
+                  <span class="parameters">(1,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ChromeLocalSuite-class-passed -->
+        </div> <!-- panel ChromeLocalSuite -->
+        <div panel-name="test-xml-ChromeLocalSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\lwiss\IdeaProjects\take-home-webdriver-test\ChromeLocalSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;ChromeLocalSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;Local&quot;/&gt;
+  &lt;parameter name=&quot;URL&quot; value=&quot;http://localhost:7080/&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login&quot;&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;http://localhost:7080/login&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;LoginCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Checkboxes&quot;&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;http://localhost:7080/checkboxes&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;CheckboxCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Checkboxes --&gt;
+&lt;/suite&gt; &lt;!-- ChromeLocalSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ChromeLocalSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ChromeLocalSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Checkboxes (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ChromeLocalSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ChromeLocalSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ChromeLocalSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ChromeLocalSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ChromeLocalSuite');
+function tableData_ChromeLocalSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Login')
+data.setCell(0, 2, 'LoginCases')
+data.setCell(0, 3, 438);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Login')
+data.setCell(1, 2, 'LoginCases')
+data.setCell(1, 3, 304);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Checkbox')
+data.setCell(2, 2, 'CheckboxCases')
+data.setCell(2, 3, 27);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Checkbox')
+data.setCell(3, 2, 'CheckboxCases')
+data.setCell(3, 3, 22);
+window.suiteTableData['ChromeLocalSuite']= { tableData: data, tableDiv: 'times-div-ChromeLocalSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 791 ms</span>
+              <div id="times-div-ChromeLocalSuite">
+              </div> <!-- times-div-ChromeLocalSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ChromeLocalSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ChromeLocalSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Login(wrong, wrongpaas, Your username is invalid!)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validating next element is present Username</span>
+                <span class="reporter-method-output">Writing ** [Ljava.lang.CharSequence;@127705e4 ** into Username</span>
+                <span class="reporter-method-output">Validating next element is present Password</span>
+                <span class="reporter-method-output">Writing ** [Ljava.lang.CharSequence;@7ce85af2 ** into Password</span>
+                <span class="reporter-method-output">Validating next element is present  Login</span>
+                <span class="reporter-method-output">Clicking  Login</span>
+                <span class="reporter-method-output">Validating next element is present </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Login(tomsmith, SuperSecretPassword!, You logged into a secure area!)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validating next element is present Username</span>
+                <span class="reporter-method-output">Writing ** [Ljava.lang.CharSequence;@3c3820bb ** into Username</span>
+                <span class="reporter-method-output">Validating next element is present Password</span>
+                <span class="reporter-method-output">Writing ** [Ljava.lang.CharSequence;@7d7cac8 ** into Password</span>
+                <span class="reporter-method-output">Validating next element is present  Login</span>
+                <span class="reporter-method-output">Clicking  Login</span>
+                <span class="reporter-method-output">Validating next element is present </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ChromeLocalSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ChromeLocalSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginCases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Setup(Local, http://localhost:7080/login)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Login(tomsmith, SuperSecretPassword!, You logged into a secure area!)</span>
+                <span class="method-start">1870 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Cleanup</span>
+                <span class="method-start">2309 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Setup(Local, http://localhost:7080/login)</span>
+                <span class="method-start">2426 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Login(wrong, wrongpaas, Your username is invalid!)</span>
+                <span class="method-start">3355 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Cleanup</span>
+                <span class="method-start">3660 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CheckboxCases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Setup(Local, http://localhost:7080/checkboxes)</span>
+                <span class="method-start">3755 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Checkbox(0, false)</span>
+                <span class="method-start">4672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Cleanup</span>
+                <span class="method-start">4699 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Setup(Local, http://localhost:7080/checkboxes)</span>
+                <span class="method-start">4808 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Checkbox(1, true)</span>
+                <span class="method-start">5944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Cleanup</span>
+                <span class="method-start">5967 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

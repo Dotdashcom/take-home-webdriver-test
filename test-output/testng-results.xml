@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Form Authentication]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Form Authentication]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Username]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@35e26d05 ** into Username]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Password]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@4eb166a1 ** into Password]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present  Login]]>
+    </line>
+    <line>
+      <![CDATA[Clicking  Login]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Form Authentication]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Form Authentication]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Username]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@72eb6200 ** into Username]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Password]]>
+    </line>
+    <line>
+      <![CDATA[Writing ** [Ljava.lang.CharSequence;@431e86b1 ** into Password]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present  Login]]>
+    </line>
+    <line>
+      <![CDATA[Clicking  Login]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/checkboxes]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/checkboxes]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/context_menu]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Scroll to element ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to http://localhost:7080/]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present Drag and Drop]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Drag and Drop]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Validating next element is present ]]>
+    </line>
+    <line>
+      <![CDATA[Scroll to element ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-11-05T20:38:59 BOT" name="ChromeLocalSuite" finished-at="2022-11-05T20:39:12 BOT" duration-ms="12460">
+    <groups>
+    </groups>
+    <test started-at="2022-11-05T20:38:59 BOT" name="Login" finished-at="2022-11-05T20:39:04 BOT" duration-ms="4585">
+      <class name="LoginCases">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:LoginCases@d706f19]" started-at="2022-11-05T20:38:59 BOT" name="Setup" finished-at="2022-11-05T20:39:01 BOT" duration-ms="1943" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:7080/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:LoginCases@d706f19]" started-at="2022-11-05T20:39:01 BOT" name="Login" data-provider="Login" finished-at="2022-11-05T20:39:02 BOT" duration-ms="761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You logged into a secure area!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Form Authentication]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Form Authentication]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Username]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@35e26d05 ** into Username]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Password]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@4eb166a1 ** into Password]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present  Login]]>
+            </line>
+            <line>
+              <![CDATA[Clicking  Login]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:LoginCases@d706f19]" started-at="2022-11-05T20:39:02 BOT" name="Cleanup" finished-at="2022-11-05T20:39:02 BOT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:LoginCases@d706f19]" started-at="2022-11-05T20:39:02 BOT" name="Setup" finished-at="2022-11-05T20:39:03 BOT" duration-ms="996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:7080/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:LoginCases@d706f19]" started-at="2022-11-05T20:39:03 BOT" name="Login" data-provider="Login" finished-at="2022-11-05T20:39:04 BOT" duration-ms="616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpaas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Form Authentication]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Form Authentication]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Username]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@72eb6200 ** into Username]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present Password]]>
+            </line>
+            <line>
+              <![CDATA[Writing ** [Ljava.lang.CharSequence;@431e86b1 ** into Password]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present  Login]]>
+            </line>
+            <line>
+              <![CDATA[Clicking  Login]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:LoginCases@d706f19]" started-at="2022-11-05T20:39:04 BOT" name="Cleanup" finished-at="2022-11-05T20:39:04 BOT" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- LoginCases -->
+    </test> <!-- Login -->
+    <test started-at="2022-11-05T20:39:04 BOT" name="Checkboxes" finished-at="2022-11-05T20:39:06 BOT" duration-ms="2114">
+      <class name="CheckboxCases">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:CheckboxCases@2f7c2f4f]" started-at="2022-11-05T20:39:04 BOT" name="Setup" finished-at="2022-11-05T20:39:05 BOT" duration-ms="947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:7080/checkboxes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/checkboxes]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Checkbox(int,boolean)[pri:0, instance:CheckboxCases@2f7c2f4f]" started-at="2022-11-05T20:39:05 BOT" name="Checkbox" data-provider="Checkbox" finished-at="2022-11-05T20:39:05 BOT" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkbox -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:CheckboxCases@2f7c2f4f]" started-at="2022-11-05T20:39:05 BOT" name="Cleanup" finished-at="2022-11-05T20:39:05 BOT" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:CheckboxCases@2f7c2f4f]" started-at="2022-11-05T20:39:05 BOT" name="Setup" finished-at="2022-11-05T20:39:06 BOT" duration-ms="933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:7080/checkboxes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/checkboxes]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Checkbox(int,boolean)[pri:0, instance:CheckboxCases@2f7c2f4f]" started-at="2022-11-05T20:39:06 BOT" name="Checkbox" data-provider="Checkbox" finished-at="2022-11-05T20:39:06 BOT" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkbox -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:CheckboxCases@2f7c2f4f]" started-at="2022-11-05T20:39:06 BOT" name="Cleanup" finished-at="2022-11-05T20:39:06 BOT" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- CheckboxCases -->
+    </test> <!-- Checkboxes -->
+    <test started-at="2022-11-05T20:39:06 BOT" name="ContextMenu" finished-at="2022-11-05T20:39:07 BOT" duration-ms="1254">
+      <class name="ContextMenuCases">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:ContextMenuCases@5be6e01c]" started-at="2022-11-05T20:39:06 BOT" name="Setup" finished-at="2022-11-05T20:39:07 BOT" duration-ms="984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:7080/context_menu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/context_menu]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Checkbox(java.lang.String)[pri:0, instance:ContextMenuCases@5be6e01c]" started-at="2022-11-05T20:39:07 BOT" name="Checkbox" data-provider="Contextmenu" finished-at="2022-11-05T20:39:07 BOT" duration-ms="178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[You selected a context menu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Scroll to element ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Checkbox -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:ContextMenuCases@5be6e01c]" started-at="2022-11-05T20:39:07 BOT" name="Cleanup" finished-at="2022-11-05T20:39:07 BOT" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- ContextMenuCases -->
+    </test> <!-- ContextMenu -->
+    <test started-at="2022-11-05T20:39:07 BOT" name="DragDrop" finished-at="2022-11-05T20:39:12 BOT" duration-ms="4473">
+      <class name="DragDropCases">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:DragDropCases@5223e5ee]" started-at="2022-11-05T20:39:07 BOT" name="Setup" finished-at="2022-11-05T20:39:08 BOT" duration-ms="920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:7080/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to http://localhost:7080/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="DragDrop(int,int)[pri:0, instance:DragDropCases@5223e5ee]" started-at="2022-11-05T20:39:08 BOT" name="DragDrop" data-provider="Dragdrop" finished-at="2022-11-05T20:39:12 BOT" duration-ms="3435" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at DragDropCases.DragDrop(DragDropCases.java:9)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Validating next element is present Drag and Drop]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Drag and Drop]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Validating next element is present ]]>
+            </line>
+            <line>
+              <![CDATA[Scroll to element ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DragDrop -->
+        <test-method is-config="true" signature="Cleanup()[pri:0, instance:DragDropCases@5223e5ee]" started-at="2022-11-05T20:39:12 BOT" name="Cleanup" finished-at="2022-11-05T20:39:12 BOT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- DragDropCases -->
+    </test> <!-- DragDrop -->
+  </suite> <!-- ChromeLocalSuite -->
+</testng-results>

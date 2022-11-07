@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ChromeLocalSuite">
+    <parameter name="browser" value="Local"/>
+    <parameter name="URL" value="http://localhost:7080/" />
+    <test name="Login">
+        <classes>
+            <class name="LoginCases"/>
+        </classes>
+    </test>
+    <test name="Checkboxes">
+        <!-- Overriding suite level parameter -->
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="CheckboxCases"/>
+        </classes>
+    </test>
+    <test name="ContextMenu">
+        <!-- Overriding suite level parameter -->
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="ContextMenuCases"/>
+        </classes>
+    </test>
+    <test name="DragDrop">
+        <!-- Overriding suite level parameter -->
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="DragDropCases"/>
+        </classes>
+    </test>
+    <test name="Dropdown">
+        <!-- Overriding suite level parameter -->
+
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="DropDownCases"/>
+        </classes>
+    </test>
+    <test name="Dynamic Content">
+        <!-- Overriding suite level parameter -->
+
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="DynamicContentCases"/>
+        </classes>
+    </test>
+    <test name="Dynamic Controls">
+        <!-- Overriding suite level parameter -->
+
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="DynamicControlCases"/>
+        </classes>
+    </test>
+    <test name="Dynamic Loading">
+        <!-- Overriding suite level parameter -->
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="DynamicLoadingCases"/>
+        </classes>
+    </test>
+    <test name="File Download">
+        <!-- Overriding suite level parameter -->
+
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="FileDownloadCases"/>
+        </classes>
+    </test>
+    <test name="File Upload">
+        <!-- Overriding suite level parameter -->
+
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="FileUploadCases"/>
+        </classes>
+    </test>
+    <test name="Floating Menu">
+        <!-- Overriding suite level parameter -->
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="FloatingMenuCases"/>
+        </classes>
+    </test>
+    <test name="Iframe">
+        <!-- Overriding suite level parameter -->
+
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="IFrameCases"/>
+        </classes>
+    </test>
+    <test name="Mouse Hover">
+        <!-- Overriding suite level parameter -->
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="MouseHoverCases"/>
+        </classes>
+    </test>
+    <test name="JavaScript Alerts">
+        <!-- Overriding suite level parameter -->
+
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="JSAlertsCases"/>
+        </classes>
+    </test>
+    <test name="JavaScript Error">
+        <!-- Overriding suite level parameter -->
+
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="JSLoadCases"/>
+        </classes>
+    </test>
+    <test name="Open in New Tab">
+        <!-- Overriding suite level parameter -->
+
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="MultiWindowsCases"/>
+        </classes>
+    </test>
+    <test name="Notification Message">
+        <!-- Overriding suite level parameter -->
+        <parameter name="URL" value="http://localhost:7080/" />
+        <!-- Test specific parameter -->
+        <classes>
+            <class name="NotificationCases"/>
+        </classes>
+    </test>
+
+</suite>
