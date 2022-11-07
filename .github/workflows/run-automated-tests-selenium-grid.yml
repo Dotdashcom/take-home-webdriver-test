@@ -1,0 +1,130 @@
+# Workflow to run automated tests on code pushed to master branch
+name: Run automated tests suite - Selenium Grid
+env:
+  LOG_LEVEL: info
+  ENVIRONMENT: staging
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: info
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
+        default: staging
+      chromeVersion:
+        description: 'Chrome Version'
+        required: true
+        default: '106.0.5249.119'
+        type: choice
+        options:
+          - "latest"
+          - "106.0.5249.119"
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    services:
+      website:
+        image: gprestes/the-internet:latest
+        ports:
+          - 7080:5000
+        options: >-
+          --rm
+      selenium-hub:
+        image: selenium/hub:latest
+        container_name: selenium-hub
+        ports:
+          - 4442:4442
+          - 4443:4443
+          - 4444:4444
+        options: >-
+          --rm
+          -v /dev/shm:/dev/shm
+          -e SE_SESSION_RETRY_INTERVAL=1
+        env:
+          SE_VNC_NO_PASSWORD: 1
+          SE_SESSION_RETRY_INTERVAL: 1
+      chrome-node1:
+        image: selenium/node-chrome:latest
+        container_name: chrome-node1
+        shm_size: 2gb
+        depends_on: selenium-hub
+        environment:
+          - SE_EVENT_BUS_HOST=selenium-hub
+          - SE_EVENT_BUS_PUBLISH_PORT=4442
+          - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          - SE_SESSION_RETRY_INTERVAL=1
+          - SE_NODE_MAX_INSTANCES=4
+          - SE_NODE_MAX_SESSIONS=2
+          - SE_NODE_SESSION_TIMEOUT=10
+        options: >-
+          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
+      chrome-node2:
+        image: selenium/node-chrome:latest
+        container_name: chrome-node2
+        shm_size: 2gb
+        depends_on: selenium-hub
+        environment:
+          - SE_EVENT_BUS_HOST=selenium-hub
+          - SE_EVENT_BUS_PUBLISH_PORT=4442
+          - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          - SE_SESSION_RETRY_INTERVAL=1
+          - SE_NODE_MAX_INSTANCES=4
+          - SE_NODE_MAX_SESSIONS=2
+          - SE_NODE_SESSION_TIMEOUT=10
+        options: >-
+          -v /home/runner/work/take-home-webdriver-test/take-home-webdriver-test/target:/home/seluser/Downloads
+    steps:
+      - name: Get test-runner IP
+        run: message=$(curl https://api.ipify.org) && message=$(echo $message | tr '\n' ' ') && message=$(echo $message | xargs) && echo "ip=$message" >> $GITHUB_OUTPUT
+        id: test_runner_address
+      - name: Host address
+        run: echo "Host address ${{steps.test_runner_address.outputs.ip}}"
+      - name: Checkout repo code
+        uses: actions/checkout@v3
+      - name: Set up JDK 19
+        uses: actions/setup-java@v3
+        with:
+          java-version: '19'
+          distribution: 'corretto'
+      - name: Clean
+        run: mvn clean -f pom.xml --batch-mode --update-snapshots
+      - name: Build
+        run: mvn compile -f pom.xml --batch-mode --update-snapshots
+      - name: Install
+        run: mvn install -f pom.xml -DskipTests --batch-mode --update-snapshots
+      - name: Run the test suite
+        run: >-
+          mvn test -DsuiteXmlFile=regression.xml -DuseSeleniumGrid=true 
+          -Dbrowser="remote-chrome" 
+          -DbrowserVersion=${{ needs.workflow_dispatch.inputs.chromeVersion.default }} 
+          -DheadlessBrowser=false -DtestsThreadCount=2
+          -DtestRunnerAddress="http://${{steps.test_runner_address.outputs.ip}}:7080"
+          -DwebAppAddress="http://localhost:7080"
+          -DuseSeleniumGrid=true
+          -DseleniumGridAddress="http://localhost:4444/wd/hub" 
+          -Dorg.slf4j.simpleLogger.defaultLogLevel=${{ needs.workflow_dispatch.inputs.logLevel.default }}
+          --batch-mode --update-snapshots
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: Test run report
+          path: target/surefire-reports/
+      - name: Display structure of uploaded files
+        run: ls -R
+        working-directory: target/surefire-reports/
