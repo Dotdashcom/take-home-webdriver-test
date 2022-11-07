@@ -100,7 +100,7 @@ public class TestDataProvider {
     }
     @DataProvider(name = "JSLoadError")
     public static Object[][] JSLoadErrorData() {
-        return new Object[][]{{"This page has a JavaScript error in the onload event"}};
+        return new Object[][]{{"Cannot read properties of undefined (reading 'xyz')"}};
     }
 
     @DataProvider(name = "MultiWindows")

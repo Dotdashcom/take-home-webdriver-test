@@ -19,7 +19,7 @@ public class JSLoadPage {
 
     public boolean validateTextPage(String text) throws InterruptedException {
 
-        return Helpers.SearchTextPageSource(text);
+        return Helpers.GetConsoleLogs(text);
     }
 
 

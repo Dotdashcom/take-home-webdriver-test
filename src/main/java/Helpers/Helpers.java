@@ -3,6 +3,9 @@ package Helpers;
 import Config.PageObjectCore;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -213,4 +216,12 @@ public static String GetDoubleQuotedText(WebElement element){
 public static void Refresh(){
         driver.navigate().refresh();
 }
+
+public static boolean GetConsoleLogs(String text){
+    LogEntries logs = driver.manage().logs().get(LogType.BROWSER);
+    //Gets all errors and puts them in a list
+     return logs.getAll().stream().anyMatch(n -> n.getMessage().contains(text));
+
 }
+}
+
