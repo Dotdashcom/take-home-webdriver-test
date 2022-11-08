@@ -5,12 +5,7 @@
 
 
     <classes>
-      <class name="com.test.ExceptionTimeOutTest" />
-      <class name="com.test.GoogleTest" />
-      <class name="com.test.GoogleTitleTest" />
-      <class name="com.test.InvocationCountTest" />
-      <class name="com.test.TestNgBasics" />
-      <class name="com.test.TestNgFeatures" />
+
     </classes>
 
 </test>
