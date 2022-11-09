@@ -1,0 +1,17 @@
+DynamicContentTest.class
+ContextMenuTest.class
+FileUploadTest.class
+NotificationMessageTest.class
+DynamicLoadingTest.class
+FileDownloadTest.class
+DragAndDropTest.class
+DropdownTest.class
+DynamicControlsTest.class
+FloatingMenuTest.class
+JavaScriptAlertsTest.class
+OpenNewTabTest.class
+MouseHoverTest.class
+IFrameTest.class
+LoginTest.class
+CheckBoxTest.class
+BaseTest.class
