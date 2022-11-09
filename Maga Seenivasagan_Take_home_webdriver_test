@@ -1,0 +1,590 @@
+1.Login Success
+
+Public class Test1{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/login");
+  
+     driver.manage().window.maximize();
+
+     WebElement txtusername= driver.findElement(By.locators);
+     
+         txtusername.sendkeys("tomsmith");
+
+     WebElement txtpassword= driver.findElement(By.locators);
+     
+         txtpassword.sendkeys("SuperSecretPassword!");
+
+    WebElement txtlogin= driver.findElement(By.locators);
+     
+         txtlogin.click();
+
+          driver.close();
+
+ }
+}
+
+ 
+2.Login Failure
+
+Public class Test2{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/login");
+  
+     driver.manage().window.maximize();
+
+     WebElement txtusername= driver.findElement(By.locators);
+     
+         txtusername.sendkeys("tomsmith");
+
+     WebElement txtpassword= driver.findElement(By.locators);
+     
+         txtpassword.sendkeys("SuperSecret");
+
+    WebElement txtlogin= driver.findElement(By.locators);
+     
+         txtlogin.click();
+
+          driver.close();
+
+ }
+}
+ 
+
+3.Checkboxes
+
+Public class Test3{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/checkboxes");
+  
+     driver.manage().window.maximize();
+
+     WebElement value1= driver.findElement(By.locators);
+ 
+        value1.click();
+    
+        value1.click();
+
+    WebElement value2= driver.findElement(By.locators);
+ 
+        value2.click();
+
+        value2.click();
+   
+        value2.click();
+   
+         driver.close();
+
+ }
+}
+ 
+   
+4.Context Menu
+
+Public class Test4{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/context_menu");
+  
+     driver.manage().window.maximize();
+
+     WebElement img1= driver.findElement(By.locators);
+
+     Actions ac= new Actions(driver);
+     
+      ac.contextclick(img1).perform();
+
+          driver.close();
+
+ }
+}
+
+
+5.Drag and Drop
+
+Public class Test5{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/drag_and_drop");
+  
+     driver.manage().window.maximize();
+
+     WebElement elementA= driver.findElement(By.locators);
+ 
+     WebElement elementB= driver.findElement(By.locators);
+
+
+     Actions ac= new Actions(driver);
+     
+      ac.dragAndDrop(elementA,elementB).perform();
+
+          driver.close();
+
+ }
+}
+
+
+6.Dropdown
+
+
+Public class Test6{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/dropdown");
+  
+     driver.manage().window.maximize();
+
+     WebElement dropvalue= driver.findElement(By.locators);
+     
+       Select select = new Select(dropvalue)
+
+      select.selectByVisibleText("Option 1");
+    
+       select.selectByVisibleText("Option 2");
+
+          driver.close();
+
+ }
+}
+
+
+7.Dynamic Content
+
+Right click refresh
+
+Public class Test7{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/dynamic_content");
+  
+     driver.manage().window.maximize();
+
+     WebElement userN= driver.findElement(By.locators);
+
+     Actions ac= new Actions(driver);
+     
+      ac.contextclick(userN).perform();
+
+       Robert rb = new Robert();
+
+       rb.keyPress(KeyEvent.VK_DOWN);
+
+       rb.keyPress(KeyEvent.VK_DOWN);
+
+       rb.keyPress(KeyEvent.VK_ENTER);
+
+
+       ac.contextclick(userN).perform();
+
+       Robert rb = new Robert();
+
+       rb.keyPress(KeyEvent.VK_DOWN);
+
+       rb.keyPress(KeyEvent.VK_DOWN);
+
+       rb.keyPress(KeyEvent.VK_ENTER);
+
+       driver.close();
+
+ }
+}
+
+
+8.Dynamic Controls
+
+Public class Test9{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/dynamic_controls");
+  
+     driver.manage().window.maximize();
+
+     WebElement removeBtn = driver.findElement(By.locators);
+
+      removeBtn.click();
+
+      WebDriverwait wait1 = new WebDriverwait(driver, 10);
+
+         wait1.until(element ToBe Clickable());
+
+     WebElement addBtn = driver.findElement(By.locators);
+
+      addBtn.click();
+
+         wait1.until(element ToBe Clickable());
+
+      WebElement enableBtn = driver.findElement(By.locators);
+
+      enableBtn.click();
+
+         wait1.until(element ToBe Clickable());
+
+       WebElement disableBtn = driver.findElement(By.locators);
+
+      disableBtn.click();
+
+         wait1.until(element ToBe Clickable());
+
+          driver.close();
+
+ }
+}
+
+
+9.Dynamic Loading
+
+Public class Test9{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/dynamic_loading/2");
+  
+     driver.manage().window.maximize();
+
+     WebElement btnStart = driver.findElement(By.locators);
+
+      btnStart.click();
+
+    WebDriverwait wait1 = new WebDriverwait(driver, 10);
+
+    wait1.until(element ToBe Clickable());
+
+    driver.close();
+
+ }
+}
+
+
+10.File Download
+
+Public class Test10{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/download");
+  
+     driver.manage().window.maximize();
+
+     WebElement file = driver.findElement(By.locators);
+
+       Actions ac= new Actions(driver);
+     
+      ac.contextclick(userN).perform();
+
+       Robert rb = new Robert();
+
+       rb.keyPress(KeyEvent.VK_DOWN);
+
+       rb.keyPress(KeyEvent.VK_DOWN);
+       
+        rb.keyPress(KeyEvent.VK_DOWN);
+
+       rb.keyPress(KeyEvent.VK_ENTER);
+
+               driver.close();
+
+ }
+}
+
+
+11.File Upload
+   
+Public class Test11{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/upload");
+  
+     driver.manage().window.maximize();
+
+     WebElement addUploadFile = driver.findElement(By.locators);
+
+     addUploadFile.sendKeys("/Users/system/Desktop/c1.jpeg");
+
+     driver.findElement(By.name("send")).click();
+
+ }
+}
+
+
+
+
+12.Floating Menu
+
+Scroll the page
+
+Public class Test12{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/floating_menu");
+  
+     driver.manage().window.maximize();
+
+     WebElement scrollUp = driver.findElement(By.locators);
+
+     WebElement scrollDown = driver.findElement(By.locators);
+
+    JavascriptExecutor js = (Javascript Executor) driver;
+
+    js.executeScript("arguments[0].scrollIntoView(true)",scrolldown);
+
+    Thread.sleep(2000);
+
+    js.executeScript("arguments[0].scrollIntoView(false)",scrollup);
+
+      driver.close();
+
+ }
+}
+
+
+13.Iframe
+
+Public class Test13{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/iframe");
+  
+     driver.manage().window.maximize();
+   
+     driver.switchTo().frame("Test iframepage")
+
+     WebElement txtusername= driver.findElement(By.locators);
+
+        txtusername.sendkeys("Hello");
+ 
+           driver.close();
+
+ }
+}
+
+
+14.Mouse Hover
+
+Public class Test14{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/hovers");
+  
+     driver.manage().window.maximize();
+
+     WebElement img1= driver.findElement(By.locators);
+
+     Actions ac= new Actions(driver);
+     
+      ac.moveToElement(img1).perform();
+
+     WebElement img2= driver.findElement(By.locators);
+     
+        ac.moveToElement(img2).perform();
+
+    WebElement img3= driver.findElement(By.locators);
+     
+         img.click();
+
+          driver.close();
+
+ }
+}
+
+15.JavaScript Alerts
+
+Public class Test15{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/javascript_alerts");
+  
+     driver.manage().window.maximize();
+
+     WebElement alertBtn= driver.findElement(By.locators);
+  
+         alertBtn.click();
+
+         Alert al = driver.switchTo().alert();
+ 
+          al.accept();
+
+    WebElement confirmBtn = driver.findElement(By.locators);
+  
+         confirmBtn.click();
+ 
+         al.accept();
+
+    WebElement PromptBtn = driver.findElement(By.locators);
+  
+         PromptBtn.click();
+
+          al.sendkeys("Hello");
+ 
+           al.accept();
+
+             driver.close();
+
+ }
+}
+
+
+16.JavaScript Error
+
+Public class Test16{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/javascript_error");
+  
+     driver.manage().window.maximize();
+
+     WebElement scrollDown = driver.findElement(By.locators);
+
+    JavascriptExecutor js = (Javascript Executor) driver;
+
+    js.executeScript("arguments[0].setAttribute('Value' , 'hii', txtuser);
+
+      driver.close();
+
+ }
+}
+
+
+17.Open in New Tab
+
+Public class Test17{
+
+  Public static void main(String [] args){
+
+    System.Set property("Webdriver.chrome.driver,"system path");
+
+     WebDriver driver = new chromeDriver();
+
+     driver.get("http://localhost:7080/windows");
+  
+     driver.manage().window.maximize();
+
+        driver.close();
+
+ }
+}
+
+
+18.
+
+public class Test18 {				
+
+    public static void main(String[] args) throws InterruptedException {
+
+      System.Set property("Webdriver.chrome.driver,"system path");
+
+        WebDriver driver = new chromeDriver();									
+  					
+            driver.get("http://localhost:7080/notification_message_rendered");	
+		
+             driver.manage().window().maximize();		
+                		
+               driver.findElement(By.locators).click();			
+        		
+            String MainWindow=driver.getWindowHandle();		
+        						
+            Set<String> s1=driver.getWindowHandles();		
+
+             Iterator<String> i1=s1.iterator();		
+        		
+        while(i1.hasNext())			
+        {		
+            String ChildWindow=i1.next();		
+            		
+            if(!MainWindow.equalsIgnoreCase(ChildWindow))			
+            {    		             
+                    driver.switchTo().window(ChildWindow);	                                                                                                           
+                    driver.findElement(By.locator) .sendKeys("abc@gmail.com");                			
+                    
+                    driver.findElement(By.locator).click();			
+                                
+                        driver.close();		
+            }		
+        }		
+            driver.switchTo().window(MainWindow);			
+
+          driver.close();	
+
+     }
+}		
+
+
