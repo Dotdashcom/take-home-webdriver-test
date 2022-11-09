@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1" parallel="tests" thread-count="1" group-by-instances="true">
+    <test name="Test">
+        <classes>
+            <class name="FileUploadTest"/>
+            <class name="IFrameTest"/>
+            <class name="DynamicContentTest"/>
+            <class name="DynamicLoadingTest"/>
+            <class name="DragAndDropTest"/>
+            <class name="OpenNewTabTest"/>
+            <class name="DropdownTest"/>
+            <class name="JavaScriptAlertsTest"/>
+            <class name="BaseTest"/>
+            <class name="CheckBoxTest"/>
+            <class name="MouseHoverTest"/>
+            <class name="NotificationMessageTest"/>
+            <class name="LoginTest"/>
+            <class name="FileDownloadTest"/>
+            <class name="ContextMenuTest"/>
+            <class name="DynamicControlsTest"/>
+            <class name="FloatingMenuTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
