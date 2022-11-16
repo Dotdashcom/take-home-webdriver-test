@@ -1,4 +1,4 @@
-# WebDriver Tests by JP
+# The-Internet app testing. Java + Selenium
 
 ## Prerequisites
 - Docker  [:link:](https://www.docker.com/products/docker-desktop/)
