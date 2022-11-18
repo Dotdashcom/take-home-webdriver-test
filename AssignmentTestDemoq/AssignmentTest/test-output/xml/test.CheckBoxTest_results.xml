@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.013">
+    <properties></properties>
+
+
+
+            <testcase
+                name="CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase"
+                time="1.290"
+                classname="test.CheckBoxTest">
+            </testcase>
+            <testcase
+                name="CheckBoxFirstIsUncheckedSecondIsCheckedTestCase"
+                time="0.723"
+                classname="test.CheckBoxTest">
+            </testcase>
+</testsuite>

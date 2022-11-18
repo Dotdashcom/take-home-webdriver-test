@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuiteAssignment">
+	<parameter name="loginSuccessUrl" value="http://localhost:7080/login " />	
+	<parameter name="CheckBoxesUrl" value="http://localhost:7080/checkboxes " />
+	<parameter name="ContextMenuUrl" value="http://localhost:7080/context_menu " />
+	<parameter name="DragAndDropUrl" value="http://localhost:7080/drag_and_drop  " />
+	<parameter name="DropDownUrl" value="http://localhost:7080/dropdown  " />
+	<parameter name="DynamicContentUrl" value="http://localhost:7080/dynamic_content  " />
+	<parameter name="DynamicControlUrl" value="http://localhost:7080/dynamic_controls  " />
+	<parameter name="DynamicLoadingUrl" value="http://localhost:7080/dynamic_loading/2  " />
+	<parameter name="FileDownloadUrl" value="http://localhost:7080/download  " />
+	<parameter name="UploadFileUrl" value="http://localhost:7080/upload " />
+	<parameter name="FloatingMenuUrl" value="http://localhost:7080/floating_menu " />
+	<parameter name="IFrameUrl" value="http://localhost:7080/iframe " />
+	<parameter name="MouseHoverUrl" value="http://localhost:7080/hovers " />
+	<parameter name="JavaScriptAlertUrl" value="http://localhost:7080/javascript_alerts " />
+	<parameter name="JavaScriptErrorUrl" value="http://localhost:7080/javascript_error " />
+	<parameter name="OpenInNewTabUrl" value="http://localhost:7080/windows " />
+	<parameter name="NotificationMessageUrl" value="http://localhost:7080/notification_message_rendered" />
+	
+	<parameter name="browser" value="CHROME" />
+	<parameter name="max_wait" value="20" />
+	<parameter name="isHeadless" value="false" />
+	<parameter name="close_browser_after_execution" value="false"  />
+
+	<test name="Test">
+		<classes>				
+			<class name="test.LoginTest"  />	
+            <class name="test.CheckBoxTest" />	
+            <class name="test.ContextMenuTest" />	
+            <class name="test.DragAndDropTest" />
+            <class name="test.DropDownTest" />
+            <class name="test.DynamicContentTest" />
+            <class name="test.DynamicControlsTest" />	
+            <class name="test.DynamicLoadingTest" />	
+            <class name="test.FileDownloadTest" />	
+            <class name="test.FloatingMenuTest" />		
+            <class name="test.FileUploadTest" />	
+            <class name="test.IFrameTest" />	
+            <class name="test.MouseHoverTest" />	
+            <class name="test.JavaScriptAlertTest" />	
+            <class name="test.JavaScriptErrorTest" />		
+            <class name="test.OpenInNewTabTest" />	
+            <class name="test.NotificationMessageTest" />			
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 17 22:36:26 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>129 seconds (129064 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.DragAndDropTest.DragAndDropTestCase()'><b>DragAndDropTestCase</b><br>Test class: test.DragAndDropTest<br>Parameters: http://localhost:7080/drag_and_drop  </td>
+<td></td>
+<td>3</td>
+<td>test.DragAndDropTest@1a18644</td></tr>
+<tr>
+<td title='test.NotificationMessageTest.NotificationMessageTestCase()'><b>NotificationMessageTestCase</b><br>Test class: test.NotificationMessageTest<br>Parameters: http://localhost:7080/notification_message_rendered</td>
+<td></td>
+<td>5</td>
+<td>test.NotificationMessageTest@5d7148e2</td></tr>
+<tr>
+<td title='test.FloatingMenuTest.FloatingMenuTestCase()'><b>FloatingMenuTestCase</b><br>Test class: test.FloatingMenuTest<br>Parameters: http://localhost:7080/floating_menu </td>
+<td></td>
+<td>1</td>
+<td>test.FloatingMenuTest@1af2d44a</td></tr>
+<tr>
+<td title='test.LoginTest.loginFailureInvalidUsernameCase()'><b>loginFailureInvalidUsernameCase</b><br>Test class: test.LoginTest<br>Parameters: http://localhost:7080/login </td>
+<td></td>
+<td>2</td>
+<td>test.LoginTest@24fcf36f</td></tr>
+<tr>
+<td title='test.JavaScriptErrorTest.JavaScriptErrorTestCase()'><b>JavaScriptErrorTestCase</b><br>Test class: test.JavaScriptErrorTest<br>Parameters: http://localhost:7080/javascript_error </td>
+<td></td>
+<td>0</td>
+<td>test.JavaScriptErrorTest@f5acb9d</td></tr>
+<tr>
+<td title='test.OpenInNewTabTest.SwicthNewTabAndVerifyTestCase()'><b>SwicthNewTabAndVerifyTestCase</b><br>Test class: test.OpenInNewTabTest<br>Parameters: http://localhost:7080/windows </td>
+<td></td>
+<td>0</td>
+<td>test.OpenInNewTabTest@4fb3ee4e</td></tr>
+<tr>
+<td title='test.LoginTest.loginSuccessTestCase()'><b>loginSuccessTestCase</b><br>Test class: test.LoginTest<br>Parameters: http://localhost:7080/login </td>
+<td></td>
+<td>1</td>
+<td>test.LoginTest@24fcf36f</td></tr>
+<tr>
+<td title='test.FileDownloadTest.DownLoadFileAndVerifyFileNameTextTestCase()'><b>DownLoadFileAndVerifyFileNameTextTestCase</b><br>Test class: test.FileDownloadTest<br>Parameters: http://localhost:7080/download  </td>
+<td></td>
+<td>14</td>
+<td>test.FileDownloadTest@1e04fa0a</td></tr>
+<tr>
+<td title='test.LoginTest.loginFailureInvalidPasswordCase()'><b>loginFailureInvalidPasswordCase</b><br>Test class: test.LoginTest<br>Parameters: http://localhost:7080/login </td>
+<td></td>
+<td>3</td>
+<td>test.LoginTest@24fcf36f</td></tr>
+<tr>
+<td title='test.DynamicControlsTest.EnableDisableAndExplicitWaitTestCase()'><b>EnableDisableAndExplicitWaitTestCase</b><br>Test class: test.DynamicControlsTest<br>Parameters: http://localhost:7080/dynamic_controls  </td>
+<td></td>
+<td>7</td>
+<td>test.DynamicControlsTest@4738a206</td></tr>
+<tr>
+<td title='test.IFrameTest.IFrameAndTextEditorTextTestCase()'><b>IFrameAndTextEditorTextTestCase</b><br>Test class: test.IFrameTest<br>Parameters: http://localhost:7080/iframe </td>
+<td></td>
+<td>2</td>
+<td>test.IFrameTest@618425b5</td></tr>
+<tr>
+<td title='test.MouseHoverTest.MouseHoverAndTextVerificationTestCase()'><b>MouseHoverAndTextVerificationTestCase</b><br>Test class: test.MouseHoverTest<br>Parameters: http://localhost:7080/hovers </td>
+<td></td>
+<td>1</td>
+<td>test.MouseHoverTest@58695725</td></tr>
+<tr>
+<td title='test.CheckBoxTest.CheckBoxFirstIsUncheckedSecondIsCheckedTestCase()'><b>CheckBoxFirstIsUncheckedSecondIsCheckedTestCase</b><br>Test class: test.CheckBoxTest<br>Parameters: http://localhost:7080/checkboxes </td>
+<td></td>
+<td>0</td>
+<td>test.CheckBoxTest@2f217633</td></tr>
+<tr>
+<td title='test.CheckBoxTest.CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase()'><b>CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase</b><br>Test class: test.CheckBoxTest<br>Parameters: http://localhost:7080/checkboxes </td>
+<td></td>
+<td>1</td>
+<td>test.CheckBoxTest@2f217633</td></tr>
+<tr>
+<td title='test.ContextMenuTest.ContextMenuTestCase()'><b>ContextMenuTestCase</b><br>Test class: test.ContextMenuTest<br>Parameters: http://localhost:7080/context_menu </td>
+<td></td>
+<td>2</td>
+<td>test.ContextMenuTest@a530d0a</td></tr>
+<tr>
+<td title='test.DynamicControlsTest.RemoveButtonAndExplicitWaitTestCase()'><b>RemoveButtonAndExplicitWaitTestCase</b><br>Test class: test.DynamicControlsTest<br>Parameters: http://localhost:7080/dynamic_controls  </td>
+<td></td>
+<td>28</td>
+<td>test.DynamicControlsTest@4738a206</td></tr>
+<tr>
+<td title='test.DynamicContentTest.RefreshPageAndAssertContentTestCase()'><b>RefreshPageAndAssertContentTestCase</b><br>Test class: test.DynamicContentTest<br>Parameters: http://localhost:7080/dynamic_content  </td>
+<td></td>
+<td>2</td>
+<td>test.DynamicContentTest@614ca7df</td></tr>
+<tr>
+<td title='test.FileUploadTest.FileUploadTestTestCase()'><b>FileUploadTestTestCase</b><br>Test class: test.FileUploadTest<br>Parameters: http://localhost:7080/upload </td>
+<td></td>
+<td>6</td>
+<td>test.FileUploadTest@18d87d80</td></tr>
+<tr>
+<td title='test.DynamicLoadingTest.DynamicLoadingTestCase()'><b>DynamicLoadingTestCase</b><br>Test class: test.DynamicLoadingTest<br>Parameters: http://localhost:7080/dynamic_loading/2  </td>
+<td></td>
+<td>6</td>
+<td>test.DynamicLoadingTest@66d3eec0</td></tr>
+<tr>
+<td title='test.JavaScriptAlertTest.ClickAlertAndVerifyAlertTextTestCase()'><b>ClickAlertAndVerifyAlertTextTestCase</b><br>Test class: test.JavaScriptAlertTest<br>Parameters: http://localhost:7080/javascript_alerts </td>
+<td></td>
+<td>0</td>
+<td>test.JavaScriptAlertTest@543588e6</td></tr>
+<tr>
+<td title='test.DropDownTest.DropDownTestCase()'><b>DropDownTestCase</b><br>Test class: test.DropDownTest<br>Parameters: http://localhost:7080/dropdown  </td>
+<td></td>
+<td>1</td>
+<td>test.DropDownTest@6cd28fa7</td></tr>
+</table><p>
+</body>
+</html>
