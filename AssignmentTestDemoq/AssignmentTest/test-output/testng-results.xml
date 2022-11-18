@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-17T22:36:26 EST" name="TestSuiteAssignment" finished-at="2022-11-17T22:38:35 EST" duration-ms="129064">
+    <groups>
+    </groups>
+    <test started-at="2022-11-17T22:36:26 EST" name="Test" finished-at="2022-11-17T22:38:35 EST" duration-ms="129064">
+      <class name="test.FloatingMenuTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.FloatingMenuTest@1af2d44a]" started-at="2022-11-17T22:38:04 EST" name="setUpDriver" finished-at="2022-11-17T22:38:06 EST" duration-ms="1919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="FloatingMenuTestCase(java.lang.String)[pri:0, instance:test.FloatingMenuTest@1af2d44a]" started-at="2022-11-17T22:38:06 EST" name="FloatingMenuTestCase" finished-at="2022-11-17T22:38:07 EST" duration-ms="1246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/floating_menu ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FloatingMenuTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.FloatingMenuTest@1af2d44a]" started-at="2022-11-17T22:38:07 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:07 EST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.FloatingMenuTest@1af2d44a]" started-at="2022-11-17T22:38:07 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:07 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.FloatingMenuTest -->
+      <class name="test.DropDownTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.DropDownTest@6cd28fa7]" started-at="2022-11-17T22:36:55 EST" name="setUpDriver" finished-at="2022-11-17T22:36:56 EST" duration-ms="1200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="DropDownTestCase(java.lang.String)[pri:0, instance:test.DropDownTest@6cd28fa7]" started-at="2022-11-17T22:36:56 EST" name="DropDownTestCase" finished-at="2022-11-17T22:36:58 EST" duration-ms="1700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/dropdown  ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDownTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.DropDownTest@6cd28fa7]" started-at="2022-11-17T22:36:58 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:58 EST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.DropDownTest@6cd28fa7]" started-at="2022-11-17T22:36:58 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:58 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.DropDownTest -->
+      <class name="test.ContextMenuTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.ContextMenuTest@a530d0a]" started-at="2022-11-17T22:36:46 EST" name="setUpDriver" finished-at="2022-11-17T22:36:48 EST" duration-ms="1185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="ContextMenuTestCase(java.lang.String)[pri:0, instance:test.ContextMenuTest@a530d0a]" started-at="2022-11-17T22:36:48 EST" name="ContextMenuTestCase" finished-at="2022-11-17T22:36:50 EST" duration-ms="2185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/context_menu ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContextMenuTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.ContextMenuTest@a530d0a]" started-at="2022-11-17T22:36:50 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:50 EST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.ContextMenuTest@a530d0a]" started-at="2022-11-17T22:36:50 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:50 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.ContextMenuTest -->
+      <class name="test.OpenInNewTabTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.OpenInNewTabTest@4fb3ee4e]" started-at="2022-11-17T22:38:25 EST" name="setUpDriver" finished-at="2022-11-17T22:38:26 EST" duration-ms="952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="SwicthNewTabAndVerifyTestCase(java.lang.String)[pri:0, instance:test.OpenInNewTabTest@4fb3ee4e]" started-at="2022-11-17T22:38:26 EST" name="SwicthNewTabAndVerifyTestCase" finished-at="2022-11-17T22:38:27 EST" duration-ms="923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/windows ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwicthNewTabAndVerifyTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.OpenInNewTabTest@4fb3ee4e]" started-at="2022-11-17T22:38:27 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:28 EST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.OpenInNewTabTest@4fb3ee4e]" started-at="2022-11-17T22:38:28 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:28 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.OpenInNewTabTest -->
+      <class name="test.CheckBoxTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.CheckBoxTest@2f217633]" started-at="2022-11-17T22:36:41 EST" name="setUpDriver" finished-at="2022-11-17T22:36:42 EST" duration-ms="1373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase(java.lang.String)[pri:0, instance:test.CheckBoxTest@2f217633]" started-at="2022-11-17T22:36:42 EST" name="CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase" finished-at="2022-11-17T22:36:44 EST" duration-ms="1532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/checkboxes ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.CheckBoxTest@2f217633]" started-at="2022-11-17T22:36:44 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:44 EST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.CheckBoxTest@2f217633]" started-at="2022-11-17T22:36:44 EST" name="setUpDriver" finished-at="2022-11-17T22:36:45 EST" duration-ms="1039" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="CheckBoxFirstIsUncheckedSecondIsCheckedTestCase(java.lang.String)[pri:0, instance:test.CheckBoxTest@2f217633]" started-at="2022-11-17T22:36:45 EST" name="CheckBoxFirstIsUncheckedSecondIsCheckedTestCase" finished-at="2022-11-17T22:36:46 EST" duration-ms="953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/checkboxes ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBoxFirstIsUncheckedSecondIsCheckedTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.CheckBoxTest@2f217633]" started-at="2022-11-17T22:36:46 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:46 EST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.CheckBoxTest@2f217633]" started-at="2022-11-17T22:36:46 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:46 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.CheckBoxTest -->
+      <class name="test.MouseHoverTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.MouseHoverTest@58695725]" started-at="2022-11-17T22:38:19 EST" name="setUpDriver" finished-at="2022-11-17T22:38:20 EST" duration-ms="1381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="MouseHoverAndTextVerificationTestCase(java.lang.String)[pri:0, instance:test.MouseHoverTest@58695725]" started-at="2022-11-17T22:38:20 EST" name="MouseHoverAndTextVerificationTestCase" finished-at="2022-11-17T22:38:22 EST" duration-ms="1157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/hovers ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseHoverAndTextVerificationTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.MouseHoverTest@58695725]" started-at="2022-11-17T22:38:22 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:22 EST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.MouseHoverTest@58695725]" started-at="2022-11-17T22:38:22 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:22 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.MouseHoverTest -->
+      <class name="test.JavaScriptErrorTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.JavaScriptErrorTest@f5acb9d]" started-at="2022-11-17T22:38:24 EST" name="setUpDriver" finished-at="2022-11-17T22:38:25 EST" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="JavaScriptErrorTestCase(java.lang.String)[pri:0, instance:test.JavaScriptErrorTest@f5acb9d]" started-at="2022-11-17T22:38:25 EST" name="JavaScriptErrorTestCase" finished-at="2022-11-17T22:38:25 EST" duration-ms="498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/javascript_error ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptErrorTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.JavaScriptErrorTest@f5acb9d]" started-at="2022-11-17T22:38:25 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:25 EST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.JavaScriptErrorTest@f5acb9d]" started-at="2022-11-17T22:38:25 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:25 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.JavaScriptErrorTest -->
+      <class name="test.NotificationMessageTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.NotificationMessageTest@5d7148e2]" started-at="2022-11-17T22:38:28 EST" name="setUpDriver" finished-at="2022-11-17T22:38:29 EST" duration-ms="1282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="NotificationMessageTestCase(java.lang.String)[pri:0, instance:test.NotificationMessageTest@5d7148e2]" started-at="2022-11-17T22:38:29 EST" name="NotificationMessageTestCase" finished-at="2022-11-17T22:38:35 EST" duration-ms="5867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/notification_message_rendered]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMessageTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.NotificationMessageTest@5d7148e2]" started-at="2022-11-17T22:38:35 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:35 EST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.NotificationMessageTest@5d7148e2]" started-at="2022-11-17T22:38:35 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:35 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.NotificationMessageTest -->
+      <class name="test.FileDownloadTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.FileDownloadTest@1e04fa0a]" started-at="2022-11-17T22:37:48 EST" name="setUpDriver" finished-at="2022-11-17T22:37:49 EST" duration-ms="1080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="DownLoadFileAndVerifyFileNameTextTestCase(java.lang.String)[pri:0, instance:test.FileDownloadTest@1e04fa0a]" started-at="2022-11-17T22:37:49 EST" name="DownLoadFileAndVerifyFileNameTextTestCase" finished-at="2022-11-17T22:38:03 EST" duration-ms="14064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/download  ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownLoadFileAndVerifyFileNameTextTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.FileDownloadTest@1e04fa0a]" started-at="2022-11-17T22:38:03 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:04 EST" duration-ms="673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.FileDownloadTest@1e04fa0a]" started-at="2022-11-17T22:38:04 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:04 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.FileDownloadTest -->
+      <class name="test.FileUploadTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.FileUploadTest@18d87d80]" started-at="2022-11-17T22:38:07 EST" name="setUpDriver" finished-at="2022-11-17T22:38:09 EST" duration-ms="1159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="FileUploadTestTestCase(java.lang.String)[pri:0, instance:test.FileUploadTest@18d87d80]" started-at="2022-11-17T22:38:09 EST" name="FileUploadTestTestCase" finished-at="2022-11-17T22:38:15 EST" duration-ms="6614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/upload ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileUploadTestTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.FileUploadTest@18d87d80]" started-at="2022-11-17T22:38:15 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:15 EST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.FileUploadTest@18d87d80]" started-at="2022-11-17T22:38:15 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:15 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.FileUploadTest -->
+      <class name="test.IFrameTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.IFrameTest@618425b5]" started-at="2022-11-17T22:38:15 EST" name="setUpDriver" finished-at="2022-11-17T22:38:17 EST" duration-ms="1225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="IFrameAndTextEditorTextTestCase(java.lang.String)[pri:0, instance:test.IFrameTest@618425b5]" started-at="2022-11-17T22:38:17 EST" name="IFrameAndTextEditorTextTestCase" finished-at="2022-11-17T22:38:19 EST" duration-ms="2269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/iframe ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IFrameAndTextEditorTextTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.IFrameTest@618425b5]" started-at="2022-11-17T22:38:19 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:19 EST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.IFrameTest@618425b5]" started-at="2022-11-17T22:38:19 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:19 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.IFrameTest -->
+      <class name="test.DynamicControlsTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.DynamicControlsTest@4738a206]" started-at="2022-11-17T22:37:02 EST" name="setUpDriver" finished-at="2022-11-17T22:37:03 EST" duration-ms="1321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="EnableDisableAndExplicitWaitTestCase(java.lang.String)[pri:0, instance:test.DynamicControlsTest@4738a206]" started-at="2022-11-17T22:37:03 EST" name="EnableDisableAndExplicitWaitTestCase" finished-at="2022-11-17T22:37:10 EST" duration-ms="7428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/dynamic_controls  ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnableDisableAndExplicitWaitTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.DynamicControlsTest@4738a206]" started-at="2022-11-17T22:37:10 EST" name="tearDownDriver" finished-at="2022-11-17T22:37:11 EST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.DynamicControlsTest@4738a206]" started-at="2022-11-17T22:37:11 EST" name="setUpDriver" finished-at="2022-11-17T22:37:12 EST" duration-ms="1523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="RemoveButtonAndExplicitWaitTestCase(java.lang.String)[pri:0, instance:test.DynamicControlsTest@4738a206]" started-at="2022-11-17T22:37:12 EST" name="RemoveButtonAndExplicitWaitTestCase" finished-at="2022-11-17T22:37:40 EST" duration-ms="28272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/dynamic_controls  ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveButtonAndExplicitWaitTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.DynamicControlsTest@4738a206]" started-at="2022-11-17T22:37:40 EST" name="tearDownDriver" finished-at="2022-11-17T22:37:41 EST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.DynamicControlsTest@4738a206]" started-at="2022-11-17T22:37:41 EST" name="tearDownDriver" finished-at="2022-11-17T22:37:41 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.DynamicControlsTest -->
+      <class name="test.DragAndDropTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.DragAndDropTest@1a18644]" started-at="2022-11-17T22:36:50 EST" name="setUpDriver" finished-at="2022-11-17T22:36:51 EST" duration-ms="1440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="DragAndDropTestCase(java.lang.String)[pri:0, instance:test.DragAndDropTest@1a18644]" started-at="2022-11-17T22:36:51 EST" name="DragAndDropTestCase" finished-at="2022-11-17T22:36:55 EST" duration-ms="3413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/drag_and_drop  ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragAndDropTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.DragAndDropTest@1a18644]" started-at="2022-11-17T22:36:55 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:55 EST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.DragAndDropTest@1a18644]" started-at="2022-11-17T22:36:55 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:55 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.DragAndDropTest -->
+      <class name="test.JavaScriptAlertTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.JavaScriptAlertTest@543588e6]" started-at="2022-11-17T22:38:22 EST" name="setUpDriver" finished-at="2022-11-17T22:38:23 EST" duration-ms="963" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="ClickAlertAndVerifyAlertTextTestCase(java.lang.String)[pri:0, instance:test.JavaScriptAlertTest@543588e6]" started-at="2022-11-17T22:38:23 EST" name="ClickAlertAndVerifyAlertTextTestCase" finished-at="2022-11-17T22:38:24 EST" duration-ms="970" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/javascript_alerts ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickAlertAndVerifyAlertTextTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.JavaScriptAlertTest@543588e6]" started-at="2022-11-17T22:38:24 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:24 EST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.JavaScriptAlertTest@543588e6]" started-at="2022-11-17T22:38:24 EST" name="tearDownDriver" finished-at="2022-11-17T22:38:24 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.JavaScriptAlertTest -->
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:26 EST" name="setUpDriver" finished-at="2022-11-17T22:36:30 EST" duration-ms="4392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="loginFailureInvalidPasswordCase(java.lang.String)[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:30 EST" name="loginFailureInvalidPasswordCase" finished-at="2022-11-17T22:36:34 EST" duration-ms="3273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/login ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailureInvalidPasswordCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:34 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:34 EST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:34 EST" name="setUpDriver" finished-at="2022-11-17T22:36:36 EST" duration-ms="1936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="loginFailureInvalidUsernameCase(java.lang.String)[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:36 EST" name="loginFailureInvalidUsernameCase" finished-at="2022-11-17T22:36:38 EST" duration-ms="2556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/login ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailureInvalidUsernameCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:38 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:38 EST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:38 EST" name="setUpDriver" finished-at="2022-11-17T22:36:40 EST" duration-ms="1079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="loginSuccessTestCase(java.lang.String)[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:40 EST" name="loginSuccessTestCase" finished-at="2022-11-17T22:36:41 EST" duration-ms="1397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/login ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:41 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:41 EST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.LoginTest@24fcf36f]" started-at="2022-11-17T22:36:41 EST" name="tearDownDriver" finished-at="2022-11-17T22:36:41 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.LoginTest -->
+      <class name="test.DynamicLoadingTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.DynamicLoadingTest@66d3eec0]" started-at="2022-11-17T22:37:41 EST" name="setUpDriver" finished-at="2022-11-17T22:37:42 EST" duration-ms="1313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="DynamicLoadingTestCase(java.lang.String)[pri:0, instance:test.DynamicLoadingTest@66d3eec0]" started-at="2022-11-17T22:37:42 EST" name="DynamicLoadingTestCase" finished-at="2022-11-17T22:37:48 EST" duration-ms="6132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/dynamic_loading/2  ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicLoadingTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.DynamicLoadingTest@66d3eec0]" started-at="2022-11-17T22:37:48 EST" name="tearDownDriver" finished-at="2022-11-17T22:37:48 EST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.DynamicLoadingTest@66d3eec0]" started-at="2022-11-17T22:37:48 EST" name="tearDownDriver" finished-at="2022-11-17T22:37:48 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.DynamicLoadingTest -->
+      <class name="test.DynamicContentTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.Boolean,long)[pri:0, instance:test.DynamicContentTest@614ca7df]" started-at="2022-11-17T22:36:58 EST" name="setUpDriver" finished-at="2022-11-17T22:36:59 EST" duration-ms="1395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="RefreshPageAndAssertContentTestCase(java.lang.String)[pri:0, instance:test.DynamicContentTest@614ca7df]" started-at="2022-11-17T22:36:59 EST" name="RefreshPageAndAssertContentTestCase" finished-at="2022-11-17T22:37:01 EST" duration-ms="2035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:7080/dynamic_content  ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RefreshPageAndAssertContentTestCase -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:test.DynamicContentTest@614ca7df]" started-at="2022-11-17T22:37:01 EST" name="tearDownDriver" finished-at="2022-11-17T22:37:02 EST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="tearDownDriver(boolean)[pri:0, instance:test.DynamicContentTest@614ca7df]" started-at="2022-11-17T22:37:02 EST" name="tearDownDriver" finished-at="2022-11-17T22:37:02 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- test.DynamicContentTest -->
+    </test> <!-- Test -->
+  </suite> <!-- TestSuiteAssignment -->
+</testng-results>

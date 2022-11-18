@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_Demo]">
+  <parameter name="isHeadless" value="false"/>
+  <parameter name="max_wait" value="20"/>
+  <parameter name="browser" value="CHROME"/>
+  <parameter name="close_browser_after_execution" value="false"/>
+  <parameter name="loginSuccessUrl" value="http://localhost:7080/login "/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="loginFailureInvalidUsernameCase" invocation-numbers="0"/>
+          <include name="tearDownDriver"/>
+          <include name="tearDownDriver"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite_Demo] -->

@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestSuiteAssignment" class="navigator-link">
+              <span class="suite-name border-passed">TestSuiteAssignment</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestSuiteAssignment" class="navigator-link ">
+                    <span>C:\Users\Anurag\eclipse-workspac\AssignmentTest\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestSuiteAssignment" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestSuiteAssignment" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestSuiteAssignment" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestSuiteAssignment" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestSuiteAssignment" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestSuiteAssignment" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestSuiteAssignment" class="hide-methods passed suite-TestSuiteAssignment"> (hide)</a> <!-- hide-methods passed suite-TestSuiteAssignment -->
+                      <a href="#" panel-name="suite-TestSuiteAssignment" class="show-methods passed suite-TestSuiteAssignment"> (show)</a> <!-- show-methods passed suite-TestSuiteAssignment -->
+                    </span>
+                    <div class="method-list-content passed suite-TestSuiteAssignment">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.CheckBoxTest" class="method navigator-link" hash-for-method="CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase(http://localhost:7080/checkboxes )">CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase(http://localhost:7080/checkboxes )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.CheckBoxTest" class="method navigator-link" hash-for-method="CheckBoxFirstIsUncheckedSecondIsCheckedTestCase(http://localhost:7080/checkboxes )">CheckBoxFirstIsUncheckedSecondIsCheckedTestCase(http://localhost:7080/checkboxes )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.JavaScriptAlertTest" class="method navigator-link" hash-for-method="ClickAlertAndVerifyAlertTextTestCase(http://localhost:7080/javascript_alerts )">ClickAlertAndVerifyAlertTextTestCase(http://localhost:7080/javascript_alerts )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.ContextMenuTest" class="method navigator-link" hash-for-method="ContextMenuTestCase(http://localhost:7080/context_menu )">ContextMenuTestCase(http://localhost:7080/context_menu )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.FileDownloadTest" class="method navigator-link" hash-for-method="DownLoadFileAndVerifyFileNameTextTestCase(http://localhost:7080/download  )">DownLoadFileAndVerifyFileNameTextTestCase(http://localhost:7080/download  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.DragAndDropTest" class="method navigator-link" hash-for-method="DragAndDropTestCase(http://localhost:7080/drag_and_drop  )">DragAndDropTestCase(http://localhost:7080/drag_and_drop  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.DropDownTest" class="method navigator-link" hash-for-method="DropDownTestCase(http://localhost:7080/dropdown  )">DropDownTestCase(http://localhost:7080/dropdown  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.DynamicLoadingTest" class="method navigator-link" hash-for-method="DynamicLoadingTestCase(http://localhost:7080/dynamic_loading/2  )">DynamicLoadingTestCase(http://localhost:7080/dynamic_loading/2  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.DynamicControlsTest" class="method navigator-link" hash-for-method="EnableDisableAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  )">EnableDisableAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.FileUploadTest" class="method navigator-link" hash-for-method="FileUploadTestTestCase(http://localhost:7080/upload )">FileUploadTestTestCase(http://localhost:7080/upload )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.FloatingMenuTest" class="method navigator-link" hash-for-method="FloatingMenuTestCase(http://localhost:7080/floating_menu )">FloatingMenuTestCase(http://localhost:7080/floating_menu )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.IFrameTest" class="method navigator-link" hash-for-method="IFrameAndTextEditorTextTestCase(http://localhost:7080/iframe )">IFrameAndTextEditorTextTestCase(http://localhost:7080/iframe )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.JavaScriptErrorTest" class="method navigator-link" hash-for-method="JavaScriptErrorTestCase(http://localhost:7080/javascript_error )">JavaScriptErrorTestCase(http://localhost:7080/javascript_error )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.MouseHoverTest" class="method navigator-link" hash-for-method="MouseHoverAndTextVerificationTestCase(http://localhost:7080/hovers )">MouseHoverAndTextVerificationTestCase(http://localhost:7080/hovers )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.NotificationMessageTest" class="method navigator-link" hash-for-method="NotificationMessageTestCase(http://localhost:7080/notification_message_rendered)">NotificationMessageTestCase(http://localhost:7080/notification_message_rendered)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.DynamicContentTest" class="method navigator-link" hash-for-method="RefreshPageAndAssertContentTestCase(http://localhost:7080/dynamic_content  )">RefreshPageAndAssertContentTestCase(http://localhost:7080/dynamic_content  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.DynamicControlsTest" class="method navigator-link" hash-for-method="RemoveButtonAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  )">RemoveButtonAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.OpenInNewTabTest" class="method navigator-link" hash-for-method="SwicthNewTabAndVerifyTestCase(http://localhost:7080/windows )">SwicthNewTabAndVerifyTestCase(http://localhost:7080/windows )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.LoginTest" class="method navigator-link" hash-for-method="loginFailureInvalidPasswordCase(http://localhost:7080/login )">loginFailureInvalidPasswordCase(http://localhost:7080/login )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.LoginTest" class="method navigator-link" hash-for-method="loginFailureInvalidUsernameCase(http://localhost:7080/login )">loginFailureInvalidUsernameCase(http://localhost:7080/login )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuiteAssignment" title="test.LoginTest" class="method navigator-link" hash-for-method="loginSuccessTestCase(http://localhost:7080/login )">loginSuccessTestCase(http://localhost:7080/login )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestSuiteAssignment -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestSuiteAssignment" class="panel TestSuiteAssignment">
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.MouseHoverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MouseHoverAndTextVerificationTestCase(http://localhost:7080/hovers )">
+                  </a> <!-- MouseHoverAndTextVerificationTestCase(http://localhost:7080/hovers ) -->
+                  <span class="method-name">MouseHoverAndTextVerificationTestCase</span>
+                  <span class="parameters">(http://localhost:7080/hovers )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.IFrameTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="IFrameAndTextEditorTextTestCase(http://localhost:7080/iframe )">
+                  </a> <!-- IFrameAndTextEditorTextTestCase(http://localhost:7080/iframe ) -->
+                  <span class="method-name">IFrameAndTextEditorTextTestCase</span>
+                  <span class="parameters">(http://localhost:7080/iframe )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.DynamicControlsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnableDisableAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  )">
+                  </a> <!-- EnableDisableAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  ) -->
+                  <span class="method-name">EnableDisableAndExplicitWaitTestCase</span>
+                  <span class="parameters">(http://localhost:7080/dynamic_controls  )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RemoveButtonAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  )">
+                  </a> <!-- RemoveButtonAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  ) -->
+                  <span class="method-name">RemoveButtonAndExplicitWaitTestCase</span>
+                  <span class="parameters">(http://localhost:7080/dynamic_controls  )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.JavaScriptAlertTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickAlertAndVerifyAlertTextTestCase(http://localhost:7080/javascript_alerts )">
+                  </a> <!-- ClickAlertAndVerifyAlertTextTestCase(http://localhost:7080/javascript_alerts ) -->
+                  <span class="method-name">ClickAlertAndVerifyAlertTextTestCase</span>
+                  <span class="parameters">(http://localhost:7080/javascript_alerts )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.DragAndDropTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DragAndDropTestCase(http://localhost:7080/drag_and_drop  )">
+                  </a> <!-- DragAndDropTestCase(http://localhost:7080/drag_and_drop  ) -->
+                  <span class="method-name">DragAndDropTestCase</span>
+                  <span class="parameters">(http://localhost:7080/drag_and_drop  )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.ContextMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ContextMenuTestCase(http://localhost:7080/context_menu )">
+                  </a> <!-- ContextMenuTestCase(http://localhost:7080/context_menu ) -->
+                  <span class="method-name">ContextMenuTestCase</span>
+                  <span class="parameters">(http://localhost:7080/context_menu )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.DynamicLoadingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DynamicLoadingTestCase(http://localhost:7080/dynamic_loading/2  )">
+                  </a> <!-- DynamicLoadingTestCase(http://localhost:7080/dynamic_loading/2  ) -->
+                  <span class="method-name">DynamicLoadingTestCase</span>
+                  <span class="parameters">(http://localhost:7080/dynamic_loading/2  )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.DynamicContentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RefreshPageAndAssertContentTestCase(http://localhost:7080/dynamic_content  )">
+                  </a> <!-- RefreshPageAndAssertContentTestCase(http://localhost:7080/dynamic_content  ) -->
+                  <span class="method-name">RefreshPageAndAssertContentTestCase</span>
+                  <span class="parameters">(http://localhost:7080/dynamic_content  )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.FileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FileUploadTestTestCase(http://localhost:7080/upload )">
+                  </a> <!-- FileUploadTestTestCase(http://localhost:7080/upload ) -->
+                  <span class="method-name">FileUploadTestTestCase</span>
+                  <span class="parameters">(http://localhost:7080/upload )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.CheckBoxTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase(http://localhost:7080/checkboxes )">
+                  </a> <!-- CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase(http://localhost:7080/checkboxes ) -->
+                  <span class="method-name">CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase</span>
+                  <span class="parameters">(http://localhost:7080/checkboxes )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckBoxFirstIsUncheckedSecondIsCheckedTestCase(http://localhost:7080/checkboxes )">
+                  </a> <!-- CheckBoxFirstIsUncheckedSecondIsCheckedTestCase(http://localhost:7080/checkboxes ) -->
+                  <span class="method-name">CheckBoxFirstIsUncheckedSecondIsCheckedTestCase</span>
+                  <span class="parameters">(http://localhost:7080/checkboxes )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.JavaScriptErrorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="JavaScriptErrorTestCase(http://localhost:7080/javascript_error )">
+                  </a> <!-- JavaScriptErrorTestCase(http://localhost:7080/javascript_error ) -->
+                  <span class="method-name">JavaScriptErrorTestCase</span>
+                  <span class="parameters">(http://localhost:7080/javascript_error )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.DropDownTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropDownTestCase(http://localhost:7080/dropdown  )">
+                  </a> <!-- DropDownTestCase(http://localhost:7080/dropdown  ) -->
+                  <span class="method-name">DropDownTestCase</span>
+                  <span class="parameters">(http://localhost:7080/dropdown  )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.FloatingMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FloatingMenuTestCase(http://localhost:7080/floating_menu )">
+                  </a> <!-- FloatingMenuTestCase(http://localhost:7080/floating_menu ) -->
+                  <span class="method-name">FloatingMenuTestCase</span>
+                  <span class="parameters">(http://localhost:7080/floating_menu )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.OpenInNewTabTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SwicthNewTabAndVerifyTestCase(http://localhost:7080/windows )">
+                  </a> <!-- SwicthNewTabAndVerifyTestCase(http://localhost:7080/windows ) -->
+                  <span class="method-name">SwicthNewTabAndVerifyTestCase</span>
+                  <span class="parameters">(http://localhost:7080/windows )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginFailureInvalidPasswordCase(http://localhost:7080/login )">
+                  </a> <!-- loginFailureInvalidPasswordCase(http://localhost:7080/login ) -->
+                  <span class="method-name">loginFailureInvalidPasswordCase</span>
+                  <span class="parameters">(http://localhost:7080/login )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginFailureInvalidUsernameCase(http://localhost:7080/login )">
+                  </a> <!-- loginFailureInvalidUsernameCase(http://localhost:7080/login ) -->
+                  <span class="method-name">loginFailureInvalidUsernameCase</span>
+                  <span class="parameters">(http://localhost:7080/login )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginSuccessTestCase(http://localhost:7080/login )">
+                  </a> <!-- loginSuccessTestCase(http://localhost:7080/login ) -->
+                  <span class="method-name">loginSuccessTestCase</span>
+                  <span class="parameters">(http://localhost:7080/login )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.NotificationMessageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NotificationMessageTestCase(http://localhost:7080/notification_message_rendered)">
+                  </a> <!-- NotificationMessageTestCase(http://localhost:7080/notification_message_rendered) -->
+                  <span class="method-name">NotificationMessageTestCase</span>
+                  <span class="parameters">(http://localhost:7080/notification_message_rendered)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+          <div class="suite-TestSuiteAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.FileDownloadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DownLoadFileAndVerifyFileNameTextTestCase(http://localhost:7080/download  )">
+                  </a> <!-- DownLoadFileAndVerifyFileNameTextTestCase(http://localhost:7080/download  ) -->
+                  <span class="method-name">DownLoadFileAndVerifyFileNameTextTestCase</span>
+                  <span class="parameters">(http://localhost:7080/download  )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuiteAssignment-class-passed -->
+        </div> <!-- panel TestSuiteAssignment -->
+        <div panel-name="test-xml-TestSuiteAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Anurag\eclipse-workspac\AssignmentTest\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestSuiteAssignment&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;UploadFileUrl&quot; value=&quot;http://localhost:7080/upload &quot;/&gt;
+  &lt;parameter name=&quot;isHeadless&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;CheckBoxesUrl&quot; value=&quot;http://localhost:7080/checkboxes &quot;/&gt;
+  &lt;parameter name=&quot;MouseHoverUrl&quot; value=&quot;http://localhost:7080/hovers &quot;/&gt;
+  &lt;parameter name=&quot;ContextMenuUrl&quot; value=&quot;http://localhost:7080/context_menu &quot;/&gt;
+  &lt;parameter name=&quot;DragAndDropUrl&quot; value=&quot;http://localhost:7080/drag_and_drop  &quot;/&gt;
+  &lt;parameter name=&quot;FloatingMenuUrl&quot; value=&quot;http://localhost:7080/floating_menu &quot;/&gt;
+  &lt;parameter name=&quot;max_wait&quot; value=&quot;20&quot;/&gt;
+  &lt;parameter name=&quot;DynamicContentUrl&quot; value=&quot;http://localhost:7080/dynamic_content  &quot;/&gt;
+  &lt;parameter name=&quot;FileDownloadUrl&quot; value=&quot;http://localhost:7080/download  &quot;/&gt;
+  &lt;parameter name=&quot;NotificationMessageUrl&quot; value=&quot;http://localhost:7080/notification_message_rendered&quot;/&gt;
+  &lt;parameter name=&quot;DropDownUrl&quot; value=&quot;http://localhost:7080/dropdown  &quot;/&gt;
+  &lt;parameter name=&quot;JavaScriptAlertUrl&quot; value=&quot;http://localhost:7080/javascript_alerts &quot;/&gt;
+  &lt;parameter name=&quot;close_browser_after_execution&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;DynamicLoadingUrl&quot; value=&quot;http://localhost:7080/dynamic_loading/2  &quot;/&gt;
+  &lt;parameter name=&quot;JavaScriptErrorUrl&quot; value=&quot;http://localhost:7080/javascript_error &quot;/&gt;
+  &lt;parameter name=&quot;OpenInNewTabUrl&quot; value=&quot;http://localhost:7080/windows &quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;CHROME&quot;/&gt;
+  &lt;parameter name=&quot;DynamicControlUrl&quot; value=&quot;http://localhost:7080/dynamic_controls  &quot;/&gt;
+  &lt;parameter name=&quot;IFrameUrl&quot; value=&quot;http://localhost:7080/iframe &quot;/&gt;
+  &lt;parameter name=&quot;loginSuccessUrl&quot; value=&quot;http://localhost:7080/login &quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.LoginTest&quot;/&gt;
+      &lt;class name=&quot;test.CheckBoxTest&quot;/&gt;
+      &lt;class name=&quot;test.ContextMenuTest&quot;/&gt;
+      &lt;class name=&quot;test.DragAndDropTest&quot;/&gt;
+      &lt;class name=&quot;test.DropDownTest&quot;/&gt;
+      &lt;class name=&quot;test.DynamicContentTest&quot;/&gt;
+      &lt;class name=&quot;test.DynamicControlsTest&quot;/&gt;
+      &lt;class name=&quot;test.DynamicLoadingTest&quot;/&gt;
+      &lt;class name=&quot;test.FileDownloadTest&quot;/&gt;
+      &lt;class name=&quot;test.FloatingMenuTest&quot;/&gt;
+      &lt;class name=&quot;test.FileUploadTest&quot;/&gt;
+      &lt;class name=&quot;test.IFrameTest&quot;/&gt;
+      &lt;class name=&quot;test.MouseHoverTest&quot;/&gt;
+      &lt;class name=&quot;test.JavaScriptAlertTest&quot;/&gt;
+      &lt;class name=&quot;test.JavaScriptErrorTest&quot;/&gt;
+      &lt;class name=&quot;test.OpenInNewTabTest&quot;/&gt;
+      &lt;class name=&quot;test.NotificationMessageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- TestSuiteAssignment --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestSuiteAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestSuiteAssignment</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (17 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestSuiteAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestSuiteAssignment</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestSuiteAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestSuiteAssignment</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestSuiteAssignment');
+function tableData_TestSuiteAssignment() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'RemoveButtonAndExplicitWaitTestCase')
+data.setCell(0, 2, 'test.DynamicControlsTest')
+data.setCell(0, 3, 28272);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'DownLoadFileAndVerifyFileNameTextTestCase')
+data.setCell(1, 2, 'test.FileDownloadTest')
+data.setCell(1, 3, 14064);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'EnableDisableAndExplicitWaitTestCase')
+data.setCell(2, 2, 'test.DynamicControlsTest')
+data.setCell(2, 3, 7428);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'FileUploadTestTestCase')
+data.setCell(3, 2, 'test.FileUploadTest')
+data.setCell(3, 3, 6614);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'DynamicLoadingTestCase')
+data.setCell(4, 2, 'test.DynamicLoadingTest')
+data.setCell(4, 3, 6132);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'NotificationMessageTestCase')
+data.setCell(5, 2, 'test.NotificationMessageTest')
+data.setCell(5, 3, 5867);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'DragAndDropTestCase')
+data.setCell(6, 2, 'test.DragAndDropTest')
+data.setCell(6, 3, 3413);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginFailureInvalidPasswordCase')
+data.setCell(7, 2, 'test.LoginTest')
+data.setCell(7, 3, 3273);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginFailureInvalidUsernameCase')
+data.setCell(8, 2, 'test.LoginTest')
+data.setCell(8, 3, 2556);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'IFrameAndTextEditorTextTestCase')
+data.setCell(9, 2, 'test.IFrameTest')
+data.setCell(9, 3, 2269);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ContextMenuTestCase')
+data.setCell(10, 2, 'test.ContextMenuTest')
+data.setCell(10, 3, 2185);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'RefreshPageAndAssertContentTestCase')
+data.setCell(11, 2, 'test.DynamicContentTest')
+data.setCell(11, 3, 2035);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'DropDownTestCase')
+data.setCell(12, 2, 'test.DropDownTest')
+data.setCell(12, 3, 1700);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase')
+data.setCell(13, 2, 'test.CheckBoxTest')
+data.setCell(13, 3, 1532);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'loginSuccessTestCase')
+data.setCell(14, 2, 'test.LoginTest')
+data.setCell(14, 3, 1397);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'FloatingMenuTestCase')
+data.setCell(15, 2, 'test.FloatingMenuTest')
+data.setCell(15, 3, 1246);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'MouseHoverAndTextVerificationTestCase')
+data.setCell(16, 2, 'test.MouseHoverTest')
+data.setCell(16, 3, 1157);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'ClickAlertAndVerifyAlertTextTestCase')
+data.setCell(17, 2, 'test.JavaScriptAlertTest')
+data.setCell(17, 3, 970);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'CheckBoxFirstIsUncheckedSecondIsCheckedTestCase')
+data.setCell(18, 2, 'test.CheckBoxTest')
+data.setCell(18, 3, 953);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'SwicthNewTabAndVerifyTestCase')
+data.setCell(19, 2, 'test.OpenInNewTabTest')
+data.setCell(19, 3, 923);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'JavaScriptErrorTestCase')
+data.setCell(20, 2, 'test.JavaScriptErrorTest')
+data.setCell(20, 3, 498);
+window.suiteTableData['TestSuiteAssignment']= { tableData: data, tableDiv: 'times-div-TestSuiteAssignment'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-TestSuiteAssignment">
+              </div> <!-- times-div-TestSuiteAssignment -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestSuiteAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestSuiteAssignment</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestSuiteAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestSuiteAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginFailureInvalidPasswordCase(http://localhost:7080/login )</span>
+                <span class="method-start">4393 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">7670 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">7890 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginFailureInvalidUsernameCase(http://localhost:7080/login )</span>
+                <span class="method-start">9826 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">12384 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">12551 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginSuccessTestCase(http://localhost:7080/login )</span>
+                <span class="method-start">13630 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">15029 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">15201 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.CheckBoxTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">15203 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase(http://localhost:7080/checkboxes )</span>
+                <span class="method-start">16576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">18109 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">18289 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckBoxFirstIsUncheckedSecondIsCheckedTestCase(http://localhost:7080/checkboxes )</span>
+                <span class="method-start">19328 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">20282 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">20463 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ContextMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">20464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ContextMenuTestCase(http://localhost:7080/context_menu )</span>
+                <span class="method-start">21649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">23835 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">24030 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DragAndDropTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">24032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DragAndDropTestCase(http://localhost:7080/drag_and_drop  )</span>
+                <span class="method-start">25472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">28885 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">29111 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DropDownTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">29112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DropDownTestCase(http://localhost:7080/dropdown  )</span>
+                <span class="method-start">30312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">32013 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">32178 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DynamicContentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">32179 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RefreshPageAndAssertContentTestCase(http://localhost:7080/dynamic_content  )</span>
+                <span class="method-start">33574 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">35610 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">35782 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DynamicControlsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">35784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">EnableDisableAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  )</span>
+                <span class="method-start">37105 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">44534 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">44738 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RemoveButtonAndExplicitWaitTestCase(http://localhost:7080/dynamic_controls  )</span>
+                <span class="method-start">46261 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">74534 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DynamicLoadingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">74720 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DynamicControlsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">74720 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DynamicLoadingTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DynamicLoadingTestCase(http://localhost:7080/dynamic_loading/2  )</span>
+                <span class="method-start">76033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">82166 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">82367 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.FileDownloadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">82368 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DownLoadFileAndVerifyFileNameTextTestCase(http://localhost:7080/download  )</span>
+                <span class="method-start">83448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">97513 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">98186 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.FloatingMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">98187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FloatingMenuTestCase(http://localhost:7080/floating_menu )</span>
+                <span class="method-start">100106 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">101353 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">101522 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">101523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FileUploadTestTestCase(http://localhost:7080/upload )</span>
+                <span class="method-start">102682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">109297 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">109493 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.IFrameTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">109494 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">IFrameAndTextEditorTextTestCase(http://localhost:7080/iframe )</span>
+                <span class="method-start">110719 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">112989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">113165 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.MouseHoverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">113165 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MouseHoverAndTextVerificationTestCase(http://localhost:7080/hovers )</span>
+                <span class="method-start">114546 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">115703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">115881 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.JavaScriptAlertTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">115882 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClickAlertAndVerifyAlertTextTestCase(http://localhost:7080/javascript_alerts )</span>
+                <span class="method-start">116846 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">117818 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">117991 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.JavaScriptErrorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">117992 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">JavaScriptErrorTestCase(http://localhost:7080/javascript_error )</span>
+                <span class="method-start">118928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">119427 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">119590 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.OpenInNewTabTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">119591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SwicthNewTabAndVerifyTestCase(http://localhost:7080/windows )</span>
+                <span class="method-start">120543 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">121467 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">121656 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.NotificationMessageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(CHROME, false, 20)</span>
+                <span class="method-start">121658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NotificationMessageTestCase(http://localhost:7080/notification_message_rendered)</span>
+                <span class="method-start">122940 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownDriver</span>
+                <span class="method-start">128808 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDriver(false)</span>
+                <span class="method-start">129019 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
