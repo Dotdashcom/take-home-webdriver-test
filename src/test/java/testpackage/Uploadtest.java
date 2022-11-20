@@ -31,5 +31,6 @@ public class Uploadtest extends BaseTest {
 	@AfterMethod
 	public void EndSignInTest() {
 		quitbrowser();
+		//quiting the browser
 	}
 }
