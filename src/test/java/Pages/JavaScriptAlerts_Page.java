@@ -47,6 +47,5 @@ public class JavaScriptAlerts_Page extends setWrapper {
         dissmissOrAcceptAlert(true);
         myassertValidation("You entered: "
                 +MessageTyped,getTextFromLocator(messageTypedResult),1);
-
     }
 }

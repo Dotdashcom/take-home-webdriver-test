@@ -12,8 +12,8 @@ public class DropDownListTest{
     DropDown_Page dropDown_page;
     @Before
     public void setUp(){
-         dropDown_page=new DropDown_Page(driverDotDash);
-         dropDown_page.setChrome();
+        dropDown_page=new DropDown_Page(driverDotDash);
+        dropDown_page.setChrome();
         dropDown_page.setUrl(Url_Dropdown);
     }
 

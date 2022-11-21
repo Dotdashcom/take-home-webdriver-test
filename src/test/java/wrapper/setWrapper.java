@@ -47,6 +47,7 @@ public class setWrapper {
         if (driverDotDash==null){
             WebDriverManager.chromedriver().setup();
             driverDotDash=new ChromeDriver();
+            driverDotDash.manage().window().maximize();
         }
         return driverDotDash;
     }

@@ -24,7 +24,6 @@ public class DownLoadTest  {
 
     @After
     public void tearDown() {
-
         downLoad_page.closeAllWindows();
     }
 }

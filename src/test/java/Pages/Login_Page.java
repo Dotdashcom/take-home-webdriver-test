@@ -51,13 +51,11 @@ public class Login_Page extends setWrapper {
     public void assertLogin (){
         waitFor(10,MessageAfterLogin_IdLoc);
         System.out.println(getTextFromLocator(MessageAfterLogin_IdLoc));
-        //assertTrue(getTextFromLocator(MessageAfterLogin_IdLoc).contains(AssertloginSucess_Text));
         myassertValidation(AssertloginSucess_Text,getTextFromLocator(MessageAfterLogin_IdLoc),1);
     }
     public void assertWrongLogin (){
         waitFor(10,MessageAfterLogin_IdLoc);
         System.out.println(getTextFromLocator(MessageAfterLogin_IdLoc));
-        //assertTrue(getTextFromLocator(MessageAfterLogin_IdLoc).contains(AssertloginSucess_Text));
         myassertValidation(AssertloginFailed_Text,getTextFromLocator(MessageAfterLogin_IdLoc),1);
     }
 
