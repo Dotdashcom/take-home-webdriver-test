@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DotDashComTestSuite">
+    <test name="HomePageTest">
+        <classes>
+            <class name="com.framework.testcases.HomePageTest"/>
+        </classes>
+    </test>
+    <test name="LoginPageTest">
+        <classes>
+            <class name="com.framework.testcases.LoginPageTest"/>
+        </classes>
+    </test>
+    <test name="CheckBoxTest">
+        <classes>
+            <class name="com.framework.testcases.CheckBoxesTest"/>
+        </classes>
+    </test>
+    <test name="ContextMenuTest">
+        <classes>
+            <class name="com.framework.testcases.ContextMenuTest"/>
+        </classes>
+    </test>
+    <test name="DragAndDropPageTest">
+        <classes>
+            <class name="com.framework.testcases.DragAndDropPageTest"/>
+        </classes>
+    </test>
+    <test name="DropDownPageTest">
+        <classes>
+            <class name="com.framework.testcases.DropDownPageTest"/>
+        </classes>
+    </test>
+    <test name="DynamicContentPageTest">
+        <classes>
+            <class name="com.framework.testcases.DynamicContentPageTest"/>
+        </classes>
+    </test>
+    <test name="DynamicControlsPageTest">
+        <classes>
+            <class name="com.framework.testcases.DynamicControlsPageTest"/>
+        </classes>
+    </test>
+    <test name="DynamicLoadingPageTest">
+        <classes>
+            <class name="com.framework.testcases.DynamicLoadingPageTest"/>
+        </classes>
+    </test>
+    <test name="DownloadPageTest">
+        <classes>
+            <class name="com.framework.testcases.DownloadPageTest"/>
+        </classes>
+    </test>
+    <test name="UploadPageTest">
+        <classes>
+            <class name="com.framework.testcases.UploadPageTest"/>
+        </classes>
+    </test>
+    <test name="FloatingMenuPageTest">
+        <classes>
+            <class name="com.framework.testcases.FloatingMenuPageTest"/>
+        </classes>
+    </test>
+    <test name="IFramePageTest">
+        <classes>
+            <class name="com.framework.testcases.IFramePageTest"/>
+        </classes>
+    </test>
+    <test name="HoversPageTest">
+        <classes>
+            <class name="com.framework.testcases.HoversPageTest"/>
+        </classes>
+    </test>
+    <test name="JSAlertsPageTest">
+        <classes>
+            <class name="com.framework.testcases.JSAlertsPageTest"/>
+        </classes>
+    </test>
+    <test name="JSErrorPageTest">
+        <classes>
+            <class name="com.framework.testcases.JSErrorPageTest"/>
+        </classes>
+    </test>
+    <test name="WindowsPageTest">
+        <classes>
+            <class name="com.framework.testcases.WindowsPageTest"/>
+        </classes>
+    </test>
+    <test name="NotificationsPageTest">
+        <classes>
+            <class name="com.framework.testcases.NotificationsPageTest"/>
+        </classes>
+    </test>
+</suite> 
