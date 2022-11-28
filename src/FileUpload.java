@@ -6,6 +6,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.time.Duration;
 
 public class FileUpload {
@@ -31,8 +32,9 @@ public class FileUpload {
             driver.get(baseUrl + "upload");
             Thread.sleep(2000);
             // select file and click submit button
+            File file = new File("./selenium-logo.png");
 
-            driver.findElement(By.id("file-upload")).sendKeys(filePath);
+            driver.findElement(By.id("file-upload")).sendKeys(file.getAbsolutePath());
             Thread.sleep(2000);
             driver.findElement(By.id("file-submit")).click();
             //assert that message on upload is as expected
