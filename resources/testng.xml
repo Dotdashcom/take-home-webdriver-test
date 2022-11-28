@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Test Suite">
+	<test name="Test Cases">
+		<classes>
+			<class name="com.testcases.ValidLoginPageTest"></class>
+			<class name="com.testcases.HomePageTest"></class>
+			<class name="com.testcases.CheckboxTest"></class>
+			<class name="com.testcases.ContextMenuTest"></class>
+		</classes>
+	</test>
+</suite>
