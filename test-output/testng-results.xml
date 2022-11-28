@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8077" started-at="2022-11-28T19:10:02Z" finished-at="2022-11-28T19:10:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8077" started-at="2022-11-28T19:10:02Z" finished-at="2022-11-28T19:10:10Z">
+      <class name="Test_Cases.dragAndDropPageTest">
+        <test-method status="PASS" signature="fnGetSystemParameter()[pri:0, instance:Test_Cases.dragAndDropPageTest@26aa12dd]" name="fnGetSystemParameter" is-config="true" duration-ms="8" started-at="2022-11-28T19:10:02Z" finished-at="2022-11-28T19:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fnGetSystemParameter -->
+        <test-method status="PASS" signature="fnInitialize()[pri:0, instance:Test_Cases.dragAndDropPageTest@26aa12dd]" name="fnInitialize" is-config="true" duration-ms="2446" started-at="2022-11-28T19:10:02Z" finished-at="2022-11-28T19:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fnInitialize -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test_Cases.dragAndDropPageTest@26aa12dd]" name="setup" is-config="true" duration-ms="31" started-at="2022-11-28T19:10:05Z" finished-at="2022-11-28T19:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dragAndDropTest()[pri:0, instance:Test_Cases.dragAndDropPageTest@26aa12dd]" name="dragAndDropTest" duration-ms="4805" started-at="2022-11-28T19:10:05Z" finished-at="2022-11-28T19:10:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Test_Cases.dragAndDropPageTest@26aa12dd]" name="teardown" is-config="true" duration-ms="777" started-at="2022-11-28T19:10:10Z" finished-at="2022-11-28T19:10:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Test_Cases.dragAndDropPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

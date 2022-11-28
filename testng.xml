@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+	<listener class-name = "Utilities.ExtentReports.ExtentReporterNG" />
+  </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Test_Cases.DynamicContentPageTest"/>
+      <class name="Test_Cases.JavaScriptAlertsPageTest"/>
+      <class name="Test_Cases.DynamicControlsPageTest"/>
+      <class name="Test_Cases.MouseHoverPageTest"/>
+      <class name="Test_Cases.NotificationMessagePageTest"/>
+      <class name="Test_Cases.JavaScriptErrorPageTest"/>
+      <class name="Test_Cases.CheckBoxesPageTest"/>
+      <class name="Test_Cases.IFramePageTest"/>
+      <class name="Test_Cases.FloatingMenuPageTest"/>
+      <class name="Test_Cases.OpenNewTabPageTest"/>
+      <class name="Test_Cases.DropDownPageTest"/>
+      <class name="Test_Cases.DynamicLoadingPageTest"/>
+      <class name="Test_Cases.ContextMenuPageTest"/>
+      <class name="Test_Cases.FileUploadPageTest"/>
+      <class name="Test_Cases.FileDownloadPageTest"/>
+      <class name="Test_Cases.LoginPageTest"/>
+      <class name="Test_Cases.dragAndDropPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
