@@ -3,13 +3,6 @@
 <suite parallel="tests" name="Failed suite [StaffIT]">
   <test thread-count="5" parallel="tests" name="RegressionTests(failed)">
     <classes>
-      <class name="testpackage.Uploadtest">
-        <methods>
-          <include name="testupload"/>
-          <include name="EndSignInTest"/>
-          <include name="StartSignInTest"/>
-        </methods>
-      </class> <!-- testpackage.Uploadtest -->
       <class name="testpackage.LoginPageTest">
         <methods>
           <include name="StartSignInTest"/>
@@ -17,6 +10,13 @@
           <include name="failloginbuttontest"/>
         </methods>
       </class> <!-- testpackage.LoginPageTest -->
+      <class name="testpackage.Uploadtest">
+        <methods>
+          <include name="testupload"/>
+          <include name="EndSignInTest"/>
+          <include name="StartSignInTest"/>
+        </methods>
+      </class> <!-- testpackage.Uploadtest -->
     </classes>
   </test> <!-- RegressionTests(failed) -->
 </suite> <!-- Failed suite [StaffIT] -->
