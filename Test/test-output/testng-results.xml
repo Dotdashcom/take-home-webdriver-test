@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-28T13:39:25 EST" name="Default suite" finished-at="2022-11-28T13:39:31 EST" duration-ms="6130">
+    <groups>
+    </groups>
+    <test started-at="2022-11-28T13:39:25 EST" name="Default test" finished-at="2022-11-28T13:39:31 EST" duration-ms="6130">
+      <class name="testcases.TC_DragDrop">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_DragDrop@37d4349f]" started-at="2022-11-28T13:39:25 EST" name="setup" finished-at="2022-11-28T13:39:28 EST" duration-ms="3089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test()[pri:0, instance:testcases.TC_DragDrop@37d4349f]" started-at="2022-11-28T13:39:28 EST" name="Test" finished-at="2022-11-28T13:39:31 EST" duration-ms="3005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_DragDrop@37d4349f]" started-at="2022-11-28T13:39:31 EST" name="tearDown" finished-at="2022-11-28T13:39:31 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_DragDrop -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
