@@ -15,4 +15,6 @@ public class GeneratePage {
     }
 
     public static LoginPage loginPage() {return instantiateNewPage(LoginPage.class);}
+    public static CheckboxPage checkboxPage() {return instantiateNewPage(CheckboxPage.class);}
+
 }
