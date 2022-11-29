@@ -12,7 +12,10 @@ public class CheckboxesTest extends BaseTest {
 
     @Test
     public void mustCheckAndUncheckFirstCheckbox() throws InterruptedException {
-        CheckboxPage checkboxPage = GeneratePage.checkboxPage().goToCheckboxPage().clickCheckbox("first checkbox");
+        CheckboxPage checkboxPage = GeneratePage
+                .checkboxPage()
+                .goToCheckboxPage()
+                .clickCheckbox("first checkbox");
 
         assertThat(checkboxPage.getCheckbox("first checkbox").isSelected(), is(true));
 
@@ -23,7 +26,10 @@ public class CheckboxesTest extends BaseTest {
 
     @Test
     public void mustCheckAndUncheckSecondCheckbox() throws InterruptedException {
-        CheckboxPage checkboxPage = GeneratePage.checkboxPage().goToCheckboxPage().clickCheckbox("second checkbox");
+        CheckboxPage checkboxPage = GeneratePage
+                .checkboxPage()
+                .goToCheckboxPage()
+                .clickCheckbox("second checkbox");
 
         assertThat(checkboxPage.getCheckbox("second checkbox").isSelected(), is(false));
 
