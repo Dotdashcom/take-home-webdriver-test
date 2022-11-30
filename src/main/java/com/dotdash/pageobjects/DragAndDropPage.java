@@ -35,7 +35,7 @@ public class DragAndDropPage extends BasePage {
         return this;
     }
 
-    public DragAndDropPage dragSquare() throws IOException {
+    public DragAndDropPage dragSquare() {
         String content = ScriptReader.readScriptFile();
         ((JavascriptExecutor) driver).executeScript(content, squareA, squareB);
         return this;

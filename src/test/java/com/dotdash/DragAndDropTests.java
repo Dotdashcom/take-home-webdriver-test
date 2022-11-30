@@ -13,7 +13,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class DragAndDropTests extends BaseTest {
 
     @Test
-    public void shouldSwitchSquares() throws IOException {
+    public void shouldSwitchSquares() {
         DragAndDropPage dragAndDropPage = GeneratePage.dragAndDropPage().goToDragAndDropPage().dragSquare();
 
         assertThat(dragAndDropPage.getSwitchedSquareText(), is("A"));

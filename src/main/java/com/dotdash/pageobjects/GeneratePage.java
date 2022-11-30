@@ -30,5 +30,8 @@ public class GeneratePage {
         return instantiateNewPage(DragAndDropPage.class);
     }
 
+    public static DropdownPage dropdownPage() {
+        return instantiateNewPage(DropdownPage.class);
+    }
 
 }
