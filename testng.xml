@@ -6,7 +6,7 @@
         <parameter name="driverClass" value="FirefoxDriver"/>
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.dotdash.JavaScriptErrorTests"/>
+            <class name="com.dotdash.OpenInNewTabTests"/>
         </classes>
     </test> <!-- First Test -->
 
