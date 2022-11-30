@@ -6,7 +6,7 @@
         <parameter name="driverClass" value="FirefoxDriver"/>
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.dotdash.DynamicContentTests"/>
+            <class name="com.dotdash.DynamicControlTests"/>
         </classes>
     </test> <!-- First Test -->
 

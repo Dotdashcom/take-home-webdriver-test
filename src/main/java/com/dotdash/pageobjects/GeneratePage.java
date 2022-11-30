@@ -38,4 +38,9 @@ public class GeneratePage {
         return instantiateNewPage(DynamicContentPage.class);
     }
 
+    public static DynamicControlPage dynamicControlPage() {
+        return instantiateNewPage(DynamicControlPage.class);
+    }
+
+
 }

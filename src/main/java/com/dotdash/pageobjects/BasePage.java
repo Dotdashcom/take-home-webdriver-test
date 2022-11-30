@@ -57,6 +57,11 @@ public class BasePage {
         return driver.switchTo().alert();
     }
 
+    public boolean waitForCondition(WebElement element, String condition) {
+        wait.until(driverLambda -> element.getText().equals(condition));
+        return true;
+    }
+
     public List<WebElement> waitForClickabilityOf(List<WebElement> elements) {
         elements.forEach(element -> wait.until(driverLambda -> element.isDisplayed() && element.isEnabled()));
         return elements;
@@ -70,6 +75,10 @@ public class BasePage {
     public WebElement waitForVisibilityOf(By elementBy) {
         wait.until(ExpectedConditions.presenceOfElementLocated(elementBy));
         return driver.findElement(elementBy);
+    }
+
+    public boolean waitForInvisibilityOf(WebElement element) {
+        return wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
     public void refreshCurrentPage() {
