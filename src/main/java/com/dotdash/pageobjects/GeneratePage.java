@@ -42,5 +42,7 @@ public class GeneratePage {
         return instantiateNewPage(DynamicControlPage.class);
     }
 
-
+    public static DynamicLoadingPage dynamicLoadingPage() {
+        return instantiateNewPage(DynamicLoadingPage.class);
+    }
 }
