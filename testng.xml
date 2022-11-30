@@ -6,7 +6,7 @@
         <parameter name="driverClass" value="FirefoxDriver"/>
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.dotdash.ContextMenuTests"/>
+            <class name="com.dotdash.DragAndDropTests"/>
         </classes>
     </test> <!-- First Test -->
 

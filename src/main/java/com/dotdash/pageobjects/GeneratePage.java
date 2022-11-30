@@ -14,9 +14,21 @@ public class GeneratePage {
         return PageFactory.initElements(TLDriverFactory.getTLDriver(), tClass);
     }
 
-    public static LoginPage loginPage() {return instantiateNewPage(LoginPage.class);}
-    public static CheckboxPage checkboxPage() {return instantiateNewPage(CheckboxPage.class);}
+    public static LoginPage loginPage() {
+        return instantiateNewPage(LoginPage.class);
+    }
 
-    public static ContextMenuPage contextMenuPage() {return instantiateNewPage(ContextMenuPage.class);}
+    public static CheckboxPage checkboxPage() {
+        return instantiateNewPage(CheckboxPage.class);
+    }
+
+    public static ContextMenuPage contextMenuPage() {
+        return instantiateNewPage(ContextMenuPage.class);
+    }
+
+    public static DragAndDropPage dragAndDropPage() {
+        return instantiateNewPage(DragAndDropPage.class);
+    }
+
 
 }
