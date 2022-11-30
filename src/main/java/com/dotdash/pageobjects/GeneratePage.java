@@ -76,6 +76,10 @@ public class GeneratePage {
         return instantiateNewPage(OpenInNewTabPage.class);
     }
 
+    public static NotificationMessagePage notificationMessagePage() {
+        return instantiateNewPage(NotificationMessagePage.class);
+    }
+
     public static JavaScriptErrorPage javaScriptErrorPage() {
         WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
         TLDriverFactory.setTLDriver("chrome");
