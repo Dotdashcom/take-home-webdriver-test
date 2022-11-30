@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-    <test enabled="true" name="firefox" parallel="methods">
-        <parameter name="driverClass" value="FirefoxDriver"/>
-        <parameter name="browser" value="firefox"/>
-<!--        <classes>-->
-<!--            <class name="com.dotdash.NotificationMessageTests"/>-->
-<!--        </classes>-->
-        <packages>
-            <package name="com.dotdash"/>
-        </packages>
-    </test> <!-- First Test -->
+<!--    <test enabled="true" name="firefox" parallel="methods">-->
+<!--        <parameter name="driverClass" value="FirefoxDriver"/>-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--&lt;!&ndash;        <classes>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.dotdash.NotificationMessageTests"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </classes>&ndash;&gt;-->
+<!--        <packages>-->
+<!--            <package name="com.dotdash"/>-->
+<!--        </packages>-->
+<!--    </test> &lt;!&ndash; First Test &ndash;&gt;-->
 
     <test enabled="true" name="chrome" parallel="methods">
         <parameter name="driverClass" value="ChromeDriver"/>

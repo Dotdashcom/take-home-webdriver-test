@@ -19,13 +19,11 @@ jobs:
         credentials:
           username: MateusPasqualini
           password: ${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN }}
+        ports:
+            - 7080:5000
 
 
     steps:
-      - name: super-step
-        shell: bash
-        run: |
-          /usr/bin/docker run -d -p 7080:5000 the-internet:latest
       - uses: browser-actions/setup-chrome@latest
       - run: chrome --version
       - uses: actions/checkout@v2
