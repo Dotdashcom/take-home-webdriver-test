@@ -18,7 +18,7 @@ public class DynamicContentTests extends BaseTest {
     @Test
     public void contentShouldNotBeTheSame() {
         DynamicContentPage dynamicContentPage = GeneratePage.dynamicContentPage().goToDynamicContentPage();
-        Reporter.log("Logging into Selenium Playground");
+
         List<String> initialTextContents = dynamicContentPage.getDynamicTexts();
         List<String> initialImageContents = dynamicContentPage.getImageLinks();
 
