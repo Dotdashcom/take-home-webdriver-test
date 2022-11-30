@@ -34,4 +34,8 @@ public class GeneratePage {
         return instantiateNewPage(DropdownPage.class);
     }
 
+    public static DynamicContentPage dynamicContentPage() {
+        return instantiateNewPage(DynamicContentPage.class);
+    }
+
 }

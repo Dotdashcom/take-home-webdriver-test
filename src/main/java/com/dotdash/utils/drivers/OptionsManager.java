@@ -30,7 +30,6 @@ public class OptionsManager {
         FirefoxOptions geckoOptions = new FirefoxOptions();
         FirefoxProfile profile = new FirefoxProfile();
         geckoOptions.addArguments("--headless");
-        geckoOptions.setCapability("marionette", true);
         geckoOptions.setLogLevel(FirefoxDriverLogLevel.ERROR);
         geckoOptions.addArguments("-width=1920");
         geckoOptions.addArguments("-height=1080");

@@ -71,4 +71,8 @@ public class BasePage {
         wait.until(ExpectedConditions.presenceOfElementLocated(elementBy));
         return driver.findElement(elementBy);
     }
+
+    public void refreshCurrentPage() {
+        driver.navigate().refresh();
+    }
 }
