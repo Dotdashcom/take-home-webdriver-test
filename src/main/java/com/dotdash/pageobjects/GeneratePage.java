@@ -45,4 +45,9 @@ public class GeneratePage {
     public static DynamicLoadingPage dynamicLoadingPage() {
         return instantiateNewPage(DynamicLoadingPage.class);
     }
+
+    public static FileDownloadPage fileDownloadPage() {
+        return instantiateNewPage(FileDownloadPage.class);
+    }
+
 }

@@ -15,7 +15,7 @@ public class ScriptReader {
     public static String readScriptFile() {
         String script = null;
         try {
-            script = new String(Files.readAllBytes(Paths.get("src/main/resources/dragdropscript.js")));
+            script = new String(Files.readAllBytes(Paths.get("src", "main", "resources", "dragdropscript.js")));
         } catch (IOException ioException) {
             logger.log(Level.SEVERE, "Script file not found", ioException);
         }
