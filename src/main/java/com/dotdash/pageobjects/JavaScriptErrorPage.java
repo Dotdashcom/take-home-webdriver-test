@@ -7,8 +7,6 @@ import org.openqa.selenium.logging.LogType;
 
 public class JavaScriptErrorPage extends BasePage {
 
-
-
     public JavaScriptErrorPage(WebDriver driver) {
         super(driver);
     }
