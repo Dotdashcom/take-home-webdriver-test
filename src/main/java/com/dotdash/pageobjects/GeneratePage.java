@@ -58,5 +58,9 @@ public class GeneratePage {
         return instantiateNewPage(FloatingMenuPage.class);
     }
 
+    public static IframePage iframePage() {
+        return instantiateNewPage(IframePage.class);
+    }
+
 
 }

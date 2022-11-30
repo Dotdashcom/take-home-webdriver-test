@@ -3,17 +3,17 @@
 <suite name="Suite">
 
     <test enabled="true" name="firefox" parallel="methods">
-        <parameter name="driverClass" value="ChromeDriver"/>
-        <parameter name="browser" value="chrome"/>
+        <parameter name="driverClass" value="FirefoxDriver"/>
+        <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.dotdash.FloatingMenuTests"/>
+            <class name="com.dotdash.IframeTests"/>
         </classes>
     </test> <!-- First Test -->
 
-<!--    <test enabled="true" name="chrome" parallel="methods">-->
-<!--        <parameter name="driverClass" value="ChromeDriver"/>-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <classes>-->
-<!--        </classes>-->
-<!--    </test> &lt;!&ndash; First Test &ndash;&gt;-->
+    <!--    <test enabled="true" name="chrome" parallel="methods">-->
+    <!--        <parameter name="driverClass" value="ChromeDriver"/>-->
+    <!--        <parameter name="browser" value="chrome"/>-->
+    <!--        <classes>-->
+    <!--        </classes>-->
+    <!--    </test> &lt;!&ndash; First Test &ndash;&gt;-->
 </suite> <!-- Suite -->
