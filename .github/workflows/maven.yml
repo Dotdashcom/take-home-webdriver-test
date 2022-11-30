@@ -34,8 +34,8 @@ jobs:
         run: mvn -B package -DskipTests --file pom.xml
       - name: Run End to End tests
         env:
-          DRIVER_CLASS: ChromeDriver
-          BROWSER: chrome
+          DRIVER_CLASS: FirefoxDriver
+          BROWSER: firefox
         run: mvn -DdriverClass=${{env.DRIVER_CLASS}} -Dbrowser=${{env.BROWSER}} test
 
       - name: Get Allure history
