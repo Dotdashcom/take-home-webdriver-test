@@ -13,11 +13,13 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/mateuspasqualini/the-internet:latest
-      credentials:
-        username: MateusPasqualini
-        password: ${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN }}
+    services:
+      the-internet:
+        image: ghcr.io/mateuspasqualini/the-internet:latest
+        credentials:
+          username: MateusPasqualini
+          password: ${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN }}
+
 
     steps:
       - name: super-step
