@@ -36,7 +36,7 @@ jobs:
         env:
           DRIVER_CLASS: FirefoxDriver
           BROWSER: firefox
-        run: mvn -DdriverClass=$DRIVER_CLASS -Dbrowser=$BROWSER test
+        run: mvn -DdriverClass=${{env.DRIVER_CLASS}} -Dbrowser=${{env.BROWSER}} test
 
       - name: Get Allure history
         uses: actions/checkout@v2
