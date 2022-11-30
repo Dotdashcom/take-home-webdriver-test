@@ -6,7 +6,7 @@
         <parameter name="driverClass" value="FirefoxDriver"/>
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.dotdash.FileDownloadTests"/>
+            <class name="com.dotdash.FileUploadTests"/>
         </classes>
     </test> <!-- First Test -->
 

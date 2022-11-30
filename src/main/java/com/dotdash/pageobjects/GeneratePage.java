@@ -50,4 +50,8 @@ public class GeneratePage {
         return instantiateNewPage(FileDownloadPage.class);
     }
 
+    public static FileUploadPage fileUploadPage() {
+        return instantiateNewPage(FileUploadPage.class);
+    }
+
 }
