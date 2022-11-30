@@ -15,10 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       the-internet:
-        image: ghcr.io/mateuspasqualini/the-internet:latest
-        credentials:
-          username: MateusPasqualini
-          password: ${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN }}
+        image: gprestes/the-internet
         ports:
             - 7080:5000
 
