@@ -22,7 +22,7 @@ And ``<BROWSER>`` is the variable for choosing the browser to launch
 
 Running on Chrome: ``mvn -DdriverClass=ChromeDriver -Dbrowser=chrome clean test`` would run the tests on Chrome browser
 
-Running on Firefox: ``mvn -DdriverClass=FirefoxDriver -Dbrowser=firefox clean test`` would run the tests on Chrome
+Running on Firefox: ``mvn -DdriverClass=FirefoxDriver -Dbrowser=firefox clean test`` would run the tests on Firefox
 browser
 
 Running through the IDE: Run the test by right-click on the TestNG XML file

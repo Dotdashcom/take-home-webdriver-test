@@ -17,7 +17,7 @@
     <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <selenium.version>4.4.0</selenium.version>
+    <selenium.version>4.6.0</selenium.version>
     <testng.version>7.6.1</testng.version>
     <allure.version>2.20.1</allure.version>
     <allure-maven.version>2.10.0</allure-maven.version>
@@ -56,13 +56,6 @@
       <artifactId>webdrivermanager</artifactId>
       <version>${webdrivermanager.version}</version>
     </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>${lombok.version}</version>
-    </dependency>
-
-
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
