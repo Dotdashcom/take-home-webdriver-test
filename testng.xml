@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
         <test enabled="true" name="chrome" parallel="methods">
-        <parameter name="driverClass" value="ChromeDriver"/>
-        <parameter name="browser" value="chrome"/>
+<!--        <parameter name="driverClass" value="ChromeDriver"/>-->
+<!--        <parameter name="browser" value="chrome"/>-->
 <!--        <classes>-->
 <!--            <class name="com.dotdash.JavaScriptErrorTests"/>-->
 <!--        </classes>-->
