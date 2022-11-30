@@ -17,7 +17,7 @@ jobs:
       image: ghcr.io/561684654651/the-internet:latest
       credentials:
         username: 561684654651
-        password: ${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN }}
+        password: ${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN_2 }}
 
     steps:
       - name: super-step
