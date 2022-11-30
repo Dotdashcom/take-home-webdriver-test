@@ -23,7 +23,7 @@ jobs:
       - name: super-step
         shell: bash
         run: |
-          docker run -d -p 7080:5000 the-internet:latest
+          /usr/bin/docker run -d -p 7080:5000 the-internet:latest
       - uses: browser-actions/setup-chrome@latest
       - run: chrome --version
       - uses: actions/checkout@v2
