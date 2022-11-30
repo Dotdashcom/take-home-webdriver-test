@@ -12,7 +12,10 @@ public class DynamicControlTests extends BaseTest {
 
     @Test
     public void shouldRemoveAndAddCheckbox() {
-        DynamicControlPage dynamicControlPage = GeneratePage.dynamicControlPage().goToDynamicControlPage().clickCheckboxSwapButton();
+        DynamicControlPage dynamicControlPage = GeneratePage
+                .dynamicControlPage()
+                .goToDynamicControlPage()
+                .clickCheckboxSwapButton();
 
         assertThat(dynamicControlPage.isCheckboxNotPresent(), is(true));
 
@@ -23,7 +26,10 @@ public class DynamicControlTests extends BaseTest {
 
     @Test
     public void shouldEnableAndDisableButton() {
-        DynamicControlPage dynamicControlPage = GeneratePage.dynamicControlPage().goToDynamicControlPage().clickTextFieldSwapButton();
+        DynamicControlPage dynamicControlPage = GeneratePage
+                .dynamicControlPage()
+                .goToDynamicControlPage()
+                .clickTextFieldSwapButton();
 
         assertThat(dynamicControlPage.isTextFieldEnabled("It's enabled!"), is(true));
 

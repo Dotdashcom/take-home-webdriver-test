@@ -14,7 +14,9 @@ public class MouseHoverTests extends BaseTest {
 
     @Test
     public void shouldSeeHoveredInformation() {
-        MouseHoverPage mouseHoverPage = GeneratePage.mouseHoverPage().goToMouseHoverPage();
+        MouseHoverPage mouseHoverPage = GeneratePage
+                .mouseHoverPage()
+                .goToMouseHoverPage();
 
         List<Boolean> displayedList = mouseHoverPage.areElementsDisplayed();
 

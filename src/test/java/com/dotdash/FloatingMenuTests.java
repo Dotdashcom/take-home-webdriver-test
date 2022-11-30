@@ -13,7 +13,10 @@ public class FloatingMenuTests extends BaseTest {
 
     @Test
     public void shouldSeeFloatingMenuWhenScroll() {
-        FloatingMenuPage floatingMenuPage = GeneratePage.floatingMenuPage().goToFloatingMenuPage().scrollPageDown();
+        FloatingMenuPage floatingMenuPage = GeneratePage
+                .floatingMenuPage()
+                .goToFloatingMenuPage()
+                .scrollPageDown();
 
         assertThat(floatingMenuPage.getFloatingMenuButtons().size(), is(4));
         floatingMenuPage.getFloatingMenuButtons().forEach(element -> assertThat(element.isDisplayed(), is(true)));

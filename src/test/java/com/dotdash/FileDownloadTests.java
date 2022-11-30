@@ -17,7 +17,11 @@ public class FileDownloadTests extends BaseTest {
 
     @Test
     public void shouldDownloadFile() throws InterruptedException {
-        FileDownloadPage fileDownloadPage = GeneratePage.fileDownloadPage().goToFileDownloadPage().clickDownloadFile();
+        FileDownloadPage fileDownloadPage = GeneratePage
+                .fileDownloadPage()
+                .goToFileDownloadPage()
+                .clickDownloadFile();
+
         file = new File(Paths.get("src", "main", "resources", "some-file.txt").toString());
 
         assertThat(fileDownloadPage.isFileDownloaded(file), is(true));

@@ -17,7 +17,9 @@ public class DynamicContentTests extends BaseTest {
 
     @Test
     public void contentShouldNotBeTheSame() {
-        DynamicContentPage dynamicContentPage = GeneratePage.dynamicContentPage().goToDynamicContentPage();
+        DynamicContentPage dynamicContentPage = GeneratePage
+                .dynamicContentPage()
+                .goToDynamicContentPage();
 
         List<String> initialTextContents = dynamicContentPage.getDynamicTexts();
         List<String> initialImageContents = dynamicContentPage.getImageLinks();

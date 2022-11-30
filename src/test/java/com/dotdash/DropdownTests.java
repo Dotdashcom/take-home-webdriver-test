@@ -12,14 +12,20 @@ public class DropdownTests extends BaseTest {
 
     @Test
     public void shouldSelectFirstOption() {
-        DropdownPage dropdownPage = GeneratePage.dropdownPage().goToDropdownPage().selectOption("1");
+        DropdownPage dropdownPage = GeneratePage
+                .dropdownPage()
+                .goToDropdownPage()
+                .selectOption("1");
 
         assertThat(dropdownPage.getSelectedOption(), is("Option 1"));
     }
 
     @Test
     public void shouldSelectSecondOption() {
-        DropdownPage dropdownPage = GeneratePage.dropdownPage().goToDropdownPage().selectOption("2");
+        DropdownPage dropdownPage = GeneratePage
+                .dropdownPage()
+                .goToDropdownPage()
+                .selectOption("2");
 
         assertThat(dropdownPage.getSelectedOption(), is("Option 2"));
     }

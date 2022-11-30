@@ -12,7 +12,10 @@ public class DynamicLoadingTests extends BaseTest {
 
     @Test
     public void shouldSeeHelloWorld() {
-        DynamicLoadingPage dynamicLoadingPage = GeneratePage.dynamicLoadingPage().goToDynamicLoadingPage().clickStartButton();
+        DynamicLoadingPage dynamicLoadingPage = GeneratePage
+                .dynamicLoadingPage()
+                .goToDynamicLoadingPage()
+                .clickStartButton();
 
         assertThat(dynamicLoadingPage.getText(), is("Hello World!"));
     }

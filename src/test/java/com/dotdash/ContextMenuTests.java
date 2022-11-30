@@ -12,7 +12,10 @@ public class ContextMenuTests extends BaseTest {
 
     @Test
     public void shouldOpenAlertAfterRightClick() {
-        ContextMenuPage contextMenuPage = GeneratePage.contextMenuPage().goToContextMenuPage().rightClickContextBox();
+        ContextMenuPage contextMenuPage = GeneratePage
+                .contextMenuPage()
+                .goToContextMenuPage()
+                .rightClickContextBox();
 
         assertThat(contextMenuPage.getAlertMessage(), is("You selected a context menu"));
     }

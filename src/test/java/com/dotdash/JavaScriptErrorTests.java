@@ -11,7 +11,9 @@ public class JavaScriptErrorTests extends BaseTest {
 
     @Test
     public void shouldValidateError() {
-        JavaScriptErrorPage javaScriptErrorPage = GeneratePage.javaScriptErrorPage().goToJavaScriptErrorPage();
+        JavaScriptErrorPage javaScriptErrorPage = GeneratePage
+                .javaScriptErrorPage()
+                .goToJavaScriptErrorPage();
 
         assertThat(javaScriptErrorPage.getErrorLog(), is("Cannot read properties of undefined (reading 'xyz')"));
     }

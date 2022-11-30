@@ -15,7 +15,11 @@ public class NotificationMessageTests extends BaseTest {
         String successAction = "Action successful";
         String tryAgainMessage = "Action unsuccesful, please try again";
         String unsuccesfulAction = "Action Unsuccessful";
-        NotificationMessagePage notificationMessagePage = GeneratePage.notificationMessagePage().goToNotificationMessagePage().displayNotification();
+
+        NotificationMessagePage notificationMessagePage = GeneratePage
+                .notificationMessagePage()
+                .goToNotificationMessagePage()
+                .displayNotification();
 
         assertThat(notificationMessagePage.getAlertMessage(), is(anyOf(equalTo(successAction), equalTo(tryAgainMessage), equalTo(unsuccesfulAction))));
     }

@@ -12,14 +12,20 @@ public class JavaScriptAlertTests extends BaseTest {
 
     @Test
     public void shouldShowJSAlert() {
-        JavaScriptAlertsPage javaScriptAlertsPage = GeneratePage.javaScriptAlertsPage().goToJavaScriptAlertsPage().clickAlertButton();
+        JavaScriptAlertsPage javaScriptAlertsPage = GeneratePage
+                .javaScriptAlertsPage()
+                .goToJavaScriptAlertsPage()
+                .clickAlertButton();
 
         assertThat(javaScriptAlertsPage.getAlertMessage(), is("I am a JS Alert"));
     }
 
     @Test
     public void shouldConfirmJsAlert() {
-        JavaScriptAlertsPage javaScriptAlertsPage = GeneratePage.javaScriptAlertsPage().goToJavaScriptAlertsPage().clickConfirmButton();
+        JavaScriptAlertsPage javaScriptAlertsPage = GeneratePage
+                .javaScriptAlertsPage()
+                .goToJavaScriptAlertsPage()
+                .clickConfirmButton();
 
         assertThat(javaScriptAlertsPage.getResultMessage(), is("You clicked: Ok"));
     }
@@ -27,7 +33,11 @@ public class JavaScriptAlertTests extends BaseTest {
     @Test
     public void shouldTypeInJsAlert() {
         String message = "PROMPT TEST";
-        JavaScriptAlertsPage javaScriptAlertsPage = GeneratePage.javaScriptAlertsPage().goToJavaScriptAlertsPage().clickPromptButton().writeToAlert(message);
+        JavaScriptAlertsPage javaScriptAlertsPage = GeneratePage
+                .javaScriptAlertsPage()
+                .goToJavaScriptAlertsPage()
+                .clickPromptButton()
+                .writeToAlert(message);
 
         assertThat(javaScriptAlertsPage.getResultMessage(), is("You entered: " + message));
     }

@@ -16,7 +16,10 @@ public class FileUploadTests extends BaseTest {
     @Test
     public void shouldUploadFile() {
         String path = System.getProperty("user.dir") + File.separator + Paths.get("src", "main", "resources", "some-file-to-upload.txt").toString();
-        FileUploadPage fileUploadPage = GeneratePage.fileUploadPage().goToFileUploadPage().uploadFile(path);
+        FileUploadPage fileUploadPage = GeneratePage
+                .fileUploadPage()
+                .goToFileUploadPage()
+                .uploadFile(path);
 
         assertThat(fileUploadPage.getUploadSuccessMessage(), is("some-file-to-upload.txt"));
     }

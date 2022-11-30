@@ -12,7 +12,10 @@ public class OpenInNewTabTests extends BaseTest {
 
     @Test
     public void shouldSeeTextInSwitchedTab() {
-        OpenInNewTabPage openInNewTabPage = GeneratePage.openInNewTabPage().goToOpenInNewTabPage().switchTabs();
+        OpenInNewTabPage openInNewTabPage = GeneratePage
+                .openInNewTabPage()
+                .goToOpenInNewTabPage()
+                .switchTabs();
 
         assertThat(openInNewTabPage.getSwitchedTabText(), is("New Window"));
     }

@@ -12,7 +12,10 @@ public class IframeTests extends BaseTest {
 
     @Test
     public void shouldBeAbleToTypeOnIframe() {
-        IframePage iframePage = GeneratePage.iframePage().goToIframePage().writeToIframe();
+        IframePage iframePage = GeneratePage
+                .iframePage()
+                .goToIframePage()
+                .writeToIframe();
 
         assertThat(iframePage.getIframeText(), is("IFRAME TEST"));
     }
