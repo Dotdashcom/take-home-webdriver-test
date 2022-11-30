@@ -42,10 +42,19 @@ public class BasePage {
         return elements;
     }
 
+    public WebElement waitForVisibilityOf(WebElement element, By elementBy) {
+        wait.until(ExpectedConditions.presenceOfElementLocated(elementBy));
+        return element.findElement(elementBy);
+    }
 
     public WebElement waitForClickabilityOf(WebElement element) {
         wait.until(driverLambda -> element.isDisplayed() && element.isEnabled());
         return element;
+    }
+
+    public List<WebElement> waitForClickabilityOf(List<WebElement> elements) {
+        elements.forEach(element -> wait.until(driverLambda -> element.isDisplayed() && element.isEnabled()));
+        return elements;
     }
 
     public WebElement waitForAvailabilityOfFrame(WebElement element) {
@@ -72,22 +81,6 @@ public class BasePage {
         wait.until(driverLambda -> file.exists());
         return true;
     }
-
-    public List<WebElement> waitForClickabilityOf(List<WebElement> elements) {
-        elements.forEach(element -> wait.until(driverLambda -> element.isDisplayed() && element.isEnabled()));
-        return elements;
-    }
-
-    public WebElement waitForClickabilityOf(By elementBy) {
-        wait.until(ExpectedConditions.elementToBeClickable(elementBy));
-        return driver.findElement(elementBy);
-    }
-
-    public WebElement waitForVisibilityOf(WebElement element, By elementBy) {
-        wait.until(ExpectedConditions.presenceOfElementLocated(elementBy));
-        return element.findElement(elementBy);
-    }
-
 
     public boolean waitForInvisibilityOf(WebElement element) {
         return wait.until(ExpectedConditions.invisibilityOf(element));

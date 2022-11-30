@@ -5,16 +5,22 @@
     <test enabled="true" name="firefox" parallel="methods">
         <parameter name="driverClass" value="FirefoxDriver"/>
         <parameter name="browser" value="firefox"/>
-        <classes>
-            <class name="com.dotdash.NotificationMessageTests"/>
-        </classes>
+<!--        <classes>-->
+<!--            <class name="com.dotdash.NotificationMessageTests"/>-->
+<!--        </classes>-->
+        <packages>
+            <package name="com.dotdash"/>
+        </packages>
     </test> <!-- First Test -->
 
-<!--    <test enabled="true" name="chrome" parallel="methods">-->
-<!--        <parameter name="driverClass" value="ChromeDriver"/>-->
-<!--        <parameter name="browser" value="chrome"/>-->
+    <test enabled="true" name="chrome" parallel="methods">
+        <parameter name="driverClass" value="ChromeDriver"/>
+        <parameter name="browser" value="chrome"/>
 <!--        <classes>-->
 <!--            <class name="com.dotdash.JavaScriptErrorTests"/>-->
 <!--        </classes>-->
-<!--    </test> &lt;!&ndash; First Test &ndash;&gt;-->
+        <packages>
+            <package name="com.dotdash"/>
+        </packages>
+    </test> <!-- First Test -->
 </suite> <!-- Suite -->
