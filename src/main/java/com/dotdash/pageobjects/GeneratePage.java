@@ -62,5 +62,8 @@ public class GeneratePage {
         return instantiateNewPage(IframePage.class);
     }
 
+    public static MouseHoverPage mouseHoverPage() {
+        return instantiateNewPage(MouseHoverPage.class);
+    }
 
 }

@@ -83,10 +83,11 @@ public class BasePage {
         return driver.findElement(elementBy);
     }
 
-    public WebElement waitForVisibilityOf(By elementBy) {
+    public WebElement waitForVisibilityOf(WebElement element, By elementBy) {
         wait.until(ExpectedConditions.presenceOfElementLocated(elementBy));
-        return driver.findElement(elementBy);
+        return element.findElement(elementBy);
     }
+
 
     public boolean waitForInvisibilityOf(WebElement element) {
         return wait.until(ExpectedConditions.invisibilityOf(element));

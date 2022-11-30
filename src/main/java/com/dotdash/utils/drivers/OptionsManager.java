@@ -39,7 +39,7 @@ public class OptionsManager {
     public static FirefoxOptions getFirefoxOptions() {
         FirefoxOptions geckoOptions = new FirefoxOptions();
         FirefoxProfile profile = new FirefoxProfile();
-//        geckoOptions.addArguments("--headless");
+        geckoOptions.addArguments("--headless");
         geckoOptions.setLogLevel(FirefoxDriverLogLevel.ERROR);
         geckoOptions.addArguments("-width=1920");
         geckoOptions.addArguments("-height=1080");

@@ -6,7 +6,7 @@
         <parameter name="driverClass" value="FirefoxDriver"/>
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.dotdash.IframeTests"/>
+            <class name="com.dotdash.MouseHoverTests"/>
         </classes>
     </test> <!-- First Test -->
 
