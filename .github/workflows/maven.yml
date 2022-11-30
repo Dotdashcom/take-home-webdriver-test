@@ -14,10 +14,10 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/561684654651/the-internet:latest
+      image: ghcr.io/mateuspasqualini/the-internet:latest
       credentials:
-        username: 561684654651
-        password: ${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN_2 }}
+        username: MateusPasqualini
+        password: ${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN }}
 
     steps:
       - name: super-step
