@@ -2,6 +2,8 @@ package com.dotdash.pageobjects;
 
 
 import com.dotdash.utils.drivers.TLDriverFactory;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.config.DriverManagerType;
 import org.openqa.selenium.support.PageFactory;
 
 public class GeneratePage {
@@ -68,6 +70,12 @@ public class GeneratePage {
 
     public static JavaScriptAlertsPage javaScriptAlertsPage() {
         return instantiateNewPage(JavaScriptAlertsPage.class);
+    }
+
+    public static JavaScriptErrorPage javaScriptErrorPage() {
+        WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
+        TLDriverFactory.setTLDriver("chrome");
+        return PageFactory.initElements(TLDriverFactory.getTLDriver(), JavaScriptErrorPage.class);
     }
 
 }

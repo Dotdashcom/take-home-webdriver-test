@@ -6,7 +6,7 @@
         <parameter name="driverClass" value="FirefoxDriver"/>
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.dotdash.JavaScriptAlertTests"/>
+            <class name="com.dotdash.JavaScriptErrorTests"/>
         </classes>
     </test> <!-- First Test -->
 
@@ -14,7 +14,7 @@
 <!--        <parameter name="driverClass" value="ChromeDriver"/>-->
 <!--        <parameter name="browser" value="chrome"/>-->
 <!--        <classes>-->
-<!--            <class name="com.dotdash.JavaScriptAlertTests"/>-->
+<!--            <class name="com.dotdash.JavaScriptErrorTests"/>-->
 <!--        </classes>-->
 <!--    </test> &lt;!&ndash; First Test &ndash;&gt;-->
 </suite> <!-- Suite -->
