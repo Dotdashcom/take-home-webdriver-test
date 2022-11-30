@@ -66,4 +66,8 @@ public class GeneratePage {
         return instantiateNewPage(MouseHoverPage.class);
     }
 
+    public static JavaScriptAlertsPage javaScriptAlertsPage() {
+        return instantiateNewPage(JavaScriptAlertsPage.class);
+    }
+
 }

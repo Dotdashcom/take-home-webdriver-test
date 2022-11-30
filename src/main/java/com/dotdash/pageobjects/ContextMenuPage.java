@@ -25,7 +25,4 @@ public class ContextMenuPage extends BasePage {
         return this;
     }
 
-    public String getAlertMessage() {
-        return waitForAlertAvailability().getText();
-    }
 }

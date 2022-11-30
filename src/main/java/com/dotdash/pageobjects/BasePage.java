@@ -96,4 +96,8 @@ public class BasePage {
     public void refreshCurrentPage() {
         driver.navigate().refresh();
     }
+
+    public String getAlertMessage() {
+        return waitForAlertAvailability().getText();
+    }
 }

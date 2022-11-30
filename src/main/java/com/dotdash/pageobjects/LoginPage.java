@@ -31,7 +31,7 @@ public class LoginPage extends BasePage {
         waitForClickabilityOf(loginButton).click();
         return this;
     }
-
+    @Override
     public String getAlertMessage(){
         return waitForVisibilityOf(alertElement).getText().replaceAll("\\n.", "");
     }
