@@ -37,6 +37,11 @@ public class BasePage {
         return element;
     }
 
+    public List<WebElement> waitForVisibilityOf(List<WebElement> elements) {
+        elements.forEach(element -> wait.until(driverLambda -> element.isDisplayed()));
+        return elements;
+    }
+
 
     public WebElement waitForClickabilityOf(WebElement element) {
         wait.until(driverLambda -> element.isDisplayed() && element.isEnabled());

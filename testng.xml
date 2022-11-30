@@ -6,7 +6,7 @@
         <parameter name="driverClass" value="ChromeDriver"/>
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.dotdash.FileDownloadTests"/>
+            <class name="com.dotdash.FloatingMenuTests"/>
         </classes>
     </test> <!-- First Test -->
 

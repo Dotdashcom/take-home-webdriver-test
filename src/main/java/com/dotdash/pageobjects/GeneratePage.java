@@ -54,4 +54,9 @@ public class GeneratePage {
         return instantiateNewPage(FileUploadPage.class);
     }
 
+    public static FloatingMenuPage floatingMenuPage() {
+        return instantiateNewPage(FloatingMenuPage.class);
+    }
+
+
 }
