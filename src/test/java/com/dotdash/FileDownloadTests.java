@@ -14,11 +14,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class FileDownloadTests extends BaseTest {
     static File file;
+
     @Test
-    public void shouldDownloadFile() {
+    public void shouldDownloadFile() throws InterruptedException {
         FileDownloadPage fileDownloadPage = GeneratePage.fileDownloadPage().goToFileDownloadPage().clickDownloadFile();
         file = new File(Paths.get("src", "main", "resources", "some-file.txt").toString());
-        assertThat(file.exists(), is(true));
+
+        assertThat(fileDownloadPage.isFileDownloaded(file), is(true));
     }
 
     @AfterMethod

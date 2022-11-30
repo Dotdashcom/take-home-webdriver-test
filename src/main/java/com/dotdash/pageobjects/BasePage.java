@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.List;
 
@@ -59,6 +60,11 @@ public class BasePage {
 
     public boolean waitForCondition(WebElement element, String condition) {
         wait.until(driverLambda -> element.getText().equals(condition));
+        return true;
+    }
+
+    public boolean waitForCondition(File file) {
+        wait.until(driverLambda -> file.exists());
         return true;
     }
 

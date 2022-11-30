@@ -3,10 +3,10 @@
 <suite name="Suite">
 
     <test enabled="true" name="firefox" parallel="methods">
-        <parameter name="driverClass" value="FirefoxDriver"/>
-        <parameter name="browser" value="firefox"/>
+        <parameter name="driverClass" value="ChromeDriver"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.dotdash.FileUploadTests"/>
+            <class name="com.dotdash.FileDownloadTests"/>
         </classes>
     </test> <!-- First Test -->
 
