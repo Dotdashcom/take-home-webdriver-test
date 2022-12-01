@@ -1,0 +1,26 @@
+package main;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+public class DynamicContent extends Page {
+	private static final String PAGE_URL = "/dynamic_content";
+
+	public DynamicContent(WebDriver wd, boolean waitForPageToLoad) {
+		super(wd, waitForPageToLoad);
+	}
+
+	private By content2 = By.cssSelector("#content div.row #content div.row:nth-of-type(2) div.large-10");
+
+	public String getTextOfContent2() {
+		return ((ProxyDriver) driver).getText(content2);
+	}
+
+	public String getTextContent2AfterRefresh() {
+		((ProxyDriver) driver).navigate().refresh();
+		
+		return ((ProxyDriver) driver).getText(content2);
+	}
+}

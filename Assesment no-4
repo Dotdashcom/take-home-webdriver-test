@@ -1,0 +1,38 @@
+package main;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+import com.dotdashmeredith.base.Base_DDM;
+import org.testng.annotations.BeforeTest;
+
+public class ContextMenu {
+
+	WebDriver driver;
+	Base_DDM base;
+	@BeforeTest
+	public void beforeClass() {
+		base = new Base_DDM(driver);
+		driver = base.chromeDriver();
+	}
+	
+public void TC04_ContextMenu_Script() {
+		driver.manage().window().maximize();
+		driver.get("http://localhost:7080/context_menu");
+		Actions actions = new Actions(driver);
+		WebElement contextMenu = driver.findElement(By.id("hot-spot"));
+		actions.contextClick(contextMenu).perform();
+
+		Assert.assertEquals(driver.switchTo().alert().getText(), "You selected a context menu");
+		driver.switchTo().alert().accept();
+	}
+
+	@AfterTest
+	public void afterClass() {
+		driver.close();
+	}
+
+}

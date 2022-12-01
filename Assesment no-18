@@ -1,0 +1,37 @@
+package main;
+
+public class NotificationMessage{
+
+	System.Set property("Webdriver.chrome.driver,"system path");
+    WebDriver driver = new chromeDriver();									
+          driver.get("http://localhost:7080/notification_message_rendered");	
+
+          driver.manage().window().maximize();		
+
+          driver.findElement(By.locators).click();			
+
+          String MainWindow=driver.getWindowHandle();		
+
+          Set<String> s1=driver.getWindowHandles();		
+
+          Iterator<String> i1=s1.iterator();		
+
+          while(i1.hasNext())			
+      {		
+          String ChildWindow=i1.next();		
+
+          if(!MainWindow.equalsIgnoreCase(ChildWindow))			
+          {    		             
+                  driver.switchTo().window(ChildWindow);	                                                                                                           
+                  driver.findElement(By.locator) .sendKeys("abc@gmail.com");                			
+                  driver.findElement(By.locator).click();			
+
+                  driver.close();		
+          }		
+      }		
+          driver.switchTo().window(MainWindow);			
+
+          driver.close();	
+
+   }
+}		
