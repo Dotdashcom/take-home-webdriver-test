@@ -1,0 +1,31 @@
+package main;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+public class FileDownload {
+	@FindBy(xpath="//a[contains(text(),'some-file.txt')]")
+	private WebElement searchlink1;
+
+	@FindBy(xpath="//a[contains(text(),'Sample.txt')]")
+	private WebElement searchlink2;
+
+	public FileDownload(WebDriver driver) {
+		PageFactory.initElements(driver,this);
+	}
+
+	public void selectsomefile() {
+		searchlink1.click();
+	}
+	public void selectsamplefile() {
+		searchlink2.click();
+	}
+
+
+}
