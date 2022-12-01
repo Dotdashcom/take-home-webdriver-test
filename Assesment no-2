@@ -1,0 +1,46 @@
+package main;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import com.dotdashmeredith.base.Base_DDM;
+import com.dotdashmeredith.base.GlobalVariables;
+import com.localhost7080.ddm.ObjectsAndMethods;
+
+public class LoginFailure {
+public static void main(String[] args) {
+
+			beforeTest();
+			LoginFailure_Steps();	
+			afterTest();
+
+		}
+
+		static WebDriver driver;
+		static Base_DDM base;
+		static ObjectsAndMethods page;
+
+		@BeforeTest
+		public static void beforeTest() {
+			base = new Base_DDM(driver);
+			driver = base.chromeDriver();
+			page = new ObjectsAndMethods(driver);
+		}
+
+		@Test
+		public static void LoginFailure_Steps() {
+			base.launchBrowser(GlobalVariables.URL_LOCALHOST);
+			page.enterWrongCredentials("Jorge", "ABC123", GlobalVariables.EXPECTED_DATA_FAILURE);
+
+		}
+@AfterTest
+public static void afterTest() {
+ driver.close();
+
+		  }
+
+	}
