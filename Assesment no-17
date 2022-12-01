@@ -1,0 +1,30 @@
+package main;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class OpenInNewTab extends CommonMethods {
+
+    public OpenInNewTab (){
+        PageFactory.initElements(getDriver(),this);
+    }
+
+    @FindBy(linkText = "Click Here")
+    private WebElement linkText;
+
+    @FindBy(xpath = "//h3")
+    private WebElement header;
+
+    public WebElement getLinkText(){
+        return linkText;
+    }
+
+    public WebElement getHeader() {
+        return header;
+    }
+}
