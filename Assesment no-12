@@ -1,0 +1,34 @@
+package main;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
+import utilities.ConfigurationProp;
+import utilities.DriverManager;
+import utilities.UtilitiesManager;
+
+import java.time.Duration;
+
+public class FloatingMenu {
+    private final By header = By.xpath("//h3[text()='Floating Menu']");
+    private final By floatingText = By.xpath("//*[@id='menu']/ul/li[1]/a");
+
+    public FloatingMenu navigateToPage() {
+        DriverManager.getDriver().navigate().to(ConfigurationProp.getProp().getProperty("url") + "/floating_menu");
+        return this;
+    }
+
+    public boolean VerifyHeader() {
+        return UtilitiesManager.FindElement(header).isDisplayed();
+    }
+
+    public String floatingMenu() {
+        DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        UtilitiesManager.jsScroller();
+        return UtilitiesManager.FindElement(floatingText).getText();
+
+    }
+}
