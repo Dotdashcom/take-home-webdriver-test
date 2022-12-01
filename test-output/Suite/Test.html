@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 30 22:10:15 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>132 seconds (132129 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='qa.testcases.JavaScriptErrorTest.javaScriptErrorTest()'><b>javaScriptErrorTest</b><br>Test class: qa.testcases.JavaScriptErrorTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Cannot read property &apos;xyz&apos; of undefined.] but found [This page has a JavaScript error in the onload event. This is often a problem to using normal Javascript injection techniques.]
+	at qa.testcases.JavaScriptErrorTest.javaScriptErrorTest(JavaScriptErrorTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7064297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7064297'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Cannot read property &apos;xyz&apos; of undefined.] but found [This page has a JavaScript error in the onload event. This is often a problem to using normal Javascript injection techniques.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at qa.testcases.JavaScriptErrorTest.javaScriptErrorTest(JavaScriptErrorTest.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>qa.testcases.JavaScriptErrorTest@ea6147e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='qa.testcases.CheckboxTest.checkboxSelectionTest()'><b>checkboxSelectionTest</b><br>Test class: qa.testcases.CheckboxTest</td>
+<td></td>
+<td>2</td>
+<td>qa.testcases.CheckboxTest@2df9b86</td></tr>
+<tr>
+<td title='qa.testcases.ContextMenuTest.contextMenu_rightClickTest()'><b>contextMenu_rightClickTest</b><br>Test class: qa.testcases.ContextMenuTest</td>
+<td></td>
+<td>6</td>
+<td>qa.testcases.ContextMenuTest@37654521</td></tr>
+<tr>
+<td title='qa.testcases.DragAndDropTest.drag_and_drop_Test()'><b>drag_and_drop_Test</b><br>Test class: qa.testcases.DragAndDropTest</td>
+<td></td>
+<td>5</td>
+<td>qa.testcases.DragAndDropTest@15aab8c6</td></tr>
+<tr>
+<td title='qa.testcases.DropDownTest.dropDownTest()'><b>dropDownTest</b><br>Test class: qa.testcases.DropDownTest</td>
+<td></td>
+<td>4</td>
+<td>qa.testcases.DropDownTest@33990a0c</td></tr>
+<tr>
+<td title='qa.testcases.DynamicContentTest.dynamicContentTest()'><b>dynamicContentTest</b><br>Test class: qa.testcases.DynamicContentTest</td>
+<td></td>
+<td>2</td>
+<td>qa.testcases.DynamicContentTest@4de4b452</td></tr>
+<tr>
+<td title='qa.testcases.DynamicControlsTest.dynamicControlTest()'><b>dynamicControlTest</b><br>Test class: qa.testcases.DynamicControlsTest</td>
+<td></td>
+<td>13</td>
+<td>qa.testcases.DynamicControlsTest@50b5ac82</td></tr>
+<tr>
+<td title='qa.testcases.DynamicLoadingTest.dynamicLoadingTest()'><b>dynamicLoadingTest</b><br>Test class: qa.testcases.DynamicLoadingTest</td>
+<td></td>
+<td>5</td>
+<td>qa.testcases.DynamicLoadingTest@101952da</td></tr>
+<tr>
+<td title='qa.testcases.FileDownloadTest.fileDownloadTest()'><b>fileDownloadTest</b><br>Test class: qa.testcases.FileDownloadTest</td>
+<td></td>
+<td>2</td>
+<td>qa.testcases.FileDownloadTest@6babf3bf</td></tr>
+<tr>
+<td title='qa.testcases.FileUploadTest.fileUploadTest()'><b>fileUploadTest</b><br>Test class: qa.testcases.FileUploadTest</td>
+<td></td>
+<td>2</td>
+<td>qa.testcases.FileUploadTest@3059cbc</td></tr>
+<tr>
+<td title='qa.testcases.FloatingMenuTest.floatingMenuTest()'><b>floatingMenuTest</b><br>Test class: qa.testcases.FloatingMenuTest</td>
+<td></td>
+<td>2</td>
+<td>qa.testcases.FloatingMenuTest@7ea9e1e2</td></tr>
+<tr>
+<td title='qa.testcases.IFrameTest.iFrameTest()'><b>iFrameTest</b><br>Test class: qa.testcases.IFrameTest</td>
+<td></td>
+<td>24</td>
+<td>qa.testcases.IFrameTest@24fcf36f</td></tr>
+<tr>
+<td title='qa.testcases.JavaScriptAlertTest.javaScriptAlertTest()'><b>javaScriptAlertTest</b><br>Test class: qa.testcases.JavaScriptAlertTest</td>
+<td></td>
+<td>6</td>
+<td>qa.testcases.JavaScriptAlertTest@3fb1549b</td></tr>
+<tr>
+<td title='qa.testcases.LoginPageTest.loginTest_failure()'><b>loginTest_failure</b><br>Test class: qa.testcases.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>qa.testcases.LoginPageTest@793be5ca</td></tr>
+<tr>
+<td title='qa.testcases.LoginPageTest.loginTest_sucess()'><b>loginTest_sucess</b><br>Test class: qa.testcases.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>qa.testcases.LoginPageTest@793be5ca</td></tr>
+<tr>
+<td title='qa.testcases.MouseHoverTest.mouseHoverTest()'><b>mouseHoverTest</b><br>Test class: qa.testcases.MouseHoverTest</td>
+<td></td>
+<td>5</td>
+<td>qa.testcases.MouseHoverTest@10feca44</td></tr>
+<tr>
+<td title='qa.testcases.NewTabTest.newTabTest()'><b>newTabTest</b><br>Test class: qa.testcases.NewTabTest</td>
+<td></td>
+<td>2</td>
+<td>qa.testcases.NewTabTest@4d02f94e</td></tr>
+<tr>
+<td title='qa.testcases.NotificationTest.notificationTest()'><b>notificationTest</b><br>Test class: qa.testcases.NotificationTest</td>
+<td></td>
+<td>6</td>
+<td>qa.testcases.NotificationTest@2b48a640</td></tr>
+</table><p>
+</body>
+</html>
