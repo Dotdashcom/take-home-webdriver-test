@@ -1,0 +1,27 @@
+package main;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+public class login {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.whitelistedlps","");
+		System.setProperty("webdriver.chrome.driver","C://Program Files//Java//chromedriver_win32//chromedriver.exe");
+		
+		WebDriver driver=new ChromeDriver();
+		driver.get("http://localhost:7080/login");
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		
+		driver.close();
+		driver.quit();
+
+	}
+
+}
