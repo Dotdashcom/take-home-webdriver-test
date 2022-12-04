@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite">
+	<test name="Automated Tests">
+		<classes>
+			<class name="testcases.LoginTest"/>
+			<class name="testcases.CheckBoxesTest" />
+			<class name="testcases.ContextMenuTest" />
+			<class name="testcases.DragAndDropTest" />
+			<class name="testcases.DropDownPageTest" />
+			<class name="testcases.DynamicContentPageTest" />
+			<class name="testcases.DynamicControlsPageTest" />
+			<class name="testcases.DynamicLoadingPageTest" />
+			<class name="testcases.FileDownloadPageTest" />
+			<class name="testcases.FileUploadPageTest" />
+			<class name="testcases.FloatingMenuPageTest" />
+			<class name="testcases.IFramePageTest" />
+			<class name="testcases.MouseHoversPageTest" />
+			<class name="testcases.JavaScriptAlertPageTest" />
+			<class name="testcases.JavaScriptErrorPageTest" />
+			<class name="testcases.NewWindowPageTest" />
+			<class name="testcases.NotificationMessagePageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
