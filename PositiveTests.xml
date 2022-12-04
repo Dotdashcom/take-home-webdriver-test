@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="take-home-test" verbose="5"
+	data-provider-thread-count="5">
+
+	<test name="take-home-test" preserve-order="true">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+		<class name="com.selenium.tests.AlertMenuTest" />
+		<class name="com.selenium.tests.CheckBoxesTest" />
+		<class name="com.selenium.tests.DragAndDrop" />
+		<class name="com.selenium.tests.DropDownTest" />
+		<class name="com.selenium.tests.DynamicContentTest" />
+		<class name="com.selenium.tests.DynamicControlsTest" />
+		<class name="com.selenium.tests.DynamicLoadingTest" />
+		<class name="com.selenium.tests.FileDownloadTest" />
+		<class name="com.selenium.tests.FileUploadTest" />
+		<class name="com.selenium.tests.FloatingMenuTest" />
+		<class name="com.selenium.tests.IframeTest" />
+		<class name="com.selenium.tests.JSAlertsTest" />
+		<class name="com.selenium.tests.JSErrorTest" />
+		<class name="com.selenium.tests.LoginFailureTest" />
+		<class name="com.selenium.tests.LoginSuccessTest" />
+		<class name="com.selenium.tests.MouseHoverTest" />
+		<class name="com.selenium.tests.NotificationMessageTest" />
+		<class name="com.selenium.tests.OpenNewTabTest" />
+		</classes>
+	</test>
+
+</suite>
