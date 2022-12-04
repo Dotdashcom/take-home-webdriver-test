@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<!-- Author: Crunchify.com -->
+	<Appenders>
+		<Console name="ConsoleAppender" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="[%t] [%c{1}] %d{HH:mm:ss,SSS} %-5p [%M] %m%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="TRACE" >
+			<AppenderRef ref="ConsoleAppender" />
+		</Root>
+		<Logger name="io.netty" level="TRACE" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+	</Loggers>
+
+
+</Configuration>
