@@ -1,0 +1,254 @@
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_20:55:46
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password 123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_20:57:24
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password 123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:04:19
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:06:19
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:06:30
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password 123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:07:03
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password 123456
+Clicking on Login Button 
+-------------------------------------
+logging with sally
+Entering with password 123456
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:09:13
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password  123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:09:24
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with sally
+Entering with password  123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:09:33
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with gordon
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:10:06
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password  123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:10:17
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with sally
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:10:52
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password  123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:11:03
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with sally
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:11:39
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password 123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:11:46
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with sally
+Entering with password 123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:11:54
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with gordon
+Entering with password 123456
+Clicking on Login Button 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:13:00
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password 123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:13:09
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with sally
+Entering with password 123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:13:17
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with gordon
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:14:19
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with jim
+Entering with password 123456
+Clicking on Login Button 
+Test completed 
+------------------------------ Test Results ------------------------------
+Run Time...............: 2022-08-16_21:14:30
+Operating System.......: Linux
+OS Version.............: 5.15.0-46-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 18.0.2
+
+-------------------------------------
+logging with sally
+Entering with password 123456
+Clicking on Login Button 
