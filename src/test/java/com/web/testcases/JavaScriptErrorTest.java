@@ -33,9 +33,7 @@ public class JavaScriptErrorTest extends TestBase{
 
         LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
         for(LogEntry entry:logEntries){
-            if(entry.getMessage().contains("Cannot read properties")){
-                Assert.assertEquals(entry.getMessage().substring(64,115),"Cannot read properties of undefined (reading 'xyz')");
-            }
+                Assert.assertTrue(entry.getMessage().contains("Cannot read properties"));
         }
 
     }
