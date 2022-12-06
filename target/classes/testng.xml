@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Test Suite">
+
+	<test name="Test Cases">
+		<classes>
+			<class name="com.web.testcases.LoginSuccessTest"></class>
+			<class name="com.web.testcases.CheckBoxesTest"></class>
+			<class name="com.web.testcases.ContextMenuTest"></class>
+			<class name="com.web.testcases.DragAndDropTest"></class>
+			<class name="com.web.testcases.DropdownTest"></class>
+			<class name="com.web.testcases.DynamicContentTest"></class>
+			<class name="com.web.testcases.DynamicLoadingTest"></class>
+			<class name="com.web.testcases.DynamicControlsTest"></class>
+			<class name="com.web.testcases.FileUploadTest"></class>
+			<class name="com.web.testcases.FileDownloadTest"></class>
+			<class name="com.web.testcases.IframeTest"></class>
+			<class name="com.web.testcases.FloatingMenuTest"></class>
+			<class name="com.web.testcases.JavaScriptAlertsTest"></class>
+			<class name="com.web.testcases.JavaScriptErrorTest"></class>
+			<class name="com.web.testcases.LoginFailureTest"></class>
+			<class name="com.web.testcases.MouseHoverTest"></class>
+			<class name="com.web.testcases.NotificationMessageTest"></class>
+			<class name="com.web.testcases.OpenInNewTabTest"></class>
+		</classes>
+	</test>
+</suite>
