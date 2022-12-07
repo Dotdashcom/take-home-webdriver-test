@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-07T22:50:21 IST" name="Default suite" finished-at="2022-12-07T22:50:58 IST" duration-ms="36707">
+    <groups>
+    </groups>
+    <test started-at="2022-12-07T22:50:21 IST" name="Default test" finished-at="2022-12-07T22:50:58 IST" duration-ms="36707">
+      <class name="com.dotdashcom.automation.DotDashCom">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:21 IST" name="beforeClass" finished-at="2022-12-07T22:50:22 IST" duration-ms="1655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="loginTestSuccess()[pri:1, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:22 IST" name="loginTestSuccess" finished-at="2022-12-07T22:50:23 IST" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestSuccess -->
+        <test-method signature="loginTestFail()[pri:2, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:23 IST" name="loginTestFail" finished-at="2022-12-07T22:50:24 IST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestFail -->
+        <test-method signature="checkboxOnOff()[pri:3, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:24 IST" name="checkboxOnOff" finished-at="2022-12-07T22:50:24 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxOnOff -->
+        <test-method signature="contextPopupTest()[pri:4, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:24 IST" name="contextPopupTest" finished-at="2022-12-07T22:50:24 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextPopupTest -->
+        <test-method signature="dragDropTest()[pri:5, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:24 IST" name="dragDropTest" finished-at="2022-12-07T22:50:25 IST" duration-ms="587" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Arrays differ at element [0]: B != A expected [B] but found [A]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Arrays differ at element [0]: B != A expected [B] but found [A]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:1624)
+at org.testng.Assert.assertEquals(Assert.java:1754)
+at com.dotdashcom.automation.DotDashCom.dragDropTest(DotDashCom.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDropTest -->
+        <test-method signature="dropdownTest()[pri:6, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:25 IST" name="dropdownTest" finished-at="2022-12-07T22:50:25 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownTest -->
+        <test-method signature="dynamicContentTest()[pri:7, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:25 IST" name="dynamicContentTest" finished-at="2022-12-07T22:50:25 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicContentTest -->
+        <test-method signature="dynamic_controls_test()[pri:8, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:25 IST" name="dynamic_controls_test" finished-at="2022-12-07T22:50:43 IST" duration-ms="18063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_controls_test -->
+        <test-method signature="dynamicLoadingTest()[pri:9, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:43 IST" name="dynamicLoadingTest" finished-at="2022-12-07T22:50:48 IST" duration-ms="5180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicLoadingTest -->
+        <test-method signature="fileDownload()[pri:10, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:48 IST" name="fileDownload" finished-at="2022-12-07T22:50:49 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload -->
+        <test-method signature="floatingMenu()[pri:11, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:49 IST" name="floatingMenu" finished-at="2022-12-07T22:50:49 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenu -->
+        <test-method signature="iframeTest()[pri:12, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:49 IST" name="iframeTest" finished-at="2022-12-07T22:50:55 IST" duration-ms="6317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframeTest -->
+        <test-method signature="alertTest()[pri:13, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:55 IST" name="alertTest" finished-at="2022-12-07T22:50:55 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertTest -->
+        <test-method signature="jsError()[pri:14, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:55 IST" name="jsError" finished-at="2022-12-07T22:50:55 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsError -->
+        <test-method signature="newWindowTest()[pri:15, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:55 IST" name="newWindowTest" finished-at="2022-12-07T22:50:56 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newWindowTest -->
+        <test-method signature="notificationTest()[pri:16, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:56 IST" name="notificationTest" finished-at="2022-12-07T22:50:57 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationTest -->
+        <test-method signature="fileUpload()[pri:17, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:57 IST" name="fileUpload" finished-at="2022-12-07T22:50:57 IST" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUpload -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.dotdashcom.automation.DotDashCom@7f0eb4b4]" started-at="2022-12-07T22:50:57 IST" name="afterClass" finished-at="2022-12-07T22:50:58 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.dotdashcom.automation.DotDashCom -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

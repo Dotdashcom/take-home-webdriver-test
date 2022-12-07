@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 07 22:50:21 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>36 seconds (36707 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.dragDropTest()'><b>dragDropTest</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td><div><pre>java.lang.AssertionError: Arrays differ at element [0]: B != A expected [B] but found [A]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:1624)
+	at org.testng.Assert.assertEquals(Assert.java:1754)
+	at com.dotdashcom.automation.DotDashCom.dragDropTest(DotDashCom.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1149508419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1149508419'><pre>java.lang.AssertionError: Arrays differ at element [0]: B != A expected [B] but found [A]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:1624)
+	at org.testng.Assert.assertEquals(Assert.java:1754)
+	at com.dotdashcom.automation.DotDashCom.dragDropTest(DotDashCom.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.fileDownload()'><b>fileDownload</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.contextPopupTest()'><b>contextPopupTest</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.checkboxOnOff()'><b>checkboxOnOff</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.dynamicLoadingTest()'><b>dynamicLoadingTest</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>5</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.dynamic_controls_test()'><b>dynamic_controls_test</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>18</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.loginTestSuccess()'><b>loginTestSuccess</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.floatingMenu()'><b>floatingMenu</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.notificationTest()'><b>notificationTest</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.dynamicContentTest()'><b>dynamicContentTest</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.dropdownTest()'><b>dropdownTest</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.fileUpload()'><b>fileUpload</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.iframeTest()'><b>iframeTest</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>6</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.newWindowTest()'><b>newWindowTest</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.alertTest()'><b>alertTest</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.jsError()'><b>jsError</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+<tr>
+<td title='com.dotdashcom.automation.DotDashCom.loginTestFail()'><b>loginTestFail</b><br>Test class: com.dotdashcom.automation.DotDashCom</td>
+<td></td>
+<td>0</td>
+<td>com.dotdashcom.automation.DotDashCom@7f0eb4b4</td></tr>
+</table><p>
+</body>
+</html>
