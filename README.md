@@ -3,6 +3,7 @@
   * Docker
   + Git
   - Java
+  - Maven
   * Webdriver
   + ChromeDriver
   * IDE such as IntelliJ
@@ -122,4 +123,13 @@
     * Test clicks on the Click Here link a multiple times.
     + Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
 
- 
+### How to run tests
+
+#### Run from IntelliJ
+1. Runner class is under `runners` package `LocalHostrunner.xml`
+2. Right click on `LocalHostrunner.xml` and `Run`
+
+#### Run from terminal
+```
+mvn clean test -DsuiteXmlFile=LocalHostrunner.xml
+```
