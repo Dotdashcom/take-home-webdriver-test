@@ -9,29 +9,34 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
+        <m.aven.compiler.source>11</m.aven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <selenim.version>4.6.0</selenim.version>
+        <webdrivermanager.version>5.2.3</webdrivermanager.version>
+        <testng.version>7.6.1</testng.version>
+
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.6.0</version>
+            <version>${selenim.version}</version>
+
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.2.3</version>
+            <version>${webdrivermanager.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.6.1</version>
+            <version>${testng.version}</version>
         </dependency>
 
     </dependencies>
