@@ -13,7 +13,7 @@ public class TC03_CheckBoxes extends TestBase {
     @Test
     public void checkBoxes() {
 
-        driver.get("checkboxes");
+        driver.get("http://localhost:7080/checkboxes");
         WebElement checkBox1 = driver.findElement(By.xpath("//*[@id='checkboxes']/input[1]"));
         WebElement checkBox2 = driver.findElement(By.xpath("//*[@id='checkboxes']/input[2]"));
 

@@ -11,6 +11,8 @@ public class TC15_JavaScriptAlerts extends TestBase {
 
     @Test
     public void InformationAlertTest(){
+
+        driver.get("http://localhost:7080/checkboxes");
 //        3. Click to “Click for JS Alert” button
         WebElement jsAlertBtn = driver.findElement(By.xpath("//button[.='Click for JS Alert']"));
         jsAlertBtn.click();
