@@ -8,6 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.Map;
 
@@ -18,8 +19,8 @@ public class Login {
     LoginPage loginPage = new LoginPage();
 
 
-    @When("user enters below credentials")
-    public void user_enters_below_credentials(Map<String, String> credentials) {
+    @When("user enters below credentials and click login button")
+    public void user_enters_below_credentials_and_click_login_button(Map<String, String> credentials) {
 
         loginPage.login(credentials.get("username"), credentials.get("password"));
     }
@@ -40,9 +41,10 @@ public class Login {
     }
 
     @And("user click login button")
-    public void userClickLoginButton() {
+    public void user_Click_Login_Button() {
         loginPage.loginBtn.click();
     }
+
 
     @Then("user should see url contains secure")
     public void user_should_see_url_contains_secure() {
@@ -50,17 +52,23 @@ public class Login {
     }
 
     @Then("user should see positive message {string}")
-    public void userShouldSeePositiveMessage(String arg0) {
-        assertTrue("You logged into a secure area!",loginPage.validCredentials.getText().contains("secure area!"));
+    public void user_Should_See_Positive_Message(String arg0) {
+        assertTrue("You logged into a secure area!", loginPage.validCredentials.getText().contains("You logged into a secure area!"));
     }
 
     @Then("user should see negative username message {string}")
-    public void userShouldSeeNegativeUsernameMessage(String arg0) {
-        assertTrue("Your username is invalid!",loginPage.invalidUsername.getText().contains("username is invalid!"));
+    public void user_Should_See_Negative_Username_Message(String arg0) {
+        assertTrue("Your username is invalid!", loginPage.invalidUsername.getText().contains("Your username is invalid!"));
     }
 
     @Then("user should see negative password message {string}")
-    public void userShouldSeeNegativePasswordMessage(String arg0) {
-        assertTrue("Your password is invalid!",loginPage.invalidPassword.getText().contains("password is invalid!"));
+    public void user_Should_See_Negative_Password_Message(String arg0) {
+        assertTrue("Your password is invalid!", loginPage.invalidPassword.getText().contains("Your password is invalid!"));
+    }
+
+    @Test
+    public void testSuccessfulLogin() {
+        Assert.assertTrue("You logged into a secure area!", loginPage.validCredentials.getText().contains("You logged into a secure area!"));
+
     }
 }
