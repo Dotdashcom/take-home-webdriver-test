@@ -10,9 +10,9 @@ import org.testng.annotations.Test;
 public class TC15_JavaScriptAlerts extends TestBase {
 
     @Test
-    public void InformationAlertTest(){
+    public void informationAlertTest(){
 
-        driver.get("http://localhost:7080/checkboxes");
+        driver.get("http://localhost:7080/javascript_alerts");
 //        3. Click to “Click for JS Alert” button
         WebElement jsAlertBtn = driver.findElement(By.xpath("//button[.='Click for JS Alert']"));
         jsAlertBtn.click();
