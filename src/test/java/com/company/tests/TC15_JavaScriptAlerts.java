@@ -32,7 +32,7 @@ public class TC15_JavaScriptAlerts extends TestBase {
         Assert.assertTrue(resultText.isDisplayed(),"Result text did not displayed!");
 
         String actualResultText = resultText.getText();
-        String expectedResultText ="You successfully clicked an alert";
+        String expectedResultText ="You successfuly clicked an alert";
         Assert.assertEquals(actualResultText,expectedResultText,"Result text did not appear correctly!");
 
     }
