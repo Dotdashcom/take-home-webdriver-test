@@ -3,16 +3,12 @@ package take.home.webdrivertest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginPageTest {
 
     private WebDriver driver;
-    //private Map<String, Object> vars;
-    //JavascriptExecutor js;
 
     private LoginPage loginPage;
     private final String username = "tomsmith";
@@ -23,9 +19,6 @@ public class LoginPageTest {
         System.setProperty("webdriver.chrome.driver", "src/test/res/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("http://localhost:7080/login");
-
-        //js = (JavascriptExecutor) driver;
-        //vars = new HashMap<String, Object>();
 
         loginPage = new LoginPage(driver);
     }

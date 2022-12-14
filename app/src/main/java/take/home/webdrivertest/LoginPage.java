@@ -18,7 +18,6 @@ public class LoginPage {
 		username = driver.findElement(By.id("username"));
 		password = driver.findElement(By.id("password"));
 		loginButton = driver.findElement(By.cssSelector(".fa"));
-		//loginResult = driver.findElement(By.cssSelector(".flash"));
 	}
 
 	public void clickElement(WebElement element) {
