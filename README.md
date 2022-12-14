@@ -123,3 +123,5 @@
     + Test asserts that one of the “Action Successful”, “Action unsuccessful, please try again” and “Action Unsuccessful” messages show on click.
 
  
+HOW TO: execute test from unix shell, e.g. 
+    `./gradlew app/src/test/java/take/home/webdrivertest/LoginPageTest.java`

@@ -4,12 +4,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class LoginPageTest {
 
@@ -39,20 +36,24 @@ public class LoginPageTest {
     }
 
     @Test
-    public void testLogin() {
+    public void testLogin() throws Exception {
         // test valid credentials
-        loginPage.clickElement(loginPage.Username);
-        loginPage.sendKeys(loginPage.Username, username);
-        loginPage.clickElement(loginPage.Password);
-        loginPage.sendKeys(loginPage.Password, password);
-        loginPage.clickElement(loginPage.LoginButton);
+        loginPage.clickElement(loginPage.username);
+        loginPage.sendKeys(loginPage.username, username);
+        loginPage.clickElement(loginPage.password);
+        loginPage.sendKeys(loginPage.password, password);
+        loginPage.clickElement(loginPage.loginButton);
+
+        assert loginPage.getLoginResult().contains("You logged into a secure area!");
 
         // test invalid credentials
-        loginPage.clickElement(By.cssSelector(".icon-2x"));
-        loginPage.clickElement(loginPage.Username);
-        loginPage.sendKeys(loginPage.Username, "foo");
-        loginPage.clickElement(loginPage.Password);
-        loginPage.sendKeys(loginPage.Password, "bar");
-        loginPage.clickElement(loginPage.LoginButton);
+        this.setUp();
+        loginPage.clickElement(loginPage.username);
+        loginPage.sendKeys(loginPage.username, "foo");
+        loginPage.clickElement(loginPage.password);
+        loginPage.sendKeys(loginPage.password, "bar");
+        loginPage.clickElement(loginPage.loginButton);
+
+        assert loginPage.getLoginResult().contains("Your username is invalid!");
     }
 }
