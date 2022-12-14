@@ -2,33 +2,26 @@ package take.home.webdrivertest;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import static org.junit.Assert.*;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.core.IsNot.not;
 
-import android.widget.CheckBox;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
-import java.time.Duration;
 import java.util.*;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 public class RemainingTests {
 
@@ -60,12 +53,14 @@ public class RemainingTests {
 
         //sleep(1);
         assert cb1.isSelected();
+        log("Assert checkbox1 checked");
 
         WebElement cb2 = driver.findElement(By.cssSelector("input:nth-child(3)"));
         cb2.click();
 
         //sleep(1);
         assert !cb2.isSelected();
+        log("Assert checkbox2 unchecked");
 
         // Context menu
         driver.get(localhost + "context_menu");
@@ -75,6 +70,7 @@ public class RemainingTests {
         Alert alertContext = driver.switchTo().alert();
 
         assert alertContext.getText().contains("You selected a context menu");
+        log("Assert context menu selected");
         // start fresh browser to get rid of pesky right click menu
         alertContext.dismiss();
         driver.close();
@@ -90,15 +86,16 @@ public class RemainingTests {
         // use JavaScript to workaround known Selenium drag and drop bug referenced below
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("function createEvent(typeOfEvent) {\n" +"var event =document.createEvent(\"CustomEvent\");\n" +"event.initCustomEvent(typeOfEvent,true, true, null);\n" +"event.dataTransfer = {\n" +"data: {},\n" +"setData: function (key, value) {\n" +"this.data[key] = value;\n" +"},\n" +"getData: function (key) {\n" +"return this.data[key];\n" +"}\n" +"};\n" +"return event;\n" +"}\n" +"\n" +"function dispatchEvent(element, event,transferData) {\n" +"if (transferData !== undefined) {\n" +"event.dataTransfer = transferData;\n" +"}\n" +"if (element.dispatchEvent) {\n" + "element.dispatchEvent(event);\n" +"} else if (element.fireEvent) {\n" +"element.fireEvent(\"on\" + event.type, event);\n" +"}\n" +"}\n" +"\n" +"function simulateHTML5DragAndDrop(element, colB) {\n" +"var dragStartEvent =createEvent('dragstart');\n" +"dispatchEvent(element, dragStartEvent);\n" +"var dropEvent = createEvent('drop');\n" +"dispatchEvent(colB, dropEvent,dragStartEvent.dataTransfer);\n" +"var dragEndEvent = createEvent('dragend');\n" +"dispatchEvent(element, dragEndEvent,dropEvent.dataTransfer);\n" +"}\n" +"\n" +"var colA = arguments[0];\n" +"var colB = arguments[1];\n" +"simulateHTML5DragAndDrop(colA,colB);",colA, colB);
-        sleep(2);
+        sleep(1);
 
         try {
             assert colA.getText().contains(origColBText);
             assert colB.getText().contains(origColAText);
+            log("Assert drag and drop");
         } catch (Error e) {
             // catch known selenium drag and drop bug
             // https://www.softwaretestingmagazine.com/knowledge/selenium-drag-and-drop-bug-workaround/
-            System.out.println("encountered known drag and drop bug: " + e.getMessage());
+            log("encountered known drag and drop bug: " + e.getMessage());
         }
 
         // Dropdown
@@ -110,6 +107,7 @@ public class RemainingTests {
 
         //sleep(1);
         assert option1.isSelected();
+        log("Assert dropdown option 1 selected");
 
         dropdown.click();
         WebElement option2 = dropdown.findElement(By.xpath("//option[. = 'Option 2']"));
@@ -117,6 +115,7 @@ public class RemainingTests {
 
         //sleep(1);
         assert option2.isSelected();
+        log("Assert dropdown option 2 selected");
 
         // Dynamic content
         driver.get(localhost + "dynamic_content");
@@ -151,6 +150,8 @@ public class RemainingTests {
             assert !Objects.equals(origText0, newText0) ||
                     !Objects.equals(origText1, newText1) ||
                     !Objects.equals(origText2, newText2);
+
+            log("Assert dynamic content changed");
         }
 
         // Dynamic controls
@@ -160,19 +161,23 @@ public class RemainingTests {
 
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkbox")));
         assert driver.findElement(By.id("message")).getText().contains("It's gone!");
+        log("Assert dynamic control checkbox gone");
 
         driver.findElement(By.cssSelector("button:nth-child(1)")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkbox")));
         assert driver.findElement(By.id("message")).getText().contains("It's back!");
+        log("Assert dynamic control checkbox back");
 
         driver.findElement(By.cssSelector("button:nth-child(2)")).click();
         wait.until(ExpectedConditions.elementToBeClickable(
                 By.cssSelector("#input-example > input:nth-child(1)")));
         assert driver.findElement(By.id("message")).getText().contains("It's enabled!");
+        log("Assert dynamic control input enabled");
 
         driver.findElement(By.cssSelector("button:nth-child(2)")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("message")));
         assert driver.findElement(By.id("message")).getText().contains("It's disabled!");
+        log("Assert dynamic control input disabled");
 
         // Dynamic loading
         driver.get(localhost + "dynamic_loading");
@@ -180,6 +185,7 @@ public class RemainingTests {
         driver.findElement(By.cssSelector("button")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("finish")));
         assert driver.findElement(By.id("finish")).getText().contains("Hello World!");
+        log("Assert dynamic content loaded");
 
         // File download
         driver.get(localhost + "download");
@@ -188,82 +194,116 @@ public class RemainingTests {
         sleep(2);
         File downloadedFile = getDownloadedFile(fileName);
         assert downloadedFile != null;
+        log("Assert file downloaded");
 
         // File upload
         driver.get(localhost + "upload");
-        // TODO not finding file-upload button?
-        driver.findElement(By.id("file-upload")).click();
-        driver.findElement(By.id("file-upload")).sendKeys(downloadedFile.getName());
+        driver.findElement(By.id("file-upload")).sendKeys(downloadedFile.getPath());
 
-        sleep(2);
         driver.findElement(By.id("file-submit")).click();
+        sleep(1);
         assert driver.findElement(By.cssSelector("h3")).getText().contains("File Uploaded!");
+        log("Assert file uploaded");
 
-        // Floating menu TODO
+        // Floating menu
         driver.get(localhost + "floating_menu");
-        driver.findElement(By.linkText("Home")).click();
+        js.executeScript("window.scrollBy(0,250)", "");
+        sleep(1);
+        assert driver.findElement(By.linkText("Home")).isDisplayed();
+        log("Assert floating menu still visible");
 
-        // iFrame TODO
+        // iFrame
         driver.get(localhost + "frames");
         driver.findElement(By.linkText("iFrame")).click();
         driver.switchTo().frame(0);
-        driver.findElement(By.cssSelector("html")).click();
-        driver.switchTo().defaultContent();
-        driver.findElement(By.cssSelector(".tox-notification__dismiss path")).click();
-        driver.switchTo().frame(0);
-        driver.findElement(By.cssSelector("p")).click();
-        {
-            WebElement element = driver.findElement(By.id("tinymce"));
-            js.executeScript("if(arguments[0].contentEditable === 'true') {arguments[0].innerText = '<p>foo bar</p>'}", element);
+        WebElement editor = driver.findElement(By.id("tinymce"));
+        js.executeScript("if(arguments[0].contentEditable === 'true') {arguments[0].innerText = '<p>foo bar</p>'}", editor);
+        sleep(1);
+        try {
+            assert editor.getText().contains("foo bar");
+            log("Assert iFrame contains input text");
+        } catch (Error e) {
+            log("First JS inject failed, trying again");
+            js.executeScript("if(arguments[0].contentEditable === 'true') {arguments[0].innerText = '<p>foo bar</p>'}", editor);
+            sleep(1);
+            assert editor.getText().contains("foo bar");
+            log("Assert iFrame contains input text");
         }
-        driver.findElement(By.cssSelector("html")).click();
         driver.switchTo().defaultContent();
 
-        // Hovers TODO
+        // Hovers
         driver.get(localhost + "hovers");
-        driver.findElement(By.linkText("View profile")).click();
-        driver.findElement(By.linkText("View profile")).click();
-        driver.findElement(By.linkText("View profile")).click();
+        Actions actionHover = new Actions(driver);
+        for (int i = 0; i < 3; i++) {
+            int child = 3 + i;
+            actionHover.moveToElement(driver.findElement(By.cssSelector("div.figure:nth-child(" + child + ") > img:nth-child(1)"))).perform();
+            WebElement userName = driver.findElement(By.cssSelector("div.figure:nth-child(" + child + ") > div:nth-child(2) > h5:nth-child(1)"));
+            sleep(1);
+            assert userName.getText().contains("user" + (i + 1));
+            log("Assert hovered user profile shown");
+        }
 
-        // JS alerts TODO
+        // JS alerts
         driver.get(localhost + "javascript_alerts");
         driver.findElement(By.cssSelector("li:nth-child(1) > button")).click();
         assert driver.switchTo().alert().getText().contains("I am a JS Alert");
+        log("Assert JS alert content expected");
+        driver.switchTo().alert().dismiss();
+        driver.switchTo().defaultContent();
+
         driver.findElement(By.cssSelector("li:nth-child(2) > button")).click();
         assert driver.switchTo().alert().getText().contains("I am a JS Confirm");
+        log("Assert JS alert content expected");
         driver.switchTo().alert().accept();
         driver.findElement(By.cssSelector("li:nth-child(3) > button")).click();
         assert driver.switchTo().alert().getText().contains("I am a JS prompt");
+        log("Assert JS alert content expected");
         {
             Alert alert = driver.switchTo().alert();
             alert.sendKeys("foo bar");
+            sleep(1);
             alert.accept();
         }
-        driver.findElement(By.id("result")).click();
+        assert driver.findElement(By.id("result")).getText().contains("foo bar");
+        log("Assert JS alert content expected");
 
-        // JS error TODO
+        // JS error
         driver.get(localhost + "javascript_error");
-        driver.findElement(By.cssSelector("p")).click();
+        // get and print browser errors
+        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        List<LogEntry> lg = logEntries.filter(Level.ALL);
+        for(LogEntry logEntry : lg) {
+            String entry = logEntry.toString();
+            log(entry);
+            if (entry.contains("Uncaught TypeError")) {
+                assert entry.contains("Cannot read properties of undefined (reading 'xyz')");
+                log("Assert JS uncaught error located");
+            }
+        }
 
-        // Open in new tab TODO
+        // Open in new tab
         driver.get(localhost + "windows");
         vars.put("window_handles", driver.getWindowHandles());
         driver.findElement(By.linkText("Click Here")).click();
         vars.put("win4661", waitForWindow(2000));
         vars.put("root", driver.getWindowHandle());
-        driver.switchTo().window(vars.get("win4661").toString());
-        driver.findElement(By.cssSelector("h3")).click();
+        driver.switchTo().window(Objects.requireNonNull(vars.get("win4661")).toString());
+        assert driver.findElement(By.cssSelector("h3")).getText().contains("New Window");
+        log("Assert new tab opened");
         driver.close();
-        driver.switchTo().window(vars.get("root").toString());
+        driver.switchTo().window(Objects.requireNonNull(vars.get("root")).toString());
 
-        // Notification message TODO
+        // Notification message
         driver.get(localhost + "notification_message_rendered");
-        driver.findElement(By.linkText("Click here")).click();
-        driver.findElement(By.linkText("Click here")).click();
-        driver.findElement(By.id("flash")).click();
-        driver.findElement(By.linkText("Click here")).click();
-        driver.findElement(By.id("flash")).click();
-        driver.close();
+        for (int i = 0; i < 4; i++) {
+            WebElement button = driver.findElement(By.linkText("Click here"));
+            button.click();
+            String flash = driver.findElement(By.id("flash")).getText();
+            assert flash.contains("Action successful") ||
+                    flash.contains("Action unsuccesful, please try again") ||
+                    flash.contains("Action unsuccessful");
+            log("Assert notification message expected");
+        }
     }
 
     public void sleep(int s) throws InterruptedException {
@@ -286,7 +326,7 @@ public class RemainingTests {
         try {
             Thread.sleep(timeout);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            log(e.getMessage());
         }
         Set<String> whNow = driver.getWindowHandles();
         Set<String> whThen = (Set<String>) vars.get("window_handles");
@@ -294,5 +334,9 @@ public class RemainingTests {
             whNow.removeAll(whThen);
         }
         return whNow.iterator().next();
+    }
+
+    public void log(String message) {
+        System.out.println(message);
     }
 }

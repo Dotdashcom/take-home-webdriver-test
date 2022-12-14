@@ -38,6 +38,9 @@ public class LoginPageTest {
         loginPage.clickElement(loginPage.loginButton);
 
         assert loginPage.getLoginResult().contains("You logged into a secure area!");
+        log("Assert login successful");
+
+        loginPage.driver.quit();
 
         // test invalid credentials
         this.setUp();
@@ -48,5 +51,12 @@ public class LoginPageTest {
         loginPage.clickElement(loginPage.loginButton);
 
         assert loginPage.getLoginResult().contains("Your username is invalid!");
+        log("Assert login unsuccessful");
+
+        loginPage.driver.quit();
+    }
+
+    public void log(String message) {
+        System.out.println(message);
     }
 }
