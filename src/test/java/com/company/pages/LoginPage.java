@@ -27,12 +27,12 @@ public class LoginPage {
 
     @FindBy(xpath = "//*[contains(.,'Your username is invalid!')]")
     // //div[@class='flash error']/text()[1]
-    public WebElement invalidUsername;
+    public WebElement invalidUsernameMsg;
 
 //    @FindBy(xpath= "//*[@id='flash']/text()[1]")
 //    @FindBy(xpath = "//div[@class='flash error']/text()[1]")
-    @FindBy(xpath = "//*[contains(text(),'is invalid!')]")
-    public WebElement invalidPassword;
+    @FindBy(xpath = "//*[contains(text(),'Your password is invalid!')]")
+    public WebElement invalidPasswordMsg;
 
     public void login(String username,String password){
         inputUserName.sendKeys(username);

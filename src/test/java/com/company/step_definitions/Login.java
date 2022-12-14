@@ -27,7 +27,7 @@ public class Login {
 
     @Given("user is on the BaseUrl login page")
     public void the_user_is_on_the_BaseUrl_login_page() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("BaseUrl/login"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("loginPage"));
     }
 
     @When("user enters username {string}")
@@ -58,17 +58,11 @@ public class Login {
 
     @Then("user should see negative username message {string}")
     public void user_Should_See_Negative_Username_Message(String arg0) {
-        assertTrue("Your username is invalid!", loginPage.invalidUsername.getText().contains("Your username is invalid!"));
+        assertTrue("Your username is invalid!", loginPage.invalidUsernameMsg.getText().contains("Your username is invalid!"));
     }
 
     @Then("user should see negative password message {string}")
     public void user_Should_See_Negative_Password_Message(String arg0) {
-        assertTrue("Your password is invalid!", loginPage.invalidPassword.getText().contains("Your password is invalid!"));
-    }
-
-    @Test
-    public void testSuccessfulLogin() {
-        Assert.assertTrue("You logged into a secure area!", loginPage.validCredentials.getText().contains("You logged into a secure area!"));
-
+        assertTrue("Your password is invalid!", loginPage.invalidPasswordMsg.getText().contains("Your password is invalid!"));
     }
 }
