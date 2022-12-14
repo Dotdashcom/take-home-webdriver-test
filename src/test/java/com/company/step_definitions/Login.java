@@ -7,8 +7,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.junit.Test;
 
 import java.util.Map;
 
@@ -53,16 +51,16 @@ public class Login {
 
     @Then("user should see positive message {string}")
     public void user_Should_See_Positive_Message(String arg0) {
-        assertTrue("You logged into a secure area!", loginPage.validCredentials.getText().contains("You logged into a secure area!"));
+        assertTrue("You logged into a secure area!", loginPage.validCredentialsMsg.getText().contains(arg0));
     }
 
     @Then("user should see negative username message {string}")
     public void user_Should_See_Negative_Username_Message(String arg0) {
-        assertTrue("Your username is invalid!", loginPage.invalidUsernameMsg.getText().contains("Your username is invalid!"));
+        assertTrue("Your username is invalid!", loginPage.invalidUsernameMsg.getText().contains(arg0));
     }
 
     @Then("user should see negative password message {string}")
     public void user_Should_See_Negative_Password_Message(String arg0) {
-        assertTrue("Your password is invalid!", loginPage.invalidPasswordMsg.getText().contains("Your password is invalid!"));
+        assertTrue("Your password is invalid!", loginPage.invalidPasswordMsg.getText().contains(arg0));
     }
 }

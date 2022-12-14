@@ -28,18 +28,21 @@ public class TC04_ContextMenu extends TestBase {
     }
 
     @Test
-    public void rightClickTest() {
+    public void rightClickTest() throws InterruptedException {
         driver.navigate().to("http://localhost:7080/context_menu");
         By locator = By.id("hot-spot");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         WebElement element=driver.findElement(locator);
         rightClick(element);
-        WebElement elementEdit =driver.findElement(By.cssSelector(".context-menu-item.icon.icon-edit>span"));
-        elementEdit.click();
-        Alert alert=driver.switchTo().alert();
-        String textEdit = alert.getText();
-        Assert.assertEquals(textEdit, "clicked: edit", "Failed to click on Edit link");
+
+        Thread.sleep(3000);
+
+//        WebElement elementEdit =driver.findElement(By.cssSelector(".context-menu-item.icon.icon-edit>span"));
+//        elementEdit.click();
+//        Alert alert=driver.switchTo().alert();
+//        String textEdit = alert.getText();
+//        Assert.assertEquals(textEdit, "clicked: edit", "Failed to click on Edit link");
     }
 
     public void rightClick(WebElement element) {

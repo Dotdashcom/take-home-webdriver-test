@@ -21,7 +21,7 @@ public class LoginPage {
     public WebElement loginBtn;
 
     @FindBy(xpath = "//*[contains(.,'secure area!')]")
-    public WebElement validCredentials;
+    public WebElement validCredentialsMsg;
 
     @FindBy(xpath = "//*[contains(.,'Your username is invalid!')]")
     // //div[@class='flash error']/text()[1]

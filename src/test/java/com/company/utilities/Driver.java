@@ -41,7 +41,6 @@ public class Driver {
                     driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                 }
 
-//                            .implicitlyWait(10, TimeUnit.SECONDS);
                 case "firefox" -> {
                     WebDriverManager.firefoxdriver().setup();
                     driverPool.set(new FirefoxDriver());

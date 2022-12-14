@@ -20,6 +20,8 @@ public class TC02_LoginFailure {
         loginPage.loginBtn.click();
 
         assertTrue("Your username is invalid!", loginPage.invalidUsernameMsg.getText().contains("Your username is invalid!"));
+
+        Driver.closeDriver();
     }
         @Test
         public void loginFailurePassword() {
@@ -32,5 +34,7 @@ public class TC02_LoginFailure {
             loginPage.loginBtn.click();
 
         assertTrue("Your password is invalid!", loginPage.invalidPasswordMsg.getText().contains("Your password is invalid!"));
+
+            Driver.closeDriver();
     }
 }

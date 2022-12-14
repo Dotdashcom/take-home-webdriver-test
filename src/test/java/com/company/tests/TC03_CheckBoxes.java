@@ -1,6 +1,7 @@
 package com.company.tests;
 
 import com.company.base.TestBase;
+import com.company.utilities.ConfigurationReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -13,7 +14,7 @@ public class TC03_CheckBoxes extends TestBase {
     @Test
     public void checkBoxes() {
 
-        driver.get("checkboxesPage");
+        driver.get(ConfigurationReader.getProperty("checkboxesPage"));
         WebElement checkBox1 = driver.findElement(By.xpath("//*[@id='checkboxes']/input[1]"));
         WebElement checkBox2 = driver.findElement(By.xpath("//*[@id='checkboxes']/input[2]"));
 
