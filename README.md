@@ -124,8 +124,7 @@
 
  
 HOW TO: execute tests from unix shell, e.g. 
->`./gradlew app/src/test/java/take/home/webdrivertest/LoginPageTest.java`
-
->`./gradlew app/src/test/java/take/home/webdrivertest/RemainingTests.java`
+    `./gradlew app/src/test/java/take/home/webdrivertest/LoginPageTest.java`
+    `./gradlew app/src/test/java/take/home/webdrivertest/RemainingTests.java`
 
 DEMO: [video demonstration of successful test completion](https://youtu.be/vj2XHAwRry4)
