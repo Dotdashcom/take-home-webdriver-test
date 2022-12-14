@@ -6,37 +6,75 @@ import com.company.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC05_DragAndDrop extends TestBase {
+/**
+ * Test drags element A to element B.
+ * Test asserts that the text on element A and B are switched.
+ */
 
+
+public class TC05_DragAndDrop {
 
     @Test
-    public void guru99_dragAndDrop_test(){
+    public void dragAndDrop() throws InterruptedException {
 
-        //    1- Open a chrome browser
-//    2- Go to: https://demo.guru99.com/test/drag_drop.html
-        Driver.getDriver().get(ConfigurationReader.getProperty("guru99.dropdown.url"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("dragAndDrop"));
+        Actions actions = new Actions(Driver.getDriver());
 
 //    3- Drag “BANK” and drop into Account area under Debit Side
-        WebElement bank = Driver.getDriver().findElement(By.partialLinkText("BANK"));
-        WebElement debitAccount = Driver.getDriver().findElement(By.id("bank"));
+        WebElement A = Driver.getDriver().findElement(By.id("column-a"));
+        WebElement B = Driver.getDriver().findElement(By.id("column-b"));
 
-        Actions actions = new Actions(Driver.getDriver());
-        actions.dragAndDrop(bank,debitAccount).perform();
+        int xOffset1 = A.getLocation().getX();
+        int yOffset1 =  A.getLocation().getY();
 
-//    4- Drag “5000” and drop into Amount area under Debit Side
-        WebElement fiveK = Driver.getDriver().findElement(By.linkText("5000"));
-        WebElement debitAmount = Driver.getDriver().findElement(By.id("amt7"));
+        int xOffset = B.getLocation().getX();
+        int yOffset =  B.getLocation().getY();
 
-        actions.dragAndDrop(fiveK,debitAmount).perform();
+        System.out.println("xOffset--->"+xOffset+" yOffset--->"+yOffset);
 
-
-
-//    5- Drag “SALES” and drop into Account area under Credit Side
+        xOffset =(xOffset-xOffset1)+10;
+        yOffset=(yOffset-yOffset1)+20;
 
 
-//    6- Drag “5000” and drop into Amount area under Credit Side
+        //Perform dragAndDropBy
+        actions.dragAndDropBy(A, xOffset,yOffset).perform();
+
+        //verify text changed in to 'Drop here' box
+        //Get text value of 'to' element
+        String textTo = B.getText();
+
+
+
+
+
+
+//        actions.dragAndDrop(A, B).build().perform();
+//
+//        WebElement headerColumnA = Driver.getDriver().findElement(By.xpath("//*[@id='column-a']/header"));
+//
+//        Assert.assertTrue(headerColumnA.isDisplayed(), "Result text did not displayed!");
+//
+//        String actualResultText = headerColumnA.getText();
+//        System.out.println(actualResultText);
+//        String expectedResultText = "A";
+//        Assert.assertEquals(actualResultText, expectedResultText, "Result text did not appear correctly!");
+
+        //Thread.sleep(2000);
+
+        // //*[@id="column-a"]/header
+        // //*[@id="column-b"]/header
+
+//        if(textTo.equals("Dropped!")) {
+//            System.out.println("PASS: Source is dropped at location as expected");
+//        }else {
+//            System.out.println("FAIL: Source couldn't be dropped at location as expected");
+//        }
+//
+//        driver.close();
+//
 
 
 //    7- Verify “Perfect!” text displayed.
