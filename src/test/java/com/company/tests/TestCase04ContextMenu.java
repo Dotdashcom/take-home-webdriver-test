@@ -1,7 +1,6 @@
 package com.company.tests;
 
 import com.company.base.TestBase;
-import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class TC04_ContextMenu extends TestBase {
+public class TestCase04ContextMenu extends TestBase {
 
     @Test
     public void contextMenu() {

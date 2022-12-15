@@ -4,10 +4,15 @@ import com.company.pages.LoginPage;
 import com.company.utilities.ConfigurationReader;
 import com.company.utilities.Driver;
 import org.testng.annotations.Test;
-
 import static org.junit.Assert.assertTrue;
 
-public class TC01_LoginSuccess {
+/**
+ Page Object Model for the login page should be provided.
+ Test is able to log in successfully.
+ Test uses an assertion to make sure User has logged in.
+ */
+
+public class TestCase01LoginSuccess {
 
     @Test
     public void loginSuccess() {
