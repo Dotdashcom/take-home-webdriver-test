@@ -1,20 +1,11 @@
 package com.company.tests;
 
-import com.company.base.TestBase;
+import com.company.utilities.Driver;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-/**
- * Alert alert = driver.switchTo().alert();
- * // if Alert comes from JS we use the Alert class
- * alert.accept(); // --> click "Ok" on popup
- * alert.dismiss(); // --> click "Cancel" on popup
- * alert.getText();  // --> to get text from popup
- * alert.sendKeys("text"); // --> to send text
- */
 
 /**
  * Test Clicks on JS Alert Button.
@@ -25,24 +16,24 @@ import org.testng.annotations.Test;
  * Test asserts that the alert message contains the typed message.
  */
 
-public class TC15_JavaScriptAlerts extends TestBase {
+public class TestCase15JavaScriptAlerts {
 
     @Test
     public void javaScriptAlerts() {
 
-        driver.get("http://localhost:7080/javascript_alerts");
-        /**
+        Driver.getDriver().get("http://localhost:7080/javascript_alerts");
+        /*
          Test Clicks on JS Alert Button.
          Test asserts alert message.
          */
 
-        WebElement jsAlertBtn = driver.findElement(By.xpath("//button[.='Click for JS Alert']"));
+        WebElement jsAlertBtn = Driver.getDriver().findElement(By.xpath("//button[.='Click for JS Alert']"));
         jsAlertBtn.click();
 
-        Alert alert = driver.switchTo().alert();
+        Alert alert = Driver.getDriver().switchTo().alert();
         alert.accept();
 
-        WebElement resultText = driver.findElement(By.id("result"));
+        WebElement resultText = Driver.getDriver().findElement(By.id("result"));
 
         Assert.assertTrue(resultText.isDisplayed(), "Result text did not displayed!");
 
@@ -50,21 +41,21 @@ public class TC15_JavaScriptAlerts extends TestBase {
         String expectedResultText = "You successfuly clicked an alert";
         Assert.assertEquals(actualResultText, expectedResultText, "Result text did not appear correctly!");
 
-        /**
+        /*
          Test clicks on JS confirm Button and clicks ok on alert.
          Test asserts the alert message.
          */
 
-        /**
+        /*
          Dismiss case
          */
 
-        WebElement jsConfAlertBtnDismiss = driver.findElement(By.xpath("//*[@id='content']/div/ul/li[2]/button"));
+        WebElement jsConfAlertBtnDismiss = Driver.getDriver().findElement(By.xpath("//*[@id='content']/div/ul/li[2]/button"));
         jsConfAlertBtnDismiss.click();
 
         alert.dismiss();
 
-        WebElement resultText2 = driver.findElement(By.id("result"));
+        WebElement resultText2 = Driver.getDriver().findElement(By.id("result"));
 
         Assert.assertTrue(resultText2.isDisplayed(), "Result text did not displayed!");
 
@@ -72,16 +63,16 @@ public class TC15_JavaScriptAlerts extends TestBase {
         String expectedResultText2 = "You clicked: Cancel";
         Assert.assertEquals(actualResultText2, expectedResultText2, "Result text did not appear correctly!");
 
-        /**
+        /*
          Accept case
          */
 
-        WebElement jsConfAlertBtnAccept = driver.findElement(By.xpath("//*[@id='content']/div/ul/li[2]/button"));
+        WebElement jsConfAlertBtnAccept = Driver.getDriver().findElement(By.xpath("//*[@id='content']/div/ul/li[2]/button"));
         jsConfAlertBtnAccept.click();
 
         alert.accept();
 
-        WebElement resultText3 = driver.findElement(By.id("result"));
+        WebElement resultText3 = Driver.getDriver().findElement(By.id("result"));
 
         Assert.assertTrue(resultText3.isDisplayed(), "Result text did not displayed!");
 
@@ -90,15 +81,15 @@ public class TC15_JavaScriptAlerts extends TestBase {
         Assert.assertEquals(actualResultText3, expectedResultText3, "Result text did not appear correctly!");
 
 
-        /**
+        /*
          Test clicks on JS Prompt Button and types a message on Prompt.
          Test asserts that the alert message contains the typed message.
          */
-        /**
+        /*
          Prompt case
          */
 
-        WebElement jsPromptAlertBtn = driver.findElement(By.xpath("//*[@id='content']/div/ul/li[3]/button"));
+        WebElement jsPromptAlertBtn = Driver.getDriver().findElement(By.xpath("//*[@id='content']/div/ul/li[3]/button"));
         jsPromptAlertBtn.click();
 
         String name = "Victor Wladowski";
@@ -107,7 +98,7 @@ public class TC15_JavaScriptAlerts extends TestBase {
 
         alert.accept();
 
-        WebElement resultText4 = driver.findElement(By.id("result"));
+        WebElement resultText4 = Driver.getDriver().findElement(By.id("result"));
 
         Assert.assertTrue(resultText4.isDisplayed(), "Result text did not displayed!");
 
@@ -118,16 +109,16 @@ public class TC15_JavaScriptAlerts extends TestBase {
         Assert.assertTrue(actualResultText4.contains(name));
 
 
-        /**
+        /*
          Dismiss case
          */
 
-        WebElement jsPromptAlertBtnDismiss = driver.findElement(By.xpath("//*[@id='content']/div/ul/li[3]/button"));
+        WebElement jsPromptAlertBtnDismiss = Driver.getDriver().findElement(By.xpath("//*[@id='content']/div/ul/li[3]/button"));
         jsPromptAlertBtnDismiss.click();
 
         alert.dismiss();
 
-        WebElement resultText5 = driver.findElement(By.id("result"));
+        WebElement resultText5 = Driver.getDriver().findElement(By.id("result"));
 
         Assert.assertTrue(resultText5.isDisplayed(), "Result text did not displayed!");
 
@@ -135,6 +126,7 @@ public class TC15_JavaScriptAlerts extends TestBase {
         String expectedResultText5 = "You entered: null";
         Assert.assertEquals(actualResultText5, expectedResultText5, "Result text did not appear correctly!");
 
+        Driver.closeDriver();
     }
 }
 
