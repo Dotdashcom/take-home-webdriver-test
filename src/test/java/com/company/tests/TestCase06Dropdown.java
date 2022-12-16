@@ -1,6 +1,6 @@
 package com.company.tests;
 
-import com.company.base.TestBase;
+import com.company.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -11,14 +11,14 @@ import org.testng.annotations.Test;
  * Test asserts Option 1 and Option 2 are selected.
  */
 
-public class TestCase06Dropdown extends TestBase {
+public class TestCase06Dropdown {
 
     @Test
     public void simpleDropdownTest() {
 
-        driver.get("http://localhost:7080/dropdown");
+        Driver.getDriver().get("http://localhost:7080/dropdown");
 
-        Select simpleDropdown = new Select(driver.findElement(By.id("dropdown")));
+        Select simpleDropdown = new Select(Driver.getDriver().findElement(By.id("dropdown")));
 
         simpleDropdown.selectByValue("1");
         String actualOption1 = simpleDropdown.getFirstSelectedOption().getText();
@@ -29,5 +29,7 @@ public class TestCase06Dropdown extends TestBase {
         String actualOption2 = simpleDropdown.getFirstSelectedOption().getText();
         String expectedOption2 = "Option 2";
         Assert.assertEquals(actualOption2, expectedOption2);
+
+        Driver.closeDriver();
     }
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.Arrays;
 
 public class TestCase04ContextMenu extends TestBase {
 
@@ -17,31 +18,20 @@ public class TestCase04ContextMenu extends TestBase {
         driver.get("http://localhost:7080/context_menu");
 
         Actions actions = new Actions(driver);
-        //WebElement contextMenuBox = driver.findElement(By.xpath("//*[@id='hot-spot']"));
-
 
         WebElement elementLocator = driver.findElement(By.id("hot-spot"));
         actions.contextClick(elementLocator).perform();
 
-
     }
 
     @Test
-    public void rightClickTest() throws InterruptedException {
+    public void rightClickTest(){
         driver.navigate().to("http://localhost:7080/context_menu");
         By locator = By.id("hot-spot");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         WebElement element=driver.findElement(locator);
         rightClick(element);
-
-        Thread.sleep(3000);
-
-//        WebElement elementEdit =driver.findElement(By.cssSelector(".context-menu-item.icon.icon-edit>span"));
-//        elementEdit.click();
-//        Alert alert=driver.switchTo().alert();
-//        String textEdit = alert.getText();
-//        Assert.assertEquals(textEdit, "clicked: edit", "Failed to click on Edit link");
     }
 
     public void rightClick(WebElement element) {
@@ -52,13 +42,13 @@ public class TestCase04ContextMenu extends TestBase {
             System.out.println("Sucessfully Right clicked on the element");
         } catch (StaleElementReferenceException e) {
             System.out.println("Element is not attached to the page document "
-                    + e.getStackTrace());
+                    + Arrays.toString(e.getStackTrace()));
         } catch (NoSuchElementException e) {
             System.out.println("Element " + element + " was not found in DOM "
-                    + e.getStackTrace());
+                    + Arrays.toString(e.getStackTrace()));
         } catch (Exception e) {
             System.out.println("Element " + element + " was not clickable "
-                    + e.getStackTrace());
+                    + Arrays.toString(e.getStackTrace()));
         }
     }
 }

@@ -15,15 +15,15 @@ import java.time.Duration;
  * Test asserts that the text on element A and B are switched.
  */
 
-/**
- I am trying to drag element A to element B using Selenium WebDriver but it's not working. I tried all the solutions which I can find but none of the solutions are working. I observe the clickAndHold is getting performed but moveToElement and dropping of the element is not happening.It is identifying the element to be dragged and holding it but for some reason it is not moving the element and dropping it to the desired location. Tried with different methods and xpath as well.
+/*
+ I am trying to drag element A to element B using Selenium WebDriver, but it's not working. I tried all the solutions which I can find but none of the solutions are working. I observe the clickAndHold is getting performed but moveToElement and dropping of the element is not happening.It is identifying the element to be dragged and holding it but for some reason it is not moving the element and dropping it to the desired location. Tried with different methods and xpath as well.
  */
 
 
 public class TestCase05DragAndDrop {
 
     @Test
-    public void dragAndDrop() throws InterruptedException {
+    public void dragAndDrop(){
 
         Driver.getDriver().get(ConfigurationReader.getProperty("dragAndDrop"));
         Actions actions = new Actions(Driver.getDriver());
@@ -31,13 +31,13 @@ public class TestCase05DragAndDrop {
         WebElement A = Driver.getDriver().findElement(By.id("column-a"));
         WebElement B = Driver.getDriver().findElement(By.id("column-b"));
 
-        /**
+        /*
          Methode #1
          */
 
         actions.dragAndDrop(A, B).build().perform();
 
-        /**
+        /*
          Methode #2
          */
 
@@ -52,13 +52,13 @@ public class TestCase05DragAndDrop {
 
         actions.dragAndDropBy(A, xOffsetB, yOffsetB).build().perform();
 
-        /**
+        /*
          Methode #3
          */
 
         actions.clickAndHold(A).pause(2000).moveToElement(B).pause(2000).release().pause(2000).build().perform();
 
-        /**
+        /*
          Methode #4
          */
         actions.moveToElement(A)

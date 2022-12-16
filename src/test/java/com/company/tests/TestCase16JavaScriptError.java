@@ -17,7 +17,9 @@ public class TestCase16JavaScriptError {
         Driver.getDriver().get("http://localhost:7080/javascript_error");
 
 
-//
+//javascript_error:7 Uncaught TypeError: Cannot read properties of undefined (reading 'xyz')
+//    at loadError (javascript_error:7:52)
+//    at onload (javascript_error:11:30)
 //
 //        let displayValue = (value) => {
 //            if (value === undefined) {
