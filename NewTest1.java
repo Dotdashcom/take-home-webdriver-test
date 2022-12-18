@@ -46,10 +46,12 @@ public class NewTest1 {
 			  
 	          System.out.println( "This is the f0010_Login_Success.");
 
-	          System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
+		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 
@@ -81,8 +83,10 @@ public class NewTest1 {
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -120,8 +124,10 @@ public class NewTest1 {
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -166,8 +172,10 @@ public class NewTest1 {
 		      System.out.println( "This is the f0040_Context_Menu.");
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -213,8 +221,10 @@ public class NewTest1 {
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -280,10 +290,13 @@ public class NewTest1 {
 			  
 	          
 		      System.out.println( "This is the f0060_Dropdown.");
+
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -314,10 +327,13 @@ public class NewTest1 {
 			  
 	          
 		      System.out.println( "This is the f0070_Dynamic_Content.");
+		      
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -363,8 +379,10 @@ public class NewTest1 {
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -408,8 +426,8 @@ public class NewTest1 {
 	   public boolean isElementPresent(By by) {
 		    try {
 		        WebDriverWait wait5 = new WebDriverWait(driver,Duration.ofSeconds(5));
-	  			wait5.until(ExpectedConditions.presenceOfElementLocated(by));
-		        return true;
+		        wait5.until(ExpectedConditions.presenceOfElementLocated(by));
+	  			return true;
 		    } catch (Exception e) {
 		        return false;
 		    }
@@ -422,8 +440,10 @@ public class NewTest1 {
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -451,15 +471,21 @@ public class NewTest1 {
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 		      HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
-		      chromePrefs.put("download.default_directory", "C:\\Users\\User\\Desktop");
+		      //chromePrefs.put("download.default_directory", "C:\\Users\\User\\Desktop");
 		      ChromeOptions chromeOptions = new ChromeOptions();
 		      chromeOptions.setExperimentalOption("prefs", chromePrefs);
 		      DesiredCapabilities caps = new DesiredCapabilities();
 		      caps.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+		      //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
+	    	  
+	    	  
+	    	  
+	    	  
 
 	          WebDriverWait wait30 = new WebDriverWait(driver,Duration.ofSeconds(30));
 	    	  
@@ -470,8 +496,8 @@ public class NewTest1 {
 				  wait30.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#content > div > a")));//Wait for the button
 				  driver.findElement(By.cssSelector("#content > div > a")).click();
 		  		  Thread.sleep(3000);
-	              File file = new File("C:\\Users\\User\\Desktop\\some-file.txt");
-		  		  Assert.assertTrue(file.exists());
+	              File file = new File("C:\\Users\\User\\Downloads\\some-file.txt");
+	              Assert.assertTrue(file.exists());
 		  		 
 			  }catch(Exception e) {}
 			  driver.quit();
@@ -486,8 +512,10 @@ public class NewTest1 {
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -517,8 +545,10 @@ public class NewTest1 {
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -533,7 +563,7 @@ public class NewTest1 {
 		  		  Thread.sleep(2000);
 				  //System.out.println(driver.findElement(By.cssSelector("#menu")).getAttribute("style") +"\r");
 		  		  Assert.assertTrue(driver.findElement(By.cssSelector("#menu")).getAttribute("style").contains("top: 296"));//Should be 2961-2969,which is less than 3000
-		  		 
+		  		  
 			  }catch(Exception e) {}
 			  driver.quit();
 			  System.out.println("Floating_Menu Done" +"\r");
@@ -548,8 +578,10 @@ public class NewTest1 {
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -580,10 +612,13 @@ public class NewTest1 {
 	   public void f0140_Mouse_Hover() {
 			  
 		      System.out.println( "This is the f0140_Mouse_Hover.");
+		      
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -632,10 +667,13 @@ public class NewTest1 {
 	   public void f0150_JavaScript_Alerts() {
 			  
 		      System.out.println( "This is the f0150_JavaScript_Alerts.");
+		      
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -691,10 +729,13 @@ public class NewTest1 {
 	   public void f0160_JavaScript_Error() {
 			  
 		      System.out.println( "This is the f0160_JavaScript_Error.");
+		      
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -705,7 +746,7 @@ public class NewTest1 {
 		  		  Thread.sleep(2000);
                }catch(Exception e) {}
 			  LogEntries jsErrors = driver.manage().logs().get(LogType.BROWSER);
-		      System.out.println("Print all log" + jsErrors.getAll());
+		      //System.out.println("Print all log" + jsErrors.getAll());
 		      //System.out.println("Print index0 log" + jsErrors.getAll().get(0));
 			  Assert.assertTrue(jsErrors.getAll().get(0).toString().contains("Cannot read properties of undefined (reading 'xyz')"));
 			  
@@ -719,10 +760,13 @@ public class NewTest1 {
 	   public void f0170_Open_in_New_Tab() {
 			  
 		      System.out.println( "This is the f0170_Open_in_New_Tab.");
+		      
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
 	    	  driver.manage().window().maximize();
 	          
@@ -767,12 +811,12 @@ public class NewTest1 {
 
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();
-	    	  chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
+	    	  //chromeOptions.addArguments("--user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3"); 
 	    	  chromeOptions.addArguments("--disable-extensions");
+	    	  chromeOptions.addArguments("--no-sandbox");
+	    	  //If one test case fails and the browser can not be closed, other test cases should still be able to open the browser. The failed browser should be kept open to be investigated.	    	  
 	    	  driver = new ChromeDriver(chromeOptions);  
-	    	  driver.manage().window().maximize();
-
-	          
+	    	  driver.manage().window().maximize();	          
 	          
 	          WebDriverWait wait30 = new WebDriverWait(driver,Duration.ofSeconds(30));
 	          urlBase = "http://localhost:7080";
@@ -832,15 +876,5 @@ public class NewTest1 {
 		    	return false;
 		    	}
 		}
-	   
-  @BeforeTest
-  public void beforeTest() {
-
-  }
-
-  @AfterTest
-  public void afterTest() {
-
-  }
-
+ 
 }
