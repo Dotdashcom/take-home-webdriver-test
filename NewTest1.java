@@ -372,10 +372,10 @@ public class NewTest1 {
 	   public void f0080_Dynamic_Controls_There_is_a_bug() {
 			  
 
-		      //There is a bug in this case. After the Enable/Disable button is clicked, the loading image should disappear, but it is still there.
+		      //There is a bug in this case. After the Enable/Disable button is clicked, the loading image should disappear after a while, but it is kept there.
 		      //So I removed(//) the assert
 		      System.out.println( "This is the f0080_Dynamic_Controls_There_is_a_bug.\r");
-		      System.out.println( "There is a bug in this case. After the Enable/Disable button is clicked, the loading image should disappear, but it is still there.So I removed(//) the assert.\r");
+		      System.out.println( "There is a bug in this case. After the Enable/Disable button is clicked, the loading image should disappear after a while, but it is kept there..So I removed(//) the assert.\r");
 	    	  
 		      System.setProperty("webdriver.chrome.driver","F:\\0000Selenium Chrome\\chromedriver_win32\\chromedriver.exe");
 	    	  ChromeOptions chromeOptions = new ChromeOptions();

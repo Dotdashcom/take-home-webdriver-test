@@ -1,1 +1,2 @@
-I submitted NewTest1.java and drag_and_drop_helper.js. Please review.
+1. I submitted NewTest1.java and drag_and_drop_helper.js. Please review.
+2. There is a bug in the "Dynamic_Controls" case. After the Enable/Disable button is clicked, the loading image should disappear after a while, but it is kept there.. So I removed(//) the assert
