@@ -26,6 +26,8 @@ public class HomePage extends BasePage{
     public WebElement fileDownloadPageLink;
     @FindBy(xpath = "//a[@href='/dynamic_loading'][contains(.,'Dynamic Loading')]")
     public WebElement dynamicLoadingPageLink;
+    @FindBy(xpath = "//a[contains(.,'File Upload')]")
+    public WebElement fileUploadPageLink;
     public LoginPage navigateToLoginPage(){
         loginPageLink.click();
         return new LoginPage();
@@ -68,4 +70,9 @@ public class HomePage extends BasePage{
         dynamicLoadingPageLink.click();
         return new DynamicLoadingPage();
     }
+    public FileUploadPage navigateToFileUploadPage() {
+        fileUploadPageLink.click();
+        return new FileUploadPage();
+    }
+
 }
