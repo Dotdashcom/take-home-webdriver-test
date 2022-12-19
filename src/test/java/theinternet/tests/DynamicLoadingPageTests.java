@@ -17,7 +17,7 @@ public class DynamicLoadingPageTests extends BaseTest{
 
     @Test(priority = 0)
     public void testPageLanding(){
-        Assert.assertTrue(dynamicLoadingPage.validatePageLanding());
+        Assert.assertTrue(dynamicLoadingPage.validatePageLanding(),"Dynamic page testing not loaded");
     }
 
     @Test(priority = 1)

@@ -18,7 +18,7 @@ public class LoginPageTests extends BaseTest{
 
     @Test(priority = 0)
     public void testLoginPageLanding(){
-        Assert.assertTrue(loginPage.validatePageLanding());
+        Assert.assertTrue(loginPage.validatePageLanding(), "Login page not loaded");
     }
 
     @Test(priority = 1)

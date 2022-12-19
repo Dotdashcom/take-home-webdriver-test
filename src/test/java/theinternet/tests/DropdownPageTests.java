@@ -15,7 +15,7 @@ public class DropdownPageTests extends BaseTest{
     }
     @Test(priority = 0)
     public void testPageLanding() throws InterruptedException {
-        Assert.assertTrue(dropdownPage.validatePageLanding());
+        Assert.assertTrue(dropdownPage.validatePageLanding(), "Dropdown page not loaded");
     }
 
     @Test(priority = 1)

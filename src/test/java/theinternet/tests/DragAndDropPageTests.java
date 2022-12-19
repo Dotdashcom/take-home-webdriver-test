@@ -17,7 +17,7 @@ public class DragAndDropPageTests extends BaseTest{
 
     @Test(priority = 1)
     public void validatePageLanding() throws InterruptedException {
-        Assert.assertTrue(dragAndDropPage.validatePageLanding());
+        Assert.assertTrue(dragAndDropPage.validatePageLanding(), "Drag and drop page not loaded");
     }
 
     @Test(priority = 2)

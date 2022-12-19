@@ -22,6 +22,6 @@ public class FileDownloadPageTests extends BaseTest{
     @Test(priority = 1)
     public void testFileDownload() throws InterruptedException {
         fileDownloadPage.clickDownload();
-        Assert.assertTrue(fileDownloadPage.checkDownloadFile());
+        Assert.assertTrue(fileDownloadPage.checkDownloadFile(), "Failed to download file");
     }
 }

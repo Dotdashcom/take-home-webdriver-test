@@ -16,12 +16,12 @@ public class FileUploadPageTests extends BaseTest{
 
     @Test(priority = 0)
     public void testPageLanding(){
-        Assert.assertTrue(fileUploadPage.validatePageLanding(), "File download page not loaded");
+        Assert.assertTrue(fileUploadPage.validatePageLanding(), "File upload page not loaded");
     }
 
     @Test(priority = 1)
     public void testFileUpload(){
         fileUploadPage.uploadFile();
-        Assert.assertTrue(fileUploadPage.uploadSuccess());
+        Assert.assertTrue(fileUploadPage.uploadSuccess(), "Failed to upload file");
     }
 }

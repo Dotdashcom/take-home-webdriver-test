@@ -15,7 +15,8 @@ public class DynamicContentPageTests extends BaseTest {
 
     @Test(priority = 0)
     public void testPageLanding(){
-        Assert.assertTrue(dynamicContentPage.dynamicContextPageLanding());
+        Assert.assertTrue(dynamicContentPage.dynamicContextPageLanding(),
+                "Dynamic context page not loaded");
     }
 
     @Test(priority = 1)
