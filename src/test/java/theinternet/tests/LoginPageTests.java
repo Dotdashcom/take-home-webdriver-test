@@ -4,40 +4,52 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import theinternet.pages.LoginPage;
-import theinternet.pages.Navigation;
 
 
 public class LoginPageTests extends BaseTest{
-    private LoginPage loginPage;
-    private Navigation navigation;
 
+    LoginPage loginPage;
     @BeforeClass
-    private void initialize(){
+    public void initialize() throws InterruptedException {
+        homePage.navigateToLoginPage();
         loginPage = new LoginPage();
-        navigation = new Navigation();
+        Thread.sleep(2000);
     }
+
     @Test(priority = 0)
-    public void navigateToLoginPage(){
-        Assert.assertTrue(navigation.navigateToLoginPage());
-    }
-    @Test(priority = 1)
-    public void testLoginPageElementsLoaded(){
+    public void testLoginPageLanding(){
         Assert.assertTrue(loginPage.validatePageLanding());
     }
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void testLoginSuccess(){
-        Assert.assertTrue(loginPage.login());
+        String username = properties.getProperty("username");
+        String password = properties.getProperty("password");
+        loginPage.login(username, password);
+        Assert.assertTrue(loginPage.getBannerText().contains("You logged into a secure area!"), "Login failed");
+    }
+
+    @Test(priority = 2)
+    public void testLogOutSuccess(){
+        loginPage.logout();
+        Assert.assertTrue(loginPage.getBannerText().contains("You logged out of the secure area!"), "Logout failed");
+
     }
 
     @Test(priority = 3)
-    public void testLogOutSuccess(){
-        Assert.assertTrue(loginPage.logout());
+    public void testLoginWrongUsername(){
+        String username = "user";
+        String password = properties.getProperty("password");
+        loginPage.login(username, password);
+        Assert.assertTrue(loginPage.getBannerText().contains("Your username is invalid!"), "Wrong username error failed");
     }
 
     @Test(priority = 4)
-    public void testLoginFailed(){
-        Assert.assertTrue(loginPage.loginFailed());
+    public void testLoginWrongPassword(){
+        String username = properties.getProperty("username");
+        String password = "pass";
+        loginPage.login(username, password);
+        Assert.assertTrue(loginPage.getBannerText().contains("Your password is invalid!"), "Wrong username error failed");
     }
 
 }

@@ -1,22 +1,20 @@
 package theinternet.tests;
+
 import org.testng.annotations.*;
 import theinternet.pages.BasePage;
+import theinternet.pages.CheckboxPage;
+import theinternet.pages.HomePage;
+
 
 public class BaseTest extends BasePage {
+    HomePage homePage;
     @BeforeTest(description = "Navigate to home page")
     public void setup(){
-        try {
-            loadProperties();
-            openBrowser();
-        }catch (Exception e)
-        {
-            System.out.println("Failed to connect to baseUrl");
-            e.printStackTrace();
-            tearDown();
-        }
+        launchBrowser();
+        homePage = new HomePage();
     }
     @AfterTest(description = "Close the browser")
     public void tearDown(){
-        closeBrowser();
+        quitBrowser();
     }
 }

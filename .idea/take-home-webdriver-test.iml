@@ -80,5 +80,6 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.36" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.82" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.webjars:jquery:3.6.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:2.0.5" level="project" />
   </component>
 </module>

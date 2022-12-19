@@ -1,10 +1,14 @@
 package theinternet.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CheckboxPage extends BasePage{
+    public CheckboxPage(){
+        PageFactory.initElements(driver, this);
+    }
     @FindBy(xpath = "//h3[contains(.,'Checkboxes')]")
     public WebElement checkboxPageHeader;
     @FindBy(xpath = "(//div[contains(.,'Powered by Elemental Selenium')])")
@@ -17,10 +21,6 @@ public class CheckboxPage extends BasePage{
     public WebElement checkboxPageCheckbox1;
     @FindBy(xpath = "(//input[contains(@type,'checkbox')])[2]")
     public WebElement checkboxPageCheckbox2;
-
-    public CheckboxPage() {
-        PageFactory.initElements(driver, this);
-    }
     public Boolean checkboxesPageLanding(){
         checkboxPageHeader.isDisplayed();
         checkboxPageFooterText.isDisplayed();
@@ -28,35 +28,29 @@ public class CheckboxPage extends BasePage{
         checkboxPageCheckBoxesForm.isDisplayed();
         checkboxPageCheckbox1.isDisplayed();
         checkboxPageCheckbox2.isDisplayed();
-
         return true;
     }
 
-    public Boolean validateCheckbox1() throws InterruptedException {
-        if(!checkboxPageCheckbox1.isSelected()){
-            checkboxPageCheckbox1.click();
-            Thread.sleep(2000);
-            checkboxPageCheckbox1.isSelected();
-        }else{
-            checkboxPageCheckbox1.click();
-            checkboxPageCheckbox1.isSelected();
-            Thread.sleep(2000);
+    public void selectCheckBox(String option) throws InterruptedException {
+        switch (option){
+            case "1":
+                checkboxPageCheckbox1.click();
+                Thread.sleep(2000);
+                break;
+            case "2":
+                checkboxPageCheckbox2.click();
+                Thread.sleep(2000);
+                break;
         }
-        return true;
     }
 
-    public Boolean validateCheckbox2() throws InterruptedException {
-
-        if(!checkboxPageCheckbox2.isSelected())
-        {
-            checkboxPageCheckbox2.click();
-            Thread.sleep(2000);
-            checkboxPageCheckbox2.isSelected();
-        }else{
-            checkboxPageCheckbox2.click();
-            checkboxPageCheckbox2.isSelected();
-            Thread.sleep(2000);
+    public boolean isCheckBoxSelected(String option){
+        switch (option){
+            case "1":
+                return checkboxPageCheckbox1.isSelected();
+            case "2":
+                return checkboxPageCheckbox2.isSelected();
         }
-        return true;
+        return false;
     }
 }

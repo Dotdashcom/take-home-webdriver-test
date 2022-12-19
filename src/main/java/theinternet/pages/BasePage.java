@@ -2,52 +2,41 @@ package theinternet.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class BasePage {
-    protected static WebDriver driver;
-    public String browser;
-    public String baseUrl;
-    public Properties properties;
-    public void loadProperties(){
+    public static WebDriver driver;
+    public static Properties properties;
+    public void loadConfig(){
         FileInputStream config = null;
-
         try{
             properties = new Properties();
             config = new FileInputStream("src/main/java/theinternet/config/config.properties");
             properties.load(config);
-
-            browser = properties.getProperty("browser");
-            baseUrl = properties.getProperty("baseUrl");
-        }catch (FileNotFoundException e){
+        }catch (Exception e){
             e.printStackTrace();
-        }catch (IOException e)
-        {
-            e.printStackTrace();
-        }finally {
-            try {
-                config.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 
-    public void openBrowser(){
-        if(browser.equals("chrome"))
-        {
-            driver = new ChromeDriver();
+    public void launchBrowser(){
+        this.loadConfig();
+        String browser = properties.getProperty("browser");
+
+        switch(browser){
+            case "chrome":
+                driver = new ChromeDriver();
         }
-        driver.get(baseUrl);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.get(properties.getProperty("baseUrl"));
     }
 
-    public void closeBrowser(){
+    public static void quitBrowser(){
         driver.quit();
+        driver = null;
     }
 }

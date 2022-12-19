@@ -4,33 +4,32 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import theinternet.pages.CheckboxPage;
-import theinternet.pages.Navigation;
+import theinternet.pages.HomePage;
 
 public class CheckboxPageTests extends BaseTest{
-    private CheckboxPage checkboxPage;
-    private Navigation navigation;
-
+    CheckboxPage checkboxPage;
     @BeforeClass
-    private void initialize(){
-        checkboxPage = new CheckboxPage();
-        navigation = new Navigation();
+    public void initialize() throws InterruptedException {
+        homePage.navigateToCheckBoxPage();
+        checkboxPage= new CheckboxPage();
+        Thread.sleep(2000);
     }
     @Test(priority = 0)
-    public void navigateToCheckboxPage(){
-        Assert.assertTrue(navigation.navigateToCheckBoxPage());
-    }
-    @Test(priority = 1)
     public void validatePageLanding(){
-        Assert.assertTrue(checkboxPage.checkboxesPageLanding());
+        Assert.assertTrue(checkboxPage.checkboxesPageLanding(), "Checkbox page not loaded");
+    }
+
+    @Test(priority = 1)
+    public void validateCheckbox1() throws InterruptedException {
+        String checkBox = "1";
+        checkboxPage.selectCheckBox(checkBox);
+        Assert.assertTrue(checkboxPage.isCheckBoxSelected(checkBox), "Checkbox " + checkBox + " is not selected");
     }
 
     @Test(priority = 2)
-    public void validateCheckbox1() throws InterruptedException {
-        Assert.assertTrue(checkboxPage.validateCheckbox1());
-    }
-
-    @Test(priority = 3)
     public void validateCheckbox2() throws InterruptedException {
-        Assert.assertTrue(checkboxPage.validateCheckbox2());
+        String checkBox = "2";
+        checkboxPage.selectCheckBox(checkBox);
+        Assert.assertFalse(checkboxPage.isCheckBoxSelected(checkBox), "Checkbox " + checkBox + " is selected");
     }
 }
