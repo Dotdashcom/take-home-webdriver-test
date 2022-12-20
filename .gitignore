@@ -1,3 +1,9 @@
+.classpath
+.project
+.settings
+target
+test-output
+bbtestng.xml
 # Compiled class file
 *.class
 
