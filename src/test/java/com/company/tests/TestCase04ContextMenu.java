@@ -10,6 +10,11 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.Arrays;
 
+/**
+ Test right-clicks on the context menu.
+ Test asserts the alert menu text.
+ */
+
 public class TestCase04ContextMenu extends TestBase {
 
     @Test
