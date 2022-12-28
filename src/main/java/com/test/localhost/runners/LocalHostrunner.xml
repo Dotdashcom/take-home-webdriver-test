@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Runner">
+    <test name="LocalHost Test">
+
+        <classes>
+            <class name="com.test.localhost.tests.LoginTest"> </class>
+            <class name="com.test.localhost.tests.CheckboxTest"> </class>
+            <class name="com.test.localhost.tests.ContextMenuTest"> </class>
+            <class name="com.test.localhost.tests.DragAndDropTest"> </class>
+            <class name="com.test.localhost.tests.DropdownTest"> </class>
+            <class name="com.test.localhost.tests.DynamicContentTest"> </class>
+            <class name="com.test.localhost.tests.DynamicControlsTest"> </class>
+            <class name="com.test.localhost.tests.DynamicLoadingTest"> </class>
+            <class name="com.test.localhost.tests.FileDownloadTest"> </class>
+            <class name="com.test.localhost.tests.FileUploadTest"> </class>
+            <class name="com.test.localhost.tests.FloatingMenuTest"> </class>
+            <class name="com.test.localhost.tests.IframeTest"> </class>
+            <class name="com.test.localhost.tests.HoverOverTest"> </class>
+            <class name="com.test.localhost.tests.JavaScriptAlertTest"> </class>
+            <class name="com.test.localhost.tests.CheckboxTest"> </class>
+            <class name="com.test.localhost.tests.NewTabTest"> </class>
+            <class name="com.test.localhost.tests.NotificationTest"> </class>
+
+        </classes>
+    </test>
+</suite>
