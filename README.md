@@ -1,3 +1,31 @@
+# Solution to Take home test
+
+ This is the solution for the take home test. This solution uses the following framework
+
+   1) Page Object Model
+   2) Selenium Chrome Driver
+   3) TestNg Framework
+
+## Prerequisites
+   Please follow Webdriver Test steps Docker commands and have docker running.
+
+   * Maven
+
+## How to run test in Unix prompt
+
+1. Clone the project
+
+    `git clone https://github.com/deepikasolai/take-home-webdriver-test.git`
+
+2. Goto Project Directory    
+
+    `cd take-home-webdriver-test`
+    
+3. Perform Maven test
+
+    `mvn test`
+
+
 # Webdriver Tests
 ## Prerequisites
   * Docker
