@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="18" failures="1" name="TestSuite" time="42.832" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.5+10-LTS"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/arunkumarhariharan/Desktop/FebClass/Feb Class/Class/com.qa.beartax/com.takehome"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/arunkumarhariharan/Desktop/FebClass/Feb Class/Class/com.qa.beartax/com.takehome"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.5+10-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/kb/c1xsqgqs113d_745_4397xzr0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/arunkumarhariharan/Desktop/FebClass/Feb Class/Class/com.qa.beartax/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf17569184653650655937.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/arunkumarhariharan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.16"/>
+    <property name="user.home" value="/Users/arunkumarhariharan"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="arunkumarhariharan"/>
+    <property name="java.class.path" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.15.0.20200226-2003/jars/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.5"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/arunkumarhariharan/Desktop/FebClass/Feb Class/Class/com.qa.beartax/com.takehome/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-10-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.takehome.testcases.LoginSuccessTest" name="loginSuccess" time="1.874"/>
+  <testcase classname="com.takehome.testcases.DropdownTest" name="dropdown" time="1.177"/>
+  <testcase classname="com.takehome.testcases.LoginFailureTest" name="loginFailure" time="1.202"/>
+  <testcase classname="com.takehome.testcases.OpenNewWindowTest" name="opennewwindow" time="1.099"/>
+  <testcase classname="com.takehome.testcases.IFramesTest" name="iframes" time="2.564"/>
+  <testcase classname="com.takehome.testcases.NotificationMessageTest" name="notificationmessage" time="12.132"/>
+  <testcase classname="com.takehome.testcases.DynamicControlTest" name="dynamiccontrol" time="13.02"/>
+  <testcase classname="com.takehome.testcases.FloatingMenuTest" name="floatingmenu" time="0.292"/>
+  <testcase classname="com.takehome.testcases.DynamicloadingTest" name="dynamicloading" time="5.292"/>
+  <testcase classname="com.takehome.testcases.DynamicContentTest" name="dynamiccontent" time="0.484"/>
+  <testcase classname="com.takehome.testcases.DragandDropTest" name="draganddrop" time="0.579">
+    <failure message="expected [B] but found [A]" type="java.lang.AssertionError">java.lang.AssertionError: expected [B] but found [A]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.takehome.testcases.DragandDropTest.draganddrop(DragandDropTest.java:27)
+</failure>
+  </testcase>
+  <testcase classname="com.takehome.testcases.JavaScriptAlertTest" name="javascriptalert" time="0.896"/>
+  <testcase classname="com.takehome.testcases.CheckBoxesTest" name="checkboxes" time="0.297"/>
+  <testcase classname="com.takehome.testcases.FileUploadTest" name="fileupload" time="0.433"/>
+  <testcase classname="com.takehome.testcases.JavaScriptErrorTest" name="javascripterrorsolution2" time="0.057"/>
+  <testcase classname="com.takehome.testcases.FileDownloadsTest" name="filedownload" time="0.306"/>
+  <testcase classname="com.takehome.testcases.ContextMenuTest" name="contextmenu" time="0.446"/>
+  <testcase classname="com.takehome.testcases.MouseHoverTest" name="mousehover" time="0.682"/>
+</testsuite>

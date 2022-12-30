@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 104.75 sec <<< FAILURE!
+draganddrop(com.takehome.testcases.DragandDropTest)  Time elapsed: 0.579 sec  <<< FAILURE!
+java.lang.AssertionError: expected [B] but found [A]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.takehome.testcases.DragandDropTest.draganddrop(DragandDropTest.java:27)
+

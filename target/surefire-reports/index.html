@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.DragandDropTest" class="method navigator-link" hash-for-method="draganddrop">draganddrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.CheckBoxesTest" class="method navigator-link" hash-for-method="checkboxes">checkboxes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.ContextMenuTest" class="method navigator-link" hash-for-method="contextmenu">contextmenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.DropdownTest" class="method navigator-link" hash-for-method="dropdown">dropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.DynamicContentTest" class="method navigator-link" hash-for-method="dynamiccontent">dynamiccontent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.DynamicControlTest" class="method navigator-link" hash-for-method="dynamiccontrol">dynamiccontrol</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.DynamicloadingTest" class="method navigator-link" hash-for-method="dynamicloading">dynamicloading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.FileDownloadsTest" class="method navigator-link" hash-for-method="filedownload">filedownload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.FileUploadTest" class="method navigator-link" hash-for-method="fileupload">fileupload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.FloatingMenuTest" class="method navigator-link" hash-for-method="floatingmenu">floatingmenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.IFramesTest" class="method navigator-link" hash-for-method="iframes">iframes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.JavaScriptAlertTest" class="method navigator-link" hash-for-method="javascriptalert">javascriptalert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.JavaScriptErrorTest" class="method navigator-link" hash-for-method="javascripterrorsolution2">javascripterrorsolution2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.LoginFailureTest" class="method navigator-link" hash-for-method="loginFailure(test, tes!)">loginFailure(test, tes!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.LoginSuccessTest" class="method navigator-link" hash-for-method="loginSuccess(tomsmith, SuperSecretPassword!)">loginSuccess(tomsmith, SuperSecretPassword!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.MouseHoverTest" class="method navigator-link" hash-for-method="mousehover">mousehover</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.NotificationMessageTest" class="method navigator-link" hash-for-method="notificationmessage">notificationmessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.takehome.testcases.OpenNewWindowTest" class="method navigator-link" hash-for-method="opennewwindow">opennewwindow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.takehome.testcases.DragandDropTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="draganddrop">
+                  </a> <!-- draganddrop -->
+                  <span class="method-name">draganddrop</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [B] but found [A]
+	at com.takehome.testcases.DragandDropTest.draganddrop(DragandDropTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.LoginFailureTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginFailure(test, tes!)">
+                  </a> <!-- loginFailure(test, tes!) -->
+                  <span class="method-name">loginFailure</span>
+                  <span class="parameters">(test,tes!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.FileDownloadsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filedownload">
+                  </a> <!-- filedownload -->
+                  <span class="method-name">filedownload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.CheckBoxesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkboxes">
+                  </a> <!-- checkboxes -->
+                  <span class="method-name">checkboxes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.DynamicloadingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dynamicloading">
+                  </a> <!-- dynamicloading -->
+                  <span class="method-name">dynamicloading</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.IFramesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="iframes">
+                  </a> <!-- iframes -->
+                  <span class="method-name">iframes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.NotificationMessageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="notificationmessage">
+                  </a> <!-- notificationmessage -->
+                  <span class="method-name">notificationmessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.JavaScriptAlertTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="javascriptalert">
+                  </a> <!-- javascriptalert -->
+                  <span class="method-name">javascriptalert</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.LoginSuccessTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginSuccess(tomsmith, SuperSecretPassword!)">
+                  </a> <!-- loginSuccess(tomsmith, SuperSecretPassword!) -->
+                  <span class="method-name">loginSuccess</span>
+                  <span class="parameters">(tomsmith,SuperSecretPassword!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.FloatingMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="floatingmenu">
+                  </a> <!-- floatingmenu -->
+                  <span class="method-name">floatingmenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.FileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileupload">
+                  </a> <!-- fileupload -->
+                  <span class="method-name">fileupload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.JavaScriptErrorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="javascripterrorsolution2">
+                  </a> <!-- javascripterrorsolution2 -->
+                  <span class="method-name">javascripterrorsolution2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.ContextMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contextmenu">
+                  </a> <!-- contextmenu -->
+                  <span class="method-name">contextmenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.MouseHoverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mousehover">
+                  </a> <!-- mousehover -->
+                  <span class="method-name">mousehover</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.OpenNewWindowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="opennewwindow">
+                  </a> <!-- opennewwindow -->
+                  <span class="method-name">opennewwindow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.DropdownTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropdown">
+                  </a> <!-- dropdown -->
+                  <span class="method-name">dropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.DynamicContentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dynamiccontent">
+                  </a> <!-- dynamiccontent -->
+                  <span class="method-name">dynamiccontent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.takehome.testcases.DynamicControlTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dynamiccontrol">
+                  </a> <!-- dynamiccontrol -->
+                  <span class="method-name">dynamiccontrol</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.takehome.dataproviders.TestCaseDataProvider&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.LoginSuccessTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.DropdownTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.LoginFailureTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.OpenNewWindowTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.IFramesTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.NotificationMessageTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.DynamicControlTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.FloatingMenuTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.DynamicloadingTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.DynamicContentTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.DragandDropTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.JavaScriptAlertTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.CheckBoxesTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.FileUploadTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.JavaScriptErrorTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.FileDownloadsTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.ContextMenuTest&quot;/&gt;
+      &lt;class name=&quot;com.takehome.testcases.MouseHoverTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (19 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'dynamiccontrol')
+data.setCell(0, 2, 'com.takehome.testcases.DynamicControlTest')
+data.setCell(0, 3, 13020);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'notificationmessage')
+data.setCell(1, 2, 'com.takehome.testcases.NotificationMessageTest')
+data.setCell(1, 3, 12133);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'dynamicloading')
+data.setCell(2, 2, 'com.takehome.testcases.DynamicloadingTest')
+data.setCell(2, 3, 5292);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'iframes')
+data.setCell(3, 2, 'com.takehome.testcases.IFramesTest')
+data.setCell(3, 3, 2561);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginSuccess')
+data.setCell(4, 2, 'com.takehome.testcases.LoginSuccessTest')
+data.setCell(4, 3, 1870);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginFailure')
+data.setCell(5, 2, 'com.takehome.testcases.LoginFailureTest')
+data.setCell(5, 3, 1203);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'dropdown')
+data.setCell(6, 2, 'com.takehome.testcases.DropdownTest')
+data.setCell(6, 3, 1180);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'opennewwindow')
+data.setCell(7, 2, 'com.takehome.testcases.OpenNewWindowTest')
+data.setCell(7, 3, 1099);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'javascriptalert')
+data.setCell(8, 2, 'com.takehome.testcases.JavaScriptAlertTest')
+data.setCell(8, 3, 898);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'mousehover')
+data.setCell(9, 2, 'com.takehome.testcases.MouseHoverTest')
+data.setCell(9, 3, 682);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'draganddrop')
+data.setCell(10, 2, 'com.takehome.testcases.DragandDropTest')
+data.setCell(10, 3, 576);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'dynamiccontent')
+data.setCell(11, 2, 'com.takehome.testcases.DynamicContentTest')
+data.setCell(11, 3, 484);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'contextmenu')
+data.setCell(12, 2, 'com.takehome.testcases.ContextMenuTest')
+data.setCell(12, 3, 446);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'fileupload')
+data.setCell(13, 2, 'com.takehome.testcases.FileUploadTest')
+data.setCell(13, 3, 433);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'filedownload')
+data.setCell(14, 2, 'com.takehome.testcases.FileDownloadsTest')
+data.setCell(14, 3, 306);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkboxes')
+data.setCell(15, 2, 'com.takehome.testcases.CheckBoxesTest')
+data.setCell(15, 3, 297);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'floatingmenu')
+data.setCell(16, 2, 'com.takehome.testcases.FloatingMenuTest')
+data.setCell(16, 3, 292);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'javascripterrorsolution2')
+data.setCell(17, 2, 'com.takehome.testcases.JavaScriptErrorTest')
+data.setCell(17, 3, 59);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.CheckBoxesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.ContextMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2372 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DragandDropTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4227 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DropdownTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6032 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DynamicContentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7850 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DynamicControlTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9773 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DynamicloadingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11902 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.FileDownloadsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">13728 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">16217 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.FloatingMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">19224 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.IFramesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">22389 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.JavaScriptAlertTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">25511 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.JavaScriptErrorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">28868 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.LoginFailureTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">32075 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.LoginSuccessTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34778 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.MouseHoverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">37633 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.NotificationMessageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">40746 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.OpenNewWindowTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">43629 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.LoginSuccessTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginSuccess(tomsmith, SuperSecretPassword!)</span>
+                <span class="method-start">47435 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DropdownTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dropdown</span>
+                <span class="method-start">49311 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.LoginFailureTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginFailure(test, tes!)</span>
+                <span class="method-start">50492 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.OpenNewWindowTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">opennewwindow</span>
+                <span class="method-start">51696 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.IFramesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">iframes</span>
+                <span class="method-start">52795 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.NotificationMessageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">notificationmessage</span>
+                <span class="method-start">55357 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DynamicControlTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dynamiccontrol</span>
+                <span class="method-start">67492 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.FloatingMenuTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">floatingmenu</span>
+                <span class="method-start">80513 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DynamicloadingTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dynamicloading</span>
+                <span class="method-start">80806 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DynamicContentTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dynamiccontent</span>
+                <span class="method-start">86099 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DragandDropTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">draganddrop</span>
+                <span class="method-start">86584 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.JavaScriptAlertTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">javascriptalert</span>
+                <span class="method-start">87162 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.CheckBoxesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkboxes</span>
+                <span class="method-start">88061 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">fileupload</span>
+                <span class="method-start">88358 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.JavaScriptErrorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">javascripterrorsolution2</span>
+                <span class="method-start">88792 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.FileDownloadsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">filedownload</span>
+                <span class="method-start">88852 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.ContextMenuTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">contextmenu</span>
+                <span class="method-start">89158 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.MouseHoverTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">mousehover</span>
+                <span class="method-start">89605 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.CheckBoxesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">90288 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.ContextMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">90504 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DragandDropTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">95965 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DropdownTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">96198 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DynamicContentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">96319 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DynamicControlTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">96440 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.DynamicloadingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">96610 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.FileDownloadsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">96871 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">97126 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.FloatingMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">97360 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.IFramesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">97577 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.JavaScriptAlertTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">97767 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.JavaScriptErrorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">97934 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.LoginFailureTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">98062 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.LoginSuccessTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">98272 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.MouseHoverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">98512 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.NotificationMessageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">98731 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.takehome.testcases.OpenNewWindowTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">98971 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
