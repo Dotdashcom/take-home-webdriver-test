@@ -1,3 +1,16 @@
+# Solution to Take home test
+## Prerequisites
+   Please follow Webdriver Test steps Docker commands and have docker running.
+
+## How to run test in Unix prompt
+
+    `git clone https://github.com/deepikasolai/take-home-webdriver-test.git`
+
+    `cd take-home-webdriver-test`
+
+    `mvn test`
+
+
 # Webdriver Tests
 ## Prerequisites
   * Docker
