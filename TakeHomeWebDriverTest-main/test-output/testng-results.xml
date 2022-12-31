@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-27T15:41:40 EST" name="Default suite" finished-at="2022-12-27T15:44:35 EST" duration-ms="174976">
+    <groups>
+    </groups>
+    <test started-at="2022-12-27T15:41:40 EST" name="Default test" finished-at="2022-12-27T15:44:35 EST" duration-ms="174976">
+      <class name="takeHomeWebDriverTest.tests.TheInternetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:41:40 EST" name="setup" finished-at="2022-12-27T15:41:53 EST" duration-ms="13410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test1_LoginSuccess()[pri:1, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:41:54 EST" name="test1_LoginSuccess" finished-at="2022-12-27T15:41:56 EST" duration-ms="2989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_LoginSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:41:57 EST" name="tearDown" finished-at="2022-12-27T15:41:57 EST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:41:57 EST" name="setup" finished-at="2022-12-27T15:42:02 EST" duration-ms="5576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test2_LoginFailure()[pri:2, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:02 EST" name="test2_LoginFailure" finished-at="2022-12-27T15:42:05 EST" duration-ms="2788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_LoginFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:05 EST" name="tearDown" finished-at="2022-12-27T15:42:05 EST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:05 EST" name="setup" finished-at="2022-12-27T15:42:11 EST" duration-ms="5425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test3_CheckBoxes()[pri:3, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:11 EST" name="test3_CheckBoxes" finished-at="2022-12-27T15:42:12 EST" duration-ms="1691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3_CheckBoxes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:12 EST" name="tearDown" finished-at="2022-12-27T15:42:12 EST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:12 EST" name="setup" finished-at="2022-12-27T15:42:18 EST" duration-ms="5441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test4_ContextMenu()[pri:4, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:18 EST" name="test4_ContextMenu" finished-at="2022-12-27T15:42:19 EST" duration-ms="1626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4_ContextMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:19 EST" name="tearDown" finished-at="2022-12-27T15:42:20 EST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:20 EST" name="setup" finished-at="2022-12-27T15:42:25 EST" duration-ms="5504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test5_DragAndDrop()[pri:5, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:25 EST" name="test5_DragAndDrop" finished-at="2022-12-27T15:42:27 EST" duration-ms="1554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5_DragAndDrop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:27 EST" name="tearDown" finished-at="2022-12-27T15:42:27 EST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:27 EST" name="setup" finished-at="2022-12-27T15:42:32 EST" duration-ms="5434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test6_Dropdown()[pri:6, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:32 EST" name="test6_Dropdown" finished-at="2022-12-27T15:42:34 EST" duration-ms="1901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6_Dropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:34 EST" name="tearDown" finished-at="2022-12-27T15:42:34 EST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:34 EST" name="setup" finished-at="2022-12-27T15:42:40 EST" duration-ms="5540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test7_DynamicContent()[pri:7, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:40 EST" name="test7_DynamicContent" finished-at="2022-12-27T15:42:44 EST" duration-ms="4514" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The image source after refresh is the same expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The image source after refresh is the same expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at takeHomeWebDriverTest.tests.TheInternetTest.test7_DynamicContent(TheInternetTest.java:203)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7_DynamicContent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:44 EST" name="tearDown" finished-at="2022-12-27T15:42:44 EST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:44 EST" name="setup" finished-at="2022-12-27T15:42:50 EST" duration-ms="5560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test8_DynamicControls()[pri:8, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:42:50 EST" name="test8_DynamicControls" finished-at="2022-12-27T15:43:05 EST" duration-ms="14932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8_DynamicControls -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:05 EST" name="tearDown" finished-at="2022-12-27T15:43:05 EST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:05 EST" name="setup" finished-at="2022-12-27T15:43:11 EST" duration-ms="6032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test9_DynamicLoading()[pri:9, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:11 EST" name="test9_DynamicLoading" finished-at="2022-12-27T15:43:18 EST" duration-ms="6775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_DynamicLoading -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:18 EST" name="tearDown" finished-at="2022-12-27T15:43:18 EST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:18 EST" name="setup" finished-at="2022-12-27T15:43:23 EST" duration-ms="5548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test10_FileDownload()[pri:10, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:23 EST" name="test10_FileDownload" finished-at="2022-12-27T15:43:27 EST" duration-ms="3663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10_FileDownload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:27 EST" name="tearDown" finished-at="2022-12-27T15:43:27 EST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:27 EST" name="setup" finished-at="2022-12-27T15:43:33 EST" duration-ms="5497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test11_FileUpload()[pri:11, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:33 EST" name="test11_FileUpload" finished-at="2022-12-27T15:43:35 EST" duration-ms="2265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11_FileUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:35 EST" name="tearDown" finished-at="2022-12-27T15:43:35 EST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:35 EST" name="setup" finished-at="2022-12-27T15:43:41 EST" duration-ms="5614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test12_FloatingMenu()[pri:12, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:41 EST" name="test12_FloatingMenu" finished-at="2022-12-27T15:43:42 EST" duration-ms="1623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12_FloatingMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:42 EST" name="tearDown" finished-at="2022-12-27T15:43:43 EST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:43 EST" name="setup" finished-at="2022-12-27T15:43:48 EST" duration-ms="5470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test13_Iframe()[pri:13, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:48 EST" name="test13_Iframe" finished-at="2022-12-27T15:43:55 EST" duration-ms="6672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13_Iframe -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:55 EST" name="tearDown" finished-at="2022-12-27T15:43:55 EST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:43:55 EST" name="setup" finished-at="2022-12-27T15:44:00 EST" duration-ms="5544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test14_MouseHover()[pri:14, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:00 EST" name="test14_MouseHover" finished-at="2022-12-27T15:44:02 EST" duration-ms="2088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14_MouseHover -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:02 EST" name="tearDown" finished-at="2022-12-27T15:44:03 EST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:03 EST" name="setup" finished-at="2022-12-27T15:44:08 EST" duration-ms="5490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test15_JavaScriptAlerts()[pri:15, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:08 EST" name="test15_JavaScriptAlerts" finished-at="2022-12-27T15:44:10 EST" duration-ms="2079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15_JavaScriptAlerts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:10 EST" name="tearDown" finished-at="2022-12-27T15:44:10 EST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:10 EST" name="setup" finished-at="2022-12-27T15:44:16 EST" duration-ms="5835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test16_JavaScriptError()[pri:16, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:16 EST" name="test16_JavaScriptError" finished-at="2022-12-27T15:44:16 EST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16_JavaScriptError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:16 EST" name="tearDown" finished-at="2022-12-27T15:44:17 EST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:17 EST" name="setup" finished-at="2022-12-27T15:44:22 EST" duration-ms="5346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test17_OpenInNewTab()[pri:17, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:22 EST" name="test17_OpenInNewTab" finished-at="2022-12-27T15:44:24 EST" duration-ms="1982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test17_OpenInNewTab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:24 EST" name="tearDown" finished-at="2022-12-27T15:44:24 EST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:24 EST" name="setup" finished-at="2022-12-27T15:44:29 EST" duration-ms="5470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test18_NotificationMessage()[pri:18, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:29 EST" name="test18_NotificationMessage" finished-at="2022-12-27T15:44:35 EST" duration-ms="5398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test18_NotificationMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:takeHomeWebDriverTest.tests.TheInternetTest@59505b48]" started-at="2022-12-27T15:44:35 EST" name="tearDown" finished-at="2022-12-27T15:44:35 EST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- takeHomeWebDriverTest.tests.TheInternetTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
