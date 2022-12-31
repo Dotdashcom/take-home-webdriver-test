@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">17</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">174,976</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">takeHomeWebDriverTest.tests.TheInternetTest</td><td><a href="#m0">test7_DynamicContent</a></td><td rowspan="1">1672173760263</td><td rowspan="1">4514</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="17">takeHomeWebDriverTest.tests.TheInternetTest</td><td><a href="#m1">test10_FileDownload</a></td><td rowspan="1">1672173803996</td><td rowspan="1">3663</td></tr><tr class="passedeven"><td><a href="#m2">test11_FileUpload</a></td><td rowspan="1">1672173813295</td><td rowspan="1">2265</td></tr><tr class="passedeven"><td><a href="#m3">test12_FloatingMenu</a></td><td rowspan="1">1672173821298</td><td rowspan="1">1623</td></tr><tr class="passedeven"><td><a href="#m4">test13_Iframe</a></td><td rowspan="1">1672173828510</td><td rowspan="1">6672</td></tr><tr class="passedeven"><td><a href="#m5">test14_MouseHover</a></td><td rowspan="1">1672173840863</td><td rowspan="1">2088</td></tr><tr class="passedeven"><td><a href="#m6">test15_JavaScriptAlerts</a></td><td rowspan="1">1672173848562</td><td rowspan="1">2079</td></tr><tr class="passedeven"><td><a href="#m7">test16_JavaScriptError</a></td><td rowspan="1">1672173856595</td><td rowspan="1">332</td></tr><tr class="passedeven"><td><a href="#m8">test17_OpenInNewTab</a></td><td rowspan="1">1672173862389</td><td rowspan="1">1982</td></tr><tr class="passedeven"><td><a href="#m9">test18_NotificationMessage</a></td><td rowspan="1">1672173869954</td><td rowspan="1">5398</td></tr><tr class="passedeven"><td><a href="#m10">test1_LoginSuccess</a></td><td rowspan="1">1672173714001</td><td rowspan="1">2989</td></tr><tr class="passedeven"><td><a href="#m11">test2_LoginFailure</a></td><td rowspan="1">1672173722703</td><td rowspan="1">2788</td></tr><tr class="passedeven"><td><a href="#m12">test3_CheckBoxes</a></td><td rowspan="1">1672173731053</td><td rowspan="1">1691</td></tr><tr class="passedeven"><td><a href="#m13">test4_ContextMenu</a></td><td rowspan="1">1672173738305</td><td rowspan="1">1626</td></tr><tr class="passedeven"><td><a href="#m14">test5_DragAndDrop</a></td><td rowspan="1">1672173745566</td><td rowspan="1">1554</td></tr><tr class="passedeven"><td><a href="#m15">test6_Dropdown</a></td><td rowspan="1">1672173752679</td><td rowspan="1">1901</td></tr><tr class="passedeven"><td><a href="#m16">test8_DynamicControls</a></td><td rowspan="1">1672173770461</td><td rowspan="1">14932</td></tr><tr class="passedeven"><td><a href="#m17">test9_DynamicLoading</a></td><td rowspan="1">1672173791551</td><td rowspan="1">6775</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">takeHomeWebDriverTest.tests.TheInternetTest#test7_DynamicContent</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The image source after refresh is the same expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at takeHomeWebDriverTest.tests.TheInternetTest.test7_DynamicContent(TheInternetTest.java:203)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">takeHomeWebDriverTest.tests.TheInternetTest#test10_FileDownload</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">takeHomeWebDriverTest.tests.TheInternetTest#test11_FileUpload</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">takeHomeWebDriverTest.tests.TheInternetTest#test12_FloatingMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">takeHomeWebDriverTest.tests.TheInternetTest#test13_Iframe</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">takeHomeWebDriverTest.tests.TheInternetTest#test14_MouseHover</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">takeHomeWebDriverTest.tests.TheInternetTest#test15_JavaScriptAlerts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">takeHomeWebDriverTest.tests.TheInternetTest#test16_JavaScriptError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">takeHomeWebDriverTest.tests.TheInternetTest#test17_OpenInNewTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">takeHomeWebDriverTest.tests.TheInternetTest#test18_NotificationMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">takeHomeWebDriverTest.tests.TheInternetTest#test1_LoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">takeHomeWebDriverTest.tests.TheInternetTest#test2_LoginFailure</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">takeHomeWebDriverTest.tests.TheInternetTest#test3_CheckBoxes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">takeHomeWebDriverTest.tests.TheInternetTest#test4_ContextMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">takeHomeWebDriverTest.tests.TheInternetTest#test5_DragAndDrop</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">takeHomeWebDriverTest.tests.TheInternetTest#test6_Dropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">takeHomeWebDriverTest.tests.TheInternetTest#test8_DynamicControls</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">takeHomeWebDriverTest.tests.TheInternetTest#test9_DynamicLoading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
