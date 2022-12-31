@@ -19,8 +19,6 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
-import java.util.logging.Level;
-import java.util.Set;
 
 import com.webdriver.assignment.util.Constants;
 
@@ -38,7 +36,7 @@ public class Assignment {
 
 	@AfterTest
 	private void afterExcution() {
-		// driver.quit();
+		driver.quit();
 	}
 
 	@Test(priority = 2)
