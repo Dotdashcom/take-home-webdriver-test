@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-31T01:40:16 GMT-08:00" name="Default suite" finished-at="2022-12-31T01:41:05 GMT-08:00" duration-ms="49018">
+    <groups>
+    </groups>
+    <test started-at="2022-12-31T01:40:16 GMT-08:00" name="Default test" finished-at="2022-12-31T01:41:05 GMT-08:00" duration-ms="49018">
+      <class name="com.webdriver.assignment.Assignment">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:16 GMT-08:00" name="setUp" finished-at="2022-12-31T01:40:21 GMT-08:00" duration-ms="5066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginFailureWithInvalidUserName()[pri:0, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:21 GMT-08:00" name="loginFailureWithInvalidUserName" finished-at="2022-12-31T01:40:22 GMT-08:00" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailureWithInvalidUserName -->
+        <test-method signature="loginFailureWithInvalidPassword()[pri:1, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:22 GMT-08:00" name="loginFailureWithInvalidPassword" finished-at="2022-12-31T01:40:22 GMT-08:00" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailureWithInvalidPassword -->
+        <test-method signature="loginSuceess()[pri:2, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:22 GMT-08:00" name="loginSuceess" finished-at="2022-12-31T01:40:23 GMT-08:00" duration-ms="437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuceess -->
+        <test-method signature="checkCheckBoxes()[pri:4, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:23 GMT-08:00" name="checkCheckBoxes" finished-at="2022-12-31T01:40:23 GMT-08:00" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCheckBoxes -->
+        <test-method signature="unCheckCheckBoxes()[pri:5, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:23 GMT-08:00" name="unCheckCheckBoxes" finished-at="2022-12-31T01:40:23 GMT-08:00" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unCheckCheckBoxes -->
+        <test-method signature="contextMenuClick()[pri:6, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:23 GMT-08:00" name="contextMenuClick" finished-at="2022-12-31T01:40:23 GMT-08:00" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextMenuClick -->
+        <test-method signature="contextMenuValidation()[pri:7, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:23 GMT-08:00" name="contextMenuValidation" finished-at="2022-12-31T01:40:24 GMT-08:00" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextMenuValidation -->
+        <test-method signature="dragDrop()[pri:8, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:24 GMT-08:00" name="dragDrop" finished-at="2022-12-31T01:40:35 GMT-08:00" duration-ms="11882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDrop -->
+        <test-method signature="selectFirstOptionFromDropdown()[pri:9, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:36 GMT-08:00" name="selectFirstOptionFromDropdown" finished-at="2022-12-31T01:40:36 GMT-08:00" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectFirstOptionFromDropdown -->
+        <test-method signature="selectSecondOptionFromDropdown()[pri:10, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:36 GMT-08:00" name="selectSecondOptionFromDropdown" finished-at="2022-12-31T01:40:36 GMT-08:00" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSecondOptionFromDropdown -->
+        <test-method signature="refreshPage()[pri:11, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:36 GMT-08:00" name="refreshPage" finished-at="2022-12-31T01:40:38 GMT-08:00" duration-ms="2274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method signature="contentChangesOnPagerefresh()[pri:12, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:38 GMT-08:00" name="contentChangesOnPagerefresh" finished-at="2022-12-31T01:40:59 GMT-08:00" duration-ms="20272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentChangesOnPagerefresh -->
+        <test-method signature="wordDisplayed()[pri:13, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:59 GMT-08:00" name="wordDisplayed" finished-at="2022-12-31T01:40:59 GMT-08:00" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wordDisplayed -->
+        <test-method signature="floatingMenuPageScroll()[pri:14, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:59 GMT-08:00" name="floatingMenuPageScroll" finished-at="2022-12-31T01:40:59 GMT-08:00" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenuPageScroll -->
+        <test-method signature="floatingMenuVisibility()[pri:15, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:59 GMT-08:00" name="floatingMenuVisibility" finished-at="2022-12-31T01:40:59 GMT-08:00" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenuVisibility -->
+        <test-method signature="mouseHoverOnEachImage()[pri:16, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:40:59 GMT-08:00" name="mouseHoverOnEachImage" finished-at="2022-12-31T01:41:02 GMT-08:00" duration-ms="2558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverOnEachImage -->
+        <test-method signature="validateMouseHoverOnEachImageWithAdditionalInfo()[pri:17, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:41:02 GMT-08:00" name="validateMouseHoverOnEachImageWithAdditionalInfo" finished-at="2022-12-31T01:41:04 GMT-08:00" duration-ms="2681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMouseHoverOnEachImageWithAdditionalInfo -->
+        <test-method signature="validateJsAlertButtonClick()[pri:18, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:41:04 GMT-08:00" name="validateJsAlertButtonClick" finished-at="2022-12-31T01:41:05 GMT-08:00" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateJsAlertButtonClick -->
+        <test-method signature="validateJsConfirmButtonClick()[pri:19, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:41:05 GMT-08:00" name="validateJsConfirmButtonClick" finished-at="2022-12-31T01:41:05 GMT-08:00" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateJsConfirmButtonClick -->
+        <test-method signature="validateJsPromptButtonClick()[pri:20, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:41:05 GMT-08:00" name="validateJsPromptButtonClick" finished-at="2022-12-31T01:41:05 GMT-08:00" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateJsPromptButtonClick -->
+        <test-method signature="findJavaScriptError()[pri:21, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:41:05 GMT-08:00" name="findJavaScriptError" finished-at="2022-12-31T01:41:05 GMT-08:00" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findJavaScriptError -->
+        <test-method signature="validatePageContainsError()[pri:22, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:41:05 GMT-08:00" name="validatePageContainsError" finished-at="2022-12-31T01:41:05 GMT-08:00" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePageContainsError -->
+        <test-method is-config="true" signature="afterExcution()[pri:0, instance:com.webdriver.assignment.Assignment@795509d9]" started-at="2022-12-31T01:41:05 GMT-08:00" name="afterExcution" finished-at="2022-12-31T01:41:05 GMT-08:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterExcution -->
+      </class> <!-- com.webdriver.assignment.Assignment -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
