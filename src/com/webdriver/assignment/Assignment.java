@@ -277,7 +277,7 @@ public class Assignment {
 		driver.get("http://localhost:7080/javascript_error");
 		LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
 		for (LogEntry logEntry : logEntries) {
-			System.out.println(logEntry + "Jo");
+			System.out.println(logEntry);
 		}
 	}
 
