@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.io.IOException;
 import java.util.List;
 
 
@@ -17,7 +16,11 @@ public class HomePage
     SeleniumLibrary seleniumLibrary = new SeleniumLibrary();
 
     public HomePage(WebDriver driver)  {
-        PageFactory.initElements(driver, this);
+        try {
+            PageFactory.initElements(driver, this);
+        }catch(Exception e ){
+            e.printStackTrace();
+        }
     }
     public void clickOnLink(String key)
     {

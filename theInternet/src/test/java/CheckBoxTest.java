@@ -1,18 +1,16 @@
-
+import PageObjects.CheckBoxPage;
 import PageObjects.HomePage;
 import library.BrowserFactory;
 import library.Constants;
 import library.Log;
-import org.apache.logging.log4j.Logger;
+import library.PropertiesFileReader;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import PageObjects.CheckBoxPage;
 
 import java.io.IOException;
-
-import static library.BrowserFactory.getBaseURL;
 
 
 public class CheckBoxTest
@@ -23,7 +21,7 @@ public class CheckBoxTest
     @BeforeClass
     public void launchDriver() throws IOException {
        driver = BrowserFactory.launchDriver();
-       driver.get(getBaseURL());
+       driver.get(PropertiesFileReader.getBaseURL());
     }
 
     @Test
@@ -34,9 +32,14 @@ public class CheckBoxTest
         homePage.clickOnLink(Constants.HomePageConstants.CHECKBOX_LINKTEXT);
         CheckBoxPage checkboxpage = new CheckBoxPage(driver);
         checkboxpage.clickCheckBox1();
+        Assert.assertTrue( checkboxpage.validateCheckBox1Selected()) ;
         checkboxpage.clickCheckBox2();
-        checkboxpage.validateCheckBox1Selected() ;
-        checkboxpage.validateCheckBox2Selected();
+        Assert.assertFalse( checkboxpage.validateCheckBox2Selected());
+        checkboxpage.clickCheckBox1();
+        Assert.assertFalse( checkboxpage.validateCheckBox1Selected()) ;
+        checkboxpage.clickCheckBox2();
+        Assert.assertTrue( checkboxpage.validateCheckBox2Selected());
+
     }
 
     @AfterClass

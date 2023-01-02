@@ -28,7 +28,31 @@ public class PropertiesFileReader {
                fis.close();
         }
         return prop;
-
     }
 
+    public static String getBaseURL()  {
+        try {
+            return new PropertiesFileReader().readDataFromPropertiesFiles("baseURL");
+        } catch(Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static String getUsername() {
+        try {
+            return new PropertiesFileReader().readDataFromPropertiesFiles("loginUsername");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public static String getPassword() {
+        try {
+            return new PropertiesFileReader().readDataFromPropertiesFiles("loginPassword");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

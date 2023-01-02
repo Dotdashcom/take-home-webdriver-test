@@ -25,5 +25,27 @@ public class Constants {
         public static final String NOTIFICATION_LINKTEXT = "Notification Messages";
     }
 
+    public static class DropDownConstants
+    {
+        public static final String DROPDOWN_FIRSTINDEX  =  "Option 1";
+        public static final String DROPDOWN_SECONDINDEX  = "Option 2";
+    }
+    public static class DynamicLoadConstants
+    {
+        public static final String DYNAMIC_LOAD_TEXT = "Hello World!";
+    }
+
+    public static class FileUploadConstants{
+        public static final String FILE_UPLOAD_STATUS = "File Uploaded!";
+    }
+
+    public static class JSErrorConstants{
+        public static final String ERROR_MESSAGE = "Cannot read properties of undefined (reading 'xyz')";
+    }
+
+    public static class NotificationMessage{
+        public static final String ACTION_SUCCESSFUL_MESSAGE = "Action successful";
+        public static final String ACTION_UNSUCCESSFUL_MESSAGE = "Action unsuccesful, please try again";
+    }
 }
 

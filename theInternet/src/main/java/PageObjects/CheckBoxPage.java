@@ -30,14 +30,14 @@ public class CheckBoxPage extends SeleniumLibrary
            clickOnElement(checkBox2);
         }
 
-        public void validateCheckBox1Selected()
+        public boolean validateCheckBox1Selected()
         {
-           isElementSelected(checkBox1);
+          return isElementSelected(checkBox1);
         }
 
-        public void validateCheckBox2Selected()
+        public boolean validateCheckBox2Selected()
         {
-          isElementSelected(checkBox2);
+          return isElementSelected(checkBox2);
         }
     }
 
