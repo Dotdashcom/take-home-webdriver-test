@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="take-home-webdriver-Test-Suite">
+
+    <test name="class=set-1">
+        <classes>
+            <class name="com.assesment.tests.ui.tests.CheckBoxesTestIT"></class>
+            <class name="com.assesment.tests.ui.tests.ContextMenuTestIT"></class>
+            <class name="com.assesment.tests.ui.tests.DragAndDropTestIT"></class>
+            <class name="com.assesment.tests.ui.tests.DropdownTestIT"></class>
+            <class name="com.assesment.tests.ui.tests.DynamicContentTestIT"></class>
+            <class name="com.assesment.tests.ui.tests.LoginTestIT"></class>
+            <class name="com.assesment.tests.ui.tests.OpenNewTabTestIT"></class>
+        </classes>
+    </test>
+
+</suite>
