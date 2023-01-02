@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-02T09:29:28 EST" name="take-home-webdriver-Test-Suite" finished-at="2023-01-02T09:30:10 EST" duration-ms="41805">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginTestIT.invalidCredentialCanNotLoginToSecurePage(com.assesment.tests.ui.utilities.CommonTestConstants$AccountCredential)[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" name="invalidCredentialCanNotLoginToSecurePage" class="com.assesment.tests.ui.tests.LoginTestIT"/>
+        <method signature="LoginTestIT.loginToSecurePageWithValidCredential()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" name="loginToSecurePageWithValidCredential" class="com.assesment.tests.ui.tests.LoginTestIT"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="LoginTestIT.loginToSecurePageWithValidCredential()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" name="loginToSecurePageWithValidCredential" class="com.assesment.tests.ui.tests.LoginTestIT"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-01-02T09:29:28 EST" name="class=set-1" finished-at="2023-01-02T09:30:10 EST" duration-ms="41805">
+      <class name="com.assesment.tests.ui.tests.LoginTestIT">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:50 EST" name="setup" finished-at="2023-01-02T09:29:50 EST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCredentialCanNotLoginToSecurePage(com.assesment.tests.ui.utilities.CommonTestConstants$AccountCredential)[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:50 EST" name="invalidCredentialCanNotLoginToSecurePage" data-provider="invalid_username_and_password" finished-at="2023-01-02T09:29:51 EST" duration-ms="402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USERNAME_VALID_PASSWORD_INVALID]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentialCanNotLoginToSecurePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:51 EST" name="tearDown" finished-at="2023-01-02T09:29:51 EST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:51 EST" name="setup" finished-at="2023-01-02T09:29:52 EST" duration-ms="1843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCredentialCanNotLoginToSecurePage(com.assesment.tests.ui.utilities.CommonTestConstants$AccountCredential)[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:52 EST" name="invalidCredentialCanNotLoginToSecurePage" data-provider="invalid_username_and_password" finished-at="2023-01-02T09:29:53 EST" duration-ms="394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USERNAME_INVALID_PASSWORD_VALID]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentialCanNotLoginToSecurePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:53 EST" name="tearDown" finished-at="2023-01-02T09:29:53 EST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:53 EST" name="setup" finished-at="2023-01-02T09:29:55 EST" duration-ms="1867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCredentialCanNotLoginToSecurePage(com.assesment.tests.ui.utilities.CommonTestConstants$AccountCredential)[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:55 EST" name="invalidCredentialCanNotLoginToSecurePage" data-provider="invalid_username_and_password" finished-at="2023-01-02T09:29:55 EST" duration-ms="382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USERNAME_INVALID_PASSWORD_INVALID]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentialCanNotLoginToSecurePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:55 EST" name="tearDown" finished-at="2023-01-02T09:29:55 EST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:55 EST" name="setup" finished-at="2023-01-02T09:29:57 EST" duration-ms="1880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCredentialCanNotLoginToSecurePage(com.assesment.tests.ui.utilities.CommonTestConstants$AccountCredential)[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:57 EST" name="invalidCredentialCanNotLoginToSecurePage" data-provider="invalid_username_and_password" finished-at="2023-01-02T09:29:58 EST" duration-ms="452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USERNAME_AND_PASSWORD_VALID_BUT_USERNAME_UPPERCASE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentialCanNotLoginToSecurePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:58 EST" name="tearDown" finished-at="2023-01-02T09:29:58 EST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:29:58 EST" name="setup" finished-at="2023-01-02T09:30:00 EST" duration-ms="1895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCredentialCanNotLoginToSecurePage(com.assesment.tests.ui.utilities.CommonTestConstants$AccountCredential)[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:00 EST" name="invalidCredentialCanNotLoginToSecurePage" data-provider="invalid_username_and_password" finished-at="2023-01-02T09:30:00 EST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USERNAME_AND_PASSWORD_VALID_BUT_PASSWORD_ALL_ARE_SMALL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentialCanNotLoginToSecurePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:00 EST" name="tearDown" finished-at="2023-01-02T09:30:00 EST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:00 EST" name="setup" finished-at="2023-01-02T09:30:02 EST" duration-ms="1827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCredentialCanNotLoginToSecurePage(com.assesment.tests.ui.utilities.CommonTestConstants$AccountCredential)[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:02 EST" name="invalidCredentialCanNotLoginToSecurePage" data-provider="invalid_username_and_password" finished-at="2023-01-02T09:30:02 EST" duration-ms="400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USERNAME_VALID_PASSWORD_BLANK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentialCanNotLoginToSecurePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:02 EST" name="tearDown" finished-at="2023-01-02T09:30:03 EST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:03 EST" name="setup" finished-at="2023-01-02T09:30:04 EST" duration-ms="1839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCredentialCanNotLoginToSecurePage(com.assesment.tests.ui.utilities.CommonTestConstants$AccountCredential)[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:04 EST" name="invalidCredentialCanNotLoginToSecurePage" data-provider="invalid_username_and_password" finished-at="2023-01-02T09:30:05 EST" duration-ms="451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BLANK_USERNAME_VALID_PASSWORD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentialCanNotLoginToSecurePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:05 EST" name="tearDown" finished-at="2023-01-02T09:30:05 EST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:05 EST" name="setup" finished-at="2023-01-02T09:30:07 EST" duration-ms="1854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginToSecurePageWithValidCredential()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:07 EST" name="loginToSecurePageWithValidCredential" finished-at="2023-01-02T09:30:07 EST" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToSecurePageWithValidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.LoginTestIT@6e6f2380]" started-at="2023-01-02T09:30:07 EST" name="tearDown" finished-at="2023-01-02T09:30:07 EST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assesment.tests.ui.tests.LoginTestIT -->
+      <class name="com.assesment.tests.ui.tests.DragAndDropTestIT">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.DragAndDropTestIT@2a265ea9]" started-at="2023-01-02T09:29:40 EST" name="setup" finished-at="2023-01-02T09:29:42 EST" duration-ms="1987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyColumnACanBeDragedAndDropped()[pri:0, instance:com.assesment.tests.ui.tests.DragAndDropTestIT@2a265ea9]" started-at="2023-01-02T09:29:42 EST" name="verifyColumnACanBeDragedAndDropped" finished-at="2023-01-02T09:29:43 EST" duration-ms="563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyColumnACanBeDragedAndDropped -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.DragAndDropTestIT@2a265ea9]" started-at="2023-01-02T09:29:43 EST" name="tearDown" finished-at="2023-01-02T09:29:43 EST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assesment.tests.ui.tests.DragAndDropTestIT -->
+      <class name="com.assesment.tests.ui.tests.CheckBoxesTestIT">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.CheckBoxesTestIT@72e5a8e]" started-at="2023-01-02T09:29:28 EST" name="setup" finished-at="2023-01-02T09:29:33 EST" duration-ms="4927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyCheckbox1IsClickable()[pri:0, instance:com.assesment.tests.ui.tests.CheckBoxesTestIT@72e5a8e]" started-at="2023-01-02T09:29:33 EST" name="verifyCheckbox1IsClickable" finished-at="2023-01-02T09:29:33 EST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckbox1IsClickable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.CheckBoxesTestIT@72e5a8e]" started-at="2023-01-02T09:29:33 EST" name="tearDown" finished-at="2023-01-02T09:29:33 EST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.CheckBoxesTestIT@72e5a8e]" started-at="2023-01-02T09:29:33 EST" name="setup" finished-at="2023-01-02T09:29:35 EST" duration-ms="1934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyCheckbox2IsClickable()[pri:0, instance:com.assesment.tests.ui.tests.CheckBoxesTestIT@72e5a8e]" started-at="2023-01-02T09:29:35 EST" name="verifyCheckbox2IsClickable" finished-at="2023-01-02T09:29:35 EST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckbox2IsClickable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.CheckBoxesTestIT@72e5a8e]" started-at="2023-01-02T09:29:35 EST" name="tearDown" finished-at="2023-01-02T09:29:35 EST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.CheckBoxesTestIT@72e5a8e]" started-at="2023-01-02T09:29:35 EST" name="setup" finished-at="2023-01-02T09:29:37 EST" duration-ms="1991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyCheckboxCanBeClickedMoreThanOne()[pri:0, instance:com.assesment.tests.ui.tests.CheckBoxesTestIT@72e5a8e]" started-at="2023-01-02T09:29:37 EST" name="verifyCheckboxCanBeClickedMoreThanOne" finished-at="2023-01-02T09:29:38 EST" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckboxCanBeClickedMoreThanOne -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.CheckBoxesTestIT@72e5a8e]" started-at="2023-01-02T09:29:38 EST" name="tearDown" finished-at="2023-01-02T09:29:38 EST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assesment.tests.ui.tests.CheckBoxesTestIT -->
+      <class name="com.assesment.tests.ui.tests.DropdownTestIT">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.DropdownTestIT@11392934]" started-at="2023-01-02T09:29:43 EST" name="setup" finished-at="2023-01-02T09:29:45 EST" duration-ms="1871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectedOptionIsTheVisibleOnThePage()[pri:0, instance:com.assesment.tests.ui.tests.DropdownTestIT@11392934]" started-at="2023-01-02T09:29:45 EST" name="selectedOptionIsTheVisibleOnThePage" finished-at="2023-01-02T09:29:45 EST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectedOptionIsTheVisibleOnThePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.DropdownTestIT@11392934]" started-at="2023-01-02T09:29:45 EST" name="tearDown" finished-at="2023-01-02T09:29:45 EST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.DropdownTestIT@11392934]" started-at="2023-01-02T09:29:45 EST" name="setup" finished-at="2023-01-02T09:29:47 EST" duration-ms="2266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="defaultOptionIsSelectedWhenPageIsOpenned()[pri:1, instance:com.assesment.tests.ui.tests.DropdownTestIT@11392934]" started-at="2023-01-02T09:29:47 EST" name="defaultOptionIsSelectedWhenPageIsOpenned" finished-at="2023-01-02T09:29:48 EST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultOptionIsSelectedWhenPageIsOpenned -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.DropdownTestIT@11392934]" started-at="2023-01-02T09:29:48 EST" name="tearDown" finished-at="2023-01-02T09:29:48 EST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assesment.tests.ui.tests.DropdownTestIT -->
+      <class name="com.assesment.tests.ui.tests.ContextMenuTestIT">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.ContextMenuTestIT@6d4d66d2]" started-at="2023-01-02T09:29:38 EST" name="setup" finished-at="2023-01-02T09:29:40 EST" duration-ms="1903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="runTest()[pri:0, instance:com.assesment.tests.ui.tests.ContextMenuTestIT@6d4d66d2]" started-at="2023-01-02T09:29:40 EST" name="runTest" finished-at="2023-01-02T09:29:40 EST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.ContextMenuTestIT@6d4d66d2]" started-at="2023-01-02T09:29:40 EST" name="tearDown" finished-at="2023-01-02T09:29:40 EST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assesment.tests.ui.tests.ContextMenuTestIT -->
+      <class name="com.assesment.tests.ui.tests.OpenNewTabTestIT">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.OpenNewTabTestIT@76a4ebf2]" started-at="2023-01-02T09:30:07 EST" name="setup" finished-at="2023-01-02T09:30:09 EST" duration-ms="1802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyNewTabCanBeOpened()[pri:0, instance:com.assesment.tests.ui.tests.OpenNewTabTestIT@76a4ebf2]" started-at="2023-01-02T09:30:09 EST" name="verifyNewTabCanBeOpened" finished-at="2023-01-02T09:30:09 EST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewTabCanBeOpened -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assesment.tests.ui.tests.OpenNewTabTestIT@76a4ebf2]" started-at="2023-01-02T09:30:09 EST" name="tearDown" finished-at="2023-01-02T09:30:10 EST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assesment.tests.ui.tests.OpenNewTabTestIT -->
+      <class name="com.assesment.tests.ui.tests.DynamicContentTestIT">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.assesment.tests.ui.tests.DynamicContentTestIT@6892b3b6]" started-at="2023-01-02T09:29:48 EST" name="setup" finished-at="2023-01-02T09:29:50 EST" duration-ms="1864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyColumnACanBeDragedAndDropped()[pri:0, instance:com.assesment.tests.ui.tests.DynamicContentTestIT@6892b3b6]" started-at="2023-01-02T09:29:50 EST" name="verifyColumnACanBeDragedAndDropped" finished-at="2023-01-02T09:29:50 EST" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyColumnACanBeDragedAndDropped -->
+      </class> <!-- com.assesment.tests.ui.tests.DynamicContentTestIT -->
+    </test> <!-- class=set-1 -->
+  </suite> <!-- take-home-webdriver-Test-Suite -->
+</testng-results>
