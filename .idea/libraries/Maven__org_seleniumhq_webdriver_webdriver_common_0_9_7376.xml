@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.seleniumhq.webdriver:webdriver-common:0.9.7376">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/webdriver/webdriver-common/0.9.7376/webdriver-common-0.9.7376.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/webdriver/webdriver-common/0.9.7376/webdriver-common-0.9.7376-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/webdriver/webdriver-common/0.9.7376/webdriver-common-0.9.7376-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="InternetPrj">
+    <test name = "Regression">
+        <classes>
+            <class name = "AuthenticationTest"> </class>
+            <class name = "CheckBoxTest"> </class>
+            <class name = "ContextTest"> </class>
+            <class name = "DragAndDropTest"> </class>
+            <class name = "DropDownTest"> </class>
+            <class name = "DynamicContentTest"> </class>
+            <class name = "DynamicControlTest"> </class>
+            <class name = "DynamicLoadingTest"> </class>
+            <class name = "FileDownloadTest"> </class>
+            <class name = "FileUploadTest"> </class>
+            <class name = "FloatingMenuTest"> </class>
+            <class name = "iFrameTest"> </class>
+            <class name = "JSAlertTest"> </class>
+            <class name = "JSErrorTest"> </class>
+            <class name = "MouseHoverTest"> </class>
+            <class name = "NewWindowTest"> </class>
+            <class name = "NotificationMessageTest"> </class>
+        </classes>
+    </test>
+</suite>
