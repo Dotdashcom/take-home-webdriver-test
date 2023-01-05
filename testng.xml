@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  
+  
+<parameter name="checkboxEndPoint" value="checkboxes"/>  
+<parameter name="contextMenuEndPoint" value="context_menu"/>
+<parameter name="dragAndDrop" value="drag_and_drop"/>
+<parameter name="dropdown" value="dropdown"/>
+<parameter name="dynamicContent" value="dynamic_content"/>
+<parameter name="dynamicControl" value="dynamic_controls"/>
+<parameter name="dynamicLoading" value="dynamic_loading/2"/>
+<parameter name="download" value="download"/>
+<parameter name="upload" value="upload"/>
+<parameter name="floatingMenu" value="floating_menu"/>
+<parameter name="iframe" value="iframe"/>
+<parameter name="mousehovers" value="hovers"/>
+<parameter name="javaScriptAlerts" value="javascript_alerts"/>  
+<parameter name="javaScriptError" value="javascript_error"/>  
+<parameter name="windows" value="windows"/> 
+<parameter name="notification" value="notification_message_rendered"/> 
+
+
+    <classes>
+      <class name="testcases.DynamicLoadingTestcase"/>
+      <class name="testcases.DragAndDroptestcases"/>
+      <class name="testcases.FileUploadTestcase"/>
+      <class name="testcases.ContextMenuTestcase"/>
+      <class name="testcases.DropdownTestcase"/>
+      <class name="testcases.DynamicContentTestcase"/>
+      <class name="testcases.CheckBoxTestcase"/>
+      <class name="testcases.DynamicControlTestcase"/>
+      <class name="testcases.LoginFailureTestcases"/>
+      <class name="testcases.FileDownloadTestcase"/>
+      <class name="testcases.JavaScriptAlertsTestcase"/>
+      <class name="testcases.NewWindowsTestcase"/>
+      <class name="java.Pages.JavaScriptErrorPage"/>
+      <class name="testcases.NotificationMessageTestcase"/>
+      <class name="testcases.JavaScriptErrorTestcase"/>
+      <class name="testcases.LoginSuccesfullTestcase"/>
+      <class name="testcases.FloatingMenuTestcase"/>
+      <class name="testcases.MouseHoversTestcase"/>
+      <class name="testcases.IframeTestcase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
