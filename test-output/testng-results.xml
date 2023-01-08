@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="12" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-07T18:05:14 CST" name="Default suite" finished-at="2023-01-07T18:06:16 CST" duration-ms="61816">
+    <groups>
+    </groups>
+    <test started-at="2023-01-07T18:05:14 CST" name="Default test" finished-at="2023-01-07T18:06:16 CST" duration-ms="61816">
+      <class name="com.theInternet.qa.tests.InternetAppTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:14 CST" name="setup" finished-at="2023-01-07T18:05:16 CST" duration-ms="1844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Login_ValidCredentials()[pri:1, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:16 CST" name="Test_Login_ValidCredentials" finished-at="2023-01-07T18:05:16 CST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Login_ValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:16 CST" name="tearDown" finished-at="2023-01-07T18:05:16 CST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:16 CST" name="setup" finished-at="2023-01-07T18:05:17 CST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Login_InValidCredentials()[pri:2, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:17 CST" name="Test_Login_InValidCredentials" finished-at="2023-01-07T18:05:18 CST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Login_InValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:18 CST" name="tearDown" finished-at="2023-01-07T18:05:18 CST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:18 CST" name="setup" finished-at="2023-01-07T18:05:18 CST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_CheckBoxes()[pri:3, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:18 CST" name="Test_CheckBoxes" finished-at="2023-01-07T18:05:21 CST" duration-ms="2181" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[check and uncheck working properly expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: check and uncheck working properly expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at com.theInternet.qa.pages.CheckBoxesPage.verifyCheckboxesSelection(CheckBoxesPage.java:30)
+at com.theInternet.qa.tests.InternetAppTests.Test_CheckBoxes(InternetAppTests.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CheckBoxes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:21 CST" name="tearDown" finished-at="2023-01-07T18:05:21 CST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:21 CST" name="setup" finished-at="2023-01-07T18:05:21 CST" duration-ms="668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_ContextMenu()[pri:4, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:21 CST" name="Test_ContextMenu" finished-at="2023-01-07T18:05:22 CST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_ContextMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:22 CST" name="tearDown" finished-at="2023-01-07T18:05:22 CST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:22 CST" name="setup" finished-at="2023-01-07T18:05:22 CST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_dragAndDrop()[pri:5, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:22 CST" name="Test_dragAndDrop" finished-at="2023-01-07T18:05:39 CST" duration-ms="16985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_dragAndDrop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:39 CST" name="tearDown" finished-at="2023-01-07T18:05:40 CST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:40 CST" name="setup" finished-at="2023-01-07T18:05:40 CST" duration-ms="689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_dropdown()[pri:6, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:40 CST" name="Test_dropdown" finished-at="2023-01-07T18:05:41 CST" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_dropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:41 CST" name="tearDown" finished-at="2023-01-07T18:05:41 CST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:41 CST" name="setup" finished-at="2023-01-07T18:05:41 CST" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_DynamicContent()[pri:7, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:41 CST" name="Test_DynamicContent" finished-at="2023-01-07T18:05:42 CST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_DynamicContent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:42 CST" name="tearDown" finished-at="2023-01-07T18:05:42 CST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:42 CST" name="setup" finished-at="2023-01-07T18:05:42 CST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_DynamicControls()[pri:8, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:42 CST" name="Test_DynamicControls" finished-at="2023-01-07T18:05:55 CST" duration-ms="12516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_DynamicControls -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:55 CST" name="tearDown" finished-at="2023-01-07T18:05:55 CST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:55 CST" name="setup" finished-at="2023-01-07T18:05:56 CST" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Dynamic_Loading()[pri:9, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:05:56 CST" name="Test_Dynamic_Loading" finished-at="2023-01-07T18:06:01 CST" duration-ms="5231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Dynamic_Loading -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:01 CST" name="tearDown" finished-at="2023-01-07T18:06:01 CST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:01 CST" name="setup" finished-at="2023-01-07T18:06:02 CST" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_File_Download()[pri:10, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:02 CST" name="Test_File_Download" finished-at="2023-01-07T18:06:02 CST" duration-ms="165" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to download Expected document expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to download Expected document expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at com.theInternet.qa.pages.FileDownloadPage.VerifyFile_Download(FileDownloadPage.java:47)
+at com.theInternet.qa.tests.InternetAppTests.Test_File_Download(InternetAppTests.java:108)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_File_Download -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:02 CST" name="tearDown" finished-at="2023-01-07T18:06:02 CST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:02 CST" name="setup" finished-at="2023-01-07T18:06:03 CST" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_File_Upload()[pri:11, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:03 CST" name="Test_File_Upload" finished-at="2023-01-07T18:06:03 CST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_File_Upload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:03 CST" name="tearDown" finished-at="2023-01-07T18:06:03 CST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:03 CST" name="setup" finished-at="2023-01-07T18:06:04 CST" duration-ms="674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Floating_Menu()[pri:12, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:04 CST" name="Test_Floating_Menu" finished-at="2023-01-07T18:06:04 CST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Floating_Menu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:04 CST" name="tearDown" finished-at="2023-01-07T18:06:04 CST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:04 CST" name="setup" finished-at="2023-01-07T18:06:05 CST" duration-ms="677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_IFrame()[pri:13, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:05 CST" name="Test_IFrame" finished-at="2023-01-07T18:06:06 CST" duration-ms="786" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sending text to text frame] but found [Your content goes here.Sending text to text frame]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sending text to text frame] but found [Your content goes here.Sending text to text frame]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.theInternet.qa.pages.IFramePage.VerifyIframeText(IFramePage.java:29)
+at com.theInternet.qa.tests.InternetAppTests.Test_IFrame(InternetAppTests.java:129)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_IFrame -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:06 CST" name="tearDown" finished-at="2023-01-07T18:06:06 CST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:06 CST" name="setup" finished-at="2023-01-07T18:06:06 CST" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestMouseHovers()[pri:14, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:06 CST" name="TestMouseHovers" finished-at="2023-01-07T18:06:07 CST" duration-ms="430" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[additional info not displayed on this hover. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: additional info not displayed on this hover. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at com.theInternet.qa.pages.MouseHoversPage.VerifyMousehoverText(MouseHoversPage.java:36)
+at com.theInternet.qa.tests.InternetAppTests.TestMouseHovers(InternetAppTests.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMouseHovers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:07 CST" name="tearDown" finished-at="2023-01-07T18:06:07 CST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:07 CST" name="setup" finished-at="2023-01-07T18:06:08 CST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestJSAlertMsg()[pri:15, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:08 CST" name="TestJSAlertMsg" finished-at="2023-01-07T18:06:08 CST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestJSAlertMsg -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:08 CST" name="tearDown" finished-at="2023-01-07T18:06:08 CST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:08 CST" name="setup" finished-at="2023-01-07T18:06:09 CST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestJSError()[pri:16, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:09 CST" name="TestJSError" finished-at="2023-01-07T18:06:09 CST" duration-ms="52" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.theInternet.qa.pages.JSErrorPage.VerifyJSErrormessage(JSErrorPage.java:25)
+at com.theInternet.qa.tests.InternetAppTests.TestJSError(InternetAppTests.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestJSError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:09 CST" name="tearDown" finished-at="2023-01-07T18:06:09 CST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:09 CST" name="setup" finished-at="2023-01-07T18:06:10 CST" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestNewTab()[pri:17, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:10 CST" name="TestNewTab" finished-at="2023-01-07T18:06:10 CST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNewTab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:10 CST" name="tearDown" finished-at="2023-01-07T18:06:10 CST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:10 CST" name="setup" finished-at="2023-01-07T18:06:11 CST" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestNotificationMessage()[pri:18, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:11 CST" name="TestNotificationMessage" finished-at="2023-01-07T18:06:16 CST" duration-ms="5127" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='flash']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ecbc59788a6a0f62b29839d7134d952, findElement {using=xpath, value=//div[@id='flash']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\palet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61385/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ecbc59788a6a0f62b29839d7134d952]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='flash']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ecbc59788a6a0f62b29839d7134d952, findElement {using=xpath, value=//div[@id='flash']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\palet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61385/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ecbc59788a6a0f62b29839d7134d952
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy30.getText(Unknown Source)
+at com.theInternet.qa.pages.NotificationMessagePage.VerifyNotificationMessagePage(NotificationMessagePage.java:26)
+at com.theInternet.qa.tests.InternetAppTests.TestNotificationMessage(InternetAppTests.java:164)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNotificationMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.theInternet.qa.tests.InternetAppTests@48f278eb]" started-at="2023-01-07T18:06:16 CST" name="tearDown" finished-at="2023-01-07T18:06:16 CST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.theInternet.qa.tests.InternetAppTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
