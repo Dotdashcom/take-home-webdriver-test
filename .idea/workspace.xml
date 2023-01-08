@@ -4,54 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="796e0c15-181c-4c2d-b391-4fd7091d229a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/CheckboxesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/ContextMenuPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/DragAndDropPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/DropdownPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/DynamicContentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/DynamicControlsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/DynamicLoadingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/FileDownloadPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/FileUploadPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/FloatingMenuPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/IframePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/JavascriptAlertPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/JavascriptErrorPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/MouseHoverPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/NotificationMessagePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/OpenNewTabPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/SecureAreaPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/StaticContentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/base/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/base/DynamicStaticContentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/BaseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/BaseUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/ReportUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CheckBoxesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ContextMenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DragAndDropTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DropdownTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DynamicContentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DynamicControlsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DynamicLoadingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FileDownloadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FileUploadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FloatingMenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/IframeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/JavascriptAlertTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/JavascriptErrorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginPageFailureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginPageSuccessTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/MouseHoverTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/NotificationMessageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/OpenNewTabTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/StaticContentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/config.properties" afterDir="false" />
+    <list default="true" id="796e0c15-181c-4c2d-b391-4fd7091d229a" name="Changes" comment="SergeDot &gt; TheInternet &gt; UserStory &gt; TestSuite &gt; TestCases (Bug Report available upon request)&#10;- added tests for the provided test cases&#10;- added tests for additional test cases (test cases available upon request)&#10;- 104 tests to pass, 6 tests to fail (bug report available upon request)&#10;- potentially 100 more tests in pipeline with more bugs discovered (please confirm if you would like me to continue)&#10;&#10;OVERVIEW&#10;-&#9;Versatile, goal oriented hard-working QA Analyst with 5+ years of experience as a System Integration Analyst and Quality Assurance with automation and manual testing for web applications&#10;-&#9;Strong experience in requirements matrix, project planning, scheduling, testing, defect tracking and reporting, creating from scratch and executing automated tests for web application testing &#10;-&#9;Working well under pressure and easily adaptive to any working environment. Able to compete for deadlines and prioritize tasks&#10;-&#9;Strong analytical thinking, problem-solving, communication, and time-management skills&#10;-&#9;Great team and independent work skills&#10;-&#9;Quick learner open to new techniques, methodologies, practices&#10;-&#9;Achieved positive growing results both individually and within teams, with successful experience in training, coaching and leading the teammates">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/base/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +78,21 @@
       <option name="presentableId" value="Default" />
       <updated>1673137017348</updated>
     </task>
+    <task id="LOCAL-00001" summary="SergeDot &gt; TheInternet &gt; UserStory &gt; TestSuite &gt; TestCases (Bug Report available upon request)&#10;- added tests for the provided test cases&#10;- added tests for additional test cases (test cases available upon request)&#10;- 104 tests to pass, 6 tests to fail (bug report available upon request)&#10;- potentially 100 more tests in pipeline with more bugs discovered (please confirm if you would like me to continue)&#10;&#10;OVERVIEW&#10;-&#9;Versatile, goal oriented hard-working QA Analyst with 5+ years of experience as a System Integration Analyst and Quality Assurance with automation and manual testing for web applications&#10;-&#9;Strong experience in requirements matrix, project planning, scheduling, testing, defect tracking and reporting, creating from scratch and executing automated tests for web application testing &#10;-&#9;Working well under pressure and easily adaptive to any working environment. Able to compete for deadlines and prioritize tasks&#10;-&#9;Strong analytical thinking, problem-solving, communication, and time-management skills&#10;-&#9;Great team and independent work skills&#10;-&#9;Quick learner open to new techniques, methodologies, practices&#10;-&#9;Achieved positive growing results both individually and within teams, with successful experience in training, coaching and leading the teammates">
+      <created>1673137592532</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673137592532</updated>
+    </task>
+    <task id="LOCAL-00002" summary="SergeDot &gt; TheInternet &gt; UserStory &gt; TestSuite &gt; TestCases (Bug Report available upon request)&#10;- added tests for the provided test cases&#10;- added tests for additional test cases (test cases available upon request)&#10;- 104 tests to pass, 6 tests to fail (bug report available upon request)&#10;- potentially 100 more tests in pipeline with more bugs discovered (please confirm if you would like me to continue)&#10;&#10;OVERVIEW&#10;-&#9;Versatile, goal oriented hard-working QA Analyst with 5+ years of experience as a System Integration Analyst and Quality Assurance with automation and manual testing for web applications&#10;-&#9;Strong experience in requirements matrix, project planning, scheduling, testing, defect tracking and reporting, creating from scratch and executing automated tests for web application testing &#10;-&#9;Working well under pressure and easily adaptive to any working environment. Able to compete for deadlines and prioritize tasks&#10;-&#9;Strong analytical thinking, problem-solving, communication, and time-management skills&#10;-&#9;Great team and independent work skills&#10;-&#9;Quick learner open to new techniques, methodologies, practices&#10;-&#9;Achieved positive growing results both individually and within teams, with successful experience in training, coaching and leading the teammates">
+      <created>1673137615762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673137615762</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,5 +105,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SergeDot &gt; TheInternet &gt; UserStory &gt; TestSuite &gt; TestCases (Bug Report available upon request)&#10;- added tests for the provided test cases&#10;- added tests for additional test cases (test cases available upon request)&#10;- 104 tests to pass, 6 tests to fail (bug report available upon request)&#10;- potentially 100 more tests in pipeline with more bugs discovered (please confirm if you would like me to continue)&#10;&#10;OVERVIEW&#10;-&#9;Versatile, goal oriented hard-working QA Analyst with 5+ years of experience as a System Integration Analyst and Quality Assurance with automation and manual testing for web applications&#10;-&#9;Strong experience in requirements matrix, project planning, scheduling, testing, defect tracking and reporting, creating from scratch and executing automated tests for web application testing &#10;-&#9;Working well under pressure and easily adaptive to any working environment. Able to compete for deadlines and prioritize tasks&#10;-&#9;Strong analytical thinking, problem-solving, communication, and time-management skills&#10;-&#9;Great team and independent work skills&#10;-&#9;Quick learner open to new techniques, methodologies, practices&#10;-&#9;Achieved positive growing results both individually and within teams, with successful experience in training, coaching and leading the teammates" />
+    <option name="LAST_COMMIT_MESSAGE" value="SergeDot &gt; TheInternet &gt; UserStory &gt; TestSuite &gt; TestCases (Bug Report available upon request)&#10;- added tests for the provided test cases&#10;- added tests for additional test cases (test cases available upon request)&#10;- 104 tests to pass, 6 tests to fail (bug report available upon request)&#10;- potentially 100 more tests in pipeline with more bugs discovered (please confirm if you would like me to continue)&#10;&#10;OVERVIEW&#10;-&#9;Versatile, goal oriented hard-working QA Analyst with 5+ years of experience as a System Integration Analyst and Quality Assurance with automation and manual testing for web applications&#10;-&#9;Strong experience in requirements matrix, project planning, scheduling, testing, defect tracking and reporting, creating from scratch and executing automated tests for web application testing &#10;-&#9;Working well under pressure and easily adaptive to any working environment. Able to compete for deadlines and prioritize tasks&#10;-&#9;Strong analytical thinking, problem-solving, communication, and time-management skills&#10;-&#9;Great team and independent work skills&#10;-&#9;Quick learner open to new techniques, methodologies, practices&#10;-&#9;Achieved positive growing results both individually and within teams, with successful experience in training, coaching and leading the teammates" />
   </component>
 </project>

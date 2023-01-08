@@ -47,13 +47,13 @@ public abstract class BasePage extends BaseModel {
                 .toString().toLowerCase();
         String defaultDownloadLocation;
 
-        switch (platform) {
-            case "windows" -> defaultDownloadLocation = System.getProperty("user.home") + "\\Downloads\\";
-            case "mac", "linux" -> defaultDownloadLocation = System.getProperty("user.home") + "/Downloads/";
-            default -> {
-                BaseUtils.log("Unknown system detected. Attempting default location...");
-                defaultDownloadLocation = System.getProperty("user.home") + "\\Downloads\\";
-            }
+        if (platform.contains("win")) {
+            defaultDownloadLocation = System.getProperty("user.home") + "\\Downloads\\";
+        } else if (platform.contains("mac") || platform.contains("nix") || platform.contains("nux") || platform.contains("aix")) {
+            defaultDownloadLocation = System.getProperty("user.home") + "/Downloads/";
+        } else {
+            BaseUtils.log("Unknown system detected. Attempting default location...");
+            defaultDownloadLocation = System.getProperty("user.home") + "\\Downloads\\";
         }
 
         return defaultDownloadLocation;
@@ -63,11 +63,14 @@ public abstract class BasePage extends BaseModel {
                 .getCapabilities()
                 .getPlatformName()
                 .toString().toLowerCase();
-        Keys controlKey = switch (platform) {
-            case "windows", "linux" -> Keys.CONTROL;
-            case "mac" -> Keys.COMMAND;
-            default -> Keys.CONTROL;
-        };
+        Keys controlKey;
+        if (platform.contains("win") || platform.contains("nix") || platform.contains("nux") || platform.contains("aix")) {
+            controlKey = Keys.CONTROL;
+        } else if (platform.contains("mac")) {
+            controlKey = Keys.COMMAND;
+        } else {
+            controlKey = Keys.CONTROL;
+        }
 
         return controlKey;
     }
