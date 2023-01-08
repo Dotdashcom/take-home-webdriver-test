@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="796e0c15-181c-4c2d-b391-4fd7091d229a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/CheckboxesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/ContextMenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/DragAndDropPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/DropdownPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/DynamicContentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/DynamicControlsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/DynamicLoadingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/FileDownloadPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/FileUploadPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/FloatingMenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/IframePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/JavascriptAlertPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/JavascriptErrorPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/MouseHoverPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/NotificationMessagePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/OpenNewTabPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/SecureAreaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/StaticContentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/base/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/base/DynamicStaticContentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/BaseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/BaseUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/ReportUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CheckBoxesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ContextMenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DragAndDropTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DropdownTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DynamicContentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DynamicControlsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DynamicLoadingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FileDownloadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FileUploadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FloatingMenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/IframeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/JavascriptAlertTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/JavascriptErrorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginPageFailureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginPageSuccessTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/MouseHoverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/NotificationMessageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/OpenNewTabTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/StaticContentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/config.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2K1LCiWTAaTyOAch8PLuJfuMB3g" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/take-home-webdriver-test1&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\take-home-webdriver-test1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="796e0c15-181c-4c2d-b391-4fd7091d229a" name="Changes" comment="" />
+      <created>1673137017348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673137017348</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
