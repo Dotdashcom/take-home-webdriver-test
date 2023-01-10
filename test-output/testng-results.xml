@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="16" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-06T13:26:30 EST" name="Default suite" finished-at="2023-01-06T13:34:41 EST" duration-ms="490975">
+    <groups>
+    </groups>
+    <test started-at="2023-01-06T13:26:30 EST" name="Default test" finished-at="2023-01-06T13:34:41 EST" duration-ms="490975">
+      <class name="Dotdashcom.take_home_webdriver.test.TestCasesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:26:30 EST" name="setUp" finished-at="2023-01-06T13:26:57 EST" duration-ms="26873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkbox1statusTest()[pri:1, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:26:57 EST" name="checkbox1statusTest" finished-at="2023-01-06T13:27:00 EST" duration-ms="3176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox1statusTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:27:00 EST" name="tearDown" finished-at="2023-01-06T13:28:01 EST" duration-ms="61074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:28:01 EST" name="setUp" finished-at="2023-01-06T13:28:16 EST" duration-ms="14703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="contextmenuTest()[pri:2, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:28:16 EST" name="contextmenuTest" finished-at="2023-01-06T13:28:20 EST" duration-ms="3935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextmenuTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:28:20 EST" name="tearDown" finished-at="2023-01-06T13:29:21 EST" duration-ms="61176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:29:21 EST" name="setUp" finished-at="2023-01-06T13:29:36 EST" duration-ms="15220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="draganddropTest()[pri:3, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:29:36 EST" name="draganddropTest" finished-at="2023-01-06T13:30:00 EST" duration-ms="23742" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at Dotdashcom.take_home_webdriver.test.TestCasesTest.draganddropTest(TestCasesTest.java:105)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- draganddropTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:30:00 EST" name="tearDown" finished-at="2023-01-06T13:30:58 EST" duration-ms="57759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:30:58 EST" name="setUp" finished-at="2023-01-06T13:31:04 EST" duration-ms="6348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DropDownOption1Test()[pri:4, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:31:04 EST" name="DropDownOption1Test" finished-at="2023-01-06T13:31:07 EST" duration-ms="2271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDownOption1Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:31:07 EST" name="tearDown" finished-at="2023-01-06T13:31:08 EST" duration-ms="1449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:31:08 EST" name="setUp" finished-at="2023-01-06T13:31:15 EST" duration-ms="7080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DropDownOption2Test()[pri:5, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:31:15 EST" name="DropDownOption2Test" finished-at="2023-01-06T13:31:16 EST" duration-ms="796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDownOption2Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:31:16 EST" name="tearDown" finished-at="2023-01-06T13:31:29 EST" duration-ms="13254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:31:29 EST" name="setUp" finished-at="2023-01-06T13:31:36 EST" duration-ms="7013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DyamicContent()[pri:6, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:31:36 EST" name="DyamicContent" finished-at="2023-01-06T13:31:38 EST" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DyamicContent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:31:38 EST" name="tearDown" finished-at="2023-01-06T13:31:55 EST" duration-ms="17007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:31:55 EST" name="setUp" finished-at="2023-01-06T13:32:02 EST" duration-ms="7607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DyamicControls()[pri:7, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:32:02 EST" name="DyamicControls" finished-at="2023-01-06T13:32:15 EST" duration-ms="13111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DyamicControls -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:32:15 EST" name="tearDown" finished-at="2023-01-06T13:32:37 EST" duration-ms="21826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:32:37 EST" name="setUp" finished-at="2023-01-06T13:32:43 EST" duration-ms="5530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DynamicLoading()[pri:8, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:32:43 EST" name="DynamicLoading" finished-at="2023-01-06T13:32:43 EST" duration-ms="660" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Hello World!] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Hello World!] but found []
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at Dotdashcom.take_home_webdriver.test.TestCasesTest.DynamicLoading(TestCasesTest.java:161)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicLoading -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:32:43 EST" name="tearDown" finished-at="2023-01-06T13:33:10 EST" duration-ms="26398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:10 EST" name="setUp" finished-at="2023-01-06T13:33:15 EST" duration-ms="5185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FileDownload()[pri:9, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:15 EST" name="FileDownload" finished-at="2023-01-06T13:33:16 EST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileDownload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:16 EST" name="tearDown" finished-at="2023-01-06T13:33:16 EST" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:16 EST" name="setUp" finished-at="2023-01-06T13:33:21 EST" duration-ms="4846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FileUpload()[pri:10, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:21 EST" name="FileUpload" finished-at="2023-01-06T13:33:22 EST" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:22 EST" name="tearDown" finished-at="2023-01-06T13:33:25 EST" duration-ms="2883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:25 EST" name="setUp" finished-at="2023-01-06T13:33:33 EST" duration-ms="7708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FloatingMenu()[pri:10, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:33 EST" name="FloatingMenu" finished-at="2023-01-06T13:33:34 EST" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FloatingMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:34 EST" name="tearDown" finished-at="2023-01-06T13:33:35 EST" duration-ms="810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:35 EST" name="setUp" finished-at="2023-01-06T13:33:39 EST" duration-ms="3936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="IFrame()[pri:10, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:39 EST" name="IFrame" finished-at="2023-01-06T13:33:41 EST" duration-ms="2092" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[invalid element state
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52422}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86d2b447c70ebd1432f7727c1c206dd5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52422}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86d2b447c70ebd1432f7727c1c206dd5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.clear(Unknown Source)
+at Dotdashcom.takehomewebdrivertest.pages.IFrame.sendAndGetText(IFrame.java:43)
+at Dotdashcom.take_home_webdriver.test.TestCasesTest.IFrame(TestCasesTest.java:196)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IFrame -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:41 EST" name="tearDown" finished-at="2023-01-06T13:33:42 EST" duration-ms="1020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:42 EST" name="setUp" finished-at="2023-01-06T13:33:47 EST" duration-ms="4958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="MouseHover()[pri:11, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:47 EST" name="MouseHover" finished-at="2023-01-06T13:33:54 EST" duration-ms="6775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseHover -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:33:54 EST" name="tearDown" finished-at="2023-01-06T13:34:06 EST" duration-ms="12154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:06 EST" name="setUp" finished-at="2023-01-06T13:34:11 EST" duration-ms="5288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="JavaScriptsAlert()[pri:12, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:11 EST" name="JavaScriptsAlert" finished-at="2023-01-06T13:34:12 EST" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptsAlert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:12 EST" name="tearDown" finished-at="2023-01-06T13:34:12 EST" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:12 EST" name="setUp" finished-at="2023-01-06T13:34:16 EST" duration-ms="3903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="JavaScriptsConfirmTest()[pri:13, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:16 EST" name="JavaScriptsConfirmTest" finished-at="2023-01-06T13:34:17 EST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptsConfirmTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:17 EST" name="tearDown" finished-at="2023-01-06T13:34:17 EST" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:17 EST" name="setUp" finished-at="2023-01-06T13:34:21 EST" duration-ms="4145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="JavaScriptsConfirmMsg()[pri:14, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:21 EST" name="JavaScriptsConfirmMsg" finished-at="2023-01-06T13:34:22 EST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptsConfirmMsg -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:22 EST" name="tearDown" finished-at="2023-01-06T13:34:23 EST" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:23 EST" name="setUp" finished-at="2023-01-06T13:34:26 EST" duration-ms="3810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="JavaScriptsError()[pri:15, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:26 EST" name="JavaScriptsError" finished-at="2023-01-06T13:34:27 EST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:27 EST" name="tearDown" finished-at="2023-01-06T13:34:28 EST" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:28 EST" name="setUp" finished-at="2023-01-06T13:34:32 EST" duration-ms="4101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="NewTab()[pri:16, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:32 EST" name="NewTab" finished-at="2023-01-06T13:34:32 EST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewTab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:32 EST" name="tearDown" finished-at="2023-01-06T13:34:33 EST" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:33 EST" name="setUp" finished-at="2023-01-06T13:34:37 EST" duration-ms="4090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="NotificationMessage()[pri:17, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:37 EST" name="NotificationMessage" finished-at="2023-01-06T13:34:40 EST" duration-ms="2992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Dotdashcom.take_home_webdriver.test.TestCasesTest@50ad3bc1]" started-at="2023-01-06T13:34:40 EST" name="tearDown" finished-at="2023-01-06T13:34:41 EST" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Dotdashcom.take_home_webdriver.test.TestCasesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
