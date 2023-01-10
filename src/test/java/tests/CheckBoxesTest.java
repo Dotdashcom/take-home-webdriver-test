@@ -9,12 +9,9 @@ public class CheckBoxesTest  extends BaseTest {
 
     @Test
     public void testSelectCheckboxOne() {
-        CheckboxesPage checkboxesPage = new CheckboxesPage(getDriver()).getCheckboxesPage();
-        if(checkboxesPage.isCheckboxOneSelected()) {
-            checkboxesPage.clickCheckboxOne();
-        }
-        boolean checkboxOneIsSelected =  checkboxesPage
-                .clickCheckboxOne()
+        boolean checkboxOneIsSelected =  new CheckboxesPage(getDriver())
+                .getCheckboxesPage()
+                .selectCheckboxOne()
                 .isCheckboxOneSelected();
 
         Assert.assertTrue(checkboxOneIsSelected);
@@ -22,12 +19,9 @@ public class CheckBoxesTest  extends BaseTest {
 
     @Test
     public void testSelectCheckboxTwo() {
-        CheckboxesPage checkboxesPage = new CheckboxesPage(getDriver()).getCheckboxesPage();
-        if(checkboxesPage.isCheckboxTwoSelected()) {
-            checkboxesPage.clickCheckboxTwo();
-        }
-        boolean checkboxTwoIsSelected =  checkboxesPage
-                .clickCheckboxTwo()
+         boolean checkboxTwoIsSelected =  new CheckboxesPage(getDriver())
+                .getCheckboxesPage()
+                .selectCheckboxTwo()
                 .isCheckboxTwoSelected();
 
         Assert.assertTrue(checkboxTwoIsSelected);
@@ -36,34 +30,24 @@ public class CheckBoxesTest  extends BaseTest {
     @Test
     public void testSelectBothCheckboxes() {
         int expectedResult = 2;
-        CheckboxesPage checkboxesPage = new CheckboxesPage(getDriver()).getCheckboxesPage();
-        if(checkboxesPage.isCheckboxOneSelected()) {
-            checkboxesPage.clickCheckboxOne();
-        }
-        if(checkboxesPage.isCheckboxTwoSelected()) {
-            checkboxesPage.clickCheckboxTwo();
-        }
-        int actualResult = checkboxesPage
-                .clickCheckboxOne()
-                .clickCheckboxTwo()
+
+        int actualResult = new CheckboxesPage(getDriver())
+                .getCheckboxesPage()
+                .selectCheckboxOne()
+                .selectCheckboxTwo()
                 .getSelectedCheckboxListSize();
 
         Assert.assertEquals(actualResult, expectedResult);
     }
 
     @Test
-    public void testUnselectBothCheckboxes() {
+    public void testDeselectBothCheckboxes() {
         int expectedResult = 0;
-        CheckboxesPage checkboxesPage = new CheckboxesPage(getDriver()).getCheckboxesPage();
-        if(!checkboxesPage.isCheckboxOneSelected()) {
-            checkboxesPage.clickCheckboxOne();
-        }
-        if(!checkboxesPage.isCheckboxTwoSelected()) {
-            checkboxesPage.clickCheckboxTwo();
-        }
-        int actualResult = checkboxesPage
-                .clickCheckboxOne()
-                .clickCheckboxTwo()
+
+        int actualResult = new CheckboxesPage(getDriver())
+                .getCheckboxesPage()
+                .deselectCheckboxOne()
+                .deselectCheckboxTwo()
                 .getSelectedCheckboxListSize();
 
         Assert.assertEquals(actualResult, expectedResult);

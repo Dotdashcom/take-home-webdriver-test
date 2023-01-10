@@ -6,12 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="796e0c15-181c-4c2d-b391-4fd7091d229a" name="Changes" comment="SergeDot &gt; TheInternet &gt; UserStory &gt; TestSuite &gt; TestCases (Bug Report available upon request)&#10;- added tests for the provided test cases&#10;- added tests for additional test cases (test cases available upon request)&#10;- 104 tests to pass, 6 tests to fail (bug report available upon request)&#10;- potentially 100 more tests in pipeline with more bugs discovered (please confirm if you would like me to continue)&#10;&#10;OVERVIEW&#10;-&#9;Versatile, goal oriented hard-working QA Analyst with 5+ years of experience as a System Integration Analyst and Quality Assurance with automation and manual testing for web applications&#10;-&#9;Strong experience in requirements matrix, project planning, scheduling, testing, defect tracking and reporting, creating from scratch and executing automated tests for web application testing &#10;-&#9;Working well under pressure and easily adaptive to any working environment. Able to compete for deadlines and prioritize tasks&#10;-&#9;Strong analytical thinking, problem-solving, communication, and time-management skills&#10;-&#9;Great team and independent work skills&#10;-&#9;Quick learner open to new techniques, methodologies, practices&#10;-&#9;Achieved positive growing results both individually and within teams, with successful experience in training, coaching and leading the teammates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/CheckboxesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/CheckboxesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/model/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CheckBoxesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CheckBoxesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,8 +55,8 @@
       <recent name="C:\Users\user\IdeaProjects\take-home-webdriver-test1" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="tests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CheckBoxesTest">
+    <configuration name="CheckBoxesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="take-home-webdriver-test1" />
       <extension name="coverage">
         <pattern>
@@ -56,7 +65,80 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckBoxesTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckBoxesTest.testDeselectBothCheckboxes (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckBoxesTest" />
+      <option name="METHOD_NAME" value="testDeselectBothCheckboxes" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckBoxesTest.testDeselectBothCheckboxes" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckBoxesTest" />
+      <option name="METHOD_NAME" value="testDeselectBothCheckboxes" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckBoxesTest.testSelectBothCheckboxes" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckBoxesTest" />
+      <option name="METHOD_NAME" value="testSelectBothCheckboxes" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckBoxesTest.testSelectCheckboxTwo (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="take-home-webdriver-test1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckBoxesTest" />
+      <option name="METHOD_NAME" value="testSelectCheckboxTwo" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -65,7 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.tests" />
+        <item itemvalue="TestNG.CheckBoxesTest" />
+        <item itemvalue="TestNG.CheckBoxesTest.testDeselectBothCheckboxes (1)" />
+        <item itemvalue="TestNG.CheckBoxesTest.testDeselectBothCheckboxes" />
+        <item itemvalue="TestNG.CheckBoxesTest.testSelectBothCheckboxes" />
+        <item itemvalue="TestNG.CheckBoxesTest.testSelectCheckboxTwo (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673137615762</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SergeDot &gt; TheInternet &gt; UserStory &gt; TestSuite &gt; TestCases (Bug Report available upon request)&#10;- added tests for the provided test cases&#10;- added tests for additional test cases (test cases available upon request)&#10;- 104 tests to pass, 6 tests to fail (bug report available upon request)&#10;- potentially 100 more tests in pipeline with more bugs discovered (please confirm if you would like me to continue)&#10;&#10;OVERVIEW&#10;-&#9;Versatile, goal oriented hard-working QA Analyst with 5+ years of experience as a System Integration Analyst and Quality Assurance with automation and manual testing for web applications&#10;-&#9;Strong experience in requirements matrix, project planning, scheduling, testing, defect tracking and reporting, creating from scratch and executing automated tests for web application testing &#10;-&#9;Working well under pressure and easily adaptive to any working environment. Able to compete for deadlines and prioritize tasks&#10;-&#9;Strong analytical thinking, problem-solving, communication, and time-management skills&#10;-&#9;Great team and independent work skills&#10;-&#9;Quick learner open to new techniques, methodologies, practices&#10;-&#9;Achieved positive growing results both individually and within teams, with successful experience in training, coaching and leading the teammates">
+      <created>1673176769482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673176769482</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

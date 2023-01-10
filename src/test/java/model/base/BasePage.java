@@ -88,4 +88,18 @@ public abstract class BasePage extends BaseModel {
                         "'drop',tgt);emit('dragend',src);";
         ((JavascriptExecutor)getDriver()).executeScript(jsDragAndDrop, elementToDrop, destinationElement);
     }
+
+    public void makeCheckboxSelected(WebElement checkbox) {
+        if(checkbox.isSelected()) {
+            checkbox.click();
+        }
+        checkbox.click();
+    }
+
+    public void makeCheckboxUnselected(WebElement checkbox) {
+        if(!checkbox.isSelected()) {
+            checkbox.click();
+        }
+        checkbox.click();
+    }
 }

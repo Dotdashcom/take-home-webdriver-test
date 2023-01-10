@@ -33,14 +33,26 @@ public class CheckboxesPage extends BasePage {
         return this;
     }
 
-    public CheckboxesPage clickCheckboxOne() {
-        checkboxOne.click();
+    public CheckboxesPage selectCheckboxOne() {
+        makeCheckboxSelected(checkboxOne);
 
         return this;
     }
 
-    public CheckboxesPage clickCheckboxTwo() {
-        checkboxTwo.click();
+    public CheckboxesPage deselectCheckboxOne() {
+        makeCheckboxUnselected(checkboxOne);
+
+        return this;
+    }
+
+    public CheckboxesPage selectCheckboxTwo() {
+        makeCheckboxSelected(checkboxTwo);
+
+        return this;
+    }
+
+    public CheckboxesPage deselectCheckboxTwo() {
+        makeCheckboxUnselected(checkboxTwo);
 
         return this;
     }
