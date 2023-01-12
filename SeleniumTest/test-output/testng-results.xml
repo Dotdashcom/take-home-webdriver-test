@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-12T20:26:14Z" name="TestNG Regression Test Suite" finished-at="2023-01-12T20:28:44Z" duration-ms="149612">
+    <groups>
+    </groups>
+    <test started-at="2023-01-12T20:26:14Z" name="JavaScriptError Test" finished-at="2023-01-12T20:27:54Z" duration-ms="99731">
+      <class name="staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest@696da30b]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:34Z" duration-ms="19853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="javaScriptErrorTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest@696da30b]" started-at="2023-01-12T20:26:34Z" name="javaScriptErrorTest" finished-at="2023-01-12T20:27:51Z" duration-ms="77277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaScriptErrorTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest@696da30b]" started-at="2023-01-12T20:27:51Z" name="tearDown" finished-at="2023-01-12T20:27:54Z" duration-ms="2588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest -->
+    </test> <!-- JavaScriptError Test -->
+    <test started-at="2023-01-12T20:26:14Z" name="LoginPage_Valid Test" finished-at="2023-01-12T20:28:01Z" duration-ms="107099">
+      <class name="staffitsolution.qa.wlctointernet.test.LoginPage_ValidTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.LoginPage_ValidTest@49dc7102]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:32Z" duration-ms="18348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:1, instance:staffitsolution.qa.wlctointernet.test.LoginPage_ValidTest@49dc7102]" started-at="2023-01-12T20:26:32Z" name="loginTest" finished-at="2023-01-12T20:28:00Z" duration-ms="87778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.LoginPage_ValidTest@49dc7102]" started-at="2023-01-12T20:28:00Z" name="tearDown" finished-at="2023-01-12T20:28:01Z" duration-ms="969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.LoginPage_ValidTest -->
+    </test> <!-- LoginPage_Valid Test -->
+    <test started-at="2023-01-12T20:26:14Z" name="FloatingMenuTest" finished-at="2023-01-12T20:28:01Z" duration-ms="107284">
+      <class name="staffitsolution.qa.wlctointernet.test.FloatingMenuTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.FloatingMenuTest@2f54a33d]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:28Z" duration-ms="14541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="floatingMenuTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.FloatingMenuTest@2f54a33d]" started-at="2023-01-12T20:26:29Z" name="floatingMenuTest" finished-at="2023-01-12T20:28:00Z" duration-ms="91361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenuTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.FloatingMenuTest@2f54a33d]" started-at="2023-01-12T20:28:00Z" name="tearDown" finished-at="2023-01-12T20:28:01Z" duration-ms="1266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.FloatingMenuTest -->
+    </test> <!-- FloatingMenuTest -->
+    <test started-at="2023-01-12T20:26:14Z" name="TLoginPage_Invalid Test" finished-at="2023-01-12T20:28:01Z" duration-ms="107456">
+      <class name="staffitsolution.qa.wlctointernet.test.LoginPage_InvalidTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.LoginPage_InvalidTest@55536d9e]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:34Z" duration-ms="20163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="InValidloginTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.LoginPage_InvalidTest@55536d9e]" started-at="2023-01-12T20:26:34Z" name="InValidloginTest" finished-at="2023-01-12T20:28:00Z" duration-ms="86014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidloginTest -->
+        <test-method signature="loginPageTitleTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.LoginPage_InvalidTest@55536d9e]" started-at="2023-01-12T20:28:00Z" name="loginPageTitleTest" finished-at="2023-01-12T20:28:00Z" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.LoginPage_InvalidTest@55536d9e]" started-at="2023-01-12T20:28:00Z" name="tearDown" finished-at="2023-01-12T20:28:01Z" duration-ms="1245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.LoginPage_InvalidTest -->
+    </test> <!-- TLoginPage_Invalid Test -->
+    <test started-at="2023-01-12T20:26:14Z" name="MouseHover Test" finished-at="2023-01-12T20:28:02Z" duration-ms="107725">
+      <class name="staffitsolution.qa.wlctointernet.test.MouseHoverTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.MouseHoverTest@1e6454ec]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:29Z" duration-ms="14915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="mouseHoverTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.MouseHoverTest@1e6454ec]" started-at="2023-01-12T20:26:29Z" name="mouseHoverTest" finished-at="2023-01-12T20:28:00Z" duration-ms="91474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.MouseHoverTest@1e6454ec]" started-at="2023-01-12T20:28:00Z" name="tearDown" finished-at="2023-01-12T20:28:02Z" duration-ms="1325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.MouseHoverTest -->
+    </test> <!-- MouseHover Test -->
+    <test started-at="2023-01-12T20:27:54Z" name="DynamicContent Test" finished-at="2023-01-12T20:28:03Z" duration-ms="9758">
+      <class name="staffitsolution.qa.wlctointernet.test.DynamicContentTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DynamicContentTest@6a84a97d]" started-at="2023-01-12T20:27:54Z" name="setup" finished-at="2023-01-12T20:27:56Z" duration-ms="2722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dynamicContentTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DynamicContentTest@6a84a97d]" started-at="2023-01-12T20:27:56Z" name="dynamicContentTest" finished-at="2023-01-12T20:28:02Z" duration-ms="5523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicContentTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DynamicContentTest@6a84a97d]" started-at="2023-01-12T20:28:02Z" name="tearDown" finished-at="2023-01-12T20:28:03Z" duration-ms="1510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DynamicContentTest -->
+    </test> <!-- DynamicContent Test -->
+    <test started-at="2023-01-12T20:26:14Z" name="FileUpload Test" finished-at="2023-01-12T20:28:08Z" duration-ms="113847">
+      <class name="staffitsolution.qa.wlctointernet.test.FileUploadTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.FileUploadTest@3738449f]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:32Z" duration-ms="17993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="fileUploadTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.FileUploadTest@3738449f]" started-at="2023-01-12T20:26:32Z" name="fileUploadTest" finished-at="2023-01-12T20:28:01Z" duration-ms="89037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.FileUploadTest@3738449f]" started-at="2023-01-12T20:28:01Z" name="tearDown" finished-at="2023-01-12T20:28:08Z" duration-ms="6811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.FileUploadTest -->
+    </test> <!-- FileUpload Test -->
+    <test started-at="2023-01-12T20:26:14Z" name="ContextMenu Test" finished-at="2023-01-12T20:28:13Z" duration-ms="119509">
+      <class name="staffitsolution.qa.wlctointernet.test.ContextMenuTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.ContextMenuTest@7e9131d5]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:32Z" duration-ms="18358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selCheckBoxTest()[pri:1, instance:staffitsolution.qa.wlctointernet.test.ContextMenuTest@7e9131d5]" started-at="2023-01-12T20:26:32Z" name="selCheckBoxTest" finished-at="2023-01-12T20:28:04Z" duration-ms="91594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selCheckBoxTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.ContextMenuTest@7e9131d5]" started-at="2023-01-12T20:28:04Z" name="tearDown" finished-at="2023-01-12T20:28:13Z" duration-ms="9543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.ContextMenuTest -->
+    </test> <!-- ContextMenu Test -->
+    <test started-at="2023-01-12T20:26:14Z" name="IFrame Test" finished-at="2023-01-12T20:28:14Z" duration-ms="119635">
+      <class name="staffitsolution.qa.wlctointernet.test.IFrameTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.IFrameTest@22e357dc]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:29Z" duration-ms="14638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="iFrameTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.IFrameTest@22e357dc]" started-at="2023-01-12T20:26:29Z" name="iFrameTest" finished-at="2023-01-12T20:28:03Z" duration-ms="94476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iFrameTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.IFrameTest@22e357dc]" started-at="2023-01-12T20:28:03Z" name="tearDown" finished-at="2023-01-12T20:28:14Z" duration-ms="10508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.IFrameTest -->
+    </test> <!-- IFrame Test -->
+    <test started-at="2023-01-12T20:28:01Z" name="NewTab Test" finished-at="2023-01-12T20:28:14Z" duration-ms="12674">
+      <class name="staffitsolution.qa.wlctointernet.test.NewTabTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.NewTabTest@932bc4a]" started-at="2023-01-12T20:28:01Z" name="setup" finished-at="2023-01-12T20:28:05Z" duration-ms="3978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="newTabTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.NewTabTest@932bc4a]" started-at="2023-01-12T20:28:05Z" name="newTabTest" finished-at="2023-01-12T20:28:11Z" duration-ms="5836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTabTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.NewTabTest@932bc4a]" started-at="2023-01-12T20:28:11Z" name="tearDown" finished-at="2023-01-12T20:28:14Z" duration-ms="2854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.NewTabTest -->
+    </test> <!-- NewTab Test -->
+    <test started-at="2023-01-12T20:28:02Z" name="CheckBoxes Test" finished-at="2023-01-12T20:28:16Z" duration-ms="13921">
+      <class name="staffitsolution.qa.wlctointernet.test.CheckBoxesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.CheckBoxesTest@2053d869]" started-at="2023-01-12T20:28:02Z" name="setup" finished-at="2023-01-12T20:28:07Z" duration-ms="5630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selCheckBoxTest()[pri:1, instance:staffitsolution.qa.wlctointernet.test.CheckBoxesTest@2053d869]" started-at="2023-01-12T20:28:07Z" name="selCheckBoxTest" finished-at="2023-01-12T20:28:14Z" duration-ms="6915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selCheckBoxTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.CheckBoxesTest@2053d869]" started-at="2023-01-12T20:28:14Z" name="tearDown" finished-at="2023-01-12T20:28:16Z" duration-ms="1372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.CheckBoxesTest -->
+    </test> <!-- CheckBoxes Test -->
+    <test started-at="2023-01-12T20:28:08Z" name="FileDownload Test" finished-at="2023-01-12T20:28:17Z" duration-ms="9309">
+      <class name="staffitsolution.qa.wlctointernet.test.FileDownloadTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.FileDownloadTest@4d0f2471]" started-at="2023-01-12T20:28:08Z" name="setup" finished-at="2023-01-12T20:28:12Z" duration-ms="3797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="fileDownLoadTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.FileDownloadTest@4d0f2471]" started-at="2023-01-12T20:28:12Z" name="fileDownLoadTest" finished-at="2023-01-12T20:28:16Z" duration-ms="4135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownLoadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.FileDownloadTest@4d0f2471]" started-at="2023-01-12T20:28:16Z" name="tearDown" finished-at="2023-01-12T20:28:17Z" duration-ms="1374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.FileDownloadTest -->
+    </test> <!-- FileDownload Test -->
+    <test started-at="2023-01-12T20:26:14Z" name="DynamicControls Test" finished-at="2023-01-12T20:28:18Z" duration-ms="124130">
+      <class name="staffitsolution.qa.wlctointernet.test.DynamicControlsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DynamicControlsTest@1ba9117e]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:29Z" duration-ms="14927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dynamicControlsTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DynamicControlsTest@1ba9117e]" started-at="2023-01-12T20:26:29Z" name="dynamicControlsTest" finished-at="2023-01-12T20:28:16Z" duration-ms="106661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicControlsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DynamicControlsTest@1ba9117e]" started-at="2023-01-12T20:28:16Z" name="tearDown" finished-at="2023-01-12T20:28:18Z" duration-ms="2526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DynamicControlsTest -->
+    </test> <!-- DynamicControls Test -->
+    <test started-at="2023-01-12T20:28:01Z" name="DynamicLoading Test" finished-at="2023-01-12T20:28:18Z" duration-ms="16885">
+      <class name="staffitsolution.qa.wlctointernet.test.DynamicLoadingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DynamicLoadingTest@2df9b86]" started-at="2023-01-12T20:28:01Z" name="setup" finished-at="2023-01-12T20:28:06Z" duration-ms="4663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dynamicLoadingTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DynamicLoadingTest@2df9b86]" started-at="2023-01-12T20:28:06Z" name="dynamicLoadingTest" finished-at="2023-01-12T20:28:16Z" duration-ms="10416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicLoadingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DynamicLoadingTest@2df9b86]" started-at="2023-01-12T20:28:16Z" name="tearDown" finished-at="2023-01-12T20:28:18Z" duration-ms="1803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DynamicLoadingTest -->
+    </test> <!-- DynamicLoading Test -->
+    <test started-at="2023-01-12T20:28:13Z" name="JavaScriptAlerts Test" finished-at="2023-01-12T20:28:21Z" duration-ms="7168">
+      <class name="staffitsolution.qa.wlctointernet.test.JavaScriptAlertsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.JavaScriptAlertsTest@4229bb3f]" started-at="2023-01-12T20:28:13Z" name="setup" finished-at="2023-01-12T20:28:16Z" duration-ms="2408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="javaScriptAlertsTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.JavaScriptAlertsTest@4229bb3f]" started-at="2023-01-12T20:28:16Z" name="javaScriptAlertsTest" finished-at="2023-01-12T20:28:20Z" duration-ms="3902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaScriptAlertsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.JavaScriptAlertsTest@4229bb3f]" started-at="2023-01-12T20:28:20Z" name="tearDown" finished-at="2023-01-12T20:28:21Z" duration-ms="856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.JavaScriptAlertsTest -->
+    </test> <!-- JavaScriptAlerts Test -->
+    <test started-at="2023-01-12T20:28:03Z" name="DropDown Test" finished-at="2023-01-12T20:28:21Z" duration-ms="17185">
+      <class name="staffitsolution.qa.wlctointernet.test.DropDownTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DropDownTest@49c7b90e]" started-at="2023-01-12T20:28:03Z" name="setup" finished-at="2023-01-12T20:28:11Z" duration-ms="7828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selDropDownTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DropDownTest@49c7b90e]" started-at="2023-01-12T20:28:11Z" name="selDropDownTest" finished-at="2023-01-12T20:28:19Z" duration-ms="8006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selDropDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DropDownTest@49c7b90e]" started-at="2023-01-12T20:28:19Z" name="tearDown" finished-at="2023-01-12T20:28:21Z" duration-ms="1349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DropDownTest -->
+    </test> <!-- DropDown Test -->
+    <test started-at="2023-01-12T20:28:01Z" name="NotificationMsg Test" finished-at="2023-01-12T20:28:27Z" duration-ms="25755">
+      <class name="staffitsolution.qa.wlctointernet.test.NotificationMsgTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.NotificationMsgTest@7ea9e1e2]" started-at="2023-01-12T20:28:01Z" name="setup" finished-at="2023-01-12T20:28:07Z" duration-ms="5907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="notificationMsgTest()[pri:0, instance:staffitsolution.qa.wlctointernet.test.NotificationMsgTest@7ea9e1e2]" started-at="2023-01-12T20:28:07Z" name="notificationMsgTest" finished-at="2023-01-12T20:28:26Z" duration-ms="18957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationMsgTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.NotificationMsgTest@7ea9e1e2]" started-at="2023-01-12T20:28:26Z" name="tearDown" finished-at="2023-01-12T20:28:27Z" duration-ms="887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.NotificationMsgTest -->
+    </test> <!-- NotificationMsg Test -->
+    <test started-at="2023-01-12T20:26:14Z" name="DragAndDrop Test" finished-at="2023-01-12T20:28:44Z" duration-ms="149610">
+      <class name="staffitsolution.qa.wlctointernet.test.DragAndDropTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DragAndDropTest@693fe6c9]" started-at="2023-01-12T20:26:14Z" name="setup" finished-at="2023-01-12T20:26:31Z" duration-ms="16917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="draganddrop()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DragAndDropTest@693fe6c9]" started-at="2023-01-12T20:26:31Z" name="draganddrop" finished-at="2023-01-12T20:28:43Z" duration-ms="131959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- draganddrop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:staffitsolution.qa.wlctointernet.test.DragAndDropTest@693fe6c9]" started-at="2023-01-12T20:28:43Z" name="tearDown" finished-at="2023-01-12T20:28:44Z" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DragAndDropTest -->
+    </test> <!-- DragAndDrop Test -->
+  </suite> <!-- TestNG Regression Test Suite -->
+</testng-results>

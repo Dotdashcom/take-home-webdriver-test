@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="tests" name="Failed suite [TestNG Regression Test Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="10" parallel="tests" name="JavaScriptError Test(failed)" verbose="4">
+    <classes>
+      <class name="staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest">
+        <methods>
+          <include name="javaScriptErrorTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest -->
+    </classes>
+  </test> <!-- JavaScriptError Test(failed) -->
+</suite> <!-- Failed suite [TestNG Regression Test Suite] -->
