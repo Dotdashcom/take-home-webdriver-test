@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Regression Test Suite" parallel="tests"
+	thread-count="10" verbose="4">
+
+	<test name="Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.FloatingMenuTest" />
+		</classes>
+	</test>
+
+	<test name="ContextMenu Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.ContextMenuTest" />
+		</classes>
+	</test>
+
+	<test name="LoginPage_Valid Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.LoginPage_ValidTest" />
+		</classes>
+	</test>
+
+	<test name="TLoginPage_Invalid Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.LoginPage_InvalidTest" />
+		</classes>
+	</test>
+
+	<test name="FileUpload Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.FileUploadTest" />
+		</classes>
+	</test>
+
+	<test name="JavaScriptError Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest" />
+		</classes>
+	</test>
+
+	<test name="DynamicControls Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.DynamicControlsTest" />
+		</classes>
+	</test>
+
+	<test name="MouseHover Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.MouseHoverTest" />
+		</classes>
+	</test>
+
+	<test name="DragAndDrop Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.DragAndDropTest" />
+		</classes>
+	</test>
+
+	<test name="LoginPage">
+		<classes>
+			<class name="staffitsolution.qa.wlctointernet.test.LoginPage" />
+		</classes>
+	</test>
+
+	<test name="IFrame Test">
+		<classes>
+			<class name="staffitsolution.qa.wlctointernet.test.IFrameTest" />
+		</classes>
+	</test>
+
+	<test name="DynamicContent Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.DynamicContentTest" />
+		</classes>
+	</test>
+
+	<test name="NewTab Test">
+		<classes>
+			<class name="staffitsolution.qa.wlctointernet.test.NewTabTest" />
+		</classes>
+	</test>
+
+	<test name="DynamicLoading Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.DynamicLoadingTest" />
+		</classes>
+	</test>
+
+	<test name="NotificationMsg Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.NotificationMsgTest" />
+		</classes>
+	</test>
+
+	<test name="CheckBoxes Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.CheckBoxesTest" />
+		</classes>
+	</test>
+
+	<test name="DropDown Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.DropDownTest" />
+		</classes>
+	</test>
+
+	<test name="FileDownload Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.FileDownloadTest" />
+		</classes>
+	</test>
+
+	<test name="JavaScriptAlerts Test">
+		<classes>
+			<class
+				name="staffitsolution.qa.wlctointernet.test.JavaScriptAlertsTest" />
+		</classes>
+	</test>
+</suite> 

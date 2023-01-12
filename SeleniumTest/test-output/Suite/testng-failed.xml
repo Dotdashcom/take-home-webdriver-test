@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="staffitsolution.qa.wlctointernet.test.FileDownloadTest">
+        <methods>
+          <include name="fileDownLoadTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.FileDownloadTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.DynamicControlsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="dynamicControlsTest"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DynamicControlsTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.LoginPage_InvalidTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="InValidloginTest"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.LoginPage_InvalidTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.DragAndDropTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="draganddrop"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DragAndDropTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.MouseHoverTest">
+        <methods>
+          <include name="setup"/>
+          <include name="mouseHoverTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.MouseHoverTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.NewTabTest">
+        <methods>
+          <include name="newTabTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.NewTabTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.JavaScriptAlertsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="javaScriptAlertsTest"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.JavaScriptAlertsTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest">
+        <methods>
+          <include name="javaScriptErrorTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.JavaScriptErrorTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.LoginPage_ValidTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.LoginPage_ValidTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.DynamicLoadingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="dynamicLoadingTest"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DynamicLoadingTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.DynamicContentTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="dynamicContentTest"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DynamicContentTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.FloatingMenuTest">
+        <methods>
+          <include name="setup"/>
+          <include name="floatingMenuTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.FloatingMenuTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.IFrameTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="iFrameTest"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.IFrameTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.NotificationMsgTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="notificationMsgTest"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.NotificationMsgTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.FileUploadTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="fileUploadTest"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.FileUploadTest -->
+      <class name="staffitsolution.qa.wlctointernet.test.DropDownTest">
+        <methods>
+          <include name="setup"/>
+          <include name="selDropDownTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- staffitsolution.qa.wlctointernet.test.DropDownTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
