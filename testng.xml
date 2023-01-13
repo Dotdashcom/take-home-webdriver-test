@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="take-home-webdriver-test">
+        <classes>
+            <class name="testScenarios.Scenarios">
+                <methods>
+                    <include name="loginSuccess"/>
+                    <include name="loginFailure"/>
+                    <include name="checkboxes"/>
+                    <include name="contextMenu"/>
+                    <include name="dragAndDrop"/>
+                    <include name="dropdown"/>
+                    <include name="dynamicContent"/>
+                    <include name="dynamicControls"/>
+                    <include name="dynamicLoading"/>
+                    <include name="fileDownload"/>
+                    <include name="fileUpload"/>
+                    <include name="floatingMenu"/>
+                    <include name="iframe"/>
+                    <include name="mouseHover"/>
+                    <include name="javaScriptAlerts"/>
+                    <include name="javaScriptError"/>
+                    <include name="openInNewTab"/>
+                    <include name="notificationMessage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

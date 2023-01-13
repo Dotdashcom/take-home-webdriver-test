@@ -1,0 +1,98 @@
+{
+  "pages": {
+    "loginURL": "http://localhost:7080/login",
+    "checkboxURL": "http://localhost:7080/checkboxes",
+    "contextURL": "http://localhost:7080/context_menu",
+    "dragAndDropURL": "http://localhost:7080/drag_and_drop",
+    "dropDownURL": "http://localhost:7080/dropdown",
+    "dynamicContentURL": "http://localhost:7080/dynamic_content",
+    "dynamicControlsURL": "http://localhost:7080/dynamic_controls",
+    "dynamicLoadingURL": "http://localhost:7080/dynamic_loading/2",
+    "downloadURL": "http://localhost:7080/download",
+    "uploadURL": "http://localhost:7080/upload",
+    "floatingMenuURL": "http://localhost:7080/floating_menu",
+    "iframeURL": "http://localhost:7080/iframe",
+    "hoversURL": "http://localhost:7080/hovers",
+    "jsAlertsURL": "http://localhost:7080/javascript_alerts",
+    "jsErrorURL": "http://localhost:7080/javascript_error",
+    "windowsURL": "http://localhost:7080/windows",
+    "notificationURL": "http://localhost:7080/notification_message_rendered"
+  },
+  "loginPage": {
+    "usernameInputXp": "//input[@name='username']",
+    "usernameXp": "tomsmith",
+    "passwordInputXp": "//input[@name='password']",
+    "passwordXp": "SuperSecretPassword!",
+    "loginButtonXp": "//button[@type='submit']",
+    "dataAlertXp": "//div[@data-alert]"
+  },
+  "securePage": {
+    "welcomeTextXp": "//h4[@class]",
+    "logoutButtonXp": "//a[@class='button secondary radius']"
+  },
+  "checkboxesPage": {
+    "checkboxOneXp": "//input[@type][1]",
+    "checkboxTwoXp": "//input[@type][2]"
+  },
+  "contextPage": {
+    "boxXp": "//div[@id='hot-spot']"
+  },
+  "dragPage": {
+    "boxAXp": "//div[@id='column-a']",
+    "boxBXp": "//div[@id='column-b']",
+    "textBoxAXp": "//div[@id='column-a']/header",
+    "textBoxBXp": "//div[@id='column-b']/header"
+  },
+  "dropDownPage": {
+    "dropDownXp": "//select[@id='dropdown']"
+  },
+  "dynamicPage": {
+    "tableXp": "//div[@id='content']"
+  },
+  "dynamicControlsPage": {
+    "removeButtonXp": "//button[contains(text(), 'Remove')]",
+    "addButtonXp": "//button[contains(text(), 'Add')]",
+    "enableButtonXp": "//button[contains(text(), 'Enable')]",
+    "disableButtonXp": "//button[contains(text(), 'Disable')]",
+    "checkboxXp": "//input[@type='checkbox']",
+    "inputFieldXp": "//input[@type='text']",
+    "messageXp": "//p[@id='message']"
+  },
+  "dynamicLoading": {
+    "startButtonXp": "//button",
+    "helloHeaderXp": "//div[@id]/h4"
+  },
+  "downloadPage": {
+    "fileXp": "//div[@class='example']/a"
+  },
+  "uploadPage": {
+    "chooseFileButtonXp": "//input[@id='file-upload']",
+    "uploadButtonXp": "//input[@class='button']",
+    "uploadedFileXp": "//div[@id='uploaded-files']"
+  },
+  "floatingMenuPage": {
+    "menuXp": "//div[@id='menu']/ul/li"
+  },
+  "iframePage": {
+    "iframeXp": "//iframe",
+    "inputBoxFieldXp": "//body[@id='tinymce']"
+  },
+  "hoversPage": {
+    "figureXp": "(//div[@class='figure'])",
+    "figCaptionXp": "(//div[@class='figcaption'])"
+  },
+  "javascriptAlertsPage": {
+    "jsAlertXp": "//button[contains(text(),'Alert')]",
+    "jsConfirmXp": "//button[contains(text(),'Confirm')]",
+    "jsPrompt": "//button[contains(text(),'Prompt')]",
+    "resultTextXP": "//p[@id='result']"
+  },
+  "windowsPage": {
+    "clickHereLinkXp": "//a[contains(text(),'Click Here')]",
+    "textXp": "//h3"
+  },
+  "notificationPage": {
+    "clickHereLinkXp": "//a[contains(text(),'Click here')]",
+    "messageAlertXp": "//div[@id='flash']"
+  }
+}
