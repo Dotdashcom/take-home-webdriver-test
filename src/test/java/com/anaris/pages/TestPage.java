@@ -272,7 +272,7 @@ public class TestPage extends BasePage {
     @FindBy(xpath = "//a[text()='Notification Messages']")
     public WebElement linkNotifyMsg;
 
-    @FindBy (xpath = "//div[@class='flash notice']")
+    @FindBy (xpath = "//div[@class='flash notice']") // /html/body/div[1]/div/div   ////div[@class='flash notice']
     public WebElement notifyMsg;
 
     @FindBy (linkText = "Click here")

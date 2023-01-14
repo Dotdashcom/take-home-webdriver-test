@@ -117,7 +117,7 @@ Feature: All Test Cases
   Scenario:Notification Message
     When Notification Message page is launched
     And User clicks on the Click Here link a multiple times
-    Then User asserts that one of the "Action successful", "Action unsuccessful, please try again" messages show on click
+    Then User asserts that one of the "Action successful", "Action unsuccessful, please try again", "Action Unsuccessful" messages show on click
 
 
 

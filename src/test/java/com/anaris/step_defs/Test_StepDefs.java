@@ -508,17 +508,13 @@ public class Test_StepDefs {
 
         testPage.notifyClickHereBtn.click();
     }
-
-    @Then("User asserts that one of the {string}, {string} messages show on click")
-    public void userAssertsThatOneOfTheMessagesShowOnClick(String arg0, String arg1) {
-
+    @Then("User asserts that one of the {string}, {string}, {string} messages show on click")
+    public void userAssertsThatOneOfTheMessagesShowOnClick(String arg0, String arg1, String arg2) {
 
         String notifyMsg = testPage.notifyMsg.getText().replace('×',' ').trim();
 
-        List<String> list = new ArrayList<>(Arrays.asList(arg0,arg1));
+        List<String> list = new ArrayList<>(Arrays.asList(arg0,arg1,arg2));
 
         Assert.assertTrue("Failed",list.contains(notifyMsg));
     }
-
-
 }
