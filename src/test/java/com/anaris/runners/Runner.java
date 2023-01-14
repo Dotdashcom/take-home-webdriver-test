@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features" ,
         glue = "com/anaris/step_defs" ,
         dryRun = false,
-        tags = "@notifyMsg",
+        tags = "@regression",
         publish = true
 )
 
