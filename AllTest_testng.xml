@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+  <listeners>
+    <listener class-name="com.assignments.listeners.FrameworkListener"/>
+    <listener class-name="com.assignments.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="All Test" thread-count="3" parallel="methods">
+    <classes>
+      <class name="com.tests.CheckBoxTest"/>
+      <class name="com.tests.DragAndDropTest"/>
+      <class name="com.tests.DropdownTest"/>
+      <class name="com.tests.LoginTest"/>
+      <class name="com.tests.ContextTest"/>
+      <class name="com.tests.DynamicContentTest"/>
+      <class name="com.tests.DynamicControlTest"/>
+      <class name="com.tests.DynamicLoadingTest"/>
+      <class name="com.tests.JSErrorTest"/>
+      <class name="com.tests.JSAlertTest"/>
+      <class name="com.tests.FileDownloadTest"/>
+      <class name="com.tests.FileUploadTest"/>
+      <class name="com.tests.FloatingMenuTest"/>
+      <class name="com.tests.IFrameTest"/>
+      <class name="com.tests.NotificationMessageTest"/>
+      <class name="com.tests.MouseHoverTest"/>
+      <class name="com.tests.MultipleWindowTest"/>
+    </classes>
+  </test>
+</suite>
