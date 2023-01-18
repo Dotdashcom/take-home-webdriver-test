@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-12T18:57:08 CST" name="Default suite" finished-at="2023-01-12T18:57:10 CST" duration-ms="2909">
+    <groups>
+    </groups>
+    <test started-at="2023-01-12T18:57:08 CST" name="Default test" finished-at="2023-01-12T18:57:10 CST" duration-ms="2909">
+      <class name="checkbox.CheckBoxes">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:checkbox.CheckBoxes@78b66d36]" started-at="2023-01-12T18:57:08 CST" name="launchBrowser" finished-at="2023-01-12T18:57:10 CST" duration-ms="2032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="checkTheBoxes()[pri:0, instance:checkbox.CheckBoxes@78b66d36]" started-at="2023-01-12T18:57:10 CST" name="checkTheBoxes" finished-at="2023-01-12T18:57:10 CST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheBoxes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:checkbox.CheckBoxes@78b66d36]" started-at="2023-01-12T18:57:10 CST" name="tearDown" finished-at="2023-01-12T18:57:10 CST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- checkbox.CheckBoxes -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

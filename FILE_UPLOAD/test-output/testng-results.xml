@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-13T10:10:56 CST" name="Default suite" finished-at="2023-01-13T10:10:58 CST" duration-ms="2423">
+    <groups>
+    </groups>
+    <test started-at="2023-01-13T10:10:56 CST" name="Default test" finished-at="2023-01-13T10:10:58 CST" duration-ms="2423">
+      <class name="fileUpload.FileUpload">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:fileUpload.FileUpload@7ce3cb8e]" started-at="2023-01-13T10:10:56 CST" name="launchBrowser" finished-at="2023-01-13T10:10:58 CST" duration-ms="2118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="fileUpload()[pri:0, instance:fileUpload.FileUpload@7ce3cb8e]" started-at="2023-01-13T10:10:58 CST" name="fileUpload" finished-at="2023-01-13T10:10:58 CST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUpload -->
+      </class> <!-- fileUpload.FileUpload -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
