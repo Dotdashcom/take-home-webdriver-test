@@ -1,0 +1,1 @@
+{"uuid":"fc3a3ba2-77e9-46b1-9bed-f5481deabf78","name":"Single Runner TestNG OPEN_CART","children":["e84dd19d-e5b4-4dc2-806a-6fb56a4ce141"],"befores":[{"name":"readConfig","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1673495191677,"stop":1673495191679}],"afters":[],"start":1673495191670,"stop":1673495208992}

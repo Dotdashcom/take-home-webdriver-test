@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Take Home WebDriver Test Smoke Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Take_Home_WebDriver_Test_Smoke_Suite" class="navigator-link ">
+                    <span>smokeSuiteRunner.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Take_Home_WebDriver_Test_Smoke_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Take_Home_WebDriver_Test_Smoke_Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Take_Home_WebDriver_Test_Smoke_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Take_Home_WebDriver_Test_Smoke_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Take_Home_WebDriver_Test_Smoke_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Take_Home_WebDriver_Test_Smoke_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" class="hide-methods passed suite-Take_Home_WebDriver_Test_Smoke_Suite"> (hide)</a> <!-- hide-methods passed suite-Take_Home_WebDriver_Test_Smoke_Suite -->
+                      <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" class="show-methods passed suite-Take_Home_WebDriver_Test_Smoke_Suite"> (show)</a> <!-- show-methods passed suite-Take_Home_WebDriver_Test_Smoke_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Take_Home_WebDriver_Test_Smoke_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="checkBoxTest">checkBoxTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="contextMenuTest">contextMenuTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="dragAndDropTest">dragAndDropTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="dropDownTest">dropDownTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="dynamicContentTest">dynamicContentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="dynamicControlsTest">dynamicControlsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="dynamicLoadingTest">dynamicLoadingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="fileDownloadTest">fileDownloadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="fileUploadTest">fileUploadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="floatingMenuTest">floatingMenuTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="iframeTest">iframeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="javaScriptAlertsTest">javaScriptAlertsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="javaScriptErrorTest">javaScriptErrorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="loginFailureTest">loginFailureTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="loginSuccessTest">loginSuccessTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="mouseHoverTest">mouseHoverTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="notificationMessageTest">notificationMessageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" title="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" class="method navigator-link" hash-for-method="openNewTabTest">openNewTabTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Take_Home_WebDriver_Test_Smoke_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Take_Home_WebDriver_Test_Smoke_Suite" class="panel Take_Home_WebDriver_Test_Smoke_Suite">
+          <div class="suite-Take_Home_WebDriver_Test_Smoke_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBoxTest">
+                  </a> <!-- checkBoxTest -->
+                  <span class="method-name">checkBoxTest</span>
+                  <em>
+(User checks/unchecks checkboxes.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contextMenuTest">
+                  </a> <!-- contextMenuTest -->
+                  <span class="method-name">contextMenuTest</span>
+                  <em>
+(User performs right-click and handles a javascript alert.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragAndDropTest">
+                  </a> <!-- dragAndDropTest -->
+                  <span class="method-name">dragAndDropTest</span>
+                  <em>
+(User does drag and drop boxes .)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropDownTest">
+                  </a> <!-- dropDownTest -->
+                  <span class="method-name">dropDownTest</span>
+                  <em>
+(User selects options from drop down menu .)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dynamicContentTest">
+                  </a> <!-- dynamicContentTest -->
+                  <span class="method-name">dynamicContentTest</span>
+                  <em>
+(User handles dynamic content. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dynamicControlsTest">
+                  </a> <!-- dynamicControlsTest -->
+                  <span class="method-name">dynamicControlsTest</span>
+                  <em>
+(User handles dynamic controls. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dynamicLoadingTest">
+                  </a> <!-- dynamicLoadingTest -->
+                  <span class="method-name">dynamicLoadingTest</span>
+                  <em>
+(User handles dynamic loading page .)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileDownloadTest">
+                  </a> <!-- fileDownloadTest -->
+                  <span class="method-name">fileDownloadTest</span>
+                  <em>
+(User downloads the txt file. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileUploadTest">
+                  </a> <!-- fileUploadTest -->
+                  <span class="method-name">fileUploadTest</span>
+                  <em>
+(User uploads the txt file. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="floatingMenuTest">
+                  </a> <!-- floatingMenuTest -->
+                  <span class="method-name">floatingMenuTest</span>
+                  <em>
+(User handles floating menu. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="iframeTest">
+                  </a> <!-- iframeTest -->
+                  <span class="method-name">iframeTest</span>
+                  <em>
+(User handles iframe web element. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="javaScriptAlertsTest">
+                  </a> <!-- javaScriptAlertsTest -->
+                  <span class="method-name">javaScriptAlertsTest</span>
+                  <em>
+(User handles JavaScript alerts. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="javaScriptErrorTest">
+                  </a> <!-- javaScriptErrorTest -->
+                  <span class="method-name">javaScriptErrorTest</span>
+                  <em>
+(User handles JavaScript error. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginFailureTest">
+                  </a> <!-- loginFailureTest -->
+                  <span class="method-name">loginFailureTest</span>
+                  <em>
+(User with invalid credentials can't log in successfully.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginSuccessTest">
+                  </a> <!-- loginSuccessTest -->
+                  <span class="method-name">loginSuccessTest</span>
+                  <em>
+(User with valid credentials can log in successfully.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseHoverTest">
+                  </a> <!-- mouseHoverTest -->
+                  <span class="method-name">mouseHoverTest</span>
+                  <em>
+(User handles mouse hover. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="notificationMessageTest">
+                  </a> <!-- notificationMessageTest -->
+                  <span class="method-name">notificationMessageTest</span>
+                  <em>
+(User handles notification messages. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openNewTabTest">
+                  </a> <!-- openNewTabTest -->
+                  <span class="method-name">openNewTabTest</span>
+                  <em>
+(User handles opening a new tab. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Take_Home_WebDriver_Test_Smoke_Suite-class-passed -->
+        </div> <!-- panel Take_Home_WebDriver_Test_Smoke_Suite -->
+        <div panel-name="test-xml-Take_Home_WebDriver_Test_Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/dzmitryrazhkou/Documents/take-home-webdriver-test/src/test/java/com/qa/take_home_webdriver_test/testng_runner/smokeSuiteRunner.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Take Home WebDriver Test Smoke Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.take_home_webdriver_test.listeners.Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;com.qa.take_home_webdriver_test.listeners.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Selenium Take Home WebDriver&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginSuccessTest&quot;/&gt;
+          &lt;include name=&quot;loginFailureTest&quot;/&gt;
+          &lt;include name=&quot;checkBoxTest&quot;/&gt;
+          &lt;include name=&quot;contextMenuTest&quot;/&gt;
+          &lt;include name=&quot;dragAndDropTest&quot;/&gt;
+          &lt;include name=&quot;dropDownTest&quot;/&gt;
+          &lt;include name=&quot;mouseHoverTest&quot;/&gt;
+          &lt;include name=&quot;dynamicContentTest&quot;/&gt;
+          &lt;include name=&quot;dynamicControlsTest&quot;/&gt;
+          &lt;include name=&quot;dynamicLoadingTest&quot;/&gt;
+          &lt;include name=&quot;fileDownloadTest&quot;/&gt;
+          &lt;include name=&quot;fileUploadTest&quot;/&gt;
+          &lt;include name=&quot;floatingMenuTest&quot;/&gt;
+          &lt;include name=&quot;iframeTest&quot;/&gt;
+          &lt;include name=&quot;javaScriptAlertsTest&quot;/&gt;
+          &lt;include name=&quot;javaScriptErrorTest&quot;/&gt;
+          &lt;include name=&quot;openNewTabTest&quot;/&gt;
+          &lt;include name=&quot;notificationMessageTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Selenium Take Home WebDriver --&gt;
+&lt;/suite&gt; &lt;!-- Take Home WebDriver Test Smoke Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Take_Home_WebDriver_Test_Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Take Home WebDriver Test Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Selenium Take Home WebDriver (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Take_Home_WebDriver_Test_Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Take Home WebDriver Test Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkBoxTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">contextMenuTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">dragAndDropTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">dropDownTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">dynamicContentTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">dynamicControlsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">dynamicLoadingTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">fileDownloadTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">fileUploadTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">floatingMenuTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">iframeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">javaScriptAlertsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">javaScriptErrorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginFailureTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginSuccessTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">mouseHoverTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">notificationMessageTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">openNewTabTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Take_Home_WebDriver_Test_Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Take Home WebDriver Test Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Take_Home_WebDriver_Test_Smoke_Suite');
+function tableData_Take_Home_WebDriver_Test_Smoke_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'dynamicControlsTest')
+data.setCell(0, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(0, 3, 13845);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'dynamicLoadingTest')
+data.setCell(1, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(1, 3, 5955);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'iframeTest')
+data.setCell(2, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(2, 3, 5254);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'fileDownloadTest')
+data.setCell(3, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(3, 3, 2477);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'notificationMessageTest')
+data.setCell(4, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(4, 3, 2077);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginSuccessTest')
+data.setCell(5, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(5, 3, 1559);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginFailureTest')
+data.setCell(6, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(6, 3, 1320);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkBoxTest')
+data.setCell(7, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(7, 3, 984);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'fileUploadTest')
+data.setCell(8, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(8, 3, 946);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'javaScriptAlertsTest')
+data.setCell(9, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(9, 3, 930);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'mouseHoverTest')
+data.setCell(10, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(10, 3, 925);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'dragAndDropTest')
+data.setCell(11, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(11, 3, 861);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'dynamicContentTest')
+data.setCell(12, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(12, 3, 750);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'openNewTabTest')
+data.setCell(13, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(13, 3, 689);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'floatingMenuTest')
+data.setCell(14, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(14, 3, 640);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'dropDownTest')
+data.setCell(15, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(15, 3, 574);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'contextMenuTest')
+data.setCell(16, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(16, 3, 567);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'javaScriptErrorTest')
+data.setCell(17, 2, 'com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest')
+data.setCell(17, 3, 150);
+window.suiteTableData['Take_Home_WebDriver_Test_Smoke_Suite']= { tableData: data, tableDiv: 'times-div-Take_Home_WebDriver_Test_Smoke_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <div id="times-div-Take_Home_WebDriver_Test_Smoke_Suite">
+              </div> <!-- times-div-Take_Home_WebDriver_Test_Smoke_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Take_Home_WebDriver_Test_Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Take Home WebDriver Test Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Take_Home_WebDriver_Test_Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Take_Home_WebDriver_Test_Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">readProperties</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginSuccessTest</span>
+                <span class="method-start">7371 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginSuccessTest status=SUCCESS method=TakeHomeWebDriverTest.loginSuccessTest()[pri...)</span>
+                <span class="method-start">8950 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">9077 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginFailureTest</span>
+                <span class="method-start">10938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginFailureTest status=SUCCESS method=TakeHomeWebDriverTest.loginFailureTest()[pri...)</span>
+                <span class="method-start">12267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">12383 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkBoxTest</span>
+                <span class="method-start">14438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkBoxTest status=SUCCESS method=TakeHomeWebDriverTest.checkBoxTest()[pri:3, inst...)</span>
+                <span class="method-start">15427 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">15544 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contextMenuTest</span>
+                <span class="method-start">17450 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=contextMenuTest status=SUCCESS method=TakeHomeWebDriverTest.contextMenuTest()[pri:4...)</span>
+                <span class="method-start">18026 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">18138 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dragAndDropTest</span>
+                <span class="method-start">20028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=dragAndDropTest status=SUCCESS method=TakeHomeWebDriverTest.dragAndDropTest()[pri:5...)</span>
+                <span class="method-start">20896 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">21010 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dropDownTest</span>
+                <span class="method-start">22879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=dropDownTest status=SUCCESS method=TakeHomeWebDriverTest.dropDownTest()[pri:6, inst...)</span>
+                <span class="method-start">23459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">23574 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dynamicContentTest</span>
+                <span class="method-start">25426 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=dynamicContentTest status=SUCCESS method=TakeHomeWebDriverTest.dynamicContentTest()...)</span>
+                <span class="method-start">26180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">26308 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dynamicControlsTest</span>
+                <span class="method-start">28252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=dynamicControlsTest status=SUCCESS method=TakeHomeWebDriverTest.dynamicControlsTest...)</span>
+                <span class="method-start">42103 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">42225 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dynamicLoadingTest</span>
+                <span class="method-start">44152 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=dynamicLoadingTest status=SUCCESS method=TakeHomeWebDriverTest.dynamicLoadingTest()...)</span>
+                <span class="method-start">50111 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">50228 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fileDownloadTest</span>
+                <span class="method-start">52179 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=fileDownloadTest status=SUCCESS method=TakeHomeWebDriverTest.fileDownloadTest()[pri...)</span>
+                <span class="method-start">54671 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">54795 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fileUploadTest</span>
+                <span class="method-start">56693 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=fileUploadTest status=SUCCESS method=TakeHomeWebDriverTest.fileUploadTest()[pri:11,...)</span>
+                <span class="method-start">57643 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">57759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">floatingMenuTest</span>
+                <span class="method-start">59607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=floatingMenuTest status=SUCCESS method=TakeHomeWebDriverTest.floatingMenuTest()[pri...)</span>
+                <span class="method-start">60250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">60374 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">iframeTest</span>
+                <span class="method-start">62163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=iframeTest status=SUCCESS method=TakeHomeWebDriverTest.iframeTest()[pri:13, instanc...)</span>
+                <span class="method-start">67427 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">67541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mouseHoverTest</span>
+                <span class="method-start">70044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=mouseHoverTest status=SUCCESS method=TakeHomeWebDriverTest.mouseHoverTest()[pri:14,...)</span>
+                <span class="method-start">70977 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">71095 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">javaScriptAlertsTest</span>
+                <span class="method-start">72896 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=javaScriptAlertsTest status=SUCCESS method=TakeHomeWebDriverTest.javaScriptAlertsTe...)</span>
+                <span class="method-start">73831 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">73946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">javaScriptErrorTest</span>
+                <span class="method-start">75836 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=javaScriptErrorTest status=SUCCESS method=TakeHomeWebDriverTest.javaScriptErrorTest...)</span>
+                <span class="method-start">75993 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">76125 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">openNewTabTest</span>
+                <span class="method-start">77918 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=openNewTabTest status=SUCCESS method=TakeHomeWebDriverTest.openNewTabTest()[pri:17,...)</span>
+                <span class="method-start">78611 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(chrome)</span>
+                <span class="method-start">78727 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">notificationMessageTest</span>
+                <span class="method-start">80601 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=notificationMessageTest status=SUCCESS method=TakeHomeWebDriverTest.notificationMes...)</span>
+                <span class="method-start">82683 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

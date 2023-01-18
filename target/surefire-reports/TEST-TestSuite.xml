@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="84.183" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="16"/>
+    <property name="webdriver.chrome.driver" value="/Users/dzmitryrazhkou/.cache/selenium/chromedriver/mac64/106.0.5249.61/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/dzmitryrazhkou/Documents/take-home-webdriver-test/target/test-classes:/Users/dzmitryrazhkou/Documents/take-home-webdriver-test/target/classes:/Users/dzmitryrazhkou/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/testng/testng/7.7.0/testng-7.7.0.jar:/Users/dzmitryrazhkou/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/dzmitryrazhkou/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-java/4.7.1/selenium-java-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-api/4.7.1/selenium-api-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.7.1/selenium-chrome-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.7.1/selenium-chromium-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-json/4.7.1/selenium-json-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v106/4.7.1/selenium-devtools-v106-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v107/4.7.1/selenium-devtools-v107-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.7.1/selenium-devtools-v108-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.7.1/selenium-devtools-v85-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.7.1/selenium-edge-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.7.1/selenium-firefox-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-http/4.7.1/selenium-http-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.7.1/selenium-ie-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.7.1/selenium-remote-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-codec/4.1.84.Final/netty-codec-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-handler/4.1.84.Final/netty-handler-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/Users/dzmitryrazhkou/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/dzmitryrazhkou/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/dzmitryrazhkou/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/dzmitryrazhkou/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/dzmitryrazhkou/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.7.1/selenium-manager-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.7.1/selenium-safari-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-support/4.7.1/selenium-support-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.1/webdrivermanager-5.3.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/dzmitryrazhkou/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/dzmitryrazhkou/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/dzmitryrazhkou/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/dzmitryrazhkou/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/Users/dzmitryrazhkou/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/dzmitryrazhkou/.m2/repository/io/qameta/allure/allure-testng/2.20.1/allure-testng-2.20.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/qameta/allure/allure-java-commons/2.20.1/allure-java-commons-2.20.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/qameta/allure/allure-model/2.20.1/allure-model-2.20.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/qameta/allure/allure-test-filter/2.20.1/allure-test-filter-2.20.1.jar:/Users/dzmitryrazhkou/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/poi/poi-ooxml/5.2.2/poi-ooxml-5.2.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/poi/poi/5.2.2/poi-5.2.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.2/poi-ooxml-lite-5.2.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/xmlbeans/xmlbeans/5.0.3/xmlbeans-5.0.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/dzmitryrazhkou/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/dzmitryrazhkou/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/dzmitryrazhkou/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/dzmitryrazhkou/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/dzmitryrazhkou/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.8.2/log4j-to-slf4j-2.8.2.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/dzmitryrazhkou/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/dzmitryrazhkou/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/dzmitryrazhkou/.m2/repository/org/mongodb/mongodb-driver/3.0.4/mongodb-driver-3.0.4.jar:/Users/dzmitryrazhkou/.m2/repository/org/mongodb/bson/3.0.4/bson-3.0.4.jar:/Users/dzmitryrazhkou/.m2/repository/org/mongodb/mongodb-driver-core/3.0.4/mongodb-driver-core-3.0.4.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/16.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/dzmitryrazhkou/Documents/take-home-webdriver-test/target/surefire/surefirebooter1031836978897320937.jar /Users/dzmitryrazhkou/Documents/take-home-webdriver-test/target/surefire 2023-01-18T17-10-54_612-jvmRun1 surefire11509500165699051159tmp surefire_02001899187982834861tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/dzmitryrazhkou/Documents/take-home-webdriver-test/target/test-classes:/Users/dzmitryrazhkou/Documents/take-home-webdriver-test/target/classes:/Users/dzmitryrazhkou/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/testng/testng/7.7.0/testng-7.7.0.jar:/Users/dzmitryrazhkou/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/dzmitryrazhkou/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-java/4.7.1/selenium-java-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-api/4.7.1/selenium-api-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.7.1/selenium-chrome-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.7.1/selenium-chromium-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-json/4.7.1/selenium-json-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v106/4.7.1/selenium-devtools-v106-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v107/4.7.1/selenium-devtools-v107-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.7.1/selenium-devtools-v108-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.7.1/selenium-devtools-v85-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.7.1/selenium-edge-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.7.1/selenium-firefox-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-http/4.7.1/selenium-http-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.7.1/selenium-ie-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.7.1/selenium-remote-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-codec/4.1.84.Final/netty-codec-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-handler/4.1.84.Final/netty-handler-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/Users/dzmitryrazhkou/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/dzmitryrazhkou/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/dzmitryrazhkou/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/dzmitryrazhkou/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/dzmitryrazhkou/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/dzmitryrazhkou/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.7.1/selenium-manager-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.7.1/selenium-safari-driver-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/seleniumhq/selenium/selenium-support/4.7.1/selenium-support-4.7.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.1/webdrivermanager-5.3.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/dzmitryrazhkou/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/dzmitryrazhkou/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/dzmitryrazhkou/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/dzmitryrazhkou/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/Users/dzmitryrazhkou/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/Users/dzmitryrazhkou/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/dzmitryrazhkou/.m2/repository/io/qameta/allure/allure-testng/2.20.1/allure-testng-2.20.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/qameta/allure/allure-java-commons/2.20.1/allure-java-commons-2.20.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/qameta/allure/allure-model/2.20.1/allure-model-2.20.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/qameta/allure/allure-test-filter/2.20.1/allure-test-filter-2.20.1.jar:/Users/dzmitryrazhkou/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/poi/poi-ooxml/5.2.2/poi-ooxml-5.2.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/poi/poi/5.2.2/poi-5.2.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/dzmitryrazhkou/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.2/poi-ooxml-lite-5.2.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/xmlbeans/xmlbeans/5.0.3/xmlbeans-5.0.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/dzmitryrazhkou/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/dzmitryrazhkou/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/dzmitryrazhkou/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/dzmitryrazhkou/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/dzmitryrazhkou/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/dzmitryrazhkou/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/dzmitryrazhkou/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.8.2/log4j-to-slf4j-2.8.2.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/dzmitryrazhkou/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/dzmitryrazhkou/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/dzmitryrazhkou/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar:/Users/dzmitryrazhkou/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/Users/dzmitryrazhkou/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar:/Users/dzmitryrazhkou/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/dzmitryrazhkou/.m2/repository/org/mongodb/mongodb-driver/3.0.4/mongodb-driver-3.0.4.jar:/Users/dzmitryrazhkou/.m2/repository/org/mongodb/bson/3.0.4/bson-3.0.4.jar:/Users/dzmitryrazhkou/.m2/repository/org/mongodb/mongodb-driver-core/3.0.4/mongodb-driver-core-3.0.4.jar:/Users/dzmitryrazhkou/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/dzmitryrazhkou"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/16.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/dzmitryrazhkou/Documents/take-home-webdriver-test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/dzmitryrazhkou/Documents/take-home-webdriver-test/target/surefire/surefirebooter1031836978897320937.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="16.0.1+0"/>
+    <property name="user.name" value="dzmitryrazhkou"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/dzmitryrazhkou/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/4y/z4q6qpkd1p1fj9znbkpvjzl40000gn/T/"/>
+    <property name="java.version" value="16.0.1"/>
+    <property name="user.dir" value="/Users/dzmitryrazhkou/Documents/take-home-webdriver-test"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/dzmitryrazhkou/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="16.0.1+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="60.0"/>
+  </properties>
+  <testcase name="loginSuccessTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="1.562">
+    <system-out><![CDATA[ =====> Read Properties Configuration File <===== 
+=====> Selenium Take Home WebDriver has started <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> loginSuccessTest is started <===== 
+01-18-2023 17:11:03 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/login page. 
+01-18-2023 17:11:04 LoginSuccessPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 52 - User types an username into username field. 
+01-18-2023 17:11:04 LoginSuccessPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 54 - User types an password into password field. 
+01-18-2023 17:11:04 LoginSuccessPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 56 - User clicks on the 'Login' button. 
+01-18-2023 17:11:05 LoginSuccessPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 62 - User sees an success login message. 
+ =====> You logged into a secure area!
+× <===== 
+=====> loginSuccessTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 37750
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="loginFailureTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="1.302">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> loginFailureTest is started <===== 
+01-18-2023 17:11:07 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/login page. 
+01-18-2023 17:11:07 LoginSuccessPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 52 - User types an username into username field. 
+01-18-2023 17:11:07 LoginSuccessPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 54 - User types an password into password field. 
+01-18-2023 17:11:08 LoginSuccessPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 56 - User clicks on the 'Login' button. 
+01-18-2023 17:11:08 LoginSuccessPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 73 - User sees an invalid password message. 
+ =====> Your username is invalid!
+× <===== 
+=====> loginFailureTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Jan 18, 2023 5:11:05 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 42468
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="checkBoxTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.959">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> checkBoxTest is started <===== 
+01-18-2023 17:11:10 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/checkboxes page. 
+01-18-2023 17:11:11 CheckBoxesPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 37 - User clicks on the 'checkbox 1'
+01-18-2023 17:11:11 CheckBoxesPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 53 - User undoes click on the 'checkbox 2'
+=====> checkBoxTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Jan 18, 2023 5:11:08 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 23485
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="contextMenuTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.569">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> contextMenuTest is started <===== 
+01-18-2023 17:11:13 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/context_menu page. 
+01-18-2023 17:11:13 ContextMenuPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 30 - User performs right click on the hot spot. 
+01-18-2023 17:11:14 ContextMenuPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 32 - An alert message is raised up. 
+ =====> Alert message is 'You selected a context menu'  <===== 
+01-18-2023 17:11:14 ContextMenuPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 39 - User accepts the alert message. 
+=====> contextMenuTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Jan 18, 2023 5:11:11 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 31682
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="dragAndDropTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.865">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> dragAndDropTest is started <===== 
+01-18-2023 17:11:16 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/drag_and_drop page. 
+01-18-2023 17:11:16 DragAndDropPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 35 - User takes a 'Box B' and drops on the 'Box A'. 
+01-18-2023 17:11:16 DragAndDropPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 40 - The 'Box A' and 'Box B' are displayed. 
+01-18-2023 17:11:17 DragAndDropPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 43 - The texts of the boxes have been switched. 
+=====> dragAndDropTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Jan 18, 2023 5:11:14 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 28519
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="dropDownTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.572">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> dropDownTest is started <===== 
+01-18-2023 17:11:19 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/dropdown page. 
+01-18-2023 17:11:19 DropDownPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User selects the 'Option 1' from drop down menu. 
+01-18-2023 17:11:19 DropDownPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 44 - User receives the 'Option 1' from selected drop down menu. 
+ =====> Option 1 <===== 
+01-18-2023 17:11:19 DropDownPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User selects the 'Option 2' from drop down menu. 
+01-18-2023 17:11:19 DropDownPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 44 - User receives the 'Option 2' from selected drop down menu. 
+ =====> Option 2 <===== 
+=====> dropDownTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Jan 18, 2023 5:11:17 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 47281
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="dynamicContentTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.757">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> dynamicContentTest is started <===== 
+01-18-2023 17:11:21 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/dynamic_content?with_content=static page. 
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 39 - User receives the list of images. 
+http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 39 - User receives the list of images. 
+http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 39 - User receives the list of images. 
+http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 50 - User receives the list of contents. 
+Accusantium eius ut architecto neque vel voluptatem vel nam eos minus ullam dolores voluptates enim sed voluptatem rerum qui sapiente nesciunt aspernatur et accusamus laboriosam culpa tenetur hic aut placeat error autem qui sunt.
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 50 - User receives the list of contents. 
+Omnis fugiat porro vero quas tempora quis eveniet ab officia cupiditate culpa repellat debitis itaque possimus odit dolorum et iste quibusdam quis dicta autem sint vel quo vel consequuntur dolorem nihil neque sunt aperiam blanditiis.
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 50 - User receives the list of contents. 
+Officiis et id nisi eos ex ullam ut qui qui quibusdam quo sapiente culpa minima repellendus velit pariatur maiores inventore nam omnis odit est perferendis quos suscipit quas sed sequi tempora cum.
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 58 - User refreshes a web page
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 39 - User receives the list of images. 
+http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 39 - User receives the list of images. 
+http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 39 - User receives the list of images. 
+http://localhost:7080/img/avatars/Original-Facebook-Geek-Profile-Avatar-5.jpg
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 50 - User receives the list of contents. 
+Accusantium eius ut architecto neque vel voluptatem vel nam eos minus ullam dolores voluptates enim sed voluptatem rerum qui sapiente nesciunt aspernatur et accusamus laboriosam culpa tenetur hic aut placeat error autem qui sunt.
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 50 - User receives the list of contents. 
+Omnis fugiat porro vero quas tempora quis eveniet ab officia cupiditate culpa repellat debitis itaque possimus odit dolorum et iste quibusdam quis dicta autem sint vel quo vel consequuntur dolorem nihil neque sunt aperiam blanditiis.
+01-18-2023 17:11:22 DynamicContentPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 50 - User receives the list of contents. 
+Cupiditate laboriosam voluptas et quibusdam soluta officia ducimus omnis corporis minima sequi et quod non recusandae inventore rerum repellendus nisi delectus eius consequatur provident nihil voluptas cum officiis at eveniet tenetur.
+=====> dynamicContentTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Jan 18, 2023 5:11:19 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 22885
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="dynamicControlsTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="13.851">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> dynamicControlsTest is started <===== 
+01-18-2023 17:11:24 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/dynamic_controls page. 
+01-18-2023 17:11:24 DynamicControlsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 58 - User clicks on the checkbox. 
+01-18-2023 17:11:25 DynamicControlsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 63 - User clicks on the 'Remove/Add' button. 
+01-18-2023 17:11:25 DynamicControlsPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 65 - Selenium is waiting for appearing of message. 
+01-18-2023 17:11:28 DynamicControlsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 48 - User sees 'It's gone!'. 
+ =====> It's gone! <===== 
+01-18-2023 17:11:28 DynamicControlsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 63 - User clicks on the 'Remove/Add' button. 
+01-18-2023 17:11:28 DynamicControlsPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 65 - Selenium is waiting for appearing of message. 
+01-18-2023 17:11:31 DynamicControlsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 48 - User sees 'It's back!'. 
+ =====> It's back! <===== 
+01-18-2023 17:11:31 DynamicControlsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 70 - User clicks on the 'Enable/Disable' button. 
+01-18-2023 17:11:31 DynamicControlsPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 72 - Selenium is waiting for appearing of message. 
+01-18-2023 17:11:34 DynamicControlsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 48 - User sees 'It's enabled!'. 
+ =====> It's enabled! <===== 
+01-18-2023 17:11:35 DynamicControlsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 70 - User clicks on the 'Enable/Disable' button. 
+01-18-2023 17:11:35 DynamicControlsPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 72 - Selenium is waiting for appearing of message. 
+01-18-2023 17:11:38 DynamicControlsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 48 - User sees 'It's disabled!'. 
+ =====> It's disabled! <===== 
+=====> dynamicControlsTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 5139
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="dynamicLoadingTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="5.957">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> dynamicLoadingTest is started <===== 
+01-18-2023 17:11:40 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/dynamic_loading/2 page. 
+01-18-2023 17:11:40 DynamicLoadingPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 45 - User clicks on the 'Start' button. 
+01-18-2023 17:11:40 DynamicLoadingPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Selenium is waiting for appearing of message. 
+01-18-2023 17:11:46 DynamicLoadingPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 35 - User can see 'Hello World!'. 
+ =====> Hello World! <===== 
+=====> dynamicLoadingTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Jan 18, 2023 5:11:38 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 24809
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="fileDownloadTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="2.486">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> fileDownloadTest is started <===== 
+01-18-2023 17:11:48 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/download page. 
+01-18-2023 17:11:48 FileDownloadPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User is searching the 'some-file.txt' list of file links. 
+01-18-2023 17:11:48 FileDownloadPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 35 - User clicks on the file link for downloading file. 
+01-18-2023 17:11:48 FileDownloadPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 44 - User is waiting while file downloads. 
+ =====> The downloaded file name is 'some-file.txt' <===== 
+=====> fileDownloadTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 13000
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="fileUploadTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.949">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> fileUploadTest is started <===== 
+01-18-2023 17:11:52 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/upload page. 
+01-18-2023 17:11:53 FileUploadPage.java DEBUG [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 41 - User click on the 'Choose file' button for uploading file. 
+01-18-2023 17:11:53 FileUploadPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 43 - User clicks on the 'Upload' button. 
+01-18-2023 17:11:53 FileUploadPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 49 - User can see 'File Uploaded!'. 
+ =====> File Uploaded! <===== 
+=====> fileUploadTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Jan 18, 2023 5:11:50 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 12596
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="floatingMenuTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.641">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> floatingMenuTest is started <===== 
+01-18-2023 17:11:55 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/floating_menu page. 
+01-18-2023 17:11:56 FloatingMenuPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 32 - User scrolls page down. 
+01-18-2023 17:11:56 FloatingMenuPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 50 - Floating menu is displayed. 
+01-18-2023 17:11:56 FloatingMenuPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 38 - User scrolls page up. 
+01-18-2023 17:11:56 FloatingMenuPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 50 - Floating menu is displayed. 
+=====> floatingMenuTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 21659
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="iframeTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="5.26">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> iframeTest is started <===== 
+01-18-2023 17:11:58 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/iframe page. 
+01-18-2023 17:12:02 IframePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - User clicks on the cross for closing alert
+01-18-2023 17:12:03 IframePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 52 - User switch to the iFrame. 
+01-18-2023 17:12:03 IframePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 40 - User clears input box. 
+01-18-2023 17:12:03 IframePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 42 - User sends a text into input box. 
+01-18-2023 17:12:03 IframePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 59 - User receives 'Slovenia' from input box. 
+=====> iframeTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 34089
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="mouseHoverTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.953">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> mouseHoverTest is started <===== 
+01-18-2023 17:12:06 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/hovers page. 
+01-18-2023 17:12:06 MouseHoverPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 35 - User makes mouse hover. 
+ =====> name: user1
+View profile <===== 
+01-18-2023 17:12:06 MouseHoverPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 35 - User makes mouse hover. 
+ =====> name: user2
+View profile <===== 
+01-18-2023 17:12:07 MouseHoverPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 35 - User makes mouse hover. 
+ =====> name: user3
+View profile <===== 
+01-18-2023 17:12:07 MouseHoverPage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 44 - User can see figures texts. 
+=====> mouseHoverTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 47569
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="javaScriptAlertsTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.893">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> javaScriptAlertsTest is started <===== 
+01-18-2023 17:12:09 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/javascript_alerts page. 
+01-18-2023 17:12:09 JavaScriptAlertsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 40 - User clicks on the 'Click for JS Alert' button. 
+01-18-2023 17:12:09 JavaScriptAlertsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 64 - User receives 'I am a JS Alert' message. 
+01-18-2023 17:12:09 JavaScriptAlertsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 57 - User receives 'You successfuly clicked an alert' message. 
+01-18-2023 17:12:09 JavaScriptAlertsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 45 - User clicks on the 'Click for JS Confirm' button. 
+01-18-2023 17:12:09 JavaScriptAlertsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 64 - User receives 'I am a JS Confirm' message. 
+01-18-2023 17:12:10 JavaScriptAlertsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 57 - User receives 'You clicked: Ok' message. 
+01-18-2023 17:12:10 JavaScriptAlertsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 50 - User clicks on the 'Click for JS Prompt' button. 
+01-18-2023 17:12:10 JavaScriptAlertsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 69 - User sends 'Towne-Wisoky' to the JS prompt. 
+01-18-2023 17:12:10 JavaScriptAlertsPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 57 - User receives 'You entered: Towne-Wisoky' message. 
+=====> javaScriptAlertsTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Jan 18, 2023 5:12:07 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 16046
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="javaScriptErrorTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.133">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> javaScriptErrorTest is started <===== 
+01-18-2023 17:12:12 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/javascript_error page. 
+JS Errors are [2023-01-18T22:12:12.201Z] [SEVERE] http://localhost:7080/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading 'xyz')
+=====> javaScriptErrorTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 39602
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="openNewTabTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="0.693">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> openNewTabTest is started <===== 
+01-18-2023 17:12:14 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/windows page. 
+01-18-2023 17:12:14 OpenNewTabPage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 29 - User clicks on the 'Click Here' link for opening new window. 
+Parent windows id is CDwindow-7DF13B1242B77BE810B8342091EE2BBD
+Total windows is 2
+Child window title is ===> New Window <=== 
+=====> openNewTabTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 33500
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="notificationMessageTest" classname="com.qa.take_home_webdriver_test.tests.TakeHomeWebDriverTest" time="2.086">
+    <system-out><![CDATA[ =====> Bye Bye ... <===== 
+ =====> The chrome has been opened <===== 
+ =====> Selenium Google Chrome <===== 
+=====> notificationMessageTest is started <===== 
+01-18-2023 17:12:16 BasePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 26 - User navigates on the http://localhost:7080/notification_message_rendered page. 
+01-18-2023 17:12:17 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:17 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:17 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:17 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:18 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:18 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:18 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:18 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:18 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:18 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:18 NotificationMessagePage.java INFO  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 33 - User clicks on the 'Click Here' link. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action successful'. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action successful'. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action successful'. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action successful'. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action successful'. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action successful'. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action unsuccesful, please try again'. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action unsuccesful, please try again'. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action unsuccesful, please try again'. 
+01-18-2023 17:12:18 NotificationMessagePage.java WARN  [TestNG-test=Selenium Take Home WebDriver-1] basepage.BasePage 47 - Msg appears 'Action unsuccesful, please try again'. 
+=====> notificationMessageTest is successful <===== 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 47123
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+</testsuite>
