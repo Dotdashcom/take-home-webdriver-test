@@ -1,0 +1,1 @@
+{"uuid":"804a7a21-bf18-43d2-98e2-9fc8b68a4803","name":"Take Home WebDriver Test Smoke Suite","children":["a8508ea4-fc22-4ffd-998d-3e17e9f3ed94"],"befores":[{"name":"readProperties","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1673913287817,"stop":1673913287819}],"afters":[],"start":1673913287809,"stop":1673913293525}
