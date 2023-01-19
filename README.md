@@ -29,7 +29,7 @@
     - Dropdown: http://localhost:7080/dropdown Test dropdown using Webdriver.
     * Dynamic Content: http://localhost:7080/dynamic_content Test content changes with page reload.
     + Dynamic Controls: http://localhost:7080/dynamic_controls Test Dynamic Controls using Explicit Waits.
-    - Dynamic Loading: http://localhost:7080/dynamic_loading/2 Test Dynamic Loading using Explict Waits.
+    - Dynamic Loading: http://localhost:7080/dynamic_loadingPage/2 Test Dynamic Loading using Explict Waits.
     * File Download: http://localhost:7080/download Test File Download.
     + File Upload: http://localhost:7080/upload Test File Upload.
     - Floating Menu: http://localhost:7080/floating_menu Test Floating Menu.

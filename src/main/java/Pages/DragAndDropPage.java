@@ -4,13 +4,12 @@ import Helpers.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.AssertJUnit;
 
-public class DragAndDrop_Page {
+public class DragAndDropPage {
     public WebDriver driver;
     public Helpers helpers;
 
-    public DragAndDrop_Page(WebDriver driver){
+    public DragAndDropPage(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }

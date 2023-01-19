@@ -5,11 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.AssertJUnit;
 
-public class Login_Page {
+public class LoginPage {
     public WebDriver driver;
     public Helpers helpers;
 
-    public Login_Page(WebDriver driver){
+    public LoginPage(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }

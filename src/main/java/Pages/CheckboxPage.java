@@ -5,11 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.AssertJUnit;
 
-public class Dynamic_Content_Page {
+public class CheckboxPage {
     public WebDriver driver;
     public Helpers helpers;
 
-    public Dynamic_Content_Page(WebDriver driver){
+    public CheckboxPage(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }

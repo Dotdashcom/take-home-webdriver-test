@@ -9,16 +9,13 @@
         <parameter name="username" value="tomsmith"/>
         <parameter name="password" value="SuperSecretPassword!"/>
 
-        <!-- <classes>
-            <class name="Tests.Tests_Dropdown">
-                <methods>
-                    <include name="T007_DynamicContent_Testing"/>
-                </methods>
+        <classes>
+            <class name="Tests.TestsDragAndDrop">
             </class>
-        </classes>-->
-        <packages>
+        </classes>
+        <!--  <packages>
             <package name="Tests.*"/>
-        </packages>
+        </packages>-->
 
     </test>
 

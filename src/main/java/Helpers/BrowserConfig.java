@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class BrowserConfig {
@@ -31,6 +32,14 @@ public class BrowserConfig {
                 chromeOptions.addArguments("--test-type=ui");
                 chromeOptions.addArguments("--disable-gpu-sandbox");
                 chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("download.default_directory=C:/Downloads");
+
+                HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+                String download_dir_path = System.getProperty("user.dir")+"\\src\\test\\resources\\downloads";
+                helpers.Print(download_dir_path);
+                chromePrefs.put("download.default_directory",download_dir_path );
+
+                chromeOptions.setExperimentalOption("prefs", chromePrefs);
 
                 driver = new ChromeDriver(chromeOptions);
                 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

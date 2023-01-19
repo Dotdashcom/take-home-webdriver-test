@@ -5,11 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.AssertJUnit;
 
-public class Dropdown_Page {
+public class DropdownPage {
     public WebDriver driver;
     public Helpers helpers;
 
-    public Dropdown_Page(WebDriver driver){
+    public DropdownPage(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }

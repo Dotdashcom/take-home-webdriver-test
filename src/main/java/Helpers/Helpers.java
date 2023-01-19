@@ -11,8 +11,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class Helpers {
     private static WebDriver driver;
@@ -44,6 +42,9 @@ public class Helpers {
         }
     }
 
+    public void refreshPage(){
+        driver.navigate().refresh();
+    }
     public void Wait(int secs){
         try {
             Thread.sleep(secs*1000);
@@ -142,6 +143,10 @@ public class Helpers {
         Print("Se extrae texto: "+ texto_extraido+ " del elemento: " + elemento );
         return texto_extraido;
     }
+    public WebElement WaitElementToBePresent(By by){
+        WebElement elemento =  wait.until(ExpectedConditions.presenceOfElementLocated(by));
+        return elemento;
+    }
     // ---------------FAKER METHODS-------------------------------------
     public String fake_first_name(){
         return faker.name().firstName();
@@ -190,5 +195,22 @@ public class Helpers {
         act.moveByOffset(-1, -1).build().perform();
         Wait(1);
         act.release().build().perform();
+    }
+    public boolean isElementPresent(By by) {
+        try {
+            driver.findElement(by);
+            return true;
+        }
+        catch (org.openqa.selenium.NoSuchElementException e) {
+            return false;
+        }
+    }
+    public void MouseOverToElement(By by) {
+        Actions act = new Actions(driver);
+        WebElement elementLocator = driver.findElement(by);
+        act.moveToElement(elementLocator).perform();
+    }    public void MouseOverToElement( WebElement elementLocator) {
+        Actions act = new Actions(driver);
+        act.moveToElement(elementLocator).perform();
     }
 }

@@ -5,11 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.AssertJUnit;
 
-public class Context_Menu_Page {
+public class ContextMenuPage {
     public WebDriver driver;
     public Helpers helpers;
 
-    public Context_Menu_Page(WebDriver driver){
+    public ContextMenuPage(WebDriver driver){
         this.driver = driver;
         helpers = new Helpers(driver);
     }
