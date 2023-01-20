@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke">
+
+    <test name="Assignment Testing" allow-return-values="false">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="headless" value="false"/>
+        <parameter name="url" value="http://localhost:7080"/>
+        <parameter name="username" value="tomsmith"/>
+        <parameter name="password" value="SuperSecretPassword!"/>
+
+        <!--<classes>
+            <class name="Tests.TestsMicelaneous">
+            </class>
+        </classes>-->
+         <packages>
+           <package name="Tests.*"/>
+       </packages>
+
+    </test>
+
+
+</suite>
