@@ -9,13 +9,13 @@
         <parameter name="username" value="tomsmith"/>
         <parameter name="password" value="SuperSecretPassword!"/>
 
-        <classes>
-            <class name="Tests.TestsDragAndDrop">
+        <!--<classes>
+            <class name="Tests.TestsMicelaneous">
             </class>
-        </classes>
-        <!--  <packages>
-            <package name="Tests.*"/>
-        </packages>-->
+        </classes>-->
+         <packages>
+           <package name="Tests.*"/>
+       </packages>
 
     </test>
 

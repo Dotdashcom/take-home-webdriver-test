@@ -11,8 +11,6 @@ public class TestsMouseHover extends BaseClass {
         MouseOverPage mouseOverPage = new MouseOverPage(driver);
         mouseOverPage.GoToMouseOver();
         mouseOverPage.MouseOver();
-
-
     }
 
 }

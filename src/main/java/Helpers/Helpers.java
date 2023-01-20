@@ -11,6 +11,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.numberOfWindowsToBe;
+import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
+
 
 public class Helpers {
     private static WebDriver driver;
@@ -29,6 +32,11 @@ public class Helpers {
     public void getURL(String url) {
         Print("Se ingresa a la URL:" + url);
         driver.get(url);
+    }
+    public String removeLastChar(String s)
+    {
+//returns the string after removing the last character
+        return s.substring(0, s.length() - 1);
     }
     public String getXMLParameter(String Key) {
         return Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter(Key);
@@ -54,6 +62,12 @@ public class Helpers {
     }
     public void Print(String texto){
         System.out.println(texto + "\r\n");
+    }
+    public void WaitUntilWindowsAre(int n_windows){
+        wait.until(numberOfWindowsToBe(n_windows));
+    }
+    public void WaitUntilTitleIs(String title){
+        wait.until(titleIs(title));
     }
 
     public void Click(By by) {
