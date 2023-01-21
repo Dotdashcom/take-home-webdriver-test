@@ -1,4 +1,4 @@
-@test @regression
+@test @Regression
 Feature: All Test Cases
 
   Background:
