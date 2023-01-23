@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/ADMIN/IdeaProjects/QA_TEST/src/test/java/test/all_tests.java">
+        <classes>
+            <class name="test.all_tests">
+                <methods>
+                    <include name="login_test"/>
+                    <include name="Checkboxes_test"/>
+                    <include name="Context_Menu_test"/>
+                    <include name="Drag_and_Drop_test"/>
+                    <include name="dropdown_test"/>
+                    <include name="Dynamic_Content_test"/>
+                    <include name="Dynamic_Controls_test"/>
+                    <include name="dynamic_loading_test"/>
+                    <include name="download_test"/>
+                    <include name="Upload_test"/>
+                    <include name="Floating_Menu_test"/>
+                    <include name="Iframe_test"/>
+                    <include name="Hover_test"/>
+                    <include name="JavaScript_Alerts_test"/>
+                    <include name="JavaScript_Error_test"/>
+                    <include name="windows_test"/>
+                    <include name="Notification_Message_test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

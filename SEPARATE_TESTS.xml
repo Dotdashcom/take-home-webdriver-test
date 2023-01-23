@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ADMIN/IdeaProjects/QA_TEST/src/test/java/test">
+        <classes>
+            <class name="test._10_File_Upload_test">
+                <methods>
+                    <include name="Upload_test"/>
+                </methods>
+            </class>
+            <class name="test._11_Floating_Menu_test">
+                <methods>
+                    <include name="Floating_Menu_test"/>
+                </methods>
+            </class>
+            <class name="test._12_Iframe_test">
+                <methods>
+                    <include name="Iframe_test"/>
+                </methods>
+            </class>
+            <class name="test._13_Mouse_Hover_test">
+                <methods>
+                    <include name="Hover_test"/>
+                </methods>
+            </class>
+            <class name="test._14_JavaScript_Alerts_test">
+                <methods>
+                    <include name="JavaScript_Alerts_test"/>
+                </methods>
+            </class>
+            <class name="test._15_JavaScript_Error_test">
+                <methods>
+                    <include name="JavaScript_Error_test"/>
+                </methods>
+            </class>
+            <class name="test._16_Open_in_New_Tab_test">
+                <methods>
+                    <include name="windows_test"/>
+                </methods>
+            </class>
+            <class name="test._17_Notification_Message_test">
+                <methods>
+                    <include name="Notification_Message_test"/>
+                </methods>
+            </class>
+            <class name="test.__1_Login_test">
+                <methods>
+                    <include name="LoginData"/>
+                </methods>
+            </class>
+            <class name="test.__2_Checkboxes_test">
+                <methods>
+                    <include name="LoginData"/>
+                </methods>
+            </class>
+            <class name="test.__3_Context_Menu_test">
+                <methods>
+                    <include name="Context_Menu_test"/>
+                </methods>
+            </class>
+            <class name="test.__4_Drag_and_Drop_test">
+                <methods>
+                    <include name="Drag_and_Drop_test"/>
+                </methods>
+            </class>
+            <class name="test.__5_dropdown_test">
+                <methods>
+                    <include name="dropdown_test"/>
+                </methods>
+            </class>
+            <class name="test.__6_Dynamic_Content_test">
+                <methods>
+                    <include name="Dynamic_Content_test"/>
+                </methods>
+            </class>
+            <class name="test.__7_Dynamic_Controls_test">
+                <methods>
+                    <include name="Dynamic_Controls_test"/>
+                </methods>
+            </class>
+            <class name="test.__8_dynamic_loading_test">
+                <methods>
+                    <include name="dynamic_loading_test"/>
+                </methods>
+            </class>
+            <class name="test.__9_File_Download_test">
+                <methods>
+                    <include name="download_test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
