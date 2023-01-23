@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-22T16:08:09 EST" name="Suite" finished-at="2023-01-22T16:10:55 EST" duration-ms="166843">
+    <groups>
+    </groups>
+    <test started-at="2023-01-22T16:08:09 EST" name="Test" finished-at="2023-01-22T16:10:55 EST" duration-ms="166843">
+      <class name="RamanpreetSinghtest.SeleniumTest.FileDownloadTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.FileDownloadTest@26e356f0]" started-at="2023-01-22T16:09:33 EST" name="launchApplication" finished-at="2023-01-22T16:09:37 EST" duration-ms="3822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="fileDownload()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.FileDownloadTest@26e356f0]" started-at="2023-01-22T16:09:37 EST" name="fileDownload" finished-at="2023-01-22T16:09:45 EST" duration-ms="7474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.FileDownloadTest@26e356f0]" started-at="2023-01-22T16:09:45 EST" name="closeBrowser" finished-at="2023-01-22T16:09:45 EST" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.FileDownloadTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.NotificationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.NotificationTest@4659191b]" started-at="2023-01-22T16:10:49 EST" name="launchApplication" finished-at="2023-01-22T16:10:52 EST" duration-ms="3561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="notificationMessage()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.NotificationTest@4659191b]" started-at="2023-01-22T16:10:52 EST" name="notificationMessage" finished-at="2023-01-22T16:10:55 EST" duration-ms="2738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationMessage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.NotificationTest@4659191b]" started-at="2023-01-22T16:10:55 EST" name="closeBrowser" finished-at="2023-01-22T16:10:55 EST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.NotificationTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.ContextMenuTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.ContextMenuTest@82de64a]" started-at="2023-01-22T16:08:36 EST" name="launchApplication" finished-at="2023-01-22T16:08:40 EST" duration-ms="4335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="contextMenu()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.ContextMenuTest@82de64a]" started-at="2023-01-22T16:08:40 EST" name="contextMenu" finished-at="2023-01-22T16:08:43 EST" duration-ms="2626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextMenu -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.ContextMenuTest@82de64a]" started-at="2023-01-22T16:08:43 EST" name="closeBrowser" finished-at="2023-01-22T16:08:43 EST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.ContextMenuTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.DynamicControlTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DynamicControlTest@4310d43]" started-at="2023-01-22T16:09:09 EST" name="launchApplication" finished-at="2023-01-22T16:09:13 EST" duration-ms="4044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="dynamicControl()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DynamicControlTest@4310d43]" started-at="2023-01-22T16:09:13 EST" name="dynamicControl" finished-at="2023-01-22T16:09:19 EST" duration-ms="6348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicControl -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DynamicControlTest@4310d43]" started-at="2023-01-22T16:09:19 EST" name="closeBrowser" finished-at="2023-01-22T16:09:20 EST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.DynamicControlTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.MouseHoverTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.MouseHoverTest@27f981c6]" started-at="2023-01-22T16:10:10 EST" name="launchApplication" finished-at="2023-01-22T16:10:13 EST" duration-ms="3913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="mouseHovertest()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.MouseHoverTest@27f981c6]" started-at="2023-01-22T16:10:13 EST" name="mouseHovertest" finished-at="2023-01-22T16:10:17 EST" duration-ms="3320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHovertest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.MouseHoverTest@27f981c6]" started-at="2023-01-22T16:10:17 EST" name="closeBrowser" finished-at="2023-01-22T16:10:18 EST" duration-ms="1485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.MouseHoverTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.IFrameTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.IFrameTest@4b8ee4de]" started-at="2023-01-22T16:09:51 EST" name="launchApplication" finished-at="2023-01-22T16:09:55 EST" duration-ms="3591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="frametest()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.IFrameTest@4b8ee4de]" started-at="2023-01-22T16:09:55 EST" name="frametest" finished-at="2023-01-22T16:10:09 EST" duration-ms="14219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frametest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.IFrameTest@4b8ee4de]" started-at="2023-01-22T16:10:09 EST" name="closeBrowser" finished-at="2023-01-22T16:10:10 EST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.IFrameTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.DynamicContentTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DynamicContentTest@47e2e487]" started-at="2023-01-22T16:09:01 EST" name="launchApplication" finished-at="2023-01-22T16:09:05 EST" duration-ms="3630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="dynamiccontenttest()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DynamicContentTest@47e2e487]" started-at="2023-01-22T16:09:05 EST" name="dynamiccontenttest" finished-at="2023-01-22T16:09:09 EST" duration-ms="3841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamiccontenttest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DynamicContentTest@47e2e487]" started-at="2023-01-22T16:09:09 EST" name="closeBrowser" finished-at="2023-01-22T16:09:09 EST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.DynamicContentTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.FloatingMenuTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.FloatingMenuTest@47d9a273]" started-at="2023-01-22T16:09:45 EST" name="launchApplication" finished-at="2023-01-22T16:09:49 EST" duration-ms="3862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="floatMenu()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.FloatingMenuTest@47d9a273]" started-at="2023-01-22T16:09:49 EST" name="floatMenu" finished-at="2023-01-22T16:09:51 EST" duration-ms="2390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatMenu -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.FloatingMenuTest@47d9a273]" started-at="2023-01-22T16:09:51 EST" name="closeBrowser" finished-at="2023-01-22T16:09:51 EST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.FloatingMenuTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.DynamicLoadingTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DynamicLoadingTest@54a7079e]" started-at="2023-01-22T16:09:20 EST" name="launchApplication" finished-at="2023-01-22T16:09:24 EST" duration-ms="4277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="dynamicLoad()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DynamicLoadingTest@54a7079e]" started-at="2023-01-22T16:09:24 EST" name="dynamicLoad" finished-at="2023-01-22T16:09:33 EST" duration-ms="9190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicLoad -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DynamicLoadingTest@54a7079e]" started-at="2023-01-22T16:09:33 EST" name="closeBrowser" finished-at="2023-01-22T16:09:33 EST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.DynamicLoadingTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.OpenNewWidowTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.OpenNewWidowTest@2dc54ad4]" started-at="2023-01-22T16:10:42 EST" name="launchApplication" finished-at="2023-01-22T16:10:46 EST" duration-ms="3638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="newWindow()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.OpenNewWidowTest@2dc54ad4]" started-at="2023-01-22T16:10:46 EST" name="newWindow" finished-at="2023-01-22T16:10:48 EST" duration-ms="2678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newWindow -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.OpenNewWidowTest@2dc54ad4]" started-at="2023-01-22T16:10:48 EST" name="closeBrowser" finished-at="2023-01-22T16:10:49 EST" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.OpenNewWidowTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.LoginSucessTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.LoginSucessTest@4738a206]" started-at="2023-01-22T16:08:09 EST" name="launchApplication" finished-at="2023-01-22T16:08:15 EST" duration-ms="6825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginsuccess()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.LoginSucessTest@4738a206]" started-at="2023-01-22T16:08:15 EST" name="loginsuccess" finished-at="2023-01-22T16:08:19 EST" duration-ms="3433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginsuccess -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.LoginSucessTest@4738a206]" started-at="2023-01-22T16:08:19 EST" name="closeBrowser" finished-at="2023-01-22T16:08:19 EST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.LoginSucessTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.JavaScriptErrorTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.JavaScriptErrorTest@1151e434]" started-at="2023-01-22T16:10:36 EST" name="launchApplication" finished-at="2023-01-22T16:10:40 EST" duration-ms="3820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="JSErrortest()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.JavaScriptErrorTest@1151e434]" started-at="2023-01-22T16:10:40 EST" name="JSErrortest" finished-at="2023-01-22T16:10:42 EST" duration-ms="2330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JSErrortest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.JavaScriptErrorTest@1151e434]" started-at="2023-01-22T16:10:42 EST" name="closeBrowser" finished-at="2023-01-22T16:10:42 EST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.JavaScriptErrorTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.LoginFailTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.LoginFailTest@71a8adcf]" started-at="2023-01-22T16:08:19 EST" name="launchApplication" finished-at="2023-01-22T16:08:23 EST" duration-ms="3863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginfail()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.LoginFailTest@71a8adcf]" started-at="2023-01-22T16:08:23 EST" name="loginfail" finished-at="2023-01-22T16:08:26 EST" duration-ms="3081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfail -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.LoginFailTest@71a8adcf]" started-at="2023-01-22T16:08:26 EST" name="closeBrowser" finished-at="2023-01-22T16:08:26 EST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.LoginFailTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.DragNdropTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DragNdropTest@659499f1]" started-at="2023-01-22T16:08:43 EST" name="launchApplication" finished-at="2023-01-22T16:08:47 EST" duration-ms="3934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="drabNdroptest()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DragNdropTest@659499f1]" started-at="2023-01-22T16:08:47 EST" name="drabNdroptest" finished-at="2023-01-22T16:08:53 EST" duration-ms="6086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drabNdroptest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DragNdropTest@659499f1]" started-at="2023-01-22T16:08:53 EST" name="closeBrowser" finished-at="2023-01-22T16:08:53 EST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.DragNdropTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.CheckBoxTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.CheckBoxTest@27462a88]" started-at="2023-01-22T16:08:26 EST" name="launchApplication" finished-at="2023-01-22T16:08:30 EST" duration-ms="3833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="checkboxtest()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.CheckBoxTest@27462a88]" started-at="2023-01-22T16:08:30 EST" name="checkboxtest" finished-at="2023-01-22T16:08:36 EST" duration-ms="5614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxtest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.CheckBoxTest@27462a88]" started-at="2023-01-22T16:08:36 EST" name="closeBrowser" finished-at="2023-01-22T16:08:36 EST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.CheckBoxTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.DropDownTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DropDownTest@51e69659]" started-at="2023-01-22T16:08:53 EST" name="launchApplication" finished-at="2023-01-22T16:08:58 EST" duration-ms="4130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="dropDown()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DropDownTest@51e69659]" started-at="2023-01-22T16:08:58 EST" name="dropDown" finished-at="2023-01-22T16:09:01 EST" duration-ms="3427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.DropDownTest@51e69659]" started-at="2023-01-22T16:09:01 EST" name="closeBrowser" finished-at="2023-01-22T16:09:01 EST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.DropDownTest -->
+      <class name="RamanpreetSinghtest.SeleniumTest.JavaScriptAlertTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.JavaScriptAlertTest@1b11171f]" started-at="2023-01-22T16:10:18 EST" name="launchApplication" finished-at="2023-01-22T16:10:23 EST" duration-ms="4477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="javaScriptAlert()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.JavaScriptAlertTest@1b11171f]" started-at="2023-01-22T16:10:23 EST" name="javaScriptAlert" finished-at="2023-01-22T16:10:36 EST" duration-ms="12828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaScriptAlert -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:RamanpreetSinghtest.SeleniumTest.JavaScriptAlertTest@1b11171f]" started-at="2023-01-22T16:10:36 EST" name="closeBrowser" finished-at="2023-01-22T16:10:36 EST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- RamanpreetSinghtest.SeleniumTest.JavaScriptAlertTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

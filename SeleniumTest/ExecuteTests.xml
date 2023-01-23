@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+
+			<class name="RamanpreetSinghtest.SeleniumTest.LoginSucessTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.LoginFailTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.CheckBoxTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.ContextMenuTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.DragNdropTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.DropDownTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.DynamicContentTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.DynamicControlTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.DynamicLoadingTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.FileDownloadTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.FloatingMenuTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.LoginFailTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.IFrameTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.MouseHoverTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.JavaScriptAlertTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.JavaScriptErrorTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.OpenNewWidowTest" />
+            <class name="RamanpreetSinghtest.SeleniumTest.NotificationTest" />
+            
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
