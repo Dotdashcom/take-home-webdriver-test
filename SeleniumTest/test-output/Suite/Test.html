@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 22 16:08:09 EST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>166 seconds (166843 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.LoginSucessTest.loginsuccess()'><b>loginsuccess</b><br>Test class: RamanpreetSinghtest.SeleniumTest.LoginSucessTest</td>
+<td></td>
+<td>3</td>
+<td>RamanpreetSinghtest.SeleniumTest.LoginSucessTest@4738a206</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.JavaScriptErrorTest.JSErrortest()'><b>JSErrortest</b><br>Test class: RamanpreetSinghtest.SeleniumTest.JavaScriptErrorTest</td>
+<td></td>
+<td>2</td>
+<td>RamanpreetSinghtest.SeleniumTest.JavaScriptErrorTest@1151e434</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.NotificationTest.notificationMessage()'><b>notificationMessage</b><br>Test class: RamanpreetSinghtest.SeleniumTest.NotificationTest</td>
+<td></td>
+<td>2</td>
+<td>RamanpreetSinghtest.SeleniumTest.NotificationTest@4659191b</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.IFrameTest.frametest()'><b>frametest</b><br>Test class: RamanpreetSinghtest.SeleniumTest.IFrameTest</td>
+<td></td>
+<td>14</td>
+<td>RamanpreetSinghtest.SeleniumTest.IFrameTest@4b8ee4de</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.OpenNewWidowTest.newWindow()'><b>newWindow</b><br>Test class: RamanpreetSinghtest.SeleniumTest.OpenNewWidowTest</td>
+<td></td>
+<td>2</td>
+<td>RamanpreetSinghtest.SeleniumTest.OpenNewWidowTest@2dc54ad4</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.DragNdropTest.drabNdroptest()'><b>drabNdroptest</b><br>Test class: RamanpreetSinghtest.SeleniumTest.DragNdropTest</td>
+<td></td>
+<td>6</td>
+<td>RamanpreetSinghtest.SeleniumTest.DragNdropTest@659499f1</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.FloatingMenuTest.floatMenu()'><b>floatMenu</b><br>Test class: RamanpreetSinghtest.SeleniumTest.FloatingMenuTest</td>
+<td></td>
+<td>2</td>
+<td>RamanpreetSinghtest.SeleniumTest.FloatingMenuTest@47d9a273</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.LoginFailTest.loginfail()'><b>loginfail</b><br>Test class: RamanpreetSinghtest.SeleniumTest.LoginFailTest</td>
+<td></td>
+<td>3</td>
+<td>RamanpreetSinghtest.SeleniumTest.LoginFailTest@71a8adcf</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.DynamicContentTest.dynamiccontenttest()'><b>dynamiccontenttest</b><br>Test class: RamanpreetSinghtest.SeleniumTest.DynamicContentTest</td>
+<td></td>
+<td>3</td>
+<td>RamanpreetSinghtest.SeleniumTest.DynamicContentTest@47e2e487</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.MouseHoverTest.mouseHovertest()'><b>mouseHovertest</b><br>Test class: RamanpreetSinghtest.SeleniumTest.MouseHoverTest</td>
+<td></td>
+<td>3</td>
+<td>RamanpreetSinghtest.SeleniumTest.MouseHoverTest@27f981c6</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.DynamicControlTest.dynamicControl()'><b>dynamicControl</b><br>Test class: RamanpreetSinghtest.SeleniumTest.DynamicControlTest</td>
+<td></td>
+<td>6</td>
+<td>RamanpreetSinghtest.SeleniumTest.DynamicControlTest@4310d43</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.ContextMenuTest.contextMenu()'><b>contextMenu</b><br>Test class: RamanpreetSinghtest.SeleniumTest.ContextMenuTest</td>
+<td></td>
+<td>2</td>
+<td>RamanpreetSinghtest.SeleniumTest.ContextMenuTest@82de64a</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.DynamicLoadingTest.dynamicLoad()'><b>dynamicLoad</b><br>Test class: RamanpreetSinghtest.SeleniumTest.DynamicLoadingTest</td>
+<td></td>
+<td>9</td>
+<td>RamanpreetSinghtest.SeleniumTest.DynamicLoadingTest@54a7079e</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.CheckBoxTest.checkboxtest()'><b>checkboxtest</b><br>Test class: RamanpreetSinghtest.SeleniumTest.CheckBoxTest</td>
+<td></td>
+<td>5</td>
+<td>RamanpreetSinghtest.SeleniumTest.CheckBoxTest@27462a88</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.DropDownTest.dropDown()'><b>dropDown</b><br>Test class: RamanpreetSinghtest.SeleniumTest.DropDownTest</td>
+<td></td>
+<td>3</td>
+<td>RamanpreetSinghtest.SeleniumTest.DropDownTest@51e69659</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.JavaScriptAlertTest.javaScriptAlert()'><b>javaScriptAlert</b><br>Test class: RamanpreetSinghtest.SeleniumTest.JavaScriptAlertTest</td>
+<td></td>
+<td>12</td>
+<td>RamanpreetSinghtest.SeleniumTest.JavaScriptAlertTest@1b11171f</td></tr>
+<tr>
+<td title='RamanpreetSinghtest.SeleniumTest.FileDownloadTest.fileDownload()'><b>fileDownload</b><br>Test class: RamanpreetSinghtest.SeleniumTest.FileDownloadTest</td>
+<td></td>
+<td>7</td>
+<td>RamanpreetSinghtest.SeleniumTest.FileDownloadTest@26e356f0</td></tr>
+</table><p>
+</body>
+</html>
