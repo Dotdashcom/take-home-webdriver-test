@@ -16,7 +16,7 @@ public class BaseClass {
      public BaseClass() {
          prop = new Properties();
          try {
-          // FileInputStream ip = new FileInputStream("//Users//saimadhavi//GitHubAssign//src//main//java//Config.properties");
+        
            FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//Config.properties");
 
              prop.load(ip);
