@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="the-internet app acceptance test" verbose="1" >
+    <test name="dotdash - take-home-webdriver-test">
+        <packages>
+            <package name="com.dotdash.test.parallel" />
+        </packages>
+    </test>
+</suite>
