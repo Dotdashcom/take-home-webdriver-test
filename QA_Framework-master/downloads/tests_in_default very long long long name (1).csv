@@ -1,0 +1,4 @@
+"id","test","percentagePassed","planCount","createdBy","createdDate","description"
+"ZPaR6EEBH9galpfMOvlAjA-j","My New Test","100","no plan count available","Moti Kani <loripe2290@htcsemail.com>","Sep 26, 2020","None"
+"A1UNKgrzT11O51uhYH8rjQ-j","Visit home page","no percentage passed data available","1","mabl <system@mabl.com>","Sep 26, 2020","Attempt to load the primary url in a browser, validate that it loads, verify that login works (if provided)."
+"pTWCn0b1qlqTyKBgdKW48w-j","Visit all linked pages within the app","no percentage passed data available","1","mabl <system@mabl.com>","Sep 26, 2020","Starting at the primary url, crawl all links within the application's domain, validate that the linked pages load."
