@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-24T20:49:29 EST" name="Default suite" finished-at="2023-01-24T20:49:37 EST" duration-ms="7763">
+    <groups>
+    </groups>
+    <test started-at="2023-01-24T20:49:29 EST" name="Default test" finished-at="2023-01-24T20:49:37 EST" duration-ms="7763">
+      <class name="webDriverTest.DynamicLoadingTest">
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:webDriverTest.DynamicLoadingTest@4bb33f74]" started-at="2023-01-24T20:49:29 EST" name="initsetup" finished-at="2023-01-24T20:49:31 EST" duration-ms="2402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="verifyDaynamicloadingTest()[pri:0, instance:webDriverTest.DynamicLoadingTest@4bb33f74]" started-at="2023-01-24T20:49:31 EST" name="verifyDaynamicloadingTest" finished-at="2023-01-24T20:49:37 EST" duration-ms="5183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDaynamicloadingTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webDriverTest.DynamicLoadingTest@4bb33f74]" started-at="2023-01-24T20:49:37 EST" name="teardown" finished-at="2023-01-24T20:49:37 EST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webDriverTest.DynamicLoadingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
