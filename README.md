@@ -114,7 +114,7 @@
     - Test asserts that the alert message contains the typed message.
 16. JavaScript Error
     * Test finds the JavaScript error on the page.
-    + Test asserts that the page contains error: Cannot read property 'xyz' of undefined.
+    + Test asserts that the page contains error: Cannot read property 'XYZ' of undefined.
 17. Open in New Tab
     * Test clicks on the Click Here link.
     + Test asserts that a new tab is opened with text New Window.
