@@ -16,8 +16,8 @@ public class PomDragAndDrop extends BaseClass {
 		
 	}
 	
-	@FindBy (xpath= "//*[@id=\"column-a\"]") WebElement boxA;
-	@FindBy (id = "//*[@id=\"column-b\"]") WebElement boxB;
+	@FindBy (xpath= "//div[@class='column'and @id='column-a']") WebElement boxA;
+	@FindBy (xpath = ("//div[@class='column'and @id='column-b']")) WebElement boxB;
 	
 	@FindBy (xpath ="//*[@id=\"column-a\"]/header") WebElement textA;
 	
@@ -29,11 +29,11 @@ public class PomDragAndDrop extends BaseClass {
 		
 		
 		
-		action.moveToElement(boxA).clickAndHold();
-		Thread.sleep(3000);
-		action.moveToElement(boxB);
+		action.clickAndHold(boxA).moveToElement(boxB).release().perform();;
 		
-		action.release().perform();
+		/*action.moveToElement(boxB);
+		
+		action.release().perform();*/
 		//action.dragAndDrop(boxA, boxB).build().perform();;
 		//action.moveToElement(boxB);
 		

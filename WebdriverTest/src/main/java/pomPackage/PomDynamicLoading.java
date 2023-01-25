@@ -14,9 +14,9 @@ public class PomDynamicLoading extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy (xpath = "//*[@id=\"start\"]/button") WebElement startbutton;
+	@FindBy (xpath = "//div[@id='start' ]//button[contains(text(),'Start')]") WebElement startbutton;
 	
-	@FindBy (xpath ="//div[@id='finish']") WebElement afterclickmessage;
+	@FindBy (xpath ="//div[@id='finish' ]//h4[contains(text(),'Hello World')]") WebElement afterclickmessage;
 	
 	
 	public String clickonstartbutton() throws InterruptedException {

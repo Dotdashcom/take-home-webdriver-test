@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverTest.DynamicLoadingTest">
+      <class name="webDriverTest.DragAndDropTest">
         <methods>
-          <include name="clickonstartTest"/>
           <include name="teardown"/>
+          <include name="varifydrag"/>
           <include name="initsetup"/>
         </methods>
-      </class> <!-- webDriverTest.DynamicLoadingTest -->
+      </class> <!-- webDriverTest.DragAndDropTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -40,10 +40,10 @@ public class DragAndDropTest extends BaseClass {
 		
 		drag.draganddrop();
 		
-	/*String a=	drag.varifydraganddrop();
+	String a=	drag.varifydraganddrop();
 		
 		Assert.assertEquals(a, "A", "box A switched");
-		*/
+		
 	}
 	
 	 @AfterMethod
