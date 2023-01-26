@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="27" passed="27" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-24T23:04:54Z" name="Suite" finished-at="2023-01-24T23:06:42Z" duration-ms="107856">
+    <groups>
+    </groups>
+    <test started-at="2023-01-24T23:04:54Z" name="Test" finished-at="2023-01-24T23:06:42Z" duration-ms="107856">
+      <class name="com.qa.selenium.tests.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.LoginPageTest@302c971f]" started-at="2023-01-24T18:05:59Z" name="setup" finished-at="2023-01-24T18:06:01Z" duration-ms="1790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTestSucess()[pri:1, instance:com.qa.selenium.tests.LoginPageTest@302c971f]" started-at="2023-01-24T18:06:01Z" name="loginTestSucess" finished-at="2023-01-24T18:06:03Z" duration-ms="1594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestSucess -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.LoginPageTest@302c971f]" started-at="2023-01-24T18:06:03Z" name="teardown" finished-at="2023-01-24T18:06:03Z" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.LoginPageTest@302c971f]" started-at="2023-01-24T18:06:20Z" name="setup" finished-at="2023-01-24T18:06:22Z" duration-ms="1513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTestFailure()[pri:2, instance:com.qa.selenium.tests.LoginPageTest@302c971f]" started-at="2023-01-24T18:06:22Z" name="loginTestFailure" finished-at="2023-01-24T18:06:24Z" duration-ms="1600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestFailure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.LoginPageTest@302c971f]" started-at="2023-01-24T18:06:24Z" name="teardown" finished-at="2023-01-24T18:06:24Z" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.LoginPageTest -->
+      <class name="com.qa.selenium.tests.DynamicLoadingPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.DynamicLoadingPageTest@548a24a]" started-at="2023-01-24T18:05:34Z" name="setup" finished-at="2023-01-24T18:05:36Z" duration-ms="1451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DynamicTest()[pri:0, instance:com.qa.selenium.tests.DynamicLoadingPageTest@548a24a]" started-at="2023-01-24T18:05:36Z" name="DynamicTest" finished-at="2023-01-24T18:05:41Z" duration-ms="5187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.DynamicLoadingPageTest@548a24a]" started-at="2023-01-24T18:05:41Z" name="teardown" finished-at="2023-01-24T18:05:41Z" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.DynamicLoadingPageTest -->
+      <class name="com.qa.selenium.tests.JavascriptAlertPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59]" started-at="2023-01-24T18:06:08Z" name="setup" finished-at="2023-01-24T18:06:09Z" duration-ms="1354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="JSAlert()[pri:1, instance:com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59]" started-at="2023-01-24T18:06:09Z" name="JSAlert" finished-at="2023-01-24T18:06:11Z" duration-ms="1102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JSAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59]" started-at="2023-01-24T18:06:11Z" name="teardown" finished-at="2023-01-24T18:06:11Z" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59]" started-at="2023-01-24T18:06:30Z" name="setup" finished-at="2023-01-24T18:06:31Z" duration-ms="1435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="JSConfirm()[pri:2, instance:com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59]" started-at="2023-01-24T18:06:31Z" name="JSConfirm" finished-at="2023-01-24T18:06:33Z" duration-ms="1119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JSConfirm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59]" started-at="2023-01-24T18:06:33Z" name="teardown" finished-at="2023-01-24T18:06:33Z" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59]" started-at="2023-01-24T18:06:39Z" name="setup" finished-at="2023-01-24T18:06:41Z" duration-ms="1344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="JSPrompt()[pri:3, instance:com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59]" started-at="2023-01-24T18:06:41Z" name="JSPrompt" finished-at="2023-01-24T18:06:42Z" duration-ms="1130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JSPrompt -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59]" started-at="2023-01-24T18:06:42Z" name="teardown" finished-at="2023-01-24T18:06:42Z" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.JavascriptAlertPageTest -->
+      <class name="com.qa.selenium.tests.IFramePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.IFramePageTest@61c4eee0]" started-at="2023-01-24T18:05:12Z" name="setup" finished-at="2023-01-24T18:05:15Z" duration-ms="2205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="InputText()[pri:0, instance:com.qa.selenium.tests.IFramePageTest@61c4eee0]" started-at="2023-01-24T18:05:15Z" name="InputText" finished-at="2023-01-24T18:05:22Z" duration-ms="7480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InputText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.selenium.tests.IFramePageTest@61c4eee0]" started-at="2023-01-24T18:05:22Z" name="tearDown" finished-at="2023-01-24T18:05:22Z" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.selenium.tests.IFramePageTest -->
+      <class name="com.qa.selenium.tests.CheckBoxPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.CheckBoxPageTest@433defed]" started-at="2023-01-24T18:06:06Z" name="setup" finished-at="2023-01-24T18:06:08Z" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckBox1Test()[pri:1, instance:com.qa.selenium.tests.CheckBoxPageTest@433defed]" started-at="2023-01-24T18:06:08Z" name="CheckBox1Test" finished-at="2023-01-24T18:06:08Z" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBox1Test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.CheckBoxPageTest@433defed]" started-at="2023-01-24T18:06:08Z" name="teardown" finished-at="2023-01-24T18:06:08Z" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.CheckBoxPageTest@433defed]" started-at="2023-01-24T18:06:28Z" name="setup" finished-at="2023-01-24T18:06:30Z" duration-ms="1309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckBox2Test()[pri:2, instance:com.qa.selenium.tests.CheckBoxPageTest@433defed]" started-at="2023-01-24T18:06:30Z" name="CheckBox2Test" finished-at="2023-01-24T18:06:30Z" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBox2Test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.CheckBoxPageTest@433defed]" started-at="2023-01-24T18:06:30Z" name="teardown" finished-at="2023-01-24T18:06:30Z" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.CheckBoxPageTest -->
+      <class name="com.qa.selenium.tests.NewTabPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.NewTabPageTest@35841320]" started-at="2023-01-24T18:05:11Z" name="setup" finished-at="2023-01-24T18:05:12Z" duration-ms="1460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NewWindowTest()[pri:0, instance:com.qa.selenium.tests.NewTabPageTest@35841320]" started-at="2023-01-24T18:05:12Z" name="NewWindowTest" finished-at="2023-01-24T18:05:12Z" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewWindowTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.selenium.tests.NewTabPageTest@35841320]" started-at="2023-01-24T18:05:12Z" name="tearDown" finished-at="2023-01-24T18:05:12Z" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.selenium.tests.NewTabPageTest -->
+      <class name="com.qa.selenium.tests.FloatingMenuPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.FloatingMenuPageTest@1040be71]" started-at="2023-01-24T18:05:30Z" name="setup" finished-at="2023-01-24T18:05:31Z" duration-ms="1569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="menuCheckTest()[pri:0, instance:com.qa.selenium.tests.FloatingMenuPageTest@1040be71]" started-at="2023-01-24T18:05:31Z" name="menuCheckTest" finished-at="2023-01-24T18:05:34Z" duration-ms="3065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menuCheckTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.FloatingMenuPageTest@1040be71]" started-at="2023-01-24T18:05:34Z" name="teardown" finished-at="2023-01-24T18:05:34Z" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.FloatingMenuPageTest -->
+      <class name="com.qa.selenium.tests.FileUploadPageTest">
+        <test-method is-config="true" signature="fileCreate()[pri:0, instance:com.qa.selenium.tests.FileUploadPageTest@6d60fe40]" started-at="2023-01-24T18:04:54Z" name="fileCreate" finished-at="2023-01-24T18:04:54Z" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileCreate -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.FileUploadPageTest@6d60fe40]" started-at="2023-01-24T18:05:41Z" name="setup" finished-at="2023-01-24T18:05:43Z" duration-ms="2029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="performeUpload()[pri:0, instance:com.qa.selenium.tests.FileUploadPageTest@6d60fe40]" started-at="2023-01-24T18:05:43Z" name="performeUpload" finished-at="2023-01-24T18:05:44Z" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performeUpload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.FileUploadPageTest@6d60fe40]" started-at="2023-01-24T18:05:44Z" name="teardown" finished-at="2023-01-24T18:05:44Z" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.FileUploadPageTest -->
+      <class name="com.qa.selenium.tests.contextPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.contextPageTest@23e84203]" started-at="2023-01-24T18:04:54Z" name="setup" finished-at="2023-01-24T18:04:57Z" duration-ms="3405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="contextTest()[pri:0, instance:com.qa.selenium.tests.contextPageTest@23e84203]" started-at="2023-01-24T18:04:57Z" name="contextTest" finished-at="2023-01-24T18:04:58Z" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.contextPageTest@23e84203]" started-at="2023-01-24T18:04:58Z" name="teardown" finished-at="2023-01-24T18:04:58Z" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.contextPageTest -->
+      <class name="com.qa.selenium.tests.DragAndDropPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.DragAndDropPageTest@305ffe9e]" started-at="2023-01-24T18:05:05Z" name="setup" finished-at="2023-01-24T18:05:07Z" duration-ms="1685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dragAndDropTest()[pri:0, instance:com.qa.selenium.tests.DragAndDropPageTest@305ffe9e]" started-at="2023-01-24T18:05:07Z" name="dragAndDropTest" finished-at="2023-01-24T18:05:09Z" duration-ms="2122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.DragAndDropPageTest@305ffe9e]" started-at="2023-01-24T18:05:09Z" name="teardown" finished-at="2023-01-24T18:05:09Z" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.DragAndDropPageTest -->
+      <class name="com.qa.selenium.tests.DynamicControlPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.DynamicControlPageTest@514646ef]" started-at="2023-01-24T18:05:46Z" name="setup" finished-at="2023-01-24T18:05:47Z" duration-ms="1520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="removeAddTest()[pri:1, instance:com.qa.selenium.tests.DynamicControlPageTest@514646ef]" started-at="2023-01-24T18:05:47Z" name="removeAddTest" finished-at="2023-01-24T18:05:59Z" duration-ms="11494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeAddTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.DynamicControlPageTest@514646ef]" started-at="2023-01-24T18:05:59Z" name="teardown" finished-at="2023-01-24T18:05:59Z" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.DynamicControlPageTest@514646ef]" started-at="2023-01-24T18:06:13Z" name="setup" finished-at="2023-01-24T18:06:14Z" duration-ms="1490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enableDisableTest()[pri:2, instance:com.qa.selenium.tests.DynamicControlPageTest@514646ef]" started-at="2023-01-24T18:06:14Z" name="enableDisableTest" finished-at="2023-01-24T18:06:20Z" duration-ms="6240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enableDisableTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.DynamicControlPageTest@514646ef]" started-at="2023-01-24T18:06:20Z" name="teardown" finished-at="2023-01-24T18:06:20Z" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.DynamicControlPageTest -->
+      <class name="com.qa.selenium.tests.NotificationMessagePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.NotificationMessagePageTest@73eb439a]" started-at="2023-01-24T18:05:03Z" name="setup" finished-at="2023-01-24T18:05:05Z" duration-ms="1692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="notification()[pri:0, instance:com.qa.selenium.tests.NotificationMessagePageTest@73eb439a]" started-at="2023-01-24T18:05:05Z" name="notification" finished-at="2023-01-24T18:05:05Z" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.selenium.tests.NotificationMessagePageTest@73eb439a]" started-at="2023-01-24T18:05:05Z" name="tearDown" finished-at="2023-01-24T18:05:05Z" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.selenium.tests.NotificationMessagePageTest -->
+      <class name="com.qa.selenium.tests.FileDownloadPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.FileDownloadPageTest@19932c16]" started-at="2023-01-24T18:04:58Z" name="setup" finished-at="2023-01-24T18:05:00Z" duration-ms="1860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkDownloadTest()[pri:0, instance:com.qa.selenium.tests.FileDownloadPageTest@19932c16]" started-at="2023-01-24T18:05:00Z" name="checkDownloadTest" finished-at="2023-01-24T18:05:03Z" duration-ms="3114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDownloadTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.FileDownloadPageTest@19932c16]" started-at="2023-01-24T18:05:03Z" name="teardown" finished-at="2023-01-24T18:05:03Z" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.FileDownloadPageTest -->
+      <class name="com.qa.selenium.tests.DropdownPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.DropdownPageTest@6f10d5b6]" started-at="2023-01-24T18:05:22Z" name="setup" finished-at="2023-01-24T18:05:24Z" duration-ms="1378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="option1Test()[pri:0, instance:com.qa.selenium.tests.DropdownPageTest@6f10d5b6]" started-at="2023-01-24T18:05:24Z" name="option1Test" finished-at="2023-01-24T18:05:26Z" duration-ms="2169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- option1Test -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.DropdownPageTest@6f10d5b6]" started-at="2023-01-24T18:05:26Z" name="setup" finished-at="2023-01-24T18:05:27Z" duration-ms="1474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="option2Test()[pri:0, instance:com.qa.selenium.tests.DropdownPageTest@6f10d5b6]" started-at="2023-01-24T18:05:27Z" name="option2Test" finished-at="2023-01-24T18:05:30Z" duration-ms="2218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- option2Test -->
+      </class> <!-- com.qa.selenium.tests.DropdownPageTest -->
+      <class name="com.qa.selenium.tests.DynamicContentPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.DynamicContentPageTest@792b749c]" started-at="2023-01-24T18:05:44Z" name="setup" finished-at="2023-01-24T18:05:45Z" duration-ms="1493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="firstBoxTest()[pri:1, instance:com.qa.selenium.tests.DynamicContentPageTest@792b749c]" started-at="2023-01-24T18:05:45Z" name="firstBoxTest" finished-at="2023-01-24T18:05:46Z" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstBoxTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.DynamicContentPageTest@792b749c]" started-at="2023-01-24T18:05:46Z" name="teardown" finished-at="2023-01-24T18:05:46Z" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.DynamicContentPageTest@792b749c]" started-at="2023-01-24T18:06:11Z" name="setup" finished-at="2023-01-24T18:06:12Z" duration-ms="1497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="secondBoxTest()[pri:2, instance:com.qa.selenium.tests.DynamicContentPageTest@792b749c]" started-at="2023-01-24T18:06:12Z" name="secondBoxTest" finished-at="2023-01-24T18:06:12Z" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondBoxTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.DynamicContentPageTest@792b749c]" started-at="2023-01-24T18:06:12Z" name="teardown" finished-at="2023-01-24T18:06:13Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.DynamicContentPageTest@792b749c]" started-at="2023-01-24T18:06:33Z" name="setup" finished-at="2023-01-24T18:06:34Z" duration-ms="1487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="thirdBoxTest()[pri:3, instance:com.qa.selenium.tests.DynamicContentPageTest@792b749c]" started-at="2023-01-24T18:06:34Z" name="thirdBoxTest" finished-at="2023-01-24T18:06:34Z" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdBoxTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.DynamicContentPageTest@792b749c]" started-at="2023-01-24T18:06:34Z" name="teardown" finished-at="2023-01-24T18:06:35Z" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.DynamicContentPageTest -->
+      <class name="com.qa.selenium.tests.JavaScriptErrorPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.JavaScriptErrorPageTest@1972e513]" started-at="2023-01-24T18:05:09Z" name="setup" finished-at="2023-01-24T18:05:10Z" duration-ms="1247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="jserror()[pri:0, instance:com.qa.selenium.tests.JavaScriptErrorPageTest@1972e513]" started-at="2023-01-24T18:05:10Z" name="jserror" finished-at="2023-01-24T18:05:10Z" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jserror -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.selenium.tests.JavaScriptErrorPageTest@1972e513]" started-at="2023-01-24T18:05:10Z" name="teardown" finished-at="2023-01-24T18:05:11Z" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.selenium.tests.JavaScriptErrorPageTest -->
+      <class name="com.qa.selenium.tests.MouseHoverPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec]" started-at="2023-01-24T18:06:03Z" name="setup" finished-at="2023-01-24T18:06:04Z" duration-ms="1447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="firstImgTest()[pri:1, instance:com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec]" started-at="2023-01-24T18:06:04Z" name="firstImgTest" finished-at="2023-01-24T18:06:06Z" duration-ms="2201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstImgTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec]" started-at="2023-01-24T18:06:06Z" name="tearDown" finished-at="2023-01-24T18:06:06Z" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec]" started-at="2023-01-24T18:06:24Z" name="setup" finished-at="2023-01-24T18:06:25Z" duration-ms="1319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="secondImgTest()[pri:2, instance:com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec]" started-at="2023-01-24T18:06:25Z" name="secondImgTest" finished-at="2023-01-24T18:06:28Z" duration-ms="3156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondImgTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec]" started-at="2023-01-24T18:06:28Z" name="tearDown" finished-at="2023-01-24T18:06:28Z" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec]" started-at="2023-01-24T18:06:35Z" name="setup" finished-at="2023-01-24T18:06:36Z" duration-ms="1407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="thirdtImgTest()[pri:3, instance:com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec]" started-at="2023-01-24T18:06:36Z" name="thirdtImgTest" finished-at="2023-01-24T18:06:39Z" duration-ms="3152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdtImgTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec]" started-at="2023-01-24T18:06:39Z" name="tearDown" finished-at="2023-01-24T18:06:39Z" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.selenium.tests.MouseHoverPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
