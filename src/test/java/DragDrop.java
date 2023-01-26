@@ -19,10 +19,9 @@ public class DragDrop {
         Actions act = new Actions(driver);
         act.clickAndHold(drag).moveToElement(drop).release().build().perform();
 
-//        Action dragAndDrop = act.clickAndHold(fromA).moveToElement(toB).release(toB).build();
-//        dragAndDrop.perform();
-        Assert.assertEquals(drop.getText(), "A", "FAIL: File couldn't be dropped to target as expected");
-        Assert.assertEquals(drag.getText(), "B", "FAIL: File couldn't be dropped to target as expected");
+       
+        Assert.assertEquals(drop.getText(), "drag", "FAIL: File couldn't be dropped to target as expected");
+        Assert.assertEquals(drag.getText(), "drop", "FAIL: File couldn't be dropped to target as expected");
 
         Thread.sleep(2000);
 
