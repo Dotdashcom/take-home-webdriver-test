@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="apache.maven.plugins.surefire.plugin" type="repository">
+    <properties maven-id="org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M5/maven-surefire-plugin-3.0.0-M5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/surefire-api/3.0.0-M5/surefire-api-3.0.0-M5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/surefire-logger-api/3.0.0-M5/surefire-logger-api-3.0.0-M5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M5/surefire-extensions-api-3.0.0-M5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/surefire-booter/3.0.0-M5/surefire-booter-3.0.0-M5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M5/surefire-extensions-spi-3.0.0-M5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.0/maven-model-3.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.5/commons-io-2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-java/1.0.5/plexus-java-1.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/7.2/asm-7.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M4/surefire-shared-utils-3.0.0-M4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

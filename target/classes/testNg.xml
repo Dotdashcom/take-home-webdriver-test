@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+    <test name="Assessment test">
+
+        <listeners>
+            <listener class-name="com.test.qa.ExtentReportListner.ExtentReporterNG"/>
+        </listeners>
+        <classes>
+            <class name="com.test.qa.testcase.allTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
