@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="Take-Home-WebDriver-Test(failed)">
+    <classes>
+      <class name="com.qa.selenium.tests.DragAndDropPageTest">
+        <methods>
+          <include name="dragAndDropTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.DragAndDropPageTest -->
+    </classes>
+  </test> <!-- Take-Home-WebDriver-Test(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

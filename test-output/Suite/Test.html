@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 24 18:04:54 EST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>107 seconds (107856 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.selenium.tests.CheckBoxPageTest.CheckBox1Test()'><b>CheckBox1Test</b><br>Test class: com.qa.selenium.tests.CheckBoxPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.CheckBoxPageTest@433defed</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.CheckBoxPageTest.CheckBox2Test()'><b>CheckBox2Test</b><br>Test class: com.qa.selenium.tests.CheckBoxPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.CheckBoxPageTest@433defed</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.DynamicLoadingPageTest.DynamicTest()'><b>DynamicTest</b><br>Test class: com.qa.selenium.tests.DynamicLoadingPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.qa.selenium.tests.DynamicLoadingPageTest@548a24a</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.IFramePageTest.InputText()'><b>InputText</b><br>Test class: com.qa.selenium.tests.IFramePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.qa.selenium.tests.IFramePageTest@61c4eee0</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.JavascriptAlertPageTest.JSAlert()'><b>JSAlert</b><br>Test class: com.qa.selenium.tests.JavascriptAlertPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.JavascriptAlertPageTest.JSConfirm()'><b>JSConfirm</b><br>Test class: com.qa.selenium.tests.JavascriptAlertPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.JavascriptAlertPageTest.JSPrompt()'><b>JSPrompt</b><br>Test class: com.qa.selenium.tests.JavascriptAlertPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.selenium.tests.JavascriptAlertPageTest@2a693f59</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.NewTabPageTest.NewWindowTest()'><b>NewWindowTest</b><br>Test class: com.qa.selenium.tests.NewTabPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.NewTabPageTest@35841320</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.FileDownloadPageTest.checkDownloadTest()'><b>checkDownloadTest</b><br>Test class: com.qa.selenium.tests.FileDownloadPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.qa.selenium.tests.FileDownloadPageTest@19932c16</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.contextPageTest.contextTest()'><b>contextTest</b><br>Test class: com.qa.selenium.tests.contextPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.contextPageTest@23e84203</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.DragAndDropPageTest.dragAndDropTest()'><b>dragAndDropTest</b><br>Test class: com.qa.selenium.tests.DragAndDropPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.qa.selenium.tests.DragAndDropPageTest@305ffe9e</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.DynamicControlPageTest.enableDisableTest()'><b>enableDisableTest</b><br>Test class: com.qa.selenium.tests.DynamicControlPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.qa.selenium.tests.DynamicControlPageTest@514646ef</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.DynamicContentPageTest.firstBoxTest()'><b>firstBoxTest</b><br>Test class: com.qa.selenium.tests.DynamicContentPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.DynamicContentPageTest@792b749c</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.MouseHoverPageTest.firstImgTest()'><b>firstImgTest</b><br>Test class: com.qa.selenium.tests.MouseHoverPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.JavaScriptErrorPageTest.jserror()'><b>jserror</b><br>Test class: com.qa.selenium.tests.JavaScriptErrorPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.JavaScriptErrorPageTest@1972e513</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.LoginPageTest.loginTestFailure()'><b>loginTestFailure</b><br>Test class: com.qa.selenium.tests.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.selenium.tests.LoginPageTest@302c971f</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.LoginPageTest.loginTestSucess()'><b>loginTestSucess</b><br>Test class: com.qa.selenium.tests.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.selenium.tests.LoginPageTest@302c971f</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.FloatingMenuPageTest.menuCheckTest()'><b>menuCheckTest</b><br>Test class: com.qa.selenium.tests.FloatingMenuPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.qa.selenium.tests.FloatingMenuPageTest@1040be71</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.NotificationMessagePageTest.notification()'><b>notification</b><br>Test class: com.qa.selenium.tests.NotificationMessagePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.NotificationMessagePageTest@73eb439a</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.DropdownPageTest.option1Test()'><b>option1Test</b><br>Test class: com.qa.selenium.tests.DropdownPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.qa.selenium.tests.DropdownPageTest@6f10d5b6</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.DropdownPageTest.option2Test()'><b>option2Test</b><br>Test class: com.qa.selenium.tests.DropdownPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.qa.selenium.tests.DropdownPageTest@6f10d5b6</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.FileUploadPageTest.performeUpload()'><b>performeUpload</b><br>Test class: com.qa.selenium.tests.FileUploadPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.FileUploadPageTest@6d60fe40</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.DynamicControlPageTest.removeAddTest()'><b>removeAddTest</b><br>Test class: com.qa.selenium.tests.DynamicControlPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.qa.selenium.tests.DynamicControlPageTest@514646ef</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.DynamicContentPageTest.secondBoxTest()'><b>secondBoxTest</b><br>Test class: com.qa.selenium.tests.DynamicContentPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.DynamicContentPageTest@792b749c</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.MouseHoverPageTest.secondImgTest()'><b>secondImgTest</b><br>Test class: com.qa.selenium.tests.MouseHoverPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.DynamicContentPageTest.thirdBoxTest()'><b>thirdBoxTest</b><br>Test class: com.qa.selenium.tests.DynamicContentPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.selenium.tests.DynamicContentPageTest@792b749c</td></tr>
+<tr>
+<td title='com.qa.selenium.tests.MouseHoverPageTest.thirdtImgTest()'><b>thirdtImgTest</b><br>Test class: com.qa.selenium.tests.MouseHoverPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.qa.selenium.tests.MouseHoverPageTest@7ae0a9ec</td></tr>
+</table><p>
+</body>
+</html>

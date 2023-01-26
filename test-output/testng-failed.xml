@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.qa.selenium.tests.DynamicControlPageTest">
+        <methods>
+          <include name="removeAddTest"/>
+          <include name="teardown"/>
+          <include name="enableDisableTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.DynamicControlPageTest -->
+      <class name="com.qa.selenium.tests.NotificationMessagePageTest">
+        <methods>
+          <include name="notification"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.NotificationMessagePageTest -->
+      <class name="com.qa.selenium.tests.CheckBoxPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="CheckBox1Test"/>
+          <include name="CheckBox2Test"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.CheckBoxPageTest -->
+      <class name="com.qa.selenium.tests.FloatingMenuPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="menuCheckTest"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.FloatingMenuPageTest -->
+      <class name="com.qa.selenium.tests.JavaScriptErrorPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="jserror"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.JavaScriptErrorPageTest -->
+      <class name="com.qa.selenium.tests.MouseHoverPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="firstImgTest"/>
+          <include name="setup"/>
+          <include name="secondImgTest"/>
+          <include name="thirdtImgTest"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.MouseHoverPageTest -->
+      <class name="com.qa.selenium.tests.contextPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="contextTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.contextPageTest -->
+      <class name="com.qa.selenium.tests.FileUploadPageTest">
+        <methods>
+          <include name="performeUpload"/>
+          <include name="teardown"/>
+          <include name="fileCreate"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.FileUploadPageTest -->
+      <class name="com.qa.selenium.tests.FileDownloadPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="checkDownloadTest"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.FileDownloadPageTest -->
+      <class name="com.qa.selenium.tests.IFramePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="InputText"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.IFramePageTest -->
+      <class name="com.qa.selenium.tests.LoginPageTest">
+        <methods>
+          <include name="loginTestSucess"/>
+          <include name="loginTestFailure"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.LoginPageTest -->
+      <class name="com.qa.selenium.tests.DropdownPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="option2Test"/>
+          <include name="option1Test"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.DropdownPageTest -->
+      <class name="com.qa.selenium.tests.DragAndDropPageTest">
+        <methods>
+          <include name="dragAndDropTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.DragAndDropPageTest -->
+      <class name="com.qa.selenium.tests.DynamicContentPageTest">
+        <methods>
+          <include name="secondBoxTest"/>
+          <include name="thirdBoxTest"/>
+          <include name="setup"/>
+          <include name="firstBoxTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.DynamicContentPageTest -->
+      <class name="com.qa.selenium.tests.DynamicLoadingPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="DynamicTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.DynamicLoadingPageTest -->
+      <class name="com.qa.selenium.tests.JavascriptAlertPageTest">
+        <methods>
+          <include name="JSAlert"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="JSConfirm"/>
+          <include name="JSPrompt"/>
+        </methods>
+      </class> <!-- com.qa.selenium.tests.JavascriptAlertPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
