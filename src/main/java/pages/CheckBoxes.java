@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
 
 import java.util.List;
@@ -13,9 +14,11 @@ public class CheckBoxes {
     private WebDriver driver;
     private SoftAssert softAssert;
 
+
     public CheckBoxes(WebDriver driver, SoftAssert softAssert) {
         this.driver = driver;
         this.softAssert = softAssert;
+
         PageFactory.initElements(driver,this);
     }
 
@@ -31,6 +34,7 @@ public class CheckBoxes {
     private void checkBoxes(){
         checkBoxes.get(1).click();
         for (int i = 0; i < checkBoxes.size(); i++) {
+            if(!checkBoxes.get(i).isSelected())
             checkBoxes.get(i).click();
             softAssert.assertTrue(checkBoxes.get(i).isSelected(),"check box "+checkBoxes.get(i).getText()+" is not checked");
         }
