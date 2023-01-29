@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DDM-Test-Assessment" thread-count="1" parallel="methods">
+    <test name="Regression-Test" preserve-order="true">
+        <classes>
+            <class name="com.ddm.testcases.LoginPageTests"/>
+            <class name="com.ddm.testcases.CheckboxTests"/>
+            <class name="com.ddm.testcases.ContextMenuTests"/>
+            <class name="com.ddm.testcases.DragAndDropTests"/>
+            <class name="com.ddm.testcases.DropdownTests"/>
+            <class name="com.ddm.testcases.DynamicContentTests"/>
+            <class name="com.ddm.testcases.DynamicControlTests"/>
+            <class name="com.ddm.testcases.DynamicLoadingTests"/>
+            <class name="com.ddm.testcases.FileDownloadTests"/>
+            <class name="com.ddm.testcases.FileUploadTests"/>
+            <class name="com.ddm.testcases.FloatingMenuTests"/>
+            <class name="com.ddm.testcases.IFrameTests"/>
+            <class name="com.ddm.testcases.MouseHoverTests"/>
+            <class name="com.ddm.testcases.JSAlertTests"/>
+            <class name="com.ddm.testcases.JSErrorTests"/>
+            <class name="com.ddm.testcases.MultipleWindowsTests"/>
+            <class name="com.ddm.testcases.NotificationMessageTests"/>
+        </classes>
+    </test>
+</suite>
