@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Project (By Gonza) (2023)" />
+        <module name="WebdriverTests_NelsonParede_2023" />
+        <module name="com.nparede.project" />
+        <module name="bluegoji-challenge" />
+        <module name="WebdriverTest_NParede_2023" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bluegoji-challenge" options="" />
+    </option>
+  </component>
+</project>

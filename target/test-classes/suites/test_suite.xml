@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite">
+
+    <test name="Login Tests" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/login"/>
+        <parameter name="userName" value="tomsmith"/>
+        <parameter name="password" value="SuperSecretPassword!"/>
+
+        <classes>
+            <class name="com.nparede.project.test.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="CheckBoxes Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/checkboxes"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+            <methods>
+                <include name="CheckBoxesTest"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="ContextMenu Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/context_menu"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+                <methods>
+                    <include name="ContextMenuTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Dropdown Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/dropdown"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+                <methods>
+                    <include name="DropdownTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="DynamicContent Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/dynamic_content"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+                <methods>
+                    <include name="DynamicContentTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Dynamic Controls Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/dynamic_controls"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+                <methods>
+                    <include name="DynamicControlsRemoveCheckBoxTest"/>
+                    <include name="DynamicControlsEnableTextInputTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="DynamicLoading Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/dynamic_loading/2"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+                <methods>
+                    <include name="DynamicLoadingTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="MouseHover Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/hovers"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+                <methods>
+                    <include name="MouseHoverTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="JavaScriptAlertsJSAlertButton Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/javascript_alerts"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+                <methods>
+                    <include name="JavaScriptAlertsJSAlertButtonTest"/>
+                    <include name="JavaScriptAlertsJSConfirmButtonTest"/>
+                    <include name="JavaScriptAlertsJsPromptButtonTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="JavaScriptError Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/javascript_error"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+                <methods>
+                    <include name="JavaScriptErrorTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenInNewTab Test" enabled="true">
+        <parameter name="appUrl"   value="http://localhost:7080/windows"/>
+
+        <classes>
+            <class name="com.nparede.project.test.SeleniumFeaturesTest">
+                <methods>
+                    <include name="OpenInNewTabTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
