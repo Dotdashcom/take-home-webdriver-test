@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="32" total="50" passed="18" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-29T18:27:54 EST" name="Suite" finished-at="2023-01-29T18:28:14 EST" duration-ms="20272">
+    <groups>
+    </groups>
+    <test started-at="2023-01-29T18:27:54 EST" name="Test" finished-at="2023-01-29T18:28:14 EST" duration-ms="20272">
+      <class name="tests.Test1_2_Login">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test1_2_Login@4a8a60bc]" started-at="2023-01-29T18:27:54 EST" name="openBrowser" finished-at="2023-01-29T18:27:54 EST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="invalidCredentialsLogin()[pri:0, instance:tests.Test1_2_Login@4a8a60bc]" started-at="2023-01-29T18:27:54 EST" name="invalidCredentialsLogin" finished-at="2023-01-29T18:27:55 EST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentialsLogin -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test1_2_Login@4a8a60bc]" started-at="2023-01-29T18:27:55 EST" name="openBrowser" finished-at="2023-01-29T18:27:55 EST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="validCredentialsLogin()[pri:0, instance:tests.Test1_2_Login@4a8a60bc]" started-at="2023-01-29T18:27:55 EST" name="validCredentialsLogin" finished-at="2023-01-29T18:27:55 EST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentialsLogin -->
+      </class> <!-- tests.Test1_2_Login -->
+      <class name="tests.Test9_DynamicLoading">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test9_DynamicLoading@7876d598]" started-at="2023-01-29T18:28:06 EST" name="openBrowser" finished-at="2023-01-29T18:28:06 EST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="dynamic_loading_()[pri:0, instance:tests.Test9_DynamicLoading@7876d598]" started-at="2023-01-29T18:28:06 EST" name="dynamic_loading_" finished-at="2023-01-29T18:28:11 EST" duration-ms="5129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_loading_ -->
+      </class> <!-- tests.Test9_DynamicLoading -->
+      <class name="tests.Test7_DynamicContent">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test7_DynamicContent@664a9613]" started-at="2023-01-29T18:27:56 EST" name="openBrowser" finished-at="2023-01-29T18:27:56 EST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="dynamic_content_scraping()[pri:0, instance:tests.Test7_DynamicContent@664a9613]" started-at="2023-01-29T18:27:56 EST" name="dynamic_content_scraping" finished-at="2023-01-29T18:27:56 EST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_content_scraping -->
+      </class> <!-- tests.Test7_DynamicContent -->
+      <class name="tests.Test12_FloatingMenu">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test12_FloatingMenu@71104a4]" started-at="2023-01-29T18:28:11 EST" name="openBrowser" finished-at="2023-01-29T18:28:12 EST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="floatingMenu_()[pri:0, instance:tests.Test12_FloatingMenu@71104a4]" started-at="2023-01-29T18:28:12 EST" name="floatingMenu_" finished-at="2023-01-29T18:28:12 EST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenu_ -->
+      </class> <!-- tests.Test12_FloatingMenu -->
+      <class name="tests.Test16_JavaScriptError">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Test16_JavaScriptError@3af17be2]" started-at="2023-01-29T18:27:53 EST" name="setUp" finished-at="2023-01-29T18:27:54 EST" duration-ms="1214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test16_JavaScriptError@3af17be2]" started-at="2023-01-29T18:27:54 EST" name="openBrowser" finished-at="2023-01-29T18:27:54 EST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="javaScriptErrorVerification()[pri:-1, instance:tests.Test16_JavaScriptError@3af17be2]" started-at="2023-01-29T18:27:54 EST" name="javaScriptErrorVerification" finished-at="2023-01-29T18:27:54 EST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaScriptErrorVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Test16_JavaScriptError@3af17be2]" started-at="2023-01-29T18:28:14 EST" name="tearDown" finished-at="2023-01-29T18:28:14 EST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Test16_JavaScriptError -->
+      <class name="tests.Test14_MouseHover">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test14_MouseHover@72f46e16]" started-at="2023-01-29T18:28:13 EST" name="openBrowser" finished-at="2023-01-29T18:28:13 EST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="mouseHover_()[pri:0, instance:tests.Test14_MouseHover@72f46e16]" started-at="2023-01-29T18:28:13 EST" name="mouseHover_" finished-at="2023-01-29T18:28:13 EST" duration-ms="535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHover_ -->
+      </class> <!-- tests.Test14_MouseHover -->
+      <class name="tests.Test13_IframeTyping">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test13_IframeTyping@4985cbcb]" started-at="2023-01-29T18:28:12 EST" name="openBrowser" finished-at="2023-01-29T18:28:12 EST" duration-ms="813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="iframeTyping_()[pri:0, instance:tests.Test13_IframeTyping@4985cbcb]" started-at="2023-01-29T18:28:12 EST" name="iframeTyping_" finished-at="2023-01-29T18:28:13 EST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframeTyping_ -->
+      </class> <!-- tests.Test13_IframeTyping -->
+      <class name="tests.Test4_ContextMenu">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test4_ContextMenu@7859e786]" started-at="2023-01-29T18:27:55 EST" name="openBrowser" finished-at="2023-01-29T18:27:55 EST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="contextMenuVerification()[pri:0, instance:tests.Test4_ContextMenu@7859e786]" started-at="2023-01-29T18:27:55 EST" name="contextMenuVerification" finished-at="2023-01-29T18:27:55 EST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextMenuVerification -->
+      </class> <!-- tests.Test4_ContextMenu -->
+      <class name="tests.Test3_CheckBoxes">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test3_CheckBoxes@361c294e]" started-at="2023-01-29T18:27:55 EST" name="openBrowser" finished-at="2023-01-29T18:27:55 EST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="checkUncheckCheckboxes()[pri:0, instance:tests.Test3_CheckBoxes@361c294e]" started-at="2023-01-29T18:27:55 EST" name="checkUncheckCheckboxes" finished-at="2023-01-29T18:27:55 EST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUncheckCheckboxes -->
+      </class> <!-- tests.Test3_CheckBoxes -->
+      <class name="tests.Test10_Download">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test10_Download@4a3e3e8b]" started-at="2023-01-29T18:28:11 EST" name="openBrowser" finished-at="2023-01-29T18:28:11 EST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="fileDownload_()[pri:0, instance:tests.Test10_Download@4a3e3e8b]" started-at="2023-01-29T18:28:11 EST" name="fileDownload_" finished-at="2023-01-29T18:28:11 EST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload_ -->
+      </class> <!-- tests.Test10_Download -->
+      <class name="tests.Test8_DynamicControl">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test8_DynamicControl@15a902e7]" started-at="2023-01-29T18:27:56 EST" name="openBrowser" finished-at="2023-01-29T18:27:56 EST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="dynamic_controls_()[pri:0, instance:tests.Test8_DynamicControl@15a902e7]" started-at="2023-01-29T18:27:56 EST" name="dynamic_controls_" finished-at="2023-01-29T18:28:06 EST" duration-ms="9642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_controls_ -->
+      </class> <!-- tests.Test8_DynamicControl -->
+      <class name="tests.Test17_NewTabPage">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test17_NewTabPage@549621f3]" started-at="2023-01-29T18:28:14 EST" name="openBrowser" finished-at="2023-01-29T18:28:14 EST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="newTabVerification()[pri:0, instance:tests.Test17_NewTabPage@549621f3]" started-at="2023-01-29T18:28:14 EST" name="newTabVerification" finished-at="2023-01-29T18:28:14 EST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTabVerification -->
+      </class> <!-- tests.Test17_NewTabPage -->
+      <class name="tests.Test11_Upload">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test11_Upload@5af28b27]" started-at="2023-01-29T18:28:11 EST" name="openBrowser" finished-at="2023-01-29T18:28:11 EST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="fileDownload_()[pri:1, instance:tests.Test11_Upload@5af28b27]" started-at="2023-01-29T18:28:11 EST" name="fileDownload_" finished-at="2023-01-29T18:28:11 EST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload_ -->
+      </class> <!-- tests.Test11_Upload -->
+      <class name="tests.Test18_NotificationMessage">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test18_NotificationMessage@54361a9]" started-at="2023-01-29T18:28:14 EST" name="openBrowser" finished-at="2023-01-29T18:28:14 EST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="notificationMessageVerification()[pri:0, instance:tests.Test18_NotificationMessage@54361a9]" started-at="2023-01-29T18:28:14 EST" name="notificationMessageVerification" finished-at="2023-01-29T18:28:14 EST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificationMessageVerification -->
+      </class> <!-- tests.Test18_NotificationMessage -->
+      <class name="tests.Test6_Dropdown">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test6_Dropdown@314b8f2d]" started-at="2023-01-29T18:27:55 EST" name="openBrowser" finished-at="2023-01-29T18:27:55 EST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="dropdownAction()[pri:0, instance:tests.Test6_Dropdown@314b8f2d]" started-at="2023-01-29T18:27:55 EST" name="dropdownAction" finished-at="2023-01-29T18:27:56 EST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownAction -->
+      </class> <!-- tests.Test6_Dropdown -->
+      <class name="tests.Test5_DragAndDrop">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test5_DragAndDrop@285d851a]" started-at="2023-01-29T18:27:55 EST" name="openBrowser" finished-at="2023-01-29T18:27:55 EST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="dragAndDropAction()[pri:0, instance:tests.Test5_DragAndDrop@285d851a]" started-at="2023-01-29T18:27:55 EST" name="dragAndDropAction" finished-at="2023-01-29T18:27:55 EST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropAction -->
+      </class> <!-- tests.Test5_DragAndDrop -->
+      <class name="tests.Test15_JavaScriptAlert">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.Test15_JavaScriptAlert@3c9168dc]" started-at="2023-01-29T18:28:13 EST" name="openBrowser" finished-at="2023-01-29T18:28:13 EST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="javaScriptsAlertsVerification()[pri:0, instance:tests.Test15_JavaScriptAlert@3c9168dc]" started-at="2023-01-29T18:28:13 EST" name="javaScriptsAlertsVerification" finished-at="2023-01-29T18:28:14 EST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaScriptsAlertsVerification -->
+      </class> <!-- tests.Test15_JavaScriptAlert -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

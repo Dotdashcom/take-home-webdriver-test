@@ -1,0 +1,24 @@
+
+<suite name="Suite">
+  <test thread-count="4" name="Test">
+    <classes>
+	  <class name="tests.Test16_JavaScriptError"/>
+      <class name="tests.Test1_2_Login"/>
+      <class name="tests.Test3_CheckBoxes"/>
+      <class name="tests.Test4_ContextMenu"/>
+      <class name="tests.Test5_DragAndDrop"/>
+      <class name="tests.Test6_Dropdown"/>
+      <class name="tests.Test7_DynamicContent"/>
+      <class name="tests.Test8_DynamicControl"/>
+      <class name="tests.Test9_DynamicLoading"/>
+      <class name="tests.Test10_Download"/>
+      <class name="tests.Test11_Upload"/>
+      <class name="tests.Test12_FloatingMenu"/>
+      <class name="tests.Test13_IframeTyping"/>
+      <class name="tests.Test14_MouseHover"/>
+      <class name="tests.Test15_JavaScriptAlert"/>
+      <class name="tests.Test17_NewTabPage"/>
+      <class name="tests.Test18_NotificationMessage"/>
+    </classes>
+  </test> 
+</suite> 
