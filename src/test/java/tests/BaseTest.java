@@ -17,6 +17,10 @@ public class BaseTest {
         actions.dragAndDrop(from, to).build().perform();
     }
 
+    protected void refreshPage() {
+        webDriver.navigate().refresh();
+    }
+
     protected void rightClick(WebElement element) {
         actions.contextClick(element).perform();
     }
