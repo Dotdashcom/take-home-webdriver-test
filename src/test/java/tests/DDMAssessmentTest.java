@@ -7,6 +7,7 @@ import pages.*;
 
 public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMLoginPage loginPage;
+    protected DDMCheckBoxPage checkBoxPage;
     @Test(priority = 0)
     public void loginSuccessTest()  {
         loginPage = landingPage.getPageObject(DDMLoginPage.class);
@@ -24,5 +25,19 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         loginPage.performLogin(validUserName, "WrongPassWord");
         softAssert.assertTrue(loginPage.getLoginResultMessage().contains( "Your password is invalid!"));
         softAssert.assertAll();
+    }
+
+    @Test(priority = 2)
+    public void selectCheckBoxTest()  {
+        checkBoxPage = landingPage.getPageObject(DDMCheckBoxPage.class);
+        checkBoxPage.selectCheckBox(0);
+        Assert.assertTrue(checkBoxPage.isCheckBoxSelected(0));
+    }
+
+    @Test(priority = 3)
+    public void unselectedCheckBoxTest()  {
+        checkBoxPage = landingPage.getPageObject(DDMCheckBoxPage.class);
+        checkBoxPage.selectCheckBox(1);
+        Assert.assertFalse(checkBoxPage.isCheckBoxSelected(1));
     }
 }
