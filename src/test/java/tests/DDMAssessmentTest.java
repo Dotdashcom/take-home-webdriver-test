@@ -17,6 +17,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMFileUploadPage fileUploadPage;
     protected DDMFloatingMenuPage floatingMenuPage;
     protected DDMIframePage iframePage;
+    protected DDMMouseHoverPage mouseHoverPage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -126,5 +127,16 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         iframePage = landingPage.getPageObject(DDMIframePage.class);
         iframePage.typeInsideIFrame();
         Assert.assertEquals(iframePage.getIframeText(), "Hello there.");
+    }
+
+    @Test(priority = 14)
+    public void mouseHoverTest()  {
+        mouseHoverPage = landingPage.getPageObject(DDMMouseHoverPage.class);
+        mouseHoverPage.mouseHoverProfile(0);
+        Assert.assertTrue(mouseHoverPage.isProfileDisplayed(0));
+        mouseHoverPage.mouseHoverProfile(1);
+        Assert.assertTrue(mouseHoverPage.isProfileDisplayed(1));
+        mouseHoverPage.mouseHoverProfile(2);
+        Assert.assertTrue(mouseHoverPage.isProfileDisplayed(2));
     }
 }
