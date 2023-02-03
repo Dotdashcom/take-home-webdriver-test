@@ -16,6 +16,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMFileDownloadPage fileDownloadPage;
     protected DDMFileUploadPage fileUploadPage;
     protected DDMFloatingMenuPage floatingMenuPage;
+    protected DDMIframePage iframePage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -118,5 +119,12 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         floatingMenuPage = landingPage.getPageObject(DDMFloatingMenuPage.class);
         floatingMenuPage.scrollByOnePage();
         Assert.assertTrue(floatingMenuPage.isFloatingMenuDisplayed());
+    }
+
+    @Test(priority = 13)
+    public void iFrameTest()  {
+        iframePage = landingPage.getPageObject(DDMIframePage.class);
+        iframePage.typeInsideIFrame();
+        Assert.assertEquals(iframePage.getIframeText(), "Hello there.");
     }
 }
