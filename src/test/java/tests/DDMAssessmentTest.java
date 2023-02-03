@@ -15,6 +15,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMDynamicLoadingPage dynamicLoadingPage;
     protected DDMFileDownloadPage fileDownloadPage;
     protected DDMFileUploadPage fileUploadPage;
+    protected DDMFloatingMenuPage floatingMenuPage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -110,5 +111,12 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         fileUploadPage = landingPage.getPageObject(DDMFileUploadPage.class);
         fileUploadPage.uploadFile();
         Assert.assertTrue(fileUploadPage.uploadedFileName().contains("automation.jpg"));
+    }
+
+    @Test(priority = 12)
+    public void floatingMenuTest()  {
+        floatingMenuPage = landingPage.getPageObject(DDMFloatingMenuPage.class);
+        floatingMenuPage.scrollByOnePage();
+        Assert.assertTrue(floatingMenuPage.isFloatingMenuDisplayed());
     }
 }
