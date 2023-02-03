@@ -8,6 +8,7 @@ import pages.*;
 public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMLoginPage loginPage;
     protected DDMCheckBoxPage checkBoxPage;
+    protected DDMContextMenuPage contextMenuPage;
     @Test(priority = 0)
     public void loginSuccessTest()  {
         loginPage = landingPage.getPageObject(DDMLoginPage.class);
@@ -39,5 +40,12 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         checkBoxPage = landingPage.getPageObject(DDMCheckBoxPage.class);
         checkBoxPage.selectCheckBox(1);
         Assert.assertFalse(checkBoxPage.isCheckBoxSelected(1));
+    }
+
+    @Test(priority = 4)
+    public void contextMenuTest()  {
+        contextMenuPage = landingPage.getPageObject(DDMContextMenuPage.class);
+        contextMenuPage.rightClick();
+        Assert.assertEquals(contextMenuPage.getAlertText(), "You selected a context menu");
     }
 }
