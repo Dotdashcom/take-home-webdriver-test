@@ -10,6 +10,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMCheckBoxPage checkBoxPage;
     protected DDMContextMenuPage contextMenuPage;
     protected DDMDropDownPage dropDownPage;
+    protected DDMDynamicContentPage dynamicContentPage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -59,4 +60,13 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         dropDownPage.selectOption("Option 2");
         Assert.assertEquals(dropDownPage.getSelectedOption(), "Option 2");
     }
+
+    public void dynamicContentTest()  {
+        dynamicContentPage = landingPage.getPageObject(DDMDynamicContentPage.class);
+        String textBeforeRefresh = dynamicContentPage.getParagraphContent(0);
+        dynamicContentPage.refreshPage();
+        String textAfterRefresh = dynamicContentPage.getParagraphContent(0);
+        Assert.assertNotEquals(textBeforeRefresh, textAfterRefresh);
+    }
+
 }
