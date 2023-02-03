@@ -21,6 +21,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMJavaScriptAlertPage javaScriptAlertPage;
     protected DDMJavaScriptErrorPage javaScriptErrorPage;
     protected DDMNewTabPage newTabPage;
+    protected DDMNotificationMessagePage notificationMessagePage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -165,5 +166,11 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         newTabPage = landingPage.getPageObject(DDMNewTabPage.class);
         newTabPage.openNewTabAndSwitch();
         Assert.assertEquals(newTabPage.getNewWindowText(), "New Window");
+    }
+
+    @Test(priority = 18)
+    public void notificationMessageTest()  {
+        notificationMessagePage = landingPage.getPageObject(DDMNotificationMessagePage.class);
+        Assert.assertTrue(notificationMessagePage.notificationMessage());
     }
 }
