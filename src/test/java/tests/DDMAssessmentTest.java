@@ -11,6 +11,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMContextMenuPage contextMenuPage;
     protected DDMDropDownPage dropDownPage;
     protected DDMDynamicContentPage dynamicContentPage;
+    protected DDMDynamicControlsPage dynamicControlsPage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -61,6 +62,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         Assert.assertEquals(dropDownPage.getSelectedOption(), "Option 2");
     }
 
+    @Test(priority = 7)
     public void dynamicContentTest()  {
         dynamicContentPage = landingPage.getPageObject(DDMDynamicContentPage.class);
         String textBeforeRefresh = dynamicContentPage.getParagraphContent(0);
@@ -69,4 +71,20 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         Assert.assertNotEquals(textBeforeRefresh, textAfterRefresh);
     }
 
+    @Test(priority = 8)
+    public void dynamicControlTest()  {
+        dynamicControlsPage = landingPage.getPageObject(DDMDynamicControlsPage.class);
+        SoftAssert softAssert = new SoftAssert();
+        dynamicControlsPage.removeCheckBox();
+        softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's gone!");
+
+        softAssert.assertTrue(dynamicControlsPage.addCheckBox());
+        softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's back!");
+
+        softAssert.assertTrue(dynamicControlsPage.enableButtonClick());
+        softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's enabled!");
+
+        softAssert.assertFalse(dynamicControlsPage.disableButtonClick());
+        softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's disabled!");
+    }
 }
