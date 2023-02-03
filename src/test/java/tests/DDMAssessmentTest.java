@@ -14,6 +14,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMDynamicControlsPage dynamicControlsPage;
     protected DDMDynamicLoadingPage dynamicLoadingPage;
     protected DDMFileDownloadPage fileDownloadPage;
+    protected DDMFileUploadPage fileUploadPage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -102,5 +103,12 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         fileDownloadPage = landingPage.getPageObject(DDMFileDownloadPage.class);
         fileDownloadPage.downloadFile();
         Assert.assertTrue(fileDownloadPage.isFileDownloaded());
+    }
+
+    @Test(priority = 11)
+    public void fileUploadTest()  {
+        fileUploadPage = landingPage.getPageObject(DDMFileUploadPage.class);
+        fileUploadPage.uploadFile();
+        Assert.assertTrue(fileUploadPage.uploadedFileName().contains("automation.jpg"));
     }
 }
