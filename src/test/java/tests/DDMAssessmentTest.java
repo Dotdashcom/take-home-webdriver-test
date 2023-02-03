@@ -12,6 +12,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMDropDownPage dropDownPage;
     protected DDMDynamicContentPage dynamicContentPage;
     protected DDMDynamicControlsPage dynamicControlsPage;
+    protected DDMDynamicLoadingPage dynamicLoadingPage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -87,4 +88,12 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         softAssert.assertFalse(dynamicControlsPage.disableButtonClick());
         softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's disabled!");
     }
+
+    @Test(priority = 9)
+    public void dynamicLoadingTest()  {
+        dynamicLoadingPage = landingPage.getPageObject(DDMDynamicLoadingPage.class);
+        dynamicLoadingPage.startDynamicLoading();
+        Assert.assertEquals(dynamicLoadingPage.getLoadingTextMessage(), "Hello World!");
+    }
+
 }
