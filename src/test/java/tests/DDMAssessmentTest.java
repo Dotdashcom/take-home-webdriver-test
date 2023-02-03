@@ -13,6 +13,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMDynamicContentPage dynamicContentPage;
     protected DDMDynamicControlsPage dynamicControlsPage;
     protected DDMDynamicLoadingPage dynamicLoadingPage;
+    protected DDMFileDownloadPage fileDownloadPage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -96,4 +97,10 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         Assert.assertEquals(dynamicLoadingPage.getLoadingTextMessage(), "Hello World!");
     }
 
+    @Test(priority = 10)
+    public void fileDownloadTest()  {
+        fileDownloadPage = landingPage.getPageObject(DDMFileDownloadPage.class);
+        fileDownloadPage.downloadFile();
+        Assert.assertTrue(fileDownloadPage.isFileDownloaded());
+    }
 }
