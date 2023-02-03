@@ -19,6 +19,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMIframePage iframePage;
     protected DDMMouseHoverPage mouseHoverPage;
     protected DDMJavaScriptAlertPage javaScriptAlertPage;
+    protected DDMJavaScriptErrorPage javaScriptErrorPage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -150,5 +151,11 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         Assert.assertEquals(javaScriptAlertPage.getClickOnAlertSuccessMessage(), "You clicked: Ok");
         javaScriptAlertPage.clickJSprompt();
         Assert.assertEquals(javaScriptAlertPage.getClickOnAlertSuccessMessage(),"You entered: Hello there.");
+    }
+
+    @Test(priority = 16)
+    public void javaScriptErrorTest()  {
+        javaScriptErrorPage = landingPage.getPageObject(DDMJavaScriptErrorPage.class);
+        Assert.assertTrue(javaScriptErrorPage.javaScriptErrorMessage());
     }
 }
