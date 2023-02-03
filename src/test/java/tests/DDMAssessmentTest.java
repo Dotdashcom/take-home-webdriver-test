@@ -9,6 +9,8 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMLoginPage loginPage;
     protected DDMCheckBoxPage checkBoxPage;
     protected DDMContextMenuPage contextMenuPage;
+    protected DDMDropDownPage dropDownPage;
+
     @Test(priority = 0)
     public void loginSuccessTest()  {
         loginPage = landingPage.getPageObject(DDMLoginPage.class);
@@ -47,5 +49,14 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         contextMenuPage = landingPage.getPageObject(DDMContextMenuPage.class);
         contextMenuPage.rightClick();
         Assert.assertEquals(contextMenuPage.getAlertText(), "You selected a context menu");
+    }
+
+    @Test(priority = 6)
+    public void dropDownTest()  {
+        dropDownPage = landingPage.getPageObject(DDMDropDownPage.class);
+        dropDownPage.selectOption("Option 1");
+        Assert.assertEquals(dropDownPage.getSelectedOption(), "Option 1");
+        dropDownPage.selectOption("Option 2");
+        Assert.assertEquals(dropDownPage.getSelectedOption(), "Option 2");
     }
 }
