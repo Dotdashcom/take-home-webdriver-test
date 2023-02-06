@@ -22,6 +22,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
     protected DDMJavaScriptErrorPage javaScriptErrorPage;
     protected DDMNewTabPage newTabPage;
     protected DDMNotificationMessagePage notificationMessagePage;
+    protected DDMDragAndDropPage dragAndDropPage;
 
     @Test(priority = 0)
     public void loginSuccessTest()  {
@@ -63,7 +64,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         Assert.assertEquals(contextMenuPage.getAlertText(), "You selected a context menu");
     }
 
-    @Test(priority = 6)
+    @Test(priority = 5)
     public void dropDownTest()  {
         dropDownPage = landingPage.getPageObject(DDMDropDownPage.class);
         dropDownPage.selectOption("Option 1");
@@ -72,7 +73,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         Assert.assertEquals(dropDownPage.getSelectedOption(), "Option 2");
     }
 
-    @Test(priority = 7)
+    @Test(priority = 6)
     public void dynamicContentTest()  {
         dynamicContentPage = landingPage.getPageObject(DDMDynamicContentPage.class);
         String textBeforeRefresh = dynamicContentPage.getParagraphContent(0);
@@ -81,7 +82,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         Assert.assertNotEquals(textBeforeRefresh, textAfterRefresh);
     }
 
-    @Test(priority = 8)
+    @Test(priority = 7)
     public void dynamicControlTest()  {
         dynamicControlsPage = landingPage.getPageObject(DDMDynamicControlsPage.class);
         SoftAssert softAssert = new SoftAssert();
@@ -98,42 +99,42 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's disabled!");
     }
 
-    @Test(priority = 9)
+    @Test(priority = 8)
     public void dynamicLoadingTest()  {
         dynamicLoadingPage = landingPage.getPageObject(DDMDynamicLoadingPage.class);
         dynamicLoadingPage.startDynamicLoading();
         Assert.assertEquals(dynamicLoadingPage.getLoadingTextMessage(), "Hello World!");
     }
 
-    @Test(priority = 10)
+    @Test(priority = 9)
     public void fileDownloadTest()  {
         fileDownloadPage = landingPage.getPageObject(DDMFileDownloadPage.class);
         fileDownloadPage.downloadFile();
         Assert.assertTrue(fileDownloadPage.isFileDownloaded());
     }
 
-    @Test(priority = 11)
+    @Test(priority = 10)
     public void fileUploadTest()  {
         fileUploadPage = landingPage.getPageObject(DDMFileUploadPage.class);
         fileUploadPage.uploadFile();
         Assert.assertTrue(fileUploadPage.uploadedFileName().contains("automation.jpg"));
     }
 
-    @Test(priority = 12)
+    @Test(priority = 11)
     public void floatingMenuTest()  {
         floatingMenuPage = landingPage.getPageObject(DDMFloatingMenuPage.class);
         floatingMenuPage.scrollByOnePage();
         Assert.assertTrue(floatingMenuPage.isFloatingMenuDisplayed());
     }
 
-    @Test(priority = 13)
+    @Test(priority = 12)
     public void iFrameTest()  {
         iframePage = landingPage.getPageObject(DDMIframePage.class);
         iframePage.typeInsideIFrame();
         Assert.assertEquals(iframePage.getIframeText(), "Hello there.");
     }
 
-    @Test(priority = 14)
+    @Test(priority = 13)
     public void mouseHoverTest()  {
         mouseHoverPage = landingPage.getPageObject(DDMMouseHoverPage.class);
         mouseHoverPage.mouseHoverProfile(0);
@@ -144,7 +145,7 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         Assert.assertTrue(mouseHoverPage.isProfileDisplayed(2));
     }
 
-    @Test(priority = 15)
+    @Test(priority = 14)
     public void javaScriptAlertTest()  {
         javaScriptAlertPage = landingPage.getPageObject(DDMJavaScriptAlertPage.class);
         javaScriptAlertPage.clickOnAlert();
@@ -155,22 +156,32 @@ public class DDMAssessmentTest extends DDMBasePageTest  {
         Assert.assertEquals(javaScriptAlertPage.getClickOnAlertSuccessMessage(),"You entered: Hello there.");
     }
 
-    @Test(priority = 16)
+    @Test(priority = 15)
     public void javaScriptErrorTest()  {
         javaScriptErrorPage = landingPage.getPageObject(DDMJavaScriptErrorPage.class);
         Assert.assertTrue(javaScriptErrorPage.javaScriptErrorMessage());
     }
 
-    @Test(priority = 17)
+    @Test(priority = 16)
     public void newTabTest()  {
         newTabPage = landingPage.getPageObject(DDMNewTabPage.class);
         newTabPage.openNewTabAndSwitch();
         Assert.assertEquals(newTabPage.getNewWindowText(), "New Window");
     }
 
-    @Test(priority = 18)
+    @Test(priority = 17)
     public void notificationMessageTest()  {
         notificationMessagePage = landingPage.getPageObject(DDMNotificationMessagePage.class);
         Assert.assertTrue(notificationMessagePage.notificationMessage());
+    }
+
+    @Test(priority = 18)
+    public void dragAndDropTest()  {
+        dragAndDropPage = landingPage.getPageObject(DDMDragAndDropPage.class);
+        dragAndDropPage.performDragAndDrop();
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(dragAndDropPage.placeAText(), "B");
+        softAssert.assertEquals(dragAndDropPage.placeBText(), "A");
+        softAssert.assertAll();
     }
 }
