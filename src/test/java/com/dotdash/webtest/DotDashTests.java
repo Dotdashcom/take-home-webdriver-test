@@ -51,7 +51,7 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals("You selected a context menu", contextMenuPage.getAlertText());
     }
 
-    @Test(priority = 5)
+
     public void dragAndDropTest() {
         DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
         dragAndDropPage.goToDragAndDropPage();
@@ -67,5 +67,37 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals(dropdownPage.getOptionText(), "Option 1");
         dropdownPage.chooseOption2();
         Assert.assertEquals(dropdownPage.getOptionText(), "Option 2");
+    }
+
+    @Test(priority = 7)
+    public void dynamicContentTest() {
+        DynamicContentPage dynamicContentPage = new DynamicContentPage(driver);
+        dynamicContentPage.goToDynamicContentPage();
+        String beforeRefresh = driver.getPageSource();
+        driver.navigate().refresh();
+        String afterRefresh = driver.getPageSource();
+        Assert.assertNotEquals(beforeRefresh, afterRefresh);
+    }
+
+    @Test(priority = 8)
+    public void dynamicControlsTest() {
+        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(driver);
+        dynamicControlsPage.goToDynamicControlsPage();
+        dynamicControlsPage.clickRemoveButton();
+        Assert.assertEquals(dynamicControlsPage.getCheckBoxMessage(), "It's gone!");
+        dynamicControlsPage.clickAddButton();
+        Assert.assertEquals(dynamicControlsPage.getCheckBoxMessage(), "It's back!");
+        dynamicControlsPage.clickEnableButton();
+        Assert.assertEquals(dynamicControlsPage.getInputFieldMessage(), "It's enabled!");
+        dynamicControlsPage.clickDisableButton();
+        Assert.assertEquals(dynamicControlsPage.getInputFieldMessage(), "It's disabled!");
+    }
+
+    @Test(priority = 9)
+    public void dynamicLoadingTest() {
+        DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage(driver);
+        dynamicLoadingPage.goToDynamicLoadingPage();
+        dynamicLoadingPage.startDynamicLoading();
+        Assert.assertEquals(dynamicLoadingPage.getExample1Message(), "Hello World!");
     }
 }
