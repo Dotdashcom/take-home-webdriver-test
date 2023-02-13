@@ -51,7 +51,7 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals("You selected a context menu", contextMenuPage.getAlertText());
     }
 
-
+    @Test(priority = 5)
     public void dragAndDropTest() {
         DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
         dragAndDropPage.goToDragAndDropPage();
@@ -99,5 +99,21 @@ public class DotDashTests extends TestBase {
         dynamicLoadingPage.goToDynamicLoadingPage();
         dynamicLoadingPage.startDynamicLoading();
         Assert.assertEquals(dynamicLoadingPage.getExample1Message(), "Hello World!");
+    }
+
+    @Test(priority = 10, groups={"UploadDownload"})
+    public void fileDownloadTest()  {
+        FileDownloadPage fileDownloadPage = new FileDownloadPage(driver);
+        fileDownloadPage.goToFileDownloadPage();
+        fileDownloadPage.downloadFile();
+        Assert.assertTrue(fileDownloadPage.isFileDownloaded(), "File is Not Downloaded");
+    }
+
+    @Test(priority = 11, dependsOnGroups = "UploadDownload")
+    public void fileUploadTest() {
+        FileUploadPage fileUploadPage = new FileUploadPage(driver);
+        fileUploadPage.goToFileUploadPage();
+        fileUploadPage.uploadFile();
+        Assert.assertTrue(fileUploadPage.isFileUploaded(), "File Uploaded failed.");
     }
 }
