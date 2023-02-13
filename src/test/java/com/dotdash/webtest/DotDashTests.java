@@ -50,4 +50,22 @@ public class DotDashTests extends TestBase {
         contextMenuPage.rightClickTest();
         Assert.assertEquals("You selected a context menu", contextMenuPage.getAlertText());
     }
+
+    @Test(priority = 5)
+    public void dragAndDropTest() {
+        DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
+        dragAndDropPage.goToDragAndDropPage();
+        dragAndDropPage.dragAndDrop();
+        Assert.assertEquals("A", dragAndDropPage.getTextBoxA());
+    }
+
+    @Test(priority = 6)
+    public void dropDownTest() {
+        DropdownPage dropdownPage = new DropdownPage(driver);
+        dropdownPage.goToDropDownPage();
+        dropdownPage.chooseOption1();
+        Assert.assertEquals(dropdownPage.getOptionText(), "Option 1");
+        dropdownPage.chooseOption2();
+        Assert.assertEquals(dropdownPage.getOptionText(), "Option 2");
+    }
 }
