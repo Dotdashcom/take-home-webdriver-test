@@ -23,8 +23,8 @@ public class WebPage {
     }
 
     public static void scrollToElementWithJs(WebDriver driver, WebElement element) {
-        JavascriptExecutor js= (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true)",element);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true)", element);
     }
 
     public boolean switchToAnotherTab(String title) {
