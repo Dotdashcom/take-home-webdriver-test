@@ -6,6 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DotDashTests extends TestBase {
 
     @Test(priority = 1)
@@ -170,5 +173,36 @@ public class DotDashTests extends TestBase {
         MouseHoversPage mouseHoversPage = new MouseHoversPage(driver);
         mouseHoversPage.goToMouseHoversPage();
         Assert.assertTrue(mouseHoversPage.allUsersPresent());
+    }
+
+    @Test(priority = 19)
+    public void multipleWindowsTest() {
+        MultipleWindowsPage multipleWindowsPage = new MultipleWindowsPage(driver);
+        multipleWindowsPage.goToMultipleWindowsPage();
+        Assert.assertTrue(multipleWindowsPage.validateNewWindowHeader(), "New Window");
+    }
+
+    @Test(priority = 20)
+    public void notificationMsgTest() {
+        NotificationMessagesPage notificationMessagesPage = new NotificationMessagesPage(driver);
+        notificationMessagesPage.goToNotificationMessagesPage();
+        notificationMessagesPage.generateNewMessage();
+        List<String> messages = new ArrayList<>();
+        String message1 = "Action successful";
+        String message2 = "Action unsuccessful";
+        String message3 = "Action unsuccessful, please try again";
+        messages.add(message1);
+        messages.add(message2);
+        messages.add(message3);
+
+        for(int i = 0; i < 10; i++) {
+            notificationMessagesPage.generateNewMessage();
+            for (int j = 0; j < messages.size(); j++) {
+                if(messages.get(j).equals(notificationMessagesPage.getActionMessage())) {
+                    Assert.assertEquals(messages.get(j),notificationMessagesPage.getActionMessage());
+                    break;
+                }
+            }
+        }
     }
 }

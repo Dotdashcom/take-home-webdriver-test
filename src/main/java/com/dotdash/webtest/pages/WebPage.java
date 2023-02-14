@@ -5,6 +5,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Set;
 
 public class WebPage {
 
@@ -24,5 +25,18 @@ public class WebPage {
     public static void scrollToElementWithJs(WebDriver driver, WebElement element) {
         JavascriptExecutor js= (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
+
+    public boolean switchToAnotherTab(String title) {
+        boolean foundTab = false;
+        Set<String> allPagesId = driver.getWindowHandles();
+        for (String id : allPagesId) {
+            driver.switchTo().window(id);
+            if (driver.getTitle().contains(title)) {
+                foundTab = true;
+                break;
+            }
+        }
+        return foundTab;
     }
 }
