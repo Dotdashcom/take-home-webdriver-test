@@ -8,32 +8,7 @@ import org.testng.annotations.Test;
 
 public class DotDashTests extends TestBase {
 
-    @Test (priority = 1)
-    public void positiveLoginTest() {
-        FormAuthenticationPage formAuthenticationPage = new FormAuthenticationPage(driver);
-        formAuthenticationPage.goToFormAuthenticationPage();
-        formAuthenticationPage.login(ConfigReader.readProperty("username"), ConfigReader.readProperty("password"));
-        Assert.assertEquals(formAuthenticationPage.getSuggestionMessage(), "Welcome to the Secure Area. When you are done click logout below.");
-        formAuthenticationPage.clickLogout();
-    }
-
-    @Test(priority = 2, dataProvider = "loginData")
-    public void negativeLoginTest(String username, String password, String message) {
-        FormAuthenticationPage formAuthenticationPage = new FormAuthenticationPage(driver);
-        formAuthenticationPage.goToFormAuthenticationPage();
-        formAuthenticationPage.login(username, password);
-        Assert.assertTrue(formAuthenticationPage.getErrorMessage().contains(message));
-    }
-
-    @DataProvider(name = "loginData")
-    public Object[][] loginData() {
-        return new Object[][] {
-                {"pal", "SuperSecretPassword!", "Your username is invalid!"},
-                {"tomsmith", "007", "Your password is invalid!"}
-        };
-    }
-
-    @Test(priority = 3)
+    @Test(priority = 1)
     public void checkBoxesTest() {
         CheckboxesPage checkboxesPage = new CheckboxesPage(driver);
         checkboxesPage.goToCheckboxPage();
@@ -43,7 +18,7 @@ public class DotDashTests extends TestBase {
         Assert.assertFalse(checkboxesPage.isCheckbox2Selected());
     }
 
-    @Test(priority = 4)
+    @Test(priority = 2)
     public void contextMenuTest() {
         ContextMenuPage contextMenuPage = new ContextMenuPage(driver);
         contextMenuPage.goToContextMenuPage();
@@ -51,7 +26,7 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals("You selected a context menu", contextMenuPage.getAlertText());
     }
 
-    @Test(priority = 5)
+    @Test(priority = 3)
     public void dragAndDropTest() {
         DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
         dragAndDropPage.goToDragAndDropPage();
@@ -59,7 +34,7 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals("A", dragAndDropPage.getTextBoxA());
     }
 
-    @Test(priority = 6)
+    @Test(priority = 4)
     public void dropDownTest() {
         DropdownPage dropdownPage = new DropdownPage(driver);
         dropdownPage.goToDropDownPage();
@@ -69,7 +44,7 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals(dropdownPage.getOptionText(), "Option 2");
     }
 
-    @Test(priority = 7)
+    @Test(priority = 5)
     public void dynamicContentTest() {
         DynamicContentPage dynamicContentPage = new DynamicContentPage(driver);
         dynamicContentPage.goToDynamicContentPage();
@@ -79,7 +54,7 @@ public class DotDashTests extends TestBase {
         Assert.assertNotEquals(beforeRefresh, afterRefresh);
     }
 
-    @Test(priority = 8)
+    @Test(priority = 6)
     public void dynamicControlsTest() {
         DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(driver);
         dynamicControlsPage.goToDynamicControlsPage();
@@ -93,7 +68,7 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals(dynamicControlsPage.getInputFieldMessage(), "It's disabled!");
     }
 
-    @Test(priority = 9)
+    @Test(priority = 7)
     public void dynamicLoadingTest() {
         DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage(driver);
         dynamicLoadingPage.goToDynamicLoadingPage();
@@ -101,7 +76,7 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals(dynamicLoadingPage.getExample1Message(), "Hello World!");
     }
 
-    @Test(priority = 10, groups={"UploadDownload"})
+    @Test(priority = 8, groups={"UploadDownload"})
     public void fileDownloadTest()  {
         FileDownloadPage fileDownloadPage = new FileDownloadPage(driver);
         fileDownloadPage.goToFileDownloadPage();
@@ -109,7 +84,7 @@ public class DotDashTests extends TestBase {
         Assert.assertTrue(fileDownloadPage.isFileDownloaded(), "File is Not Downloaded");
     }
 
-    @Test(priority = 11, dependsOnGroups = "UploadDownload")
+    @Test(priority = 9, dependsOnGroups = "UploadDownload")
     public void fileUploadTest() {
         FileUploadPage fileUploadPage = new FileUploadPage(driver);
         fileUploadPage.goToFileUploadPage();
@@ -117,12 +92,37 @@ public class DotDashTests extends TestBase {
         Assert.assertTrue(fileUploadPage.isFileUploaded(), "File Uploaded failed.");
     }
 
-    @Test(priority = 12)
+    @Test(priority = 10)
     public void floatingMenuTest() {
         FloatingMenuPage floatingMenuPage = new FloatingMenuPage(driver);
         floatingMenuPage.goToFloatingMenuPage();
         floatingMenuPage.scrollToPageFooter();
         Assert.assertTrue(floatingMenuPage.isHomeOptionDisplayed());
+    }
+
+    @Test (priority = 11)
+    public void positiveLoginTest() {
+        FormAuthenticationPage formAuthenticationPage = new FormAuthenticationPage(driver);
+        formAuthenticationPage.goToFormAuthenticationPage();
+        formAuthenticationPage.login(ConfigReader.readProperty("username"), ConfigReader.readProperty("password"));
+        Assert.assertEquals(formAuthenticationPage.getSuggestionMessage(), "Welcome to the Secure Area. When you are done click logout below.");
+        formAuthenticationPage.clickLogout();
+    }
+
+    @Test(priority = 12, dataProvider = "loginData")
+    public void negativeLoginTest(String username, String password, String message) {
+        FormAuthenticationPage formAuthenticationPage = new FormAuthenticationPage(driver);
+        formAuthenticationPage.goToFormAuthenticationPage();
+        formAuthenticationPage.login(username, password);
+        Assert.assertTrue(formAuthenticationPage.getErrorMessage().contains(message));
+    }
+
+    @DataProvider(name = "loginData")
+    public Object[][] loginData() {
+        return new Object[][] {
+                {"pal", "SuperSecretPassword!", "Your username is invalid!"},
+                {"tomsmith", "007", "Your password is invalid!"}
+        };
     }
 
     @Test(priority = 13)
@@ -159,6 +159,13 @@ public class DotDashTests extends TestBase {
     }
 
     @Test(priority = 17)
+    public void javaScriptErrorTest() {
+        JavaScriptErrorPage javaScriptErrorPage = new JavaScriptErrorPage(driver);
+        javaScriptErrorPage.goToJavaScriptOnloadEventErrorPage();
+        Assert.assertTrue(javaScriptErrorPage.isJavaScriptErrorPresent("Cannot read properties of undefined (reading 'xyz')"));
+    }
+
+    @Test(priority = 18)
     public void mouseHoversTest() {
         MouseHoversPage mouseHoversPage = new MouseHoversPage(driver);
         mouseHoversPage.goToMouseHoversPage();
