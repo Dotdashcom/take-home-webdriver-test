@@ -51,8 +51,7 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals("You selected a context menu", contextMenuPage.getAlertText());
     }
 
-
-    @Test (priority = 5)
+    @Test(priority = 5)
     public void dragAndDropTest() {
         DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
         dragAndDropPage.goToDragAndDropPage();
@@ -136,6 +135,30 @@ public class DotDashTests extends TestBase {
     }
 
     @Test(priority = 14)
+    public void jsAlertTest() {
+        JavaScriptAlertsPage javaScriptAlertsPage = new JavaScriptAlertsPage(driver);
+        javaScriptAlertsPage.goToJavaScriptAlertsPage();
+        javaScriptAlertsPage.openJsAlert();
+        Assert.assertEquals(javaScriptAlertsPage.getResultText(), "You successfuly clicked an alert");
+    }
+
+    @Test(priority = 15)
+    public void jsConfirmTest() {
+        JavaScriptAlertsPage javaScriptAlertsPage = new JavaScriptAlertsPage(driver);
+        javaScriptAlertsPage.goToJavaScriptAlertsPage();
+        javaScriptAlertsPage.openJsConfirm();
+        Assert.assertEquals(javaScriptAlertsPage.getResultText(), "You clicked: Ok");
+    }
+
+    @Test(priority = 16)
+    public void jsPromptTest() {
+        JavaScriptAlertsPage javaScriptAlertsPage = new JavaScriptAlertsPage(driver);
+        javaScriptAlertsPage.goToJavaScriptAlertsPage();
+        javaScriptAlertsPage.openJsPrompt();
+        Assert.assertEquals(javaScriptAlertsPage.getResultText(), "You entered: doordash");
+    }
+
+    @Test(priority = 17)
     public void mouseHoversTest() {
         MouseHoversPage mouseHoversPage = new MouseHoversPage(driver);
         mouseHoversPage.goToMouseHoversPage();
