@@ -51,7 +51,8 @@ public class DotDashTests extends TestBase {
         Assert.assertEquals("You selected a context menu", contextMenuPage.getAlertText());
     }
 
-    @Test(priority = 5)
+
+    @Test (priority = 5)
     public void dragAndDropTest() {
         DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
         dragAndDropPage.goToDragAndDropPage();
@@ -123,5 +124,21 @@ public class DotDashTests extends TestBase {
         floatingMenuPage.goToFloatingMenuPage();
         floatingMenuPage.scrollToPageFooter();
         Assert.assertTrue(floatingMenuPage.isHomeOptionDisplayed());
+    }
+
+    @Test(priority = 13)
+    public void iFrameTest() {
+        IframePage iFramePage = new IframePage(driver);
+        iFramePage.goToIFramePage();
+        iFramePage.sendAndGetText();
+        iFramePage.notificationMsg();
+        Assert.assertEquals(iFramePage.sendAndGetText(), "TinyMCE WYSIWYG Editor");
+    }
+
+    @Test(priority = 14)
+    public void mouseHoversTest() {
+        MouseHoversPage mouseHoversPage = new MouseHoversPage(driver);
+        mouseHoversPage.goToMouseHoversPage();
+        Assert.assertTrue(mouseHoversPage.allUsersPresent());
     }
 }
