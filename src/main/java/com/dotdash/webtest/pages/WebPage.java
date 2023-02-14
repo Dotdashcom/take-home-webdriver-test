@@ -20,4 +20,9 @@ public class WebPage {
     public void waitForVisibilityOfElement (String cssSelector) {
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(cssSelector)));
     }
+
+    public static void scrollToElementWithJs(WebDriver driver, WebElement element) {
+        JavascriptExecutor js= (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
 }

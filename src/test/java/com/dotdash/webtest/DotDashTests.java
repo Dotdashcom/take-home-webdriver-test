@@ -116,4 +116,12 @@ public class DotDashTests extends TestBase {
         fileUploadPage.uploadFile();
         Assert.assertTrue(fileUploadPage.isFileUploaded(), "File Uploaded failed.");
     }
+
+    @Test(priority = 12)
+    public void floatingMenuTest() {
+        FloatingMenuPage floatingMenuPage = new FloatingMenuPage(driver);
+        floatingMenuPage.goToFloatingMenuPage();
+        floatingMenuPage.scrollToPageFooter();
+        Assert.assertTrue(floatingMenuPage.isHomeOptionDisplayed());
+    }
 }
