@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+
+    <test thread-count="5" name="Test">
+        <classes>
+            <class name="testCases.Tc001_LoginSuccess"/>
+            <class name="testCases.Tc002_LoginFailure"/>
+            <class name="testCases.Tc003_Checkboxes"/>
+            <class name="testCases.Tc004_contextMenu"/>
+            <class name="testCases.Tc005_dragDropTest"/>
+            <class name="testCases.Tc006_DropDownTest"/>
+            <class name="testCases.Tc007_DynamicContentTest"/>
+            <class name="testCases.Tc008_DynamicControlTest"/>
+            <class name="testCases.Tc009_DynamicLoadTest"/>
+            <class name="testCases.Tc010_FileDownloaderTest"/>
+            <class name="testCases.Tc011_FileUploadTest"/>
+            <class name="testCases.Tc012_FloatingMenuTest"/>
+            <class name="testCases.Tc013_iframeTest"/>
+            <class name="testCases.Tc014_MouseHoverTest"/>
+            <class name="testCases.Tc015_JavaScriptAlertsTest"/>
+            <class name="testCases.Tc016_JavaSriptErrorTest"/>
+            <class name="testCases.Tc017_windowsTest"/>
+            <class name="testCases.Tc018_NotificationMessageTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
