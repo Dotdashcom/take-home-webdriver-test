@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automation Regression Tests" verbose="2">
+
+    <test name="Automation Regression Tests">
+        <packages>
+            <package name="tests"></package>
+        </packages>
+    </test>
+
+</suite>
