@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Test:1 Testing login with correct credentials started]]>
+    </line>
+    <line>
+      <![CDATA[Test:1 Login with correct credentials tested successfully!]]>
+    </line>
+    <line>
+      <![CDATA[Test:2 Testing login with wrong credentials started]]>
+    </line>
+    <line>
+      <![CDATA[Test:2 Login with wrong credentials tested successfully!]]>
+    </line>
+    <line>
+      <![CDATA[Test:3 Testing actions on checkboxes started]]>
+    </line>
+    <line>
+      <![CDATA[Test:3 Checkboxes tested successfully!]]>
+    </line>
+    <line>
+      <![CDATA[Test:4 Testing actions on context menu started]]>
+    </line>
+    <line>
+      <![CDATA[Test:4 Testing context menu successful]]>
+    </line>
+    <line>
+      <![CDATA[Test:5 Testing drag and drop action started]]>
+    </line>
+    <line>
+      <![CDATA[Test:5 Tested drag and drop successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:6 Testing dropdown started]]>
+    </line>
+    <line>
+      <![CDATA[Test:6 Tested dropdown successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:7 Testing Dynamic content started]]>
+    </line>
+    <line>
+      <![CDATA[Test:7 Tested dynamic content successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:8 Testing Dynamic controls started]]>
+    </line>
+    <line>
+      <![CDATA[Test:8 Tested dynamic controls successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:9 Testing dynamic loading started]]>
+    </line>
+    <line>
+      <![CDATA[Test:9 Tested dynamic loading successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:10 Testing file download started]]>
+    </line>
+    <line>
+      <![CDATA[Test:10 Tested file download successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:11 Testing file upload started]]>
+    </line>
+    <line>
+      <![CDATA[Test:11 Tested file upload successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:12 Testing floating header started]]>
+    </line>
+    <line>
+      <![CDATA[Test:12 Tested floating header successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:13 Testing iframe input started]]>
+    </line>
+    <line>
+      <![CDATA[Test:13 Tested iframe input successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:14 Testing mouse hover action started]]>
+    </line>
+    <line>
+      <![CDATA[Test:14 Tested mouse hover action successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:15 Testing js alerts started]]>
+    </line>
+    <line>
+      <![CDATA[Test:15 Tested js alerts successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:16 Testing js errors started]]>
+    </line>
+    <line>
+      <![CDATA[Test:16 Tested js errors successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:17 Testing new tab open function started]]>
+    </line>
+    <line>
+      <![CDATA[Test:17 Tested new tab function successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test:18 Testing notification started]]>
+    </line>
+    <line>
+      <![CDATA[Test:18 Tested notification page successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-03-06T00:17:15 EST" name="Default suite" finished-at="2023-03-06T00:19:05 EST" duration-ms="110078">
+    <groups>
+    </groups>
+    <test started-at="2023-03-06T00:17:15 EST" name="Default test" finished-at="2023-03-06T00:19:05 EST" duration-ms="110078">
+      <class name="tests.WebDriverTesting">
+        <test-method is-config="true" signature="readProps()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:15 EST" name="readProps" finished-at="2023-03-06T00:17:15 EST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readProps -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:15 EST" name="setup" finished-at="2023-03-06T00:17:22 EST" duration-ms="7002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:1, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:22 EST" name="testLogin" description="Checking login with correct credentails" finished-at="2023-03-06T00:17:24 EST" duration-ms="1165" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:1 Testing login with correct credentials started]]>
+            </line>
+            <line>
+              <![CDATA[Test:1 Login with correct credentials tested successfully!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:24 EST" name="teardown" finished-at="2023-03-06T00:17:24 EST" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:24 EST" name="setup" finished-at="2023-03-06T00:17:28 EST" duration-ms="4120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginfailure()[pri:2, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:28 EST" name="testLoginfailure" description="Testing login with incorrect credentails" finished-at="2023-03-06T00:17:30 EST" duration-ms="1411" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:2 Testing login with wrong credentials started]]>
+            </line>
+            <line>
+              <![CDATA[Test:2 Login with wrong credentials tested successfully!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLoginfailure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:30 EST" name="teardown" finished-at="2023-03-06T00:17:30 EST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:30 EST" name="setup" finished-at="2023-03-06T00:17:34 EST" duration-ms="3738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckBoxes()[pri:3, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:34 EST" name="testCheckBoxes" description="Testing checking and unchecking checkboxes" finished-at="2023-03-06T00:17:35 EST" duration-ms="618" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:3 Testing actions on checkboxes started]]>
+            </line>
+            <line>
+              <![CDATA[Test:3 Checkboxes tested successfully!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCheckBoxes -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:35 EST" name="teardown" finished-at="2023-03-06T00:17:35 EST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:35 EST" name="setup" finished-at="2023-03-06T00:17:39 EST" duration-ms="4212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContextMenu()[pri:4, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:39 EST" name="testContextMenu" description="Testing context menu" finished-at="2023-03-06T00:17:39 EST" duration-ms="356" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:4 Testing actions on context menu started]]>
+            </line>
+            <line>
+              <![CDATA[Test:4 Testing context menu successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testContextMenu -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:39 EST" name="teardown" finished-at="2023-03-06T00:17:40 EST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:40 EST" name="setup" finished-at="2023-03-06T00:17:43 EST" duration-ms="3443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDragAndDrop()[pri:5, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:43 EST" name="testDragAndDrop" description="Testing Drag and Drop" finished-at="2023-03-06T00:17:44 EST" duration-ms="479" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:5 Testing drag and drop action started]]>
+            </line>
+            <line>
+              <![CDATA[Test:5 Tested drag and drop successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDragAndDrop -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:44 EST" name="teardown" finished-at="2023-03-06T00:17:44 EST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:44 EST" name="setup" finished-at="2023-03-06T00:17:48 EST" duration-ms="3665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDropdown()[pri:6, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:48 EST" name="testDropdown" description="Testing DropDown" finished-at="2023-03-06T00:17:48 EST" duration-ms="483" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:6 Testing dropdown started]]>
+            </line>
+            <line>
+              <![CDATA[Test:6 Tested dropdown successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDropdown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:48 EST" name="teardown" finished-at="2023-03-06T00:17:48 EST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:48 EST" name="setup" finished-at="2023-03-06T00:17:52 EST" duration-ms="3377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDynamicContent()[pri:7, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:52 EST" name="testDynamicContent" description="Testing Dynamic Content in the Page" finished-at="2023-03-06T00:17:52 EST" duration-ms="338" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:7 Testing Dynamic content started]]>
+            </line>
+            <line>
+              <![CDATA[Test:7 Tested dynamic content successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDynamicContent -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:52 EST" name="teardown" finished-at="2023-03-06T00:17:52 EST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:52 EST" name="setup" finished-at="2023-03-06T00:17:56 EST" duration-ms="3982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDynamicControls()[pri:8, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:17:56 EST" name="testDynamicControls" description="Testing Dynamic Controls in the Page" finished-at="2023-03-06T00:18:10 EST" duration-ms="13592" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:8 Testing Dynamic controls started]]>
+            </line>
+            <line>
+              <![CDATA[Test:8 Tested dynamic controls successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDynamicControls -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:10 EST" name="teardown" finished-at="2023-03-06T00:18:10 EST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:10 EST" name="setup" finished-at="2023-03-06T00:18:14 EST" duration-ms="3334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDynamicLoading()[pri:9, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:14 EST" name="testDynamicLoading" description="Testing Dynamic Loading" finished-at="2023-03-06T00:18:19 EST" duration-ms="5505" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:9 Testing dynamic loading started]]>
+            </line>
+            <line>
+              <![CDATA[Test:9 Tested dynamic loading successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDynamicLoading -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:19 EST" name="teardown" finished-at="2023-03-06T00:18:19 EST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:19 EST" name="setup" finished-at="2023-03-06T00:18:23 EST" duration-ms="3838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFileDownload()[pri:10, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:23 EST" name="testFileDownload" description="Testing File Download" finished-at="2023-03-06T00:18:24 EST" duration-ms="406" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:10 Testing file download started]]>
+            </line>
+            <line>
+              <![CDATA[Test:10 Tested file download successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testFileDownload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:24 EST" name="teardown" finished-at="2023-03-06T00:18:24 EST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:24 EST" name="setup" finished-at="2023-03-06T00:18:28 EST" duration-ms="3774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFileUpload()[pri:11, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:28 EST" name="testFileUpload" description="Testing File Upload" finished-at="2023-03-06T00:18:29 EST" duration-ms="689" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:11 Testing file upload started]]>
+            </line>
+            <line>
+              <![CDATA[Test:11 Tested file upload successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testFileUpload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:29 EST" name="teardown" finished-at="2023-03-06T00:18:29 EST" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:29 EST" name="setup" finished-at="2023-03-06T00:18:33 EST" duration-ms="3707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFloatingMenu()[pri:12, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:33 EST" name="testFloatingMenu" description="Testing Floating Header" finished-at="2023-03-06T00:18:33 EST" duration-ms="308" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:12 Testing floating header started]]>
+            </line>
+            <line>
+              <![CDATA[Test:12 Tested floating header successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testFloatingMenu -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:33 EST" name="teardown" finished-at="2023-03-06T00:18:33 EST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:33 EST" name="setup" finished-at="2023-03-06T00:18:37 EST" duration-ms="3321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testiFrame()[pri:13, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:37 EST" name="testiFrame" description="Testing iFrame Input" finished-at="2023-03-06T00:18:38 EST" duration-ms="1625" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:13 Testing iframe input started]]>
+            </line>
+            <line>
+              <![CDATA[Test:13 Tested iframe input successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testiFrame -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:38 EST" name="teardown" finished-at="2023-03-06T00:18:38 EST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:38 EST" name="setup" finished-at="2023-03-06T00:18:42 EST" duration-ms="3269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testMouseHover()[pri:14, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:42 EST" name="testMouseHover" description="Testing MouseHover" finished-at="2023-03-06T00:18:42 EST" duration-ms="640" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:14 Testing mouse hover action started]]>
+            </line>
+            <line>
+              <![CDATA[Test:14 Tested mouse hover action successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMouseHover -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:42 EST" name="teardown" finished-at="2023-03-06T00:18:43 EST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:43 EST" name="setup" finished-at="2023-03-06T00:18:46 EST" duration-ms="3490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testjsAlerts()[pri:15, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:46 EST" name="testjsAlerts" description="Testing JS Alerts" finished-at="2023-03-06T00:18:47 EST" duration-ms="735" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:15 Testing js alerts started]]>
+            </line>
+            <line>
+              <![CDATA[Test:15 Tested js alerts successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testjsAlerts -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:47 EST" name="teardown" finished-at="2023-03-06T00:18:47 EST" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:47 EST" name="setup" finished-at="2023-03-06T00:18:51 EST" duration-ms="3654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testjsError()[pri:16, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:51 EST" name="testjsError" description="Testing JS Errors" finished-at="2023-03-06T00:18:51 EST" duration-ms="152" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:16 Testing js errors started]]>
+            </line>
+            <line>
+              <![CDATA[Test:16 Tested js errors successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testjsError -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:51 EST" name="teardown" finished-at="2023-03-06T00:18:51 EST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:51 EST" name="setup" finished-at="2023-03-06T00:18:55 EST" duration-ms="3508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNewTab()[pri:17, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:55 EST" name="testNewTab" description="New Tab Test" finished-at="2023-03-06T00:18:55 EST" duration-ms="476" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:17 Testing new tab open function started]]>
+            </line>
+            <line>
+              <![CDATA[Test:17 Tested new tab function successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testNewTab -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:55 EST" name="teardown" finished-at="2023-03-06T00:18:56 EST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:18:56 EST" name="setup" finished-at="2023-03-06T00:19:01 EST" duration-ms="5667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNotification()[pri:18, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:19:01 EST" name="testNotification" description="Testing Notification Page" finished-at="2023-03-06T00:19:05 EST" duration-ms="3708" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test:18 Testing notification started]]>
+            </line>
+            <line>
+              <![CDATA[Test:18 Tested notification page successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testNotification -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebDriverTesting@2a4fb17b]" started-at="2023-03-06T00:19:05 EST" name="teardown" finished-at="2023-03-06T00:19:05 EST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.WebDriverTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
