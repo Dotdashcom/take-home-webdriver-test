@@ -1,0 +1,314 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 06 00:17:15 EST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>110 seconds (110078 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.WebDriverTesting.testFileUpload()'><b>testFileUpload</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing File Upload<br/>
+<a href="#Output-659545766" onClick='toggleBox("Output-659545766", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-659545766" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-659545766">
+Test:11 Testing file upload started<br/>
+Test:11 Tested file upload successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testMouseHover()'><b>testMouseHover</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing MouseHover<br/>
+<a href="#Output-2144817630" onClick='toggleBox("Output-2144817630", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2144817630" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2144817630">
+Test:14 Testing mouse hover action started<br/>
+Test:14 Tested mouse hover action successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testNotification()'><b>testNotification</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing Notification Page<br/>
+<a href="#Output-316863915" onClick='toggleBox("Output-316863915", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-316863915" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-316863915">
+Test:18 Testing notification started<br/>
+Test:18 Tested notification page successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testLogin()'><b>testLogin</b><br>Test class: tests.WebDriverTesting<br>Test method: Checking login with correct credentails<br/>
+<a href="#Output-1118969241" onClick='toggleBox("Output-1118969241", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1118969241" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1118969241">
+Test:1 Testing login with correct credentials started<br/>
+Test:1 Login with correct credentials tested successfully!<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testLoginfailure()'><b>testLoginfailure</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing login with incorrect credentails<br/>
+<a href="#Output-643328884" onClick='toggleBox("Output-643328884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-643328884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-643328884">
+Test:2 Testing login with wrong credentials started<br/>
+Test:2 Login with wrong credentials tested successfully!<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testContextMenu()'><b>testContextMenu</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing context menu<br/>
+<a href="#Output-572137576" onClick='toggleBox("Output-572137576", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-572137576" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-572137576">
+Test:4 Testing actions on context menu started<br/>
+Test:4 Testing context menu successful<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testNewTab()'><b>testNewTab</b><br>Test class: tests.WebDriverTesting<br>Test method: New Tab Test<br/>
+<a href="#Output-1771486148" onClick='toggleBox("Output-1771486148", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1771486148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1771486148">
+Test:17 Testing new tab open function started<br/>
+Test:17 Tested new tab function successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testjsAlerts()'><b>testjsAlerts</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing JS Alerts<br/>
+<a href="#Output-1296761246" onClick='toggleBox("Output-1296761246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1296761246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1296761246">
+Test:15 Testing js alerts started<br/>
+Test:15 Tested js alerts successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testDynamicContent()'><b>testDynamicContent</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing Dynamic Content in the Page<br/>
+<a href="#Output-1292487390" onClick='toggleBox("Output-1292487390", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1292487390" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1292487390">
+Test:7 Testing Dynamic content started<br/>
+Test:7 Tested dynamic content successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testDragAndDrop()'><b>testDragAndDrop</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing Drag and Drop<br/>
+<a href="#Output-242762528" onClick='toggleBox("Output-242762528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-242762528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-242762528">
+Test:5 Testing drag and drop action started<br/>
+Test:5 Tested drag and drop successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testCheckBoxes()'><b>testCheckBoxes</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing checking and unchecking checkboxes<br/>
+<a href="#Output-341120332" onClick='toggleBox("Output-341120332", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-341120332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-341120332">
+Test:3 Testing actions on checkboxes started<br/>
+Test:3 Checkboxes tested successfully!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testjsError()'><b>testjsError</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing JS Errors<br/>
+<a href="#Output-2101093029" onClick='toggleBox("Output-2101093029", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2101093029" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2101093029">
+Test:16 Testing js errors started<br/>
+Test:16 Tested js errors successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testDropdown()'><b>testDropdown</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing DropDown<br/>
+<a href="#Output-141388791" onClick='toggleBox("Output-141388791", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-141388791" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-141388791">
+Test:6 Testing dropdown started<br/>
+Test:6 Tested dropdown successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testFileDownload()'><b>testFileDownload</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing File Download<br/>
+<a href="#Output-1166029274" onClick='toggleBox("Output-1166029274", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1166029274" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1166029274">
+Test:10 Testing file download started<br/>
+Test:10 Tested file download successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testDynamicLoading()'><b>testDynamicLoading</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing Dynamic Loading<br/>
+<a href="#Output-771359425" onClick='toggleBox("Output-771359425", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-771359425" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-771359425">
+Test:9 Testing dynamic loading started<br/>
+Test:9 Tested dynamic loading successfully<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testFloatingMenu()'><b>testFloatingMenu</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing Floating Header<br/>
+<a href="#Output-230816477" onClick='toggleBox("Output-230816477", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-230816477" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-230816477">
+Test:12 Testing floating header started<br/>
+Test:12 Tested floating header successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testDynamicControls()'><b>testDynamicControls</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing Dynamic Controls in the Page<br/>
+<a href="#Output-994173375" onClick='toggleBox("Output-994173375", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-994173375" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-994173375">
+Test:8 Testing Dynamic controls started<br/>
+Test:8 Tested dynamic controls successfully<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+<tr>
+<td title='tests.WebDriverTesting.testiFrame()'><b>testiFrame</b><br>Test class: tests.WebDriverTesting<br>Test method: Testing iFrame Input<br/>
+<a href="#Output-1407795127" onClick='toggleBox("Output-1407795127", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1407795127" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1407795127">
+Test:13 Testing iframe input started<br/>
+Test:13 Tested iframe input successfully<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.WebDriverTesting@2a4fb17b</td></tr>
+</table><p>
+</body>
+</html>
