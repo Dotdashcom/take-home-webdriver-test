@@ -53,7 +53,6 @@ public class DynamicControlsPage extends BasePage{
         Assert.assertEquals(getsuccessMessage().getText(),"It's back!");
     }
 
-
     public void enableTextField(){
 
         getDynamicControlsPage().click();

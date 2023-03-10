@@ -13,7 +13,6 @@ public class BasePage {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(geturl());
-        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         return driver;
     }
     public String geturl(){
