@@ -35,7 +35,7 @@ public class MouseHoverPage extends BasePage{
 
 
     public void hoverOverToImage() {
-        WebDriverWait wait = new WebDriverWait(driver,0);
+        WebDriverWait wait = new WebDriverWait(driver,10);
         getHoverPage().click();
         int i = 0;
         for (WebElement element : getUserIcons()) {
