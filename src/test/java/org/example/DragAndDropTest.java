@@ -24,8 +24,5 @@ public class DragAndDropTest extends BasePage{
         teardown();
 
     }
-    @AfterMethod
-    public void endTest(){
-        teardown();
-    }
+
 }
