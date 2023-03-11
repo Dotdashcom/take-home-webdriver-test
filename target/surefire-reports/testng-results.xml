@@ -2,294 +2,294 @@
 <testng-results skipped="0" failed="1" ignored="0" total="24" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="156328" started-at="2023-03-10T17:06:06 EST" finished-at="2023-03-10T17:08:43 EST">
+  <suite name="All Test Suite" duration-ms="161440" started-at="2023-03-10T17:23:42 EST" finished-at="2023-03-10T17:26:23 EST">
     <groups>
     </groups>
-    <test name="all-tests" duration-ms="156328" started-at="2023-03-10T17:06:06 EST" finished-at="2023-03-10T17:08:43 EST">
+    <test name="all-tests" duration-ms="161440" started-at="2023-03-10T17:23:42 EST" finished-at="2023-03-10T17:26:23 EST">
       <class name="org.example.NotificationMessageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.NotificationMessageTest@307f6b8c]" name="setUp" is-config="true" duration-ms="3375" started-at="2023-03-10T17:08:37 EST" finished-at="2023-03-10T17:08:40 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.NotificationMessageTest@307f6b8c]" name="setUp" is-config="true" duration-ms="3494" started-at="2023-03-10T17:26:17 EST" finished-at="2023-03-10T17:26:20 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="notificationTest()[pri:0, instance:org.example.NotificationMessageTest@307f6b8c]" name="notificationTest" duration-ms="1445" started-at="2023-03-10T17:08:40 EST" finished-at="2023-03-10T17:08:42 EST">
+        <test-method status="PASS" signature="notificationTest()[pri:0, instance:org.example.NotificationMessageTest@307f6b8c]" name="notificationTest" duration-ms="2015" started-at="2023-03-10T17:26:20 EST" finished-at="2023-03-10T17:26:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- notificationTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.NotificationMessageTest@307f6b8c]" name="endTest" is-config="true" duration-ms="859" started-at="2023-03-10T17:08:42 EST" finished-at="2023-03-10T17:08:43 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.NotificationMessageTest@307f6b8c]" name="endTest" is-config="true" duration-ms="829" started-at="2023-03-10T17:26:22 EST" finished-at="2023-03-10T17:26:23 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.NotificationMessageTest -->
       <class name="org.example.JavaScriptAlertsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="setUp" is-config="true" duration-ms="3415" started-at="2023-03-10T17:07:51 EST" finished-at="2023-03-10T17:07:54 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="setUp" is-config="true" duration-ms="4089" started-at="2023-03-10T17:25:30 EST" finished-at="2023-03-10T17:25:34 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="jsAlertTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="jsAlertTest" duration-ms="517" started-at="2023-03-10T17:07:54 EST" finished-at="2023-03-10T17:07:55 EST">
+        <test-method status="PASS" signature="jsAlertTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="jsAlertTest" duration-ms="489" started-at="2023-03-10T17:25:34 EST" finished-at="2023-03-10T17:25:34 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsAlertTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="endTest" is-config="true" duration-ms="918" started-at="2023-03-10T17:07:55 EST" finished-at="2023-03-10T17:07:56 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="endTest" is-config="true" duration-ms="857" started-at="2023-03-10T17:25:34 EST" finished-at="2023-03-10T17:25:35 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="setUp" is-config="true" duration-ms="3778" started-at="2023-03-10T17:07:56 EST" finished-at="2023-03-10T17:07:59 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="setUp" is-config="true" duration-ms="3289" started-at="2023-03-10T17:25:35 EST" finished-at="2023-03-10T17:25:38 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="jsConfirmTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="jsConfirmTest" duration-ms="641" started-at="2023-03-10T17:07:59 EST" finished-at="2023-03-10T17:08:00 EST">
+        <test-method status="PASS" signature="jsConfirmTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="jsConfirmTest" duration-ms="555" started-at="2023-03-10T17:25:38 EST" finished-at="2023-03-10T17:25:39 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsConfirmTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="endTest" is-config="true" duration-ms="902" started-at="2023-03-10T17:08:00 EST" finished-at="2023-03-10T17:08:01 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="endTest" is-config="true" duration-ms="893" started-at="2023-03-10T17:25:39 EST" finished-at="2023-03-10T17:25:40 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="setUp" is-config="true" duration-ms="3325" started-at="2023-03-10T17:08:01 EST" finished-at="2023-03-10T17:08:04 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="setUp" is-config="true" duration-ms="3818" started-at="2023-03-10T17:25:40 EST" finished-at="2023-03-10T17:25:44 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="jsPromptTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="jsPromptTest" duration-ms="551" started-at="2023-03-10T17:08:04 EST" finished-at="2023-03-10T17:08:05 EST">
+        <test-method status="PASS" signature="jsPromptTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="jsPromptTest" duration-ms="475" started-at="2023-03-10T17:25:44 EST" finished-at="2023-03-10T17:25:44 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsPromptTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="endTest" is-config="true" duration-ms="876" started-at="2023-03-10T17:08:05 EST" finished-at="2023-03-10T17:08:06 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.JavaScriptAlertsTest@3dfc5fb8]" name="endTest" is-config="true" duration-ms="872" started-at="2023-03-10T17:25:44 EST" finished-at="2023-03-10T17:25:45 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.JavaScriptAlertsTest -->
       <class name="org.example.FileUploadTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.FileUploadTest@7d70d1b1]" name="setUp" is-config="true" duration-ms="3184" started-at="2023-03-10T17:07:35 EST" finished-at="2023-03-10T17:07:38 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.FileUploadTest@7d70d1b1]" name="setUp" is-config="true" duration-ms="3331" started-at="2023-03-10T17:25:13 EST" finished-at="2023-03-10T17:25:17 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="fileUploadTest()[pri:0, instance:org.example.FileUploadTest@7d70d1b1]" name="fileUploadTest" duration-ms="1850" started-at="2023-03-10T17:07:38 EST" finished-at="2023-03-10T17:07:40 EST">
+        <test-method status="PASS" signature="fileUploadTest()[pri:0, instance:org.example.FileUploadTest@7d70d1b1]" name="fileUploadTest" duration-ms="1895" started-at="2023-03-10T17:25:17 EST" finished-at="2023-03-10T17:25:18 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileUploadTest -->
       </class> <!-- org.example.FileUploadTest -->
       <class name="org.example.CheckBoxTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="setUp" is-config="true" duration-ms="5322" started-at="2023-03-10T17:06:07 EST" finished-at="2023-03-10T17:06:12 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="setUp" is-config="true" duration-ms="7771" started-at="2023-03-10T17:23:42 EST" finished-at="2023-03-10T17:23:50 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="check_and_Uncheck_CheckBox1()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="check_and_Uncheck_CheckBox1" duration-ms="407" started-at="2023-03-10T17:06:12 EST" finished-at="2023-03-10T17:06:12 EST">
+        <test-method status="PASS" signature="check_and_Uncheck_CheckBox1()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="check_and_Uncheck_CheckBox1" duration-ms="734" started-at="2023-03-10T17:23:50 EST" finished-at="2023-03-10T17:23:50 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_and_Uncheck_CheckBox1 -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="endTest" is-config="true" duration-ms="854" started-at="2023-03-10T17:06:12 EST" finished-at="2023-03-10T17:06:13 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="endTest" is-config="true" duration-ms="1561" started-at="2023-03-10T17:23:50 EST" finished-at="2023-03-10T17:23:52 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="setUp" is-config="true" duration-ms="2674" started-at="2023-03-10T17:06:13 EST" finished-at="2023-03-10T17:06:16 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="setUp" is-config="true" duration-ms="4422" started-at="2023-03-10T17:23:52 EST" finished-at="2023-03-10T17:23:56 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="check_and_Uncheck_CheckBox2()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="check_and_Uncheck_CheckBox2" duration-ms="436" started-at="2023-03-10T17:06:16 EST" finished-at="2023-03-10T17:06:16 EST">
+        <test-method status="PASS" signature="check_and_Uncheck_CheckBox2()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="check_and_Uncheck_CheckBox2" duration-ms="601" started-at="2023-03-10T17:23:56 EST" finished-at="2023-03-10T17:23:57 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_and_Uncheck_CheckBox2 -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="endTest" is-config="true" duration-ms="776" started-at="2023-03-10T17:06:16 EST" finished-at="2023-03-10T17:06:17 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.CheckBoxTest@5f282abb]" name="endTest" is-config="true" duration-ms="1112" started-at="2023-03-10T17:23:57 EST" finished-at="2023-03-10T17:23:58 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.CheckBoxTest -->
-      <class name="org.example.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="setUp" is-config="true" duration-ms="3353" started-at="2023-03-10T17:08:10 EST" finished-at="2023-03-10T17:08:14 EST">
+      <class name="org.example.ContextMenuTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.ContextMenuTest@2f943d71]" name="setUp" is-config="true" duration-ms="4089" started-at="2023-03-10T17:23:58 EST" finished-at="2023-03-10T17:24:02 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="invalidPasswordlogintest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="invalidPasswordlogintest" duration-ms="1039" started-at="2023-03-10T17:08:14 EST" finished-at="2023-03-10T17:08:15 EST">
+        <test-method status="PASS" signature="testRightClick()[pri:0, instance:org.example.ContextMenuTest@2f943d71]" name="testRightClick" duration-ms="586" started-at="2023-03-10T17:24:02 EST" finished-at="2023-03-10T17:24:03 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRightClick -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.ContextMenuTest@2f943d71]" name="endTest" is-config="true" duration-ms="896" started-at="2023-03-10T17:24:03 EST" finished-at="2023-03-10T17:24:04 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- org.example.ContextMenuTest -->
+      <class name="org.example.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="setUp" is-config="true" duration-ms="3406" started-at="2023-03-10T17:25:49 EST" finished-at="2023-03-10T17:25:53 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidPasswordlogintest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="invalidPasswordlogintest" duration-ms="1012" started-at="2023-03-10T17:25:53 EST" finished-at="2023-03-10T17:25:54 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidPasswordlogintest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="endTest" is-config="true" duration-ms="873" started-at="2023-03-10T17:08:15 EST" finished-at="2023-03-10T17:08:16 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="endTest" is-config="true" duration-ms="1017" started-at="2023-03-10T17:25:54 EST" finished-at="2023-03-10T17:25:55 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="setUp" is-config="true" duration-ms="3581" started-at="2023-03-10T17:08:16 EST" finished-at="2023-03-10T17:08:19 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="setUp" is-config="true" duration-ms="3621" started-at="2023-03-10T17:25:55 EST" finished-at="2023-03-10T17:25:59 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="invalidUsernamelogintest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="invalidUsernamelogintest" duration-ms="1050" started-at="2023-03-10T17:08:19 EST" finished-at="2023-03-10T17:08:20 EST">
+        <test-method status="PASS" signature="invalidUsernamelogintest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="invalidUsernamelogintest" duration-ms="1071" started-at="2023-03-10T17:25:59 EST" finished-at="2023-03-10T17:26:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUsernamelogintest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="endTest" is-config="true" duration-ms="873" started-at="2023-03-10T17:08:20 EST" finished-at="2023-03-10T17:08:21 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="endTest" is-config="true" duration-ms="901" started-at="2023-03-10T17:26:00 EST" finished-at="2023-03-10T17:26:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="setUp" is-config="true" duration-ms="3363" started-at="2023-03-10T17:08:21 EST" finished-at="2023-03-10T17:08:24 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="setUp" is-config="true" duration-ms="4288" started-at="2023-03-10T17:26:00 EST" finished-at="2023-03-10T17:26:05 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validCredslogintest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="validCredslogintest" duration-ms="1203" started-at="2023-03-10T17:08:24 EST" finished-at="2023-03-10T17:08:26 EST">
+        <test-method status="PASS" signature="validCredslogintest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="validCredslogintest" duration-ms="1029" started-at="2023-03-10T17:26:05 EST" finished-at="2023-03-10T17:26:06 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validCredslogintest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="endTest" is-config="true" duration-ms="847" started-at="2023-03-10T17:08:26 EST" finished-at="2023-03-10T17:08:27 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.LoginPageTest@4d50efb8]" name="endTest" is-config="true" duration-ms="846" started-at="2023-03-10T17:26:06 EST" finished-at="2023-03-10T17:26:07 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.LoginPageTest -->
       <class name="org.example.FloatingMenuTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.FloatingMenuTest@2a742aa2]" name="setUp" is-config="true" duration-ms="3232" started-at="2023-03-10T17:07:40 EST" finished-at="2023-03-10T17:07:43 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.FloatingMenuTest@2a742aa2]" name="setUp" is-config="true" duration-ms="3578" started-at="2023-03-10T17:25:18 EST" finished-at="2023-03-10T17:25:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFloatingMenu()[pri:0, instance:org.example.FloatingMenuTest@2a742aa2]" name="testFloatingMenu" duration-ms="514" started-at="2023-03-10T17:07:43 EST" finished-at="2023-03-10T17:07:44 EST">
+        <test-method status="PASS" signature="testFloatingMenu()[pri:0, instance:org.example.FloatingMenuTest@2a742aa2]" name="testFloatingMenu" duration-ms="457" started-at="2023-03-10T17:25:22 EST" finished-at="2023-03-10T17:25:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFloatingMenu -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.FloatingMenuTest@2a742aa2]" name="endTest" is-config="true" duration-ms="881" started-at="2023-03-10T17:07:44 EST" finished-at="2023-03-10T17:07:45 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.FloatingMenuTest@2a742aa2]" name="endTest" is-config="true" duration-ms="843" started-at="2023-03-10T17:25:22 EST" finished-at="2023-03-10T17:25:23 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.FloatingMenuTest -->
-      <class name="org.example.ContextMenuTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.ContextMenuTest@2f943d71]" name="setUp" is-config="true" duration-ms="2503" started-at="2023-03-10T17:06:17 EST" finished-at="2023-03-10T17:06:19 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testRightClick()[pri:0, instance:org.example.ContextMenuTest@2f943d71]" name="testRightClick" duration-ms="403" started-at="2023-03-10T17:06:19 EST" finished-at="2023-03-10T17:06:20 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRightClick -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.ContextMenuTest@2f943d71]" name="endTest" is-config="true" duration-ms="775" started-at="2023-03-10T17:06:20 EST" finished-at="2023-03-10T17:06:21 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- org.example.ContextMenuTest -->
       <class name="org.example.MouseHoverTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.MouseHoverTest@7e2d773b]" name="setUp" is-config="true" duration-ms="3088" started-at="2023-03-10T17:08:27 EST" finished-at="2023-03-10T17:08:30 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.MouseHoverTest@7e2d773b]" name="setUp" is-config="true" duration-ms="3307" started-at="2023-03-10T17:26:07 EST" finished-at="2023-03-10T17:26:10 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mouseHoverTest()[pri:0, instance:org.example.MouseHoverTest@7e2d773b]" name="mouseHoverTest" duration-ms="1233" started-at="2023-03-10T17:08:30 EST" finished-at="2023-03-10T17:08:31 EST">
+        <test-method status="PASS" signature="mouseHoverTest()[pri:0, instance:org.example.MouseHoverTest@7e2d773b]" name="mouseHoverTest" duration-ms="1237" started-at="2023-03-10T17:26:10 EST" finished-at="2023-03-10T17:26:11 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseHoverTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.MouseHoverTest@7e2d773b]" name="endTest" is-config="true" duration-ms="853" started-at="2023-03-10T17:08:31 EST" finished-at="2023-03-10T17:08:32 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.MouseHoverTest@7e2d773b]" name="endTest" is-config="true" duration-ms="823" started-at="2023-03-10T17:26:11 EST" finished-at="2023-03-10T17:26:12 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.MouseHoverTest -->
       <class name="org.example.FileDownloadTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.FileDownloadTest@2a556333]" name="setUp" is-config="true" duration-ms="3532" started-at="2023-03-10T17:07:30 EST" finished-at="2023-03-10T17:07:34 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.FileDownloadTest@2a556333]" name="setUp" is-config="true" duration-ms="3786" started-at="2023-03-10T17:25:08 EST" finished-at="2023-03-10T17:25:12 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="fileDownloadTest()[pri:0, instance:org.example.FileDownloadTest@2a556333]" name="fileDownloadTest" duration-ms="458" started-at="2023-03-10T17:07:34 EST" finished-at="2023-03-10T17:07:34 EST">
+        <test-method status="PASS" signature="fileDownloadTest()[pri:0, instance:org.example.FileDownloadTest@2a556333]" name="fileDownloadTest" duration-ms="456" started-at="2023-03-10T17:25:12 EST" finished-at="2023-03-10T17:25:12 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileDownloadTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.FileDownloadTest@2a556333]" name="endTest" is-config="true" duration-ms="835" started-at="2023-03-10T17:07:34 EST" finished-at="2023-03-10T17:07:35 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.FileDownloadTest@2a556333]" name="endTest" is-config="true" duration-ms="1108" started-at="2023-03-10T17:25:12 EST" finished-at="2023-03-10T17:25:13 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.FileDownloadTest -->
       <class name="org.example.IFrameTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.IFrameTest@3cb1ffe6]" name="setUp" is-config="true" duration-ms="3386" started-at="2023-03-10T17:07:45 EST" finished-at="2023-03-10T17:07:48 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.IFrameTest@3cb1ffe6]" name="setUp" is-config="true" duration-ms="3392" started-at="2023-03-10T17:25:23 EST" finished-at="2023-03-10T17:25:27 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="iFrameTest()[pri:0, instance:org.example.IFrameTest@3cb1ffe6]" name="iFrameTest" duration-ms="1863" started-at="2023-03-10T17:07:48 EST" finished-at="2023-03-10T17:07:50 EST">
+        <test-method status="PASS" signature="iFrameTest()[pri:0, instance:org.example.IFrameTest@3cb1ffe6]" name="iFrameTest" duration-ms="1940" started-at="2023-03-10T17:25:27 EST" finished-at="2023-03-10T17:25:29 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iFrameTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.IFrameTest@3cb1ffe6]" name="endTest" is-config="true" duration-ms="974" started-at="2023-03-10T17:07:50 EST" finished-at="2023-03-10T17:07:51 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.IFrameTest@3cb1ffe6]" name="endTest" is-config="true" duration-ms="887" started-at="2023-03-10T17:25:29 EST" finished-at="2023-03-10T17:25:30 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.IFrameTest -->
       <class name="org.example.DropDownTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="setUp" is-config="true" duration-ms="3620" started-at="2023-03-10T17:06:37 EST" finished-at="2023-03-10T17:06:41 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="setUp" is-config="true" duration-ms="2550" started-at="2023-03-10T17:24:21 EST" finished-at="2023-03-10T17:24:23 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="option1Test()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="option1Test" duration-ms="595" started-at="2023-03-10T17:06:41 EST" finished-at="2023-03-10T17:06:41 EST">
+        <test-method status="PASS" signature="option1Test()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="option1Test" duration-ms="444" started-at="2023-03-10T17:24:23 EST" finished-at="2023-03-10T17:24:24 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- option1Test -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="endTest" is-config="true" duration-ms="954" started-at="2023-03-10T17:06:41 EST" finished-at="2023-03-10T17:06:42 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="endTest" is-config="true" duration-ms="763" started-at="2023-03-10T17:24:24 EST" finished-at="2023-03-10T17:24:24 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="setUp" is-config="true" duration-ms="4011" started-at="2023-03-10T17:06:42 EST" finished-at="2023-03-10T17:06:46 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="setUp" is-config="true" duration-ms="2773" started-at="2023-03-10T17:24:24 EST" finished-at="2023-03-10T17:24:27 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="option2Test()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="option2Test" duration-ms="656" started-at="2023-03-10T17:06:46 EST" finished-at="2023-03-10T17:06:47 EST">
+        <test-method status="PASS" signature="option2Test()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="option2Test" duration-ms="568" started-at="2023-03-10T17:24:27 EST" finished-at="2023-03-10T17:24:28 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- option2Test -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="endTest" is-config="true" duration-ms="970" started-at="2023-03-10T17:06:47 EST" finished-at="2023-03-10T17:06:48 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DropDownTest@4b553d26]" name="endTest" is-config="true" duration-ms="855" started-at="2023-03-10T17:24:28 EST" finished-at="2023-03-10T17:24:29 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.DropDownTest -->
       <class name="org.example.JavaScriptErrorTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.JavaScriptErrorTest@467aecef]" name="setUp" is-config="true" duration-ms="3347" started-at="2023-03-10T17:08:06 EST" finished-at="2023-03-10T17:08:09 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.JavaScriptErrorTest@467aecef]" name="setUp" is-config="true" duration-ms="3380" started-at="2023-03-10T17:25:45 EST" finished-at="2023-03-10T17:25:48 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="jsErrorTest()[pri:0, instance:org.example.JavaScriptErrorTest@467aecef]" name="jsErrorTest" duration-ms="260" started-at="2023-03-10T17:08:09 EST" finished-at="2023-03-10T17:08:09 EST">
+        <test-method status="PASS" signature="jsErrorTest()[pri:0, instance:org.example.JavaScriptErrorTest@467aecef]" name="jsErrorTest" duration-ms="249" started-at="2023-03-10T17:25:48 EST" finished-at="2023-03-10T17:25:48 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsErrorTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.JavaScriptErrorTest@467aecef]" name="endTest" is-config="true" duration-ms="930" started-at="2023-03-10T17:08:09 EST" finished-at="2023-03-10T17:08:10 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.JavaScriptErrorTest@467aecef]" name="endTest" is-config="true" duration-ms="957" started-at="2023-03-10T17:25:48 EST" finished-at="2023-03-10T17:25:49 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.JavaScriptErrorTest -->
       <class name="org.example.NewWindowTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.NewWindowTest@2173f6d9]" name="setUp" is-config="true" duration-ms="3772" started-at="2023-03-10T17:08:32 EST" finished-at="2023-03-10T17:08:35 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.NewWindowTest@2173f6d9]" name="setUp" is-config="true" duration-ms="3361" started-at="2023-03-10T17:26:12 EST" finished-at="2023-03-10T17:26:15 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="newWindowTest()[pri:0, instance:org.example.NewWindowTest@2173f6d9]" name="newWindowTest" duration-ms="730" started-at="2023-03-10T17:08:35 EST" finished-at="2023-03-10T17:08:36 EST">
+        <test-method status="PASS" signature="newWindowTest()[pri:0, instance:org.example.NewWindowTest@2173f6d9]" name="newWindowTest" duration-ms="677" started-at="2023-03-10T17:26:15 EST" finished-at="2023-03-10T17:26:16 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newWindowTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.NewWindowTest@2173f6d9]" name="endTest" is-config="true" duration-ms="901" started-at="2023-03-10T17:08:36 EST" finished-at="2023-03-10T17:08:37 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.NewWindowTest@2173f6d9]" name="endTest" is-config="true" duration-ms="878" started-at="2023-03-10T17:26:16 EST" finished-at="2023-03-10T17:26:17 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.NewWindowTest -->
       <class name="org.example.DynamicLoadingTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DynamicLoadingTest@480bdb19]" name="setUp" is-config="true" duration-ms="3476" started-at="2023-03-10T17:07:18 EST" finished-at="2023-03-10T17:07:22 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DynamicLoadingTest@480bdb19]" name="setUp" is-config="true" duration-ms="3926" started-at="2023-03-10T17:24:56 EST" finished-at="2023-03-10T17:25:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="DynamicLoadingTest()[pri:0, instance:org.example.DynamicLoadingTest@480bdb19]" name="DynamicLoadingTest" duration-ms="6146" started-at="2023-03-10T17:07:22 EST" finished-at="2023-03-10T17:07:28 EST">
+        <test-method status="PASS" signature="DynamicLoadingTest()[pri:0, instance:org.example.DynamicLoadingTest@480bdb19]" name="DynamicLoadingTest" duration-ms="6236" started-at="2023-03-10T17:25:00 EST" finished-at="2023-03-10T17:25:07 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DynamicLoadingTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DynamicLoadingTest@480bdb19]" name="endTest" is-config="true" duration-ms="2461" started-at="2023-03-10T17:07:28 EST" finished-at="2023-03-10T17:07:30 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DynamicLoadingTest@480bdb19]" name="endTest" is-config="true" duration-ms="1251" started-at="2023-03-10T17:25:07 EST" finished-at="2023-03-10T17:25:08 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.DynamicLoadingTest -->
       <class name="org.example.DynamicContentTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DynamicContentTest@69a3d1d]" name="setUp" is-config="true" duration-ms="3510" started-at="2023-03-10T17:06:48 EST" finished-at="2023-03-10T17:06:51 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DynamicContentTest@69a3d1d]" name="setUp" is-config="true" duration-ms="2664" started-at="2023-03-10T17:24:29 EST" finished-at="2023-03-10T17:24:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dynamicContentTests()[pri:0, instance:org.example.DynamicContentTest@69a3d1d]" name="dynamicContentTests" duration-ms="760" started-at="2023-03-10T17:06:51 EST" finished-at="2023-03-10T17:06:52 EST">
+        <test-method status="PASS" signature="dynamicContentTests()[pri:0, instance:org.example.DynamicContentTest@69a3d1d]" name="dynamicContentTests" duration-ms="673" started-at="2023-03-10T17:24:31 EST" finished-at="2023-03-10T17:24:32 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dynamicContentTests -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DynamicContentTest@69a3d1d]" name="endTest" is-config="true" duration-ms="843" started-at="2023-03-10T17:06:52 EST" finished-at="2023-03-10T17:06:53 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DynamicContentTest@69a3d1d]" name="endTest" is-config="true" duration-ms="779" started-at="2023-03-10T17:24:32 EST" finished-at="2023-03-10T17:24:33 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.DynamicContentTest -->
       <class name="org.example.DragAndDropTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DragAndDropTest@80503]" name="setUp" is-config="true" duration-ms="2663" started-at="2023-03-10T17:06:21 EST" finished-at="2023-03-10T17:06:23 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DragAndDropTest@80503]" name="setUp" is-config="true" duration-ms="3546" started-at="2023-03-10T17:24:04 EST" finished-at="2023-03-10T17:24:07 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="dragAndDropTest()[pri:0, instance:org.example.DragAndDropTest@80503]" name="dragAndDropTest" duration-ms="12641" started-at="2023-03-10T17:06:23 EST" finished-at="2023-03-10T17:06:36 EST">
+        <test-method status="FAIL" signature="dragAndDropTest()[pri:0, instance:org.example.DragAndDropTest@80503]" name="dragAndDropTest" duration-ms="12686" started-at="2023-03-10T17:24:07 EST" finished-at="2023-03-10T17:24:20 EST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [B] but found [A]]]>
@@ -341,33 +341,33 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dragAndDropTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DragAndDropTest@80503]" name="endTest" is-config="true" duration-ms="894" started-at="2023-03-10T17:06:36 EST" finished-at="2023-03-10T17:06:37 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DragAndDropTest@80503]" name="endTest" is-config="true" duration-ms="719" started-at="2023-03-10T17:24:20 EST" finished-at="2023-03-10T17:24:21 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- org.example.DragAndDropTest -->
       <class name="org.example.DynamicControlsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="setUp" is-config="true" duration-ms="3376" started-at="2023-03-10T17:06:53 EST" finished-at="2023-03-10T17:06:56 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="setUp" is-config="true" duration-ms="2638" started-at="2023-03-10T17:24:33 EST" finished-at="2023-03-10T17:24:35 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testToAddOrRemoveButton()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="testToAddOrRemoveButton" duration-ms="7704" started-at="2023-03-10T17:06:56 EST" finished-at="2023-03-10T17:07:04 EST">
+        <test-method status="PASS" signature="testToAddOrRemoveButton()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="testToAddOrRemoveButton" duration-ms="7288" started-at="2023-03-10T17:24:35 EST" finished-at="2023-03-10T17:24:43 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToAddOrRemoveButton -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="endTest" is-config="true" duration-ms="2491" started-at="2023-03-10T17:07:04 EST" finished-at="2023-03-10T17:07:06 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="endTest" is-config="true" duration-ms="829" started-at="2023-03-10T17:24:43 EST" finished-at="2023-03-10T17:24:43 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="setUp" is-config="true" duration-ms="3414" started-at="2023-03-10T17:07:06 EST" finished-at="2023-03-10T17:07:10 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="setUp" is-config="true" duration-ms="4044" started-at="2023-03-10T17:24:43 EST" finished-at="2023-03-10T17:24:48 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testToEnableOrDisableButton()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="testToEnableOrDisableButton" duration-ms="7473" started-at="2023-03-10T17:07:10 EST" finished-at="2023-03-10T17:07:17 EST">
+        <test-method status="PASS" signature="testToEnableOrDisableButton()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="testToEnableOrDisableButton" duration-ms="7716" started-at="2023-03-10T17:24:48 EST" finished-at="2023-03-10T17:24:55 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToEnableOrDisableButton -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="endTest" is-config="true" duration-ms="806" started-at="2023-03-10T17:07:17 EST" finished-at="2023-03-10T17:07:18 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.example.DynamicControlsTest@86be70a]" name="endTest" is-config="true" duration-ms="1196" started-at="2023-03-10T17:24:55 EST" finished-at="2023-03-10T17:24:56 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->

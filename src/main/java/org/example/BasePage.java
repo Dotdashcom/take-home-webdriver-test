@@ -20,7 +20,6 @@ public class BasePage {
         return url;
     }
     public void teardown(){
-        driver.close();
         driver.quit();
     }
 

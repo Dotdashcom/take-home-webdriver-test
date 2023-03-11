@@ -21,8 +21,10 @@ public class DragAndDropTest extends BasePage{
         dragAndDropPage.dragAndDrop();
         Assert.assertEquals(dragAndDropPage.getElementA().getText(),"B");
         Assert.assertEquals(dragAndDropPage.getElementB().getText(),"A");
-        teardown();
 
     }
-
+    @AfterMethod
+    public void endTest(){
+        teardown();
+    }
 }
