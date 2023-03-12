@@ -249,7 +249,7 @@ public class Scenarios {
 
     //JavaScript Error: http://localhost:7080/javascript_error Test JS error.
      @Test
-     public void testJSError() {
+     public void testJSError() throws InterruptedException {
          driver.get(baseURL + "/javascript_error");
          JavascriptExecutor js = (JavascriptExecutor) driver;
          String script = "return window.jsErr;";
