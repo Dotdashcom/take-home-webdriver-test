@@ -108,7 +108,7 @@ public class Scenarios {
          dropdown.selectByVisibleText("Option 1");
          Assert.assertEquals("Option 1", dropdown.getFirstSelectedOption().getText());
          dropdown.selectByVisibleText("Option 2");
-         Assert.assertEquals("Option2", dropdown.getFirstSelectedOption().getText());
+         Assert.assertEquals("Option 2", dropdown.getFirstSelectedOption().getText());
 
     }
 
@@ -121,8 +121,10 @@ public class Scenarios {
          String text1 = content1.getText();
          String text2 = content2.getText();
          driver.navigate().refresh();
-         String newText1 = content1.getText();
-         String newText2 = content2.getText();
+         WebElement newText1Element = driver.findElement(By.xpath("(//*[@class = 'large-12 columns'])[2]"));
+         WebElement newText2Element = driver.findElement(By.xpath("//div[@class = 'large-10 columns']"));
+         String newText1 = newText1Element.getText();
+         String newText2 = newText2Element.getText();
          Assert.assertNotEquals(text1, newText1);
          Assert.assertNotEquals(text2, newText2);
     }
@@ -134,19 +136,21 @@ public class Scenarios {
         WebElement removeButton = driver.findElement(By.xpath("//button[text()='Remove']"));
         removeButton.click();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkbox")));
-        Assert.assertFalse(driver.findElement(By.id("checkbox")).isDisplayed());
+        Assert.assertFalse(driver.findElements(By.id("checkbox")).size() > 0);
         WebElement addButton = driver.findElement(By.xpath("//button[text()='Add']"));
         addButton.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkbox")));
         Assert.assertTrue(driver.findElement(By.id("checkbox")).isDisplayed());
         WebElement enableButton = driver.findElement(By.xpath("//button[text()='Enable']"));
         enableButton.click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#input-example input[type='text']")));
-        Assert.assertTrue(driver.findElement(By.cssSelector("#input-example input[type='text']")).isEnabled());
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='input-example']//input[@type='text']")));
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='input-example']//input[@type='text']"))
+                .isEnabled());
         WebElement disableButton = driver.findElement(By.xpath("//button[text()='Disable']"));
         disableButton.click();
-        wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(By.cssSelector("#input-example input[type='text']"))));
-        Assert.assertFalse(driver.findElement(By.cssSelector("#input-example input[type='text']")).isEnabled());
+        wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='input-example']//input[@type='text']"))));
+        Assert.assertFalse(driver.findElement(By.xpath("//*[@id='input-example']//input[@type='text']"))
+                .isEnabled());
     }
     //Dynamic Loading: http://localhost:7080/dynamic_loading/2 Test Dynamic Loading using Explict Waits.
     @Test
@@ -156,7 +160,7 @@ public class Scenarios {
          startButton.click();
          WebDriverWait wait = new WebDriverWait(driver, 10);
          WebElement finishText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("finish")));
-         Assert.assertEquals("Hello World", finishText.getText());
+         Assert.assertEquals("Hello World!", finishText.getText());
 
     }
     //File Download: http://localhost:7080/download Test File Download.
@@ -165,7 +169,8 @@ public class Scenarios {
          driver.get(baseURL + "/download");
          WebElement downloadLink = driver.findElement(By.linkText("some-file.txt"));
          downloadLink.click();
-         File downloadedFile = new File ("/path/to/downloaded/file/some-file.txt");
+         String downloadsPath = System.getProperty("user.home") + "/Downloads";
+         File downloadedFile = new File (downloadsPath + "/some-file.txt");
          int waitTime = 0;
          while (!downloadedFile.exists() && waitTime <30) {
              try {
@@ -183,14 +188,13 @@ public class Scenarios {
     @Test
     public void testFileUpload() {
         driver.get(baseURL + "/upload");
-        WebElement chooseFileButton = driver.findElement(By.id("file-upload"));
+        WebElement fileInput = driver.findElement(By.id("file-upload"));
+        fileInput.sendKeys("C:/Users/ayselismayilova/Downloads/some-file.txt");
         WebElement uploadButton = driver.findElement(By.id("file-submit"));
-        File file = new File("/path/to/uploaded/file/some-file.txt");
-        String filePath = file.getAbsolutePath();
-        chooseFileButton.sendKeys(filePath);
         uploadButton.click();
-        WebElement uploadedFilesText = driver.findElement(By.tagName("h3"));
-        Assert.assertTrue(uploadedFilesText.getText().contains("File Uploaded!"));
+        WebElement uploadedFile = driver.findElement(By.id("uploaded-files"));
+        Assert.assertTrue(uploadedFile.isDisplayed());
+
     }
 
     //Floating Menu: http://localhost:7080/floating_menu Test Floating Menu.
@@ -209,17 +213,15 @@ public class Scenarios {
     @Test
     public void testIframe() {
         driver.get(baseURL + "/iframe");
-        WebElement iframe = driver.findElement(By.tagName("iframe"));
+        WebElement iframe = driver.findElement(By.id("mce_0_ifr"));
         driver.switchTo().frame(iframe);
         WebElement body = driver.findElement(By.tagName("body"));
         body.clear();
         body.sendKeys("This is a test message");
         driver.switchTo().defaultContent();
-        WebElement iframeLink = driver.findElement(By.linkText("Elemental Selenium"));
-        Actions actions = new Actions(driver);
-        actions.moveToElement(iframeLink).click().perform();
-        String currentURL = driver.getCurrentUrl();
-        Assert.assertTrue(currentURL.contains("elementalselenium.com"));
+        driver.switchTo().frame(iframe);
+        WebElement result = driver.findElement(By.id("tinymce"));
+        Assert.assertEquals("This is a test message", result.getText());
     }
     //Mouse Hover: http://localhost:7080/hovers Test Mouse Hover.
     @Test
@@ -251,9 +253,15 @@ public class Scenarios {
          driver.get(baseURL + "/javascript_error");
          JavascriptExecutor js = (JavascriptExecutor) driver;
          String script = "return window.jsErr;";
-         String error = (String) js.executeScript(script);
-         Assert.assertTrue(error.contains("TypeError"));
+         Object error = js.executeScript(script);
+         if (error != null) {
+             String errorMessage = error.toString();
+             Assert.assertTrue(errorMessage.contains("Cannot read property 'xyz' of undefined."));
+         } else {
+             Assert.fail("No JavaScript error found on the page.");
+         }
      }
+
   //Open in New Tab: http://localhost:7080/windows Test Link Opens in new tab.
     @Test
     public void testLinkOpensInNewTab() {
