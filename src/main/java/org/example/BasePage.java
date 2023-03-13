@@ -5,17 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BasePage {
-
     protected static WebDriver driver;
 
     public WebDriver getDriver(){
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(geturl());
+        driver.get(getUrl());
         return driver;
     }
-    public String geturl(){
+    public String getUrl(){
         String url = "http://localhost:7080";
         return url;
     }
