@@ -12,32 +12,31 @@ import java.util.Properties;
 public class EnvironmentManager {
 
     public static void initWebDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:/dev/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        RunEnvironment.setWebDriver(driver);
-
         Properties conf = null;
         try {
             conf = loadProperties();
-            RunEnvironment.setUrlBase(conf.getProperty("URL_BASE"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
+        System.setProperty("webdriver.chrome.driver", conf.getProperty("PATH_CHROMEDRIVER"));
+        WebDriver driver = new ChromeDriver();
+        RunEnvironment.setWebDriver(driver);
+        RunEnvironment.setUrlBase(conf.getProperty("URL_BASE"));
     }
 
     public static void initWebDriverWithOptions(ChromeOptions options) {
-        System.setProperty("webdriver.chrome.driver", "C:/dev/chromedriver.exe");
-        WebDriver driver = new ChromeDriver(options);
-        RunEnvironment.setWebDriver(driver);
-
         Properties conf = null;
         try {
             conf = loadProperties();
-            RunEnvironment.setUrlBase(conf.getProperty("URL_BASE"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        System.setProperty("webdriver.chrome.driver",conf.getProperty("PATH_CHROMEDRIVER") );
+        WebDriver driver = new ChromeDriver(options);
+        RunEnvironment.setWebDriver(driver);
+        RunEnvironment.setUrlBase(conf.getProperty("URL_BASE"));
 
     }
 
