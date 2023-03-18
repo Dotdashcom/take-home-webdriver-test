@@ -8,7 +8,7 @@ import org.junit.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DynamicContent {
+public class DynamicContent_steps {
     Dynamic dy = new Dynamic();
     List<String>  list = new ArrayList<>();
     @When("user must see <{int}> paragraph of text")
