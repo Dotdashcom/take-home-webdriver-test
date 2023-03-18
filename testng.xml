@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test Suite">
+
+    <test name="Smoke Test">
+
+        <classes>
+            <class name="com.hired.tests.LoginTest" />
+            <class name="com.hired.tests.CheckBoxTest" />
+            <class name="com.hired.tests.ContextTest" />
+            <class name="com.hired.tests.DragNDropTest" />
+            <class name="com.hired.tests.DropdownTest" />
+            <class name="com.hired.tests.DynamicContentTest" />
+            <class name="com.hired.tests.DynamicControlsTest" />
+            <class name="com.hired.tests.DynamicLoadingTest" />
+            <class name="com.hired.tests.FileDownloadTest" />
+            <class name="com.hired.tests.FileUploadTest" />
+            <class name="com.hired.tests.FloatingMenuTest" />
+            <class name="com.hired.tests.IframeTest" />
+            <class name="com.hired.tests.HoversTest" />
+            <class name="com.hired.tests.JS_AlertTest" />
+            <class name="com.hired.tests.JS_ErrorTest" />
+            <class name="com.hired.tests.NewTabTest" />
+            <class name="com.hired.tests.NotificationTest" />
+        </classes>
+    </test>
+
+</suite>
