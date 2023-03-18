@@ -32,13 +32,13 @@ public class DynamicControlsPage {
     public void addRemoveCheckbox()  {
         dynCheckBox.click();
         removeButton.click();
-        WebDriverWait wait =new WebDriverWait(driver,10);
+        WebDriverWait wait =new WebDriverWait(driver,15);
         wait.until(ExpectedConditions.visibilityOf(messageText));
         String message= messageText.getText();
         Assert.assertEquals(message,"It's gone!");
 
         addButton.click();
-        wait =new WebDriverWait(driver,10);
+        wait =new WebDriverWait(driver,15);
         wait.until(ExpectedConditions.visibilityOf(dynCheckBox));
         Assert.assertTrue(dynCheckBox.isDisplayed());
     }

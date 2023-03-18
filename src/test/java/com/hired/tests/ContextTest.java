@@ -1,7 +1,7 @@
 package com.hired.tests;
 
-import com.dotdash.pages.BasePage;
-import com.dotdash.pages.ContextPage;
+import com.hired.pages.BasePage;
+import com.hired.pages.ContextPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;

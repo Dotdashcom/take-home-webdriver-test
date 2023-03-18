@@ -1,7 +1,7 @@
 package com.hired.tests;
 
-import com.dotdash.pages.BasePage;
-import com.dotdash.pages.CheckBoxPage;
+import com.hired.pages.BasePage;
+import com.hired.pages.CheckBoxPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;

@@ -1,7 +1,7 @@
 package com.hired.tests;
 
-import com.dotdash.pages.BasePage;
-import com.dotdash.pages.DynamicLoadingPage;
+import com.hired.pages.BasePage;
+import com.hired.pages.DynamicLoadingPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,7 +25,7 @@ public class DynamicLoadingTest extends BasePage {
     }
 
     @AfterMethod
-    public void closeBrowser() {
+    public void tearDown() {
         driver.close();
     }
 

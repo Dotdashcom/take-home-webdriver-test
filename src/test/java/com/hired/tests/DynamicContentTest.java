@@ -1,7 +1,9 @@
 package com.hired.tests;
 
-import com.dotdash.pages.BasePage;
-import com.dotdash.pages.DynamicContentPage;
+import com.hired.pages.BasePage;
+import com.hired.pages.DynamicContentPage;
+import com.hired.pages.BasePage;
+import com.hired.pages.DynamicContentPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

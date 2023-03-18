@@ -1,7 +1,7 @@
 package com.hired.tests;
 
-import com.dotdash.pages.BasePage;
-import com.dotdash.pages.DynamicControlsPage;
+import com.hired.pages.BasePage;
+import com.hired.pages.DynamicControlsPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -29,7 +29,7 @@ public class DynamicControlsTest extends BasePage {
         dynamicControlsPage.enableDisableValidation();
     }
     @AfterMethod
-    public void closeBrowser() {
+    public void tearDown() {
         driver.close();
     }
 }
