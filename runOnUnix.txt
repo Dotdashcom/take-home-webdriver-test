@@ -1,0 +1,7 @@
+I am an experienced and highly productive Software Engineer in Test with over 4 years of experience in various industries. My expertise includes Agile Methodologies, Test Automation, Front End and Back End Testing. I am known for my strong work ethic, ability to work independently, excellent team collaboration, problem-solving skills, and exceptional interpersonal skills. My goal is to use my experience and skill set to contribute to the growth and success of the organization I am working with.
+
+To run tests on unix based OS.
+java -cp /path/testng.jar:/path/project.jar org.testng.TestNG /path/testng.xml
+
+or we can go to the project directory and run
+mvn test
