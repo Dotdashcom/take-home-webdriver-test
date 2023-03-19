@@ -1,4 +1,4 @@
-package ddcTest;
+package DDC_Maven.DDC_Maven;
 
 
 import java.io.File;
@@ -264,7 +264,7 @@ public class DDCTest {
 		
 		driver.get("http://localhost:7080/dynamic_loading/2");
 		
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 		
 		WebElement startBtn = driver.findElement(By.xpath("//*[@id=\"start\"]/button"));
 		startBtn.click();
