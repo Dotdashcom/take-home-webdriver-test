@@ -1,8 +1,8 @@
 Feature: Downloading file
 
-  @Test @wip
+  @Test @withOption @tt
     Scenario: test downloading the file
 
-    Given user in "download" page
+    Given user is in "download" page
     When user clicks on filename "some-file.txt"
     Then verify that file is downloaded

@@ -2,7 +2,7 @@ package dot.dash.step_definitions;
 
 import dot.dash.pages.DyControl;
 import dot.dash.utilities.Driver;
-import dot.dash.utilities.WaitFor;
+import dot.dash.utilities.WaitUntil;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -13,7 +13,7 @@ public class DynamicController_steps {
     @When("user clicks on the Remove Button")
     public void user_clicks_on_the_remove_button() {
         dyc.removeBtn.click();
-        WaitFor.invisibilityOf(dyc.loadBar);
+        WaitUntil.invisibilityOf(dyc.loadBar);
     }
     @Then("verify that the checkbox is gone")
     public void verify_that_the_checkbox_is_gone() {
@@ -22,7 +22,7 @@ public class DynamicController_steps {
     @When("user clicks on Add Button")
     public void user_clicks_on_add_button() {
         dyc.addCheckboxBtn.click();
-        WaitFor.invisibilityOf(dyc.loadBar);
+        WaitUntil.invisibilityOf(dyc.loadBar);
     }
     @Then("verify that the checkbox is present")
     public void verify_that_the_checkbox_is_present() {
@@ -33,7 +33,7 @@ public class DynamicController_steps {
     @When("clicks on the Enable Button")
     public void clicks_on_the_enable_button() {
         dyc.enableBtn.click();
-        WaitFor.invisibilityOf(dyc.loadBar);
+        WaitUntil.invisibilityOf(dyc.loadBar);
     }
     @Then("verify that the text box is enabled")
     public void verify_that_the_text_box_is_enabled() {
@@ -42,7 +42,7 @@ public class DynamicController_steps {
     @When("clicks on the Disable Button")
     public void clicks_on_the_disable_button() {
         dyc.disableBtn.click();
-        WaitFor.invisibilityOf(dyc.loadBar);
+        WaitUntil.invisibilityOf(dyc.loadBar);
     }
     @Then("verify that the text box is disabled")
     public void verify_that_the_text_box_is_disabled() {

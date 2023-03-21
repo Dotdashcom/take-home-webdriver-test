@@ -1,6 +1,6 @@
 Feature: test dynamic content
 
-  @Test
+  @Test @nor
     Scenario: Test refreshes the page a couple of times
 
     Given user in "dynamic_content" page

@@ -1,6 +1,6 @@
 Feature: Testing Context Menu
 
-  @Test
+  @Test @nor
   Scenario: Right-click in the box to see one called 'the-internet'. Test
     
     Given user in "context_menu" page

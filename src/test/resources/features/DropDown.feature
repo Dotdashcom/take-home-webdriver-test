@@ -1,6 +1,6 @@
 Feature: test dropdown
 
-  @Test
+  @Test @nor
     Scenario: Select options from dropdown menu
 
     Given user in "dropdown" page

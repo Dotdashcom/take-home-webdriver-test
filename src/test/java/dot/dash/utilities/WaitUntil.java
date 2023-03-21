@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class WaitFor {
+public class WaitUntil {
 
  private static WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
@@ -16,6 +16,14 @@ public class WaitFor {
     }
        public static void clickableOf(WebElement element){
         wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    public static void seconds(int num){
+        try{
+            Thread.sleep(num*1000);
+        }catch (InterruptedException e){
+            System.out.println("Thread.sleep: " + e.getMessage());
+        }
     }
 
 

@@ -17,8 +17,6 @@ public class Checkbox_steps {
                 WebElement box = cb.checkB(i);
                 boolean checked = box.isSelected();
                 box.click();
-                System.out.println(checked);
-                System.out.println(cb.checkB(i).isSelected());
 
                 Assert.assertFalse(checked && cb.checkB(i).isSelected());
             }

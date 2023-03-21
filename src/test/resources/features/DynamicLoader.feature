@@ -1,6 +1,6 @@
 Feature: Dynamic Loader
 
-  @Test
+  @Test @nor
     Scenario: test Dynamic Loader
     Given user in "dynamic_loading/2" page
     When user clicks on start button

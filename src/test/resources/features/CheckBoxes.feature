@@ -1,6 +1,6 @@
 Feature: Test checks and unchecks checkboxes.
 
-  @Test
+  @Test @nor
   Scenario: check and uncheck the checkboxes
 
     Given user in "checkboxes" page

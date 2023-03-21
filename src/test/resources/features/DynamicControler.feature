@@ -1,6 +1,6 @@
 Feature: Dynamic Controls
 
-  @Test
+  @Test @nor
   Scenario: test Dynamic Controls
 
     Given user in "dynamic_controls" page

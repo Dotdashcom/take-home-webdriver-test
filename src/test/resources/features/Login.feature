@@ -1,6 +1,6 @@
 Feature: Login feature
 
-  @Test
+  @Test @nor
   Scenario: Login with valid credentials
 
     Given user in "login" page
