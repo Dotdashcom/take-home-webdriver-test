@@ -1,8 +1,6 @@
-package com.main.TakeHomeShivam;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
 
 
 public abstract class TestBase {

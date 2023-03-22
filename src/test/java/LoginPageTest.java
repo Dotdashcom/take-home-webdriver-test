@@ -1,10 +1,4 @@
-package com.test.TakeHomeShivam;
-
 import org.testng.annotations.Test;
-
-import com.main.TakeHomeShivam.ExcelReader;
-import com.main.TakeHomeShivam.LoginPage;
-import com.main.TakeHomeShivam.TestBase;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
