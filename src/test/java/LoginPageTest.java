@@ -28,7 +28,7 @@ public class LoginPageTest extends TestBase {
 
 	// Script
 	@Test(dataProvider = "user-data")
-	public void TC_001_TestLoginSuccess(String username, String password, String scenario) throws IOException {
+	public void TC_001_TestLogin(String username, String password, String scenario) throws IOException {
 		loginPage = new LoginPage(getDriver());
 		loginPage.login(username, password);
 		if(scenario == "valid") {
