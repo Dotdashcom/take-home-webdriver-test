@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Webdriver_Tests</td>
+        <td>1</td>
+      <td>22 Mar 2023, 14:02</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.QA.testSteps.AA_Hooks.end()</td>
+              <td>23</td>
+              <td class="duration" data-value="734669826">0.734</td>
+              <td class="duration" data-value="734669826">0.880</td>
+              <td class="duration" data-value="16897406000">16.897</td>
+              <td class="failed">91.30%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.AA_Hooks.start(io.cucumber.java.Scenario)</td>
+              <td>23</td>
+              <td class="duration" data-value="1009731130">1.009</td>
+              <td class="duration" data-value="1009731130">1.445</td>
+              <td class="duration" data-value="23223816000">23.223</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsCheckBoxes.check_all_checkboxes()</td>
+              <td>1</td>
+              <td class="duration" data-value="26701000">0.026</td>
+              <td class="duration" data-value="26701000">0.026</td>
+              <td class="duration" data-value="26701000">0.026</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsCheckBoxes.unchecked_all_checkboxes()</td>
+              <td>1</td>
+              <td class="duration" data-value="61259000">0.061</td>
+              <td class="duration" data-value="61259000">0.061</td>
+              <td class="duration" data-value="61259000">0.061</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsCheckBoxes.verify_all_checkboxes_are_checked()</td>
+              <td>1</td>
+              <td class="duration" data-value="11052000">0.011</td>
+              <td class="duration" data-value="11052000">0.011</td>
+              <td class="duration" data-value="11052000">0.011</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsCheckBoxes.verify_all_checkboxes_are_unchecked()</td>
+              <td>1</td>
+              <td class="duration" data-value="10591000">0.010</td>
+              <td class="duration" data-value="10591000">0.010</td>
+              <td class="duration" data-value="10591000">0.010</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsContextMenu.right_click_on_the_context_menu()</td>
+              <td>1</td>
+              <td class="duration" data-value="146143000">0.146</td>
+              <td class="duration" data-value="146143000">0.146</td>
+              <td class="duration" data-value="146143000">0.146</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsContextMenu.verify_the_alert_menu_text()</td>
+              <td>1</td>
+              <td class="duration" data-value="570388000">0.570</td>
+              <td class="duration" data-value="570388000">0.570</td>
+              <td class="duration" data-value="570388000">0.570</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDragAndDrop.drag_element_A_to_element_B()</td>
+              <td>1</td>
+              <td class="duration" data-value="52275000">0.052</td>
+              <td class="duration" data-value="52275000">0.052</td>
+              <td class="duration" data-value="52275000">0.052</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDragAndDrop.verify_the_text_on_elements_A_and_B_are_switched()</td>
+              <td>1</td>
+              <td class="duration" data-value="9619000">0.009</td>
+              <td class="duration" data-value="9619000">0.009</td>
+              <td class="duration" data-value="9619000">0.009</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDropdown.select_from_the_drop_down_menu_and_verify_it_was_selected(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="182501500">0.182</td>
+              <td class="duration" data-value="182501500">0.187</td>
+              <td class="duration" data-value="365003000">0.365</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicContent.refresh_page_times_and_verify_the_content_changes_on_each_refresh(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="4543796000">4.543</td>
+              <td class="duration" data-value="4543796000">4.543</td>
+              <td class="duration" data-value="4543796000">4.543</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicControls.click_on_Add_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="49168000">0.049</td>
+              <td class="duration" data-value="49168000">0.049</td>
+              <td class="duration" data-value="49168000">0.049</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicControls.click_on_the_Disable_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="71388000">0.071</td>
+              <td class="duration" data-value="71388000">0.071</td>
+              <td class="duration" data-value="71388000">0.071</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicControls.click_on_the_Enable_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="54175000">0.054</td>
+              <td class="duration" data-value="54175000">0.054</td>
+              <td class="duration" data-value="54175000">0.054</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicControls.click_on_the_Remove_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="67031000">0.067</td>
+              <td class="duration" data-value="67031000">0.067</td>
+              <td class="duration" data-value="67031000">0.067</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicControls.verify_that_the_checkbox_is_gone()</td>
+              <td>1</td>
+              <td class="duration" data-value="4746004000">4.746</td>
+              <td class="duration" data-value="4746004000">4.746</td>
+              <td class="duration" data-value="4746004000">4.746</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicControls.verify_that_the_checkbox_is_present()</td>
+              <td>1</td>
+              <td class="duration" data-value="3840668000">3.840</td>
+              <td class="duration" data-value="3840668000">3.840</td>
+              <td class="duration" data-value="3840668000">3.840</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicControls.verify_that_the_text_box_is_disabled()</td>
+              <td>1</td>
+              <td class="duration" data-value="3716628000">3.716</td>
+              <td class="duration" data-value="3716628000">3.716</td>
+              <td class="duration" data-value="3716628000">3.716</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicControls.verify_that_the_text_box_is_enabled()</td>
+              <td>1</td>
+              <td class="duration" data-value="3732544000">3.732</td>
+              <td class="duration" data-value="3732544000">3.732</td>
+              <td class="duration" data-value="3732544000">3.732</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicLoading.click_the_start_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="82589000">0.082</td>
+              <td class="duration" data-value="82589000">0.082</td>
+              <td class="duration" data-value="82589000">0.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsDynamicLoading.verify_that_text_is_displayed(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5028756000">5.028</td>
+              <td class="duration" data-value="5028756000">5.028</td>
+              <td class="duration" data-value="5028756000">5.028</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsFileDownload.click_on_the_file()</td>
+              <td>1</td>
+              <td class="duration" data-value="75261000">0.075</td>
+              <td class="duration" data-value="75261000">0.075</td>
+              <td class="duration" data-value="75261000">0.075</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsFileDownload.verify_that_the_file_is_downloaded()</td>
+              <td>1</td>
+              <td class="duration" data-value="524750000">0.524</td>
+              <td class="duration" data-value="524750000">0.524</td>
+              <td class="duration" data-value="524750000">0.524</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsFileUpload.choose_a_file_and_click_upload_button_to_upload_a_file()</td>
+              <td>1</td>
+              <td class="duration" data-value="142983000">0.142</td>
+              <td class="duration" data-value="142983000">0.142</td>
+              <td class="duration" data-value="142983000">0.142</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsFileUpload.verify_that_the_file_is_uploaded()</td>
+              <td>1</td>
+              <td class="duration" data-value="39703000">0.039</td>
+              <td class="duration" data-value="39703000">0.039</td>
+              <td class="duration" data-value="39703000">0.039</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsFloatingMenu.scroll_the_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="4922000">0.004</td>
+              <td class="duration" data-value="4922000">0.004</td>
+              <td class="duration" data-value="4922000">0.004</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsFloatingMenu.verify_the_floating_menu_is_still_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="19510000">0.019</td>
+              <td class="duration" data-value="19510000">0.019</td>
+              <td class="duration" data-value="19510000">0.019</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsIframe.switch_to_Iframe_and_types_some_text()</td>
+              <td>1</td>
+              <td class="duration" data-value="196555000">0.196</td>
+              <td class="duration" data-value="196555000">0.196</td>
+              <td class="duration" data-value="196555000">0.196</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsIframe.verify_that_the_typed_text_is_as_expected()</td>
+              <td>1</td>
+              <td class="duration" data-value="13841000">0.013</td>
+              <td class="duration" data-value="13841000">0.013</td>
+              <td class="duration" data-value="13841000">0.013</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsJavaScriptAlerts.click_on_JS_Alert_button_and_accept_alert()</td>
+              <td>1</td>
+              <td class="duration" data-value="1371327000">1.371</td>
+              <td class="duration" data-value="1371327000">1.371</td>
+              <td class="duration" data-value="1371327000">1.371</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsJavaScriptAlerts.click_on_JS_Prompt_button_and_type_a_message_on_Prompt()</td>
+              <td>1</td>
+              <td class="duration" data-value="1347287000">1.347</td>
+              <td class="duration" data-value="1347287000">1.347</td>
+              <td class="duration" data-value="1347287000">1.347</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsJavaScriptAlerts.click_on_JS_confirm_button_and_click_ok_on_alert()</td>
+              <td>1</td>
+              <td class="duration" data-value="1359782000">1.359</td>
+              <td class="duration" data-value="1359782000">1.359</td>
+              <td class="duration" data-value="1359782000">1.359</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsJavaScriptAlerts.verify_alert_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="689830000">0.689</td>
+              <td class="duration" data-value="689830000">0.689</td>
+              <td class="duration" data-value="689830000">0.689</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsJavaScriptAlerts.verify_new_alert_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="670433000">0.670</td>
+              <td class="duration" data-value="670433000">0.670</td>
+              <td class="duration" data-value="670433000">0.670</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsJavaScriptAlerts.verify_that_the_alert_message_contains_the_typed_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="670219000">0.670</td>
+              <td class="duration" data-value="670219000">0.670</td>
+              <td class="duration" data-value="670219000">0.670</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsJavaScriptError.verify_that_the_page_contains_error_Cannot_read_property_of_undefined(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="22496000">0.022</td>
+              <td class="duration" data-value="22496000">0.022</td>
+              <td class="duration" data-value="22496000">0.022</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsLogin.navigate_to_page(java.lang.String)</td>
+              <td>23</td>
+              <td class="duration" data-value="133074739">0.133</td>
+              <td class="duration" data-value="133074739">0.380</td>
+              <td class="duration" data-value="3060719000">3.060</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsLogin.verify_login_was_successful()</td>
+              <td>1</td>
+              <td class="duration" data-value="281281000">0.281</td>
+              <td class="duration" data-value="281281000">0.281</td>
+              <td class="duration" data-value="281281000">0.281</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsLogin.verify_the_error_message_for_an_invalid_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="269271000">0.269</td>
+              <td class="duration" data-value="269271000">0.269</td>
+              <td class="duration" data-value="269271000">0.269</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsLogin.verify_the_error_message_for_an_invalid_username()</td>
+              <td>1</td>
+              <td class="duration" data-value="258739000">0.258</td>
+              <td class="duration" data-value="258739000">0.258</td>
+              <td class="duration" data-value="258739000">0.258</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsMouseHover.do_a_mouse_hover_on_image(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="126741000">0.126</td>
+              <td class="duration" data-value="126741000">0.130</td>
+              <td class="duration" data-value="380223000">0.380</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsMouseHover.verify_that_additional_information_is_displayed_for_image(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="14793666">0.014</td>
+              <td class="duration" data-value="14793666">0.014</td>
+              <td class="duration" data-value="44381000">0.044</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsNotificationMessage.click_on_the_Click_Here_link_times_and_verify_that_one_of_the_messages_shows_on_click(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="5255635000">5.255</td>
+              <td class="duration" data-value="5255635000">5.255</td>
+              <td class="duration" data-value="5255635000">5.255</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsOpenInNewTab.click_on_the_Click_Here_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="96386000">0.096</td>
+              <td class="duration" data-value="96386000">0.096</td>
+              <td class="duration" data-value="96386000">0.096</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.QA.testSteps.stepsOpenInNewTab.verify_that_a_new_tab_is_opened_with_text(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="30932000">0.030</td>
+              <td class="duration" data-value="30932000">0.030</td>
+              <td class="duration" data-value="30932000">0.030</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>46</td>
+            <td>117</td>
+            <td class="duration">0.719</td>
+            <td class="duration">23.223</td>
+            <td class="duration">1:24.133</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
