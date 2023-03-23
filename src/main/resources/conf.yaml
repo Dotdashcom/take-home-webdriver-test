@@ -1,0 +1,17 @@
+BASE_URL: http://localhost:7080
+USER_NAME: tomsmith
+USER_PASSWORD: SuperSecretPassword!
+INVALID_USER_NAME: test
+INVALID_USER_PASSWORD: Password_01
+LOGIN_ERROR_MESSAGE: Your username is invalid!
+LOGIN_SUCCESSFUL_MESSAGE: You logged into a secure area!
+IFRAME_TEXT: This is text for test.
+CONTEXT_MENU_ALERT_TEXT: You selected a context menu
+DYNAMIC_LOADING_TEXT: Hello World!
+FILE_UPLOAD_PATH: ../java-selenium-allure-jenkins/docs/
+FILE_UPLOAD_NAME: some-file.txt
+JS_ALERT_TEXT: I am a JS Alert
+JS_ALERT_RESULT: You successfuly clicked an alert
+JS_COONFIRM_RESULT: "You clicked: Ok"
+JAVASCRIPT_PAGE_ERROR: "Cannot read properties of undefined (reading 'xyz')"
+NEW_TAB_TEXT: New Window

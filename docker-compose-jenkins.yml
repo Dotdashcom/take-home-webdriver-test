@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+    jenkins:
+        image: jenkins/jenkins:lts
+        user: root
+        shm_size: '1gb'
+        container_name: jenkins
+        ports:
+            - 8080:8080
+            - 50000:50000
+        volumes:
+            - ./jenkins:/var/jenkins_home
+            - /usr/bin/docker:/usr/bin/docker
+            - /var/run/docker.sock:/var/run/docker.sock
+            - .:/var/jenkins_home/workspace/autotest-pipeline-job-1/
