@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="User Stories(failed)">
+    <classes>
+      <class name="shakilTest.LoginFailureTest_2">
+        <methods>
+          <include name="loginFailureTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- shakilTest.LoginFailureTest_2 -->
+      <class name="shakilTest.DragAndDropTest_5">
+        <methods>
+          <include name="setUp"/>
+          <include name="dragAndDropTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- shakilTest.DragAndDropTest_5 -->
+      <class name="shakilTest.ContextMenuTest_4">
+        <methods>
+          <include name="setUp"/>
+          <include name="contextMenuTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- shakilTest.ContextMenuTest_4 -->
+      <class name="shakilTest.CheckboxesTest_3">
+        <methods>
+          <include name="setUp"/>
+          <include name="checkboxesTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- shakilTest.CheckboxesTest_3 -->
+    </classes>
+  </test> <!-- User Stories(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
