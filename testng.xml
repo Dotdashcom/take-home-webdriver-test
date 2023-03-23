@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="2" name="Test">
+   <classes>
+   <class name="testCases.LoginTestCase"/>
+       <class name="testCases.CheckBoxTestCase"/>
+       <class name="testCases.ContextBoxTestCase"/>
+       <class name="testCases.DragAndDropTestCase"/>
+      <class name="testCases.DropDownTestCase"/> 
+        <class name="testCases.DynamicContentTestCase"/> 
+        <class name="testCases.DynamicControlsTestCase"/>
+          <class name="testCases.DynamicLoadingTestCase"/>
+            <class name="testCases.FileDownloadTestCase"/>
+           <class name="testCases.UploadFileTestCase"/>
+             <class name="testCases.FloatingMenuTestCase"/>
+           <class name="testCases.IFrameTestCase"/>
+            <class name="testCases.MouseHoverTestCase"/>
+           <class name="testCases.JSAlertTestCase"/>
+          <class name="testCases.NewWindowTestCase"/>
+             <class name="testCases.NotificationPageTestCase"/>
+    </classes>
+
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
