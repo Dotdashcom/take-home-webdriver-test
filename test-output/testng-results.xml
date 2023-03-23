@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-22T22:28:36 EDT" name="Default suite" finished-at="2023-03-22T22:28:56 EDT" duration-ms="20255">
+    <groups>
+    </groups>
+    <test started-at="2023-03-22T22:28:36 EDT" name="Default test" finished-at="2023-03-22T22:28:56 EDT" duration-ms="20255">
+      <class name="shakilTest.LoginSuccessTest_1">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:shakilTest.LoginSuccessTest_1@49ec71f8]" started-at="2023-03-22T22:28:36 EDT" name="setUp" finished-at="2023-03-22T22:28:47 EDT" duration-ms="11156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginSuccessTest()[pri:0, instance:shakilTest.LoginSuccessTest_1@49ec71f8]" started-at="2023-03-22T22:28:47 EDT" name="loginSuccessTest" finished-at="2023-03-22T22:28:50 EDT" duration-ms="2918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:shakilTest.LoginSuccessTest_1@49ec71f8]" started-at="2023-03-22T22:28:50 EDT" name="tearDown" finished-at="2023-03-22T22:28:56 EDT" duration-ms="6075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- shakilTest.LoginSuccessTest_1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
