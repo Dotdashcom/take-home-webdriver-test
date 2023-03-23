@@ -1,0 +1,119 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Testing Suite">
+    <test name="LoginSuccess">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.LoginSuccess"/>
+        </classes>
+    </test>
+    <test name="LoginFailure">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.LoginFailure"/>
+        </classes>
+    </test>
+    <test name="Checkbox">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.Checkboxes"/>
+        </classes>
+    </test>
+
+    <test name="Right Click">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.ContextMenu"/>
+        </classes>
+    </test>
+    <test name="Drag and Drop">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.DragDrop"/>
+        </classes>
+    </test>
+
+    <test name="Dynamic Content">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.DynamicContent"/>
+        </classes>
+    </test>
+
+    <test name="Dynamic Controls">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.DynamicControls"/>
+        </classes>
+    </test>
+
+    <test name="Dynamic Loading">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.DynamicLoading"/>
+        </classes>
+    </test>
+
+    <test name="Floating menu">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.FloatingMenu"/>
+        </classes>
+    </test>
+
+    <test name="Iframe">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.Iframe"/>
+        </classes>
+    </test>
+
+    <test name="Hover">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.Hover"/>
+        </classes>
+    </test>
+
+    <test name="Alerts">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.Alerts"/>
+        </classes>
+    </test>
+
+    <test name="JSErrors">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.JSError"/>
+        </classes>
+    </test>
+
+    <test name="NewTab">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.NewTab"/>
+        </classes>
+    </test>
+
+    <test name="Notification">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.Notification"/>
+        </classes>
+    </test>
+
+<!--         EDIT THE PATH OF DOWNLOADS BEFORE RUNNING-->
+        <test name="download">
+            <classes>
+                <class name="main.Hooks"/>
+                <class name="main.DownloadFile"/>
+            </classes>
+        </test>
+<!--       CHANGE THE FILE TO BE UPOADED-->
+    <test name="Upload File">
+        <classes>
+            <class name="main.Hooks"/>
+            <class name="main.FileUpload"/>
+        </classes>
+    </test>
+</suite>
