@@ -25,6 +25,10 @@ public class DotDashAssignmentTest extends BasePageTest {
 
     protected FileUploadPage fileUploadPage;
 
+    protected FloatingMenuPage floatingMenuPage;
+
+    protected IframePage iframePage;
+
     @Test(priority = 1)
     public void checkBoxTests() {
         checkBoxPage = landingPage.getPageObject("checkboxes", CheckBoxPage.class);
@@ -95,5 +99,19 @@ public class DotDashAssignmentTest extends BasePageTest {
         fileUploadPage = landingPage.getPageObject("upload", FileUploadPage.class);
         fileUploadPage.uploadFile();
         Assert.assertTrue(fileUploadPage.getUploadedFileName().contains("sample.pdf"));
+    }
+
+    @Test(priority = 10)
+    public void floatingMenuTest() {
+        floatingMenuPage = landingPage.getPageObject("floating_menu", FloatingMenuPage.class);
+        floatingMenuPage.scrollDownTwoPages();
+        Assert.assertTrue(floatingMenuPage.isFloatingMenuDisplayed());
+    }
+
+    @Test(priority = 11)
+    public void iFrameTest() {
+        iframePage = landingPage.getPageObject("iframe", IframePage.class);
+        iframePage.typeInsideIFrame();
+        Assert.assertEquals(iframePage.getIframeText(), "Iam inside the iFrame");
     }
 }
