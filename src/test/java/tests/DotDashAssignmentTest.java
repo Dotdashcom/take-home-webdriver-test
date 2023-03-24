@@ -2,6 +2,7 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.*;
 
 public class DotDashAssignmentTest extends BasePageTest {
@@ -13,6 +14,10 @@ public class DotDashAssignmentTest extends BasePageTest {
     protected DragAndDropPage dragAndDropPage;
 
     protected DropDownPage dropDownPage;
+
+    protected DynamicContentPage dynamicContentPage;
+
+    protected DynamicControlsPage dynamicControlsPage;
 
     @Test(priority = 1)
     public void checkBoxTests() {
@@ -42,5 +47,26 @@ public class DotDashAssignmentTest extends BasePageTest {
         Assert.assertEquals(dropDownPage.currentSelectedOption(), "Option 1");
         dropDownPage.selectOption("Option 2");
         Assert.assertEquals(dropDownPage.currentSelectedOption(), "Option 2");
+    }
+
+    @Test(priority = 5)
+    public void dynamicContentTest() {
+        dynamicContentPage = landingPage.getPageObject("dynamic_content", DynamicContentPage.class);
+        dynamicContentPage.refreshPage();
+        Assert.assertFalse(dynamicContentPage.isDynamicContentSame());
+    }
+
+    @Test(priority = 6)
+    public void dynamicControlTest() {
+        dynamicControlsPage = landingPage.getPageObject("dynamic_controls", DynamicControlsPage.class);
+        SoftAssert softAssert = new SoftAssert();
+        dynamicControlsPage.removeCheckBox();
+        softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's gone!");
+        softAssert.assertTrue(dynamicControlsPage.addCheckBox());
+        softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's back!");
+        softAssert.assertTrue(dynamicControlsPage.enableButtonClick());
+        softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's enabled!");
+        softAssert.assertFalse(dynamicControlsPage.disableButtonClick());
+        softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's disabled!");
     }
 }

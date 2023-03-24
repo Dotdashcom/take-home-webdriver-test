@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.ConfigReader;
 
@@ -33,5 +34,21 @@ public class BasePage {
         } catch (InterruptedException e) {
             System.out.println("Interrupted exceptions occurred.");
         }
+    }
+
+    public void waitForInvibilityOfElement(WebElement element) {
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
+
+    public void waitForElementToBeVisible(String cssSelector) {
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(cssSelector)));
+    }
+
+    public void waitForVisibilityOfElement(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public void waitForElementToBeClickable(String cssSelector) {
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelector)));
     }
 }
