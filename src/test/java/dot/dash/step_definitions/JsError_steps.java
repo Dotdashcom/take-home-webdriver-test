@@ -17,7 +17,7 @@ public class JsError_steps {
         LogEntries logs = driver.manage().logs().get(LogType.BROWSER);
 
 
-        // Print the logs to the console
+
         for (LogEntry log : logs) {
             if (log.getMessage().contains(msg)) {
                 Assert.assertTrue(log.getMessage().contains(msg));
