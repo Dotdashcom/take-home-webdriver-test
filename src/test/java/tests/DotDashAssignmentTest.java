@@ -19,6 +19,12 @@ public class DotDashAssignmentTest extends BasePageTest {
 
     protected DynamicControlsPage dynamicControlsPage;
 
+    protected DynamicLoadingPage dynamicLoadingPage;
+
+    protected FileDownloadPage fileDownloadPage;
+
+    protected FileUploadPage fileUploadPage;
+
     @Test(priority = 1)
     public void checkBoxTests() {
         checkBoxPage = landingPage.getPageObject("checkboxes", CheckBoxPage.class);
@@ -68,5 +74,26 @@ public class DotDashAssignmentTest extends BasePageTest {
         softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's enabled!");
         softAssert.assertFalse(dynamicControlsPage.disableButtonClick());
         softAssert.assertEquals(dynamicControlsPage.getMessage(), "It's disabled!");
+    }
+
+    @Test(priority = 7)
+    public void dynamicLoadingTest() {
+        dynamicLoadingPage = landingPage.getPageObject("dynamic_loading/1", DynamicLoadingPage.class);
+        dynamicLoadingPage.startDynamicLoading();
+        Assert.assertEquals(dynamicLoadingPage.getLoadingTextMessage(), "Hello World!");
+    }
+
+    @Test(priority = 8)
+    public void fileDownloadTest() {
+        fileDownloadPage = landingPage.getPageObject("download", FileDownloadPage.class);
+        fileDownloadPage.downloadFile();
+        Assert.assertTrue(fileDownloadPage.isFileDownloaded());
+    }
+
+    @Test(priority = 9)
+    public void fileUploadTests() {
+        fileUploadPage = landingPage.getPageObject("upload", FileUploadPage.class);
+        fileUploadPage.uploadFile();
+        Assert.assertTrue(fileUploadPage.getUploadedFileName().contains("sample.pdf"));
     }
 }
