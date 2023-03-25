@@ -29,6 +29,10 @@ public class DotDashAssignmentTest extends BasePageTest {
 
     protected IframePage iframePage;
 
+    protected MouseHoverPage mouseHoverPage;
+
+    protected JavaScriptAlertPage javaScriptAlertPage;
+
     @Test(priority = 1)
     public void checkBoxTests() {
         checkBoxPage = landingPage.getPageObject("checkboxes", CheckBoxPage.class);
@@ -113,5 +117,29 @@ public class DotDashAssignmentTest extends BasePageTest {
         iframePage = landingPage.getPageObject("iframe", IframePage.class);
         iframePage.typeInsideIFrame();
         Assert.assertEquals(iframePage.getIframeText(), "Iam inside the iFrame");
+    }
+
+    @Test(priority = 12)
+    public void mouseHoverTest() {
+        mouseHoverPage = landingPage.getPageObject("hovers", MouseHoverPage.class);
+        mouseHoverPage.mouseHoverProfile(0);
+        Assert.assertTrue(mouseHoverPage.isProfileDisplayed(0));
+        mouseHoverPage.mouseHoverProfile(1);
+        Assert.assertTrue(mouseHoverPage.isProfileDisplayed(1));
+        mouseHoverPage.mouseHoverProfile(2);
+        Assert.assertTrue(mouseHoverPage.isProfileDisplayed(2));
+    }
+
+    @Test(priority = 13)
+    public void javaScriptAlertTest() {
+        javaScriptAlertPage = landingPage.getPageObject("javascript_alerts", JavaScriptAlertPage.class);
+        javaScriptAlertPage.clickOnAlert();
+        Assert.assertEquals(javaScriptAlertPage.getClickOnAlertSuccessMessage(), "You successfuly clicked " +
+                "an alert");
+        javaScriptAlertPage.clickJSconfirm();
+        Assert.assertEquals(javaScriptAlertPage.getClickOnAlertSuccessMessage(), "You clicked: Ok");
+        javaScriptAlertPage.clickJSprompt();
+        Assert.assertEquals(javaScriptAlertPage.getClickOnAlertSuccessMessage(),"You entered: Sending keys to "+
+                "alert prompt.");
     }
 }
