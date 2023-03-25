@@ -1,10 +1,15 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'maven:3.8.4-jdk-8'
+      args '-u root'
+    }
+  }
   
   stages {
     stage('Build') {
       steps {
-        sh 'sudo apt-get update && sudo apt-get install -y maven'
+        sh 'apt-get update && apt-get install -y maven'
         sh 'mvn clean package'
       }
     }
