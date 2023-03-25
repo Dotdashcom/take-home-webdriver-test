@@ -33,6 +33,12 @@ public class DotDashAssignmentTest extends BasePageTest {
 
     protected JavaScriptAlertPage javaScriptAlertPage;
 
+    protected JavaScriptErrorPage javaScriptErrorPage;
+
+    protected NotificationMessagePage notificationMessagePage;
+
+    protected OpenNewTabPage openNewTabPage;
+
     @Test(priority = 1)
     public void checkBoxTests() {
         checkBoxPage = landingPage.getPageObject("checkboxes", CheckBoxPage.class);
@@ -141,5 +147,25 @@ public class DotDashAssignmentTest extends BasePageTest {
         javaScriptAlertPage.clickJSprompt();
         Assert.assertEquals(javaScriptAlertPage.getClickOnAlertSuccessMessage(),"You entered: Sending keys to "+
                 "alert prompt.");
+    }
+
+    @Test(priority = 14)
+    public void javaScriptErrorTest() {
+        javaScriptErrorPage = landingPage.getPageObject("javascript_error", JavaScriptErrorPage.class);
+        Assert.assertTrue(javaScriptErrorPage.javaScriptErrorMessage());
+    }
+
+    @Test(priority = 15)
+    public void newTabTest() {
+        openNewTabPage = landingPage.getPageObject("windows", OpenNewTabPage.class);
+        openNewTabPage.openNewTabAndSwitch();
+        Assert.assertEquals(openNewTabPage.getNewWindowText(), "New Window");
+    }
+
+    @Test(priority = 16)
+    public void notificationMessageTest() {
+        notificationMessagePage = landingPage.getPageObject("notification_message_rendered",
+                NotificationMessagePage.class);
+        Assert.assertTrue(notificationMessagePage.notificationMessage());
     }
 }
