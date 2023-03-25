@@ -11,7 +11,6 @@ public class ConfigReader {
 
     public static void loadApplicationProperties() {
         applicationProperties = new Properties();
-
         try
         {
             FileInputStream propFileIS = new FileInputStream("src/configs/application.properties");
@@ -23,6 +22,7 @@ public class ConfigReader {
             System.out.println("I/O Exception.");
         }
     }
+
     public static String getApplicationProperty(String key) {
         return applicationProperties.get(key).toString();
     }
