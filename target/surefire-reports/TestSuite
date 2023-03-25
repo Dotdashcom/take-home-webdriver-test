@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 67.43 sec <<< FAILURE! - in TestSuite
+notification_Message_Test(tests.NotificationMessagePageTest)  Time elapsed: 0.718 sec  <<< FAILURE!
+java.lang.AssertionError: The test failed with the following actual result: Action unsuccesful, please try again
+��
+	at org.testng.Assert.fail(Assert.java:110)
+	at tests.NotificationMessagePageTest.notification_Message_Test(NotificationMessagePageTest.java:33)
+
