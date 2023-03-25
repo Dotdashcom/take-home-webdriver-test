@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="32.743" tests="19" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="E:\Program Files\Java\jdk1.8.0_351\jre\bin"/>
+    <property name="java.vm.version" value="25.351-b10"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\take-home-webdriver-test"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\take-home-webdriver-test"/>
+    <property name="java.runtime.version" value="1.8.0_351-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="E:\take-home-webdriver-test"/>
+    <property name="java.endorsed.dirs" value="E:\Program Files\Java\jdk1.8.0_351\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\JIANYU~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="E:\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="E:\Program Files\Java\jdk1.8.0_351\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python311\Scripts\;C:\Python311\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;E:\opt\mysql;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\gradle-6.5\bin;E:\Program Files\Java\jdk1.8.0_351\bin;E:\Program Files\Java\jdk1.8.0_351\jre\bin;E:\apache-maven-3.6.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\HashiCorp\Vagrant\bin;E:\Program Files\PuTTY\;E:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;E:\Program Files\nodejs\;E:\\Program Files\\nodejs\\node_global;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Users\Jian Yu\AppData\Local\Microsoft\WindowsApps;;C:\Python27;C:\Users\Jian Yu\AppData\Local\Microsoft\WindowsApps;E:\vscode\Microsoft VS Code\bin;C:\Users\Jian Yu\AppData\Roaming\npm;."/>
+    <property name="surefire.test.class.path" value="E:\take-home-webdriver-test\target\test-classes;E:\take-home-webdriver-test\target\classes;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-java\4.8.1\selenium-java-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-api\4.8.1\selenium-api-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.8.1\selenium-chrome-driver-4.8.1.jar;E:\apache-maven-3.6.1\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;E:\apache-maven-3.6.1\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;E:\apache-maven-3.6.1\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;E:\apache-maven-3.6.1\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;E:\apache-maven-3.6.1\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;E:\apache-maven-3.6.1\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;E:\apache-maven-3.6.1\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;E:\apache-maven-3.6.1\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;E:\apache-maven-3.6.1\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.8.1\selenium-chromium-driver-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-json\4.8.1\selenium-json-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-devtools-v108\4.8.1\selenium-devtools-v108-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-devtools-v109\4.8.1\selenium-devtools-v109-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.8.1\selenium-devtools-v110-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.8.1\selenium-devtools-v85-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-edge-driver\4.8.1\selenium-edge-driver-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.8.1\selenium-firefox-driver-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-http\4.8.1\selenium-http-4.8.1.jar;E:\apache-maven-3.6.1\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-ie-driver\4.8.1\selenium-ie-driver-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-remote-driver\4.8.1\selenium-remote-driver-4.8.1.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-buffer\4.1.87.Final\netty-buffer-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-codec-http\4.1.87.Final\netty-codec-http-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-codec\4.1.87.Final\netty-codec-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-handler\4.1.87.Final\netty-handler-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-common\4.1.87.Final\netty-common-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-transport-classes-epoll\4.1.87.Final\netty-transport-classes-epoll-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-transport-classes-kqueue\4.1.87.Final\netty-transport-classes-kqueue-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-transport-native-epoll\4.1.87.Final\netty-transport-native-epoll-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-transport-native-kqueue\4.1.87.Final\netty-transport-native-kqueue-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-transport\4.1.87.Final\netty-transport-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-resolver\4.1.87.Final\netty-resolver-4.1.87.Final.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-api\1.22.0\opentelemetry-api-1.22.0.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-context\1.22.0\opentelemetry-context-1.22.0.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-exporter-logging\1.22.0\opentelemetry-exporter-logging-1.22.0.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.22.0\opentelemetry-sdk-metrics-1.22.0.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-sdk-logs\1.22.0-alpha\opentelemetry-sdk-logs-1.22.0-alpha.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-api-logs\1.22.0-alpha\opentelemetry-api-logs-1.22.0-alpha.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-sdk-common\1.22.0\opentelemetry-sdk-common-1.22.0.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.22.0\opentelemetry-sdk-extension-autoconfigure-spi-1.22.0.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.22.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.22.0-alpha.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-sdk-trace\1.22.0\opentelemetry-sdk-trace-1.22.0.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-sdk\1.22.0\opentelemetry-sdk-1.22.0.jar;E:\apache-maven-3.6.1\repository\io\opentelemetry\opentelemetry-semconv\1.22.0-alpha\opentelemetry-semconv-1.22.0-alpha.jar;E:\apache-maven-3.6.1\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;E:\apache-maven-3.6.1\repository\net\bytebuddy\byte-buddy\1.12.22\byte-buddy-1.12.22.jar;E:\apache-maven-3.6.1\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;E:\apache-maven-3.6.1\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;E:\apache-maven-3.6.1\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;E:\apache-maven-3.6.1\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;E:\apache-maven-3.6.1\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;E:\apache-maven-3.6.1\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;E:\apache-maven-3.6.1\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-manager\4.8.1\selenium-manager-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-safari-driver\4.8.1\selenium-safari-driver-4.8.1.jar;E:\apache-maven-3.6.1\repository\org\seleniumhq\selenium\selenium-support\4.8.1\selenium-support-4.8.1.jar;E:\apache-maven-3.6.1\repository\io\github\bonigarcia\webdrivermanager\5.3.2\webdrivermanager-5.3.2.jar;E:\apache-maven-3.6.1\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;E:\apache-maven-3.6.1\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;E:\apache-maven-3.6.1\repository\com\github\docker-java\docker-java\3.2.14\docker-java-3.2.14.jar;E:\apache-maven-3.6.1\repository\com\github\docker-java\docker-java-core\3.2.14\docker-java-core-3.2.14.jar;E:\apache-maven-3.6.1\repository\com\github\docker-java\docker-java-api\3.2.14\docker-java-api-3.2.14.jar;E:\apache-maven-3.6.1\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;E:\apache-maven-3.6.1\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;E:\apache-maven-3.6.1\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;E:\apache-maven-3.6.1\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;E:\apache-maven-3.6.1\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;E:\apache-maven-3.6.1\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;E:\apache-maven-3.6.1\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;E:\apache-maven-3.6.1\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;E:\apache-maven-3.6.1\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.14\docker-java-transport-httpclient5-3.2.14.jar;E:\apache-maven-3.6.1\repository\com\github\docker-java\docker-java-transport\3.2.14\docker-java-transport-3.2.14.jar;E:\apache-maven-3.6.1\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;E:\apache-maven-3.6.1\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;E:\apache-maven-3.6.1\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;E:\apache-maven-3.6.1\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;E:\apache-maven-3.6.1\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;E:\apache-maven-3.6.1\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;E:\apache-maven-3.6.1\repository\org\testng\testng\7.5\testng-7.5.jar;E:\apache-maven-3.6.1\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;E:\apache-maven-3.6.1\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;E:\apache-maven-3.6.1\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;E:\apache-maven-3.6.1\repository\org\apache\maven\surefire\surefire-testng-utils\2.18\surefire-testng-utils-2.18.jar;E:\apache-maven-3.6.1\repository\org\apache\maven\surefire\surefire-grouper\2.18\surefire-grouper-2.18.jar;"/>
+    <property name="maven.conf" value="E:\apache-maven-3.6.1\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="E:\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Jian Yu"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Jian Yu"/>
+    <property name="java.class.path" value="E:\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="E:\Program Files\Java\jdk1.8.0_351\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_351"/>
+    <property name="java.ext.dirs" value="E:\Program Files\Java\jdk1.8.0_351\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="E:\Program Files\Java\jdk1.8.0_351\jre\lib\resources.jar;E:\Program Files\Java\jdk1.8.0_351\jre\lib\rt.jar;E:\Program Files\Java\jdk1.8.0_351\jre\lib\jsse.jar;E:\Program Files\Java\jdk1.8.0_351\jre\lib\jce.jar;E:\Program Files\Java\jdk1.8.0_351\jre\lib\charsets.jar;E:\Program Files\Java\jdk1.8.0_351\jre\lib\jfr.jar;E:\Program Files\Java\jdk1.8.0_351\jre\classes"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Jian Yu\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe"/>
+    <property name="sun.stderr.encoding" value="ms936"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.maintenance.version" value="4"/>
+    <property name="maven.home" value="E:\apache-maven-3.6.1\bin\.."/>
+    <property name="localRepository" value="E:\apache-maven-3.6.1\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="ms936"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="checkBoxes_Test1" classname="tests.CheckBoxesPageTest" time="1.306"/>
+  <testcase name="checkBoxes_Test2" classname="tests.CheckBoxesPageTest" time="0.805"/>
+  <testcase name="contextMenu_Test" classname="tests.ContextMenuTest" time="0.817"/>
+  <testcase name="file_Download_Test" classname="tests.DownloadPageTest" time="1.846"/>
+  <testcase name="drag_and_Drop_Test" classname="tests.DragAndDropPageTest" time="0.525"/>
+  <testcase name="dropDown_Test" classname="tests.DropdownPageTest" time="0.715"/>
+  <testcase name="dynamic_Content_Test" classname="tests.DynamicContentPageTest" time="0.784"/>
+  <testcase name="dynamic_Controls_Test" classname="tests.DynamicControlsPageTest" time="13.131"/>
+  <testcase name="dynamic_Loading_Test" classname="tests.DynamicLoadingPageTest" time="5.494"/>
+  <testcase name="floating_Menu_Test" classname="tests.FloatingMenuPageTest" time="0.364"/>
+  <testcase name="iframe_Test" classname="tests.IframePageTest" time="0.916"/>
+  <testcase name="javaScript_Alerts_Test" classname="tests.JavaScriptAlertsPageTest" time="0.779"/>
+  <testcase name="javaScript_Error_Test" classname="tests.JavaScriptErrorPageTest" time="0.107"/>
+  <testcase name="login_Failure_Test" classname="tests.LoginPageTest" time="1.114"/>
+  <testcase name="login_Success_Test" classname="tests.LoginPageTest" time="0.926"/>
+  <testcase name="mouse_Hover_Test" classname="tests.MouseHoverPageTest" time="1.215"/>
+  <testcase name="notification_Message_Test" classname="tests.NotificationMessagePageTest" time="0.718">
+    <failure message="The test failed with the following actual result: Action unsuccesful, please try again&#10;×" type="java.lang.AssertionError">java.lang.AssertionError: The test failed with the following actual result: Action unsuccesful, please try again
+×
+	at org.testng.Assert.fail(Assert.java:110)
+	at tests.NotificationMessagePageTest.notification_Message_Test(NotificationMessagePageTest.java:33)
+</failure>
+    <system-out><![CDATA[The test failed with the following error message: expected [true] but found [false]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 18904
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+三月 24, 2023 9:51:53 下午 org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+警告: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
+]]></system-err>
+  </testcase>
+  <testcase name="open_In_New_Tab_Test" classname="tests.OpenInNewTabPageTest" time="0.566"/>
+  <testcase name="file_Upload_Test" classname="tests.UploadPageTest" time="0.615"/>
+</testsuite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Webdriver Test Suite]">
+  <parameter name="baseUrl" value="http://192.168.56.10:7080"/>
+  <test thread-count="5" verbose="0" name="NotificationMessagePage Test(failed)">
+    <parameter name="times" value="10"/>
+    <parameter name="notificationMessageUrl" value="notification_message_rendered"/>
+    <parameter name="notificationMessage" value="Action Successful; Action unsuccessful, please try again; Action Unsuccessful"/>
+    <classes>
+      <class name="tests.NotificationMessagePageTest">
+        <methods>
+          <include name="getConfiguration"/>
+          <include name="notification_Message_Test" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.NotificationMessagePageTest -->
+    </classes>
+  </test> <!-- NotificationMessagePage Test(failed) -->
+</suite> <!-- Failed suite [Webdriver Test Suite] -->

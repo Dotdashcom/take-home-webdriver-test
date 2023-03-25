@@ -1,0 +1,153 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Webdriver Test Suite">
+    <parameter name="baseUrl" value="http://192.168.56.10:7080"/>
+
+        <test name="CheckBoxesPage Test">
+            <parameter name="checkBoxesUrl" value="checkboxes"/>
+            <classes>
+                <class name="tests.CheckBoxesPageTest"/>
+            </classes>
+        </test>
+
+        <test name="ContextMenu Test">
+            <parameter name="contextMenuUrl" value="context_menu"/>
+            <parameter name="contextMenuMessage" value="You selected a context menu"/>
+            <classes>
+                <class name="tests.ContextMenuTest"/>
+            </classes>
+        </test>
+
+        <test name="DownloadPage Test">
+            <parameter name="downloadUrl" value="download"/>
+            <parameter name="downloadPath" value="C:\\Users\\Jian Yu\\Downloads\\some-file.txt"/>
+            <classes>
+                <class name="tests.DownloadPageTest"/>
+            </classes>
+        </test>
+
+        <test name="DragAndDropPage Test">
+            <parameter name="dragAndDropUrl" value="drag_and_drop"/>
+            <parameter name="boxAText" value="B"/>
+            <parameter name="boxBText" value="A"/>
+            <classes>
+                <class name="tests.DragAndDropPageTest"/>
+            </classes>
+        </test>
+
+        <test name="DropdownPage Test">
+            <parameter name="dropdownUrl" value="dropdown"/>
+            <parameter name="OptionOneText" value="Option 1"/>
+            <parameter name="OptionTwoText" value="Option 2"/>
+            <classes>
+                <class name="tests.DropdownPageTest"/>
+            </classes>
+        </test>
+
+        <test name="DynamicContentPage Test">
+            <parameter name="dynamicContentUrl" value="dynamic_content"/>
+            <classes>
+                <class name="tests.DynamicContentPageTest"/>
+            </classes>
+        </test>
+
+        <test name="DynamicControlsPage Test">
+            <parameter name="dynamicControlsUrl" value="dynamic_controls"/>
+            <parameter name="dynamicControlsRemoveMessage" value="It's gone!"/>
+            <parameter name="dynamicControlsAddMessage" value="It's back!"/>
+            <parameter name="dynamicControlsEnableMessage" value="It's enabled!"/>
+            <parameter name="dynamicControlsDisableMessage" value="It's disabled!"/>
+            <classes>
+                <class name="tests.DynamicControlsPageTest"/>
+            </classes>
+        </test>
+
+        <test name="DynamicLoadingPage Test">
+            <parameter name="dynamicLoadingUrl" value="dynamic_loading/2"/>
+            <parameter name="dynamicLoadingMessage" value="Hello World!"/>
+            <classes>
+                <class name="tests.DynamicLoadingPageTest"/>
+            </classes>
+        </test>
+
+        <test name="FloatingMenuPage Test">
+            <parameter name="floatingMenuUrl" value="floating_menu"/>
+            <classes>
+                <class name="tests.FloatingMenuPageTest"/>
+            </classes>
+        </test>
+
+        <test name="IframePage Test">
+            <parameter name="iframeUrl" value="iframe"/>
+            <parameter name="iframeText" value="This is the test text for iframe"/>
+            <classes>
+                <class name="tests.IframePageTest"/>
+            </classes>
+        </test>
+
+        <test name="JavaScriptAlertsPage Test">
+            <parameter name="javascriptAlertUrl" value="javascript_alerts"/>
+            <parameter name="jsAlertMessage" value="You successfuly clicked an alert"/>
+            <parameter name="jsConfirmMessage" value="You clicked: Ok"/>
+            <parameter name="typeJsPromptMessage" value="test message for JS prompt"/>
+            <parameter name="jsPromptMessage" value="You entered: test message for JS prompt"/>
+            <classes>
+                <class name="tests.JavaScriptAlertsPageTest"/>
+            </classes>
+        </test>
+
+        <test name="JavaScriptErrorPage Test">
+            <parameter name="javascriptErrorUrl" value="javascript_error"/>
+            <parameter name="javaScriptErrorMessage" value="Cannot read properties of undefined (reading 'xyz')"/>
+            <classes>
+                <class name="tests.JavaScriptErrorPageTest"/>
+            </classes>
+        </test>
+
+        <test name="LoginPage Test">
+            <parameter name="loginUrl" value="login"/>
+            <parameter name="username" value="tomsmith"/>
+            <parameter name="password" value="SuperSecretPassword!"/>
+            <parameter name="secureUrl" value="http://192.168.56.10:7080/secure"/>
+            <parameter name="homePageMessage" value="You logged into a secure area!"/>
+            <parameter name="invalidUsername" value="fds"/>
+            <parameter name="invalidPassword" value="123"/>
+            <parameter name="invalidUsernameMessage" value="Your username is invalid!"/>
+            <parameter name="invalidPasswordMessage" value="Your password is invalid!"/>
+            <classes>
+                <class name="tests.LoginPageTest"/>
+            </classes>
+        </test>
+
+        <test name="MouseHoverPage Test">
+            <parameter name="mouseHoverUrl" value="hovers"/>
+            <classes>
+                <class name="tests.MouseHoverPageTest"/>
+            </classes>
+        </test>
+
+        <test name="NotificationMessagePage Test">
+            <parameter name="notificationMessageUrl" value="notification_message_rendered"/>
+            <parameter name="notificationMessage" value="Action Successful; Action unsuccessful, please try again; Action Unsuccessful"/>
+            <parameter name="times" value="10"/>
+            <classes>
+                <class name="tests.NotificationMessagePageTest"/>
+            </classes>
+        </test>
+
+        <test name="OpenInNewTabPage Test">
+            <parameter name="openInNewTabUrl" value="windows"/>
+            <parameter name="newWindowTitle" value="New Window"/>
+            <classes>
+                <class name="tests.OpenInNewTabPageTest"/>
+            </classes>
+        </test>
+
+        <test name="UploadPage Test">
+            <parameter name="uploadUrl" value="upload"/>
+            <parameter name="uploadPath" value="C:\\Users\\Jian Yu\\Downloads\\some-file-upload.txt"/>
+            <parameter name="uploadMessage" value="File Uploaded!"/>
+            <classes>
+                <class name="tests.UploadPageTest"/>
+            </classes>
+        </test>
+    </suite>

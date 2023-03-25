@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Webdriver_Test_Suite">
+              <span class="suite-name border-failed">Webdriver Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Webdriver_Test_Suite">
+                    <span>E:\take-home-webdriver-test\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Webdriver_Test_Suite">
+                    <span class="test-stats">17 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Webdriver_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Webdriver_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Webdriver_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Webdriver_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Webdriver_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods, 1 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Webdriver_Test_Suite" class="hide-methods failed suite-Webdriver_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Webdriver_Test_Suite -->
+                      <a href="#" panel-name="suite-Webdriver_Test_Suite" class="show-methods failed suite-Webdriver_Test_Suite"> (show)</a> <!-- show-methods failed suite-Webdriver_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Webdriver_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.NotificationMessagePageTest" hash-for-method="notification_Message_Test(http://192.168.56.10:7080, notification_message_rendered, Action Successful; Action unsuccessful, pl...)">notification_Message_Test(http://192.168.56.10:7080, notification_message_rendered, Action Successful; Action unsuccessful, pl...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Webdriver_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Webdriver_Test_Suite" class="hide-methods passed suite-Webdriver_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Webdriver_Test_Suite -->
+                      <a href="#" panel-name="suite-Webdriver_Test_Suite" class="show-methods passed suite-Webdriver_Test_Suite"> (show)</a> <!-- show-methods passed suite-Webdriver_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Webdriver_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.CheckBoxesPageTest" hash-for-method="checkBoxes_Test1(http://192.168.56.10:7080, checkboxes)">checkBoxes_Test1(http://192.168.56.10:7080, checkboxes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.CheckBoxesPageTest" hash-for-method="checkBoxes_Test2(http://192.168.56.10:7080, checkboxes)">checkBoxes_Test2(http://192.168.56.10:7080, checkboxes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.ContextMenuTest" hash-for-method="contextMenu_Test(http://192.168.56.10:7080, context_menu, You selected a context menu)">contextMenu_Test(http://192.168.56.10:7080, context_menu, You selected a context menu)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.DragAndDropPageTest" hash-for-method="drag_and_Drop_Test(http://192.168.56.10:7080, drag_and_drop, B, A)">drag_and_Drop_Test(http://192.168.56.10:7080, drag_and_drop, B, A)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.DropdownPageTest" hash-for-method="dropDown_Test(http://192.168.56.10:7080, dropdown, Option 1, Option 2)">dropDown_Test(http://192.168.56.10:7080, dropdown, Option 1, Option 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.DynamicContentPageTest" hash-for-method="dynamic_Content_Test(http://192.168.56.10:7080, dynamic_content)">dynamic_Content_Test(http://192.168.56.10:7080, dynamic_content)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.DynamicControlsPageTest" hash-for-method="dynamic_Controls_Test(http://192.168.56.10:7080, dynamic_controls, It&#039;s gone!, It&#039;s back!, It&#039;s enabled!, It&#039;s disabled!)">dynamic_Controls_Test(http://192.168.56.10:7080, dynamic_controls, It's gone!, It's back!, It's enabled!, It's disabled!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.DynamicLoadingPageTest" hash-for-method="dynamic_Loading_Test(http://192.168.56.10:7080, dynamic_loading/2, Hello World!)">dynamic_Loading_Test(http://192.168.56.10:7080, dynamic_loading/2, Hello World!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.DownloadPageTest" hash-for-method="file_Download_Test(http://192.168.56.10:7080, download, C:\\Users\\Jian Yu\\Downloads\\some-file.txt)">file_Download_Test(http://192.168.56.10:7080, download, C:\\Users\\Jian Yu\\Downloads\\some-file.txt)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.UploadPageTest" hash-for-method="file_Upload_Test(http://192.168.56.10:7080, upload, C:\\Users\\Jian Yu\\Downloads\\some-file-upload.txt, File Uploade...)">file_Upload_Test(http://192.168.56.10:7080, upload, C:\\Users\\Jian Yu\\Downloads\\some-file-upload.txt, File Uploade...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.FloatingMenuPageTest" hash-for-method="floating_Menu_Test(http://192.168.56.10:7080, floating_menu)">floating_Menu_Test(http://192.168.56.10:7080, floating_menu)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.IframePageTest" hash-for-method="iframe_Test(http://192.168.56.10:7080, iframe, This is the test text for iframe)">iframe_Test(http://192.168.56.10:7080, iframe, This is the test text for iframe)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.JavaScriptAlertsPageTest" hash-for-method="javaScript_Alerts_Test(http://192.168.56.10:7080, javascript_alerts, You successfuly clicked an alert, You clicked: Ok, tes...)">javaScript_Alerts_Test(http://192.168.56.10:7080, javascript_alerts, You successfuly clicked an alert, You clicked: Ok, tes...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.JavaScriptErrorPageTest" hash-for-method="javaScript_Error_Test(http://192.168.56.10:7080, javascript_error, Cannot read properties of undefined (reading &#039;xyz&#039;))">javaScript_Error_Test(http://192.168.56.10:7080, javascript_error, Cannot read properties of undefined (reading 'xyz'))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.LoginPageTest" hash-for-method="login_Failure_Test(http://192.168.56.10:7080, login, fds, SuperSecretPassword!, Your username is invalid!, tomsmith, 12...)">login_Failure_Test(http://192.168.56.10:7080, login, fds, SuperSecretPassword!, Your username is invalid!, tomsmith, 12...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.LoginPageTest" hash-for-method="login_Success_Test(http://192.168.56.10:7080, login, tomsmith, SuperSecretPassword!, http://192.168.56.10:7080/secure, ...)">login_Success_Test(http://192.168.56.10:7080, login, tomsmith, SuperSecretPassword!, http://192.168.56.10:7080/secure, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.MouseHoverPageTest" hash-for-method="mouse_Hover_Test(http://192.168.56.10:7080, hovers)">mouse_Hover_Test(http://192.168.56.10:7080, hovers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Webdriver_Test_Suite" title="tests.OpenInNewTabPageTest" hash-for-method="open_In_New_Tab_Test(http://192.168.56.10:7080, windows, New Window)">open_In_New_Tab_Test(http://192.168.56.10:7080, windows, New Window)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Webdriver_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Webdriver_Test_Suite" class="panel Webdriver_Test_Suite">
+          <div class="suite-Webdriver_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.NotificationMessagePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="notification_Message_Test(http://192.168.56.10:7080, notification_message_rendered, Action Successful; Action unsuccessful, pl...)">
+                  </a> <!-- notification_Message_Test(http://192.168.56.10:7080, notification_message_rendered, Action Successful; Action unsuccessful, pl...) -->
+                  <span class="method-name">notification_Message_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, notification_message_rendered, Action Successful; Action unsuccessful, please try again; Action Unsuccessful, 10)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The test failed with the following actual result: Action unsuccesful, please try again
+×
+	at tests.NotificationMessagePageTest.notification_Message_Test(NotificationMessagePageTest.java:33)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1003)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:853)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:751)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-failed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.OpenInNewTabPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="open_In_New_Tab_Test(http://192.168.56.10:7080, windows, New Window)">
+                  </a> <!-- open_In_New_Tab_Test(http://192.168.56.10:7080, windows, New Window) -->
+                  <span class="method-name">open_In_New_Tab_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, windows, New Window)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.MouseHoverPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouse_Hover_Test(http://192.168.56.10:7080, hovers)">
+                  </a> <!-- mouse_Hover_Test(http://192.168.56.10:7080, hovers) -->
+                  <span class="method-name">mouse_Hover_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, hovers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.IframePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="iframe_Test(http://192.168.56.10:7080, iframe, This is the test text for iframe)">
+                  </a> <!-- iframe_Test(http://192.168.56.10:7080, iframe, This is the test text for iframe) -->
+                  <span class="method-name">iframe_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, iframe, This is the test text for iframe)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DownloadPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="file_Download_Test(http://192.168.56.10:7080, download, C:\\Users\\Jian Yu\\Downloads\\some-file.txt)">
+                  </a> <!-- file_Download_Test(http://192.168.56.10:7080, download, C:\\Users\\Jian Yu\\Downloads\\some-file.txt) -->
+                  <span class="method-name">file_Download_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, download, C:\\Users\\Jian Yu\\Downloads\\some-file.txt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UploadPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="file_Upload_Test(http://192.168.56.10:7080, upload, C:\\Users\\Jian Yu\\Downloads\\some-file-upload.txt, File Uploade...)">
+                  </a> <!-- file_Upload_Test(http://192.168.56.10:7080, upload, C:\\Users\\Jian Yu\\Downloads\\some-file-upload.txt, File Uploade...) -->
+                  <span class="method-name">file_Upload_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, upload, C:\\Users\\Jian Yu\\Downloads\\some-file-upload.txt, File Uploaded!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ContextMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contextMenu_Test(http://192.168.56.10:7080, context_menu, You selected a context menu)">
+                  </a> <!-- contextMenu_Test(http://192.168.56.10:7080, context_menu, You selected a context menu) -->
+                  <span class="method-name">contextMenu_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, context_menu, You selected a context menu)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckBoxesPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBoxes_Test1(http://192.168.56.10:7080, checkboxes)">
+                  </a> <!-- checkBoxes_Test1(http://192.168.56.10:7080, checkboxes) -->
+                  <span class="method-name">checkBoxes_Test1</span>
+                  <span class="parameters">(http://192.168.56.10:7080, checkboxes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBoxes_Test2(http://192.168.56.10:7080, checkboxes)">
+                  </a> <!-- checkBoxes_Test2(http://192.168.56.10:7080, checkboxes) -->
+                  <span class="method-name">checkBoxes_Test2</span>
+                  <span class="parameters">(http://192.168.56.10:7080, checkboxes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DropdownPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropDown_Test(http://192.168.56.10:7080, dropdown, Option 1, Option 2)">
+                  </a> <!-- dropDown_Test(http://192.168.56.10:7080, dropdown, Option 1, Option 2) -->
+                  <span class="method-name">dropDown_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, dropdown, Option 1, Option 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DynamicControlsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dynamic_Controls_Test(http://192.168.56.10:7080, dynamic_controls, It&#039;s gone!, It&#039;s back!, It&#039;s enabled!, It&#039;s disabled!)">
+                  </a> <!-- dynamic_Controls_Test(http://192.168.56.10:7080, dynamic_controls, It's gone!, It's back!, It's enabled!, It's disabled!) -->
+                  <span class="method-name">dynamic_Controls_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, dynamic_controls, It's gone!, It's back!, It's enabled!, It's disabled!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DragAndDropPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="drag_and_Drop_Test(http://192.168.56.10:7080, drag_and_drop, B, A)">
+                  </a> <!-- drag_and_Drop_Test(http://192.168.56.10:7080, drag_and_drop, B, A) -->
+                  <span class="method-name">drag_and_Drop_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, drag_and_drop, B, A)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DynamicContentPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dynamic_Content_Test(http://192.168.56.10:7080, dynamic_content)">
+                  </a> <!-- dynamic_Content_Test(http://192.168.56.10:7080, dynamic_content) -->
+                  <span class="method-name">dynamic_Content_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, dynamic_content)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.JavaScriptErrorPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="javaScript_Error_Test(http://192.168.56.10:7080, javascript_error, Cannot read properties of undefined (reading &#039;xyz&#039;))">
+                  </a> <!-- javaScript_Error_Test(http://192.168.56.10:7080, javascript_error, Cannot read properties of undefined (reading 'xyz')) -->
+                  <span class="method-name">javaScript_Error_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, javascript_error, Cannot read properties of undefined (reading 'xyz'))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.FloatingMenuPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="floating_Menu_Test(http://192.168.56.10:7080, floating_menu)">
+                  </a> <!-- floating_Menu_Test(http://192.168.56.10:7080, floating_menu) -->
+                  <span class="method-name">floating_Menu_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, floating_menu)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_Failure_Test(http://192.168.56.10:7080, login, fds, SuperSecretPassword!, Your username is invalid!, tomsmith, 12...)">
+                  </a> <!-- login_Failure_Test(http://192.168.56.10:7080, login, fds, SuperSecretPassword!, Your username is invalid!, tomsmith, 12...) -->
+                  <span class="method-name">login_Failure_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, login, fds, SuperSecretPassword!, Your username is invalid!, tomsmith, 123, Your password is invalid!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_Success_Test(http://192.168.56.10:7080, login, tomsmith, SuperSecretPassword!, http://192.168.56.10:7080/secure, ...)">
+                  </a> <!-- login_Success_Test(http://192.168.56.10:7080, login, tomsmith, SuperSecretPassword!, http://192.168.56.10:7080/secure, ...) -->
+                  <span class="method-name">login_Success_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, login, tomsmith, SuperSecretPassword!, http://192.168.56.10:7080/secure, You logged into a secure area!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DynamicLoadingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dynamic_Loading_Test(http://192.168.56.10:7080, dynamic_loading/2, Hello World!)">
+                  </a> <!-- dynamic_Loading_Test(http://192.168.56.10:7080, dynamic_loading/2, Hello World!) -->
+                  <span class="method-name">dynamic_Loading_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, dynamic_loading/2, Hello World!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+          <div class="suite-Webdriver_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.JavaScriptAlertsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="javaScript_Alerts_Test(http://192.168.56.10:7080, javascript_alerts, You successfuly clicked an alert, You clicked: Ok, tes...)">
+                  </a> <!-- javaScript_Alerts_Test(http://192.168.56.10:7080, javascript_alerts, You successfuly clicked an alert, You clicked: Ok, tes...) -->
+                  <span class="method-name">javaScript_Alerts_Test</span>
+                  <span class="parameters">(http://192.168.56.10:7080, javascript_alerts, You successfuly clicked an alert, You clicked: Ok, test message for JS prompt, You entered: test message for JS prompt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Webdriver_Test_Suite-class-passed -->
+        </div> <!-- panel Webdriver_Test_Suite -->
+        <div panel-name="test-xml-Webdriver_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\take-home-webdriver-test\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Webdriver Test Suite&quot;&gt;
+  &lt;parameter name=&quot;baseUrl&quot; value=&quot;http://192.168.56.10:7080&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;CheckBoxesPage Test&quot;&gt;
+    &lt;parameter name=&quot;checkBoxesUrl&quot; value=&quot;checkboxes&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.CheckBoxesPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CheckBoxesPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;ContextMenu Test&quot;&gt;
+    &lt;parameter name=&quot;contextMenuMessage&quot; value=&quot;You selected a context menu&quot;/&gt;
+    &lt;parameter name=&quot;contextMenuUrl&quot; value=&quot;context_menu&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ContextMenuTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ContextMenu Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;DownloadPage Test&quot;&gt;
+    &lt;parameter name=&quot;downloadPath&quot; value=&quot;C:\\Users\\Jian Yu\\Downloads\\some-file.txt&quot;/&gt;
+    &lt;parameter name=&quot;downloadUrl&quot; value=&quot;download&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.DownloadPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DownloadPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;DragAndDropPage Test&quot;&gt;
+    &lt;parameter name=&quot;boxBText&quot; value=&quot;A&quot;/&gt;
+    &lt;parameter name=&quot;boxAText&quot; value=&quot;B&quot;/&gt;
+    &lt;parameter name=&quot;dragAndDropUrl&quot; value=&quot;drag_and_drop&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.DragAndDropPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DragAndDropPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;DropdownPage Test&quot;&gt;
+    &lt;parameter name=&quot;OptionTwoText&quot; value=&quot;Option 2&quot;/&gt;
+    &lt;parameter name=&quot;OptionOneText&quot; value=&quot;Option 1&quot;/&gt;
+    &lt;parameter name=&quot;dropdownUrl&quot; value=&quot;dropdown&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.DropdownPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DropdownPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;DynamicContentPage Test&quot;&gt;
+    &lt;parameter name=&quot;dynamicContentUrl&quot; value=&quot;dynamic_content&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.DynamicContentPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DynamicContentPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;DynamicControlsPage Test&quot;&gt;
+    &lt;parameter name=&quot;dynamicControlsEnableMessage&quot; value=&quot;It&amp;#039;s enabled!&quot;/&gt;
+    &lt;parameter name=&quot;dynamicControlsRemoveMessage&quot; value=&quot;It&amp;#039;s gone!&quot;/&gt;
+    &lt;parameter name=&quot;dynamicControlsDisableMessage&quot; value=&quot;It&amp;#039;s disabled!&quot;/&gt;
+    &lt;parameter name=&quot;dynamicControlsUrl&quot; value=&quot;dynamic_controls&quot;/&gt;
+    &lt;parameter name=&quot;dynamicControlsAddMessage&quot; value=&quot;It&amp;#039;s back!&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.DynamicControlsPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DynamicControlsPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;DynamicLoadingPage Test&quot;&gt;
+    &lt;parameter name=&quot;dynamicLoadingMessage&quot; value=&quot;Hello World!&quot;/&gt;
+    &lt;parameter name=&quot;dynamicLoadingUrl&quot; value=&quot;dynamic_loading/2&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.DynamicLoadingPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DynamicLoadingPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;FloatingMenuPage Test&quot;&gt;
+    &lt;parameter name=&quot;floatingMenuUrl&quot; value=&quot;floating_menu&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.FloatingMenuPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FloatingMenuPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;IframePage Test&quot;&gt;
+    &lt;parameter name=&quot;iframeText&quot; value=&quot;This is the test text for iframe&quot;/&gt;
+    &lt;parameter name=&quot;iframeUrl&quot; value=&quot;iframe&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.IframePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- IframePage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;JavaScriptAlertsPage Test&quot;&gt;
+    &lt;parameter name=&quot;javascriptAlertUrl&quot; value=&quot;javascript_alerts&quot;/&gt;
+    &lt;parameter name=&quot;jsAlertMessage&quot; value=&quot;You successfuly clicked an alert&quot;/&gt;
+    &lt;parameter name=&quot;jsConfirmMessage&quot; value=&quot;You clicked: Ok&quot;/&gt;
+    &lt;parameter name=&quot;typeJsPromptMessage&quot; value=&quot;test message for JS prompt&quot;/&gt;
+    &lt;parameter name=&quot;jsPromptMessage&quot; value=&quot;You entered: test message for JS prompt&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.JavaScriptAlertsPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- JavaScriptAlertsPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;JavaScriptErrorPage Test&quot;&gt;
+    &lt;parameter name=&quot;javascriptErrorUrl&quot; value=&quot;javascript_error&quot;/&gt;
+    &lt;parameter name=&quot;javaScriptErrorMessage&quot; value=&quot;Cannot read properties of undefined (reading &amp;#039;xyz&amp;#039;)&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.JavaScriptErrorPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- JavaScriptErrorPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;LoginPage Test&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;SuperSecretPassword!&quot;/&gt;
+    &lt;parameter name=&quot;secureUrl&quot; value=&quot;http://192.168.56.10:7080/secure&quot;/&gt;
+    &lt;parameter name=&quot;invalidUsername&quot; value=&quot;fds&quot;/&gt;
+    &lt;parameter name=&quot;homePageMessage&quot; value=&quot;You logged into a secure area!&quot;/&gt;
+    &lt;parameter name=&quot;loginUrl&quot; value=&quot;login&quot;/&gt;
+    &lt;parameter name=&quot;invalidUsernameMessage&quot; value=&quot;Your username is invalid!&quot;/&gt;
+    &lt;parameter name=&quot;invalidPassword&quot; value=&quot;123&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;tomsmith&quot;/&gt;
+    &lt;parameter name=&quot;invalidPasswordMessage&quot; value=&quot;Your password is invalid!&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;MouseHoverPage Test&quot;&gt;
+    &lt;parameter name=&quot;mouseHoverUrl&quot; value=&quot;hovers&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.MouseHoverPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MouseHoverPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;NotificationMessagePage Test&quot;&gt;
+    &lt;parameter name=&quot;times&quot; value=&quot;10&quot;/&gt;
+    &lt;parameter name=&quot;notificationMessageUrl&quot; value=&quot;notification_message_rendered&quot;/&gt;
+    &lt;parameter name=&quot;notificationMessage&quot; value=&quot;Action Successful; Action unsuccessful, please try again; Action Unsuccessful&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.NotificationMessagePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NotificationMessagePage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;OpenInNewTabPage Test&quot;&gt;
+    &lt;parameter name=&quot;openInNewTabUrl&quot; value=&quot;windows&quot;/&gt;
+    &lt;parameter name=&quot;newWindowTitle&quot; value=&quot;New Window&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.OpenInNewTabPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- OpenInNewTabPage Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;UploadPage Test&quot;&gt;
+    &lt;parameter name=&quot;uploadMessage&quot; value=&quot;File Uploaded!&quot;/&gt;
+    &lt;parameter name=&quot;uploadUrl&quot; value=&quot;upload&quot;/&gt;
+    &lt;parameter name=&quot;uploadPath&quot; value=&quot;C:\\Users\\Jian Yu\\Downloads\\some-file-upload.txt&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.UploadPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UploadPage Test --&gt;
+&lt;/suite&gt; &lt;!-- Webdriver Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Webdriver_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Webdriver Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CheckBoxesPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ContextMenu Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DownloadPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DragAndDropPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DropdownPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DynamicContentPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DynamicControlsPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DynamicLoadingPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">FloatingMenuPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">IframePage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">JavaScriptAlertsPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">JavaScriptErrorPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">MouseHoverPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">NotificationMessagePage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">OpenInNewTabPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">UploadPage Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Webdriver_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Webdriver Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Webdriver_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Webdriver Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Webdriver_Test_Suite');
+function tableData_Webdriver_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'dynamic_Controls_Test')
+data.setCell(0, 2, 'tests.DynamicControlsPageTest')
+data.setCell(0, 3, 13131);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'dynamic_Loading_Test')
+data.setCell(1, 2, 'tests.DynamicLoadingPageTest')
+data.setCell(1, 3, 5494);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'file_Download_Test')
+data.setCell(2, 2, 'tests.DownloadPageTest')
+data.setCell(2, 3, 1846);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkBoxes_Test1')
+data.setCell(3, 2, 'tests.CheckBoxesPageTest')
+data.setCell(3, 3, 1305);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'mouse_Hover_Test')
+data.setCell(4, 2, 'tests.MouseHoverPageTest')
+data.setCell(4, 3, 1215);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'login_Failure_Test')
+data.setCell(5, 2, 'tests.LoginPageTest')
+data.setCell(5, 3, 1114);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'login_Success_Test')
+data.setCell(6, 2, 'tests.LoginPageTest')
+data.setCell(6, 3, 926);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'iframe_Test')
+data.setCell(7, 2, 'tests.IframePageTest')
+data.setCell(7, 3, 916);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'contextMenu_Test')
+data.setCell(8, 2, 'tests.ContextMenuTest')
+data.setCell(8, 3, 817);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkBoxes_Test2')
+data.setCell(9, 2, 'tests.CheckBoxesPageTest')
+data.setCell(9, 3, 805);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'dynamic_Content_Test')
+data.setCell(10, 2, 'tests.DynamicContentPageTest')
+data.setCell(10, 3, 784);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'javaScript_Alerts_Test')
+data.setCell(11, 2, 'tests.JavaScriptAlertsPageTest')
+data.setCell(11, 3, 779);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'notification_Message_Test')
+data.setCell(12, 2, 'tests.NotificationMessagePageTest')
+data.setCell(12, 3, 718);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'dropDown_Test')
+data.setCell(13, 2, 'tests.DropdownPageTest')
+data.setCell(13, 3, 716);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'file_Upload_Test')
+data.setCell(14, 2, 'tests.UploadPageTest')
+data.setCell(14, 3, 615);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'open_In_New_Tab_Test')
+data.setCell(15, 2, 'tests.OpenInNewTabPageTest')
+data.setCell(15, 3, 566);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'drag_and_Drop_Test')
+data.setCell(16, 2, 'tests.DragAndDropPageTest')
+data.setCell(16, 3, 525);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'floating_Menu_Test')
+data.setCell(17, 2, 'tests.FloatingMenuPageTest')
+data.setCell(17, 3, 364);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'javaScript_Error_Test')
+data.setCell(18, 2, 'tests.JavaScriptErrorPageTest')
+data.setCell(18, 3, 108);
+window.suiteTableData['Webdriver_Test_Suite']= { tableData: data, tableDiv: 'times-div-Webdriver_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <div id="times-div-Webdriver_Test_Suite">
+              </div> <!-- times-div-Webdriver_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Webdriver_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Webdriver Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Webdriver_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Webdriver_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UploadPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">getConfiguration</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckBoxesPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkBoxes_Test1(http://192.168.56.10:7080, checkboxes)</span>
+                <span class="method-start">4038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">5345 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5409 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkBoxes_Test2(http://192.168.56.10:7080, checkboxes)</span>
+                <span class="method-start">6941 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">7746 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ContextMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7819 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contextMenu_Test(http://192.168.56.10:7080, context_menu, You selected a context menu)</span>
+                <span class="method-start">9382 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">10199 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DownloadPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10271 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">file_Download_Test(http://192.168.56.10:7080, download, C:\\Users\\Jian Yu\\Downloads\\some-file.txt)</span>
+                <span class="method-start">11786 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">13632 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DragAndDropPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">13724 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">drag_and_Drop_Test(http://192.168.56.10:7080, drag_and_drop, B, A)</span>
+                <span class="method-start">15283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">15808 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DropdownPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15866 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dropDown_Test(http://192.168.56.10:7080, dropdown, Option 1, Option 2)</span>
+                <span class="method-start">17457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">18173 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DynamicContentPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18263 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dynamic_Content_Test(http://192.168.56.10:7080, dynamic_content)</span>
+                <span class="method-start">19823 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">20607 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DynamicControlsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dynamic_Controls_Test(http://192.168.56.10:7080, dynamic_controls, It's gone!, It's back!, It's enabled!, It's disabled!)</span>
+                <span class="method-start">22230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">35362 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DynamicLoadingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">35449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dynamic_Loading_Test(http://192.168.56.10:7080, dynamic_loading/2, Hello World!)</span>
+                <span class="method-start">36989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">42484 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FloatingMenuPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42545 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">floating_Menu_Test(http://192.168.56.10:7080, floating_menu)</span>
+                <span class="method-start">44092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">44456 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.IframePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">44558 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">iframe_Test(http://192.168.56.10:7080, iframe, This is the test text for iframe)</span>
+                <span class="method-start">46218 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">47135 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.JavaScriptAlertsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">47196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">javaScript_Alerts_Test(http://192.168.56.10:7080, javascript_alerts, You successfuly clicked an alert, You clicked: Ok, tes...)</span>
+                <span class="method-start">48721 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">49500 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.JavaScriptErrorPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">49595 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">javaScript_Error_Test(http://192.168.56.10:7080, javascript_error, Cannot read properties of undefined (reading 'xyz'))</span>
+                <span class="method-start">51165 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">51273 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">51372 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_Failure_Test(http://192.168.56.10:7080, login, fds, SuperSecretPassword!, Your username is invalid!, tomsmith, 12...)</span>
+                <span class="method-start">52881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">53995 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">54078 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_Success_Test(http://192.168.56.10:7080, login, tomsmith, SuperSecretPassword!, http://192.168.56.10:7080/secure, ...)</span>
+                <span class="method-start">55535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">56461 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MouseHoverPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56514 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mouse_Hover_Test(http://192.168.56.10:7080, hovers)</span>
+                <span class="method-start">58050 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">59266 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.NotificationMessagePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">59328 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">notification_Message_Test(http://192.168.56.10:7080, notification_message_rendered, Action Successful; Action unsuccessful, pl...)</span>
+                <span class="method-start">60900 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">61619 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.OpenInNewTabPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">61683 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">open_In_New_Tab_Test(http://192.168.56.10:7080, windows, New Window)</span>
+                <span class="method-start">63216 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63783 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UploadPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">63844 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">file_Upload_Test(http://192.168.56.10:7080, upload, C:\\Users\\Jian Yu\\Downloads\\some-file-upload.txt, File Uploade...)</span>
+                <span class="method-start">65383 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">65998 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
