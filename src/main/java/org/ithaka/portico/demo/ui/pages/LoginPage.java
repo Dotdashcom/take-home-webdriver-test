@@ -67,6 +67,7 @@ public class LoginPage {
 	}
 	
 	public void closeApp() {
+		
 		this.driver.close();
 		this.driver = null;
 	}
