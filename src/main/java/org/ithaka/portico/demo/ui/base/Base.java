@@ -1,5 +1,9 @@
 package org.ithaka.portico.demo.ui.base;
 
+import java.util.concurrent.TimeUnit;
+
+import org.ithaka.portico.demo.ui.pages.CheckBoxesPage;
+import org.ithaka.portico.demo.ui.pages.ContextMenuPage;
 import org.ithaka.portico.demo.ui.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 
@@ -23,72 +27,67 @@ public class Base {
 		//driver.get("http://localhost:7080/login");
 		PageObjectManager pageObjectManager = new PageObjectManager(driver);
 		LoginPage loginpage = pageObjectManager.getLoginPage();
+		CheckBoxesPage checkboxesPage = pageObjectManager.getCheckboxesPage();
+		ContextMenuPage contextMenuPage = pageObjectManager.getContextMenuPage();
+		
+		
 		try {
-			loginpage.navigateToURL("http://localhost:7080/login");
+			//loginpage.navigateToURL("http://localhost:7080/login");
 			
 			
-			loginpage.loginToAppSuccess("tomsmith", "SuperSecretPassword!");
+			//loginpage.loginToAppSuccess("tomsmith", "SuperSecretPassword!");
 			
-			loginpage.loginToAppFailure("tomsmith", "SuperSecretPassword");
+			//loginpage.loginToAppFailure("tomsmith", "SuperSecretPassword");
+	
 			
+			//checkboxesPage.checkTheBox();
+			
+			//contextMenuPage.rightClickTheContextMenu();
+		
+			
+			//contextMenuPage.performDragDrop();
+
+			//contextMenuPage.dropDownTest();
+			
+			//contextMenuPage.dynamicContent1();
+			
+			//contextMenuPage.dynamicContentWithExplicitWait();
+			
+			//contextMenuPage.dynamicContentWithExplicitWait2();
+			
+			//contextMenuPage.dynamicLoadingExercise2();
+			
+			//contextMenuPage.fileDownloader();
+			
+			//contextMenuPage.fileUploader();
+			
+			
+			//contextMenuPage.scrollAndCheckMenu();
+			
+			//contextMenuPage.iframeExists();
+			
+			//contextMenuPage.hoversTest();
+			
+			//contextMenuPage.javascriptAlerts();
+			
+			//contextMenuPage.newWindow();
+			
+			contextMenuPage.notifications();
+			
+			Thread.sleep(4000);
 			
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-	
-		// Maximize window size of browser
-        //driver.manage().window().maximize();
-        
-		
-		/*
-        
-		   // Enter your login email id
-        driver.findElement(By.id("username"))
-            .sendKeys("tomsmith");
-  
-        // Enter your login password
-        driver.findElement(By.id("password"))
-            .sendKeys("SuperSecretPassword!");
-  
-        //Log in
-        driver.findElement(By.className("radius"))
-            .click();
-        
-        //Log out
-        driver.findElement(By.className("icon-signout"))
-        .click();
-        
-        
-		
-        // Enter your login email id
-        driver.findElement(By.id("username"))
-            .sendKeys("tomsmith");
-  
-        // Enter your login password
-        driver.findElement(By.id("password"))
-            .sendKeys("SuperSecretPassword!");
-  
-        //Log in
-        driver.findElement(By.className("radius"))
-            .click();
-        
-        //Log out
-        driver.findElement(By.className("icon-signout"))
-        .click();
-        
-        Assert.assertNotNull(driver.findElement(By.id("flash")));
-        
-		*/
-		//Close current browser
-		//driver.close();
-		
-		//Close all the browsers
-		//driver.quit();
 
-		loginpage.closeApp();
+		
+		//loginpage.closeApp();
+
+		//contextMenuPage.driver.quit();
+		
+		driver.quit();
 	}
 
 }
