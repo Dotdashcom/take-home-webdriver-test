@@ -22,7 +22,10 @@ public class DownloadFile_steps {
 
     @Given("user is in {string} page")
     public void user_is_in_page(String subDomain) {
-        path = System.getProperty("user.dir") + "\\src\\test\\resources\\downloads\\";
+
+        path = System.getProperty("user.dir") + "\\src\\test\\resources\\downloads";
+        new File(path).mkdir();
+        path += "\\";
         ChromeOptions op = new ChromeOptions();
         Map<String, Object> ref = new HashMap<>();
         ref.put("download.default_directory", path);
@@ -41,7 +44,7 @@ public class DownloadFile_steps {
     @Then("verify that file is downloaded")
     public void verify_that_file_is_downloaded() {
 
-        Assert.assertTrue(new File(path + "some-file.txt").exists());
-
+        Assert.assertTrue(new File(path + fileName).exists());
+        new File(path+fileName).delete();
     }
 }
