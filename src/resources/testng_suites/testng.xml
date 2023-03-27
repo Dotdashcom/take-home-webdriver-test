@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DotDash_Automation_Suite">
+    <test thread-count="3" parallel="classes" name="DotDash Regression Suite">
+        <classes>
+            <class name="com.dotDash.test.LoginFeature_Test"/>
+            <class name="com.dotDash.test.CheckboxFeature_Test"/>
+            <class name="com.dotDash.test.ContextMenuFeature_Test"/>
+            <class name="com.dotDash.test.DragDropFeature_Test"/>
+            <class name="com.dotDash.test.DropDownFeature_Test"/>
+            <class name="com.dotDash.test.DynamicControlFeature_Test"/>
+            <class name="com.dotDash.test.DynamicContentFeature_Test"/>
+            <class name="com.dotDash.test.DynamicLoadingFeature_Test"/>
+            <class name="com.dotDash.test.FileDownloadFeature_Test"/>
+            <class name="com.dotDash.test.FileUploadFeature_Test"/>
+            <class name="com.dotDash.test.FloatingMenuFeature_Test"/>
+            <class name="com.dotDash.test.IFrameFeature_Test"/>
+            <class name="com.dotDash.test.MouseHoverFeature_Test"/>
+            <class name="com.dotDash.test.JavaScriptAlertsFeature_Test"/>
+            <class name="com.dotDash.test.JavaScriptErrorFeature_Test"/>
+            <class name="com.dotDash.test.NewTabFeature_Test"/>
+            <class name="com.dotDash.test.NotificationFeature_Test"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
