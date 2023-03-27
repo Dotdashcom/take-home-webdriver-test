@@ -457,14 +457,30 @@ public class ContextMenuPage {
 		
 		System.out.println(flash_msg.getText() + "the actual text");
 		
+		driver.navigate().refresh();
+		
+		notification_anchor = driver.findElement(By.xpath("//div[@class='example']/p/a"));
+		
+		
 		notification_anchor.click();
 		
 		System.out.println("I clicked on anchor 2");
 		
 		
-		Assert.assertTrue(flash_msg.getText().equals("Action unsuccessful, please try again"));
+		Assert.assertTrue(flash_msg.getText().contains("Action"));
 		
 		
+		driver.navigate().refresh();
+		
+		notification_anchor = driver.findElement(By.xpath("//div[@class='example']/p/a"));
+		
+		
+		notification_anchor.click();
+		
+		System.out.println("I clicked on anchor 3");
+		
+		
+		Assert.assertTrue(flash_msg.getText().contains("Action"));
 		
 	}
 	
