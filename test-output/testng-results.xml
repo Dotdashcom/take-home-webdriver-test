@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-29T16:58:48 EDT" name="Default suite" finished-at="2023-03-29T16:58:55 EDT" duration-ms="6509">
+    <groups>
+    </groups>
+    <test started-at="2023-03-29T16:58:48 EDT" name="Default test" finished-at="2023-03-29T16:58:55 EDT" duration-ms="6509">
+      <class name="testCases.DynamicLoadingTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testCases.DynamicLoadingTest@21e360a]" started-at="2023-03-29T16:58:48 EDT" name="beforeTest" finished-at="2023-03-29T16:58:49 EDT" duration-ms="1100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="dynamicMessageTest()[pri:0, instance:testCases.DynamicLoadingTest@21e360a]" started-at="2023-03-29T16:58:49 EDT" name="dynamicMessageTest" finished-at="2023-03-29T16:58:55 EDT" duration-ms="5322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicMessageTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testCases.DynamicLoadingTest@21e360a]" started-at="2023-03-29T16:58:55 EDT" name="afterTest" finished-at="2023-03-29T16:58:55 EDT" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testCases.DynamicLoadingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
