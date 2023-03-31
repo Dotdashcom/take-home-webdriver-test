@@ -3,7 +3,9 @@
 
 # Log file
 *.log
-
+.DS_Store
+.gitignore
+target
 # BlueJ files
 *.ctxt
 
