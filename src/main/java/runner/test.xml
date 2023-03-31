@@ -1,0 +1,23 @@
+
+<suite name="Suite">
+    <test name="Tests">
+        <classes>
+            <class name="tests.CheckBoxTest"></class>
+            <class name="tests.ContextMenuTest"></class>
+            <class name="tests.DragAndDropTest"></class>
+            <class name="tests.DropDownTest"></class>
+            <class name="tests.DynamicContentTest"></class>
+            <class name="tests.DynamicControlTest"></class>
+            <class name="tests.DynamicLoadingTest"></class>
+            <class name="tests.FileDownloadTest"></class>
+            <class name="tests.FileUploadTest"></class>
+            <class name="tests.FloatingMenuTest"></class>
+            <class name="tests.IframeTest"></class>
+            <class name="tests.MousHoverTest"></class>
+            <class name="tests.JavaScriptAlertTest"></class>
+            <class name="tests.OpenNewTabTest"></class>
+            <class name="tests.NotificationMessageTest"></class>
+            <class name="tests.LoginTest"></class>
+        </classes>
+    </test>
+</suite>
