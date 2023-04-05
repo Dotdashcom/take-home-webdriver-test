@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Dotdashcom Tests">
+    <classes>
+      <class name="dotdash.tests.LoginTest"/>
+      <class name="dotdash.tests.AlertsTest"/>
+      <class name="dotdash.tests.CheckBoxTest"/>
+      <class name="dotdash.tests.ContextTest"/>
+    
+      <class name="dotdash.tests.DownloadTest"/>
+    
+    
+      <class name="dotdash.tests.DragNDropTest"/>
+    
+
+      <class name="dotdash.tests.DropdownTest"/>
+    
+    
+      <class name="dotdash.tests.DynamicContentTest"/>
+    
+    
+      <class name="dotdash.tests.DynamicControlsTest"/>
+    
+    
+      <class name="dotdash.tests.DynamicLoadingTest"/>
+    
+    
+      <class name="dotdash.tests.FloatingMenuTest"/>
+    
+    
+      <class name="dotdash.tests.FrameTest"/>
+    
+    
+      <class name="dotdash.tests.HoversTest"/>
+    
+    
+      <class name="dotdash.tests.JavaScriptTest"/>
+    
+    
+      <class name="dotdash.tests.NotificationsTest"/>
+    
+    
+      <class name="dotdash.tests.UploadTest"/>
+    
+    
+      <class name="dotdash.tests.WindowsTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
