@@ -15,9 +15,6 @@ public class CheckBoxPage {
     By SecondCheckBox= By.xpath("//form[@id='checkboxes']/input[2]");
     public CheckBoxPage(WebDriver driver)
     {
-        // "this" keyword is used here to distinguish global and local variable "driver"
-        //gets driver as parameter from MainClass.java and assigns to the driver instance in this class
-
         this.driver=driver;
         driver.get(CHECKBOX_URL);
         driver.manage().window().maximize();

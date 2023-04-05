@@ -58,9 +58,6 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver)
     {
-        // "this" keyword is used here to distinguish global and local variable "driver"
-        //gets driver as parameter from MainClass.java and assigns to the driver instance in this class
-
         this.driver=driver;
         driver.get(LOGIN_URL);
         driver.manage().window().maximize();
