@@ -1,0 +1,326 @@
+import static org.junit.Assert.*;
+
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class ChromeDriverTests {
+    private WebDriver driver;
+    private String baseUrl;
+
+    @Before
+    public void setUp() throws Exception {
+        // Set ChromeDriver path
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+
+        // Create ChromeDriver instance
+        driver = new ChromeDriver();
+
+        // Set base URL
+        baseUrl = "http://localhost:7080";
+    }
+
+    @Test
+    public void testAddRemoveElements() {
+        // Navigate to Add/Remove Elements page
+        driver.get(baseUrl + "/add_remove_elements/");
+
+        // Add elements
+        WebElement addButton = driver.findElement(By.xpath("//button[text()='Add Element']"));
+        addButton.click();
+        addButton.click();
+        addButton.click();
+
+        // Remove elements
+        List<WebElement> deleteButtons = driver.findElements(By.xpath("//button[text()='Delete']"));
+        for (WebElement deleteButton : deleteButtons) {
+            deleteButton.click();
+        }
+
+        // Verify result
+        WebElement result = driver.findElement(By.id("result"));
+        assertEquals("Add/Remove Elements", driver.getTitle());
+        assertEquals("Add/Remove Elements", result.getText());
+    }
+
+    @Test
+    public void testBasicAuth() {
+        // Navigate to Basic Auth page
+        driver.get("http://the-internet.herokuapp.com/basic_auth");
+
+        // Log in with credentials
+        String username = "admin";
+        String password = "admin";
+        String urlWithCredentials = "http://" + username + ":" + password + "@the-internet.herokuapp.com/basic_auth";
+        driver.get(urlWithCredentials);
+
+        // Verify result
+        WebElement message = driver.findElement(By.xpath("//p[contains(text(), 'Congratulations! You must have the proper credentials.')]"));
+        assertEquals("Congratulations! You must have the proper credentials.", message.getText());
+    }
+
+    @Test
+    public void testBrokenImages() {
+        // Navigate to Broken Images page
+        driver.get(baseUrl + "/broken_images");
+
+        // Get all images
+        List<WebElement> images = driver.findElements(By.tagName("img"));
+
+        // Verify each image's status
+        for (WebElement image : images) {
+            String src = image.getAttribute("src");
+            assertEquals(200, getResponseStatus(src));
+        }
+    }
+
+    @Test
+    public void testCheckboxes() {
+        // Navigate to Checkboxes page
+        driver.get(baseUrl + "/checkboxes");
+
+        // Select checkboxes
+        List<WebElement> checkboxes = driver.findElements(By.tagName("input"));
+        checkboxes.get(0).click();
+        checkboxes.get(1).click();
+
+        // Verify result
+        assertEquals("Checkboxes", driver.getTitle());
+        assertTrue(checkboxes.get(0).isSelected());
+        assertFalse(checkboxes.get(1).isSelected());
+    }
+
+    @Test
+    public void testContextMenu() {
+        // Navigate to Context Menu page
+        driver.get(baseUrl + "/context_menu");
+
+        // Right-click on the box
+        WebElement box = driver.findElement(By.id("hot-spot"));
+        driver.contextClick(box).perform();
+
+        // Handle alert
+        String alertText = driver.switchTo().alert().getText();
+        assertEquals("You selected a context menu", alertText);
+        driver.switchTo().alert().accept();
+    }
+
+    @Test
+    public void testDragAndDrop() {
+        // Navigate to Drag and Drop page
+        driver.get(baseUrl + "/drag_and_drop");
+
+        // Drag and drop the element
+    @Test
+    public void testDragAndDrop() {
+        // Navigate to the Drag and Drop page
+        driver.get(baseUrl + "/drag_and_drop");
+
+        // Find the elements to be dragged and dropped
+        WebElement source = driver.findElement(By.id("column-a"));
+        WebElement target = driver.findElement(By.id("column-b"));
+
+        // Perform the drag and drop action using Actions class
+        Actions actions = new Actions(driver);
+        actions.dragAndDrop(source, target).perform();
+
+        // Verify the text after the drag and drop action
+        String columnAText = driver.findElement(By.id("column-a")).getText();
+        String columnBText = driver.findElement(By.id("column-b")).getText();
+
+        assertEquals("B", columnAText);
+        assertEquals("A", columnBText);
+    }
+
+    @Test
+    public void testDynamicContent() {
+        // Navigate to the Dynamic Content page
+        driver.get(baseUrl + "/dynamic_content");
+
+        // Find the text containers
+        List<WebElement> textContainers = driver.findElements(By.className("large-10"));
+
+        // Store the initial texts
+        List<String> initialTexts = new ArrayList<String>();
+        for (WebElement textContainer : textContainers) {
+            initialTexts.add(textContainer.getText());
+        }
+
+        // Refresh the page
+        driver.navigate().refresh();
+
+        // Find the text containers again
+        List<WebElement> refreshedTextContainers = driver.findElements(By.className("large-10"));
+
+        // Store the refreshed texts
+        List<String> refreshedTexts = new ArrayList<String>();
+        for (WebElement refreshedTextContainer : refreshedTextContainers) {
+            refreshedTexts.add(refreshedTextContainer.getText());
+        }
+
+        // Verify that the texts have changed
+        assertNotEquals(initialTexts, refreshedTexts);
+    }
+
+    @Test
+    public void testHovers() {
+        // Navigate to the Hovers page
+        driver.get(baseUrl + "/hovers");
+
+        // Find the user profile images
+        List<WebElement> profileImages = driver.findElements(By.className("figure"));
+
+        // Create an instance of Actions class
+        Actions actions = new Actions(driver);
+
+        // Hover over each user profile image and verify the text
+        for (WebElement profileImage : profileImages) {
+            actions.moveToElement(profileImage).perform();
+            assertTrue(profileImage.findElement(By.tagName("div")).isDisplayed());
+        }
+    }
+
+    @Test
+    public void testJavaScriptAlerts() {
+        // Navigate to the JavaScript Alerts page
+        driver.get(baseUrl + "/javascript_alerts");
+
+        // Test Alert box
+        WebElement alertButton = driver.findElement(By.xpath("//button[text()='Click for JS Alert']"));
+        alertButton.click();
+        Alert alert = driver.switchTo().alert();
+        String alertMessage = alert.getText();
+        assertEquals("I am a JS Alert", alertMessage);
+        alert.accept();
+
+        // Test Confirm box
+        WebElement confirmButton = driver.findElement(By.xpath("//button[text()='Click for JS Confirm']"));
+        confirmButton.click();
+        Alert confirm = driver.switchTo().alert();
+        String confirmMessage = confirm.getText();
+        assertEquals("I am a JS Confirm", confirmMessage);
+        confirm.dismiss();
+
+        // Test Prompt box
+        WebElement promptButton = driver.findElement(By.xpath("//button[text()='Click for JS Prompt']"));
+        promptButton.click();
+        Alert prompt = driver.switchTo().alert();
+        String promptMessage = prompt.getText();
+        assertEquals("I am a JS prompt", promptMessage);
+        prompt.sendKeys("Hello World!");
+        prompt.accept();
+        WebElement resultText = driver.findElement(By.id("result"));
+        assertEquals("You entered: Hello World!", resultText.getText());
+    }
+
+ @Test
+    public void testMultipleWindows() {
+        // Navigate to the Multiple Windows page
+        MultipleWindowsPage windowsPage = MultipleWindowsPage.navigateToMultipleWindowsPage(driver, baseUrl);
+
+        // Get the current window handle (to switch back later)
+        String originalHandle = driver.getWindowHandle();
+
+        // Click the "Click Here" link to open a new window
+        windowsPage.clickHereLink();
+
+        // Switch to the new window
+        for (String handle : driver.getWindowHandles()) {
+            driver.switchTo().window(handle);
+        }
+
+        // Assert that we are on the new window page
+        assertEquals("New Window", driver.getTitle());
+
+        // Switch back to the original window
+        driver.switchTo().window(originalHandle);
+
+        // Assert that we are back on the original window page
+        assertEquals("Opening a new window", driver.getTitle());
+    }
+
+    @Test
+    public void testNotificationMessage() {
+        // Navigate to the Notification Message page
+        NotificationMessagePage messagePage = NotificationMessagePage.navigateToNotificationMessagePage(driver, baseUrl);
+
+        // Click the "Click here" link multiple times to trigger notification messages
+        for (int i = 0; i < 5; i++) {
+            messagePage.clickHereLink();
+            assertTrue(messagePage.isNotificationDisplayed());
+        }
+    }
+    
+    @Test
+    public void testFileDownload() {
+        // Navigate to File Download page
+        driver.get(baseUrl + "/download");
+
+        // Find and click the file download link
+        driver.findElement(By.cssSelector(".example a")).click();
+
+        // Wait for the download to complete
+        File downloadedFile = new File(System.getProperty("user.dir") + "/src/test/resources/test.txt");
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until((WebDriver wd) -> downloadedFile.exists());
+
+        // Verify that the downloaded file exists
+        assertTrue(downloadedFile.exists());
+    }
+
+    @Test
+    public void testFileUpload() {
+        // Navigate to File Upload page
+        driver.get(baseUrl + "/upload");
+
+        // Find and upload the file
+        WebElement fileInput = driver.findElement(By.id("file-upload"));
+        fileInput.sendKeys(System.getProperty("user.dir") + "/src/test/resources/test.txt");
+
+        // Click the upload button
+        driver.findElement(By.id("file-submit")).click();
+
+        // Wait for the upload to complete
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("uploaded-files")));
+
+        // Verify that the uploaded file is displayed on the page
+        WebElement uploadedFile = driver.findElement(By.id("uploaded-files"));
+        assertEquals(uploadedFile.getText(), "test.txt");
+    }
+
+    @Test
+    public void testFloatingMenu() {
+        // Navigate to Floating Menu page
+        driver.get(baseUrl + "/floating_menu");
+
+        // Scroll down to the menu and verify that it is displayed
+        WebElement menu = driver.findElement(By.cssSelector(".sticky"));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(menu).perform();
+        assertTrue(menu.isDisplayed());
+    }
+
+    @Test
+    public void testIframe() {
+        // Navigate to Iframe page
+        driver.get(baseUrl + "/iframe");
+
+        // Switch to the iframe and enter some text
+        driver.switchTo().frame(driver.findElement(By.id("mce_0_ifr")));
+        driver.findElement(By.id("tinymce")).sendKeys("Hello World!");
+
+        // Switch back to the main page and verify that the text is displayed
+        driver.switchTo().defaultContent();
+        WebElement text = driver.findElement(By.xpath("//p[contains(text(),'Your content goes here.')]"));
+        assertEquals(text.getText(), "Your content goes here.Hello World!");
+    }
+
+  }
