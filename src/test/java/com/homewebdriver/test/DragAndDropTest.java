@@ -1,32 +1,31 @@
 package com.homewebdriver.test;
 
-import com.homewebdriver.webpages.ContextMenuPage;
 import com.homewebdriver.webpages.DragAndDropPage;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class DragAndDropTest {
     WebDriver driver;
-    @Before
+    @BeforeTest
     public void setup(){
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\mvidh\\Downloads\\chromedriver_win32\\chromedriver.exe");
+         String path = System.getProperty("user.dir");
+ System.setProperty("webdriver.chrome.driver",path+"\\src\\driver\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @Test
+    @Test()
     public void dragAndDropFunc() {
         DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
         dragAndDropPage.dragAndDrop();
     }
 
-    @After
+    @AfterTest
     public void close(){
         driver.close();
     }

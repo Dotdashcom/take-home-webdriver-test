@@ -2,25 +2,28 @@ package com.homewebdriver.test;
 
 import com.homewebdriver.webpages.DragAndDropPage;
 import com.homewebdriver.webpages.DropdownPage;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class DropdownTest {
 
     WebDriver driver;
-    @Before
+    @BeforeTest
     public void setup(){
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\mvidh\\Downloads\\chromedriver_win32\\chromedriver.exe");
+         String path = System.getProperty("user.dir");
+ System.setProperty("webdriver.chrome.driver",path+"\\src\\driver\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @Test
+    @Test()
     public void dropDownFunc() {
         DropdownPage dropdownPage = new DropdownPage(driver);
         dropdownPage.selectValueFromDropdown("Index");
@@ -28,7 +31,7 @@ public class DropdownTest {
         dropdownPage.selectValueFromDropdown("Value");
     }
 
-    @After
+    @AfterTest
     public void close(){
         driver.close();
     }

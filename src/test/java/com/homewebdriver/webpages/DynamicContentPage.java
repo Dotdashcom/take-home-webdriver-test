@@ -23,7 +23,6 @@ public class DynamicContentPage {
 
     }
     public List<String> getContentsInPage(){
-//        WebElement contentInPage = driver.findElement(By.xpath("//div[@class='large-10 columns']"));
         List<WebElement> contents = driver.findElements(contentInPage);
         List<String> contentsInPage = null;
         for(WebElement content : contents) {

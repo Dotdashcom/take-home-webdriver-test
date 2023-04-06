@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static java.time.Duration.ofMillis;
 
 public class DynamicControlsPage {
     static WebDriver driver;
@@ -32,7 +36,6 @@ public class DynamicControlsPage {
     @FindBy(xpath = "//button[contains(text(),'Disable')]")
     public WebElement disableButton;
 
-
     public DynamicControlsPage(final WebDriver driver){
         this.driver=driver;
         driver.get(DYNAMIC_CONTROL_URL);
@@ -44,13 +47,15 @@ public class DynamicControlsPage {
         Boolean flag = false;
         if(checkBox.isDisplayed()){
             removeButton.click();
-            Thread.sleep(3000);
+            WebDriverWait wait = new WebDriverWait(driver,ofMillis(10000));
+            wait.until(ExpectedConditions.visibilityOf(responseMessage));
              flag = responseMessage.getText().equals("It's gone!");
             return flag;
         }
         else if(addButton.isDisplayed()){
             addButton.click();
-            Thread.sleep(3000);
+            WebDriverWait wait = new WebDriverWait(driver,ofMillis(10000));
+            wait.until(ExpectedConditions.visibilityOf(responseMessage));
             flag = checkBox.isDisplayed() && responseMessage.getText().equals("It's back!");
             return flag;
 
@@ -62,13 +67,15 @@ public class DynamicControlsPage {
         Boolean flag = false;
         if(!textBox.isEnabled()){
             enableButton.click();
-            Thread.sleep(3000);
+            WebDriverWait wait = new WebDriverWait(driver,ofMillis(10000));
+            wait.until(ExpectedConditions.visibilityOf(responseMessage));
            flag = textBox.isEnabled() && responseMessage.getText().equals("It's enabled!");
             return flag;
         }
         else if(textBox.isEnabled() && disableButton.isDisplayed()){
             disableButton.click();
-            Thread.sleep(3000);
+            WebDriverWait wait = new WebDriverWait(driver,ofMillis(10000));
+            wait.until(ExpectedConditions.visibilityOf(responseMessage));
             Boolean flag1 = textBox.isEnabled();
             Boolean flag2 = responseMessage.getText().equals("It's disabled!");
             if(flag1 == false && flag2 == true){

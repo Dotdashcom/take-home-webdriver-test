@@ -22,7 +22,17 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>1.6.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-engine</artifactId>
+            <version>1.6.0</version>
+        </dependency>
         <!-- Selenium -->
 
         <dependency>
@@ -47,6 +57,11 @@
             <artifactId>selenium-api</artifactId>
             <version>4.8.3</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.7.0</version>
         </dependency>
 
     </dependencies>
