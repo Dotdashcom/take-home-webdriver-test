@@ -45,6 +45,13 @@ public abstract class BasePage {
         menu.click();
     }
 
+    public void navigateByTextLink(String text){
+        String xpath = "//a[contains(text(),'"+text+"')]";
+        WebElement link = driver.findElement(By.xpath(xpath));
+        waitforVisibilityandClickable(link);
+        link.click();
+    }
+
     public boolean isAlertPresent()
     {
         try
@@ -56,6 +63,10 @@ public abstract class BasePage {
         {
             return false;
         }   // catch
+    }
+
+    public void refreshPage(){
+        driver.navigate().refresh();
     }
 
 

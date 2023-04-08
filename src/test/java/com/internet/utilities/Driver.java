@@ -32,12 +32,10 @@ public class Driver {
             switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                    String home = System.getProperty("user.dir");
-                    String downloadFilepath = home;
+                    String home = System.getProperty("user.home");
+                    String downloadFilepath = home+"/Downloads/";
                     Map<String, Object> chromePrefs = new HashMap<String, Object>();
                     chromePrefs.put("plugins.plugins_disabled", new String[] { "Chrome PDF Viewer" });
-                    chromePrefs.put("plugins.always_open_pdf_externally", true);
-                    chromePrefs.put("download.extensions_to_open", "applications/pdf");
                     chromePrefs.put("download.prompt_for_download", false);
                     chromePrefs.put("profile.default_content_settings.popups", 0);
                     chromePrefs.put("download.default_directory", downloadFilepath);
