@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: tech.grasshopper:extentreports-cucumber7-adapter:1.8.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/tech/grasshopper/extentreports-cucumber7-adapter/1.8.0/extentreports-cucumber7-adapter-1.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/tech/grasshopper/extentreports-cucumber7-adapter/1.8.0/extentreports-cucumber7-adapter-1.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/tech/grasshopper/extentreports-cucumber7-adapter/1.8.0/extentreports-cucumber7-adapter-1.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
