@@ -1,6 +1,6 @@
 Feature: Dropdrop operations
 
-
+    @Test
   Scenario: As a User I want to be able to use dropdown to select option1 and option2
       Given User is on Landing page
       And User clicks on "Dropdown" submenu

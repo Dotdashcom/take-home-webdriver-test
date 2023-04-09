@@ -69,5 +69,9 @@ public abstract class BasePage {
         driver.navigate().refresh();
     }
 
+    public void navigateToUrl(String url) {
+        driver.manage().window().maximize();
+        driver.get(url);
+    }
 
 }

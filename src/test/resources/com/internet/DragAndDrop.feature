@@ -1,6 +1,6 @@
 Feature: Drag and Drop Operations
 
-
+  @Test
   Scenario: As a User I want to be able to drag and Drop from point A to B
     Given User is on Landing page
     And User clicks on "Drag and Drop" submenu

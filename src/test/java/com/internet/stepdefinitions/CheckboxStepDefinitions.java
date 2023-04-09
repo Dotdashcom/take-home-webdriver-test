@@ -21,7 +21,11 @@ public class CheckboxStepDefinitions {
     }
     @Given("User clicks on {string} submenu")
     public void user_clicks_on_submenu(String subMenu) {
-        checkboxPage.navigateByLink(subMenu);
+        if (subMenu.equals("Iframe Menu")) {
+            checkboxPage.navigateToUrl("http://localhost:7080/iframe ");
+        } else {
+            checkboxPage.navigateByLink(subMenu);
+        }
     }
 
     @When("User clicks on first checkbox")

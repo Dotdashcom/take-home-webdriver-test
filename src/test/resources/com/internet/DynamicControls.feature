@@ -1,6 +1,6 @@
 Feature: Dynamic Controls Operations
 
-
+  @Test
   Scenario: As a User I want to be able to witness the miracle of sync solutions
     Given User is on Landing page
     And User clicks on "Dynamic Controls" submenu

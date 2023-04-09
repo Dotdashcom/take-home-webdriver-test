@@ -5,7 +5,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.jupiter.api.Assertions;
 
-import java.rmi.UnexpectedException;
 
 public class ContextMenuStepDefinitions {
 

@@ -1,6 +1,6 @@
 Feature: Login Operations
 
-  @positive
+  @positive  @Test
   Scenario: As a user with valid credentials, I would like be able to login
       When User is on Login Portal
       And User enters valid credentials
@@ -8,7 +8,7 @@ Feature: Login Operations
 
 
 
-  @negative
+  @negative  @Test
   Scenario: As a user with invalid credentials, I would like to be prevented from login
       When User is on Login Portal
       And User enters invalid credentials as "Splunk" and "WireShark"

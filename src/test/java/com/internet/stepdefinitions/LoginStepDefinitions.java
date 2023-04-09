@@ -3,13 +3,10 @@ package com.internet.stepdefinitions;
 import com.internet.pages.LoginPage;
 import com.internet.utilities.ConfigurationReader;
 import com.internet.utilities.Driver;
-import com.internet.utilities.Wait;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
-
-import java.nio.file.Watchable;
 
 public class LoginStepDefinitions {
 

@@ -1,6 +1,5 @@
 package com.internet.pages;
 
-import com.internet.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;

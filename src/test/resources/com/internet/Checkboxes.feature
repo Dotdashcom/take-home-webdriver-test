@@ -1,6 +1,6 @@
 Feature: Checkbox validation operation
 
-
+    @Test
   Scenario: As a user I want to be able to click on checkbox
       Given User is on Landing page
       And User clicks on "Checkboxes" submenu
