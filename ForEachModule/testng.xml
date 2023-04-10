@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="navpreet.Tests.MultipleWindowsTest"/>
+      <class name="navpreet.Tests.FileDownloadTest"/>
+      <class name="navpreet.Tests.FileUploadTest"/>
+      <class name="navpreet.Tests.FloatingMenuTest"/>
+      <class name="navpreet.Tests.DynamicControlsTest"/>
+      <class name="navpreet.Tests.LoginTest"/>
+      <class name="navpreet.Tests.IFrameTest"/>
+      <class name="navpreet.Tests.DragAndDropTest"/>
+      <class name="navpreet.Tests.ContextMenuTest"/>
+      <class name="navpreet.Tests.NotificationMessageTest"/>
+      <class name="navpreet.Tests.CheckBoxTest"/>
+      <class name="navpreet.Tests.DynamicContentTest"/>
+      <class name="navpreet.Tests.JavaScriptErrorTest"/>
+      <class name="navpreet.Tests.DynamicLoadingTest"/>
+      <class name="navpreet.Tests.JavaScriptAlertsTest"/>
+      <class name="navpreet.Tests.MouseHoverTest"/>
+      <class name="navpreet.Tests.DropDownTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
