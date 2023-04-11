@@ -10,11 +10,19 @@
         </classes>
     </test>
 
-    <test name="checkboxes">
+    <test name="checkboxes" enabled="false">
         <parameter name="browser" value="chrome"/>
         <parameter name="URL" value="http://localhost:7080/checkboxes"/>
         <classes>
             <class name="checkboxes_tests.CheckBoxTest"/>
+        </classes>
+    </test>
+
+    <test name="contextMenu test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/context_menu"/>
+        <classes>
+            <class name="context_menu_test.ContextMenuTest"/>
         </classes>
     </test>
 
