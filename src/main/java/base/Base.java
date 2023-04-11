@@ -48,7 +48,7 @@ public class Base {
 
     @BeforeMethod
     @Parameters({"browser", "URL"})
-    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/context_menu") String URL) {
+    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/drag_and_drop") String URL) {
         initDriver(browser);
         driver.get(URL);
         driver.manage().window().maximize();
@@ -60,11 +60,11 @@ public class Base {
                 .pollingEvery(Duration.ofMillis(500))
                 .ignoring(Exception.class);
     }
-//
-//    @AfterMethod
-//    public void tearDown() {
-//        driver.quit();
-//    }
+
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
+    }
 
     //helper methods
     public void waitForVisibilityOfElement(WebElement element) {

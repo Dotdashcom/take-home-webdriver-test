@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">contextMenu test</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">3.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">drag and drop test</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">5.1 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">contextMenu test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">context_menu_test.ContextMenuTest</td><td><a href="#m1"><b>rightClickUsingJsTest</b>  </a></td><td class="numi">1</td><td>1681218908944</td><td class="numi">32</td></tr><tr class="passedodd"><td><a href="#m2"><b>rightClickTest</b>  </a></td><td class="numi">1</td><td>1681218907554</td><td class="numi">219</td></tr>
+<tr id="t2"><th colspan="5">drag and drop test &#8212; passed</th></tr>
+<tr class="passedodd"><td>drag_and_drop_test.DragAndDropTest</td><td><a href="#m3"><b>testDragAndDropUsingJavascriptExecutor</b>  </a></td><td class="numi">1</td><td>1681218910144</td><td class="numi">72</td></tr>
+</table>
+<h1>contextMenu test</h1>
+<h2 id="m1">context_menu_test.ContextMenuTest:rightClickUsingJsTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">context_menu_test.ContextMenuTest:rightClickTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>drag and drop test</h1>
+<h2 id="m3">drag_and_drop_test.DragAndDropTest:testDragAndDropUsingJavascriptExecutor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

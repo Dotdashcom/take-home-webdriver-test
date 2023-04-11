@@ -26,5 +26,13 @@
         </classes>
     </test>
 
+    <test name="drag and drop test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/drag_and_drop"/>
+        <classes>
+            <class name="drag_and_drop_test.DragAndDropTest"/>
+        </classes>
+    </test>
+
 
 </suite>
