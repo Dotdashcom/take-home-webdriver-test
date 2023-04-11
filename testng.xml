@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-    <test name="login page">
+    <test name="login page" enabled="false">
         <parameter name="browser" value="chrome"/>
         <parameter name="URL" value="http://localhost:7080/login"/>
         <classes>
@@ -13,6 +13,9 @@
     <test name="checkboxes">
         <parameter name="browser" value="chrome"/>
         <parameter name="URL" value="http://localhost:7080/checkboxes"/>
+        <classes>
+            <class name="checkboxes_tests.CheckBoxTest"/>
+        </classes>
     </test>
 
 

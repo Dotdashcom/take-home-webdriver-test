@@ -50,7 +50,7 @@ public class Base {
 
     @BeforeMethod
     @Parameters({"browser", "URL"})
-    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/login") String URL) {
+    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/checkboxes") String URL) {
         initDriver(browser);
         driver.get(URL);
         driver.manage().window().maximize();
@@ -66,7 +66,6 @@ public class Base {
     @AfterMethod
     public void tearDown() {
         driver.quit();
-
     }
 
     //helper methods
