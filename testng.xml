@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test name="login page">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/login"/>
+        <classes>
+            <class name="login_page_tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="checkboxes">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/checkboxes"/>
+    </test>
+
+
+</suite>
