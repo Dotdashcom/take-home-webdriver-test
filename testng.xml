@@ -33,6 +33,13 @@
             <class name="drag_and_drop_test.DragAndDropTest"/>
         </classes>
     </test>
+    <test name="dropdown test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/dropdown"/>
+        <classes>
+            <class name="drop_down_tests.DropDownTest"/>
+        </classes>
+    </test>
 
 
 </suite>
