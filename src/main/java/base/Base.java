@@ -3,6 +3,7 @@ package base;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,7 +14,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -26,6 +26,8 @@ public class Base {
     public static WebDriverWait explicitWait;
     public static Wait<WebDriver> fluentWait;
     public static ExtentReports extent = new ExtentReports();
+    public static JavascriptExecutor jsDriver;
+
 
     public void initDriver(String browser) {
         ExtentSparkReporter spark = new ExtentSparkReporter("target/Spark.html");
@@ -48,7 +50,7 @@ public class Base {
 
     @BeforeMethod
     @Parameters({"browser", "URL"})
-    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/hovers") String URL) {
+    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/javascript_alerts") String URL) {
         initDriver(browser);
         driver.get(URL);
         driver.manage().window().maximize();
@@ -76,5 +78,11 @@ public class Base {
         explicitWait.until(ExpectedConditions.elementToBeClickable(element));
         element.click();
     }
+
+    public void jsClickOnElement(WebElement element) {
+        jsDriver = (JavascriptExecutor) (driver);
+        jsDriver.executeScript("arguments[0].click();", element);
+    }
+
 
 }

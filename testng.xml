@@ -82,5 +82,12 @@
             <class name="hover_test.HoverTest"/>
         </classes>
     </test>
+  <test name="alert test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/javascript_alerts"/>
+        <classes>
+            <class name="alert_tests.AlertTest"/>
+        </classes>
+    </test>
 
 </suite>
