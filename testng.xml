@@ -96,5 +96,12 @@
             <class name="javascript_error_page_test.JavaScriptErrorTest"/>
         </classes>
     </test>
+    <test name="open new tab test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/windows"/>
+        <classes>
+            <class name="new_tab_test.NewTabTest"/>
+        </classes>
+    </test>
 
 </suite>

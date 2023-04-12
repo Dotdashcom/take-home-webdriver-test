@@ -50,7 +50,7 @@ public class Base {
 
     @BeforeMethod
     @Parameters({"browser", "URL"})
-    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/javascript_error") String URL) {
+    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/windows") String URL) {
         initDriver(browser);
         driver.get(URL);
         driver.manage().window().maximize();
@@ -82,6 +82,14 @@ public class Base {
     public void jsClickOnElement(WebElement element) {
         jsDriver = (JavascriptExecutor) (driver);
         jsDriver.executeScript("arguments[0].click();", element);
+    }
+
+    public void switchWindow() {
+        String winHandleBefore = driver.getWindowHandle();
+// Switch to new window opened
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle);
+        }
     }
 
 
