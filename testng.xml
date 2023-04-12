@@ -75,5 +75,12 @@
             <class name="iframe_test.IframeTest"/>
         </classes>
     </test>
+    <test name="hover test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/hovers"/>
+        <classes>
+            <class name="hover_test.HoverTest"/>
+        </classes>
+    </test>
 
 </suite>
