@@ -61,20 +61,12 @@
             <class name="dynamic_loading_test.DynamicLoadingTest"/>
         </classes>
     </test>
-    <test name="download file test">
+    <test name="floating menu test">
         <parameter name="browser" value="chrome"/>
-        <parameter name="URL" value="http://localhost:7080/download"/>
+        <parameter name="URL" value="http://localhost:7080/floating_menu"/>
         <classes>
-            <class name="download_file_test.DownloadTest"/>
+            <class name="floating_menu_test.FloatingMenuTest"/>
         </classes>
     </test>
-    <test name="upload file test">
-        <parameter name="browser" value="chrome"/>
-        <parameter name="URL" value="http://localhost:7080/upload"/>
-        <classes>
-            <class name="upload_file_test.UploadFileTest"/>
-        </classes>
-    </test>
-
 
 </suite>
