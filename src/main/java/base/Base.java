@@ -50,7 +50,7 @@ public class Base {
 
     @BeforeMethod
     @Parameters({"browser", "URL"})
-    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/javascript_alerts") String URL) {
+    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/javascript_error") String URL) {
         initDriver(browser);
         driver.get(URL);
         driver.manage().window().maximize();

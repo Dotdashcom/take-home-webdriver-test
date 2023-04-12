@@ -89,5 +89,12 @@
             <class name="alert_tests.AlertTest"/>
         </classes>
     </test>
+    <test name="javascript error test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/javascript_error"/>
+        <classes>
+            <class name="javascript_error_page_test.JavaScriptErrorTest"/>
+        </classes>
+    </test>
 
 </suite>
