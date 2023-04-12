@@ -50,7 +50,7 @@ public class Base {
 
     @BeforeMethod
     @Parameters({"browser", "URL"})
-    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/windows") String URL) {
+    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/notification_message_rendered") String URL) {
         initDriver(browser);
         driver.get(URL);
         driver.manage().window().maximize();

@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-    <test name="login page" enabled="false">
+    <test name="login page">
         <parameter name="browser" value="chrome"/>
         <parameter name="URL" value="http://localhost:7080/login"/>
         <classes>
@@ -10,7 +10,7 @@
         </classes>
     </test>
 
-    <test name="checkboxes" enabled="false">
+    <test name="checkboxes" >
         <parameter name="browser" value="chrome"/>
         <parameter name="URL" value="http://localhost:7080/checkboxes"/>
         <classes>
@@ -101,6 +101,14 @@
         <parameter name="URL" value="http://localhost:7080/windows"/>
         <classes>
             <class name="new_tab_test.NewTabTest"/>
+        </classes>
+    </test>
+
+    <test name="notification message rendred test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/notification_message_rendered"/>
+        <classes>
+            <class name="message_notification_rendered_test.MessageNotificationTest"/>
         </classes>
     </test>
 
