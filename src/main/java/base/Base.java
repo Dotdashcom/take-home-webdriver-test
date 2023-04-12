@@ -48,7 +48,7 @@ public class Base {
 
     @BeforeMethod
     @Parameters({"browser", "URL"})
-    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/floating_menu") String URL) {
+    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/iframe") String URL) {
         initDriver(browser);
         driver.get(URL);
         driver.manage().window().maximize();

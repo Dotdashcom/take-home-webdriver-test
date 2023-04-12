@@ -68,5 +68,12 @@
             <class name="floating_menu_test.FloatingMenuTest"/>
         </classes>
     </test>
+    <test name="iframe test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/iframe"/>
+        <classes>
+            <class name="iframe_test.IframeTest"/>
+        </classes>
+    </test>
 
 </suite>
