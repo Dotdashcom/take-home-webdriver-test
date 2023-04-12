@@ -48,7 +48,7 @@ public class Base {
 
     @BeforeMethod
     @Parameters({"browser", "URL"})
-    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/dynamic_loading/2") String URL) {
+    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/download") String URL) {
         initDriver(browser);
         driver.get(URL);
         driver.manage().window().maximize();
@@ -69,6 +69,7 @@ public class Base {
     //helper methods
     public void waitForVisibilityOfElement(WebElement element) {
         explicitWait.until(ExpectedConditions.visibilityOf(element));
+
     }
 
     public void clickOnElement(WebElement element) {

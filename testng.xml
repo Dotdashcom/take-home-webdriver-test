@@ -54,11 +54,18 @@
             <class name="dynamic_controls_tests.DynamicControlsTest"/>
         </classes>
     </test>
-  <test name="dynamic loading test">
+    <test name="dynamic loading test">
         <parameter name="browser" value="chrome"/>
         <parameter name="URL" value="http://localhost:7080/dynamic_loading/2"/>
         <classes>
             <class name="dynamic_loading_test.DynamicLoadingTest"/>
+        </classes>
+    </test>
+    <test name="download file test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="hhttp://localhost:7080/download"/>
+        <classes>
+            <class name="download_file_test.DownloadTest"/>
         </classes>
     </test>
 
