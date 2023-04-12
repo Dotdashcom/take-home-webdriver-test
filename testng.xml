@@ -40,6 +40,13 @@
             <class name="drop_down_tests.DropDownTest"/>
         </classes>
     </test>
+    <test name="dynamic content reload page test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/dynamic_content"/>
+        <classes>
+            <class name="page_reload_content_changes_tests.PageReloadTest"/>
+        </classes>
+    </test>
 
 
 </suite>
