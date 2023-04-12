@@ -63,9 +63,16 @@
     </test>
     <test name="download file test">
         <parameter name="browser" value="chrome"/>
-        <parameter name="URL" value="hhttp://localhost:7080/download"/>
+        <parameter name="URL" value="http://localhost:7080/download"/>
         <classes>
             <class name="download_file_test.DownloadTest"/>
+        </classes>
+    </test>
+    <test name="upload file test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/upload"/>
+        <classes>
+            <class name="upload_file_test.UploadFileTest"/>
         </classes>
     </test>
 

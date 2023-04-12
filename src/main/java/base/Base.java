@@ -48,7 +48,7 @@ public class Base {
 
     @BeforeMethod
     @Parameters({"browser", "URL"})
-    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/download") String URL) {
+    public void setDriver(@Optional("chrome") String browser, @Optional("http://localhost:7080/upload") String URL) {
         initDriver(browser);
         driver.get(URL);
         driver.manage().window().maximize();
@@ -61,10 +61,10 @@ public class Base {
                 .ignoring(Exception.class);
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        driver.quit();
+//    }
 
     //helper methods
     public void waitForVisibilityOfElement(WebElement element) {
