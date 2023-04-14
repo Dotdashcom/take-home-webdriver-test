@@ -85,9 +85,9 @@ public class Base {
     }
 
     public void switchWindow() {
-        String winHandleBefore = driver.getWindowHandle();
+        String winHandle = driver.getWindowHandle();
 // Switch to new window opened
-        for (String winHandle : driver.getWindowHandles()) {
+        for (String winHandle : windHandle) {
             driver.switchTo().window(winHandle);
         }
     }
