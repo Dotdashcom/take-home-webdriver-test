@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test name="login page">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/login"/>
+        <classes>
+            <class name="login_page_tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="checkboxes" >
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/checkboxes"/>
+        <classes>
+            <class name="checkboxes_tests.CheckBoxTest"/>
+        </classes>
+    </test>
+
+    <test name="contextMenu test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/context_menu"/>
+        <classes>
+            <class name="context_menu_test.ContextMenuTest"/>
+        </classes>
+    </test>
+
+    <test name="drag and drop test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/drag_and_drop"/>
+        <classes>
+            <class name="drag_and_drop_test.DragAndDropTest"/>
+        </classes>
+    </test>
+    <test name="dropdown test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/dropdown"/>
+        <classes>
+            <class name="drop_down_tests.DropDownTest"/>
+        </classes>
+    </test>
+    <test name="dynamic content reload page test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/dynamic_content"/>
+        <classes>
+            <class name="page_reload_content_changes_tests.PageReloadTest"/>
+        </classes>
+    </test>
+    <test name="dynamic controls test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/dynamic_controls"/>
+        <classes>
+            <class name="dynamic_controls_tests.DynamicControlsTest"/>
+        </classes>
+    </test>
+    <test name="dynamic loading test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/dynamic_loading/2"/>
+        <classes>
+            <class name="dynamic_loading_test.DynamicLoadingTest"/>
+        </classes>
+    </test>
+    <test name="floating menu test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/floating_menu"/>
+        <classes>
+            <class name="floating_menu_test.FloatingMenuTest"/>
+        </classes>
+    </test>
+    <test name="iframe test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/iframe"/>
+        <classes>
+            <class name="iframe_test.IframeTest"/>
+        </classes>
+    </test>
+    <test name="hover test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/hovers"/>
+        <classes>
+            <class name="hover_test.HoverTest"/>
+        </classes>
+    </test>
+  <test name="alert test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/javascript_alerts"/>
+        <classes>
+            <class name="alert_tests.AlertTest"/>
+        </classes>
+    </test>
+    <test name="javascript error test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/javascript_error"/>
+        <classes>
+            <class name="javascript_error_page_test.JavaScriptErrorTest"/>
+        </classes>
+    </test>
+    <test name="open new tab test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/windows"/>
+        <classes>
+            <class name="new_tab_test.NewTabTest"/>
+        </classes>
+    </test>
+
+    <test name="notification message rendred test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="URL" value="http://localhost:7080/notification_message_rendered"/>
+        <classes>
+            <class name="message_notification_rendered_test.MessageNotificationTest"/>
+        </classes>
+    </test>
+
+</suite>
