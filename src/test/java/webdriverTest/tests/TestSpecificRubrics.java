@@ -1,6 +1,10 @@
 package webdriverTest.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -10,8 +14,6 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.*;
 import webdriverTest.pages.LoginPage;
 
 import java.io.File;
@@ -23,17 +25,17 @@ public class TestSpecificRubrics {
     protected static WebDriver driver;
 
 
-    @BeforeSuite
-    public void setUpMethod(){
+    @BeforeClass
+    public static void setUpMethod(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @AfterSuite
-    public void tearDownMethod(){
-        driver.quit();
+    @AfterClass
+    public static void tearDownMethod(){
+//        driver.quit();
     }
 
     @Test
@@ -62,9 +64,9 @@ public class TestSpecificRubrics {
     public void checkboxes(){
         driver.get("http://localhost:7080/checkboxes");
 
-        Assert.assertFalse(driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).isSelected(), "checkbox1 is not selected");
+        Assert.assertFalse("checkbox1 is not selected", driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).isSelected());
 
-        Assert.assertTrue(driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).isSelected(), "checkbox1 is not selected");
+        Assert.assertTrue("checkbox1 is not selected", driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).isSelected());
     }
 
     @Test
@@ -73,7 +75,9 @@ public class TestSpecificRubrics {
         Actions actions = new Actions(driver);
         WebElement box = driver.findElement(By.id("hot-spot"));
         actions.contextClick(box).perform();
-        Assert.assertEquals(driver.switchTo().alert().getText(), "You selected a context menu");
+        Alert alert = driver.switchTo().alert();
+        Assert.assertEquals(alert.getText(), "You selected a context menu");
+        alert.accept();
     }
 
     @Test
@@ -154,7 +158,7 @@ public class TestSpecificRubrics {
         Thread.sleep(2000);
         // Downloads
 
-        File fileLocation = new File("C:\\Users\\HP_001\\Downloads");
+        File fileLocation = new File("C:\\Users\\Ali\\Downloads");
 
         File [] files = fileLocation.listFiles();
         boolean downloadedOrNot = false;
@@ -166,13 +170,13 @@ public class TestSpecificRubrics {
                 break;
             }
         }
-        Assert.assertTrue(downloadedOrNot, "File not downloaded");
+        Assert.assertTrue("File not downloaded", downloadedOrNot);
     }
 
     @Test
     public void fileUpload(){
         driver.get("http://localhost:7080/upload");
-        driver.findElement(By.xpath("//input[@name=\"file\"]")).sendKeys("C:\\Users\\HP_001\\Downloads\\some-file.txt");
+        driver.findElement(By.xpath("//input[@name=\"file\"]")).sendKeys("C:\\Users\\Ali\\Downloads\\some-file.txt");
         driver.findElement(By.id("file-submit")).click();
         Assert.assertTrue(driver.findElement(By.xpath("//h3")).isDisplayed());
     }
@@ -282,6 +286,7 @@ public class TestSpecificRubrics {
                 try {
                     clickBtn.click();
                 } catch (StaleElementReferenceException e) {
+                    clickBtn = driver.findElement(By.partialLinkText("Click here"));
                     clickBtn.click();
                 }
             }
