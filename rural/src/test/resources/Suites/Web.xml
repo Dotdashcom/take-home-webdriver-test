@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="My Test Suite">
+    <test name="Main Page Test">
+        <classes>
+            <class name="com.rural.rural.testcases.MainPageTest" />
+        </classes>
+    </test>
+    <test name="Quotation Test">
+        <classes>
+            <class name="com.rural.rural.QuotationTest" />
+        </classes>
+    </test>
+</suite>
