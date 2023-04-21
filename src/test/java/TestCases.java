@@ -47,7 +47,8 @@ public class TestCases {
         internetLogin.login("tomsmith", "SuperSecretPassword!");
 
         // Verify that the login was successful based on the page URL
-        Assert.assertEquals(driver.getCurrentUrl(), internetSecurePage.getUrl());
+        Assert.assertEquals(driver.getCurrentUrl(), internetSecurePage.getUrl(),
+                "Login not successful, secure page was not loaded");
 
         // THIS IS IF WE WANT TO USE A WAIT INSTEAD OF JUST ASSERT TO ACCOUNT FOR LOAD TIME
         // Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
@@ -68,15 +69,14 @@ public class TestCases {
         internetLogin.login("fakeUsername", "fakePassword");
 
         // check if there's a username error
-        Assert.assertTrue(internetLogin.hasUsernameError());
+        Assert.assertTrue(internetLogin.hasUsernameError(),
+                "Does not show username error on incorrect username");
 
         // Test wrong username
         internetLogin.login("tomsmith", "fakePassword");
 
         // check if there's a password error
-        Assert.assertTrue(internetLogin.hasPasswordError());
+        Assert.assertTrue(internetLogin.hasPasswordError(),
+                "Does not show password error on incorrect password");
     }
-
-
-
 }
