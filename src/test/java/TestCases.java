@@ -157,4 +157,23 @@ public class TestCases {
         Assert.assertEquals(dragAndDropPage.getAText(), elementBText);
         Assert.assertEquals(dragAndDropPage.getBText(), elementAText);
     }
+
+    @Test
+    // Testcase 6
+    // Test selects Option 1 and Option 2 from the drop down menu.
+    public void dropdownVerify() {
+        DropdownPage dropdownPage = new DropdownPage(driver);
+        // Open dropdown page
+        driver.get(dropdownPage.getUrl());
+
+        dropdownPage.clickDropdown();
+        dropdownPage.clickOption("Option 1");
+
+        Assert.assertEquals(dropdownPage.getSelectedOption().getText(), "Option 1");
+
+        dropdownPage.clickDropdown();
+        dropdownPage.clickOption("Option 2");
+
+        Assert.assertEquals(dropdownPage.getSelectedOption().getText(), "Option 2");
+    }
 }
