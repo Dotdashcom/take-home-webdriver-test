@@ -8,4 +8,8 @@ public class BasePage {
     public String getBaseUrl() {
         return baseUrl;
     }
+
+    public void refreshPage() {
+        driver.navigate().refresh();
+    }
 }

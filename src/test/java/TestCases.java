@@ -6,6 +6,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Array;
+import java.util.Vector;
+
 public class TestCases {
 
     public static WebDriver driver;
@@ -175,5 +178,48 @@ public class TestCases {
         dropdownPage.clickOption("Option 2");
 
         Assert.assertEquals(dropdownPage.getSelectedOption().getText(), "Option 2");
+    }
+
+    @Test
+    // Testcase 7
+    // Test refreshes the page a couple of times.
+    // Test asserts that the content changes on each refresh.
+    public void dynamicContentVerify() {
+        DynamicPage dynamicPage = new DynamicPage(driver);
+        // Open dynamic content page
+        driver.get(dynamicPage.getUrl());
+
+        String[] imgSrcStrs = new String[3];
+        String[] textDescStrs = new String[3];
+
+        // get the initial values
+        for (int i = 0; i < 3; i++) {
+            imgSrcStrs[i] = dynamicPage.getRowImgSrc(i+1);
+            textDescStrs[i] = dynamicPage.getRowText(i+1);
+        }
+
+        // refresh 5 times to reduce chance of false fail assertations
+        for (int i = 0; i < 5; i++) {
+            dynamicPage.refreshPage();
+            // Compare image and text to see if there's a change
+            for (int j = 0; j < 3; j++) {
+                if (!imgSrcStrs[j].equals(dynamicPage.getRowImgSrc(j+1))) {
+                    imgSrcStrs[j] = "";
+                }
+                if (!textDescStrs[j].equals(dynamicPage.getRowText(j+1))) {
+                    textDescStrs[j] = "";
+                }
+            }
+        }
+
+        // Verify that all images have changed at least once
+        for (int i = 0; i < 3; i++) {
+            Assert.assertEquals(imgSrcStrs[i], "");
+        }
+
+        // Verify that all text has changed at least once
+        for (int i = 0; i < 3; i++) {
+            Assert.assertEquals(textDescStrs[i], "");
+        }
     }
 }
