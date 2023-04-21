@@ -2,15 +2,15 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TestCases {
 
     public static WebDriver driver;
 
-    @BeforeTest
+    @BeforeMethod
     public void setUp() {
         //setting path of chromedriver.exe
         System.setProperty("webdriver.chrome.driver", "C://Users//Kjuri//Documents//Chromedriver//chromedriver.exe");
@@ -22,12 +22,13 @@ public class TestCases {
         driver.manage().window().maximize();
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
         driver.quit();
     }
 
     @Test
+    // Testcase 1
     // Test is able to login successfully.
     public void loginSuccess() {
         LoginPage loginPage = new LoginPage(driver);
@@ -52,6 +53,7 @@ public class TestCases {
     }
 
     @Test
+    // Testcase 2
     // Test is not able to login with wrong credentials.
     public void loginFailure() {
         LoginPage loginPage = new LoginPage(driver);
@@ -74,6 +76,7 @@ public class TestCases {
     }
 
     @Test
+    // Testcase 3
     // Test checks and unchecks checkboxes
     public void checkboxVerify() {
         CheckboxPage checkboxPage = new CheckboxPage(driver);
@@ -108,6 +111,7 @@ public class TestCases {
     }
 
     @Test
+    // Testcase 4
     // Test right clicks on the context menu.
     public void contextBoxVerify() {
         ContextPage contextPage = new ContextPage(driver);
@@ -124,8 +128,33 @@ public class TestCases {
             Assert.fail("No alert was created on right click");
         }
 
+        String alertText = contextPage.getAlertText();
+
+        // Closing alert first in case of failure, to prevent future test cases
+        // from breaking because of unexpected alert open
+        contextPage.closeAlert();
+
         // Verify text is as expected
-        Assert.assertEquals(contextPage.getAlertText(), "You selected a context menu",
+        Assert.assertEquals(alertText, "You selected a context menu",
                 "Text in the alert does not equal \"You selected a context menu\"");
+    }
+
+    @Test
+    // Testcase 5
+    // Test drags element A to element B.
+    public void dragDropVerify() {
+        DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
+        // Open drag and drop page
+        driver.get(dragAndDropPage.getUrl());
+
+        String elementAText = dragAndDropPage.getAText();
+        String elementBText = dragAndDropPage.getBText();
+
+        // Drag and drop element A to element B
+        dragAndDropPage.dragAtoB();
+
+        // Assert that the text of the elements have been swapped after drag/drop
+        Assert.assertEquals(dragAndDropPage.getAText(), elementBText);
+        Assert.assertEquals(dragAndDropPage.getBText(), elementAText);
     }
 }
