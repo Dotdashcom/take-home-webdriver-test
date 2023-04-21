@@ -1,20 +1,18 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class InternetSecurePage {
-    private static WebDriver driver;
-
+public class SecurePage extends BasePage {
     private String path = "/secure";
+
     private By logoutButtonBy = By.xpath("//a[contains(@class,\"button\")]/i[contains(text(),\"Logout\")]");
     private By alertMessageBy = By.xpath("//div[@id='flash']");
 
-    InternetSecurePage(WebDriver webdriver) {
+    SecurePage(WebDriver webdriver) {
         driver = webdriver;
     }
     public String getUrl() {
-        InternetBase internetBase = new InternetBase();
-        String url = internetBase.getBaseUrl() + path;
+        BasePage basePage = new BasePage();
+        String url = basePage.getBaseUrl() + path;
         return url;
     }
 

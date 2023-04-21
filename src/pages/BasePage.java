@@ -1,7 +1,7 @@
 import org.openqa.selenium.WebDriver;
 
-public class InternetBase {
-    private static WebDriver driver;
+public class BasePage {
+    public WebDriver driver;
 
     private String baseUrl = "http://localhost:7080";
 

@@ -1,11 +1,9 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class InternetLogin {
-    private static WebDriver driver;
-
+public class LoginPage extends BasePage {
     private String path = "/login";
+
     private By usernameFieldBy = By.xpath("//input[@id='username']");
     private By passwordFieldBy = By.xpath("//input[@id='password']");
     private By submitButtonBy = By.xpath("//button[@type='submit']");
@@ -16,13 +14,12 @@ public class InternetLogin {
     private String usernameStr = "tomsmith";
     private String passwordStr = "SuperSecretPassword!";
 
-    InternetLogin(WebDriver webdriver) {
+    LoginPage(WebDriver webdriver) {
         driver = webdriver;
     }
 
     public String getUrl() {
-        InternetBase internetBase = new InternetBase();
-        String url = internetBase.getBaseUrl() + path;
+        String url = getBaseUrl() + path;
         return url;
     }
 

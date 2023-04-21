@@ -1,18 +1,9 @@
-import com.google.common.base.Verify;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import java.time.Duration;
 
 public class TestCases {
 
@@ -36,18 +27,19 @@ public class TestCases {
     }
 
     @Test
+    // Test is able to login successfully.
     public void loginSuccess() {
-        InternetLogin internetLogin = new InternetLogin(driver);
-        InternetSecurePage internetSecurePage = new InternetSecurePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SecurePage securePage = new SecurePage(driver);
 
         // Open Login page
-        driver.get(internetLogin.getUrl());
+        driver.get(loginPage.getUrl());
 
         // Login with username "tomsmith" and password "SuperSecretPassword!"
-        internetLogin.login("tomsmith", "SuperSecretPassword!");
+        loginPage.login("tomsmith", "SuperSecretPassword!");
 
         // Verify that the login was successful based on the page URL
-        Assert.assertEquals(driver.getCurrentUrl(), internetSecurePage.getUrl(),
+        Assert.assertEquals(driver.getCurrentUrl(), securePage.getUrl(),
                 "Login not successful, secure page was not loaded");
 
         // THIS IS IF WE WANT TO USE A WAIT INSTEAD OF JUST ASSERT TO ACCOUNT FOR LOAD TIME
@@ -59,24 +51,59 @@ public class TestCases {
     }
 
     @Test
+    // Test is not able to login with wrong credentials.
     public void loginFailure() {
-        InternetLogin internetLogin = new InternetLogin(driver);
-
+        LoginPage loginPage = new LoginPage(driver);
         // Open Login page
-        driver.get(internetLogin.getUrl());
+        driver.get(loginPage.getUrl());
 
         // Test wrong username
-        internetLogin.login("fakeUsername", "fakePassword");
+        loginPage.login("fakeUsername", "fakePassword");
 
         // check if there's a username error
-        Assert.assertTrue(internetLogin.hasUsernameError(),
+        Assert.assertTrue(loginPage.hasUsernameError(),
                 "Does not show username error on incorrect username");
 
         // Test wrong username
-        internetLogin.login("tomsmith", "fakePassword");
+        loginPage.login("tomsmith", "fakePassword");
 
         // check if there's a password error
-        Assert.assertTrue(internetLogin.hasPasswordError(),
+        Assert.assertTrue(loginPage.hasPasswordError(),
                 "Does not show password error on incorrect password");
     }
+
+    @Test
+    // Test checks and unchecks checkboxes
+    public void checkboxVerify() {
+        CheckboxPage checkboxPage = new CheckboxPage(driver);
+        // Open checkbox page
+        driver.get(checkboxPage.getUrl());
+
+        // Save current select values
+        boolean checkbox1IsChecked = checkboxPage.checkbox1IsChecked();
+        boolean checkbox2IsChecked = checkboxPage.checkbox2IsChecked();
+
+        // Select both checkboxes
+        checkboxPage.clickCheckbox1();
+        checkboxPage.clickCheckbox2();
+
+        // Verify values are no longer the same as before
+        Assert.assertNotEquals(checkbox1IsChecked, checkboxPage.checkbox1IsChecked(),
+                "Checkbox 1 did not change select status when clicked.");
+
+        Assert.assertNotEquals(checkbox2IsChecked, checkboxPage.checkbox2IsChecked(),
+                "Checkbox 2 did not change select status when clicked.");
+
+        // Select both checkboxes
+        checkboxPage.clickCheckbox1();
+        checkboxPage.clickCheckbox2();
+
+        // Verify values are changed back
+        Assert.assertEquals(checkbox1IsChecked, checkboxPage.checkbox1IsChecked(),
+                "Checkbox 1 did not change select status when clicked.");
+
+        Assert.assertEquals(checkbox2IsChecked, checkboxPage.checkbox2IsChecked(),
+                "Checkbox 2 did not change select status when clicked.");
+    }
+
 }
