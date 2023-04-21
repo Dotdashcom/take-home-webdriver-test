@@ -1,3 +1,4 @@
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -106,4 +107,25 @@ public class TestCases {
                 "Checkbox 2 did not change select status when clicked.");
     }
 
+    @Test
+    // Test right clicks on the context menu.
+    public void contextBoxVerify() {
+        ContextPage contextPage = new ContextPage(driver);
+        // Open Context page
+        driver.get(contextPage.getUrl());
+
+        // Right click context box
+        contextPage.rightClickContextBox();
+
+        // Check if an alert was created
+        try {
+            contextPage.accessAlert();
+        } catch (NoAlertPresentException e) {
+            Assert.fail("No alert was created on right click");
+        }
+
+        // Verify text is as expected
+        Assert.assertEquals(contextPage.getAlertText(), "You selected a context menu",
+                "Text in the alert does not equal \"You selected a context menu\"");
+    }
 }
