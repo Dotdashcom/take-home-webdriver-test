@@ -1,6 +1,4 @@
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -75,8 +73,7 @@ public class DynamicControlsPage extends BasePage {
 
     public boolean textboxEnabled() {
         WebElement textbox = driver.findElement(textInputBy);
-        boolean result = textbox.isEnabled();
-        return result;
+        return textbox.isEnabled();
     }
 
     public void waitForEnable(int timeoutSec) {

@@ -301,4 +301,22 @@ public class TestCases {
         Assert.assertFalse(dynamicControlsPage.textboxEnabled(),
                 "Textbox was not disabled when disabled button was clicked.");
     }
+
+    @Test
+    // Testcase 9
+    // Test clicks the start button and uses explicit wait, asserts that “Hello World!” text is displayed.
+    public void dynamicLoadingVerify() {
+        DynamicLoadingPage dynamicLoadingPage =  new DynamicLoadingPage(driver);
+        // Open dynamic loading page
+        driver.get(dynamicLoadingPage.getUrl());
+
+        // Click start button
+        dynamicLoadingPage.clickStartButton();
+
+        // Wait for load
+        dynamicLoadingPage.waitForLoad(30);
+
+        // Verify "Hello World!" is displayed
+        Assert.assertEquals(dynamicLoadingPage.getLoadedText(), "Hello World!");
+    }
 }
