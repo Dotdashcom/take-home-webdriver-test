@@ -1,6 +1,9 @@
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -157,8 +160,10 @@ public class TestCases {
         dragAndDropPage.dragAtoB();
 
         // Assert that the text of the elements have been swapped after drag/drop
-        Assert.assertEquals(dragAndDropPage.getAText(), elementBText);
-        Assert.assertEquals(dragAndDropPage.getBText(), elementAText);
+        Assert.assertEquals(dragAndDropPage.getAText(), elementBText,
+                "Text of the first element did not change after drag/drop.");
+        Assert.assertEquals(dragAndDropPage.getBText(), elementAText,
+                "Text of the second element did not change after drag/drop.");
     }
 
     @Test
@@ -184,6 +189,8 @@ public class TestCases {
     // Testcase 7
     // Test refreshes the page a couple of times.
     // Test asserts that the content changes on each refresh.
+    // ASSUMPTION: Icons occasionally stay the same after refresh is intended behavior
+    //             due to a limited pool of icons that are being randomly chosen
     public void dynamicContentVerify() {
         DynamicPage dynamicPage = new DynamicPage(driver);
         // Open dynamic content page
@@ -214,12 +221,84 @@ public class TestCases {
 
         // Verify that all images have changed at least once
         for (int i = 0; i < 3; i++) {
-            Assert.assertEquals(imgSrcStrs[i], "");
+            Assert.assertEquals(imgSrcStrs[i], "",
+                    "The image in row " + i + " did not change after " +
+                            "5 page refreshes. Verify if there is an issue.");
         }
 
         // Verify that all text has changed at least once
         for (int i = 0; i < 3; i++) {
-            Assert.assertEquals(textDescStrs[i], "");
+            Assert.assertEquals(textDescStrs[i], "",
+                    "The text in row " + i + " did not change after " +
+                            "5 page refreshes. Verify if there is an issue.");
         }
+    }
+
+    @Test
+    // Testcase 8.1
+    // Test Add/Remove Button, Enable/Disable Button
+    // NOTE: I broke up the 8th test into two separate test cases because it seemed more appropriate
+    public void dynamicControlsCheckboxVerify() {
+        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(driver);
+        // Open dynamic controls page
+        driver.get(dynamicControlsPage.getUrl());
+
+        // Verify checkbox exists
+        Assert.assertTrue(dynamicControlsPage.checkboxExists(),
+                "Checkbox does not exist in initial page load.");
+
+        // Click button to remove checkbox
+        dynamicControlsPage.clickRemoveButton();
+
+        // Wait for checkbox to be removed
+        dynamicControlsPage.waitForCheckboxRemoval(30);
+
+        // Verify checkbox is removed
+        Assert.assertFalse(dynamicControlsPage.checkboxExists(),
+                "Checkbox was not removed when remove button was clicked.");
+
+        // Click button to add checkbox
+        dynamicControlsPage.clickAddButton();
+
+        // Wait for checkbox to be added
+        dynamicControlsPage.waitForCheckboxAdd(30);
+
+        // Verify checkbox is added
+        Assert.assertTrue(dynamicControlsPage.checkboxExists(),
+                "Checkbox was not added when add button was clicked.");
+    }
+
+    @Test
+    // Testcase 8.2
+    // Test Enable/Disable Button
+    // NOTE: I broke up the 8th test into two separate test cases because it seemed more appropriate
+    public void dynamicControlsTextboxVerify() {
+        DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(driver);
+        // Open dynamic controls page
+        driver.get(dynamicControlsPage.getUrl());
+
+        // Verify textbox is by default enabled
+        Assert.assertFalse(dynamicControlsPage.isTextboxEnabled(),
+                "Unexpected situation where textbox is enabled at initialization.");
+
+        // Click button to enable textbox
+        dynamicControlsPage.clickEnableButton();
+
+        // Wait for textbox to be enabled
+        dynamicControlsPage.waitForEnable(30);
+
+        // Verify textbox is enabled
+        Assert.assertTrue(dynamicControlsPage.textboxEnabled(),
+                "Textbox was not enabled when enable button was clicked.");
+
+        // Click button to disable textbox
+        dynamicControlsPage.clickDisableButton();
+
+        // Wait for textbox to be disabled
+        dynamicControlsPage.waitForDisable(30);
+
+        // Verify textbox is disabled
+        Assert.assertFalse(dynamicControlsPage.textboxEnabled(),
+                "Textbox was not disabled when disabled button was clicked.");
     }
 }
