@@ -384,4 +384,21 @@ public class TestCases {
         Assert.assertTrue(floatingPage.floatingMenuVisibleCheck(),
                 "Floating menus are not still displayed in view.");
     }
+
+    @Test
+    // Textcase 13
+    // Test switches to Iframe and types some text, asserts that the typed text is as expected.
+    public void iframeVerify() {
+        IframePage iframePage = new IframePage(driver);
+        // Open iframe page
+        driver.get(iframePage.getUrl());
+
+        iframePage.waitForIframeLoad(10);
+
+        iframePage.clearIframeText();
+        iframePage.enterTextToIframe("Hello world");
+
+        Assert.assertEquals(iframePage.getIframeText(), "Hello world",
+                "Text unable to be entered into rich text editor.");
+    }
 }
