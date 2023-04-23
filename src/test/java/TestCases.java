@@ -333,4 +333,34 @@ public class TestCases {
         // Delete downloaded file
         fileDownloadPage.deleteDownloadedFile();
     }
+
+    @Test
+    // Testcase 11.1
+    // Test uses Upload Button to upload a file.
+    // NOTE: I broke up the 10th test into two separate test cases because it seemed more appropriate
+    public void fileUploadVerify() {
+        FileUploadPage fileUploadPage = new FileUploadPage(driver);
+        // Open file upload page
+        driver.get(fileUploadPage.getUrl());
+
+        fileUploadPage.addFileToInput();
+        fileUploadPage.clickSubmitButton();
+
+        Assert.assertTrue(fileUploadPage.verifyUpload());
+    }
+
+    @Test
+    // Testcase 11.2
+    // Test uses drag and drop to upload a file.
+    // NOTE: I broke up the 10th test into two separate test cases because it seemed more appropriate
+    // NOTE: Doesn't use a drag and drop motion to upload file. Might need to revisit.
+    public void fileDragDropVerify() {
+        FileUploadPage fileUploadPage = new FileUploadPage(driver);
+        // Open file upload page
+        driver.get(fileUploadPage.getUrl());
+
+        fileUploadPage.addFileToDragDrop();
+
+        Assert.assertTrue(fileUploadPage.verifyDragDropUpload());
+    }
 }
