@@ -34,9 +34,6 @@ public class FloatingPage extends BasePage {
         String jsElementInViewport =
                 "function isElementInViewport (el) {" +
                 "var rect = el.getBoundingClientRect();" +
-                "console.log(rect);" +
-                "console.log(window.innerHeight || document.documentElement.clientHeight);" +
-                "console.log(window.innerWidth || document.documentElement.clientWidth);" +
                 "return (" +
                 "(rect.top + rect.height) >= 0 && rect.left >= 0 &&" + // Made it top + height because its top is slightly cut off but still visible
                 "rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&" +
