@@ -401,4 +401,21 @@ public class TestCases {
         Assert.assertEquals(iframePage.getIframeText(), "Hello world",
                 "Text unable to be entered into rich text editor.");
     }
+
+    @Test
+    // Testcase 14
+    // Test does a mouse hover on each image asserts that additional information is displayed for each image.
+    public void hoverVerify() {
+        HoversPage hoversPage = new HoversPage(driver);
+        // Open hovers page
+        driver.get(hoversPage.getUrl());
+
+        int imagesCount = hoversPage.numImages();
+
+        for (int i = 0; i < imagesCount; i++) {
+            Assert.assertFalse(hoversPage.infoVisible(i));
+            hoversPage.hoverOverImage(i);
+            Assert.assertTrue(hoversPage.infoVisible(i));
+        }
+    }
 }
