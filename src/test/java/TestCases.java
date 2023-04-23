@@ -313,7 +313,8 @@ public class TestCases {
         dynamicLoadingPage.waitForLoad(30);
 
         // Verify "Hello World!" is displayed
-        Assert.assertEquals(dynamicLoadingPage.getLoadedText(), "Hello World!");
+        Assert.assertEquals(dynamicLoadingPage.getLoadedText(), "Hello World!",
+                "Hello World message was not loaded after clicking Start button.");
     }
 
     @Test
@@ -328,7 +329,8 @@ public class TestCases {
         fileDownloadPage.clickFileDownloadLink();
 
         // Wait at least 10 seconds to see if downloads
-        Assert.assertTrue(fileDownloadPage.waitForDownload(10, 1, downloadStartTime));
+        Assert.assertTrue(fileDownloadPage.waitForDownload(10, 1, downloadStartTime),
+                "Document was not downloaded within 10 seconds.");
 
         // Delete downloaded file
         fileDownloadPage.deleteDownloadedFile();
@@ -346,7 +348,8 @@ public class TestCases {
         fileUploadPage.addFileToInput();
         fileUploadPage.clickSubmitButton();
 
-        Assert.assertTrue(fileUploadPage.verifyUpload());
+        Assert.assertTrue(fileUploadPage.verifyUpload(),
+                "Standard input file upload is not working.");
     }
 
     @Test
@@ -361,6 +364,24 @@ public class TestCases {
 
         fileUploadPage.addFileToDragDrop();
 
-        Assert.assertTrue(fileUploadPage.verifyDragDropUpload());
+        Assert.assertTrue(fileUploadPage.verifyDragDropUpload(),
+                "Drag and Drop upload is not working.");
+    }
+
+    @Test
+    // Testcase 12
+    // Test scrolls the page, asserts that the floating menu is still displayed
+    // NOTE: I just realized I might have been able to mess with the div[@id='menu'] style
+    //       attribute to check if the height is same height as the viewport, but technically
+    //       the JS in the visibility check is more flexible so it should be okay.
+    public void floatingMenuVerify() {
+        FloatingPage floatingPage = new FloatingPage(driver);
+        // Open floating page
+        driver.get(floatingPage.getUrl());
+
+        floatingPage.scrollDown();
+
+        Assert.assertTrue(floatingPage.floatingMenuVisibleCheck(),
+                "Floating menus are not still displayed in view.");
     }
 }
