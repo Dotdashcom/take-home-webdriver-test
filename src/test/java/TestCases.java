@@ -493,4 +493,17 @@ public class TestCases {
         jsAlertsPage.dismissJSAlert();
         Assert.assertTrue(jsAlertsPage.jsPromptSuccessResult("null"));
     }
+
+    @Test
+    // Testcase 16
+    // Test finds the JavaScript error on the page,
+    //      asserts that the page contains error: Cannot read property 'xyz' of undefined.
+    public void jsErrorVerify() {
+        JSErrorPage jsErrorPage = new JSErrorPage(driver);
+        driver.get(jsErrorPage.getUrl());
+
+        jsErrorPage.saveErrorLog();
+        Assert.assertTrue(jsErrorPage.logContainsError("Cannot read properties of undefined (reading 'xyz')"),
+                "Unable to find error for \"Cannot read properties of undefined (reading 'xyz')\".");
+    }
 }
