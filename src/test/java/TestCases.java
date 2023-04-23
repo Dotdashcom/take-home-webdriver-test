@@ -418,4 +418,79 @@ public class TestCases {
             Assert.assertTrue(hoversPage.infoVisible(i));
         }
     }
+
+    @Test
+    // Testcase 15.1
+    // Test Clicks on JS Alert Button, asserts alert message.
+    // NOTE: I broke up the 15th test into 3 separate test cases because it seemed more appropriate
+    public void jsAlertButtonVerify() {
+        JSAlertsPage jsAlertsPage = new JSAlertsPage(driver);
+        // Open JS Alert page
+        driver.get(jsAlertsPage.getUrl());
+
+        // Test if alert is created and is accepted
+        jsAlertsPage.clickJSAlertButton();
+        jsAlertsPage.waitForJSAlert(10);
+        jsAlertsPage.acceptJSAlert();
+        Assert.assertTrue(jsAlertsPage.jsAlertSuccessResult());
+    }
+
+    @Test
+    // Testcase 15.2
+    // Test clicks on JS confirm Button and clicks ok on alert, asserts the alert message.
+    // NOTE: I broke up the 15th test into 3 separate test cases because it seemed more appropriate
+    public void jsConfirmButtonVerify() {
+        JSAlertsPage jsAlertsPage = new JSAlertsPage(driver);
+        // Open JS Alert page
+        driver.get(jsAlertsPage.getUrl());
+
+        // Test if confirm alert is created and is accepted
+        jsAlertsPage.clickJSConfirmButton();
+        jsAlertsPage.waitForJSAlert(10);
+        jsAlertsPage.acceptJSAlert();
+        Assert.assertTrue(jsAlertsPage.jsConfirmOKResult());
+
+        // Test if confirm alert is created and is dismissed
+        jsAlertsPage.clickJSConfirmButton();
+        jsAlertsPage.waitForJSAlert(10);
+        jsAlertsPage.dismissJSAlert();
+        Assert.assertTrue(jsAlertsPage.jsConfirmCancelResult());
+    }
+
+    @Test
+    // Testcase 15.3
+    // Test Clicks on JS Prompt Button and types a message on Prompt,
+    //      asserts that the alert message contains the typed message.
+    // NOTE: I broke up the 15th test into 3 separate test cases because it seemed more appropriate
+    public void jsPromptButtonVerify() {
+        JSAlertsPage jsAlertsPage = new JSAlertsPage(driver);
+        // Open JS Alert page
+        driver.get(jsAlertsPage.getUrl());
+
+        // Check prompt if no text is inputted and alert is accepted
+        jsAlertsPage.clickJSPromptButton();
+        jsAlertsPage.waitForJSAlert(10);
+        jsAlertsPage.acceptJSAlert();
+        Assert.assertTrue(jsAlertsPage.jsPromptSuccessResult(""));
+
+        // Check prompt if text is inputted and alert is accepted
+        jsAlertsPage.clickJSPromptButton();
+        jsAlertsPage.waitForJSAlert(10);
+        jsAlertsPage.enterPromptText("Test prompt input");
+        jsAlertsPage.acceptJSAlert();
+        Assert.assertTrue(jsAlertsPage.jsPromptSuccessResult("Test prompt input"));
+
+        // Check prompt if text is not inputted and alert is dismissed
+        jsAlertsPage.clickJSPromptButton();
+        jsAlertsPage.waitForJSAlert(10);
+        jsAlertsPage.dismissJSAlert();
+        Assert.assertTrue(jsAlertsPage.jsPromptSuccessResult("null"));
+
+        // Check prompt if text is inputted and alert is dismissed
+        jsAlertsPage.clickJSPromptButton();
+        jsAlertsPage.waitForJSAlert(10);
+        jsAlertsPage.enterPromptText("Test prompt input");
+        jsAlertsPage.dismissJSAlert();
+        Assert.assertTrue(jsAlertsPage.jsPromptSuccessResult("null"));
+    }
 }
