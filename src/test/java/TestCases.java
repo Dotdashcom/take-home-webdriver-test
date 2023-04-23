@@ -1,16 +1,12 @@
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.lang.reflect.Array;
-import java.util.Vector;
+import java.time.Instant;
 
 public class TestCases {
 
@@ -318,5 +314,23 @@ public class TestCases {
 
         // Verify "Hello World!" is displayed
         Assert.assertEquals(dynamicLoadingPage.getLoadedText(), "Hello World!");
+    }
+
+    @Test
+    // Testcase 10
+    // Test clicks on the file,  asserts that the file is downloaded.
+    public void fileDownloadVerify() {
+        FileDownloadPage fileDownloadPage = new FileDownloadPage(driver);
+        // Open file download page
+        driver.get(fileDownloadPage.getUrl());
+
+        long downloadStartTime = Instant.now().toEpochMilli();
+        fileDownloadPage.clickFileDownloadLink();
+
+        // Wait at least 10 seconds to see if downloads
+        Assert.assertTrue(fileDownloadPage.waitForDownload(10, 1, downloadStartTime));
+
+        // Delete downloaded file
+        fileDownloadPage.deleteDownloadedFile();
     }
 }
