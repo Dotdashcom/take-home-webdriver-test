@@ -1,10 +1,6 @@
 import org.openqa.selenium.*;
 
-import java.io.BufferedInputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Base64;
 
 public class FileUploadPage extends BasePage {
     private String path = "/upload";
@@ -48,17 +44,4 @@ public class FileUploadPage extends BasePage {
     public boolean verifyDragDropUpload() {
         return driver.findElement(dragDropUploadedBy).getText().equals(uploadFileName);
     }
-
-    public String convertFileToBase64String (String filename) throws IOException {
-        File file = new File(filename);
-        int length = (int) file.length();
-        BufferedInputStream reader = new BufferedInputStream(new FileInputStream(file));
-        byte[] bytes = new byte[length];
-        reader.read(bytes, 0, length);
-        reader.close();
-        String encodedFile = Base64.getEncoder().encodeToString(bytes);
-
-        return encodedFile;
-    }
-
 }
