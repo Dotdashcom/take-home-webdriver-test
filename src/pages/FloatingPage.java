@@ -25,8 +25,6 @@ public class FloatingPage extends BasePage {
     }
 
     public boolean elementInView(String elementXpathToCheck) {
-        WebElement homebutton = driver.findElement(By.xpath(elementXpathToCheck));
-
         String jsGetElementByXpath =
                 "function getElementByXpath(path) {" +
                 "return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;" +
@@ -46,8 +44,6 @@ public class FloatingPage extends BasePage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         Boolean isVisible = (Boolean) js.executeScript(jsGetElementByXpath + jsElementInViewport + jsVerifyElement);
 
-        Point location = homebutton.getLocation();
-
         return isVisible;
     }
 
@@ -62,5 +58,4 @@ public class FloatingPage extends BasePage {
             System.out.println("Interrupted sleep.");
         }
     }
-
 }
