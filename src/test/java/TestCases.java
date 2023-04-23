@@ -506,4 +506,30 @@ public class TestCases {
         Assert.assertTrue(jsErrorPage.logContainsError("Cannot read properties of undefined (reading 'xyz')"),
                 "Unable to find error for \"Cannot read properties of undefined (reading 'xyz')\".");
     }
+
+    @Test
+    // Testcase 17
+    // Test clicks on the Click Here link, asserts that a new tab is opened with text New Window.
+    public void newWindowVerify() {
+        WindowsPage windowsPage = new WindowsPage(driver);
+        // Opens new window page
+        driver.get(windowsPage.getUrl());
+
+        // Get initial number of tabs open
+        int numOfTabs = windowsPage.numOfTabs();
+
+        windowsPage.clickNewWindowLink();
+
+        // Verify that one new tab has opened up
+        Assert.assertEquals(windowsPage.numOfTabs(), numOfTabs + 1,
+                "A new tab was not opened.");
+
+        numOfTabs = windowsPage.numOfTabs();
+
+        // Make sure newly opened tab is active
+        windowsPage.switchTabs(numOfTabs - 1);
+
+        // Verify that the correct tab opened
+        Assert.assertEquals(driver.getCurrentUrl(), windowsPage.getLinkUrl());
+    }
 }
