@@ -5,7 +5,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class IframePage extends BasePage {
     private String path = "/iframe";
 
-    private By iframeTextboxBy = By.xpath("//iframe[@id=\"mce_0_ifr\"]");
+    private By iframeBy = By.xpath("//iframe[@id=\"mce_0_ifr\"]");
     private By iframeBodyBy = By.xpath("//body[@id=\"tinymce\"]");
 
     IframePage(WebDriver webdriver) {
@@ -21,7 +21,7 @@ public class IframePage extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, timeoutSec);
 
         // Wait for iframe to load and switch to it
-        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iframeTextboxBy));
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iframeBy));
 
         // Wait for the text box inside iframe to be ready to recieve text
         wait.until(ExpectedConditions.elementToBeClickable(iframeBodyBy));
@@ -31,7 +31,7 @@ public class IframePage extends BasePage {
     }
 
     public void switchToIframe() {
-        WebElement iframe = driver.findElement(iframeTextboxBy);
+        WebElement iframe = driver.findElement(iframeBy);
 
         // switch to iframe
         driver.switchTo().frame(iframe);
@@ -67,11 +67,4 @@ public class IframePage extends BasePage {
         return text;
     }
 
-    private void threadSleep(int milliseconds) {
-        try {
-            Thread.sleep(milliseconds);
-        } catch (InterruptedException e) {
-            System.out.println("Interrupted sleep.");
-        }
-    }
 }
