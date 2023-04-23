@@ -8,11 +8,6 @@ public class FloatingPage extends BasePage {
     private String contactButtonXpath = "//div[@id='menu']//li[3]";
     private String aboutButtonXpath = "//div[@id='menu']//li[4]";
 
-    private By homeButtonBy = By.xpath(homeButtonXpath);
-    private By newsButtonBy = By.xpath(newsButtonXpath);
-    private By contactButtonBy = By.xpath(contactButtonXpath);
-    private By aboutButtonBy = By.xpath(aboutButtonXpath);
-
     FloatingPage(WebDriver webdriver) {
         driver = webdriver;
     }
