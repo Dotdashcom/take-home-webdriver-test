@@ -18,6 +18,7 @@ public class TestCases {
     @BeforeMethod
     public void setUp() {
         //setting path of chromedriver.exe
+        // Linux needs to set the permissions for chromedriver chmod 777
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "src" +
                 File.separator + "test" + File.separator + "TestFiles" + File.separator + "chromedriver");  // For Linux
         //      File.separator + "test" + File.separator + "TestFiles" + File.separator + "chromedriver.exe"); // For Windows
