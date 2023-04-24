@@ -1,11 +1,13 @@
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.time.Instant;
 import pages.*;
 
@@ -16,7 +18,9 @@ public class TestCases {
     @BeforeMethod
     public void setUp() {
         //setting path of chromedriver.exe
-        System.setProperty("webdriver.chrome.driver", "C://Users//Kjuri//Documents//Chromedriver//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "src" +
+                File.separator + "test" + File.separator + "TestFiles" + File.separator + "chromedriver");  // For Linux
+        //      File.separator + "test" + File.separator + "TestFiles" + File.separator + "chromedriver.exe"); // For Windows
 
         //to launch the chrome browser window
         driver = new ChromeDriver();
