@@ -35,7 +35,7 @@ public class TestCases {
         driver.quit();
     }
 
-    @Test
+    @Test (priority = 1)
     // Testcase 1
     // Test is able to login successfully.
     public void loginSuccess() {
@@ -60,7 +60,7 @@ public class TestCases {
         // wait.until(ExpectedConditions.urlMatches(internetSecurePage.getUrl()));
     }
 
-    @Test
+    @Test (priority = 2)
     // Testcase 2
     // Test is not able to login with wrong credentials.
     public void loginFailure() {
@@ -83,7 +83,7 @@ public class TestCases {
                 "Does not show password error on incorrect password");
     }
 
-    @Test
+    @Test (priority = 3)
     // Testcase 3
     // Test checks and unchecks checkboxes
     public void checkboxVerify() {
@@ -118,7 +118,7 @@ public class TestCases {
                 "Checkbox 2 did not change select status when clicked.");
     }
 
-    @Test
+    @Test (priority = 4)
     // Testcase 4
     // Test right clicks on the context menu.
     public void contextBoxVerify() {
@@ -147,7 +147,7 @@ public class TestCases {
                 "Text in the alert does not equal \"You selected a context menu\"");
     }
 
-    @Test
+    @Test (priority = 5)
     // Testcase 5
     // Test drags element A to element B.
     public void dragDropVerify() {
@@ -168,7 +168,7 @@ public class TestCases {
                 "Text of the second element did not change after drag/drop.");
     }
 
-    @Test
+    @Test (priority = 6)
     // Testcase 6
     // Test selects Option 1 and Option 2 from the drop down menu.
     public void dropdownVerify() {
@@ -187,7 +187,7 @@ public class TestCases {
         Assert.assertEquals(dropdownPage.getSelectedOption().getText(), "Option 2");
     }
 
-    @Test
+    @Test (priority = 7)
     // Testcase 7
     // Test refreshes the page a couple of times.
     // Test asserts that the content changes on each refresh.
@@ -236,7 +236,7 @@ public class TestCases {
         }
     }
 
-    @Test
+    @Test (priority = 8)
     // Testcase 8.1
     // Test Add/Remove Button, Enable/Disable Button
     // NOTE: I broke up the 8th test into two separate test cases because it seemed more appropriate
@@ -270,7 +270,7 @@ public class TestCases {
                 "Checkbox was not added when add button was clicked.");
     }
 
-    @Test
+    @Test (priority = 8)
     // Testcase 8.2
     // Test Enable/Disable Button
     // NOTE: I broke up the 8th test into two separate test cases because it seemed more appropriate
@@ -304,7 +304,7 @@ public class TestCases {
                 "Textbox was not disabled when disabled button was clicked.");
     }
 
-    @Test
+    @Test (priority = 9)
     // Testcase 9
     // Test clicks the start button and uses explicit wait, asserts that “Hello World!” text is displayed.
     public void dynamicLoadingVerify() {
@@ -323,7 +323,7 @@ public class TestCases {
                 "Hello World message was not loaded after clicking Start button.");
     }
 
-    @Test
+    @Test (priority = 10)
     // Testcase 10
     // Test clicks on the file,  asserts that the file is downloaded.
     public void fileDownloadVerify() {
@@ -342,7 +342,7 @@ public class TestCases {
         fileDownloadPage.deleteDownloadedFile();
     }
 
-    @Test
+    @Test (priority = 11)
     // Testcase 11.1
     // Test uses Upload Button to upload a file.
     // NOTE: I broke up the 10th test into two separate test cases because it seemed more appropriate
@@ -358,7 +358,7 @@ public class TestCases {
                 "Standard input file upload is not working.");
     }
 
-    @Test
+    @Test (priority = 11)
     // Testcase 11.2
     // Test uses drag and drop to upload a file.
     // NOTE: I broke up the 10th test into two separate test cases because it seemed more appropriate
@@ -374,7 +374,7 @@ public class TestCases {
                 "Drag and Drop upload is not working.");
     }
 
-    @Test
+    @Test (priority = 12)
     // Testcase 12
     // Test scrolls the page, asserts that the floating menu is still displayed
     // NOTE: I just realized I might have been able to mess with the div[@id='menu'] style
@@ -391,7 +391,7 @@ public class TestCases {
                 "Floating menus are not still displayed in view.");
     }
 
-    @Test
+    @Test (priority = 13)
     // Textcase 13
     // Test switches to Iframe and types some text, asserts that the typed text is as expected.
     public void iframeVerify() {
@@ -408,7 +408,7 @@ public class TestCases {
                 "Text unable to be entered into rich text editor.");
     }
 
-    @Test
+    @Test (priority = 14)
     // Testcase 14
     // Test does a mouse hover on each image asserts that additional information is displayed for each image.
     public void hoverVerify() {
@@ -425,7 +425,7 @@ public class TestCases {
         }
     }
 
-    @Test
+    @Test (priority = 15)
     // Testcase 15.1
     // Test Clicks on JS Alert Button, asserts alert message.
     // NOTE: I broke up the 15th test into 3 separate test cases because it seemed more appropriate
@@ -441,7 +441,7 @@ public class TestCases {
         Assert.assertTrue(jsAlertsPage.jsAlertSuccessResult());
     }
 
-    @Test
+    @Test (priority = 15)
     // Testcase 15.2
     // Test clicks on JS confirm Button and clicks ok on alert, asserts the alert message.
     // NOTE: I broke up the 15th test into 3 separate test cases because it seemed more appropriate
@@ -463,7 +463,7 @@ public class TestCases {
         Assert.assertTrue(jsAlertsPage.jsConfirmCancelResult());
     }
 
-    @Test
+    @Test (priority = 15)
     // Testcase 15.3
     // Test Clicks on JS Prompt Button and types a message on Prompt,
     //      asserts that the alert message contains the typed message.
@@ -500,7 +500,7 @@ public class TestCases {
         Assert.assertTrue(jsAlertsPage.jsPromptSuccessResult("null"));
     }
 
-    @Test
+    @Test (priority = 16)
     // Testcase 16
     // Test finds the JavaScript error on the page,
     //      asserts that the page contains error: Cannot read property 'xyz' of undefined.
@@ -513,7 +513,7 @@ public class TestCases {
                 "Unable to find error for \"Cannot read properties of undefined (reading 'xyz')\".");
     }
 
-    @Test
+    @Test (priority = 17)
     // Testcase 17
     // Test clicks on the Click Here link, asserts that a new tab is opened with text New Window.
     public void newWindowVerify() {
@@ -539,7 +539,7 @@ public class TestCases {
         Assert.assertEquals(driver.getCurrentUrl(), windowsPage.getLinkUrl());
     }
 
-    @Test
+    @Test (priority = 18)
     // Testcase 18
     // Test clicks on the Click Here link a multiple times,
     //      asserts that one of the “Action Successful”, “Action unsuccessful, please try again”
