@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.*;
-
 import java.io.File;
 
 public class FileUploadPage extends BasePage {

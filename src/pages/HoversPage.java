@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-
 import java.util.List;
 
 public class HoversPage extends BasePage {

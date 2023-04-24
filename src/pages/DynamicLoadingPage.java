@@ -4,8 +4,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
-
 public class DynamicLoadingPage extends BasePage {
     private String path = "/dynamic_loading/2";
 

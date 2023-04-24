@@ -2,8 +2,6 @@ package pages;
 
 import org.openqa.selenium.*;
 
-import java.util.ArrayList;
-
 public class NotificationMsgPage extends BasePage {
     private String path = "/notification_message_rendered";
 

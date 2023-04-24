@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 
 public class DropdownPage extends BasePage {
     private String path = "/dropdown";

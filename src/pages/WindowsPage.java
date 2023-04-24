@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.*;
-
 import java.util.ArrayList;
 
 public class WindowsPage extends BasePage {
