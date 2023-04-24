@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 
 import java.util.ArrayList;
@@ -11,7 +13,7 @@ public class NotificationMsgPage extends BasePage {
     // There's a typo in the message "Action unsuccesful", I'm assuming it should use what the page actually uses.
     private String[] validNotifMessages = {"Action successful", "Action unsuccesful, please try again", "Action unsuccessful"};
 
-    NotificationMsgPage(WebDriver webdriver) {
+    public NotificationMsgPage(WebDriver webdriver) {
         driver = webdriver;
     }
 
