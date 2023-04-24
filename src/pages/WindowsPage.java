@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 
 import java.util.ArrayList;
@@ -8,7 +10,7 @@ public class WindowsPage extends BasePage {
 
     private By newWindowLinkBy = By.xpath("//a[contains(text(), \"Click Here\")]");
 
-    WindowsPage(WebDriver webdriver) {
+    public WindowsPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

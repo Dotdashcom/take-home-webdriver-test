@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
@@ -15,7 +17,7 @@ public class JSErrorPage extends BasePage {
 
     private LogEntries entries;
 
-    JSErrorPage(WebDriver webdriver) {
+    public JSErrorPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

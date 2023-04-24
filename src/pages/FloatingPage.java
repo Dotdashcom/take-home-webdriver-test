@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 
 public class FloatingPage extends BasePage {
@@ -8,7 +10,7 @@ public class FloatingPage extends BasePage {
     private String contactButtonXpath = "//div[@id='menu']//li[3]";
     private String aboutButtonXpath = "//div[@id='menu']//li[4]";
 
-    FloatingPage(WebDriver webdriver) {
+    public FloatingPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

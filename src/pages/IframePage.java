@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,7 +10,7 @@ public class IframePage extends BasePage {
     private By iframeBy = By.xpath("//iframe[@id=\"mce_0_ifr\"]");
     private By iframeBodyBy = By.xpath("//body[@id=\"tinymce\"]");
 
-    IframePage(WebDriver webdriver) {
+    public IframePage(WebDriver webdriver) {
         driver = webdriver;
     }
 

@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -7,7 +9,7 @@ public class CheckboxPage extends BasePage {
     private By checkbox1By = By.xpath("//form[@id='checkboxes']/input[1]");
     private By checkbox2By = By.xpath("//form[@id='checkboxes']/input[2]");
 
-    CheckboxPage(WebDriver webdriver) {
+    public CheckboxPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

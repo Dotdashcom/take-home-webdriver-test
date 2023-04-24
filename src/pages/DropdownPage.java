@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
@@ -9,7 +11,7 @@ public class DropdownPage extends BasePage {
     private String partialOptionXpath = "//select[@id='dropdown']/option";
     private Alert contextAlert;
 
-    DropdownPage(WebDriver webdriver) {
+    public DropdownPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

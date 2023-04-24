@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -14,7 +16,7 @@ public class LoginPage extends BasePage {
     private String usernameStr = "tomsmith";
     private String passwordStr = "SuperSecretPassword!";
 
-    LoginPage(WebDriver webdriver) {
+    public LoginPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

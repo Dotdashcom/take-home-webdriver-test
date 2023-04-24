@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,7 +12,7 @@ public class DynamicLoadingPage extends BasePage {
     private By startButtonBy = By.xpath("//div[@id='start']/button");
     private By finishTextBy = By.xpath("//div[@id='finish']/h4");
 
-    DynamicLoadingPage(WebDriver webdriver) {
+    public DynamicLoadingPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

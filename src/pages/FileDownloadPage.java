@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,7 +21,7 @@ public class FileDownloadPage extends BasePage {
 
     private File downloadedFile = null;
 
-    FileDownloadPage(WebDriver webdriver) {
+    public FileDownloadPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

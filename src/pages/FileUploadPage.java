@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 
 import java.io.File;
@@ -15,7 +17,7 @@ public class FileUploadPage extends BasePage {
             File.separator + "test" + File.separator + "TestFiles";
     private String uploadFileName = "some-file.txt";
 
-    FileUploadPage(WebDriver webdriver) {
+    public FileUploadPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

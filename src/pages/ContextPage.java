@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
@@ -7,7 +9,7 @@ public class ContextPage extends BasePage {
     private By contextBoxBy = By.xpath("//div[@id='hot-spot']");
     private Alert contextAlert;
 
-    ContextPage(WebDriver webdriver) {
+    public ContextPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

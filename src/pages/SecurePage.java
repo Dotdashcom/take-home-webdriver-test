@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -7,7 +9,7 @@ public class SecurePage extends BasePage {
     private By logoutButtonBy = By.xpath("//a[contains(@class,\"button\")]/i[contains(text(),\"Logout\")]");
     private By alertMessageBy = By.xpath("//div[@id='flash']");
 
-    SecurePage(WebDriver webdriver) {
+    public SecurePage(WebDriver webdriver) {
         driver = webdriver;
     }
     public String getUrl() {

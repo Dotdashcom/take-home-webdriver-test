@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -8,7 +10,7 @@ public class DragAndDropPage extends BasePage {
     private By columnABy = By.xpath("//div[@id='column-a']");
     private By columnBBy = By.xpath("//div[@id='column-b']");
 
-    DragAndDropPage(WebDriver webdriver) {
+    public DragAndDropPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

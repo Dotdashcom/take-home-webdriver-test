@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
@@ -8,7 +10,7 @@ public class DynamicPage extends BasePage {
     private String colXpath = "/div";
     private String imgXpath = "/img";
 
-    DynamicPage(WebDriver webdriver) {
+    public DynamicPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

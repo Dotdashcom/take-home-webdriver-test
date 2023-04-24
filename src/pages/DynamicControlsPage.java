@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,7 +16,7 @@ public class DynamicControlsPage extends BasePage {
     private By textInputBy = By.xpath("//input[@type='text']");
     private By checkboxBy = By.xpath("//input[@type='checkbox']");
 
-    DynamicControlsPage(WebDriver webdriver) {
+    public DynamicControlsPage(WebDriver webdriver) {
         driver = webdriver;
     }
 

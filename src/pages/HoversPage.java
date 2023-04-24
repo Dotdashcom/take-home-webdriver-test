@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
@@ -9,7 +11,7 @@ public class HoversPage extends BasePage {
     private By imagesBy = By.xpath("//div[@class='figure']");
     private By infosBy = By.xpath("//div[@class='figcaption']");
 
-    HoversPage(WebDriver webdriver) {
+    public HoversPage(WebDriver webdriver) {
         driver = webdriver;
     }
 
