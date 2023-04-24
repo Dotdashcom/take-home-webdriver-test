@@ -533,4 +533,22 @@ public class TestCases {
         // Verify that the correct tab opened
         Assert.assertEquals(driver.getCurrentUrl(), windowsPage.getLinkUrl());
     }
+
+    @Test
+    // Testcase 18
+    // Test clicks on the Click Here link a multiple times,
+    //      asserts that one of the “Action Successful”, “Action unsuccessful, please try again”
+    //      and “Action Unsuccessful” messages show on click.
+    public void notificationMsgVerify() {
+        NotificationMsgPage notificationMsgPage = new NotificationMsgPage(driver);
+        // Open notification page
+        driver.get(notificationMsgPage.getUrl());
+
+        // Check message 10 times
+        for (int i = 0; i < 10; i++) {
+            notificationMsgPage.clickMessageLink();
+            Assert.assertTrue(notificationMsgPage.validNotifMessage(notificationMsgPage.getNotifMsg()),
+                    "Message was invalid: \"" + notificationMsgPage.getNotifMsg() + "\"");
+        }
+    }
 }
