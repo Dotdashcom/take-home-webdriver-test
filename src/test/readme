@@ -1,0 +1,10 @@
+Compiled using JDK 19
+Use Maven to install dependencies (pom.xml)
+Using Chrome version 112.0.5615.138 (Official Build) (64-bit)
+Using Chromedriver version 112.0.5615.49
+
+If testing on Windows:
+    Change chromedriver executable reference in SetUp() in TestCases.java to "chromedriver.exe"
+
+If testing on Linux:
+    Change chromedriver executable reference in SetUp() in TestCases.java to "chromedriver"
