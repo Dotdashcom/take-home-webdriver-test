@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 
-public class TestTasks extends src.test.java.tests.TestBase {
+public class TestTasks extends TestBase {
 
     String fileName = "/some-file.txt";
     String downloadPath = System.getProperty("user.home") + "/Downloads";

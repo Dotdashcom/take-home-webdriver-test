@@ -1,4 +1,4 @@
-package src.test.java.tests;
+package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;

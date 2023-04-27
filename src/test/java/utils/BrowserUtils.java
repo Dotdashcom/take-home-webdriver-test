@@ -20,17 +20,10 @@ public class BrowserUtils {
     public static void selectBy(WebElement locationBox, String value, String methodName) {
         Select select = new Select(locationBox);
         switch (methodName) {
-            case "text":
-                select.selectByVisibleText(value);
-                break;
-            case "value":
-                select.selectByValue(value);
-                break;
-            case "index":
-                select.selectByIndex(Integer.parseInt(value));
-                break;
-            default:
-                System.out.println("Method name is not available, Use text, value or index");
+            case "text" -> select.selectByVisibleText(value);
+            case "value" -> select.selectByValue(value);
+            case "index" -> select.selectByIndex(Integer.parseInt(value));
+            default -> System.out.println("Method name is not available, Use text, value or index");
         }
 
     }
@@ -41,26 +34,24 @@ public class BrowserUtils {
 
     public static String getTitleWithJs(WebDriver driver) {
         JavascriptExecutor js = (JavascriptExecutor)driver;
-        return js.executeScript("return document.title", new Object[0]).toString();
+        return js.executeScript("return document.title").toString();
     }
 
     public static void clickWithJS(WebDriver driver, WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor)driver;
-        js.executeScript("arguments[0].click()", new Object[]{element});
+        js.executeScript("arguments[0].click()", element);
     }
 
     public static void scrollIntoView(WebDriver driver, WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor)driver;
-        js.executeScript("arguments[0].scrollIntoView(true)", new Object[]{element});
+        js.executeScript("arguments[0].scrollIntoView(true)", element);
     }
 
     public static void switchById(WebDriver driver) {
         String mainPageId = driver.getWindowHandle();
         Set<String> allPagesId = driver.getWindowHandles();
-        Iterator var3 = allPagesId.iterator();
 
-        while(var3.hasNext()) {
-            String id = (String)var3.next();
+        for (String id : allPagesId) {
             if (!id.equals(mainPageId)) {
                 driver.switchTo().window(id);
             }
@@ -70,10 +61,8 @@ public class BrowserUtils {
 
     public static void switchByTitle(WebDriver driver, String title) {
         Set<String> allPagesId = driver.getWindowHandles();
-        Iterator var3 = allPagesId.iterator();
 
-        while(var3.hasNext()) {
-            String id = (String)var3.next();
+        for (String id : allPagesId) {
             driver.switchTo().window(id);
             if (driver.getTitle().contains(title)) {
                 break;
@@ -84,6 +73,6 @@ public class BrowserUtils {
 
     public static void dragAndDropUsingJavaScript(WebDriver driver, WebElement source, WebElement target) {
         JavascriptExecutor js = (JavascriptExecutor)driver;
-        js.executeScript("function createEvent(typeOfEvent) {\nvar event =document.createEvent(\"CustomEvent\");\nevent.initCustomEvent(typeOfEvent,true, true, null);\nevent.dataTransfer = {\ndata: {},\nsetData: function (key, value) {\nthis.data[key] = value;\n},\ngetData: function (key) {\nreturn this.data[key];\n}\n};\nreturn event;\n}\n\nfunction dispatchEvent(element, event,transferData) {\nif (transferData !== undefined) {\nevent.dataTransfer = transferData;\n}\nif (element.dispatchEvent) {\nelement.dispatchEvent(event);\n} else if (element.fireEvent) {\nelement.fireEvent(\"on\" + event.type, event);\n}\n}\n\nfunction simulateHTML5DragAndDrop(element, destination) {\nvar dragStartEvent =createEvent('dragstart');\ndispatchEvent(element, dragStartEvent);\nvar dropEvent = createEvent('drop');\ndispatchEvent(destination, dropEvent,dragStartEvent.dataTransfer);\nvar dragEndEvent = createEvent('dragend');\ndispatchEvent(element, dragEndEvent,dropEvent.dataTransfer);\n}\n\nvar source = arguments[0];\nvar destination = arguments[1];\nsimulateHTML5DragAndDrop(source,destination);", new Object[]{source, target});
+        js.executeScript("function createEvent(typeOfEvent) {\nvar event =document.createEvent(\"CustomEvent\");\nevent.initCustomEvent(typeOfEvent,true, true, null);\nevent.dataTransfer = {\ndata: {},\nsetData: function (key, value) {\nthis.data[key] = value;\n},\ngetData: function (key) {\nreturn this.data[key];\n}\n};\nreturn event;\n}\n\nfunction dispatchEvent(element, event,transferData) {\nif (transferData !== undefined) {\nevent.dataTransfer = transferData;\n}\nif (element.dispatchEvent) {\nelement.dispatchEvent(event);\n} else if (element.fireEvent) {\nelement.fireEvent(\"on\" + event.type, event);\n}\n}\n\nfunction simulateHTML5DragAndDrop(element, destination) {\nvar dragStartEvent =createEvent('dragstart');\ndispatchEvent(element, dragStartEvent);\nvar dropEvent = createEvent('drop');\ndispatchEvent(destination, dropEvent,dragStartEvent.dataTransfer);\nvar dragEndEvent = createEvent('dragend');\ndispatchEvent(element, dragEndEvent,dropEvent.dataTransfer);\n}\n\nvar source = arguments[0];\nvar destination = arguments[1];\nsimulateHTML5DragAndDrop(source,destination);", source, target);
     }
 }
