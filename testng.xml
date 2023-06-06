@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="dot dash Test Suite">
+
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="login success test ">
+		<parameter name="appUrl" value="/login"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.LogInPageTest"/>
+		</classes>
+	</test>
+ 
+	<test name="1.test login failure test">
+		<parameter name="appUrl" value="/login"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.InvalidLoginCredentials" />
+		</classes>
+	</test>
+	
+ 
+		<test name="2.checkBox Test case">
+		<parameter name="appUrl" value="/checkboxes"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.CheckboxesTest" />
+		</classes>
+	</test>
+
+	
+		<test name="3.ContextMenuTest">
+		<parameter name="appUrl" value="/context_menu"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.ContextMenuTest" />
+		</classes>
+	</test>  
+	
+			<test name="4. DragAndDrop Test">
+		<parameter name="appUrl" value="/drag_and_drop"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.DragAndDropTest" />
+		</classes>
+	</test> 
+		
+  
+		<test name="5. Contest change with reload Test">
+		<parameter name="appUrl" value="/dynamic_content"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.ContentBeforeAndAfterReload" />
+		</classes>
+	</test> 
+	
+	
+			<test name="6. Dynamic controls Test">
+		<parameter name="appUrl" value="/dynamic_controls"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.DynamicControlsTest" />
+		</classes>
+	</test> 
+
+	
+				<test name="7. Dynamic Loading">
+		<parameter name="appUrl" value="/dynamic_loading/2"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.DynamicLoadingTest" />
+		</classes>
+	</test> 
+		
+
+		<test name="8. File Download">
+		<parameter name="appUrl" value="/download"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.FileDownloadTest" />
+		</classes>
+	</test>
+	
+	
+			<test name="9. File Upload">
+		<parameter name="appUrl" value="/upload"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.FileUploadTest" />
+		</classes>
+	</test>
+
+		<test name="Test 13. IFrame">
+		<parameter name="appUrl" value="/iframe"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.ChangeFrame" />
+		</classes>
+	</test>
+		
+		
+		<test name="Test12: Floating menu">
+		<parameter name="appUrl" value="/floating_menu"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.Floatingmenu" />
+		</classes>
+	</test>
+
+	
+		<test name="14. Mouse hover">
+		<parameter name="appUrl" value="/hovers"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.MouseHoverTest" />
+		</classes>
+	</test>
+	
+		
+		<test name="15. JavaScript Alerts">
+		<parameter name="appUrl" value="/javascript_alerts"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.JavaScriptAlert" />
+		</classes>
+	</test>
+		
+		
+		<test name="16.JavaScript Error">
+		<parameter name="appUrl" value="/javascript_error"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.JsErrorsonWebPageTest" />
+		</classes>
+	</test>
+
+			<test name="17. Open in New Tab">
+		<parameter name="appUrl" value="/windows"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.LisnksOpenInNewWindowTest" />
+		</classes>
+	</test>
+	
+				<test name="18. Notification Message">
+		<parameter name="appUrl" value="/notification_message_rendered"></parameter>
+		<classes>
+			<class name="com.dotDash.tests.NotificationMsgTest" />
+		</classes>
+	</test>
+	
+</suite>

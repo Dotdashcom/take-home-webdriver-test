@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [dot dash Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="16.JavaScript Error(failed)">
+    <parameter name="appUrl" value="/javascript_error"/>
+    <classes>
+      <class name="com.dotDash.tests.JsErrorsonWebPageTest">
+        <methods>
+          <include name="checkJserrors"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dotDash.tests.JsErrorsonWebPageTest -->
+    </classes>
+  </test> <!-- 16.JavaScript Error(failed) -->
+</suite> <!-- Failed suite [dot dash Test Suite] -->
