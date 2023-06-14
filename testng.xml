@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+ <listeners>
+ <listener class-name=".Listeners">  </listener>
+ </listeners>
+ 
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name=".JavaScriptAlerts"/>
+      <class name=".DropDown"/>
+      <class name=".FileUpload"/>
+      <class name=".MouseHover"/>
+      <class name=".DynamicControl"/>
+      <class name=".DynamicLoading"/>
+      <class name=".OpenNewTab"/>
+      <class name=".Login"/>
+      <class name=".Iframes"/>
+      <class name=".DragAndDop"/>
+      <class name=".JavaScriptError"/>
+      <class name=".NotificationMsg"/>
+      <class name=".Checkboxes"/>
+      <class name=".FloatingMenu"/>
+      <class name=".ContextMenu"/>
+      <class name=".FileDownload"/>
+      <class name=".DynamicContect"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
