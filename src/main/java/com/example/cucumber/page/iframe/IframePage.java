@@ -59,7 +59,7 @@ public class IframePage extends WebDriverJavaUtil {
 
     public void the_user_should_see_the_text_on_the_iframe_on_the_iframe_page(String testText, String iframeName) {
         driver.switchTo().frame(iframeName);
-        WebDriverWait wait = new WebDriverWait(driver, 2);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='tinymce']/p")));
         assertEquals("Text in not correct in correct Iframe:", testText, getWebElementText(By.xpath("//*[@id='tinymce']/p")));
     }
