@@ -14,6 +14,9 @@ public class FloatingMenuTest extends BaseTest {
         floatingMenuPage.goTo();
         floatingMenuPage.menuBar();
         String text=floatingMenuPage.getText();
-        Assert.assertEquals(text,"Home\n News\n Contact\n About");
+        Assert.assertEquals(text,"Home\n" +
+                "News\n" +
+                "Contact\n" +
+                "About");
     }
 }

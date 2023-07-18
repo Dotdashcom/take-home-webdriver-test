@@ -9,17 +9,19 @@ import testComponents.BaseTest;
 public class DynamicControlsTest extends BaseTest {
 
     @Test
-    public void dynamicControls(){
+    public void dynamicControls()  {
         DynamicControlsPage dynamicCntrl=new DynamicControlsPage(driver);
         dynamicCntrl.goTo();
         dynamicCntrl.clickOnRemove();
-        Assert.assertFalse(dynamicCntrl.checkboxDisplay());
+        boolean text=dynamicCntrl.message();
+        System.out.println(text);
+        Assert.assertTrue(text);
         dynamicCntrl.cilckAdd();
         Assert.assertTrue(dynamicCntrl.checkboxDisplay());
         dynamicCntrl.clickEnable();
-        Assert.assertFalse(dynamicCntrl.bar());
-        dynamicCntrl.clickDisable();
         Assert.assertTrue(dynamicCntrl.bar());
+        dynamicCntrl.clickDisable();
+        Assert.assertFalse(dynamicCntrl.bar());
 
 
 

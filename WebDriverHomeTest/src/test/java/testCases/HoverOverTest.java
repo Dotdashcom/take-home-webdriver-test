@@ -13,6 +13,7 @@ public class HoverOverTest extends BaseTest {
         HoverOverPage hoverOverPage=new HoverOverPage(driver);
         hoverOverPage.goTo();
         hoverOverPage.hoverover();
+        System.out.println(hoverOverPage.getText());
         Assert.assertEquals(hoverOverPage.getText(), new String[]{"name: user1\n" +
                 "View profile\n" +
                 "name: user2\n" +

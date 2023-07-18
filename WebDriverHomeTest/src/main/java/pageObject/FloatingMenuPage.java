@@ -37,7 +37,7 @@ public class FloatingMenuPage extends CommonApi {
             return text;
         }
 
-        return null;
+        return getText();
     }
 
 

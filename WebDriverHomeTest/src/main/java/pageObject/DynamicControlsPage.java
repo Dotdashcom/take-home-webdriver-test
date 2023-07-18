@@ -1,6 +1,7 @@
 package pageObject;
 
 import base.CommonApi;
+import com.sun.org.apache.bcel.internal.generic.ARETURN;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,11 +28,16 @@ public class DynamicControlsPage extends CommonApi {
     @FindBy(xpath = "//*[text()='Disable']")
     WebElement disableButton;
 
-    @FindBy(xpath = "//*[@id='checkbox']//parent::div")
+    @FindBy(xpath = "//*[@type='checkbox']")
     WebElement checkbox;
+    @FindBy(xpath = "(//*[contains(text(),'gone!')])[2]")
+    WebElement goneMessage;
     @FindBy(xpath = "//*[@type='text']")
     WebElement textBar;
 
+    public boolean message() {
+        return goneMessage.isDisplayed();
+    }
 
     public void clickOnRemove(){
         removeButton.click();

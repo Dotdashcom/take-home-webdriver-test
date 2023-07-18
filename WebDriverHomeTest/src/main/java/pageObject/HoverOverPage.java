@@ -43,6 +43,6 @@ public class HoverOverPage extends CommonApi {
 
 
     public void goTo(){
-        driver.get(" http://localhost:7080/hovers");
+        driver.get("http://localhost:7080/hovers");
     }
 }
